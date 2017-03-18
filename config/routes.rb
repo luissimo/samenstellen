@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
 
-
-  root 'pages#index'
+  root 'customizes#new'
   
 end

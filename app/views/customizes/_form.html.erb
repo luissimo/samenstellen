@@ -9,30 +9,35 @@
       <div class="shadow"></div>
     </div><!-- end top-wizard -->
 
-    <form name="example-1" id="wrapped" >
+
+    <%= form_for @customize, html: {name: 'example-1', id: 'wrapped'} do |f| %>
       <div id="middle-wizard">
         <div class="step">
           <div class="row">
             <h2 class="col-md-12 text-center">Vertel eens over jezelf:</h2><br/>
             <div class="col-md-6">
               <ul class="data-list">
-                <li><input type="text" name="firstname" class="required form-control" placeholder="Voornaam"></li>
-                <li><input type="email" name="email" class="required form-control" placeholder="E-mailadres"></li>
+                <li><%= f.text_field :name, name: 'firstname', class: 'required form-control', placeholder: 'Naam' %></li>
+                <li><%= f.email_field :email, name: 'email', class: 'required form-control', placeholder: 'E-mailadres' %></li>
               </ul>
               <ul class="data-list floated clearfix">
-                <li><input name="gender" type="radio" class="required check_radio" value="Male"><label class="label_gender"> Man</label></li>
-                <li><input name="gender" type="radio" class="required check_radio" value="Female"><label class="label_gender"> Vrouw</label></li>
+                <li>
+                  <%= f.radio_button :gender, 'Man', class: 'required check_radio', value: 'male', name: 'gender' %>
+                  <%= f.label :gender, 'Man', class: 'label_gender' %>
+                </li>
+                <li>
+                  <%= f.radio_button :gender, 'Vrouw', class: 'required check_radio', value: 'female', name: 'gender' %>
+                  <%= f.label :gender, 'Vrouw', class: 'label_gender' %>
+                </li>
               </ul>
             </div><!-- end col-md-6 -->
 
             <div class="col-md-6">
-
               <ul class="data-list">
-                <li id="age"><input type="text" name="age" class="required form-control" placeholder="Leeftijd"></li>
-                <li><input name="length" type="text" class="required form-control" placeholder="Lengte in cm"></li>
-                <li><input name="weigth" type="text" class="required form-control" placeholder="Gewicht in kg"></li>
+                <li><%= f.text_field :age, name: 'age', class: 'required form-control', placeholder: 'Leeftijd' %></li>
+                <li><%= f.text_field :length, name: 'length', class: 'required form-control', placeholder: 'Lengte in cm' %></li>
+                <li><%= f.text_field :weight, name: 'weigth', class: 'required form-control', placeholder: 'Gewicht in kg' %></li>
               </ul>
-
             </div><!-- end col-md-6 -->
           </div><!-- end row -->
 
@@ -43,10 +48,22 @@
           <div class="col-md-10">
             <h3>Welk formaat boxspring zou je willen?</h3>
             <ul class="data-list-2">
-              <li><input name="rate" type="radio" class="required check_radio" value="Not Satisfied"><label>Super King Size (200cm breed)</label></li>
-              <li><input name="rate" type="radio" class="required check_radio" value="Quite Satisfied"><label>King Size (Standaard) (180cm breed)</label></li>
-              <li><input name="rate" type="radio" class="required check_radio" value="Satisfied"><label>Queen Size (160cm breed)</label></li>
-              <li><input name="rate" type="radio" class="required check_radio" value="Completely Satisfied"><label>Twijfelaar (140cm breed)</label></li>
+              <li>
+                <%= f.radio_button :size, 'Super King Size (200cm breed)', name: 'rate', class: 'required check_radio', value: 'Super King Size' %>
+                <%= f.label 'Super King Size (200cm breed)' %>
+              </li>
+              <li>
+                <%= f.radio_button :size, 'King Size (Standaard) (180cm breed)', name: 'rate', class: 'required check_radio', value: 'King Size' %>
+                <%= f.label 'King Size (Standaard) (180cm breed)' %>
+              </li>
+              <li>
+                <%= f.radio_button :size, 'Queen Size (160cm breed)', name: 'rate', class: 'required check_radio', value: 'Queen Size' %>
+                <%= f.label 'Queen Size (160cm breed)' %>
+              </li>
+              <li>
+                <%= f.radio_button :size, 'Twijfelaar (140cm breed)', name: 'rate', class: 'required check_radio', value: 'Twijfelaar' %>
+                <%= f.label 'Twijfelaar (140cm breed)' %>
+              </li>
             </ul>
           </div>
         </div><!-- end step -->
@@ -88,7 +105,7 @@
         <button type="button" name="backward" class="backward">Vorige</button>
         <button type="button" name="forward" class="forward">Volgende</button>
       </div><!-- end bottom-wizard -->
-    </form>
+    <% end %>
 
   </div><!-- end Survey container -->
 </section><!-- end section main container -->

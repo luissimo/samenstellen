@@ -10,7 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170318163548) do
+ActiveRecord::Schema.define(version: 20170324113738) do
+
+  create_table "add_partners", force: :cascade do |t|
+    t.boolean  "switch"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "boxsprings", force: :cascade do |t|
     t.string   "onderstel"
@@ -24,6 +30,7 @@ ActiveRecord::Schema.define(version: 20170318163548) do
   end
 
   create_table "customizes", force: :cascade do |t|
+    t.string   "name"
     t.string   "gender"
     t.integer  "age"
     t.string   "email"
@@ -37,7 +44,23 @@ ActiveRecord::Schema.define(version: 20170318163548) do
     t.string   "size"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
+  end
+
+  create_table "partners", force: :cascade do |t|
     t.string   "name"
+    t.string   "gender"
+    t.integer  "age"
+    t.string   "weight"
+    t.integer  "length"
+    t.string   "sleep_position"
+    t.string   "body_shape"
+    t.string   "warm_sleeping"
+    t.boolean  "body_complaints"
+    t.string   "diseases"
+    t.string   "size"
+    t.integer  "customize_id"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
   end
 
 end

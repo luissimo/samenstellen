@@ -1,0 +1,38 @@
+<section class="container" id="main">
+  <!-- Start Survey container -->
+  <div id="survey_container">
+    <div id="middle-wizard">
+      <div class="step">
+        <div class="row">
+          <h2 class="col-md-12 text-center">Kies je gezelschap:</h2><br/>
+          <div class="col-md-5 ">
+            <%= link_to(new_customize_url) do %>
+              <div class="panel panel-primary enlarge">
+                <div class="panel-heading">
+                  <h2 class="panel-title">Ik wil alleen verder</h2>
+                </div>
+                <div class="panel-body">
+                  <img src="/img/eenpersoon.png" alt="Alleen verder gaan" title="Alleen verder gaan" class=" center-block" />
+                </div>
+              </div>
+            <% end %>
+          </div><!-- end col-md-5 -->
+
+          <div class="col-md-5 col-md-offset-2">
+            <%= link_to(new_customize_url) do %>
+              <div class="panel panel-primary enlarge">
+                <div class="panel-heading">
+                  <h2 class="panel-title">Ik wil mijn partner meenemen</h2>
+                </div>
+                <div class="panel-body">
+                  <img src="/img/tweepersonen.png" alt="Partner meenemen" title="Partner meenemen" class="center-block" />
+                </div>
+              </div>
+            <% end %>
+         </div><!-- end col-md-5 -->
+        </div><!-- end row -->
+
+      </div><!-- end step-->
+    </div><!-- end middle-wizard -->
+  </div><!-- end Survey container -->
+</section><!-- end section main container -->

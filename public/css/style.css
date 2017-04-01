@@ -16,6 +16,7 @@ CSS STRUCTURE:
 /*============================================================================================*/
 /* 1.  SITE STRUCTURE and TYPOGRAPHY */
 /*============================================================================================*/
+
 body {
 	background:#fff;
 	font:13px/20px 'Open Sans', Arial, sans-serif;
@@ -817,7 +818,7 @@ ul.data-list-2 li label.error {
 h2, h3 {font-size: 26px;line-height:26px;margin-bottom:30px;}
 h2 span, h3 span{font-size: 16px; line-height:18px}
 
-#top-wizard {padding:15px 6s0px;}
+#top-wizard {padding:15px 60px;}
 #middle-wizard {padding: 20px 30px 20px 30px;}
 
 ul.floated li#age {margin-bottom:-10px; } 

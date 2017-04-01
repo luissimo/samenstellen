@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
 
-  root 'customizes#new'
+  root 'pages#choose_boxspring'
+  #root 'customizes#new'
 
-  resources :customizes, only: [:new, :create, :show]
+    get 'boxspring' => 'pages#choose_boxspring'
+    get 'partner'   => 'pages#choose_partner'
+    resources :customizes, only: [:new, :create, :show]
 end

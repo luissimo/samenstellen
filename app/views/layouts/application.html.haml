@@ -1,0 +1,113 @@
+!!!
+/[if IE 8 ] <html class="ie ie8" lang="en">
+/[if IE 9 ] <html class="ie ie9" lang="en">
+%html{:lang => "nl"}
+  / <![endif]
+  %head
+    = csrf_meta_tags
+    = stylesheet_link_tag    'application', media: 'all'
+    = javascript_include_tag 'application'
+    / Basic Page Needs
+    %meta{:charset => "utf-8"}/
+    %title Boxspring samenstellen
+    %meta{:content => "", :name => "description"}/
+    %meta{:content => "Boxspringspot.nl", :name => "author"}/
+    / Favicons
+    %link{:href => "favicon.ico", :rel => "shortcut icon", :type => "image/x-icon"}/
+    %link{:href => "apple-touch-icon-57x57-precomposed.png", :rel => "apple-touch-icon", :type => "image/x-icon"}/
+    %link{:href => "apple-touch-icon-72x72-precomposed.png", :rel => "apple-touch-icon", :sizes => "72x72", :type => "image/x-icon"}/
+    %link{:href => "apple-touch-icon-114x114-precomposed.png", :rel => "apple-touch-icon", :sizes => "114x114", :type => "image/x-icon"}/
+    %link{:href => "apple-touch-icon-144x144-precomposed.png", :rel => "apple-touch-icon", :sizes => "144x144", :type => "image/x-icon"}/
+    / Mobile Specific Metas
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    / CSS
+    %link{:href => "bootstrap.css", :rel => "stylesheet"}/
+    %link{:href => "style.css", :rel => "stylesheet"}/
+    %link{:href => "font-awesome/css/font-awesome.css", :rel => "stylesheet"}/
+    %link{:href => "socialize-bookmarks.css", :rel => "stylesheet"}/
+    %link{:href => "fancybox/source/jquery.fancybox.css?v=2.1.4", :rel => "stylesheet"}/
+    %link{:href => "check_radio/skins/square/aero.css", :rel => "stylesheet"}/
+    / Toggle Switch
+    %link{:href => "jquery.switch.css", :rel => "stylesheet"}/
+    / Owl Carousel Assets
+    %link{:href => "owl.carousel.css", :rel => "stylesheet"}/
+    %link{:href => "owl.theme.css", :rel => "stylesheet"}/
+    / Google web font
+    %link{:href => "http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300", :rel => "stylesheet", :type => "text/css"}/
+    /[if lt IE 9]
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    / Jquery
+    %script{:src => "jquery-1.10.2.min.js"}
+    %script{:src => "jquery-ui-1.8.22.min.js"}
+    / Wizard
+    %script{:src => "jquery.wizard.js"}
+    / Radio and checkbox styles
+    %script{:src => "check_radio/jquery.icheck.js"}
+    / HTML5 and CSS3-in older browsers
+    %script{:src => "modernizr.custom.17475.js"}
+    / Support media queries for IE8
+    %script{:src => "respond.min.js"}
+  %body
+    = render 'partials/header'
+    = yield
+    = render 'partials/footer'
+    #toTop Back to Top
+    / Modal About
+    #myModal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+      .modal-dialog
+        .modal-content
+          .modal-header
+            %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} ×
+            %h4#myModalLabel.modal-title About us
+          .modal-body
+            %p
+              Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum
+              sanctus, pro ne quod dicunt sensibus.
+            %p
+              Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum
+              sanctus, pro ne quod dicunt sensibus. Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum
+              sanctus, pro ne quod dicunt sensibus.
+          .modal-footer
+            %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"} Close
+        / /.modal-content
+      / /.modal-dialog
+    / /.modal
+    / Modal About
+    #terms-txt.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "termsLabel", :role => "dialog", :tabindex => "-1"}
+      .modal-dialog
+        .modal-content
+          .modal-header
+            %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} ×
+            %h4#termsLabel.modal-title Terms and conditions
+          .modal-body
+            %p
+              Lorem ipsum dolor sit amet, in porro albucius qui, in
+              = succeed "," do
+                %strong nec quod novum accumsan
+            %p
+              Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum
+              sanctus, pro ne quod dicunt sensibus. Lorem ipsum dolor sit amet,
+              = succeed "," do
+                %strong in porro albucius qui
+            %p
+              Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum
+              sanctus, pro ne quod dicunt sensibus.
+          .modal-footer
+            %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"} Close
+        / /.modal-content
+      / /.modal-dialog
+    / /.modal
+    / OTHER JS
+    %script{:src => "jquery.validate.js"}
+    %script{:src => "jquery.placeholder.js"}
+    %script{:src => "jquery.tweet.min.js"}
+    %script{:src => "jquery.bxslider.min.js"}
+    %script{:src => "quantity-bt.js"}
+    %script{:src => "bootstrap.js"}
+    %script{:src => "retina.js"}
+    %script{:src => "owl.carousel.min.js"}
+    %script{:src => "functions.js"}
+    / FANCYBOX
+    %script{:src => "fancybox/source/jquery.fancybox.pack.js?v=2.1.4", :type => "text/javascript"}
+    %script{:src => "fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.5", :type => "text/javascript"}
+    %script{:src => "fancy_func.js", :type => "text/javascript"}

@@ -1,0 +1,124 @@
+%section#main.container
+  / Start Survey container
+  #survey_container
+    #top-wizard
+      %strong
+        Voortgang
+        %span#location
+      #progressbar
+      .shadow
+    / end top-wizard
+    %form#wrapped{:name => "example-1"}
+      #middle-wizard
+        .step
+          .row
+            %h2.col-md-12.text-center Stel jezelf eens voor
+            %br/
+            .col-md-6
+              %ul.data-list
+                %li
+                  %input.required.form-control{:name => "firstname", :placeholder => "Voornaam", :type => "text"}/
+                %li
+                  %input.required.form-control{:name => "lastname", :placeholder => "Achternaam", :type => "text"}/
+                %li
+                  %input.required.form-control{:name => "email", :placeholder => "E-mailadres", :type => "email"}/
+            / end col-md-6
+            .col-md-6
+              %ul.data-list
+                %li
+                  .styled-select
+                    %select.form-control.required{:name => "country"}
+                      %option{:selected => "selected", :value => ""} Provincie
+                      %option{:value => "Europe"} Zuid-Holland
+                      %option{:value => "Asia"} Noord-Holland
+                      %option{:value => "North America"} Friesland
+                      %option{:value => "South America"} Groningen
+                      %option{:value => "Europe"} Utrecht
+                      %option{:value => "Asia"} Drenthe
+                      %option{:value => "North America"} Overijssel
+                      %option{:value => "South America"} Gelderland
+                      %option{:value => "Europe"} Noord-Brabant
+                      %option{:value => "Asia"} Limburg
+                      %option{:value => "North America"} Zeeland
+                      %option{:value => "South America"} Utrecht
+              %ul.data-list
+                %li#age
+                  %input.required.form-control{:name => "age", :placeholder => "Leeftijd", :type => "text"}/
+              %ul.data-list.floated.clearfix
+                %li
+                  %input.required.check_radio{:name => "gender", :type => "radio", :value => "Male"}/
+                  %label.label_gender Man
+                %li
+                  %input.required.check_radio{:name => "gender", :type => "radio", :value => "Female"}/
+                  %label.label_gender Vrouw
+              %br/
+              %br/
+            / end col-md-6
+          / end row
+        / end step
+        .step.row
+          .col-md-10
+            %h3 Please rate your overall satisfaction about the service provided.
+            %ul.data-list-2
+              %li
+                %input.required.check_radio{:name => "rate", :type => "radio", :value => "Not Satisfied"}/
+                %label Not Satisfied
+              %li
+                %input.required.check_radio{:name => "rate", :type => "radio", :value => "Quite Satisfied"}/
+                %label Quite Satisfied
+              %li
+                %input.required.check_radio{:name => "rate", :type => "radio", :value => "Satisfied"}/
+                %label Satisfied
+              %li
+                %input.required.check_radio{:name => "rate", :type => "radio", :value => "Completely Satisfied"}/
+                %label Completely Satisfied
+        / end step
+        .step.row
+          .col-md-10
+            %h3 How did you hear about our company?
+            %ul.data-list-2
+              %li
+                %input.required.check_radio{:name => "question_1[]", :type => "checkbox", :value => "Google"}/
+                %label Google
+              %li
+                %input.required.check_radio{:name => "question_1[]", :type => "checkbox", :value => "A friend of mine"}/
+                %label A friend of mine
+              %li
+                %input.required.check_radio{:name => "question_1[]", :type => "checkbox", :value => "Print advertise"}/
+                %label Print advertise
+              %li
+                %input.required.check_radio{:name => "question_1[]", :type => "checkbox", :value => "Newspaper"}/
+                %label Newspaper
+        / end step
+        .step.row
+          .col-md-10
+            %h3 Do you think to suggest our company to a friend or parent?
+            %ul.data-list-2.clearfix
+              %li
+                %input.required.check_radio{:name => "question_2", :type => "radio", :value => "No"}/
+                %label No
+              %li
+                %input.required.check_radio{:name => "question_2", :type => "radio", :value => "Maybe"}/
+                %label Maybe
+              %li
+                %input.required.check_radio{:name => "question_2", :type => "radio", :value => "Probably"}/
+                %label Probably
+              %li
+                %input.required.check_radio{:name => "question_2", :type => "radio", :value => "100% Sure"}/
+                %label 100% Sure
+              %li
+                %strong In no, please describe with few words why
+                %textarea.form-control{:name => "message_suggest_no"}
+        / end step
+        #complete.submit.step
+          %i.icon-check
+          %h3 Survey complete! Thank you for you time.
+          %button.submit{:name => "process", :type => "submit"} Submit the survey
+        / end submit step
+      / end middle-wizard
+      #bottom-wizard
+        %button.backward{:name => "backward", :type => "button"} Vorige
+        %button.forward{:name => "forward", :type => "button"} Volgende
+      / end bottom-wizard
+  / end Survey container
+/ end section main container

@@ -1,0 +1,2 @@
+class Mattress < ApplicationRecord
+end

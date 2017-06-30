@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  gender: MyString
+  age: 1
+  email: MyString
+  weight: MyString
+  length: 1
+  sleep_position: MyString
+  body_shape: MyString
+  warm_sleeping: MyString
+  diseases: MyString
+  size: MyString
+  neck_or_back_pain: MyString
+
+two:
+  name: MyString
+  gender: MyString
+  age: 1
+  email: MyString
+  weight: MyString
+  length: 1
+  sleep_position: MyString
+  body_shape: MyString
+  warm_sleeping: MyString
+  diseases: MyString
+  size: MyString
+  neck_or_back_pain: MyString

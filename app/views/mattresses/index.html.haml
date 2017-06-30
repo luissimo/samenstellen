@@ -1,0 +1,43 @@
+%h1 Listing mattresses
+
+%table
+  %thead
+    %tr
+      %th Name
+      %th Gender
+      %th Age
+      %th Email
+      %th Weight
+      %th Length
+      %th Sleep position
+      %th Body shape
+      %th Warm sleeping
+      %th Diseases
+      %th Size
+      %th Neck or back pain
+      %th
+      %th
+      %th
+
+  %tbody
+    - @mattresses.each do |mattress|
+      %tr
+        %td= mattress.name
+        %td= mattress.gender
+        %td= mattress.age
+        %td= mattress.email
+        %td= mattress.weight
+        %td= mattress.length
+        %td= mattress.sleep_position
+        %td= mattress.body_shape
+        %td= mattress.warm_sleeping
+        %td= mattress.diseases
+        %td= mattress.size
+        %td= mattress.neck_or_back_pain
+        %td= link_to 'Show', mattress
+        %td= link_to 'Edit', edit_mattress_path(mattress)
+        %td= link_to 'Destroy', mattress, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Mattress', new_mattress_path

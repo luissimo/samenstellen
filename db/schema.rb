@@ -10,6 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20170630105327) do
+
+  create_table "mattresses", force: :cascade do |t|
+    t.string "name"
+    t.string "gender"
+    t.integer "age"
+    t.string "email"
+    t.string "weight"
+    t.integer "length"
+    t.string "sleep_position"
+    t.string "body_shape"
+    t.string "warm_sleeping"
+    t.string "diseases"
+    t.string "size"
+    t.string "neck_or_back_pain"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
 end

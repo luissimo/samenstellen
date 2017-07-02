@@ -1,42 +1,51 @@
-%p#notice= notice
+%section#main.container
+  / Start Survey container
+  #survey_container
+    #middle-wizard
+      .step
+        .row
+          %h2.col-md-12.text-center Bestel je ideale matras
+          %br/
+          %p#notice= notice
+          %p
+            %b Name:
+            = @mattress.name
+          %p
+            %b Gender:
+            = @mattress.gender
+          %p
+            %b Age:
+            = @mattress.age
+          %p
+            %b Email:
+            = @mattress.email
+          %p
+            %b Weight:
+            = @mattress.weight
+          %p
+            %b Length:
+            = @mattress.length
+          %p
+            %b Sleep position:
+            = @mattress.sleep_position
+          %p
+            %b Body shape:
+            = @mattress.body_shape
+          %p
+            %b Warm sleeping:
+            = @mattress.warm_sleeping
+          %p
+            %b Diseases:
+            = @mattress.diseases
+          %p
+            %b Size:
+            = @mattress.size
+          %p
+            %b Neck or back pain:
+            = @mattress.neck_or_back_pain
 
-%p
-  %b Name:
-  = @mattress.name
-%p
-  %b Gender:
-  = @mattress.gender
-%p
-  %b Age:
-  = @mattress.age
-%p
-  %b Email:
-  = @mattress.email
-%p
-  %b Weight:
-  = @mattress.weight
-%p
-  %b Length:
-  = @mattress.length
-%p
-  %b Sleep position:
-  = @mattress.sleep_position
-%p
-  %b Body shape:
-  = @mattress.body_shape
-%p
-  %b Warm sleeping:
-  = @mattress.warm_sleeping
-%p
-  %b Diseases:
-  = @mattress.diseases
-%p
-  %b Size:
-  = @mattress.size
-%p
-  %b Neck or back pain:
-  = @mattress.neck_or_back_pain
-
-= link_to 'Edit', edit_mattress_path(@mattress)
-\|
-= link_to 'Back', mattresses_path
+            = link_to 'Back', mattresses_path
+            %br/
+      / end bottom-wizard
+  / end Survey container
+/ end section main container

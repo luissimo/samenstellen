@@ -12,7 +12,8 @@
       #middle-wizard
         .step
           .row
-            %h2.col-md-12.text-center Stel jezelf eens voor
+            %h2.col-md-12.text-center Stel jezelf eens voor 
+            = debug(session) if Rails.env.development?
             %br/
             .col-md-6
               %ul.data-list
@@ -44,7 +45,7 @@
                 = f.radio_button :sleep_position, 'Rug', class: 'required check_radio', name: 'sleep_position'
                 = f.label :sleep_position_rug, 'Rug'
               %li
-                = f.radio_button :sleep_position, 'Zij', class: 'required check_radio', name: 'sleep_position', value: 'Zij'
+                = f.radio_button :sleep_position, 'Zij', class: 'required check_radio', name: 'sleep_position'
                 = f.label :sleep_position_zij, 'Zij'
               %li   
                 = f.radio_button :sleep_position, 'Buik', class: 'required check_radio', name: 'sleep_position'
@@ -84,24 +85,25 @@
         / end step
         .step.row
           .col-md-4.col-md-offset-4
-            %h3 Heb je medische klachten?(bv. allergie, apneu, hernia, reuma) Zo ja, vul deze hieronder in.
+            %h3 Heb je medische klachten? Zo ja, vul deze hieronder in.
             %ul.data-list-2
               %li
-                = f.text_field :diseases, class: 'form-control', placeholder: '...'
+                = f.text_field :diseases, class: 'form-control', placeholder: 'bv. allergie, apneu, hernia, reuma'
         / end step
         .step.row
           .col-md-10
             %h3 Welk formaat matras wil je (Breedte)?
             %ul.data-list-2
               %li
-                = f.radio_button :body_shape, 'A: KINGSIZE', class: 'required check_radio', name: 'mattress_size'
-                = f.label :body_shape_a, 'A: KINGSIZE'
+                =# f.radio_button(object_name, method, tag_value, options = {})
+                = f.radio_button :size, 'A: KINGSIZE', class: 'required check_radio', name: 'mattress_size'
+                = f.label :size_a, 'A: KINGSIZE'
               %li
-                = f.radio_button :body_shape, 'B: MEDIUM', class: 'required check_radio', name: 'mattress_size'
-                = f.label :body_shape_b, 'B: MEDIUM'
+                = f.radio_button :size, 'B: MEDIUM', class: 'required check_radio', name: 'mattress_size'
+                = f.label :size_b, 'B: MEDIUM'
               %li   
-                = f.radio_button :body_shape, 'C: SMALL', class: 'required check_radio', name: 'mattress_size'
-                = f.label :body_shape_c, 'C: SMALL' 
+                = f.radio_button :size, 'C: SMALL', class: 'required check_radio', name: 'mattress_size'
+                = f.label :size_c, 'C: SMALL' 
         / end step
         / end step
         #complete.submit.step

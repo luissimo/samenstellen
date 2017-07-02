@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170630105327) do
+ActiveRecord::Schema.define(version: 20170630202904) do
 
   create_table "mattresses", force: :cascade do |t|
     t.string "name"
@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 20170630105327) do
     t.string "neck_or_back_pain"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "session_id"
   end
 
 end

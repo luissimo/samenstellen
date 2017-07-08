@@ -1,49 +1,78 @@
 %section#main.container
   / Start Survey container
-  #survey_container
+  #survey_container_result
     #middle-wizard
-      .step
-        .row
-          %h2.col-md-12.text-center Bestel je ideale matras
-          %br/
-          %p#notice= notice
-          %p
-            %b Name:
-            = @mattress.name
-          %p
-            %b Gender:
-            = @mattress.gender
-          %p
-            %b Age:
-            = @mattress.age
-          %p
-            %b Email:
-            = @mattress.email
-          %p
-            %b Weight:
-            = @mattress.weight
-          %p
-            %b Length:
-            = @mattress.length
-          %p
-            %b Sleep position:
-            = @mattress.sleep_position
-          %p
-            %b Body shape:
-            = @mattress.body_shape
-          %p
-            %b Warm sleeping:
-            = @mattress.warm_sleeping
-          %p
-            %b Diseases:
-            = @mattress.diseases
-          %p
-            %b Size:
-            = @mattress.size
-          %p
-            %b Neck or back pain:
-            = @mattress.neck_or_back_pain
+      .wrapper-v4
+        .v4-bordered
+          .specs-boxs
+            .box-title.title-v4
+              Hier is jouw perfecte boxspring
 
+            %ul
+              %li
+                .head-title-v4 Stevigheid matras
+                .li-holder
+                  .li-content
+                    .icon-holder
+                      .icon
+                        = image_tag("blauw-test.png", class: 'img-responsive')
+                    .text-content
+                      .title-smaller Stevigheid
+                      .text-v4
+                        Wij hebben jullie situatie bekeken en komen met de volgende conclusie: Persoon 1 heeft een stevig matras nodig om een holle rug te voorkomen en zodoende rug- en nekpijn te minimaliseren. Persoon 2 heeft een extra stevig matras nodig die zich aanpast aan de contouren van het lichaam. Beiden hebben voldoende aan een 7-zone pocketveermatras. 
+              %li
+                .head-title-v4 Drukgevoeligheid
+                .li-holder
+                  .li-content
+                    .icon-holder
+                      .icon
+                        = image_tag("blauw-test.png", class: 'img-responsive')
+                    .text-content
+                      .title-smaller Drukgevoeligheid
+                      .text-v4
+                        Persoon 1 is een buikslaper. Wij delen hier de mening van onderzoekers: Het slapen op je buik is geen natuurlijke positie. Mensen die op hun buik slapen hebben vaak last van hun rug en nek. Dit komt doordat de rug een holle positie aanneemt en de rugwervels bekneld raken. Ook is je nek vaak ’s nachts volledig naar links of naar rechts gedraaid.    
+                
+          -# %p#notice= notice
+          -# %p
+          -#   %b Name:
+          -#   = @mattress.name
+          -# %p
+          -#   %b Gender:
+          -#   = @mattress.gender
+          -# %p
+          -#   %b Age:
+          -#   = @mattress.age
+          -# %p
+          -#   %b Email:
+          -#   = @mattress.email
+          -# %p
+          -#   %b Weight:
+          -#   = @mattress.weight
+          -# %p
+          -#   %b Length:
+          -#   = @mattress.length
+          -# %p
+          -#   %b Sleep position:
+          -#   = @mattress.sleep_position
+          -# %p
+          -#   %b Body shape:
+          -#   = @mattress.body_shape
+          -# %p
+          -#   %b Warm sleeping:
+          -#   = @mattress.warm_sleeping
+          -# - if @mattress.neck_or_back_pain  
+          -#   %p
+          -#     %b Diseases:
+          -#     = @mattress.diseases
+          -# %p
+          -#   %b Size:
+          -#   = @mattress.size
+          -# %p
+          -#   %b Neck or back pain:
+          -#   = @mattress.neck_or_back_pain
+
+
+            %br/
             = link_to 'Back', mattresses_path
             %br/
       / end bottom-wizard

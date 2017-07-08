@@ -7,6 +7,7 @@ Author URI: http://themeforest.net/user/Ansonika/
 
 CSS STRUCTURE:
 
+CUSTOM. SHOW PAGE
 1. SITE STRUCTURE and TYPOGRAPHY
 2. CONTENT
 3. FORMS
@@ -14,11 +15,94 @@ CSS STRUCTURE:
 5. MEDIA QUERIES
 
 /*============================================================================================*/
+/* CUSTOM. SHOW PAGE */
+/*============================================================================================*/
+
+
+.wrapper-v4 {
+    max-width: 1300px;
+    padding: 0 48px;
+    margin: 0 auto;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.v4-bordered {
+    margin-top: 20px;
+    border: #4285F4 solid 1px;
+    border-top: #4285F4 dashed 5px;
+    border-bottom-width: 1px;
+}
+
+.specs-box {
+	background: #fff;
+    border-bottom: none;
+    border-color: #4285F4; /* BOXSPRINGSPOT KLEUR */
+}
+
+.box-title {
+    border-color:  #4285F4;
+    background: whitesmoke;
+    padding: 20px 30px;
+    line-height: 50px;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: .2px;
+}
+
+.text-v4 {
+	font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.title-smaller {
+	font-size: 30px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    font-weight: 700;
+}
+
+.head-title-v4 {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 20px 30px;
+    line-height: 20px;
+    position: relative;
+    border-bottom: 1px solid  #4285F4;
+    border-top: 1px solid  #4285F4;
+    cursor: pointer;
+}
+
+.li-holder {
+	padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+}
+
+.li-content {
+	display: flex;
+    padding: 30px;
+}
+
+.text-content {
+	flex: calc(100% - 380px);
+}
+
+.icon-holder {
+	margin-right: 25px;
+    flex: 355px;
+}
+
+/*============================================================================================*/
 /* 1.  SITE STRUCTURE and TYPOGRAPHY */
 /*============================================================================================*/
 body {
 	background:#fff;
-	font:13px/20px 'Open Sans', Arial, sans-serif;
+	font-family: 'Avenir',Arial;
 	color: #333;
 	-webkit-font-smoothing: antialiased !important;
 }
@@ -383,6 +467,16 @@ ul#footer-nav li {
 	 z-index:9;
 	 position:relative;
 }
+
+#survey_container_result {
+	background-color:#fff;
+	 box-shadow: 0 0 100px red;
+	 margin-top:-100px;
+	 margin-bottom:60px;
+	 z-index:9;
+	 position:block;
+}
+
 #middle-wizard {
 	padding: 50px 125px 35px 125px;
 }

@@ -92,10 +92,34 @@ CUSTOM. SHOW PAGE
 	flex: calc(100% - 380px);
 }
 
-.icon-holder {
+.icon-holder-left {
 	margin-right: 25px;
     flex: 355px;
 }
+
+.icon-holder-right {
+	margin-left: 25px;
+    flex: 355px;
+}
+
+#survey_container_result {
+	background-color:#fff;
+	 box-shadow: 0 0 50px green;
+	 margin-top:-400px;
+	 margin-bottom:60px;
+	 z-index:9;
+	 position:relative;
+}
+
+#survey_container_result_2 {
+	 background-color:#fff;
+	 box-shadow: 0 0 50px red;
+	 margin-top:-50px;
+	 margin-bottom:60px;
+	 z-index:9;
+	 position:relative;
+}
+
 
 /*============================================================================================*/
 /* 1.  SITE STRUCTURE and TYPOGRAPHY */
@@ -466,15 +490,6 @@ ul#footer-nav li {
 	 margin-bottom:60px;
 	 z-index:9;
 	 position:relative;
-}
-
-#survey_container_result {
-	background-color:#fff;
-	 box-shadow: 0 0 100px red;
-	 margin-top:-100px;
-	 margin-bottom:60px;
-	 z-index:9;
-	 position:block;
 }
 
 #middle-wizard {

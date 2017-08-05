@@ -26,10 +26,10 @@
                 %li= f.number_field :length, class: 'required form-control', placeholder: 'Lengte'
               %ul.data-list.floated.clearfix
                 %li
-                  %input.required.check_radio{:name => "gender", :type => "radio", :value => "Male"}/
+                  = f.radio_button :gender, 'Man', class: 'required check_radio', name: 'gender'
                   %label.label_gender Man
                 %li
-                  %input.required.check_radio{:name => "gender", :type => "radio", :value => "Female"}/
+                  = f.radio_button :gender, 'Vrouw', class: 'required check_radio', name: 'gender'
                   %label.label_gender Vrouw
               %br/
               %br/

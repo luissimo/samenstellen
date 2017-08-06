@@ -18,7 +18,6 @@ CUSTOM. SHOW PAGE
 /* CUSTOM. SHOW PAGE */
 /*============================================================================================*/
 
-
 .wrapper-v4 {
     max-width: 1300px;
     padding: 0 48px;
@@ -185,9 +184,9 @@ h3 {
   margin-bottom:45px;
 }
 h3 span {
-  font-size: 21px;
-  font-weight:300;
-  display:block;
+  font-size: 22px;
+  font-weight:600;
+  display:inline;
 }
 .step h3 {
 	text-transform:none;

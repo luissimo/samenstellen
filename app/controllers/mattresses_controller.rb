@@ -39,6 +39,7 @@ class MattressesController < ApplicationController
   def mattress_params
     params.require(:mattress).permit(:id, :session_id, :name, :gender, :age,
                                      :email, :weight, :length, :sleep_position, :body_shape,
-                                     :warm_sleeping, :diseases, :size, :neck_or_back_pain, :format)
+                                     :warm_sleeping, :diseases, :size, :neck_or_back_pain, :format, :mattress_length,
+                                     :mattress_width, :category)
   end
 end

@@ -167,30 +167,19 @@
                 %li   
                   = f.radio_button :mattress_length, '220cm', class: 'required check_radio'
                   = f.label :mattress_length_C, '220cm' 
-        / end step            
-        .step.row
-          .col-md-6.col-md-offset-3
-            %h3 Hoe wil je de matras hebben
-            %ul.data-list-2
-              %li
-                = f.radio_button :size, '2x eenpersoonsmatrassen (voor beide personen optimale comfort)', class: 'required check_radio'
-                = f.label :size_a, '2x eenpersoonsmatrassen (voor beide personen optimale comfort)'
-              %li
-                = f.radio_button :size, '1x tweepersoonsmatras (een mix dat redelijk comfort voor beide personen biedt)', class: 'required check_radio'
-                = f.label :size_b, '1x tweepersoonsmatras (een mix dat redelijk comfort voor beide personen biedt)'
         / end step
         .step.row
           .col-md-4.col-md-offset-4
             %h3 Kies een comfortcategorie voor de matras
             %ul.data-list-2
               %li
-                = f.radio_button :category, 'Budget (extra nadruk op prijs)', class: 'required check_radio'
+                = f.radio_button :category, 'Budget', class: 'required check_radio'
                 = f.label :category_a, 'Budget (extra nadruk op prijs)'
               %li
-                = f.radio_button :category, 'Comfort (nadruk op comfort)', class: 'required check_radio'
+                = f.radio_button :category, 'Comfort', class: 'required check_radio'
                 = f.label :category_b, 'Comfort (nadruk op comfort)'
               %li   
-                = f.radio_button :category, 'Deluxe (extra nadruk op comfort)', class: 'required check_radio'
+                = f.radio_button :category, 'Deluxe', class: 'required check_radio'
                 = f.label :category_c, 'Deluxe (extra nadruk op comfort)'
         / end step
         #complete.submit.step

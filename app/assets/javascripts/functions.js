@@ -1,17 +1,12 @@
 // SCROLL TO TOP ===============================================================================
 $(function() {
 	$(window).scroll(function() {
-		if($(this).scrollTop() != 0) {
-			$('#toTop').fadeIn();	
+		if($(this).scrollTop() > 600) {
+			$('#CheckOutButton').fadeIn();	
 		} else {
-			$('#toTop').fadeOut();
+			$('#CheckOutButton').fadeOut();
 		}
 	});
- 
-	$('#toTop').click(function() {
-		$('body,html').animate({scrollTop:0},500);
-	});	
-	
 });
 
 if( window.innerWidth < 770 ) {

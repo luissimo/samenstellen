@@ -6,6 +6,12 @@
         .box-title.title-v4.text-center
           Tadaaa...
         %ul
+          %li 
+            .li-holder
+              .li-content
+                .text-content
+                  .text-v4.text-center
+                    Op basis van de ingevulde gegevens komt er uit ons algoritme de volgende matras naar voren
           %li
             .li-holder
               .li-content
@@ -15,30 +21,21 @@
                       %thead
                         %tr
                           %td.success
-                            €<strong>#{@prize}</strong> - Resultaat van #{@mattress.name}
+                            €<strong>#{@price}</strong> - Resultaat van #{@mattress.name}
                       %tbody
                         %tr
-                          %td #{@mattress.body_shape}
+                          %td #{@mattress.gender}
                         %tr
-                          %td #{@mattress.weight}    
+                          %td #{@mattress.age}      
                         %tr
-                          %td #{@mattress.gender}    
+                          %td #{@mattress.weight}
                         %tr
-                          %td #{@mattress.body_shape}
-                        %tr
-                          %td #{@mattress.weight}    
-                        %tr
-                          %td #{@mattress.gender}    
+                          %td #{@mattress.length}    
                 .icon-holder-right
                   .icon
                     = image_tag("blauw-test.png", class: 'img-responsive')   
-
-              .text-content.text-center
-                .text-v4
-                  .ui-group-buttons
-                    .btn.btn-primary.btn-lg Afrekenen
-                    .or.or-lg
-                    .btn.btn-success.btn-lg Opslaan
+        .box-title.title-v4.text-center        
+          %button.btn-primary.btn-success.btn-block Bestellen
 %section#main.container
   #survey_container_result_advice
     #middle-wizard

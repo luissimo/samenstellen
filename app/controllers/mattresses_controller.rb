@@ -67,18 +67,18 @@ class MattressesController < ApplicationController
     elsif size('100cm', '220cm')
       budget_comfort_deluxe(619, 749, 1049)
     else
-      @prize = 0
+      @price = 0
     end
   end
 
   def budget_comfort_deluxe(budget, comfort, deluxe)
     case @mattress.category
     when 'Budget'
-      @prize = budget
+      @price = budget
     when 'Comfort'
-      @prize = comfort
+      @price = comfort
     when 'Deluxe'
-      @prize = deluxe
+      @price = deluxe
     end
   end
 

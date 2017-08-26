@@ -1,0 +1,69 @@
+%section#main.container
+  / Start Survey container
+  #survey_container
+    #top-wizard
+      %strong
+        Voortgang
+        %span#location
+      #progressbar
+      .shadow
+    / end top-wizard
+    = form_for :customer do |f|
+      = f.fields_for :billing_address do |ba|
+        #middle-wizard
+          .step.row
+            %h2.col-md-12.text-center Persoonlijke gegevens
+            %br/
+            .col-md-6
+              %ul.data-list
+                %li= ba.text_field :first_name, class: 'required form-control name_person_1', placeholder: 'Voornaam'
+                %li= ba.text_field :last_name, class: 'required form-control', placeholder: 'Achternaam'
+            / end col-md-6
+            .col-md-6
+              %ul.data-list
+                %li= ba.text_field :phone, class: 'required form-control', placeholder: 'Telefoonnummer'
+                %li= ba.email_field :email, class: 'required form-control', placeholder: 'E-mailadres'
+              / end col-md-6
+            / end row
+          / end step
+          .step.row
+            .col-md-12
+              %h3.text-center Adresgegevens
+              .col-md-6
+                %ul.data-list
+                  %li= ba.text_field :address, class: 'required form-control name_person_1', placeholder: 'Straatnaam + huisnummer'
+                  %li= ba.text_field :address_addition, class: 'required form-control', placeholder: 'Toevoeging (suite, appartement etc..)'
+              / end col-md-6
+              .col-md-6
+                %ul.data-list
+                  %li= ba.text_field :zip_code, class: 'required form-control', placeholder: 'Postcode'
+                  %li= ba.text_field :city, class: 'required form-control', placeholder: 'Stad'
+
+          .step.row
+            .col-md-12
+              %h3.text-center Extra informatie
+              .col-md-6
+                %ul.data-list
+                  %li= ba.text_field :floor, class: 'required form-control name_person_1', placeholder: 'Verdieping'
+                  %li= ba.text_field :elevator, class: 'required form-control', placeholder: 'Is er een lift aanwezig'
+              / end col-md-6
+              .col-md-6
+                %ul.data-list
+                  %li= ba.text_field :zip_code, class: 'required form-control', placeholder: 'Postcode'
+                  %li= ba.text_field :city, class: 'required form-control', placeholder: 'Stad'
+              .col-md-12
+                %ul.data-list
+                  %li= f.text_area :comment, class: 'required form-control', placeholder: 'Extra bericht of notitite (optioneel)'
+          / end step
+          #complete.submit.step
+            %i.icon-check
+            %h3 Bestel die shit.
+            = f.submit 'Bekijk het resultaat..', class: 'btn btn-block btn-info submit', name: 'payment'
+        / end submit step
+      / end middle-wizard
+      #bottom-wizard
+        %button.backward{:name => "Vorige", :type => "button"} Vorige
+        %button.forward{:name => "Volgende", :type => "button"} Volgende
+      / end bottom-wizard
+  / end Survey container
+/ end section main container

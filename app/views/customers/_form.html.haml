@@ -1,0 +1,44 @@
+%section#main.container
+  / Start Survey container
+  #survey_container_result
+    = form_for :customer do |f|
+      = f.fields_for :billing_address do |ba|
+        #middle-wizard
+          %h3.text-center Persoonlijke gegevens
+          %br/
+          .col-md-6
+            %ul.data-list
+              %li= ba.text_field :first_name, class: 'required form-control name_person_1', placeholder: 'Voornaam'
+              %li= ba.text_field :last_name, class: 'required form-control', placeholder: 'Achternaam'
+          .col-md-6
+            %ul.data-list
+              %li= ba.text_field :phone, class: 'required form-control', placeholder: 'Telefoonnummer'
+              %li= ba.email_field :email, class: 'required form-control', placeholder: 'E-mailadres'
+
+          .col-md-12
+            %h3.text-center Adresgegevens
+            .col-md-6
+              %ul.data-list
+                %li= ba.text_field :address, class: 'required form-control name_person_1', placeholder: 'Straatnaam + huisnummer'
+                %li= ba.text_field :address_addition, class: 'required form-control', placeholder: 'Toevoeging (suite, appartement etc..)'
+            .col-md-6
+              %ul.data-list
+                %li= ba.text_field :zip_code, class: 'required form-control', placeholder: 'Postcode'
+                %li= ba.text_field :city, class: 'required form-control', placeholder: 'Stad'
+
+          .col-md-12
+            %h3.text-center Extra informatie
+            .col-md-6
+              %ul.data-list
+                %li= ba.text_field :floor, class: 'required form-control name_person_1', placeholder: 'Verdieping'
+                %li= ba.text_field :elevator, class: 'required form-control', placeholder: 'Is er een lift aanwezig'
+            .col-md-6
+              %ul.data-list
+                %li= ba.text_field :zip_code, class: 'required form-control', placeholder: 'Postcode'
+                %li= ba.text_field :city, class: 'required form-control', placeholder: 'Stad'
+      .col-md-8.col-md-offset-2
+        %ul.data-list
+          %li= f.text_area :comment, class: 'required form-control', placeholder: 'Extra bericht of notitite (optioneel)'
+      %i.icon-check
+      = f.submit 'Bekijk het resultaat..', class: 'btn btn-block btn-info submit', name: 'payment'
+

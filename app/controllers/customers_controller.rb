@@ -29,6 +29,8 @@ class CustomersController < ApplicationController
   end
 
   def success
+    event_json = JSON.parse(request.body.read)
+    status 200
     if source.chargeable
       calculate_price
       set_stripe_api_key

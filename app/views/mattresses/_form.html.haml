@@ -38,10 +38,10 @@
         / end step
         .step.row
           .col-md-6
-            %h3 
+            %h3
               Hoe slaapt
               %span.show_name_person_1
-              normaal gesproken? * 
+              normaal gesproken? *
             %ul.data-list-2
               %li
                 = f.radio_button :sleep_position, 'Rug', class: 'required check_radio'
@@ -49,12 +49,12 @@
               %li
                 = f.radio_button :sleep_position, 'Zij', class: 'required check_radio'
                 = f.label :sleep_position_b, 'Zij'
-              %li   
+              %li
                 = f.radio_button :sleep_position, 'Buik', class: 'required check_radio'
                 = f.label :sleep_position_c, 'Buik'
           .col-md-6
-            %h3 
-              Heeft 
+            %h3
+              Heeft
               %span.show_name_person_1
               weleens nek-of rugklachten? *
             %ul.data-list-2
@@ -64,17 +64,17 @@
               %li
                 = f.radio_button :neck_or_back_pain, 'Ja, alleen nekklachten', class: 'required check_radio'
                 = f.label :neck_or_back_pain_b, 'Ja, alleen nekklachten'
-              %li   
+              %li
                 = f.radio_button :neck_or_back_pain, 'Ja, alleen rugklachten', class: 'required check_radio'
-                = f.label :neck_or_back_pain_c, 'Ja, alleen rugklachten' 
-              %li   
+                = f.label :neck_or_back_pain_c, 'Ja, alleen rugklachten'
+              %li
                 = f.radio_button :neck_or_back_pain, 'Nee, geen klachten', class: 'required check_radio'
-                = f.label :neck_or_back_pain_d, 'Nee, geen klachten' 
+                = f.label :neck_or_back_pain_d, 'Nee, geen klachten'
         / end step
         .step.row
           .col-md-4.col-md-offset-4
-            %h3 
-              Wat is de lichaamsvorm van 
+            %h3
+              Wat is de lichaamsvorm van
               %span.show_name_person_1
               ? *
             %ul.data-list-2
@@ -84,39 +84,33 @@
               %li
                 = f.radio_button :body_shape, 'B: Peerfiguur (Smalle schouders, brede heupen, beetje taille)', class: 'required check_radio'
                 = f.label :body_shape_b, 'B: Peerfiguur'
-              %li   
+              %li
                 = f.radio_button :body_shape, 'C: Zandloperfiguur (Brede schouders, brede heupen en smalle taille)', class: 'required check_radio'
-                = f.label :body_shape_c, 'C: Zandloperfiguur' 
+                = f.label :body_shape_c, 'C: Zandloperfiguur'
               %li
                 = f.radio_button :body_shape, 'D: Omgekeerde driehoek (Brede schouders, weinig heup, beetje taille)', class: 'required check_radio'
                 = f.label :body_shape_d, 'D: Omgekeerde driehoek'
-              %li   
-                = f.radio_button :body_shape, 'E: Appelfiguur (Grote taille/buik, smallere schouders en heupen)', class: 'required check_radio'
-                = f.label :body_shape_e, 'E: Appelfiguur' 
         / end step
         .step.row
           .col-md-4.col-md-offset-4
-            %h3 
-              Hoe warm krijgt 
+            %h3
+              Heeft
               %span.show_name_person_1
-              het tijdens het slapen? *
+              het eerder koud of warm in bed? *
             %ul.data-list-2
               %li
-                = f.radio_button :warm_sleeping, 'Ja, ik krijg het warm en zweet weleens', class: 'required check_radio'
-                = f.label :warm_sleeping_c, 'Ja, ik krijg het warm en zweet weleens'
+                = f.radio_button :warm_sleeping, 'Koud', class: 'required check_radio'
+                = f.label :warm_sleeping_c, 'Koud'
               %li
-                = f.radio_button :warm_sleeping, 'Soms (voeten buiten deken)', class: 'required check_radio'
-                = f.label :warm_sleeping_b, 'Soms (voeten buiten deken)'
-              %li   
-                = f.radio_button :warm_sleeping, 'Nee, ik krijg het koud', class: 'required check_radio'
-                = f.label :warm_sleeping_c, 'Nee, ik krijg het koud' 
-              %li   
-                = f.radio_button :warm_sleeping, 'Nee', class: 'required check_radio'
-                = f.label :warm_sleeping_c, 'Nee' 
+                = f.radio_button :warm_sleeping, 'Warm', class: 'required check_radio'
+                = f.label :warm_sleeping_b, 'Warm'
+              %li
+                = f.radio_button :warm_sleeping, 'Niet warm, niet koud', class: 'required check_radio'
+                = f.label :warm_sleeping_c, 'Niet warm, niet koud'
         / end step
         .step.row
           .col-md-4.col-md-offset-4
-            %h3 
+            %h3
               Heeft
               %span.show_name_person_1
               medische klachten? Zo ja, welke?
@@ -125,20 +119,17 @@
                 = f.radio_button :diseases, 'Hernia', class: 'required check_radio'
                 = f.label :diseases_a, 'Hernia'
               %li
-                = f.radio_button :diseases, 'Decubitis', class: 'required check_radio'
-                = f.label :diseases_b, 'Decubitis'
-              %li   
+                = f.radio_button :diseases, 'Decubitus', class: 'required check_radio'
+                = f.label :diseases_b, 'Decubitus'
+              %li
                 = f.radio_button :diseases, 'Reuma', class: 'required check_radio'
-                = f.label :diseases_c, 'Reuma' 
-              %li   
-                = f.radio_button :diseases, 'Huisstofmijtallergie', class: 'required check_radio'
-                = f.label :diseases_d, 'Huisstofmijtallergie' 
-              %li   
+                = f.label :diseases_c, 'Reuma'
+              %li
                 = f.radio_button :diseases, 'Anders, namelijk', class: 'required check_radio'
                 = f.label :diseases_e, 'Anders, namelijk' ## FIXME -- ADD INPUT FIELD
-              %li   
+              %li
                 = f.radio_button :diseases, 'Nee, geen medische klachten', class: 'required check_radio'
-                = f.label :diseases_f, 'Nee, geen medische klachten' 
+                = f.label :diseases_f, 'Nee, geen medische klachten'
         / end step
         .step.row
           .col-md-12
@@ -152,9 +143,9 @@
                 %li
                   = f.radio_button :mattress_width, '90cm', class: 'required check_radio'
                   = f.label :mattress_width_b, '90cm'
-                %li   
+                %li
                   = f.radio_button :mattress_width, '100cm', class: 'required check_radio'
-                  = f.label :mattress_width_c, '100cm' 
+                  = f.label :mattress_width_c, '100cm'
             .col-md-6
               %ul.data-list-2
                 %h4 Lengte
@@ -164,9 +155,9 @@
                 %li
                   = f.radio_button :mattress_length, '210cm', class: 'required check_radio'
                   = f.label :mattress_length_b, '210cm'
-                %li   
+                %li
                   = f.radio_button :mattress_length, '220cm', class: 'required check_radio'
-                  = f.label :mattress_length_C, '220cm' 
+                  = f.label :mattress_length_C, '220cm'
         / end step
         .step.row
           .col-md-4.col-md-offset-4
@@ -178,7 +169,7 @@
               %li
                 = f.radio_button :category, 'Comfort', class: 'required check_radio'
                 = f.label :category_b, 'Comfort (nadruk op comfort)'
-              %li   
+              %li
                 = f.radio_button :category, 'Deluxe', class: 'required check_radio'
                 = f.label :category_c, 'Deluxe (extra nadruk op comfort)'
         / end step

@@ -1,5 +1,7 @@
 class MattressesController < ApplicationController
 
+  include MattressPrices
+
   # GET /mattresses
   # GET /mattresses.json
   def index
@@ -10,7 +12,7 @@ class MattressesController < ApplicationController
   # GET /mattresses/1.json
   def show
     @mattress = Mattress.all.where(session_id: session.id).last
-    calculate_prize
+    calculate_price
   end
 
   # GET /mattresses/new
@@ -42,47 +44,5 @@ class MattressesController < ApplicationController
                                      :email, :weight, :length, :sleep_position, :body_shape,
                                      :warm_sleeping, :diseases, :neck_or_back_pain, :mattress_length,
                                      :mattress_width, :category)
-  end
-
-  # 1 PERSOONS MATRAS PRIJZEN
-  def calculate_prize
-    @mattress = Mattress.all.where(session_id: session.id).last
-
-    if size('80cm', '200cm')
-      budget_comfort_deluxe(355, 519, 789)
-    elsif size('80cm', '210cm')
-      budget_comfort_deluxe(409, 599, 889)
-    elsif size('80cm', '220cm')
-      budget_comfort_deluxe(469, 679, 999)
-    elsif size('90cm', '200cm')
-      budget_comfort_deluxe(399, 459, 839)
-    elsif size('90cm', '210cm')
-      budget_comfort_deluxe(469, 639, 939)
-    elsif size('90cm', '220cm')
-      budget_comfort_deluxe(489, 709, 1029)
-    elsif size('100cm', '200cm')
-      budget_comfort_deluxe(469, 599, 889)
-    elsif size('100cm', '210cm')
-      budget_comfort_deluxe(539, 669, 975)
-    elsif size('100cm', '220cm')
-      budget_comfort_deluxe(619, 749, 1049)
-    else
-      @price = 0
-    end
-  end
-
-  def budget_comfort_deluxe(budget, comfort, deluxe)
-    case @mattress.category
-    when 'Budget'
-      @price = budget
-    when 'Comfort'
-      @price = comfort
-    when 'Deluxe'
-      @price = deluxe
-    end
-  end
-
-  def size(width, length)
-    @mattress.mattress_width.eql?(width) && @mattress.mattress_length.eql?(length)
   end
 end

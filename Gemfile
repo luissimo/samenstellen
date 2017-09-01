@@ -1,8 +1,6 @@
 source 'https://rubygems.org'
 
-
 gem 'rails', '5.1.1'
-gem 'sqlite3'
 gem 'puma', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
@@ -20,6 +18,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 
 group :development, :test do
+	gem 'sqlite3'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
 end
@@ -32,7 +31,7 @@ group :development do
 end
 
 group :production do
-  gem 'pg', '0.18.1'
+  gem 'pg'
   gem 'rails_12factor'
 end
 

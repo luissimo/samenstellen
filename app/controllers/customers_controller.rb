@@ -1,7 +1,6 @@
 class CustomersController < ApplicationController
 
   protect_from_forgery :except => :webhook
-  before_action :set_stripe_api_key, except: [:new]
 
 	include MattressPrices
 
@@ -31,21 +30,28 @@ class CustomersController < ApplicationController
   end
 
   def success
-    @status = "Bedankt voor je bestelling!"
+    case session[:status]
+    when 'pending'
+      @status = "Je bestelling wordt nog verwerkt.."
+    when 'success'
+      @status = "Je bestelling is in goede orde ontvangen!"
+    else
+      @status = "Stel eerst je product samen!"
+    end
   end
 
   def webhook
-    data_json = JSON.parse(request.body.read)
-    calculate_price
+    data_json_type = params[:type]
 
-    if data_json[:type] == "source.chargeable"
+    if data_json_type == "source.chargeable"
       create_stripe_charge
+      session[:status] = "pending"
     end
 
-    if data_json[:type] == "charge.succeeded"
-      success
-      # send order confirmation email etc..
+    if data_json_type == "charge.succeeded"
+      session[:status] = "success"
     end
+    render status: 200
   end
 
  	private
@@ -59,13 +65,13 @@ class CustomersController < ApplicationController
         name: @name.to_s,
       },
       redirect: {
-        return_url: betalen_status_update_url
+        return_url: bedankt_url
       }
     )
   end
 
   def create_stripe_charge
-    @charge = Stripe::Charge.create({
+    Stripe::Charge.create({
       amount: session[:price],
       currency: 'eur',
       source: session[:stripe_source_id]
@@ -79,8 +85,4 @@ class CustomersController < ApplicationController
 		shipping_address_attributes: [:id, :first_name, :last_name, :address, :address_addition,
                                  :zip_code, :city, :phone, :email, :floor, :elevator])
  	end
-
-  def set_stripe_api_key
-    Stripe.api_key = 'pk_test_vOGZ3ipJUgNexw21Y5CjmK7U'
-  end
 end

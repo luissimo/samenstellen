@@ -7,5 +7,6 @@ Rails.application.routes.draw do
   get 'customers/new'   => 'customers#new'
   post 'customers/new'  => 'customers#create'
   get 'bedankt'					=> 'customers#success'
-  post 'bedankt'				=> 'customers#bedankt'
+  match 'betalen/status/update', to: 'customers#webhook', via: [:get, :post]
+
 end

@@ -19,6 +19,7 @@ gem 'jbuilder', '~> 2.5'
 
 group :development, :test do
 	gem 'sqlite3'
+	gem 'dotenv-rails'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
 end

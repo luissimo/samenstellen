@@ -1,6 +1,7 @@
 class CustomersController < ApplicationController
 
-  protect_from_forgery :except => :success
+  protect_from_forgery :except => :webhook
+  before_action :set_stripe_api_key, except: [:new]
 
 	include MattressPrices
 
@@ -15,11 +16,12 @@ class CustomersController < ApplicationController
   	@customer = Customer.new(customer_params.merge({ session_id: session.id }))
   	@name = Mattress.all.where(session_id: session.id).last.name
 		calculate_price
+    session[:price] = @price
 
   	respond_to do |format|
       if @customer.save
-      	set_stripe_api_key
         create_stripe_source
+        session[:stripe_source_id] = @payment[:id]
         format.html { redirect_to @payment[:redirect][:url] }
       else
         format.html { render :new }
@@ -29,15 +31,21 @@ class CustomersController < ApplicationController
   end
 
   def success
-    event_json = JSON.parse(request.body.read)
-    status 200
-    if source.chargeable
-      calculate_price
-      set_stripe_api_key
-      @status = "Bedankt voor je bestelling!"
-    else
-      @status = 'Jammer, de betaling is mislukt, wij hopen jou in de toekomst alsnog te kunnen helpen!'
-   end
+    @status = "Bedankt voor je bestelling!"
+  end
+
+  def webhook
+    data_json = JSON.parse(request.body.read)
+    calculate_price
+
+    if data_json[:type] == "source.chargeable"
+      create_stripe_charge
+    end
+
+    if data_json[:type] == "charge.succeeded"
+      success
+      # send order confirmation email etc..
+    end
   end
 
  	private
@@ -45,37 +53,34 @@ class CustomersController < ApplicationController
   def create_stripe_source
     @payment = Stripe::Source.create(
       type: "ideal",
-      amount: @price,
+      amount: session[:price],
       currency: 'eur',
       owner: {
         name: @name.to_s,
       },
       redirect: {
-        return_url: bedankt_url
+        return_url: betalen_status_update_url
       }
     )
   end
 
   def create_stripe_charge
     @charge = Stripe::Charge.create({
-      amount: @price,
+      amount: session[:price],
       currency: 'eur',
-      source: @payment[:id]
+      source: session[:stripe_source_id]
     })
-  end
-
-
-  def set_stripe_api_key
-    Stripe.api_key = "pk_test_vOGZ3ipJUgNexw21Y5CjmK7U"
   end
 
  	def customer_params
  		params.require(:customer).permit(:id, :session_id, :comment,
- 																			billing_address_attributes: [:id, :first_name, :last_name, :address, :address_addition,
- 																																	 :zip_code, :city, :phone, :email, :floor, :elevator],
- 																			shipping_address_attributes: [:id, :first_name, :last_name, :address, :address_addition,
- 																																		:zip_code, :city, :phone, :email, :floor, :elevator])
+		billing_address_attributes: [:id, :first_name, :last_name, :address, :address_addition,
+																 :zip_code, :city, :phone, :email, :floor, :elevator],
+		shipping_address_attributes: [:id, :first_name, :last_name, :address, :address_addition,
+                                 :zip_code, :city, :phone, :email, :floor, :elevator])
  	end
 
-
+  def set_stripe_api_key
+    Stripe.api_key = 'pk_test_vOGZ3ipJUgNexw21Y5CjmK7U'
+  end
 end

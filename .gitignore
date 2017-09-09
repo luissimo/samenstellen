@@ -20,5 +20,8 @@
 # Ignore Byebug command history file.
 .byebug_history
 
+# Ignore dotenv files
+application.env
+
 # Ignore kladblok.txt
 kladblok.txt

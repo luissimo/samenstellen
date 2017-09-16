@@ -46,10 +46,10 @@
     = javascript_include_tag 'respond.min.js'
   %body
     = render 'partials/header'
-    = if notice
+    - if notice
       %p.alert.alert-info
         = notice
-    = if alert
+    - if alert
       %p.alert.alert-danger
         = alert
     = yield

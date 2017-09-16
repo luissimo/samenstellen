@@ -125,11 +125,12 @@
                 = f.radio_button :diseases, 'Reuma', class: 'required check_radio'
                 = f.label :diseases_c, 'Reuma'
               %li
-                = f.radio_button :diseases, 'Anders, namelijk', class: 'required check_radio'
-                = f.label :diseases_e, 'Anders, namelijk' ## FIXME -- ADD INPUT FIELD
-              %li
                 = f.radio_button :diseases, 'Nee, geen medische klachten', class: 'required check_radio'
-                = f.label :diseases_f, 'Nee, geen medische klachten'
+                = f.label :diseases_e, 'Nee, geen medische klachten'
+              %br/
+              %br/
+              %li
+                = f.text_field :diseases, class: 'required form-control', placeholder: 'Anders, namelijk..'
         / end step
         .step.row
           .col-md-12

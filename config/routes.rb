@@ -7,5 +7,4 @@ Rails.application.routes.draw do
   get 'customers/new'  			  => 'customers#new'
   post 'customers/new' 			  => 'customers#create'
   get 'bedankt'								=> 'customers#success'
-  post 'betaling_verwerken'		=> 'customers#process_payment'
 end

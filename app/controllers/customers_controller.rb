@@ -42,7 +42,7 @@ class CustomersController < ApplicationController
   def process_payment
     @source_status = Stripe::Source.retrieve(params[:source])[:status]
 
-    if @source_status.eql?('chargeable') #
+    if @source_status.eql?('chargeable')
      session[:status] = 'pending'
      Stripe::Charge.create({
        amount: session[:price],

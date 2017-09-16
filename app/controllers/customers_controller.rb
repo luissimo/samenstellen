@@ -15,7 +15,6 @@ class CustomersController < ApplicationController
   	@customer = Customer.new(customer_params.merge({ session_id: session.id }))
   	@name = Mattress.all.where(session_id: session.id).last.name
 		calculate_price
-    @price = 0
     session[:price] = @price
 
   	respond_to do |format|
@@ -23,6 +22,7 @@ class CustomersController < ApplicationController
         create_stripe_source
         session[:stripe_source_id] = @payment[:id]
         format.html { redirect_to @payment[:redirect][:url] }
+        format.json { head :ok }
       else
         format.html { render :new }
         format.json { render json: @mattress.errors, status: :unprocessable_entity }
@@ -47,9 +47,9 @@ class CustomersController < ApplicationController
    Stripe.api_key = Rails.env.production? ? 'sk_live_YfeYnic4BxlIQMiCsfjVIW2J' : 'sk_test_xzGY4kvQeiUKJayNHH0aWXoh'
 
    @data = Stripe::Source.retrieve(params[:source])[:status]
-   @parse = JSON.parse request
 
    if @data.eql?('chargeable')
+    head :ok
     session[:status] = 'pending'
     Stripe::Charge.create({
       amount: session[:price],
@@ -58,13 +58,15 @@ class CustomersController < ApplicationController
     })
     webhook
    elsif @data.eql?('consumed')
+    head :ok
     session[:status] = 'success'
     redirect_to bedankt_url
    else
-    session[:status] = @parse
+    head :ok
+    session[:status] = 'no status'
    end
 
-   head 200
+   head :ok
   end
 
  	private

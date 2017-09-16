@@ -15,7 +15,7 @@ class CustomersController < ApplicationController
   	@customer = Customer.new(customer_params.merge({ session_id: session.id }))
   	@name = Mattress.all.where(session_id: session.id).last.name
 		# calculate_price
-    @price = 0000 # test price
+    @price = 0001 # test price
     session[:price] = @price
 
   	respond_to do |format|

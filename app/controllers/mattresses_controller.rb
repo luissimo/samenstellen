@@ -12,7 +12,8 @@ class MattressesController < ApplicationController
   # GET /mattresses/1.json
   def show
     @mattress = Mattress.all.where(session_id: session.id).last
-    calculate_price
+    # calculate_price
+    @price = 0000
   end
 
   # GET /mattresses/new

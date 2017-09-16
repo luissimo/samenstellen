@@ -21,7 +21,9 @@
 .byebug_history
 
 # Ignore dotenv files
-application.env
+application.env.development
+application.env.production
+application.env.test
 
 # Ignore kladblok.txt
 kladblok.txt

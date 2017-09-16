@@ -11,5 +11,12 @@ module Samenstellen
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
+    if Rails.env.production?
+    	Dotenv.load Rails.root.join('application.env.production')
+    elsif Rails.env.development?
+    	Dotenv.load Rails.root.join('application.env.development')
+    else
+    	Dotenv.load Rails.root.join('application.env.test')
+    end
   end
 end

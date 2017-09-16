@@ -6,39 +6,32 @@
         #middle-wizard
           %h3.text-center Persoonlijke gegevens
           %br/
-          .col-md-6
+          .col-md-8.col-md-offset-2
             %ul.data-list
-              %li= ba.text_field :first_name, class: 'required form-control name_person_1', placeholder: 'Voornaam'
-              %li= ba.text_field :last_name, class: 'required form-control', placeholder: 'Achternaam'
-          .col-md-6
+              %li= ba.text_field :first_name, class: 'required form-control name_person_1', placeholder: 'Voornaam*'
+              %li= ba.text_field :last_name, class: 'required form-control', placeholder: 'Achternaam*'
+              %li= ba.text_field :phone, class: 'required form-control', placeholder: 'Telefoonnummer*'
+              %li= ba.email_field :email, class: 'required form-control', placeholder: 'E-mailadres*'
+
+          %h3.text-center Adresgegevens
+          .col-md-8.col-md-offset-2
             %ul.data-list
-              %li= ba.text_field :phone, class: 'required form-control', placeholder: 'Telefoonnummer'
-              %li= ba.email_field :email, class: 'required form-control', placeholder: 'E-mailadres'
+              %li= ba.text_field :address, class: 'required form-control', placeholder: 'Straatnaam + huisnummer*'
+              %li= ba.text_field :address_addition, class: 'required form-control', placeholder: 'Toevoeging (suite, appartement etc..)'
+              %li= ba.text_field :zip_code, class: 'required form-control', placeholder: 'Postcode*'
+              %li= ba.text_field :city, class: 'required form-control', placeholder: 'Stad*'
 
-          .col-md-12
-            %h3.text-center Adresgegevens
-            .col-md-6
-              %ul.data-list
-                %li= ba.text_field :address, class: 'required form-control name_person_1', placeholder: 'Straatnaam + huisnummer'
-                %li= ba.text_field :address_addition, class: 'required form-control', placeholder: 'Toevoeging (suite, appartement etc..)'
-            .col-md-6
-              %ul.data-list
-                %li= ba.text_field :zip_code, class: 'required form-control', placeholder: 'Postcode'
-                %li= ba.text_field :city, class: 'required form-control', placeholder: 'Stad'
-
-          .col-md-12
-            %h3.text-center Extra informatie
-            .col-md-6
-              %ul.data-list
-                %li= ba.text_field :floor, class: 'required form-control name_person_1', placeholder: 'Verdieping'
-                %li= ba.text_field :elevator, class: 'required form-control', placeholder: 'Is er een lift aanwezig'
-            .col-md-6
-              %ul.data-list
-                %li= ba.text_field :zip_code, class: 'required form-control', placeholder: 'Postcode'
-                %li= ba.text_field :city, class: 'required form-control', placeholder: 'Stad'
-      .col-md-8.col-md-offset-2
-        %ul.data-list
-          %li= f.text_area :comment, class: 'required form-control', placeholder: 'Extra bericht of notitite (optioneel)'
+          %h3.text-center Informatie
+          .col-md-8.col-md-offset-2
+            %ul.data-list
+              .styled-select
+                %li= ba.select :floor, [ 'Begane grond', '1e verdieping', '2e verdieping', '3e verdieping', '4e verdieping', '5e verdieping', '6e verdieping', '7e verdieping', '8e verdieping', '9e verdieping', '10e verdieping of hoger'], prompt: 'Op welke verdieping woon je?*', class: 'required form-control'
+              %br/
+              .styled-select
+                %li= ba.select :elevator, [ 'Ja, er is een lift.', 'Nee, er is geen lift.'], prompt: 'Is er een lift aanwezig?*', class: 'required form-control'
+          .col-md-8.col-md-offset-2
+            %ul.data-list
+              %li= f.text_area :comment, class: 'required form-control', placeholder: 'Extra bericht of notitie (optioneel)'
       %i.icon-check
       = f.submit 'Bekijk het resultaat..', class: 'btn btn-block btn-info submit', name: 'payment'
 

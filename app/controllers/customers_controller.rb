@@ -34,12 +34,10 @@ class CustomersController < ApplicationController
   def success
     webhook unless session[:status].eql?('success')
     case session[:status]
-    when 'pending'
-      @status = "Je bestelling wordt nog verwerkt.."
     when 'success'
       @status = "Je bestelling is in goede orde ontvangen!"
     else
-      @status = "Stel eerst je product samen!"
+      @status = "Er is iet misgegaan met de betaling, probeer het later nogmaals."
     end
   end
 
@@ -50,7 +48,6 @@ class CustomersController < ApplicationController
    @data = Stripe::Source.retrieve(params[:source])[:status]
 
    if @data.eql?('chargeable')
-    head :ok
     session[:status] = 'pending'
     Stripe::Charge.create({
       amount: session[:price],
@@ -59,15 +56,10 @@ class CustomersController < ApplicationController
     })
     webhook
    elsif @data.eql?('consumed')
-    head :ok
     session[:status] = 'success'
-    redirect_to bedankt_url
    else
-    head :ok
     session[:status] = 'no status'
    end
-
-   head :ok
   end
 
  	private

@@ -63,6 +63,8 @@ class CustomersController < ApplicationController
    else
     session[:status] = @parse
    end
+
+   head 200
   end
 
  	private

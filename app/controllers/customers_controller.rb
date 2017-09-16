@@ -2,7 +2,7 @@ class CustomersController < ApplicationController
 
   protect_from_forgery :except => :webhook
 
-	include MattressPrices
+	# include MattressPrices
 
   def new
   	@customer = Customer.new

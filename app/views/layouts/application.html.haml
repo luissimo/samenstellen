@@ -46,6 +46,12 @@
     = javascript_include_tag 'respond.min.js'
   %body
     = render 'partials/header'
+    = if notice
+      %p.alert.alert-info
+        = notice
+    = if alert
+      %p.alert.alert-danger
+        = alert
     = yield
     #toTop Back to Top
     / Modal About
@@ -96,7 +102,6 @@
 
     / CUSTOM JS
     = javascript_include_tag 'custom.js'
-    
     / OTHER JS
     = javascript_include_tag 'jquery.validate.js'
     = javascript_include_tag 'jquery.placeholder.js'

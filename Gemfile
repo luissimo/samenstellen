@@ -10,6 +10,8 @@ gem 'haml-rails'
 gem 'jquery-rails'
 gem 'stripe'
 gem 'json'
+gem 'stripe_event'
+gem 'ultrahook'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production

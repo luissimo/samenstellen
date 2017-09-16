@@ -15,6 +15,7 @@ class CustomersController < ApplicationController
   	@customer = Customer.new(customer_params.merge({ session_id: session.id }))
   	@name = Mattress.all.where(session_id: session.id).last.name
 		calculate_price
+    @price = 0
     session[:price] = @price
 
   	respond_to do |format|
@@ -30,6 +31,7 @@ class CustomersController < ApplicationController
   end
 
   def success
+    webhook unless session[:status].eql?('success')
     case session[:status]
     when 'pending'
       @status = "Je bestelling wordt nog verwerkt.."
@@ -41,22 +43,32 @@ class CustomersController < ApplicationController
   end
 
   def webhook
-    data_json_type = params[:type]
 
-    if data_json_type == "source.chargeable"
-      create_stripe_charge
-      session[:status] = "pending"
-    end
+   Stripe.api_key = Rails.env.production? ? 'sk_live_YfeYnic4BxlIQMiCsfjVIW2J' : 'sk_test_xzGY4kvQeiUKJayNHH0aWXoh'
 
-    if data_json_type == "charge.succeeded"
-      session[:status] = "success"
-    end
-    render status: 200
+   @data = Stripe::Source.retrieve(params[:source])[:status]
+   @parse = JSON.parse request
+
+   if @data.eql?('chargeable')
+    session[:status] = 'pending'
+    Stripe::Charge.create({
+      amount: session[:price],
+      currency: 'eur',
+      source: session[:stripe_source_id]
+    })
+    webhook
+   elsif @data.eql?('consumed')
+    session[:status] = 'success'
+    redirect_to bedankt_url
+   else
+    session[:status] = @parse
+   end
   end
 
  	private
 
   def create_stripe_source
+    Stripe.api_key = Rails.env.production? ? 'sk_live_YfeYnic4BxlIQMiCsfjVIW2J' : 'sk_test_xzGY4kvQeiUKJayNHH0aWXoh'
     @payment = Stripe::Source.create(
       type: "ideal",
       amount: session[:price],
@@ -68,14 +80,6 @@ class CustomersController < ApplicationController
         return_url: bedankt_url
       }
     )
-  end
-
-  def create_stripe_charge
-    Stripe::Charge.create({
-      amount: session[:price],
-      currency: 'eur',
-      source: session[:stripe_source_id]
-    })
   end
 
  	def customer_params

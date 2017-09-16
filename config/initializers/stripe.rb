@@ -1,5 +1,1 @@
-if Rails.env.development? || Rails.env.test?
-  Stripe.api_key = ENV['STRIPE_PUBLISHABLE_KEY_TEST']
-else
-	Stripe.api_key = ENV['STRIPE_PUBLISHABLE_KEY_LIVE']
-end
+Stripe.api_key = Rails.env.production? ? ENV['STRIPE_SECRET_KEY_LIVE'] : ENV['STRIPE_SECRET_KEY_TEST']

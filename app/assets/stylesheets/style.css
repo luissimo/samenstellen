@@ -406,7 +406,7 @@ header {
 }
 #logo a{
 	text-indent:-99999px;
-	background: url(logo-230x40.png) no-repeat 0 0;
+	background: url(image_path("logo-230x40.png")) no-repeat 0 0;
 	display:block;
 	height:32px;
 	width:151px;

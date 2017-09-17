@@ -18,7 +18,5 @@ module Samenstellen
     else
     	Dotenv.load Rails.root.join('application.env.test')
     end
-
-    config.serve_static_assets = true
   end
 end

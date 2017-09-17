@@ -1,0 +1,1 @@
+$(".name_person_1").change(function(){$(".show_name_person_1").text($(".name_person_1").val())});

@@ -354,7 +354,7 @@ a.button_medium_2:hover {background:#00aeef; color:#fff; border:2px solid  #00ae
 	font-weight:600;
 	text-transform:uppercase;
 	outline:none;
-	background:#282828;
+	background: #4285F4;
 	position:relative;
    }
 
@@ -367,31 +367,31 @@ a.button_medium_2:hover {background:#00aeef; color:#fff; border:2px solid  #00ae
 }
 
 .backward:before {
-	 content: "\f053";
+	content: "\<";
     font-family: FontAwesome;
     text-decoration: inherit;
     position: absolute;
 	font-weight:normal;
-    top: 8px;
-    left: 20px;
+    top: 15%;
+    left: 10%;
 	text-transform:none;
-	font-size:9px
+	font-size:15px
    }
 
-.forward {padding:7px 30px 7px 20px;}
+.forward {padding:7px 30px 7px 30px;}
    .forward:before {
-	 content: "\f054";
+	 content: "\>";
     font-family: FontAwesome;
     text-decoration: inherit;
     position: absolute;
 	font-weight:normal;
-    top: 8px;
-    right: 20px;
+    top: 15%;
+    right: 10%;
 	text-transform:none;
-	font-size:9px
+	font-size:15px
    }
 
-.backward:hover, .forward:hover {background:#4285F4; color:#fff;}
+.backward:hover, .forward:hover {background:#34A853; color:#fff;}
 
 
 /** Header ==================== **/
@@ -1001,15 +1001,41 @@ ul.floated li {
 #bottom-wizard {padding:15px 30px;}
 .backward, .forward, button[disabled].backward, button[disabled].forward  {
 	text-indent:-9999px;
-	width:50px;
+	width:100px;
 	padding:0;
 	height:40px;
    }
 .backward:before, .forward:before, button[disabled].backward:before, button[disabled].forward:before {
 	text-indent:0;
-	top:12px;
-	font-size:16px;
+	top:20%;
+	font-size:15px;
    }
+
+.backward:before {
+	content: "\<";
+    font-family: FontAwesome;
+    text-decoration: inherit;
+    position: absolute;
+	font-weight:bolder;
+    top: 17%;
+    left: 40%;
+	text-transform:none;
+	font-size:15px
+   }
+
+.forward {padding:7px 30px 7px 30px;}
+   .forward:before {
+	 content: "\>";
+    font-family: FontAwesome;
+    text-decoration: inherit;
+    position: absolute;
+	font-weight:bolder;
+    top: 17%;
+    right: 40%;
+	text-transform:none;
+	font-size:15px
+   }
+
 
 .qty-buttons span { top:10px; display:block; width:100px; left:120px; font-weight:bold; line-height:12px;}
 

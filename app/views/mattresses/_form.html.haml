@@ -18,21 +18,20 @@
               %ul.data-list
                 %li= f.text_field :name, class: 'required form-control name_person_1', placeholder: 'Voornaam'
                 %li= f.number_field :age, class: 'required form-control', placeholder: 'Leeftijd'
-                %li= f.email_field :email, class: 'required form-control', placeholder: 'E-mailadres'
             / end col-md-6
             .col-md-6
               %ul.data-list
-                %li= f.text_field :weight, class: 'required form-control', placeholder: 'Gewicht'
-                %li= f.number_field :length, class: 'required form-control', placeholder: 'Lengte'
-              %ul.data-list.floated.clearfix
-                %li
-                  = f.radio_button :gender, 'Man', class: 'required check_radio'
-                  %label.label_gender Man
-                %li
-                  = f.radio_button :gender, 'Vrouw', class: 'required check_radio'
-                  %label.label_gender Vrouw
-              %br/
-              %br/
+                %li= f.text_field :weight, class: 'required form-control', placeholder: 'Gewicht in kg'
+                %li= f.number_field :length, class: 'required form-control', placeholder: 'Lengte in cm'
+            .col-md-12
+              .col-md-2.col-md-offset-2
+                = f.radio_button :gender, 'Man', class: 'required check_radio'
+                %label.label_gender Man
+              .col-md-2.col-md-offset-4
+                = f.radio_button :gender, 'Vrouw', class: 'required check_radio'
+                %label.label_gender Vrouw
+            %br/
+            %br/
             / end col-md-6
           / end row
         / end step

@@ -2,22 +2,21 @@ class CustomersController < ApplicationController
 
   before_action :set_stripe_api_key
 
-	include MattressPrices
+  include MattressPrices
 
   def new
-  	@customer = Customer.new
-  	#@customer.build_billing_address
-  	#@customer.billing_address.build
-  	#@customer.build.shipping_address
+    @customer = Customer.new
+    @customer.build_billing_address
+    @customer.build_shipping_address
   end
 
   def create
-  	@customer = Customer.new(customer_params.merge({ session_id: session.id }))
-  	@name = Mattress.all.where(session_id: session.id).last.name
-		calculate_price
+    @customer = Customer.new(customer_params.merge({ session_id: session.id }))
+    @name = Mattress.all.where(session_id: session.id).last.name
+    calculate_price
     session[:price] = @price
 
-  	respond_to do |format|
+    respond_to do |format|
       if @customer.save
         create_stripe_source
         session[:stripe_source_id] = @payment[:id]
@@ -58,7 +57,7 @@ class CustomersController < ApplicationController
     end
   end
 
- 	private
+  private
 
   def create_stripe_source
     @payment = Stripe::Source.create(
@@ -74,13 +73,13 @@ class CustomersController < ApplicationController
     )
   end
 
- 	def customer_params
- 		params.require(:customer).permit(:id, :session_id, :comment,
-		billing_address_attributes: [:id, :first_name, :last_name, :address, :address_addition,
-																 :zip_code, :city, :phone, :email, :floor, :elevator],
-		shipping_address_attributes: [:id, :first_name, :last_name, :address, :address_addition,
+  def customer_params
+    params.require(:customer).permit(:id, :session_id, :comment,
+    billing_address_attributes: [:id, :first_name, :last_name, :address, :address_addition,
+                                 :zip_code, :city, :phone, :email, :floor, :elevator],
+    shipping_address_attributes: [:id, :first_name, :last_name, :address, :address_addition,
                                  :zip_code, :city, :phone, :email, :floor, :elevator])
- 	end
+  end
 
   def set_stripe_api_key
     Stripe.api_key = ENV['STRIPE_SECRET_KEY']

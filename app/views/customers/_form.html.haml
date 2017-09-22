@@ -20,6 +20,29 @@
               %li= ba.text_field :address_addition, class: 'required form-control', placeholder: 'Toevoeging (suite, appartement etc..)'
               %li= ba.text_field :zip_code, class: 'required form-control', placeholder: 'Postcode*'
               %li= ba.text_field :city, class: 'required form-control', placeholder: 'Stad*'
+              %li
+            %ul#terms.data-list
+              %li
+                %strong
+                  Verzenden naar een ander adres?
+                %label.switch-light.switch-ios
+                  %input.required.fix_ie8.ship_to_different_address{:name => "terms", :type => "checkbox", :value => "nee"}/
+                  %span
+                    %span.ie8_hide Nee
+                    %span Ja
+                  %a
+            %br/
+            %br/
+
+          = f.fields_for :shipping_address do |sa|
+            .ship_to_different_address_fields
+              %h3.text-center Verzendadres
+              .col-md-8.col-md-offset-2
+                %ul.data-list
+                  %li= sa.text_field :address, class: 'required form-control', placeholder: 'Straatnaam + huisnummer'
+                  %li= sa.text_field :address_addition, class: 'required form-control', placeholder: 'Toevoeging (suite, appartement etc..)'
+                  %li= sa.text_field :zip_code, class: 'required form-control', placeholder: 'Postcode'
+                  %li= sa.text_field :city, class: 'required form-control', placeholder: 'Stad'
 
           %h3.text-center Informatie
           .col-md-8.col-md-offset-2
@@ -32,6 +55,7 @@
           .col-md-8.col-md-offset-2
             %ul.data-list
               %li= f.text_area :comment, class: 'required form-control', placeholder: 'Extra bericht of notitie (optioneel)'
+
       %i.icon-check
       = f.submit 'Bekijk het resultaat..', class: 'btn btn-block btn-info submit', name: 'payment'
 

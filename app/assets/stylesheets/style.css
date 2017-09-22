@@ -19,7 +19,6 @@ CUSTOM. SHOW PAGE
 /*============================================================================================*/
 
 .wrapper-v4 {
-    max-width: 1500px;
     padding: 0 48px;
     margin: 0 auto;
     position: relative;
@@ -520,8 +519,13 @@ ul#footer-nav li {
 }
 
 #middle-wizard {
-	padding: 50px 125px 35px 125px;
+	padding: 50px 120px 50px 120px;
 }
+
+#middle-wizard-result {
+	padding: 50px 0px 50px 0px;
+}
+
 #bottom-wizard {
 	text-align:center;
 	padding:15px 120px;
@@ -915,12 +919,12 @@ ul.data-list-2 li label.error {
 
 @media (min-width: 768px) and (max-width: 1200px) {
 
-#middle-wizard {padding: 40px 60px 35px 60px;}
+#middle-wizard {padding: 40px 10px 40px 10px;}
 
 }
 @media (min-width: 768px) and (max-width: 979px) {
 
-#middle-wizard {padding: 40px 60px 35px 60px;}
+#middle-wizard {padding: 40px 10px 35px 10px;}
 #contact { background:none;}
 
 #footer_2 {text-align:center;}
@@ -951,10 +955,14 @@ ul.data-list-2 li label.error {
 .main-title p {font-size:16px;}
 
 h2, h3 {font-size: 26px;line-height:26px;margin-bottom:30px;}
-h2 span, h3 span{font-size: 16px; line-height:18px}
+h2 span, h3 span{
+	font-size: 22px;
+    font-weight: 600;
+    display: inline;
+}
 
 #top-wizard {padding:15px 6s0px;}
-#middle-wizard {padding: 20px 30px 20px 30px;}
+#middle-wizard {padding: 20px 10px 20px 10px;}
 
 ul.floated li#age {margin-bottom:-10px; }
 

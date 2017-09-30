@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170829181747) do
+ActiveRecord::Schema.define(version: 20170929111156) do
 
   create_table "billing_addresses", force: :cascade do |t|
     t.string "first_name"
@@ -45,7 +45,6 @@ ActiveRecord::Schema.define(version: 20170829181747) do
     t.string "sleep_position"
     t.string "body_shape"
     t.string "warm_sleeping"
-    t.string "diseases"
     t.string "neck_or_back_pain"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -53,6 +52,8 @@ ActiveRecord::Schema.define(version: 20170829181747) do
     t.string "mattress_length"
     t.string "mattress_width"
     t.string "category"
+    t.string "comfort"
+    t.string "diseases"
   end
 
   create_table "shipping_addresses", force: :cascade do |t|

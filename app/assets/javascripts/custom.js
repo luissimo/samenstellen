@@ -14,3 +14,13 @@ $('.ship_to_different_address').click(function() {
         $(".ship_to_different_address_fields").hide();
     }
 });
+
+// Show diseases on fields on click checkbox
+$(".diseases_options").hide();
+$('.show_diseases').click(function() {
+    if( $(this).is(':checked')) {
+        $(".diseases_options").show();
+    } else {
+        $(".diseases_options").hide();
+    }
+});

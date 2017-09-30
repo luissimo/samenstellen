@@ -7,36 +7,36 @@ module MattressPrices
 
     # last 2 zeros are eurocents for stripe payments
     if size('80cm', '200cm')
-      budget_comfort_deluxe(35500, 51900, 78900)
+      budget_comfort_premium(84500, 119500, 134500)
     elsif size('80cm', '210cm')
-      budget_comfort_deluxe(40900, 59900, 88900)
+      budget_comfort_premium(94500, 129500, 154500)
     elsif size('80cm', '220cm')
-      budget_comfort_deluxe(46900, 67900, 99900)
+      budget_comfort_premium(104500, 139500, 174500)
     elsif size('90cm', '200cm')
-      budget_comfort_deluxe(39900, 45900, 83900)
+      budget_comfort_premium(89500, 124500, 139500)
     elsif size('90cm', '210cm')
-      budget_comfort_deluxe(46900, 63900, 93900)
+      budget_comfort_premium(99500, 134500, 159500)
     elsif size('90cm', '220cm')
-      budget_comfort_deluxe(48900, 70900, 102900)
+      budget_comfort_premium(109500, 144500, 179500)
     elsif size('100cm', '200cm')
-      budget_comfort_deluxe(46900, 59900, 88900)
+      budget_comfort_premium(99500, 134500, 149500)
     elsif size('100cm', '210cm')
-      budget_comfort_deluxe(53900, 66900, 97500)
+      budget_comfort_premium(109500, 144500, 169500)
     elsif size('100cm', '220cm')
-      budget_comfort_deluxe(61900, 74900, 104900)
+      budget_comfort_premium(119500, 154500, 189500)
     else
       @price = 0000
     end
   end
 
-  def budget_comfort_deluxe(budget, comfort, deluxe)
+  def budget_comfort_premium(budget, comfort, premium)
     case @mattress.category
     when 'Budget'
       @price = budget
     when 'Comfort'
       @price = comfort
-    when 'Deluxe'
-      @price = deluxe
+    when 'Premium'
+      @price = premium
     end
   end
 

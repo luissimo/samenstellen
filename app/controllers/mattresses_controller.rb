@@ -38,11 +38,15 @@ class MattressesController < ApplicationController
 
   private
 
+  # def map_diseases_array
+  #   standard = ["", ]
+  # end
+
   # Never trust parameters from the scary internet, only allow the white list through.
   def mattress_params
     params.require(:mattress).permit(:id, :session_id, :name, :gender, :age,
                                      :email, :weight, :length, :sleep_position, :body_shape,
-                                     :warm_sleeping, :diseases, :neck_or_back_pain, :mattress_length,
-                                     :mattress_width, :category)
+                                     :warm_sleeping, :neck_or_back_pain, :mattress_length,
+                                     :mattress_width, :category, diseases: [])
   end
 end

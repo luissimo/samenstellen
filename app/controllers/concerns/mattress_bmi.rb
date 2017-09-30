@@ -1,12 +1,12 @@
-module MattressTexts
+module MattressBmi
   extend ActiveSupport::Concern
-  include mattress_bmi
 
   def calculate_bmi
     @mattress = Mattress.all.where(session_id: session.id).last
     return unless @mattress.weigth? && @mattress.length?
-    @mattress.weigth.to_i / (@mattress.length.to_i * @mattress.length.to_i)
+    @mattress.weigth.to_i * ( @mattress.length.to_i / @mattress.length.to_i)
   end
+
 
   def mattress_soft?
     calculate_bmi < 0.00191

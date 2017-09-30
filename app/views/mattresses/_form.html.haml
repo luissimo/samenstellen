@@ -102,8 +102,8 @@
           .col-md-8.col-md-offset-2
             %ul#terms.data-list
               %li
-                .switch-light.switch-ios
-                  %input.fix_ie8.show_diseases{:name => "terms", :type => "checkbox", :value => "nee"}/
+                %label.switch-light.switch-ios
+                  = f.check_box :diseases, { name: "mattress[diseases][]", class: "fix_ie8 show_diseases" }, nil, nil
                   %span
                     %span.ie8_hide Nee
                     %span Ja
@@ -170,8 +170,8 @@
                   = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Ziekte van Bechterew", nil
                   = f.label :option_q, "Ziekte van Bechterew"
                 %li
-                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Een andere ziekte die hier niet tussen staat", nil
-                  = f.label :option_r, "Een andere ziekte die hier niet tussen staat"
+                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Een andere medische klacht die hier niet tussen staat", nil
+                  = f.label :option_r, "Een andere medische klacht die hier niet tussen staat"
         / end step
         .step.row
           .col-md-6.col-md-offset-3

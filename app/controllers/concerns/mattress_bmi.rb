@@ -3,8 +3,8 @@ module MattressBmi
 
   def calculate_bmi
     @mattress = Mattress.all.where(session_id: session.id).last
-    return unless @mattress.weigth? && @mattress.length?
-    @mattress.weigth.to_i * ( @mattress.length.to_i / @mattress.length.to_i)
+    return unless @mattress.weight? && @mattress.length?
+    @mattress.weight.to_f / (@mattress.length.to_f * @mattress.length.to_f)
   end
 
 

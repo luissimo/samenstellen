@@ -6,4 +6,5 @@ class Mattress < ApplicationRecord
 # 											:length, :sleep_position, :body_shape,
 # 											:warm_sleeping, :diseases, :size, :format
   serialize :diseases
+
 end

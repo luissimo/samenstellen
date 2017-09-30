@@ -1,6 +1,7 @@
 class MattressesController < ApplicationController
 
   include MattressPrices
+  include MattressBmi
 
   # GET /mattresses
   # GET /mattresses.json
@@ -13,6 +14,7 @@ class MattressesController < ApplicationController
   def show
     @mattress = Mattress.all.where(session_id: session.id).last
     calculate_price
+    @bmi = calculate_bmi
   end
 
   # GET /mattresses/new
@@ -38,9 +40,11 @@ class MattressesController < ApplicationController
 
   private
 
-  # def map_diseases_array
-  #   standard = ["", ]
-  # end
+  def diseases_on?
+    mattress = Mattress.all.where(session_id: session.id).last
+    mattress.diseases.include?("on") unless mattress.diseases.nil?
+  end
+  helper_method :diseases_on?
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def mattress_params

@@ -2,6 +2,7 @@ class MattressesController < ApplicationController
 
   include MattressPrices
   include MattressBmi
+  include MattressTexts
 
   # GET /mattresses
   # GET /mattresses.json
@@ -15,6 +16,10 @@ class MattressesController < ApplicationController
     @mattress = Mattress.all.where(session_id: session.id).last
     calculate_price
     @bmi = calculate_bmi
+    @firmness_text = firmness_text
+    @comfort_text = comfort_text
+    @elasticity_text = elasticity_text
+    @heat_regulation_text = heat_regulation_text
   end
 
   # GET /mattresses/new

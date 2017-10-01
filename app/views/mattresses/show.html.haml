@@ -10,12 +10,6 @@
             .li-holder
               .li-content
                 .text-content
-                  .text-v4.text-center
-                    Op basis van de ingevulde gegevens komt er uit ons algoritme de volgende matras naar voren
-          %li
-            .li-holder
-              .li-content
-                .text-content
                   .text-v4
                     %table.table
                       %thead
@@ -24,21 +18,33 @@
                             €<strong>#{@price.to_s[0..-3].to_i}</strong> - Resultaat van #{@mattress.name}
                       %tbody
                         %tr
-                          %td #{@mattress.gender}
+                          %td
+                            Je bent een:
+                            %strong #{@mattress.gender}
                         %tr
-                          %td #{@mattress.age}
+                          %td
+                            Je leeftijd is:
+                            %strong #{@mattress.age}
                         %tr
-                          %td #{@mattress.weight}
+                          %td
+                            Je gewicht is:
+                            %strong #{@mattress.weight}
                         %tr
-                          %td #{@mattress.length}
+                          %td
+                            Je lengte is:
+                            %strong #{@mattress.length}
                         %tr
-                          %td Bmi: #{@bmi}
+                          %td
+                            Je BMI is:
+                            %strong #{@bmi}
+                        %tr
+                          %td
+                            .checkout_button.title-v4.text-center
+                              %a.btn-primary.btn-success.btn-block{href: customers_new_path}
+                                Afrekenen
                 .icon-holder-right
                   .icon
                     = image_tag("blauw-test.png", class: 'img-responsive')
-        .box-title.title-v4.text-center
-          %a.btn-primary.btn-success.btn-block{href: customers_new_path}
-            Afrekenen
 
 %section#main.container
   #survey_container_result_advice
@@ -85,7 +91,7 @@
                     .text-content
                       .title-smaller Elasticiteit
                       .text-v4
-                        Persoon 1 is een buikslaper. Wij delen hier de mening van onderzoekers: Het slapen op je buik is geen natuurlijke positie. Mensen die op hun buik slapen hebben vaak last van hun rug en nek. Dit komt doordat de rug een holle positie aanneemt en de rugwervels bekneld raken. Ook is je nek vaak ’s nachts volledig naar links of naar rechts gedraaid.
+                        = @elasticity_text
                       .title-extra-smaller Uitleg elasticiteit
                       .text-v4
                         De elasticiteit van een matras is de mate waarin het een aanpassend vermogen heeft op één specifiek punt. Je lichaamsvorm en slaappositie zijn van belang om de elasticiteit te bepalen. Een hoge elasticiteit zorgt namelijk dat mensen met curves beter kunnen inzakken in het matras, waardoor hun ruggengraat een betere positie aanneemt.
@@ -102,11 +108,10 @@
                     .text-content
                       .title-smaller Stevigheid
                       .text-v4
-                        Persoon 1 is een buikslaper. Wij delen hier de mening van onderzoekers: Het slapen op je buik is geen natuurlijke positie. Mensen die op hun buik slapen hebben vaak last van hun rug en nek. Dit komt doordat de rug een holle positie aanneemt en de rugwervels bekneld raken. Ook is je nek vaak ’s nachts volledig naar links of naar rechts gedraaid.
+                        = @firmness_text
                       .title-extra-smaller Uitleg stevigheid
                       .text-v4
                         De stevigheid van je matras wordt bepaald door je BMI, je lichaamsvorm en je slaappositie. BMI is een waarde die kijkt naar de verhouding tussen je lengte en je gewicht. Een matras moet een goed aanpassingsvermogen hebben voor ieder individu. Door te letten op deze drie aspecten kunnen we de optimale stevigheid bepalen voor jou.
-
               %li
                 .head-title-v4 Warmte-regulatie matras
                 .li-holder
@@ -114,7 +119,7 @@
                     .text-content
                       .title-smaller Warmte-regulatie
                       .text-v4
-                        Persoon 1 is een buikslaper. Wij delen hier de mening van onderzoekers: Het slapen op je buik is geen natuurlijke positie. Mensen die op hun buik slapen hebben vaak last van hun rug en nek. Dit komt doordat de rug een holle positie aanneemt en de rugwervels bekneld raken. Ook is je nek vaak ’s nachts volledig naar links of naar rechts gedraaid.
+                        = @heat_regulation_text
                       .title-extra-smaller Uitleg warmte-regulatie
                       .text-v4
                         Een van de aspecten die bijdragen aan een goede nachtrust is je lichaamstemperatuur. Sommige matrassen houden warmte vast, terwijl andere juist koud aanvoelen. Door de juiste materialen te kiezen zorgen wij dat jij de juiste lichaamstemperatuur krijgt tijdens het slapen.

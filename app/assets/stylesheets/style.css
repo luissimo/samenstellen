@@ -110,7 +110,7 @@ CUSTOM. SHOW PAGE
 
 #survey_container_result {
   background-color:#fff;
-   box-shadow: 0 0 50px green;
+   box-shadow: 0 0 10px green;
    margin-top:-400px;
    margin-bottom:60px;
    z-index:9;
@@ -119,11 +119,20 @@ CUSTOM. SHOW PAGE
 
 #survey_container_result_advice {
    background-color:#fff;
-   box-shadow: 0 0 50px red;
-   margin-top:-50px;
+   box-shadow: 0 0 10px green;
+   margin-top:-80px;
    margin-bottom:60px;
    z-index:9;
    position:relative;
+}
+
+.checkout_button {
+  border-color:  #abdbea;
+  padding: 20px 30px;
+  line-height: 50px;
+  font-size: 35px;
+  font-weight: 600;
+  letter-spacing: .2px;
 }
 
 /*============================================================================================*/

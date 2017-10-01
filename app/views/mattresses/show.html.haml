@@ -3,48 +3,52 @@
   #survey_container_result
     #middle-wizard-result
       .wrapper-v4
-        .box-title.title-v4.text-center
-          Tadaaa...
-        %ul
-          %li
-            .li-holder
-              .li-content
-                .text-content
-                  .text-v4
-                    %table.table
-                      %thead
-                        %tr
-                          %td.success
-                            €<strong>#{@price.to_s[0..-3].to_i}</strong> - Resultaat van #{@mattress.name}
-                      %tbody
-                        %tr
-                          %td
-                            Je bent een:
-                            %strong #{@mattress.gender}
-                        %tr
-                          %td
-                            Je leeftijd is:
-                            %strong #{@mattress.age}
-                        %tr
-                          %td
-                            Je gewicht is:
-                            %strong #{@mattress.weight}
-                        %tr
-                          %td
-                            Je lengte is:
-                            %strong #{@mattress.length}
-                        %tr
-                          %td
-                            Je BMI is:
-                            %strong #{@bmi}
-                        %tr
-                          %td
-                            .checkout_button.title-v4.text-center
-                              %a.btn-primary.btn-success.btn-block{href: customers_new_path}
-                                Afrekenen
-                .icon-holder-right
-                  .icon
-                    = image_tag("blauw-test.png", class: 'img-responsive')
+        .v4-bordered
+          .specs-box
+            .box-title.title-v4.text-center
+              Resultaat
+            %ul
+              %li
+                .li-holder
+                  .li-content
+                    .icon-holder-left
+                      .icon
+                        .summary_box
+                          %p
+                            Je hebt aangegeven last te hebben van medische klachten. Extra drukverlaging is van essentieel belang voor jou. Zo hebben je gewrichten en ledematen minimale tegendruk en geniet je van een gezonde bloedcirculatie omdat er geen knellingen plaatsvinden. Je hebt aangegeven last te hebben van medische klachten.
+                    .text-content
+                      .text-v4
+                        %table.table
+                          %thead
+                            %tr
+                              %td.success
+                                €<strong>#{@price.to_s[0..-3].to_i}</strong> - Resultaat van #{@mattress.name}
+                          %tbody
+                            %tr
+                              %td
+                                Je bent een:
+                                %strong #{@mattress.gender}
+                            %tr
+                              %td
+                                Je leeftijd is:
+                                %strong #{@mattress.age}
+                            %tr
+                              %td
+                                Je gewicht is:
+                                %strong #{@mattress.weight}
+                            %tr
+                              %td
+                                Je lengte is:
+                                %strong #{@mattress.length}
+                            %tr
+                              %td
+                                Je BMI is:
+                                %strong #{@bmi}
+                            %tr
+                              %td
+                                .checkout_button.title-v4.text-center
+                                  %a.btn-primary.btn-success.btn-block{href: customers_new_path}
+                                    Afrekenen
 
 %section#main.container
   #survey_container_result_advice

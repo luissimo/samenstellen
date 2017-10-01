@@ -3,6 +3,7 @@ class CustomersController < ApplicationController
   before_action :set_stripe_api_key
 
   include MattressPrices
+  include HelperConcern
 
   def new
     @customer = Customer.new

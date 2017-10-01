@@ -30,13 +30,17 @@ module MattressPrices
   end
 
   def budget_comfort_premium(budget, comfort, premium)
-    case @mattress.category
-    when 'Budget'
-      @price = budget
-    when 'Comfort'
-      @price = comfort
-    when 'Premium'
+    if diseases_on?
       @price = premium
+    else
+      case @mattress.category
+      when 'Budget'
+        @price = budget
+      when 'Comfort'
+        @price = comfort
+      when 'Premium'
+        @price = premium
+      end
     end
   end
 

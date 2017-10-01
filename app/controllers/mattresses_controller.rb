@@ -3,6 +3,7 @@ class MattressesController < ApplicationController
   include MattressPrices
   include MattressBmi
   include MattressTexts
+  include HelperConcern
 
   # GET /mattresses
   # GET /mattresses.json

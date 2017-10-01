@@ -4,6 +4,17 @@ module MattressTexts
 
   # Comfort
   def comfort_text
+    mattress = Mattress.all.where(session_id: session.id).last
+    comfort = mattress.comfort
+
+    case comfort
+    when 'Zacht'
+      "Je hebt aangegeven het liefst op een matras te slapen dat zacht aanvoelt. De comfortlaag van je matras zal dan ook zacht aanvoelen. Je kunt lekker inzinken in je matras."
+    when 'Niet hard, niet zacht'
+      "Je hebt aangegeven het liefst op een matras te slapen dat niet zacht of hard aanvoelt. Je matras krijgt een comfortlaag die hier rekening mee zal houden."
+    when 'Hard'
+      "Je hebt aangegeven het liefst op een matras te slapen dat hard aanvoelt. De comfortlaag van je matras zal dan ook hard aanvoelen. Je zult niet te ver inzinken in je matras."
+    end
   end
 
   # Elasticiteit
@@ -322,6 +333,18 @@ module MattressTexts
 
   # Warmte-regulatie
   def heat_regulation_text
+    mattress = Mattress.all.where(session_id: session.id).last
+    warm_sleeping = mattress.warm_sleeping
+
+    case warm_sleeping
+    when 'Koud'
+      "Je matras zal warm aanvoelen. Het is een matras die uiterst geschikt is voor mensen die het snel koud hebben. Het zal warmte-isolerend zijn en toch de juiste ventilatie hebben."
+    when 'Warm'
+      "Je matras zal koud aanvoelen. Het is een matras die zeer goed zal ademen en vocht afvoeren. Ventilatie is heel belangrijk voor mensen die het warm hebben tijdens het slapen."
+    when 'Niet warm, niet koud'
+      "Je matras zal optimale ventilatie en ademend vermogen bieden. Het maakt niet uit van wat voor materiaal jouw matras is gemaakt."
+    end
+
   end
 
 end

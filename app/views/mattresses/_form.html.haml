@@ -206,9 +206,6 @@
             %h3 Hoe moet je matras aanvoelen?
             %ul.data-list-2
               %li
-                = f.radio_button :comfort, 'Zeer zacht', class: 'required check_radio'
-                = f.label :comfort_a, 'Zeer zacht'
-              %li
                 = f.radio_button :comfort, 'Zacht', class: 'required check_radio'
                 = f.label :comfort_b, 'Zacht'
               %li
@@ -217,9 +214,6 @@
               %li
                 = f.radio_button :comfort, 'Hard', class: 'required check_radio'
                 = f.label :comfort_d, 'Hard'
-              %li
-                = f.radio_button :comfort, 'Zeer hard', class: 'required check_radio'
-                = f.label :comfort_d, 'Zeer hard'
         / end step
 
         .step.row

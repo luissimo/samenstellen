@@ -30,7 +30,7 @@ CUSTOM. SHOW PAGE
 .summary_box p {
   color: black;
   margin: 10px 10px 10px 10px;
-  font-size: 22px;
+  font-size: 18px;
 }
 
 .wrapper-v4 {
@@ -56,9 +56,18 @@ CUSTOM. SHOW PAGE
 .box-title {
     border-color:  #abdbea;
     background: whitesmoke;
-    padding: 20px 30px;
+    padding: 20px 10px;
     line-height: 50px;
     font-size: 40px;
+    font-weight: 700;
+    letter-spacing: .2px;
+}
+
+.box-title-small {
+    border-color:  #abdbea;
+    background: whitesmoke;
+    line-height: 50px;
+    font-size: 20px;
     font-weight: 700;
     letter-spacing: .2px;
 }
@@ -106,7 +115,7 @@ CUSTOM. SHOW PAGE
 
 .li-content {
   display: flex;
-    padding: 30px;
+  padding: 30px;
 }
 
 .text-content {
@@ -114,13 +123,18 @@ CUSTOM. SHOW PAGE
 }
 
 .icon-holder-left {
-  margin-right: 25px;
+  margin-left: 25px;
     flex: 355px;
 }
 
 .icon-holder-right {
   margin-left: 25px;
     flex: 355px;
+}
+
+.box-holder {
+  margin: 30px;
+  flex: 355px;
 }
 
 #survey_container_result {
@@ -149,6 +163,18 @@ CUSTOM. SHOW PAGE
   letter-spacing: .2px;
 }
 
+.img-responsive {
+    display: block;
+    height: auto;
+    max-width: 60%;
+}
+
+.read_more {
+  font-size: 22px;
+  font-weight: bolder;
+  text-decoration: dashed overline;
+  padding-left: 65%;
+}
 /*============================================================================================*/
 /* CUSTOM. BUTTONS */
 /*============================================================================================*/
@@ -950,12 +976,38 @@ ul.data-list-2 li label.error {
 
 @media (min-width: 768px) and (max-width: 1200px) {
 
+.li-content {
+  display: block;
+  padding: 10px 5px 10px 5px;
+}
+
+.box-holder {
+  flex: 355px;
+  margin: 0;
+}
 #middle-wizard {padding: 40px 10px 40px 10px;}
+.read_more {
+  display: none;
+}
 
 }
 @media (min-width: 768px) and (max-width: 979px) {
 
+.li-content {
+  display: block;
+  padding: 10px 5px 10px 5px;
+}
+
+.box-holder {
+  flex: 355px;
+  margin: 0;
+}
 #middle-wizard {padding: 40px 10px 35px 10px;}
+a .read_more {
+  font-size: 16px;
+  font-weight: bolder;
+  text-decoration: dashed overline;
+}
 #contact { background:none;}
 
 #footer_2 {text-align:center;}
@@ -972,6 +1024,20 @@ ul.data-list-2 li label.error {
 
 /* From tablet portrait to mobile */
 @media (max-width: 767px) {
+
+
+.li-content {
+  display: block;
+  padding: 10px 5px 10px 5px;
+}
+
+.box-holder {
+  flex: 355px;
+  margin: 0;
+}
+.read_more {
+  display: none;
+}
 
 #top-nav    {width:100%;float:left;}
 #top-nav      {display:none;}
@@ -1024,13 +1090,27 @@ ul.floated li {
 
 .li-content {
   display: block;
-    padding: 30px;
+  padding: 10px 5px 10px 5px;
 }
 
 }
 
 /* Mobile Landscape */
 @media (max-width: 480px) {
+
+.li-content {
+  display: block;
+  padding: 10px 5px 10px 5px;
+}
+
+.box-holder {
+  flex: 355px;
+  margin: 0;
+}
+
+.read_more {
+  display: none;
+}
 
 .main-title h1{font-size:24px;line-height:26px; margin-top:30px;}
 .main-title p {font-size:14px; ine-height:16px; }
@@ -1086,6 +1166,19 @@ ul.floated li {
 /* Mobile Portrait */
 @media only screen and (max-width: 320px) {
 
+
+.li-content {
+  display: block;
+  padding: 10px 5px 10px 5px;
+}
+
+.box-holder {
+  flex: 355px;
+  margin: 0;
+}
+.read_more {
+  display: none;
+}
 .main-title h1{font-size:24px;line-height:26px; margin-top:25px;}
 #survey_container {margin-top:-330px;margin-bottom:30px;}
 #top-nav ul {float: none; padding:20px 0 10px 0; margin:0; }

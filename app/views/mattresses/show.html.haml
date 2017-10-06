@@ -11,44 +11,51 @@
               %li
                 .li-holder
                   .li-content
-                    .icon-holder-left
+                    .box-holder
                       .icon
                         .summary_box
+                          .box-title-small.text-center
+                            Wat krijg je?
                           %p
                             Je hebt aangegeven last te hebben van medische klachten. Extra drukverlaging is van essentieel belang voor jou. Zo hebben je gewrichten en ledematen minimale tegendruk en geniet je van een gezonde bloedcirculatie omdat er geen knellingen plaatsvinden. Je hebt aangegeven last te hebben van medische klachten.
-                    .text-content
-                      .text-v4
-                        %table.table
-                          %thead
-                            %tr
-                              %td.success
-                                €<strong>#{@price.to_s[0..-3].to_i}</strong> - Resultaat van #{@mattress.name}
-                          %tbody
-                            %tr
-                              %td
-                                Je bent een:
-                                %strong #{@mattress.gender}
-                            %tr
-                              %td
-                                Je leeftijd is:
-                                %strong #{@mattress.age}
-                            %tr
-                              %td
-                                Je gewicht is:
-                                %strong #{@mattress.weight}
-                            %tr
-                              %td
-                                Je lengte is:
-                                %strong #{@mattress.length}
-                            %tr
-                              %td
-                                Je BMI is:
-                                %strong #{@bmi}
-                            %tr
-                              %td
-                                .checkout_button.title-v4.text-center
-                                  %a.btn-primary.btn-success.btn-block{href: customers_new_path}
-                                    Afrekenen
+                          %a.read_more{href: '#advies'} bekijk advies
+
+                    .box-holder
+                      .icon
+                        .summary_box
+                          .box-title-small.text-center
+                            Statistieken
+                          .text-content
+                            .text-v4
+                              %table.table
+                                %thead
+                                  %tr
+                                    %td.success
+                                      €<strong>#{@price.to_s[0..-3].to_i}</strong> - Resultaat van #{@mattress.name}
+                                %tbody
+                                  %tr
+                                    %td
+                                      Je bent een:
+                                      %strong #{@mattress.gender}
+                                  %tr
+                                    %td
+                                      Je leeftijd is:
+                                      %strong #{@mattress.age}
+                                  %tr
+                                    %td
+                                      Je gewicht is:
+                                      %strong #{@mattress.weight}
+                                  %tr
+                                    %td
+                                      Je lengte is:
+                                      %strong #{@mattress.length}
+                                  %tr
+                                    %td
+                                      Je BMI is:
+                                      %strong #{@bmi}
+                  .checkout_button.title-v4.text-center
+                    %a.btn-primary.btn-success.btn-block{href: customers_new_path}
+                      Afrekenen
 
 %section#main.container
   #survey_container_result_advice
@@ -56,7 +63,7 @@
       .wrapper-v4
         .v4-bordered
           .specs-boxs
-            .box-title.title-v4.text-center
+            .box-title.title-v4.text-center#advies
               Hoe komen wij op dit advies?
             %ul
               - if diseases_on?
@@ -68,9 +75,9 @@
                         .title-smaller Medische klachten
                         .text-v4
                           Je hebt aangegeven last te hebben van medische klachten. Extra drukverlaging is van essentieel belang voor jou. Zo hebben je gewrichten en ledematen minimale tegendruk en geniet je van een gezonde bloedcirculatie omdat er geen knellingen plaatsvinden.
-                        .title-extra-smaller Uitleg medische klachten
-                        .text-v4
-                          Medische matrassen bieden extra comfort en drukverlaging. Door de drukverlagende eigenschappen kunnen mensen die pijn ondervinden bij het slapen beter tot rust komen. Omdat er minimale druk wordt uitgeoefend op het lichaam zal de slaper veel minder last hebben van pijn.
+                        -# .title-extra-smaller Uitleg medische klachten
+                        -# .text-v4
+                        -#   Medische matrassen bieden extra comfort en drukverlaging. Door de drukverlagende eigenschappen kunnen mensen die pijn ondervinden bij het slapen beter tot rust komen. Omdat er minimale druk wordt uitgeoefend op het lichaam zal de slaper veel minder last hebben van pijn.
                       .icon-holder-right
                         .icon
                           = image_tag("medisch-matras.png", class: 'img-responsive')
@@ -85,9 +92,9 @@
                       .title-smaller Comfort
                       .text-v4
                         = @comfort_text
-                      .title-extra-smaller Uitleg comfort
-                      .text-v4
-                        Matrassen beschikken over een comfortlaag aan de bovenzijde en soms ook aan de onderzijde. Dit is iets anders dan de stevigheid van een matras. Een matras kan namelijk stevig zijn, maar toch lekker zacht aanvoelen. De comfortlaag is bepalend voor het gevoel dat je krijgt op je matras.
+                      -# .title-extra-smaller Uitleg comfort
+                      -# .text-v4
+                      -#   Matrassen beschikken over een comfortlaag aan de bovenzijde en soms ook aan de onderzijde. Dit is iets anders dan de stevigheid van een matras. Een matras kan namelijk stevig zijn, maar toch lekker zacht aanvoelen. De comfortlaag is bepalend voor het gevoel dat je krijgt op je matras.
               %li
                 .head-title-v4 Elasticiteit matras
                 .li-holder
@@ -96,9 +103,9 @@
                       .title-smaller Elasticiteit
                       .text-v4
                         = @elasticity_text
-                      .title-extra-smaller Uitleg elasticiteit
-                      .text-v4
-                        De elasticiteit van een matras is de mate waarin het een aanpassend vermogen heeft op één specifiek punt. Je lichaamsvorm en slaappositie zijn van belang om de elasticiteit te bepalen. Een hoge elasticiteit zorgt namelijk dat mensen met curves beter kunnen inzakken in het matras, waardoor hun ruggengraat een betere positie aanneemt.
+                      -# .title-extra-smaller Uitleg elasticiteit
+                      -# .text-v4
+                      -#   De elasticiteit van een matras is de mate waarin het een aanpassend vermogen heeft op één specifiek punt. Je lichaamsvorm en slaappositie zijn van belang om de elasticiteit te bepalen. Een hoge elasticiteit zorgt namelijk dat mensen met curves beter kunnen inzakken in het matras, waardoor hun ruggengraat een betere positie aanneemt.
                     .icon-holder-right
                       .icon
                         = image_tag("elasticiteit.png", class: 'img-responsive')
@@ -113,9 +120,9 @@
                       .title-smaller Stevigheid
                       .text-v4
                         = @firmness_text
-                      .title-extra-smaller Uitleg stevigheid
-                      .text-v4
-                        De stevigheid van je matras wordt bepaald door je BMI, je lichaamsvorm en je slaappositie. BMI is een waarde die kijkt naar de verhouding tussen je lengte en je gewicht. Een matras moet een goed aanpassingsvermogen hebben voor ieder individu. Door te letten op deze drie aspecten kunnen we de optimale stevigheid bepalen voor jou.
+                      -# .title-extra-smaller Uitleg stevigheid
+                      -# .text-v4
+                      -#   De stevigheid van je matras wordt bepaald door je BMI, je lichaamsvorm en je slaappositie. BMI is een waarde die kijkt naar de verhouding tussen je lengte en je gewicht. Een matras moet een goed aanpassingsvermogen hebben voor ieder individu. Door te letten op deze drie aspecten kunnen we de optimale stevigheid bepalen voor jou.
               %li
                 .head-title-v4 Warmte-regulatie matras
                 .li-holder
@@ -124,9 +131,9 @@
                       .title-smaller Warmte-regulatie
                       .text-v4
                         = @heat_regulation_text
-                      .title-extra-smaller Uitleg warmte-regulatie
-                      .text-v4
-                        Een van de aspecten die bijdragen aan een goede nachtrust is je lichaamstemperatuur. Sommige matrassen houden warmte vast, terwijl andere juist koud aanvoelen. Door de juiste materialen te kiezen zorgen wij dat jij de juiste lichaamstemperatuur krijgt tijdens het slapen.
+                      -# .title-extra-smaller Uitleg warmte-regulatie
+                      -# .text-v4
+                      -#   Een van de aspecten die bijdragen aan een goede nachtrust is je lichaamstemperatuur. Sommige matrassen houden warmte vast, terwijl andere juist koud aanvoelen. Door de juiste materialen te kiezen zorgen wij dat jij de juiste lichaamstemperatuur krijgt tijdens het slapen.
                     .icon-holder-right
                       .icon
                         = image_tag("warmte-regulatie.png", class: 'img-responsive')

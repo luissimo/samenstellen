@@ -1,0 +1,49 @@
+%h1 Listing double_mattress_ones
+
+%table
+  %thead
+    %tr
+      %th Name
+      %th Gender
+      %th Age
+      %th Email
+      %th Weight
+      %th Length
+      %th Sleep position
+      %th Body shape
+      %th Warm sleeping
+      %th Neck or back pain
+      %th Session
+      %th Mattress length
+      %th Mattress width
+      %th Category
+      %th Comfort
+      %th Diseases
+      %th
+      %th
+      %th
+
+  %tbody
+    - @double_mattress_ones.each do |double_mattress_one|
+      %tr
+        %td= double_mattress_one.name
+        %td= double_mattress_one.gender
+        %td= double_mattress_one.age
+        %td= double_mattress_one.email
+        %td= double_mattress_one.weight
+        %td= double_mattress_one.length
+        %td= double_mattress_one.sleep_position
+        %td= double_mattress_one.body_shape
+        %td= double_mattress_one.warm_sleeping
+        %td= double_mattress_one.neck_or_back_pain
+        %td= double_mattress_one.session_id
+        %td= double_mattress_one.mattress_length
+        %td= double_mattress_one.mattress_width
+        %td= double_mattress_one.category
+        %td= double_mattress_one.comfort
+        %td= double_mattress_one.diseases
+        %td= link_to 'Show', double_mattress_one
+
+%br
+
+= link_to 'New Double mattress one', new_double_mattress_one_path

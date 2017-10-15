@@ -13,7 +13,7 @@ class CustomersController < ApplicationController
 
   def create
     @customer = Customer.new(customer_params.merge({ session_id: session.id }))
-    @name = Mattress.all.where(session_id: session.id).last.name
+    @name = session[:name]
     calculate_price
     session[:price] = @price
 

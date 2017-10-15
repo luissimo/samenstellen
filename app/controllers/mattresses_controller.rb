@@ -14,6 +14,7 @@ class MattressesController < ApplicationController
   # GET /mattresses/1.json
   def show
     @mattress = Mattress.all.where(session_id: session.id).last
+    session[:name] = @mattress.name
     calculate_price
     @bmi = calculate_bmi
     @firmness_text = firmness_text
@@ -34,7 +35,7 @@ class MattressesController < ApplicationController
 
     respond_to do |format|
       if @mattress.save
-        format.html { redirect_to @mattress, notice: 'Mattress was successfully created.' }
+        format.html { redirect_to @mattress, notice: 'Je droommatras is aangemaakt!' }
         format.json { render :show, status: :created, location: @mattress }
       else
         format.html { render :new }

@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   resources :mattresses, path: 'matras', except: [:edit, :update, :destroy]
   resources :double_mattress_ones, path: '2persoonsmatras', except: [:edit, :update, :destroy]
+  resources :double_mattress_twos, path: '2persoonsmatras/duo', except: [:edit, :update, :destroy]
+
   root 'pages#index'
   get 'customers/new'  			  => 'customers#new'
   post 'customers/new' 			  => 'customers#create'

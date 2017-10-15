@@ -4,14 +4,10 @@ class DoubleMattressOnesController < ApplicationController
   include DoubleMattressOneBmi
   include DoubleMattressOnePrices
 
-  # GET /double_mattress_ones
-  # GET /double_mattress_ones.json
   def index
     @double_mattress_ones = DoubleMattressOne.all.where(session_id: session.id)
   end
 
-  # GET /double_mattress_ones/1
-  # GET /double_mattress_ones/1.json
   def show
     @double_mattress_one = DoubleMattressOne.all.where(session_id: session.id).last
     session[:name] = @double_mattress_one.name
@@ -23,13 +19,10 @@ class DoubleMattressOnesController < ApplicationController
     @heat_regulation_text = heat_regulation_text
   end
 
-  # GET /double_mattress_ones/new
   def new
     @double_mattress_one = DoubleMattressOne.new
   end
 
-  # POST /double_mattress_ones
-  # POST /double_mattress_ones.json
   def create
     @double_mattress_one = DoubleMattressOne.new( double_mattress_one_params.merge({ session_id: session.id }) )
 

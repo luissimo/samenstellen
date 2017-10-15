@@ -1,0 +1,59 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  name2: MyString
+  gender: MyString
+  gender2: MyString
+  age: 1
+  age2: 1
+  email: MyString
+  weight: MyString
+  weight2: MyString
+  length: 1
+  length2: 1
+  sleep_position: MyString
+  sleep_position2: MyString
+  body_shape: MyString
+  body_shape2: MyString
+  warm_sleeping: MyString
+  warm_sleeping2: MyString
+  neck_or_back_pain: MyString
+  neck_or_back_pain2: MyString
+  session_id: MyString
+  mattress_length: MyString
+  mattress_width: MyString
+  category: MyString
+  comfort: MyString
+  comfort2: MyString
+  diseases: MyString
+  diseases2: MyString
+
+two:
+  name: MyString
+  name2: MyString
+  gender: MyString
+  gender2: MyString
+  age: 1
+  age2: 1
+  email: MyString
+  weight: MyString
+  weight2: MyString
+  length: 1
+  length2: 1
+  sleep_position: MyString
+  sleep_position2: MyString
+  body_shape: MyString
+  body_shape2: MyString
+  warm_sleeping: MyString
+  warm_sleeping2: MyString
+  neck_or_back_pain: MyString
+  neck_or_back_pain2: MyString
+  session_id: MyString
+  mattress_length: MyString
+  mattress_width: MyString
+  category: MyString
+  comfort: MyString
+  comfort2: MyString
+  diseases: MyString
+  diseases2: MyString

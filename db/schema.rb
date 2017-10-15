@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171014141443) do
+ActiveRecord::Schema.define(version: 20171015122628) do
 
   create_table "billing_addresses", force: :cascade do |t|
     t.string "first_name"
@@ -52,6 +52,38 @@ ActiveRecord::Schema.define(version: 20171014141443) do
     t.string "category"
     t.string "comfort"
     t.string "diseases"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "double_mattress_twos", force: :cascade do |t|
+    t.string "name"
+    t.string "name2"
+    t.string "gender"
+    t.string "gender2"
+    t.integer "age"
+    t.integer "age2"
+    t.string "email"
+    t.string "weight"
+    t.string "weight2"
+    t.integer "length"
+    t.integer "length2"
+    t.string "sleep_position"
+    t.string "sleep_position2"
+    t.string "body_shape"
+    t.string "body_shape2"
+    t.string "warm_sleeping"
+    t.string "warm_sleeping2"
+    t.string "neck_or_back_pain"
+    t.string "neck_or_back_pain2"
+    t.string "session_id"
+    t.string "mattress_length"
+    t.string "mattress_width"
+    t.string "category"
+    t.string "comfort"
+    t.string "comfort2"
+    t.string "diseases"
+    t.string "diseases2"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

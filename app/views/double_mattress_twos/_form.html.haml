@@ -1,0 +1,449 @@
+%section#main.container
+  / Start Survey container
+  #survey_container
+    #top-wizard
+      %strong
+        Voortgang
+        %span#location
+      #progressbar
+      .shadow
+    / end top-wizard
+    = form_for @double_mattress_two do |f|
+      #middle-wizard
+        .step
+          .row
+            %h2.col-md-12.text-center Wie slapen op deze matrassen?
+            %br/
+            .col-md-6
+              %h2 Persoon 1
+              %ul.data-list
+                %li= f.text_field :name, class: 'required form-control name_person_1', placeholder: 'Voornaam'
+                %li= f.number_field :age, class: 'required form-control', placeholder: 'Leeftijd'
+                %li= f.text_field :weight, class: 'required form-control', placeholder: 'Gewicht in kg'
+                %li= f.number_field :length, class: 'required form-control', placeholder: 'Lengte in cm'
+                %li
+                  = f.radio_button :gender, 'Man', class: 'required check_radio'
+                  %label.label_gender Man
+                %li
+                  = f.radio_button :gender, 'Vrouw', class: 'required check_radio'
+                  %label.label_gender Vrouw
+            / end col-md-6
+            .col-md-6
+              %h2 Persoon 2
+              %ul.data-list
+                %li= f.text_field :name2, class: 'required form-control name_person_2', placeholder: 'Voornaam'
+                %li= f.number_field :age2, class: 'required form-control', placeholder: 'Leeftijd'
+                %li= f.text_field :weight2, class: 'required form-control', placeholder: 'Gewicht in kg'
+                %li= f.number_field :length2, class: 'required form-control', placeholder: 'Lengte in cm'
+                %li
+                  = f.radio_button :gender2, 'Man', class: 'required check_radio'
+                  %label.label_gender Man
+                %li
+                  = f.radio_button :gender2, 'Vrouw', class: 'required check_radio'
+                  %label.label_gender Vrouw
+            %br/
+            %br/
+            / end col-md-6
+          / end row
+        / end step
+        .step.row
+          .col-md-6
+            %h3
+              Hoe slaapt
+              %span.show_name_person_1
+              normaal gesproken? *
+            %ul.data-list-2
+              %li
+                = f.radio_button :sleep_position, 'Rug', class: 'required check_radio'
+                = f.label :sleep_position_a, 'Rug'
+              %li
+                = f.radio_button :sleep_position, 'Zij', class: 'required check_radio'
+                = f.label :sleep_position_b, 'Zij'
+              %li
+                = f.radio_button :sleep_position, 'Buik', class: 'required check_radio'
+                = f.label :sleep_position_c, 'Buik'
+          .col-md-6
+            %h3
+              Hoe slaapt
+              %span.show_name_person_2
+              normaal gesproken? *
+            %ul.data-list-2
+              %li
+                = f.radio_button :sleep_position2, 'Rug', class: 'required check_radio'
+                = f.label :sleep_position_2_a, 'Rug'
+              %li
+                = f.radio_button :sleep_position2, 'Zij', class: 'required check_radio'
+                = f.label :sleep_position_2_b, 'Zij'
+              %li
+                = f.radio_button :sleep_position2, 'Buik', class: 'required check_radio'
+                = f.label :sleep_position_2_c, 'Buik'
+        / end step
+
+        .step.row
+          .col-md-6
+            %h3
+              Heeft
+              %span.show_name_person_1
+              weleens nek-of rugklachten? *
+            %ul.data-list-2
+              %li
+                = f.radio_button :neck_or_back_pain, 'Ja, nekklachten en rugklachten', class: 'required check_radio'
+                = f.label :neck_or_back_pain_a, 'Ja, nekklachten en rugklachten'
+              %li
+                = f.radio_button :neck_or_back_pain, 'Ja, alleen nekklachten', class: 'required check_radio'
+                = f.label :neck_or_back_pain_b, 'Ja, alleen nekklachten'
+              %li
+                = f.radio_button :neck_or_back_pain, 'Ja, alleen rugklachten', class: 'required check_radio'
+                = f.label :neck_or_back_pain_c, 'Ja, alleen rugklachten'
+              %li
+                = f.radio_button :neck_or_back_pain, 'Nee, geen klachten', class: 'required check_radio'
+                = f.label :neck_or_back_pain_d, 'Nee, geen klachten'
+          .col-md-6
+            %h3
+              Heeft
+              %span.show_name_person_2
+              weleens nek-of rugklachten? *
+            %ul.data-list-2
+              %li
+                = f.radio_button :neck_or_back_pain2, 'Ja, nekklachten en rugklachten', class: 'required check_radio'
+                = f.label :neck_or_back_pain_2_a, 'Ja, nekklachten en rugklachten'
+              %li
+                = f.radio_button :neck_or_back_pain2, 'Ja, alleen nekklachten', class: 'required check_radio'
+                = f.label :neck_or_back_pain_2_b, 'Ja, alleen nekklachten'
+              %li
+                = f.radio_button :neck_or_back_pain2, 'Ja, alleen rugklachten', class: 'required check_radio'
+                = f.label :neck_or_back_pain_2_c, 'Ja, alleen rugklachten'
+              %li
+                = f.radio_button :neck_or_back_pain2, 'Nee, geen klachten', class: 'required check_radio'
+                = f.label :neck_or_back_pain_2_d, 'Nee, geen klachten'
+
+        / end step
+        .step.row
+          .col-md-6
+            %h3
+              Wat is de lichaamsvorm van
+              %span.show_name_person_1
+              ? *
+            %ul.data-list-2
+              %li
+                = f.radio_button :body_shape, 'Brede schouders', class: 'required check_radio'
+                = f.label :body_shape_a, 'Ik heb brede schouders'
+              %li
+                = f.radio_button :body_shape, 'Brede heupen', class: 'required check_radio'
+                = f.label :body_shape_b, 'Ik heb brede heupen'
+              %li
+                = f.radio_button :body_shape, 'Brede schouders en heupen', class: 'required check_radio'
+                = f.label :body_shape_c, 'Ik heb brede schouders en heupen'
+              %li
+                = f.radio_button :body_shape, 'Geen van bovenstaande', class: 'required check_radio'
+                = f.label :body_shape_d, 'Geen van bovenstaande'
+
+          .col-md-6
+            %h3
+              Wat is de lichaamsvorm van
+              %span.show_name_person_2
+              ? *
+            %ul.data-list-2
+              %li
+                = f.radio_button :body_shape2, 'Brede schouders', class: 'required check_radio'
+                = f.label :body_shape_2_a, 'Ik heb brede schouders'
+              %li
+                = f.radio_button :body_shape2, 'Brede heupen', class: 'required check_radio'
+                = f.label :body_shape_2_b, 'Ik heb brede heupen'
+              %li
+                = f.radio_button :body_shape2, 'Brede schouders en heupen', class: 'required check_radio'
+                = f.label :body_shape_2_c, 'Ik heb brede schouders en heupen'
+              %li
+                = f.radio_button :body_shape2, 'Geen van bovenstaande', class: 'required check_radio'
+                = f.label :body_shape_2_d, 'Geen van bovenstaande'
+
+        / end step
+        .step.row
+          .col-md-6
+            %h3
+              Heeft
+              %span.show_name_person_1
+               het eerder koud of warm in bed? *
+            %ul.data-list-2
+              %li
+                = f.radio_button :warm_sleeping, 'Koud', class: 'required check_radio'
+                = f.label :warm_sleeping_a, 'Koud'
+              %li
+                = f.radio_button :warm_sleeping, 'Warm', class: 'required check_radio'
+                = f.label :warm_sleeping_b, 'Warm'
+              %li
+                = f.radio_button :warm_sleeping, 'Niet warm, niet koud', class: 'required check_radio'
+                = f.label :warm_sleeping_c, 'Niet warm, niet koud'
+
+          .col-md-6
+            %h3
+              Heeft
+              %span.show_name_person_2
+               het eerder koud of warm in bed? *
+            %ul.data-list-2
+              %li
+                = f.radio_button :warm_sleeping2, 'Koud', class: 'required check_radio'
+                = f.label :warm_sleeping_2_a, 'Koud'
+              %li
+                = f.radio_button :warm_sleeping2, 'Warm', class: 'required check_radio'
+                = f.label :warm_sleeping_2_b, 'Warm'
+              %li
+                = f.radio_button :warm_sleeping2, 'Niet warm, niet koud', class: 'required check_radio'
+                = f.label :warm_sleeping_2_c, 'Niet warm, niet koud'
+
+        / end step
+        .step.row
+          .col-md-8.col-md-offset-3
+            %h3
+              Heeft
+              %span.show_name_person_1
+              medische klachten? Zo ja, welke?
+          .col-md-8.col-md-offset-2
+            %ul#terms.data-list
+              %li
+                %label.switch-light.switch-ios
+                  = f.check_box :diseases, { name: "double_mattress_two[diseases][]", class: "fix_ie8 show_diseases" }, nil, nil
+                  %span
+                    %span.ie8_hide Nee
+                    %span Ja
+                  %a
+            %br/
+            %br/
+
+          .col-md-12.diseases_options
+            %ul.data-list-2
+              .col-md-4
+                %li
+                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Artrose", nil
+                  = f.label :option_a, "Artrose"
+                %li
+                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Hernia", nil
+                  = f.label :option_b, "Hernia"
+                %li
+                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Decubitus", nil
+                  = f.label :option_c, "Decubitus"
+                %li
+                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Discusbulging", nil
+                  = f.label :option_d, "Discusbulging"
+                %li
+                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Discusdegeneratie", nil
+                  = f.label :option_e, "Discusdegeneratie"
+                %li
+                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Fibromyalgie", nil
+                  = f.label :option_f, "Fibromyalgie"
+
+              .col-md-4
+                %li
+                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Heupdysplasie", nil
+                  = f.label :option_g, "Heupdysplasie"
+                %li
+                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Hypermobiliteit", nil
+                  = f.label :option_h, "Hypermobiliteit"
+                %li
+                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Ischias", nil
+                  = f.label :option_i, "Ischias"
+                %li
+                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Lumbago", nil
+                  = f.label :option_j, "Lumbago"
+                %li
+                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Obesitas", nil
+                  = f.label :option_k, "Obesitas"
+                %li
+                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Osteoporose", nil
+                  = f.label :option_l, "Osteoporose"
+
+              .col-md-4
+                %li
+                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Parkinson", nil
+                  = f.label :option_m, "Parkinson"
+                %li
+                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Reuma", nil
+                  = f.label :option_n, "Reuma"
+                %li
+                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Spondylolyse", nil
+                  = f.label :option_o, "Spondylolyse"
+                %li
+                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Scoliose", nil
+                  = f.label :option_p, "Scoliose"
+                %li
+                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Ziekte van Bechterew", nil
+                  = f.label :option_q, "Ziekte van Bechterew"
+                %li
+                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Een andere medische klacht die hier niet tussen staat", nil
+                  = f.label :option_r, "Een andere medische klacht die hier niet tussen staat"
+
+        / end step
+        .step.row
+          .col-md-8.col-md-offset-3
+            %h3
+              Heeft
+              %span.show_name_person_2
+              medische klachten? Zo ja, welke?
+          .col-md-8.col-md-offset-2
+            %ul#terms.data-list
+              %li
+                %label.switch-light.switch-ios
+                  = f.check_box :diseases2, { name: "double_mattress_two[diseases2][]", class: "fix_ie8 show_diseases_2" }, nil, nil
+                  %span
+                    %span.ie8_hide Nee
+                    %span Ja
+                  %a
+            %br/
+            %br/
+
+          .col-md-12.diseases_options_2
+            %ul.data-list-2
+              .col-md-4
+                %li
+                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Artrose", nil
+                  = f.label :option_a, "Artrose"
+                %li
+                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Hernia", nil
+                  = f.label :option_b, "Hernia"
+                %li
+                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Decubitus", nil
+                  = f.label :option_c, "Decubitus"
+                %li
+                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Discusbulging", nil
+                  = f.label :option_d, "Discusbulging"
+                %li
+                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Discusdegeneratie", nil
+                  = f.label :option_e, "Discusdegeneratie"
+                %li
+                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Fibromyalgie", nil
+                  = f.label :option_f, "Fibromyalgie"
+
+              .col-md-4
+                %li
+                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Heupdysplasie", nil
+                  = f.label :option_g, "Heupdysplasie"
+                %li
+                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Hypermobiliteit", nil
+                  = f.label :option_h, "Hypermobiliteit"
+                %li
+                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Ischias", nil
+                  = f.label :option_i, "Ischias"
+                %li
+                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Lumbago", nil
+                  = f.label :option_j, "Lumbago"
+                %li
+                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Obesitas", nil
+                  = f.label :option_k, "Obesitas"
+                %li
+                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Osteoporose", nil
+                  = f.label :option_l, "Osteoporose"
+
+              .col-md-4
+                %li
+                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Parkinson", nil
+                  = f.label :option_m, "Parkinson"
+                %li
+                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Reuma", nil
+                  = f.label :option_n, "Reuma"
+                %li
+                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Spondylolyse", nil
+                  = f.label :option_o, "Spondylolyse"
+                %li
+                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Scoliose", nil
+                  = f.label :option_p, "Scoliose"
+                %li
+                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Ziekte van Bechterew", nil
+                  = f.label :option_q, "Ziekte van Bechterew"
+                %li
+                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Een andere medische klacht die hier niet tussen staat", nil
+                  = f.label :option_r, "Een andere medische klacht die hier niet tussen staat"
+
+        / end step
+        .step.row
+          .col-md-6.col-md-offset-3
+            %h3 Kies de gezamenlijke breedte en lengte van jullie matrassen
+            .col-md-4.col-md-offset-1
+              %ul.data-list-2
+                %h4 Breedte
+                %li
+                  = f.radio_button :mattress_width, '140cm', class: 'required check_radio'
+                  = f.label :mattress_width_a, '140cm'
+                %li
+                  = f.radio_button :mattress_width, '160cm', class: 'required check_radio'
+                  = f.label :mattress_width_b, '160cm'
+                %li
+                  = f.radio_button :mattress_width, '180cm', class: 'required check_radio'
+                  = f.label :mattress_width_c, '180cm'
+                %li
+                  = f.radio_button :mattress_width, '200cm', class: 'required check_radio'
+                  = f.label :mattress_width_d, '200cm'
+            .col-md-4.col-md-offset-1
+              %ul.data-list-2
+                %h4 Lengte
+                %li
+                  = f.radio_button :mattress_length, '200cm', class: 'required check_radio'
+                  = f.label :mattress_length_a, '200cm'
+                %li
+                  = f.radio_button :mattress_length, '210cm', class: 'required check_radio'
+                  = f.label :mattress_length_b, '210cm'
+                %li
+                  = f.radio_button :mattress_length, '220cm', class: 'required check_radio'
+                  = f.label :mattress_length_C, '220cm'
+
+        / end step
+        .step.row
+          .col-md-6
+            %h3
+              Hoe moet het matras van
+              %span.show_name_person_1
+              aanvoelen? *
+            %ul.data-list-2
+              %li
+                = f.radio_button :comfort, 'Zacht', class: 'required check_radio'
+                = f.label :comfort_a, 'Zacht'
+              %li
+                = f.radio_button :comfort, 'Niet hard, niet zacht', class: 'required check_radio'
+                = f.label :comfort_b, 'Niet hard, niet zacht'
+              %li
+                = f.radio_button :comfort, 'Hard', class: 'required check_radio'
+                = f.label :comfort_c, 'Hard'
+
+          .col-md-6
+            %h3
+              Hoe moet het matras van
+              %span.show_name_person_2
+              aanvoelen? *
+            %ul.data-list-2
+              %li
+                = f.radio_button :comfort2, 'Zacht', class: 'required check_radio'
+                = f.label :comfort_2_a, 'Zacht'
+              %li
+                = f.radio_button :comfort2, 'Niet hard, niet zacht', class: 'required check_radio'
+                = f.label :comfort_2_a, 'Niet hard, niet zacht'
+              %li
+                = f.radio_button :comfort2, 'Hard', class: 'required check_radio'
+                = f.label :comfort_2_a, 'Hard'
+
+        / end step
+        .step.row
+          .col-md-4.col-md-offset-4
+            %h3 Kies een comfortcategorie voor jullie matrassen
+            %ul.data-list-2
+              %li
+                = f.radio_button :category, 'Budget', class: 'required check_radio'
+                = f.label :category_a, 'Budget (Redelijk comfort)'
+              %li
+                = f.radio_button :category, 'Comfort', class: 'required check_radio'
+                = f.label :category_b, 'Comfort (Goed comfort)'
+              %li
+                = f.radio_button :category, 'Premium', class: 'required check_radio'
+                = f.label :category_c, 'Premium (Beste comfort)'
+        / end step
+
+        #complete.submit.step
+          %i.icon-check
+          %h3 Dit waren alle vragen, bekijk het resultaat door op de knop hieronder te klikken.
+          = f.submit 'Bekijk het resultaat..', class: 'btn btn-block btn-info submit', name: 'process'
+        / end submit step
+      / end middle-wizard
+      #bottom-wizard
+        %button.backward{:name => "Vorige", :type => "button"} Vorige
+        %button.forward{:name => "Volgende", :type => "button"} Volgende
+      / end bottom-wizard
+  / end Survey container
+/ end section main container

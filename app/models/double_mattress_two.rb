@@ -1,0 +1,2 @@
+class DoubleMattressTwo < ApplicationRecord
+end

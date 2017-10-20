@@ -1,10 +1,10 @@
 module MattressTexts
   extend ActiveSupport::Concern
-  include MattressBmi
+  include DoubleMattressOneBmi
 
   # Comfort
   def comfort_text
-    mattress = Mattress.all.where(session_id: session.id).last
+    mattress = DoubleMattressOne.all.where(session_id: session.id).last
     comfort = mattress.comfort
 
     case comfort
@@ -19,7 +19,7 @@ module MattressTexts
 
   # Elasticiteit
   def elasticity_text
-    mattress = Mattress.all.where(session_id: session.id).last
+    mattress = DoubleMattressOne.all.where(session_id: session.id).last
     sleep_position = mattress.sleep_position
     body_shape = mattress.body_shape
 
@@ -208,13 +208,13 @@ module MattressTexts
       when 'Buik'
         case body_shape # 3
         when 'Ik heb brede schouders'
-          "Door de combinatie van je gewicht, lengte en slaappositie heb je een medium matras nodig. Als buikslaper heb je een stevigere matras nodig dan gebruikelijk. Hierdoor blijft je wervelkolom zo recht mogelijk tijdens het slapen."
+          "Door de combinatie van je gewicht, lengte en slaapositie heb je een medium matras nodig. Als buikslaper heb je een stevigere matras nodig dan gebruikelijk. Hierdoor blijft je wervelkolom zo recht mogelijk tijdens het slapen."
         when 'Ik heb brede heupen'
-          "Door de combinatie van je gewicht, lengte en slaappositie heb je een medium matras nodig. Als buikslaper heb je een stevigere matras nodig dan gebruikelijk. Hierdoor blijft je wervelkolom zo recht mogelijk tijdens het slapen."
+          "Door de combinatie van je gewicht, lengte en slaapositie heb je een medium matras nodig. Als buikslaper heb je een stevigere matras nodig dan gebruikelijk. Hierdoor blijft je wervelkolom zo recht mogelijk tijdens het slapen."
         when 'Ik heb brede schouders en heupen'
-          "Door de combinatie van je gewicht, lengte en slaappositie heb je een medium matras nodig. Als buikslaper heb je een stevigere matras nodig dan gebruikelijk. Hierdoor blijft je wervelkolom zo recht mogelijk tijdens het slapen."
+          "Door de combinatie van je gewicht, lengte en slaapositie heb je een medium matras nodig. Als buikslaper heb je een stevigere matras nodig dan gebruikelijk. Hierdoor blijft je wervelkolom zo recht mogelijk tijdens het slapen."
         when 'Geen van bovenstaande'
-          "Door de combinatie van je gewicht, lengte en slaappositie heb je een medium matras nodig. Als buikslaper heb je een stevigere matras nodig dan gebruikelijk. Hierdoor blijft je wervelkolom zo recht mogelijk tijdens het slapen."
+          "Door de combinatie van je gewicht, lengte en slaapositie heb je een medium matras nodig. Als buikslaper heb je een stevigere matras nodig dan gebruikelijk. Hierdoor blijft je wervelkolom zo recht mogelijk tijdens het slapen."
         end
       end
 
@@ -245,13 +245,13 @@ module MattressTexts
       when 'Buik'
         case body_shape # 3
         when 'Ik heb brede schouders'
-          "Door de combinatie van je gewicht, lengte en slaappositie heb je een stevig matras nodig. Als buikslaper heb je een stevigere matras nodig dan gebruikelijk. Hierdoor blijft je wervelkolom zo recht mogelijk tijdens het slapen."
+          "Door de combinatie van je gewicht, lengte en slaapositie heb je een stevig matras nodig. Als buikslaper heb je een stevigere matras nodig dan gebruikelijk. Hierdoor blijft je wervelkolom zo recht mogelijk tijdens het slapen."
         when 'Ik heb brede heupen'
-          "Door de combinatie van je gewicht, lengte en slaappositie heb je een stevig matras nodig. Als buikslaper heb je een stevigere matras nodig dan gebruikelijk. Hierdoor blijft je wervelkolom zo recht mogelijk tijdens het slapen."
+          "Door de combinatie van je gewicht, lengte en slaapositie heb je een stevig matras nodig. Als buikslaper heb je een stevigere matras nodig dan gebruikelijk. Hierdoor blijft je wervelkolom zo recht mogelijk tijdens het slapen."
         when 'Ik heb brede schouders en heupen'
-          "Door de combinatie van je gewicht, lengte en slaappositie heb je een stevig matras nodig. Als buikslaper heb je een stevigere matras nodig dan gebruikelijk. Hierdoor blijft je wervelkolom zo recht mogelijk tijdens het slapen."
+          "Door de combinatie van je gewicht, lengte en slaapositie heb je een stevig matras nodig. Als buikslaper heb je een stevigere matras nodig dan gebruikelijk. Hierdoor blijft je wervelkolom zo recht mogelijk tijdens het slapen."
         when 'Geen van bovenstaande'
-          "Door de combinatie van je gewicht, lengte en slaappositie heb je een stevig matras nodig. Als buikslaper heb je een stevigere matras nodig dan gebruikelijk. Hierdoor blijft je wervelkolom zo recht mogelijk tijdens het slapen."
+          "Door de combinatie van je gewicht, lengte en slaapositie heb je een stevig matras nodig. Als buikslaper heb je een stevigere matras nodig dan gebruikelijk. Hierdoor blijft je wervelkolom zo recht mogelijk tijdens het slapen."
         end
       end
 
@@ -282,13 +282,13 @@ module MattressTexts
       when 'Buik'
         case body_shape # 3
         when 'Ik heb brede schouders'
-          "Door de combinatie van je gewicht, lengte en slaappositie heb je een zeer stevig matras nodig. Als buikslaper heb je een stevigere matras nodig dan gebruikelijk. Hierdoor blijft je wervelkolom zo recht mogelijk tijdens het slapen."
+          "Door de combinatie van je gewicht, lengte en slaapositie heb je een zeer stevig matras nodig. Als buikslaper heb je een stevigere matras nodig dan gebruikelijk. Hierdoor blijft je wervelkolom zo recht mogelijk tijdens het slapen."
         when 'Ik heb brede heupen'
-          "Door de combinatie van je gewicht, lengte en slaappositie heb je een zeer stevig matras nodig. Als buikslaper heb je een stevigere matras nodig dan gebruikelijk. Hierdoor blijft je wervelkolom zo recht mogelijk tijdens het slapen."
+          "Door de combinatie van je gewicht, lengte en slaapositie heb je een zeer stevig matras nodig. Als buikslaper heb je een stevigere matras nodig dan gebruikelijk. Hierdoor blijft je wervelkolom zo recht mogelijk tijdens het slapen."
         when 'Ik heb brede schouders en heupen'
-          "Door de combinatie van je gewicht, lengte en slaappositie heb je een zeer stevig matras nodig. Als buikslaper heb je een stevigere matras nodig dan gebruikelijk. Hierdoor blijft je wervelkolom zo recht mogelijk tijdens het slapen."
+          "Door de combinatie van je gewicht, lengte en slaapositie heb je een zeer stevig matras nodig. Als buikslaper heb je een stevigere matras nodig dan gebruikelijk. Hierdoor blijft je wervelkolom zo recht mogelijk tijdens het slapen."
         when 'Geen van bovenstaande'
-          "Door de combinatie van je gewicht, lengte en slaappositie heb je een zeer stevig matras nodig. Als buikslaper heb je een stevigere matras nodig dan gebruikelijk. Hierdoor blijft je wervelkolom zo recht mogelijk tijdens het slapen."
+          "Door de combinatie van je gewicht, lengte en slaapositie heb je een zeer stevig matras nodig. Als buikslaper heb je een stevigere matras nodig dan gebruikelijk. Hierdoor blijft je wervelkolom zo recht mogelijk tijdens het slapen."
         end
       end
 
@@ -319,13 +319,13 @@ module MattressTexts
       when 'Buik'
         case body_shape # 3
         when 'Ik heb brede schouders'
-          "Door de combinatie van je gewicht, lengte en slaappositie heb je een zeer stevig matras nodig. Als buikslaper heb je een stevigere matras nodig dan gebruikelijk. Hierdoor blijft je wervelkolom zo recht mogelijk tijdens het slapen. "
+          "Door de combinatie van je gewicht, lengte en slaapositie heb je een zeer stevig matras nodig. Als buikslaper heb je een stevigere matras nodig dan gebruikelijk. Hierdoor blijft je wervelkolom zo recht mogelijk tijdens het slapen. "
         when 'Ik heb brede heupen'
-          "Door de combinatie van je gewicht, lengte en slaappositie heb je een zeer stevig matras nodig. Als buikslaper heb je een stevigere matras nodig dan gebruikelijk. Hierdoor blijft je wervelkolom zo recht mogelijk tijdens het slapen."
+          "Door de combinatie van je gewicht, lengte en slaapositie heb je een zeer stevig matras nodig. Als buikslaper heb je een stevigere matras nodig dan gebruikelijk. Hierdoor blijft je wervelkolom zo recht mogelijk tijdens het slapen."
         when 'Ik heb brede schouders en heupen'
-          "Door de combinatie van je gewicht, lengte en slaappositie heb je een zeer stevig matras nodig. Als buikslaper heb je een stevigere matras nodig dan gebruikelijk. Hierdoor blijft je wervelkolom zo recht mogelijk tijdens het slapen."
+          "Door de combinatie van je gewicht, lengte en slaapositie heb je een zeer stevig matras nodig. Als buikslaper heb je een stevigere matras nodig dan gebruikelijk. Hierdoor blijft je wervelkolom zo recht mogelijk tijdens het slapen."
         when 'Geen van bovenstaande'
-          "Door de combinatie van je gewicht, lengte en slaappositie heb je een zeer stevig matras nodig. Als buikslaper heb je een stevigere matras nodig dan gebruikelijk. Hierdoor blijft je wervelkolom zo recht mogelijk tijdens het slapen."
+          "Door de combinatie van je gewicht, lengte en slaapositie heb je een zeer stevig matras nodig. Als buikslaper heb je een stevigere matras nodig dan gebruikelijk. Hierdoor blijft je wervelkolom zo recht mogelijk tijdens het slapen."
         end
       end
     end
@@ -333,7 +333,7 @@ module MattressTexts
 
   # Warmte-regulatie
   def heat_regulation_text
-    mattress = Mattress.all.where(session_id: session.id).last
+    mattress = DoubleMattressOne.all.where(session_id: session.id).last
     warm_sleeping = mattress.warm_sleeping
 
     case warm_sleeping

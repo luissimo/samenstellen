@@ -1,5 +1,7 @@
 class DoubleMattressTwosController < ApplicationController
 
+  include DoubleMattressTwoTexts
+  include DoubleMattressTwoPrices
 
   def index
     @double_mattress_twos = DoubleMattressTwo.all.where(session_id: session.id)
@@ -9,11 +11,25 @@ class DoubleMattressTwosController < ApplicationController
     @double_mattress_two = DoubleMattressTwo.all.where(session_id: session.id).last
     session[:name] = @double_mattress_two.name
     calculate_price
+
+    @both_persons_names = @double_mattress_two.name + ' & ' + @double_mattress_two.name2
+    # person 1
+    @person_1_name = @double_mattress_two.name + ':'
+
     @bmi = calculate_bmi
-    @firmness_text = firmness_text
     @comfort_text = comfort_text
     @elasticity_text = elasticity_text
+    @firmness_text = firmness_text
     @heat_regulation_text = heat_regulation_text
+
+    # person 2
+    @person_2_name = @double_mattress_two.name2 + ':'
+
+    @bmi_2 = calculate_bmi_2
+    @comfort_text_2 = comfort_text_2
+    @elasticity_text_2 = elasticity_text_2
+    @firmness_text_2 = firmness_text_2
+    @heat_regulation_text_2 = heat_regulation_text_2
   end
 
   def new
@@ -35,6 +51,19 @@ class DoubleMattressTwosController < ApplicationController
   end
 
   private
+
+    def double_mattress_two_diseases_on?
+      mattress = DoubleMattressTwo.all.where(session_id: session.id).last
+      mattress.diseases.include?("on") unless mattress.diseases.nil?
+    end
+    helper_method :double_mattress_two_diseases_on?
+
+    def double_mattress_two_diseases2_on?
+      mattress = DoubleMattressTwo.all.where(session_id: session.id).last
+      mattress.diseases2.include?("on") unless mattress.diseases2.nil?
+    end
+    helper_method :double_mattress_two_diseases2_on?
+
     # Never trust parameters from the scary internet, only allow the white list through.
     def double_mattress_two_params
       params.require(:double_mattress_two).permit(:name, :name2, :gender, :gender2, :age, :age2,

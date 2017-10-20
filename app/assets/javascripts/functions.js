@@ -2,7 +2,7 @@
 $(function() {
 	$(window).scroll(function() {
 		if($(this).scrollTop() > 600) {
-			$('#CheckOutButton').fadeIn();	
+			$('#CheckOutButton').fadeIn();
 		} else {
 			$('#CheckOutButton').fadeOut();
 		}
@@ -11,20 +11,20 @@ $(function() {
 
 if( window.innerWidth < 770 ) {
 	$("button.forward, button.backword").click(function() {
-  $("html, body").animate({ scrollTop: 115 }, "slow");
+  $("html, body").animate({ scrollTop: 115 }, "fast");
   return false;
 });
 }
 
 if( window.innerWidth < 500 ) {
 	$("button.forward, button.backword").click(function() {
-  $("html, body").animate({ scrollTop: 245 }, "slow");
+  $("html, body").animate({ scrollTop: 245 }, "fast");
   return false;
 });
 }
 if( window.innerWidth < 340 ) {
 	$("button.forward, button.backword").click(function() {
-  $("html, body").animate({ scrollTop: 280 }, "slow");
+  $("html, body").animate({ scrollTop: 280 }, "fast");
   return false;
 });
 }
@@ -40,14 +40,14 @@ jQuery(function($) {
 						var inputs = $(this).wizard('state').step.find(':input');
 						return !inputs.length || !!inputs.valid();
 					}
-			
+
 
 				}).validate({
-					errorPlacement: function(error, element) { 
+					errorPlacement: function(error, element) {
 						if ( element.is(':radio') || element.is(':checkbox') ) {
 							error.insertBefore( element.next() );
 
-						} else { 
+						} else {
 							error.insertAfter( element );
 						}
 					}
@@ -66,36 +66,36 @@ jQuery(function($) {
 			});
 
 // OHTER ===============================================================================
- $(document).ready(function(){   
-    
+ $(document).ready(function(){
+
 		//Menu mobile
 		$(".btn-responsive-menu").click(function() {
 			$("#top-nav").slideToggle(400);
 		});
-		
+
 		//Check and radio input styles
 		$('input.check_radio').iCheck({
     	checkboxClass: 'icheckbox_square-aero',
    	    radioClass: 'iradio_square-aero'
   		});
-		
+
 		//Pace holder
 		$('input, textarea').placeholder();
-				
+
 		//Carousel
 		$("#owl-demo").owlCarousel({
- 
+
 		items : 4,
 		itemsDesktop : [1199,3],
 		itemsDesktopSmall : [979,3]
-		 
+
 		});
-    
+
     });
 /*===================================================================================*/
 	/*  TWITTER FEED                                                                     */
 	/*===================================================================================*/
-	
+
 			$('.latest-tweets').each(function(){
 				$(this).tweet({
 				username: $(this).data('username'),
@@ -111,7 +111,7 @@ jQuery(function($) {
 				modpath: "./twitter/"
 			});
 		});
-		
+
 $('.latest-tweets').find('ul').addClass('slider');
 		  	if ( $().bxSlider ) {
 				var $this = $('.latest-tweets');
@@ -141,5 +141,5 @@ $('.latest-tweets').find('ul').addClass('slider');
 
 
 
-    
+
 

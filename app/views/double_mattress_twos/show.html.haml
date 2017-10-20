@@ -1,87 +1,166 @@
-%p#notice= notice
+%section#main.container
+  / Start Survey container
+  #survey_container_result
+    #middle-wizard-result
+      .wrapper-v4
+        .v4-bordered
+          .specs-box
+            .box-title.title-v4.text-center
+              Resultaat
+            %ul
+              %li
+                .li-holder
+                  .li-content
+                    .box-holder
+                      .icon
+                        .summary_box
+                          .box-title-small.text-center
+                            Wat krijg je?
+                          %p
+                            Je hebt aangegeven last te hebben van medische klachten. Extra drukverlaging is van essentieel belang voor jou. Zo hebben je gewrichten en ledematen minimale tegendruk en geniet je van een gezonde bloedcirculatie omdat er geen knellingen plaatsvinden. Je hebt aangegeven last te hebben van medische klachten.
+                          %a.read_more{href: '#advies'} bekijk advies
 
-%p
-  %b Name:
-  = @double_mattress_two.name
-%p
-  %b Name2:
-  = @double_mattress_two.name2
-%p
-  %b Gender:
-  = @double_mattress_two.gender
-%p
-  %b Gender2:
-  = @double_mattress_two.gender2
-%p
-  %b Age:
-  = @double_mattress_two.age
-%p
-  %b Age2:
-  = @double_mattress_two.age2
-%p
-  %b Email:
-  = @double_mattress_two.email
-%p
-  %b Weight:
-  = @double_mattress_two.weight
-%p
-  %b Weight2:
-  = @double_mattress_two.weight2
-%p
-  %b Length:
-  = @double_mattress_two.length
-%p
-  %b Length2:
-  = @double_mattress_two.length2
-%p
-  %b Sleep position:
-  = @double_mattress_two.sleep_position
-%p
-  %b Sleep position2:
-  = @double_mattress_two.sleep_position2
-%p
-  %b Body shape:
-  = @double_mattress_two.body_shape
-%p
-  %b Body shape2:
-  = @double_mattress_two.body_shape2
-%p
-  %b Warm sleeping:
-  = @double_mattress_two.warm_sleeping
-%p
-  %b Warm sleeping2:
-  = @double_mattress_two.warm_sleeping2
-%p
-  %b Neck or back pain:
-  = @double_mattress_two.neck_or_back_pain
-%p
-  %b Neck or back pain2:
-  = @double_mattress_two.neck_or_back_pain2
-%p
-  %b Session:
-  = @double_mattress_two.session_id
-%p
-  %b Mattress length:
-  = @double_mattress_two.mattress_length
-%p
-  %b Mattress width:
-  = @double_mattress_two.mattress_width
-%p
-  %b Category:
-  = @double_mattress_two.category
-%p
-  %b Comfort:
-  = @double_mattress_two.comfort
-%p
-  %b Comfort2:
-  = @double_mattress_two.comfort2
-%p
-  %b Diseases:
-  = @double_mattress_two.diseases
-%p
-  %b Diseases2:
-  = @double_mattress_two.diseases2
+                    .box-holder
+                      .icon
+                        .summary_box
+                          .box-title-small.text-center
+                            Statistieken
+                          .text-content
+                            .text-v4
+                              %table.table
+                                %thead
+                                  %tr
+                                    %td.success
+                                      €<strong>#{@price.to_s[0..-3].to_i}</strong> - Resultaat van #{@double_mattress_two.name}
+                                %tbody
+                                  %tr
+                                    %td
+                                      Je bent een:
+                                      %strong #{@double_mattress_two.gender}
+                                  %tr
+                                    %td
+                                      Je leeftijd is:
+                                      %strong #{@double_mattress_two.age}
+                                  %tr
+                                    %td
+                                      Je gewicht is:
+                                      %strong #{@double_mattress_two.weight}
+                                  %tr
+                                    %td
+                                      Je lengte is:
+                                      %strong #{@double_mattress_two.length}
+                                  %tr
+                                    %td
+                                      Je BMI is:
+                                      %strong #{@bmi}
+                  .checkout_button.title-v4.text-center
+                    %a.btn-primary.btn-success.btn-block{href: customers_new_path}
+                      Afrekenen
 
-= link_to 'Edit', edit_double_mattress_two_path(@double_mattress_two)
-\|
-= link_to 'Back', double_mattress_twos_path
+%section#main.container
+  #survey_container_result_advice
+    #middle-wizard-result
+      .wrapper-v4
+        .v4-bordered
+          .specs-boxs
+            .box-title.title-v4.text-center#advies
+              Hoe komen wij op dit advies?
+            %ul
+              - if !double_mattress_two_diseases_on? || !double_mattress_two_diseases2_on?
+                %li
+                  .head-title-v4 Medische klachten
+                  .li-holder
+                    .li-content
+                      .text-content
+                        - if !double_mattress_two_diseases_on? && !double_mattress_two_diseases2_on?
+                          .title-smaller= @both_persons_names
+                          .text-v4
+                            Jullie hebben allebei aangegeven last te hebben van medische klachten. Extra drukverlaging is van essentieel belang voor jullie. Zo hebben jullie gewrichten en ledematen minimale tegendruk en genieten jullie van een gezonde bloedcirculatie omdat er geen knellingen plaatsvinden.
+                          %br
+                        - elsif !double_mattress_two_diseases_on?
+                          .title-smaller= @person_1_name
+                          .text-v4
+                            Je hebt aangegeven last te hebben van medische klachten. Extra drukverlaging is van essentieel belang voor jou. Zo hebben je gewrichten en ledematen minimale tegendruk en geniet je van een gezonde bloedcirculatie omdat er geen knellingen plaatsvinden.
+                          %br
+                        - elsif !double_mattress_two_diseases2_on?
+                          .title-smaller= @person_2_name
+                          .text-v4
+                            Je hebt aangegeven last te hebben van medische klachten. Extra drukverlaging is van essentieel belang voor jou. Zo hebben je gewrichten en ledematen minimale tegendruk en geniet je van een gezonde bloedcirculatie omdat er geen knellingen plaatsvinden.
+                        -# .title-extra-smaller Uitleg medische klachten
+                        -# .text-v4
+                        -#   Medische matrassen bieden extra comfort en drukverlaging. Door de drukverlagende eigenschappen kunnen mensen die pijn ondervinden bij het slapen beter tot rust komen. Omdat er minimale druk wordt uitgeoefend op het lichaam zal de slaper veel minder last hebben van pijn.
+                      .icon-holder-right
+                        .icon
+                          = image_tag("medisch-matras.png", class: 'img-responsive')
+              %li
+                .head-title-v4 Comfort matras
+                .li-holder
+                  .li-content
+                    .icon-holder-left
+                      .icon
+                        = image_tag("comfort.png", class: 'img-responsive')
+                    .text-content
+                      .title-smaller= @person_1_name
+                      .text-v4
+                        = @comfort_text
+                      %br
+                      .title-smaller= @person_2_name
+                      .text-v4
+                        = @comfort_text_2
+                      -# .title-extra-smaller Uitleg comfort
+                      -# .text-v4
+                      -#   Matrassen beschikken over een comfortlaag aan de bovenzijde en soms ook aan de onderzijde. Dit is iets anders dan de stevigheid van een matras. Een matras kan namelijk stevig zijn, maar toch lekker zacht aanvoelen. De comfortlaag is bepalend voor het gevoel dat je krijgt op je matras.
+              %li
+                .head-title-v4 Elasticiteit matras
+                .li-holder
+                  .li-content
+                    .text-content
+                      .title-smaller= @person_1_name
+                      .text-v4
+                        = @elasticity_text
+                      %br
+                      .title-smaller= @person_2_name
+                      .text-v4
+                        = @elasticity_text_2
+                      -# .title-extra-smaller Uitleg elasticiteit
+                      -# .text-v4
+                      -#   De elasticiteit van een matras is de mate waarin het een aanpassend vermogen heeft op één specifiek punt. Je lichaamsvorm en slaappositie zijn van belang om de elasticiteit te bepalen. Een hoge elasticiteit zorgt namelijk dat mensen met curves beter kunnen inzakken in het matras, waardoor hun ruggengraat een betere positie aanneemt.
+                    .icon-holder-right
+                      .icon
+                        = image_tag("elasticiteit.png", class: 'img-responsive')
+              %li
+                .head-title-v4 Stevigheid matras
+                .li-holder
+                  .li-content
+                    .icon-holder-left
+                      .icon
+                        = image_tag("stevigheid.png", class: 'img-responsive')
+                    .text-content
+                      .title-smaller= @person_1_name
+                      .text-v4
+                        = @firmness_text
+                      %br
+                      .title-smaller= @person_2_name
+                      .text-v4
+                        = @firmness_text_2
+                      -# .title-extra-smaller Uitleg stevigheid
+                      -# .text-v4
+                      -#   De stevigheid van je matras wordt bepaald door je BMI, je lichaamsvorm en je slaappositie. BMI is een waarde die kijkt naar de verhouding tussen je lengte en je gewicht. Een matras moet een goed aanpassingsvermogen hebben voor ieder individu. Door te letten op deze drie aspecten kunnen we de optimale stevigheid bepalen voor jou.
+              %li
+                .head-title-v4 Warmte-regulatie matras
+                .li-holder
+                  .li-content
+                    .text-content
+                      .title-smaller= @person_1_name
+                      .text-v4
+                        = @heat_regulation_text
+                      %br
+                      .title-smaller= @person_2_name
+                      .text-v4
+                        = @heat_regulation_text_2
+                      -# .title-extra-smaller Uitleg warmte-regulatie
+                      -# .text-v4
+                      -#   Een van de aspecten die bijdragen aan een goede nachtrust is je lichaamstemperatuur. Sommige matrassen houden warmte vast, terwijl andere juist koud aanvoelen. Door de juiste materialen te kiezen zorgen wij dat jij de juiste lichaamstemperatuur krijgt tijdens het slapen.
+                    .icon-holder-right
+                      .icon
+                        = image_tag("warmte-regulatie.png", class: 'img-responsive')

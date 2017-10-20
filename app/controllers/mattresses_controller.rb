@@ -1,7 +1,6 @@
 class MattressesController < ApplicationController
 
   include MattressPrices
-  include MattressBmi
   include MattressTexts
 
   # GET /mattresses
@@ -46,17 +45,17 @@ class MattressesController < ApplicationController
 
   private
 
-  def diseases_on?
-    mattress = Mattress.all.where(session_id: session.id).last
-    mattress.diseases.include?("on") unless mattress.diseases.nil?
-  end
-  helper_method :diseases_on?
+    def diseases_on?
+      mattress = Mattress.all.where(session_id: session.id).last
+      mattress.diseases.include?("on") unless mattress.diseases.nil?
+    end
+    helper_method :diseases_on?
 
-  # Never trust parameters from the scary internet, only allow the white list through.
-  def mattress_params
-    params.require(:mattress).permit(:id, :session_id, :name, :gender, :age,
-                                     :email, :weight, :length, :sleep_position, :body_shape,
-                                     :warm_sleeping, :neck_or_back_pain, :mattress_length,
-                                     :mattress_width, :comfort, :category, diseases: [])
-  end
+    # Never trust parameters from the scary internet, only allow the white list through.
+    def mattress_params
+      params.require(:mattress).permit(:id, :session_id, :name, :gender, :age,
+                                       :email, :weight, :length, :sleep_position, :body_shape,
+                                       :warm_sleeping, :neck_or_back_pain, :mattress_length,
+                                       :mattress_width, :comfort, :category, diseases: [])
+    end
 end

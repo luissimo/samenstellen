@@ -1,7 +1,6 @@
 class DoubleMattressOnesController < ApplicationController
 
-  include MattressTexts
-  include DoubleMattressOneBmi
+  include DoubleMattressOneTexts
   include DoubleMattressOnePrices
 
   def index

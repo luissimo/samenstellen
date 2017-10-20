@@ -66,23 +66,23 @@
             .box-title.title-v4.text-center#advies
               Hoe komen wij op dit advies?
             %ul
-              - if !double_mattress_two_diseases_on? || !double_mattress_two_diseases2_on?
+              - if double_mattress_two_diseases_on? || double_mattress_two_diseases2_on?
                 %li
                   .head-title-v4 Medische klachten
                   .li-holder
                     .li-content
                       .text-content
-                        - if !double_mattress_two_diseases_on? && !double_mattress_two_diseases2_on?
+                        - if double_mattress_two_diseases_on? && double_mattress_two_diseases2_on?
                           .title-smaller= @both_persons_names
                           .text-v4
                             Jullie hebben allebei aangegeven last te hebben van medische klachten. Extra drukverlaging is van essentieel belang voor jullie. Zo hebben jullie gewrichten en ledematen minimale tegendruk en genieten jullie van een gezonde bloedcirculatie omdat er geen knellingen plaatsvinden.
                           %br
-                        - elsif !double_mattress_two_diseases_on?
+                        - elsif double_mattress_two_diseases_on? && !double_mattress_two_diseases2_on?
                           .title-smaller= @person_1_name
                           .text-v4
                             Je hebt aangegeven last te hebben van medische klachten. Extra drukverlaging is van essentieel belang voor jou. Zo hebben je gewrichten en ledematen minimale tegendruk en geniet je van een gezonde bloedcirculatie omdat er geen knellingen plaatsvinden.
                           %br
-                        - elsif !double_mattress_two_diseases2_on?
+                        - elsif !double_mattress_two_diseases2_on? && double_mattress_two_diseases2_on?
                           .title-smaller= @person_2_name
                           .text-v4
                             Je hebt aangegeven last te hebben van medische klachten. Extra drukverlaging is van essentieel belang voor jou. Zo hebben je gewrichten en ledematen minimale tegendruk en geniet je van een gezonde bloedcirculatie omdat er geen knellingen plaatsvinden.

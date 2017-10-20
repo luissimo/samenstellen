@@ -49,6 +49,6 @@ class DoubleMattressOnesController < ApplicationController
       params.require(:double_mattress_one).permit(:name, :gender, :age, :email, :weight,
                                                   :length, :sleep_position, :body_shape, :warm_sleeping,
                                                   :neck_or_back_pain, :session_id, :mattress_length,
-                                                  :mattress_width, :category, :comfort, :diseases)
+                                                  :mattress_width, :category, :comfort, diseases: [])
     end
 end

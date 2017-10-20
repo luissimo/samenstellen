@@ -1,4 +1,4 @@
-module MattressTexts
+module DoubleMattressOneTexts
   extend ActiveSupport::Concern
   include DoubleMattressOneBmi
 

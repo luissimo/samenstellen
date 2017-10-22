@@ -16,8 +16,10 @@
                         .summary_box
                           .box-title-small.text-center
                             Wat krijg je?
-                          %p
-                            Je hebt aangegeven last te hebben van medische klachten. Extra drukverlaging is van essentieel belang voor jou. Zo hebben je gewrichten en ledematen minimale tegendruk en geniet je van een gezonde bloedcirculatie omdat er geen knellingen plaatsvinden. Je hebt aangegeven last te hebben van medische klachten.
+                          %p= '- ' +  @comfort_graph_text
+                          %p= '- ' +  @elasticity_graph_text
+                          %p= '- ' +  @firmness_graph_text
+                          %p= '- ' +  @heat_regulation_graph_text
                           %a.read_more{href: '#advies'} bekijk advies
 
                     .box-holder
@@ -28,29 +30,50 @@
                           .text-content
                             .text-v4
                               %table.table
-                                %thead
-                                  %tr
-                                    %td.success
-                                      €<strong>#{@price.to_s[0..-3].to_i}</strong> - Resultaat van #{@double_mattress_one.name}
                                 %tbody
+                                  %tr
+                                    %td
+                                      %p.text-center Comfort
+                                      .graph_explanation_text
+                                        %span Zacht
+                                        %span{style: "float: right"} Hard
+                                      .progress#progress_comfort
+                                        .progress-bar.progress-bar-success{"aria-valuemax" => "100", "aria-valuemin" => "0", :role => "progressbar", :style => "width:100%"}
+                                          %div{class: @comfort_dot}
+
+                                      %p.text-center Elasticiteit
+                                      .graph_explanation_text
+                                        %span Laag
+                                        %span{style: "float: right"} Hoog
+                                      .progress#progress_elasticity
+                                        .progress-bar.progress-bar-success{"aria-valuemax" => "100", "aria-valuemin" => "0", :role => "progressbar", :style => "width:100%"}
+                                          %div{class: @elasticity_dot}
+
+                                      %p.text-center Stevigheid
+                                      .graph_explanation_text
+                                        %span Soepel
+                                        %span{style: "float: right"} Stevig
+                                      .progress#progress_firmness
+                                        .progress-bar.progress-bar-success{"aria-valuemax" => "100", "aria-valuemin" => "0", :role => "progressbar", :style => "width:100%"}
+                                          %div{class: @firmness_dot}
+
+                                      %p.text-center Warmte-regulatie
+                                      .graph_explanation_text
+                                        %span Koud
+                                        %span{style: "float: right"} Warm
+                                      .progress#progress_heat_regulation
+                                        .progress-bar.progress-bar-success{"aria-valuemax" => "100", "aria-valuemin" => "0", :role => "progressbar", :style => "width:100%"}
+                                          %div{class: @heat_regulation_dot}
                                   %tr
                                     %td
                                       Je bent een:
                                       %strong #{@double_mattress_one.gender}
-                                  %tr
-                                    %td
                                       Je leeftijd is:
                                       %strong #{@double_mattress_one.age}
-                                  %tr
-                                    %td
                                       Je gewicht is:
                                       %strong #{@double_mattress_one.weight}
-                                  %tr
-                                    %td
                                       Je lengte is:
                                       %strong #{@double_mattress_one.length}
-                                  %tr
-                                    %td
                                       Je BMI is:
                                       %strong #{@bmi}
                   .checkout_button.title-v4.text-center

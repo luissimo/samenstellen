@@ -2,6 +2,7 @@ class MattressesController < ApplicationController
 
   include MattressPrices
   include MattressTexts
+  include SetGraphsOne
 
   # GET /mattresses
   # GET /mattresses.json
@@ -15,6 +16,7 @@ class MattressesController < ApplicationController
     @mattress = Mattress.all.where(session_id: session.id).last
     session[:name] = @mattress.name
     calculate_price
+    set_graph_variables(Mattress)
     @bmi = calculate_bmi
     @firmness_text = firmness_text
     @comfort_text = comfort_text

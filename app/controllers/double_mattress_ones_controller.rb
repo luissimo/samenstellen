@@ -2,6 +2,7 @@ class DoubleMattressOnesController < ApplicationController
 
   include DoubleMattressOneTexts
   include DoubleMattressOnePrices
+  include SetGraphsOne
 
   def index
     @double_mattress_ones = DoubleMattressOne.all.where(session_id: session.id)
@@ -11,6 +12,7 @@ class DoubleMattressOnesController < ApplicationController
     @double_mattress_one = DoubleMattressOne.all.where(session_id: session.id).last
     session[:name] = @double_mattress_one.name
     calculate_price
+    set_graph_variables(DoubleMattressOne)
     @bmi = calculate_bmi
     @firmness_text = firmness_text
     @comfort_text = comfort_text

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171015122628) do
+ActiveRecord::Schema.define(version: 20171022145228) do
 
   create_table "billing_addresses", force: :cascade do |t|
     t.string "first_name"
@@ -54,6 +54,7 @@ ActiveRecord::Schema.define(version: 20171015122628) do
     t.string "diseases"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "chassis"
   end
 
   create_table "double_mattress_twos", force: :cascade do |t|
@@ -86,6 +87,8 @@ ActiveRecord::Schema.define(version: 20171015122628) do
     t.string "diseases2"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "chassis"
+    t.string "separation"
   end
 
   create_table "mattresses", force: :cascade do |t|
@@ -107,6 +110,7 @@ ActiveRecord::Schema.define(version: 20171015122628) do
     t.string "category"
     t.string "comfort"
     t.string "diseases"
+    t.string "chassis"
   end
 
   create_table "shipping_addresses", force: :cascade do |t|

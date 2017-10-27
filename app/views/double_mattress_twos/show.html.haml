@@ -6,7 +6,7 @@
         .v4-bordered
           .specs-box
             .box-title.title-v4.text-center
-              Resultaat
+              Jouw Tenzen
             %ul
               %li
                 .li-holder
@@ -15,6 +15,7 @@
                       .icon
                         .summary_box
                           .box-title-small.text-center
+                            Personalisatie -
                             = @double_mattress_two.name
                           .text-content
                             .text-v4
@@ -57,10 +58,12 @@
                                     %td.text-center
                                       Body Mass Index(BMI):
                                       %strong #{@bmi}
+                          %a.read_more{href: '#advies'} bekijk advies
                     .box-holder
                       .icon
                         .summary_box
                           .box-title-small.text-center
+                            Personalisatie -
                             = @double_mattress_two.name2
                           .text-content
                             .text-v4
@@ -103,24 +106,42 @@
                                     %td.text-center
                                       Body Mass Index(BMI):
                                       %strong #{@bmi_2}
+                          %a.read_more{href: '#advies'} bekijk advies
+              %li
+                %p.align-usps-2p
+                  = image_tag('persoonlijk.png', alt: 'Personalisatie')
+                  %span Persoonlijk comfort
+                  = image_tag('bezorging.png', alt: 'Gratis bezorging')
+                  %span Gratis verzending
+                  = image_tag('garantie.png', alt: '100 dagen proefslapen, niet goed, geld terug')
+                  %span Niet tevreden = geld terug
               %li
                 .li-holder
                   .li-content
                     .box-holder
                       .icon
-                        .summary_box
+                        .summary_box.text-center
                           .box-title-small.text-center
-                            Wat krijgen jullie?
-                          %p= #'- ' +  @comfort_graph_text
-                          %p= #'- ' +  @elasticity_graph_text
-                          %p= #'- ' +  @firmness_graph_text
-                          %p= #'- ' +  @heat_regulation_graph_text
-                          %a.read_more{href: '#advies'} bekijk advies
+                            Wat krijg je?
+                          %p
+                            = @mattress_product
+                          - if @mattress_product2
+                            %p
+                              = @mattress_product2
+                          %p
+                            = @topper_product
+                          - if @topper_product2
+                            %p
+                              = @topper_product2
+                          .price_tag
+                            €
+                            = @price.to_s[0..-3]
+                          .delivery_tag
+                            Levertijd: 6 weken
 
                   .checkout_button.title-v4.text-center
                     %a.btn-primary.btn-success.btn-block{href: customers_new_path}
                       Afrekenen
-
 %section#main.container
   #survey_container_result_advice
     #middle-wizard-result
@@ -146,7 +167,7 @@
                           .text-v4
                             Je hebt aangegeven last te hebben van medische klachten. Extra drukverlaging is van essentieel belang voor jou. Zo hebben je gewrichten en ledematen minimale tegendruk en geniet je van een gezonde bloedcirculatie omdat er geen knellingen plaatsvinden.
                           %br
-                        - elsif !double_mattress_two_diseases2_on? && double_mattress_two_diseases2_on?
+                        - elsif !double_mattress_two_diseases_on? && double_mattress_two_diseases2_on?
                           .title-smaller= @person_2_name
                           .text-v4
                             Je hebt aangegeven last te hebben van medische klachten. Extra drukverlaging is van essentieel belang voor jou. Zo hebben je gewrichten en ledematen minimale tegendruk en geniet je van een gezonde bloedcirculatie omdat er geen knellingen plaatsvinden.

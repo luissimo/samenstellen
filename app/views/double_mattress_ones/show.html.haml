@@ -6,7 +6,7 @@
         .v4-bordered
           .specs-box
             .box-title.title-v4.text-center
-              Resultaat
+              Jouw Tenzen
             %ul
               %li
                 .li-holder
@@ -15,18 +15,7 @@
                       .icon
                         .summary_box
                           .box-title-small.text-center
-                            Wat krijg je?
-                          %p= '- ' +  @comfort_graph_text
-                          %p= '- ' +  @elasticity_graph_text
-                          %p= '- ' +  @firmness_graph_text
-                          %p= '- ' +  @heat_regulation_graph_text
-                          %a.read_more{href: '#advies'} bekijk advies
-
-                    .box-holder
-                      .icon
-                        .summary_box
-                          .box-title-small.text-center
-                            Statistieken
+                            Personalisatie
                           .text-content
                             .text-v4
                               %table.table
@@ -68,6 +57,32 @@
                                     %td.text-center
                                       Je Body Mass Index(BMI) is:
                                       %strong #{@bmi}
+                          %a.read_more{href: '#advies'} bekijk advies
+
+                    .box-holder
+                      .icon
+                        .summary_box
+                          .box-title-small.text-center
+                            Wat krijg je?
+                          %p
+                            = @mattress_product
+                          %p
+                            = @topper_product
+                          .price_tag
+                            €
+                            = @price.to_s[0..-3]
+                          .delivery_tag
+                            Levertijd: 6 weken
+                      %p.align-usps
+                        = image_tag('persoonlijk.png', alt: 'Personalisatie', class: 'usp-description')
+                        Persoonlijk comfort
+                        %br
+                        = image_tag('bezorging.png', alt: 'Gratis bezorging', class: 'usp-description')
+                        Gratis verzending heen- en terug
+                        %br
+                        = image_tag('garantie.png', alt: '100 dagen proefslapen, niet goed, geld terug', class: 'usp-description')
+                        100 dagen niet tevreden = geld terug
+
                   .checkout_button.title-v4.text-center
                     %a.btn-primary.btn-success.btn-block{href: customers_new_path}
                       Afrekenen

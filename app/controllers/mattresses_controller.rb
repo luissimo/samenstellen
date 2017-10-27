@@ -17,6 +17,7 @@ class MattressesController < ApplicationController
     session[:name] = @mattress.name
     calculate_price
     set_graph_variables(Mattress)
+    set_product_names
     @bmi = calculate_bmi
     @firmness_text = firmness_text
     @comfort_text = comfort_text
@@ -59,5 +60,16 @@ class MattressesController < ApplicationController
                                        :email, :weight, :length, :sleep_position, :body_shape,
                                        :warm_sleeping, :neck_or_back_pain, :mattress_length,
                                        :mattress_width, :comfort, :category, :chassis, diseases: [])
+    end
+
+    def set_product_names
+      category = diseases_on? ? 'Premium' : @mattress.category
+      length = @mattress.mattress_length.to_s[0..-3]
+      width = @mattress.mattress_width.to_s[0..-3]
+      size = width + 'x' + length
+      @mattress_product = "1x - " +  category + ' Tenzen Matras '+ size + ' - ' + @mattress.name
+      @topper_product = "1x - " + category + ' Tenzen Topdekmatras ' + size + ' - ' + @mattress.name
+      session[:mattress] = @mattress_product
+      session[:topper] = @topper_product
     end
 end

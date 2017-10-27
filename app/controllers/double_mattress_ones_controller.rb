@@ -13,6 +13,7 @@ class DoubleMattressOnesController < ApplicationController
     session[:name] = @double_mattress_one.name
     calculate_price
     set_graph_variables(DoubleMattressOne)
+    set_product_names
     @bmi = calculate_bmi
     @firmness_text = firmness_text
     @comfort_text = comfort_text
@@ -52,5 +53,16 @@ class DoubleMattressOnesController < ApplicationController
                                                   :length, :sleep_position, :body_shape, :warm_sleeping,
                                                   :neck_or_back_pain, :session_id, :mattress_length,
                                                   :mattress_width, :category, :comfort, :chassis, diseases: [])
+    end
+
+    def set_product_names
+      category = double_mattress_one_diseases_on? ? 'Premium' : @mattress.category
+      length = @mattress.mattress_length.to_s[0..-3]
+      width = @mattress.mattress_width.to_s[0..-3]
+      size = width + 'x' + length
+      @mattress_product = "1x - " +  category + ' Tenzen Matras '+ size + ' - ' + @mattress.name
+      @topper_product = "1x - " + category + ' Tenzen Topdekmatras ' + size + ' - ' + @mattress.name
+      session[:mattress] = @mattress_product
+      session[:topper] = @topper_product
     end
 end

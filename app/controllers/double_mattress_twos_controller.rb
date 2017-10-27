@@ -2,6 +2,7 @@ class DoubleMattressTwosController < ApplicationController
 
   include DoubleMattressTwoTexts
   include DoubleMattressTwoPrices
+  include SetGraphsTwo
 
   def index
     @double_mattress_twos = DoubleMattressTwo.all.where(session_id: session.id)
@@ -9,27 +10,27 @@ class DoubleMattressTwosController < ApplicationController
 
   def show
     @double_mattress_two = DoubleMattressTwo.all.where(session_id: session.id).last
-    session[:name] = @double_mattress_two.name
+    session[:name] = @double_mattress_two.name + ' & ' + @double_mattress_two.name2
     calculate_price
 
     @both_persons_names = @double_mattress_two.name + ' & ' + @double_mattress_two.name2
+    set_graph_variables(DoubleMattressTwo)
+
     # person 1
     @person_1_name = @double_mattress_two.name + ':'
-
     @bmi = calculate_bmi
     @comfort_text = comfort_text
     @elasticity_text = elasticity_text
     @firmness_text = firmness_text
     @heat_regulation_text = heat_regulation_text
-
     # person 2
     @person_2_name = @double_mattress_two.name2 + ':'
-
     @bmi_2 = calculate_bmi_2
     @comfort_text_2 = comfort_text_2
     @elasticity_text_2 = elasticity_text_2
     @firmness_text_2 = firmness_text_2
     @heat_regulation_text_2 = heat_regulation_text_2
+    # raise TestModus
   end
 
   def new

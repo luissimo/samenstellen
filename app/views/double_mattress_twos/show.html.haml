@@ -15,7 +15,7 @@
                       .icon
                         .summary_box
                           .box-title-small.text-center
-                            Statistieken
+                            = @double_mattress_two.name
                           .text-content
                             .text-v4
                               %table.table
@@ -54,22 +54,14 @@
                                         .progress-bar.progress-bar-success{"aria-valuemax" => "100", "aria-valuemin" => "0", :role => "progressbar", :style => "width:100%"}
                                           %div{class: @heat_regulation_dot}
                                   %tr
-                                    %td
-                                      Je bent een:
-                                      %strong #{@double_mattress_two.gender}
-                                      Je leeftijd is:
-                                      %strong #{@double_mattress_two.age}
-                                      Je gewicht is:
-                                      %strong #{@double_mattress_two.weight}
-                                      Je lengte is:
-                                      %strong #{@double_mattress_two.length}
-                                      Je BMI is:
+                                    %td.text-center
+                                      Body Mass Index(BMI):
                                       %strong #{@bmi}
                     .box-holder
                       .icon
                         .summary_box
                           .box-title-small.text-center
-                            Statistieken
+                            = @double_mattress_two.name2
                           .text-content
                             .text-v4
                               %table.table
@@ -82,7 +74,7 @@
                                         %span{style: "float: right"} Hard
                                       .progress#progress_comfort
                                         .progress-bar.progress-bar-success{"aria-valuemax" => "100", "aria-valuemin" => "0", :role => "progressbar", :style => "width:100%"}
-                                          %div{class: @comfort_dot}
+                                          %div{class: @comfort_dot_2}
 
                                       %p.text-center Elasticiteit
                                       .graph_explanation_text
@@ -90,7 +82,7 @@
                                         %span{style: "float: right"} Hoog
                                       .progress#progress_elasticity
                                         .progress-bar.progress-bar-success{"aria-valuemax" => "100", "aria-valuemin" => "0", :role => "progressbar", :style => "width:100%"}
-                                          %div{class: @elasticity_dot}
+                                          %div{class: @elasticity_dot_2}
 
                                       %p.text-center Stevigheid
                                       .graph_explanation_text
@@ -98,7 +90,7 @@
                                         %span{style: "float: right"} Stevig
                                       .progress#progress_firmness
                                         .progress-bar.progress-bar-success{"aria-valuemax" => "100", "aria-valuemin" => "0", :role => "progressbar", :style => "width:100%"}
-                                          %div{class: @firmness_dot}
+                                          %div{class: @firmness_dot_2}
 
                                       %p.text-center Warmte-regulatie
                                       .graph_explanation_text
@@ -106,19 +98,11 @@
                                         %span{style: "float: right"} Warm
                                       .progress#progress_heat_regulation
                                         .progress-bar.progress-bar-success{"aria-valuemax" => "100", "aria-valuemin" => "0", :role => "progressbar", :style => "width:100%"}
-                                          %div{class: @heat_regulation_dot}
+                                          %div{class: @heat_regulation_dot_2}
                                   %tr
-                                    %td
-                                      Je bent een:
-                                      %strong #{@double_mattress_two.gender2}
-                                      Je leeftijd is:
-                                      %strong #{@double_mattress_two.age2}
-                                      Je gewicht is:
-                                      %strong #{@double_mattress_two.weight2}
-                                      Je lengte is:
-                                      %strong #{@double_mattress_two.length2}
-                                      Je BMI is:
-                                      %strong #{@bmi}
+                                    %td.text-center
+                                      Body Mass Index(BMI):
+                                      %strong #{@bmi_2}
               %li
                 .li-holder
                   .li-content
@@ -126,7 +110,7 @@
                       .icon
                         .summary_box
                           .box-title-small.text-center
-                            Wat krijg je?
+                            Wat krijgen jullie?
                           %p= #'- ' +  @comfort_graph_text
                           %p= #'- ' +  @elasticity_graph_text
                           %p= #'- ' +  @firmness_graph_text
@@ -244,3 +228,6 @@
                     .icon-holder-right
                       .icon
                         = image_tag("warmte-regulatie.png", class: 'img-responsive')
+                  .checkout_button.title-v4.text-center
+                    %a.btn-primary.btn-success.btn-block{href: customers_new_path}
+                      Afrekenen

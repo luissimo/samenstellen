@@ -65,16 +65,8 @@
                                         .progress-bar.progress-bar-success{"aria-valuemax" => "100", "aria-valuemin" => "0", :role => "progressbar", :style => "width:100%"}
                                           %div{class: @heat_regulation_dot}
                                   %tr
-                                    %td
-                                      Je bent een:
-                                      %strong #{@double_mattress_one.gender}
-                                      Je leeftijd is:
-                                      %strong #{@double_mattress_one.age}
-                                      Je gewicht is:
-                                      %strong #{@double_mattress_one.weight}
-                                      Je lengte is:
-                                      %strong #{@double_mattress_one.length}
-                                      Je BMI is:
+                                    %td.text-center
+                                      Je Body Mass Index(BMI) is:
                                       %strong #{@bmi}
                   .checkout_button.title-v4.text-center
                     %a.btn-primary.btn-success.btn-block{href: customers_new_path}
@@ -160,3 +152,6 @@
                     .icon-holder-right
                       .icon
                         = image_tag("warmte-regulatie.png", class: 'img-responsive')
+                  .checkout_button.title-v4.text-center
+                    %a.btn-primary.btn-success.btn-block{href: customers_new_path}
+                      Afrekenen

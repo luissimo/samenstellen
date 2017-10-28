@@ -1204,6 +1204,10 @@ ul.data-list-2 li label.error {
   display: block;
 }
 
+.align-usps-2p {
+  display: none;
+}
+
 }
 @media (min-width: 768px) and (max-width: 979px) {
 
@@ -1254,6 +1258,10 @@ ul.data-list-2 li label.error {
   list-style-type: none;
   float:none;
   display:inline-block;
+}
+
+.align-usps-2p {
+  display: none;
 }
 
 }
@@ -1343,6 +1351,10 @@ ul.floated li {
   padding: 10px 5px 10px 5px;
 }
 
+.align-usps-2p {
+  display: none;
+}
+
 }
 
 /* Mobile Landscape */
@@ -1421,6 +1433,9 @@ ul.floated li {
   font-size:15px
    }
 
+.align-usps-2p {
+  display: none;
+}
 
 .qty-buttons span { top:10px; display:block; width:100px; left:120px; font-weight:bold; line-height:12px;}
 
@@ -1460,6 +1475,11 @@ ul.floated li {
 .read_more {
   display: none;
 }
+
+.align-usps-2p {
+  display: none;
+}
+
 .main-title h1{font-size:24px;line-height:26px; margin-top:25px;}
 #survey_container {margin-top:-330px;margin-bottom:30px;}
 #top-nav ul {float: none; padding:20px 0 10px 0; margin:0; }
@@ -1490,4 +1510,7 @@ ul#footer-nav li:first-child {margin-right:0;}
   height: 100px;
 }
 
+.align-usps-2p {
+  display: none;
+}
 }

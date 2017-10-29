@@ -1,0 +1,156 @@
+!!!
+%html{:lang => "zxx"}
+  %head
+    %meta{:charset => "utf-8"}/
+    / Responsive Meta
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    / IE Compatibility Meta
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    / Page Title
+    %title Tenzen | Matras Samenstellen
+    / Favicon
+    %link{:href => "images/favicon.ico", :rel => "shortcut icon"}/
+    / Bootstrap Stylesheet
+    = stylesheet_link_tag    'home/bootstrap.css', media: 'all'
+    = stylesheet_link_tag    'home/font-awesome.min.css', media: 'all'
+    = stylesheet_link_tag    'home/flaticon.css', media: 'all'
+    = stylesheet_link_tag    'home/owl.carousel.min.css', media: 'all', type: "text/css"
+
+    / Google font
+    %link{:href => "https://fonts.googleapis.com/css?family=Poppins:300,400,600,700", :rel => "stylesheet"}/
+    %link{:href => "https://fonts.googleapis.com/css?family=Montserrat:200,700,800", :rel => "stylesheet"}/
+
+    = stylesheet_link_tag    'home/style.css', media: 'all'
+    = stylesheet_link_tag    'home/colors/color-1.css', media: 'all'
+    / Google Font
+    /[if lt IE 9]
+      <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  %body
+    / Page Holder
+    .page-holder
+      /
+        \=======================================
+        \==Start  Nav section==
+        \=======================================
+      %nav.navbar.main-navigation.navbar-fixed-top.has-shadow
+        .container
+          .navbar-header
+            %button.navbar-toggle.collapsed{"data-target" => "#navbar", "data-toggle" => "collapse", :type => "button"}
+              %span.sr-only Navigatie
+              %span.icon-bar
+              %span.icon-bar
+              %span.icon-bar
+            %a.navbar-brand{:href => "#"}
+              %i.fa.fa-mobile.fa-2x
+          #navbar.collapse.navbar-collapse
+            %ul.nav.navbar-nav.navbar-right
+              %li
+                %a.js-scroll-trigger{href: root_url} Home
+              %li
+                %a.js-scroll-trigger{href: new_mattress_url} Eenpersoonsmatras
+              %li
+                %a.js-scroll-trigger{href: hoeveel_personen_url} Tweepersoonsmatras
+              %li
+                %a.js-scroll-trigger{href: root_url} Over ons
+              %li
+                %a.js-scroll-trigger{href: root_url} Contact
+      /
+        \=======================================
+        \==End Nav section==
+        \=======================================
+      /
+        \=======================================
+        \==Start header-1 section==
+        \=======================================
+      #home.header-1.demo-1.has-gradient
+        .moving-bg
+        .container
+          .header-1-content.row
+            = yield
+      /
+        \=======================================
+        \==End header-1 section==
+        \=======================================
+      /
+        \=======================================
+        \==Start about section==
+        \=======================================
+      %section#how-it-work.how-it-work
+        .container.text-center
+          %header.text-center.mb-50
+            %h2.has-line-center
+              Tenzen
+          .how-one-container
+            / how it work Box
+            .how-box-one.col-md-4.col-sm-6.col-xs-12
+              .inner-box
+                .icon-box
+                  %i
+                    = image_tag("persoonlijk.png", alt: 'Persoonlijke comfort', style: "height: 50px; width:50px")
+                %h3
+                  %a{:href => "#"} Persoonlijke comfort
+                .text
+                  Elke matras wordt bij ons op basis van persoonlijke voorkeuren geproduceerd. Wij zijn van mening dat jij je niet aan je matras moet aanpassen, maar je matras aan jou aangepast moet worden!
+
+            / how it work Box
+            .how-box-one.col-md-4.col-sm-6.col-xs-12
+              .inner-box
+                .icon-box
+                  %i
+                    = image_tag("bezorging.png", alt: 'Gratis bezorging', style: "height: 50px; width:50px")
+                %h3
+                  %a{:href => "#"} Gratis verzending heen- en terug
+                .text
+                  Je matras wordt gratis bezorgd tot in je slaapkamer. Mocht je het matras terug willen sturen, dan komen wij het ook weer gratis voor je ophalen. Geen zorgen dus.
+
+            / how it work Box
+            .how-box-one.col-md-4.col-sm-6.col-xs-12
+              .inner-box
+                .icon-box
+                  %i
+                    = image_tag("garantie.png", alt: 'Niet Tevreden = Geld Terug', style: "height: 50px; width:50px")
+                %h3
+                  %a{:href => "#"} 100 dagen Niet tevreden = geld terug
+                .text
+                  Je kunt 100 dagen proefslapen op je matras. Mocht het nou niet zijn wat je had gewenst, dan komen wij het gratis ophalen en krijg je het volledige aankoopbedrag terug, zonder gezeur
+      /
+        \=======================================
+        \==End about section==
+        \=======================================
+      /
+        \=======================================
+        \==Start footer section==
+        \=======================================
+      %footer.main-footer.footer-style-two.text-center
+        / Footer Bottom
+        .footer-bottom
+          .auto-container
+            .copyright-text
+              ©
+              = Time.new.year
+              Tenzen
+      /
+        \=======================================
+        \==End footer section==
+        \=======================================
+      /
+        \=======================================
+        \==Start preloader section==
+        \=======================================
+      .preloader
+        .loader
+          .loader-inner
+      /
+        \=======================================
+        \==End preloader section==
+        \=======================================
+    / End Page Holder
+    = javascript_include_tag "home/jquery.min.js"
+    = javascript_include_tag "home/bootstrap.js"
+    = javascript_include_tag "home/jquery.counterup.min.js"
+    = javascript_include_tag "home/owl.carousel.min.js"
+    = javascript_include_tag "home/owl.carousel.min.js"
+    = javascript_include_tag "home/jquery.easing.min.js"
+    = javascript_include_tag "home/easyscroll.min.js"
+    = javascript_include_tag "home/script.js"

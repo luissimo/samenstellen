@@ -1,7 +1,11 @@
-%section#main.container
-  #survey_container
-    %form#wrapped
-      #middle-wizard
-        %p  asd
-        %p  asd
-        %p  asd
+.col-md-7.col-sm-12.mt-63
+  %h1.has-line Perfect slapen kost je slechts 2 minuten
+  %p.lead
+    Kies hieronder wat voor matras je wilt samenstellen
+  .download
+    %a.download-btn{href: new_mattress_url}
+      1-Persoonsmatras samenstellen
+    %a.download-btn{:href => hoeveel_personen_url}
+      2-Persoonsmatras samenstellen
+.col-md-5.hidden-sm.hidden-xs.mt-63
+  .center-block= image_tag("cloud_sleeping.jpg", alt: 'Tenzen Matras Samenstellen')

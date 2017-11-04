@@ -6,10 +6,10 @@ Rails.application.routes.draw do
   resources :double_mattress_ones, path: '2persoonsmatras', except: [:edit, :update, :destroy]
   resources :double_mattress_twos, path: '2persoonsmatras/duo', except: [:edit, :update, :destroy]
 
-  root 'pages#index'
+  root 'homes#index'
   get 'customers/new'  			  => 'customers#new'
   post 'customers/new' 			  => 'customers#create'
   get 'bedankt'								=> 'customers#success'
-  get 'hoeveel-personen'      => 'pages#one_or_two_persons'
-
+  get 'hoeveel-personen'      => 'homes#one_or_two_persons'
+  get 'over-ons'              => 'pages#over_ons'
 end

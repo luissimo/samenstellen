@@ -339,7 +339,7 @@ h2.has-line-center .heading-bg-text {
   height: 100%;
   opacity: 1;
   visibility: inherit;
-  background: transparent url("../../images/cloud_sleeping.jpg") repeat-x scroll 0 100%;
+  background: transparent url("../../images/tenzen.png") repeat-x scroll 0 100%;
   -webkit-animation: cloudwash 60s linear infinite;
   -moz-animation: cloudwash 60s linear infinite;
   animation: cloudwash 60s linear infinite;
@@ -462,7 +462,7 @@ nav.main-navigation .navbar-nav a.active{
     border-style: solid;
     border-width: 0 0 2px 0;
     border-color: #fff;
-    padding: 20px 15px
+    padding: 30px 15px 0px 0px;
 }
 nav.main-navigation .navbar-brand{
     height: 63px;
@@ -509,7 +509,7 @@ nav.main-navigation .navbar-nav .btn:hover{
 
 @media (max-width: 767px){
     nav.main-navigation .navbar-toggle{
-        margin-top: 14px;
+        margin-top: 22px;
         margin-bottom: 14px;
         border-bottom: 1px solid
     }
@@ -1646,13 +1646,13 @@ style.css:1477
     margin-bottom:0px;
 }
 
-.main-footer .footer-bottom{
-    position:relative;
-    padding:18px 0px;
-    color:#cccccc;
-    background:#131313;
-    line-height:24px;
-    text-align:center;
+.main-footer .footer-bottom {
+    position: relative;
+    padding: 20px;
+    color: black;
+    background: whitesmoke;
+    line-height: 24px;
+    text-align: center;
 }
 
 .main-footer .newsletter-widget{

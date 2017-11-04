@@ -3,7 +3,8 @@
     .container
       .row
         #logo.col-md-4.col-xs-3
-          %a{:href => "/"} Tenzen
+          = link_to root_url do
+            = image_tag('weblogo_350x75.svg', width: '150px', height: '40px')
         .btn-responsive-menu
           %span.bar
           %span.bar

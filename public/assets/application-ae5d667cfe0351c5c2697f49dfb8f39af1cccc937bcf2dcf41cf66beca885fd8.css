@@ -1594,6 +1594,8 @@ th {
 .table {
   width: 100%;
   margin-bottom: 20px;
+  table-layout: fixed;
+  word-wrap: break-word;
 }
 
 .table > thead > tr > th,
@@ -4450,7 +4452,6 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .navbar-brand {
   float: left;
-  padding: 15px 15px;
   font-size: 18px;
   line-height: 20px;
 }
@@ -11345,7 +11346,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-brand {
   float: left;
   height: 50px;
-  padding: 15px 15px;
+  margin-bottom: 10px;
   font-size: 18px;
   line-height: 20px;
 }
@@ -13827,7 +13828,7 @@ button.close {
 }
 /*# sourceMappingURL=bootstrap.css.map */
 
-/*** 
+/***
 
 ====================================================================
 	Main color
@@ -13855,7 +13856,7 @@ nav.main-navigation .navbar-brand i,
 .main-footer .contact-info li .icon,
 .features .service-box-one .inner-box strong
 {
-	color: #c10f41 !important;
+	color: #ABDBEA !important;
 }
 
 nav.main-navigation .navbar-toggle,
@@ -13875,7 +13876,7 @@ nav.main-navigation .navbar-nav .btn,
 .main-footer .about-widget .social-links li a:hover,
 .preloader
 {
-	background: #c10f41 !important
+	background: #ABDBEA !important
 }
 
 nav.main-navigation .navbar-nav a:hover,
@@ -13889,7 +13890,7 @@ nav.main-navigation .navbar-nav .btn,
 .main-footer .newsletter-widget input:focus,
 .main-footer .newsletter-widget select:focus
 {
-	border-color: #c10f41 !important
+	border-color: #ABDBEA !important
 }
 
 /*** Darker color ***/
@@ -13900,14 +13901,14 @@ nav.main-navigation .navbar-nav .btn,
 }
 
 .has-gradient {
-    background-image: -moz-linear-gradient(-29deg,#c10f41 0,#233b88 100%);
-    background-image: -webkit-linear-gradient(-29deg,#c10f41 0,#233b88 100%);
-    background-image: -ms-linear-gradient(-29deg,#c10f41 0,#233b88 100%);
+    background-image: -moz-linear-gradient(-29deg,#ABDBEA 0,#233b88 100%);
+    background-image: -webkit-linear-gradient(-29deg,#ABDBEA 0,#233b88 100%);
+    background-image: -ms-linear-gradient(-29deg,#ABDBEA 0,#233b88 100%);
     color: #fff
 }
 
 .pricing-table .pricing-table-signup a:hover{
-    box-shadow: 0 0 10px #c10f41;
+    box-shadow: 0 0 10px #ABDBEA;
 }
 nav.main-navigation .navbar-nav .btn:hover {
     background: transparent !important;
@@ -16529,7 +16530,7 @@ h2.has-line-center .heading-bg-text {
   height: 100%;
   opacity: 1;
   visibility: inherit;
-  background: transparent url("cloud_sleeping.jpg") repeat-x scroll 0 100%;
+  background: transparent url("../../images/tenzen.png") repeat-x scroll 0 100%;
   -webkit-animation: cloudwash 60s linear infinite;
   -moz-animation: cloudwash 60s linear infinite;
   animation: cloudwash 60s linear infinite;
@@ -16652,7 +16653,7 @@ nav.main-navigation .navbar-nav a.active{
     border-style: solid;
     border-width: 0 0 2px 0;
     border-color: #fff;
-    padding: 20px 15px
+    padding: 30px 15px 0px 0px;
 }
 nav.main-navigation .navbar-brand{
     height: 63px;
@@ -16699,7 +16700,7 @@ nav.main-navigation .navbar-nav .btn:hover{
 
 @media (max-width: 767px){
     nav.main-navigation .navbar-toggle{
-        margin-top: 14px;
+        margin-top: 22px;
         margin-bottom: 14px;
         border-bottom: 1px solid
     }
@@ -17379,7 +17380,7 @@ style.css:1477
     text-align:center;
     line-height:72px;
     background: #fff;
-    color: #c10f41 !important;
+    color: #ABDBEA !important;
     font-size:50px;
     transition:all 300ms ease;
     -moz-transition:all 300ms ease;
@@ -17440,7 +17441,7 @@ style.css:1477
     height:72px;
     text-align:center;
     line-height:72px;
-    color: #c10f41;
+    color: #ABDBEA;
     background: #fff;
     font-size:50px;
     transition:all 300ms ease;
@@ -17836,13 +17837,13 @@ style.css:1477
     margin-bottom:0px;
 }
 
-.main-footer .footer-bottom{
-    position:relative;
-    padding:18px 0px;
-    color:#cccccc;
-    background:#131313;
-    line-height:24px;
-    text-align:center;
+.main-footer .footer-bottom {
+    position: relative;
+    padding: 20px;
+    color: black;
+    background: whitesmoke;
+    line-height: 24px;
+    text-align: center;
 }
 
 .main-footer .newsletter-widget{
@@ -19206,7 +19207,6 @@ a.button_medium_2:hover {background:#00aeef; color:#fff; border:2px solid  #00ae
 
 .backward:hover, .forward:hover {background:#34A853; color:#fff;}
 
-
 /** Header ==================== **/
 #top-area {
   background-color:#abdbea;
@@ -19216,13 +19216,6 @@ header {
   padding:10px 0;
   width:100%;
   background:url(line_header.png) repeat-x left bottom;
-}
-#logo a{
-  text-indent:-99999px;
-  background: url(logo-230x40.png) no-repeat 0 0;
-  display:block;
-  height:32px;
-  width:151px;
 }
 
 #top-nav ul{ float:right; margin:0; padding:0; margin-top:8px;  margin-right:-10px; font-weight:700; text-transform:uppercase;}
@@ -19298,6 +19291,7 @@ ul#footer-nav li {
   text-transform:uppercase;
   font-size:11px;
 }
+
 .shadow {
   width:100%;
   height:6px;
@@ -19306,6 +19300,7 @@ ul#footer-nav li {
   bottom:-6px;
   background:url(shadow_top_form.png) no-repeat center top;
 }
+
 .ui-widget { }
 .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {}
 .ui-widget-content { background: #fff; color: #222222; }
@@ -19318,7 +19313,7 @@ ul#footer-nav li {
 #survey_container {
   background-color:#fff;
    box-shadow: 0 0 5px #777;
-   margin-top:-300px;
+   margin-top:-400px;
    margin-bottom:60px;
    z-index:9;
    position:relative;
@@ -19326,7 +19321,7 @@ ul#footer-nav li {
 .ie8 #survey_container {
   background-color:#fff;
   border:1px solid #ddd;
-   margin-top:-300px;
+   margin-top:-400px;
    margin-bottom:60px;
    z-index:9;
    position:relative;
@@ -19860,6 +19855,7 @@ ul.data-list-2 li label.error {
   flex: 355px;
   margin: 10px 0 0 0;
 }
+
 .read_more {
   display: none;
 }
@@ -19958,7 +19954,7 @@ ul.floated li {
 }
 
 .main-title h1{font-size:24px;line-height:26px; margin-top:30px;}
-.main-title p {font-size:14px; ine-height:16px; }
+.main-title p {font-size:14px;line-height:16px; }
 
 #top-nav ul {float: none; padding:20px 0 40px 0; margin:0; }
 #top-wizard {padding:15px 30px;}
@@ -20048,7 +20044,7 @@ ul.floated li {
 }
 
 .main-title h1{font-size:24px;line-height:26px; margin-top:25px;}
-#survey_container {margin-top:-330px;margin-bottom:30px;}
+#survey_container {margin-top:-400px;margin-bottom:30px;}
 #top-nav ul {float: none; padding:20px 0 10px 0; margin:0; }
 ul#footer-nav li {display:block;margin-right:0;}
 ul#footer-nav li:first-child {margin-right:0;}

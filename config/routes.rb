@@ -7,9 +7,18 @@ Rails.application.routes.draw do
   resources :double_mattress_twos, path: '2persoonsmatras/duo', except: [:edit, :update, :destroy]
 
   root 'homes#index'
-  get 'customers/new'  			  => 'customers#new'
-  post 'customers/new' 			  => 'customers#create'
-  get 'bedankt'								=> 'customers#success'
-  get 'hoeveel-personen'      => 'homes#one_or_two_persons'
-  get 'over-ons'              => 'pages#over_ons'
+  get 'customers/new'  			        => 'customers#new'
+  post 'customers/new' 			        => 'customers#create'
+  get 'bedankt'								      => 'customers#success'
+  get 'hoeveel-personen'            => 'homes#one_or_two_persons'
+  get 'over-ons'                    => 'pages#over_ons'
+  get 'privacy-policy'              => 'pages#privacy_policy'
+  get 'veelgestelde-vragen'         => 'pages#faq'
+  get 'garanties'                   => 'pages#garanties'
+  get 'cookie-policy'               => 'pages#cookie_policy'
+  get 'retourneren'                 => 'pages#retourneren'
+  get 'algemene-voorwaarden-simpel' => 'pages#algemene_voorwaarden_simpel'
+  get 'algemene-voorwaarden'        => 'pages#algemene_voorwaarden'
+  get 'contact'                     => 'pages#contact'
+
 end

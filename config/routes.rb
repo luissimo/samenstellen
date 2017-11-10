@@ -20,5 +20,6 @@ Rails.application.routes.draw do
   get 'algemene-voorwaarden-simpel' => 'pages#algemene_voorwaarden_simpel'
   get 'algemene-voorwaarden'        => 'pages#algemene_voorwaarden'
   get 'contact'                     => 'pages#contact'
+  post 'contact'                    => 'pages#create_contact'
 
 end

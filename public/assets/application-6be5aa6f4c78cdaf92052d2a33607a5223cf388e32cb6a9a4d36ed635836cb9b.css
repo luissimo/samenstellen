@@ -1594,6 +1594,8 @@ th {
 .table {
   width: 100%;
   margin-bottom: 20px;
+  table-layout: fixed;
+  word-wrap: break-word;
 }
 
 .table > thead > tr > th,
@@ -4450,7 +4452,6 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .navbar-brand {
   float: left;
-  padding: 15px 15px;
   font-size: 18px;
   line-height: 20px;
 }
@@ -11345,7 +11346,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-brand {
   float: left;
   height: 50px;
-  padding: 15px 15px;
+  margin-bottom: 10px;
   font-size: 18px;
   line-height: 20px;
 }
@@ -13998,8 +13999,8 @@ a:focus,
 a:hover {
     text-decoration: none;
     color: inherit;
-    -webkit-transition: all .3s;
-    transition: all .3s
+    -webkit-transition: all 0s;
+    transition: all 0s
 }
 
 body {
@@ -14009,7 +14010,7 @@ body {
 }
 
 section {
-    padding: 150px 0;
+    padding: 50px 0;
     overflow-x: hidden
 }
 
@@ -14166,7 +14167,7 @@ h2.has-line-center .heading-bg-text {
 .more-btn {
     position: relative;
     display: inline-block;
-    transition: all 0.3s;
+    transition: all 0s;
     line-height: 24px;
     padding: 12px 30px;
     text-align: center;
@@ -14515,7 +14516,7 @@ nav.main-navigation .navbar-nav .btn:hover{
 .service-box-one {
     position: relative;
     padding: 40px 20px;
-    transition: all .3s;
+    transition: all 0s;
 }
 .service-box-one:hover{
 	box-shadow: 0 0 35px rgba(0,0,0,.1);
@@ -14713,8 +14714,8 @@ nav.main-navigation .navbar-nav .btn:hover{
     -webkit-transform: scale(.52, .5);
     transform: scale(.52, .5);
     opacity: .6;
-    -webkit-transition: all .3s ease;
-    transition: all .3s ease
+    -webkit-transition: all 0s ease;
+    transition: all 0s ease
 }
 
 .screenshots .owl-carousel .active.center {
@@ -14774,8 +14775,8 @@ nav.main-navigation .navbar-nav .btn:hover{
     transform: translateY(-50%);
     color: #fff;
     border-radius: 50%;
-    -webkit-transition: all .3s ;
-    transition: all .3s ;
+    -webkit-transition: all 0s ;
+    transition: all 0s ;
 }
 .screenshots .owl-prev{
     left: 30px
@@ -14852,7 +14853,7 @@ nav.main-navigation .navbar-nav .btn:hover{
     display: inline-block;
     margin: 5px 5px 0 0;
     padding: 12px 30px;
-    transition: all .3s;
+    transition: all 0s;
 }
 
 .download .download-btn:hover{
@@ -14892,8 +14893,8 @@ nav.main-navigation .navbar-nav .btn:hover{
     line-height: 100px;
     border-radius: 50%;
     font-size: 40px;
-    transition: all .3s;
-    -webkit-transition: all .3s;
+    transition: all 0s;
+    -webkit-transition: all 0s;
 }
 .waves-block {
     position: absolute;
@@ -14991,10 +14992,9 @@ nav.main-navigation .navbar-nav .btn:hover{
 .how-box-one {
     position: relative;
     padding: 40px 20px;
-    transition: all .3s;
 }
 .how-box-one:hover{
-	box-shadow: 0 0 35px rgba(0,0,0,.1);
+	box-shadow: 0 0 5px rgba(0,0,0,.1);
 }
 .how-box-one:after{
     content: '';
@@ -15088,11 +15088,11 @@ nav.main-navigation .navbar-nav .btn:hover{
 	border-radius:50%;
 	z-index:2;
 }
-.what-we-do .outer .phone{
+.what-we-do .outer .mattress{
 	position: absolute;
     width: 100%;
     left: 50%;
-    top: -95px;
+    top: -170px;
     transform: translateX(-50.5%);
 }
 
@@ -15399,7 +15399,7 @@ nav.main-navigation .navbar-nav .btn:hover{
     padding-bottom: 40px;
     border-radius: 10px;
     margin-top: 20px;
-    transition: all 0.3s ease .3s;
+    transition: all 0s ease .3s;
 }
 .pricing-table .pricing-table-header{
     padding: 40px 0;
@@ -15449,7 +15449,7 @@ nav.main-navigation .navbar-nav .btn:hover{
     padding: 10px 35px;
     border-radius: 20px;
     text-transform: uppercase;
-    transition: all 0.3s ease 0s;
+    transition: all 0s ease 0s;
 }
 
 @media screen and (max-width: 991px){
@@ -15819,7 +15819,7 @@ nav.main-navigation .navbar-nav .btn:hover{
 .demos img{
     width: 80%;
 
-    transition: all .3s;
+    transition: all 0s;
 }
 .demos img:hover{
     box-shadow: 0 0 35px rgba(0, 0, 0, .3)
@@ -16273,8 +16273,8 @@ a:focus,
 a:hover {
     text-decoration: none;
     color: inherit;
-    -webkit-transition: all .3s;
-    transition: all .3s
+    -webkit-transition: all 0s;
+    transition: all 0s
 }
 
 body {
@@ -16283,12 +16283,12 @@ body {
 }
 
 section {
-    padding: 100px 0;
+    padding: 50px 0;
     overflow-x: hidden
 }
 
 section header {
-    margin-bottom: 30px
+
 }
 
 h1,
@@ -16423,7 +16423,7 @@ h2.has-line-center .heading-bg-text {
 .more-btn {
     position: relative;
     display: inline-block;
-    transition: all 0.3s;
+    transition: all 0s;
     line-height: 24px;
     padding: 12px 30px;
     text-align: center;
@@ -16529,7 +16529,7 @@ h2.has-line-center .heading-bg-text {
   height: 100%;
   opacity: 1;
   visibility: inherit;
-  background: transparent url("../../images/cloud_sleeping.jpg") repeat-x scroll 0 100%;
+  background: transparent url("../../images/tenzen.png") repeat-x scroll 0 100%;
   -webkit-animation: cloudwash 60s linear infinite;
   -moz-animation: cloudwash 60s linear infinite;
   animation: cloudwash 60s linear infinite;
@@ -16652,7 +16652,7 @@ nav.main-navigation .navbar-nav a.active{
     border-style: solid;
     border-width: 0 0 2px 0;
     border-color: #fff;
-    padding: 20px 15px
+    padding: 30px 15px 0px 0px;
 }
 nav.main-navigation .navbar-brand{
     height: 63px;
@@ -16699,7 +16699,7 @@ nav.main-navigation .navbar-nav .btn:hover{
 
 @media (max-width: 767px){
     nav.main-navigation .navbar-toggle{
-        margin-top: 14px;
+        margin-top: 22px;
         margin-bottom: 14px;
         border-bottom: 1px solid
     }
@@ -16748,7 +16748,7 @@ nav.main-navigation .navbar-nav .btn:hover{
 .service-box-one {
     position: relative;
     padding: 40px 20px;
-    transition: all .3s;
+    transition: all 0s;
 }
 .service-box-one:hover{
     box-shadow: 0 0 35px rgba(0,0,0,.1);
@@ -16952,8 +16952,8 @@ nav.main-navigation .navbar-nav .btn:hover{
 }
 style.css:1477
 .detailed-features .more-btn span {
-    -webkit-transition: all .3s;
-    transition: all .3s;
+    -webkit-transition: all 0s;
+    transition: all 0s;
 }
 /***
 
@@ -16975,8 +16975,8 @@ style.css:1477
     -webkit-transform: scale(.52, .5);
     transform: scale(.52, .5);
     opacity: .6;
-    -webkit-transition: all .3s ease;
-    transition: all .3s ease
+    -webkit-transition: all 0s ease;
+    transition: all 0s ease
 }
 
 .screenshots .owl-carousel .active.center {
@@ -17036,8 +17036,8 @@ style.css:1477
     transform: translateY(-50%);
     color: #fff;
     border-radius: 50%;
-    -webkit-transition: all .3s ;
-    transition: all .3s ;
+    -webkit-transition: all 0s ;
+    transition: all 0s ;
 }
 .screenshots .owl-prev{
     left: 30px
@@ -17114,7 +17114,7 @@ style.css:1477
     display: inline-block;
     margin: 5px 5px 0 0;
     padding: 12px 30px;
-    transition: all .3s;
+    transition: all 0s;
 }
 
 .download .download-btn:hover{
@@ -17151,8 +17151,8 @@ style.css:1477
     line-height: 100px;
     border-radius: 50%;
     font-size: 40px;
-    transition: all .3s;
-    -webkit-transition: all .3s;
+    transition: all 0s;
+    -webkit-transition: all 0s;
 }
 .waves-block {
     position: absolute;
@@ -17245,10 +17245,9 @@ style.css:1477
 .how-box-one {
     position: relative;
     padding: 40px 20px;
-    transition: all .3s;
 }
 .how-box-one:hover{
-    box-shadow: 0 0 35px rgba(0,0,0,.1);
+    box-shadow: 0 0 5px rgba(0,0,0,.1);
 }
 
 @media (max-width:991px){
@@ -17321,11 +17320,11 @@ style.css:1477
     border-radius:50%;
     z-index:2;
 }
-.what-we-do .outer .phone{
+.what-we-do .outer .mattress{
     position: absolute;
     width: 100%;
     left: 50%;
-    top: -95px;
+    top: -170px;
     transform: translateX(-50.5%);
 }
 
@@ -17377,8 +17376,7 @@ style.css:1477
     width:72px;
     height:72px;
     text-align:center;
-    line-height:72px;
-    background: #fff;
+    line-height:100px;
     color: #ABDBEA !important;
     font-size:50px;
     transition:all 300ms ease;
@@ -17439,9 +17437,8 @@ style.css:1477
     width:72px;
     height:72px;
     text-align:center;
-    line-height:72px;
+    line-height:100px;
     color: #ABDBEA;
-    background: #fff;
     font-size:50px;
     transition:all 300ms ease;
     -moz-transition:all 300ms ease;
@@ -17606,7 +17603,7 @@ style.css:1477
     border-radius: 10px;
     margin-top: 20px;
     border: 1px solid #ccc;
-    transition: all 0.3s ease .3s;
+    transition: all 0s ease .3s;
 }
 .pricing-table .pricing-table-header{
     padding: 40px 0;
@@ -17655,7 +17652,7 @@ style.css:1477
     padding: 10px 35px;
     border-radius: 20px;
     text-transform: uppercase;
-    transition: all 0.3s ease 0s;
+    transition: all 0s ease 0s;
 }
 
 @media screen and (max-width: 991px){
@@ -17836,13 +17833,13 @@ style.css:1477
     margin-bottom:0px;
 }
 
-.main-footer .footer-bottom{
-    position:relative;
-    padding:18px 0px;
-    color:#cccccc;
-    background:#131313;
-    line-height:24px;
-    text-align:center;
+.main-footer .footer-bottom {
+    position: relative;
+    padding: 20px;
+    color: black;
+    background: whitesmoke;
+    line-height: 24px;
+    text-align: center;
 }
 
 .main-footer .newsletter-widget{
@@ -17998,9 +17995,9 @@ style.css:1477
       box-sizing: border-box; }
     .switch-light a {
       display: block;
-      -webkit-transition: all 0.3s ease-out;
-      -moz-transition: all 0.3s ease-out;
-      transition: all 0.3s ease-out; outline:none; }
+      -webkit-transition: all 0s ease-out;
+      -moz-transition: all 0s ease-out;
+      transition: all 0s ease-out; outline:none; }
     .switch-light label, .switch-light > span {
       line-height: 30px;
       vertical-align: middle; height:30px; 	  cursor:pointer;}
@@ -18060,9 +18057,9 @@ style.css:1477
       box-sizing: border-box; }
     .switch-toggle a {
       display: block;
-      -webkit-transition: all 0.3s ease-out;
-      -moz-transition: all 0.3s ease-out;
-      transition: all 0.3s ease-out; }
+      -webkit-transition: all 0s ease-out;
+      -moz-transition: all 0s ease-out;
+      transition: all 0s ease-out; }
     .switch-toggle label, .switch-toggle > span {
       line-height: 30px;
       vertical-align: middle; }
@@ -18182,9 +18179,9 @@ style.css:1477
       background-color: white;
       border: 1px solid lightgrey;
       border-radius: 100%;
-      -webkit-transition: all 0.3s ease-out;
-      -moz-transition: all 0.3s ease-out;
-      transition: all 0.3s ease-out;
+      -webkit-transition: all 0s ease-out;
+      -moz-transition: all 0s ease-out;
+      transition: all 0s ease-out;
       box-shadow: inset 0 -3px 3px rgba(0, 0, 0, 0.025), 0 1px 4px rgba(0, 0, 0, 0.15), 0 4px 4px rgba(0, 0, 0, 0.1); }
     .switch-ios.switch-light > span span {
       width: 100%;
@@ -18229,9 +18226,9 @@ style.css:1477
     .switch-ios.switch-toggle a {
       background-color: #53d76a;
       border-radius: 25px;
-      -webkit-transition: all 0.3s ease-out;
-      -moz-transition: all 0.3s ease-out;
-      transition: all 0.3s ease-out; }
+      -webkit-transition: all 0s ease-out;
+      -moz-transition: all 0s ease-out;
+      transition: all 0s ease-out; }
     .switch-ios.switch-toggle label {
       color: #868686; }
   .switch-ios input:checked + label {
@@ -19206,7 +19203,6 @@ a.button_medium_2:hover {background:#00aeef; color:#fff; border:2px solid  #00ae
 
 .backward:hover, .forward:hover {background:#34A853; color:#fff;}
 
-
 /** Header ==================== **/
 #top-area {
   background-color:#abdbea;
@@ -19216,13 +19212,6 @@ header {
   padding:10px 0;
   width:100%;
   background:url(line_header.png) repeat-x left bottom;
-}
-#logo a{
-  text-indent:-99999px;
-  background: url(logo-230x40.png) no-repeat 0 0;
-  display:block;
-  height:32px;
-  width:151px;
 }
 
 #top-nav ul{ float:right; margin:0; padding:0; margin-top:8px;  margin-right:-10px; font-weight:700; text-transform:uppercase;}
@@ -19298,6 +19287,7 @@ ul#footer-nav li {
   text-transform:uppercase;
   font-size:11px;
 }
+
 .shadow {
   width:100%;
   height:6px;
@@ -19306,6 +19296,7 @@ ul#footer-nav li {
   bottom:-6px;
   background:url(shadow_top_form.png) no-repeat center top;
 }
+
 .ui-widget { }
 .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {}
 .ui-widget-content { background: #fff; color: #222222; }
@@ -19318,7 +19309,7 @@ ul#footer-nav li {
 #survey_container {
   background-color:#fff;
    box-shadow: 0 0 5px #777;
-   margin-top:-300px;
+   margin-top:-400px;
    margin-bottom:60px;
    z-index:9;
    position:relative;
@@ -19326,7 +19317,7 @@ ul#footer-nav li {
 .ie8 #survey_container {
   background-color:#fff;
   border:1px solid #ddd;
-   margin-top:-300px;
+   margin-top:-400px;
    margin-bottom:60px;
    z-index:9;
    position:relative;
@@ -19437,10 +19428,10 @@ ul#footer-nav li {
 }
 .transit-to-top h4 {
   text-align:center;
-  moz-transition: all 0.3s ease-in-out;
-  o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
+  moz-transition: all 0s ease-in-out;
+  o-transition: all 0s ease-in-out;
+  transition: all 0s ease-in-out;
+  -webkit-transition: all 0s ease-in-out;
   margin:20px 0 0 0;
   padding:0;
 }
@@ -19860,6 +19851,7 @@ ul.data-list-2 li label.error {
   flex: 355px;
   margin: 10px 0 0 0;
 }
+
 .read_more {
   display: none;
 }
@@ -19958,7 +19950,7 @@ ul.floated li {
 }
 
 .main-title h1{font-size:24px;line-height:26px; margin-top:30px;}
-.main-title p {font-size:14px; ine-height:16px; }
+.main-title p {font-size:14px;line-height:16px; }
 
 #top-nav ul {float: none; padding:20px 0 40px 0; margin:0; }
 #top-wizard {padding:15px 30px;}
@@ -20048,7 +20040,7 @@ ul.floated li {
 }
 
 .main-title h1{font-size:24px;line-height:26px; margin-top:25px;}
-#survey_container {margin-top:-330px;margin-bottom:30px;}
+#survey_container {margin-top:-400px;margin-bottom:30px;}
 #top-nav ul {float: none; padding:20px 0 10px 0; margin:0; }
 ul#footer-nav li {display:block;margin-right:0;}
 ul#footer-nav li:first-child {margin-right:0;}

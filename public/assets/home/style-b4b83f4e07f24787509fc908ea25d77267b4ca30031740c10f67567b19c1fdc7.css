@@ -94,12 +94,12 @@ body {
 }
 
 section {
-    padding: 100px 0;
+    padding: 50px 0;
     overflow-x: hidden
 }
 
 section header {
-    margin-bottom: 30px
+
 }
 
 h1,
@@ -1056,10 +1056,9 @@ style.css:1477
 .how-box-one {
     position: relative;
     padding: 40px 20px;
-    transition: all 0s;
 }
 .how-box-one:hover{
-    box-shadow: 0 0 35px rgba(0,0,0,.1);
+    box-shadow: 0 0 5px rgba(0,0,0,.1);
 }
 
 @media (max-width:991px){
@@ -1132,11 +1131,11 @@ style.css:1477
     border-radius:50%;
     z-index:2;
 }
-.what-we-do .outer .phone{
+.what-we-do .outer .mattress{
     position: absolute;
     width: 100%;
     left: 50%;
-    top: -95px;
+    top: -170px;
     transform: translateX(-50.5%);
 }
 
@@ -1188,8 +1187,7 @@ style.css:1477
     width:72px;
     height:72px;
     text-align:center;
-    line-height:72px;
-    background: #fff;
+    line-height:100px;
     color: #ABDBEA !important;
     font-size:50px;
     transition:all 300ms ease;
@@ -1250,9 +1248,8 @@ style.css:1477
     width:72px;
     height:72px;
     text-align:center;
-    line-height:72px;
+    line-height:100px;
     color: #ABDBEA;
-    background: #fff;
     font-size:50px;
     transition:all 300ms ease;
     -moz-transition:all 300ms ease;

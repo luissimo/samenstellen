@@ -13999,8 +13999,8 @@ a:focus,
 a:hover {
     text-decoration: none;
     color: inherit;
-    -webkit-transition: all .3s;
-    transition: all .3s
+    -webkit-transition: all 0s;
+    transition: all 0s
 }
 
 body {
@@ -14167,7 +14167,7 @@ h2.has-line-center .heading-bg-text {
 .more-btn {
     position: relative;
     display: inline-block;
-    transition: all 0.3s;
+    transition: all 0s;
     line-height: 24px;
     padding: 12px 30px;
     text-align: center;
@@ -14516,7 +14516,7 @@ nav.main-navigation .navbar-nav .btn:hover{
 .service-box-one {
     position: relative;
     padding: 40px 20px;
-    transition: all .3s;
+    transition: all 0s;
 }
 .service-box-one:hover{
 	box-shadow: 0 0 35px rgba(0,0,0,.1);
@@ -14714,8 +14714,8 @@ nav.main-navigation .navbar-nav .btn:hover{
     -webkit-transform: scale(.52, .5);
     transform: scale(.52, .5);
     opacity: .6;
-    -webkit-transition: all .3s ease;
-    transition: all .3s ease
+    -webkit-transition: all 0s ease;
+    transition: all 0s ease
 }
 
 .screenshots .owl-carousel .active.center {
@@ -14775,8 +14775,8 @@ nav.main-navigation .navbar-nav .btn:hover{
     transform: translateY(-50%);
     color: #fff;
     border-radius: 50%;
-    -webkit-transition: all .3s ;
-    transition: all .3s ;
+    -webkit-transition: all 0s ;
+    transition: all 0s ;
 }
 .screenshots .owl-prev{
     left: 30px
@@ -14853,7 +14853,7 @@ nav.main-navigation .navbar-nav .btn:hover{
     display: inline-block;
     margin: 5px 5px 0 0;
     padding: 12px 30px;
-    transition: all .3s;
+    transition: all 0s;
 }
 
 .download .download-btn:hover{
@@ -14893,8 +14893,8 @@ nav.main-navigation .navbar-nav .btn:hover{
     line-height: 100px;
     border-radius: 50%;
     font-size: 40px;
-    transition: all .3s;
-    -webkit-transition: all .3s;
+    transition: all 0s;
+    -webkit-transition: all 0s;
 }
 .waves-block {
     position: absolute;
@@ -14992,7 +14992,7 @@ nav.main-navigation .navbar-nav .btn:hover{
 .how-box-one {
     position: relative;
     padding: 40px 20px;
-    transition: all .3s;
+    transition: all 0s;
 }
 .how-box-one:hover{
 	box-shadow: 0 0 35px rgba(0,0,0,.1);
@@ -15400,7 +15400,7 @@ nav.main-navigation .navbar-nav .btn:hover{
     padding-bottom: 40px;
     border-radius: 10px;
     margin-top: 20px;
-    transition: all 0.3s ease .3s;
+    transition: all 0s ease .3s;
 }
 .pricing-table .pricing-table-header{
     padding: 40px 0;
@@ -15450,7 +15450,7 @@ nav.main-navigation .navbar-nav .btn:hover{
     padding: 10px 35px;
     border-radius: 20px;
     text-transform: uppercase;
-    transition: all 0.3s ease 0s;
+    transition: all 0s ease 0s;
 }
 
 @media screen and (max-width: 991px){
@@ -15820,7 +15820,7 @@ nav.main-navigation .navbar-nav .btn:hover{
 .demos img{
     width: 80%;
 
-    transition: all .3s;
+    transition: all 0s;
 }
 .demos img:hover{
     box-shadow: 0 0 35px rgba(0, 0, 0, .3)
@@ -15957,7 +15957,7 @@ nav.main-navigation .navbar-nav .btn:hover{
 }
 
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
-[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
 	font-family: Flaticon;
 	font-style: normal;
 }
@@ -16274,8 +16274,8 @@ a:focus,
 a:hover {
     text-decoration: none;
     color: inherit;
-    -webkit-transition: all .3s;
-    transition: all .3s
+    -webkit-transition: all 0s;
+    transition: all 0s
 }
 
 body {
@@ -16424,7 +16424,7 @@ h2.has-line-center .heading-bg-text {
 .more-btn {
     position: relative;
     display: inline-block;
-    transition: all 0.3s;
+    transition: all 0s;
     line-height: 24px;
     padding: 12px 30px;
     text-align: center;
@@ -16749,7 +16749,7 @@ nav.main-navigation .navbar-nav .btn:hover{
 .service-box-one {
     position: relative;
     padding: 40px 20px;
-    transition: all .3s;
+    transition: all 0s;
 }
 .service-box-one:hover{
     box-shadow: 0 0 35px rgba(0,0,0,.1);
@@ -16953,8 +16953,8 @@ nav.main-navigation .navbar-nav .btn:hover{
 }
 style.css:1477
 .detailed-features .more-btn span {
-    -webkit-transition: all .3s;
-    transition: all .3s;
+    -webkit-transition: all 0s;
+    transition: all 0s;
 }
 /***
 
@@ -16976,8 +16976,8 @@ style.css:1477
     -webkit-transform: scale(.52, .5);
     transform: scale(.52, .5);
     opacity: .6;
-    -webkit-transition: all .3s ease;
-    transition: all .3s ease
+    -webkit-transition: all 0s ease;
+    transition: all 0s ease
 }
 
 .screenshots .owl-carousel .active.center {
@@ -17037,8 +17037,8 @@ style.css:1477
     transform: translateY(-50%);
     color: #fff;
     border-radius: 50%;
-    -webkit-transition: all .3s ;
-    transition: all .3s ;
+    -webkit-transition: all 0s ;
+    transition: all 0s ;
 }
 .screenshots .owl-prev{
     left: 30px
@@ -17115,7 +17115,7 @@ style.css:1477
     display: inline-block;
     margin: 5px 5px 0 0;
     padding: 12px 30px;
-    transition: all .3s;
+    transition: all 0s;
 }
 
 .download .download-btn:hover{
@@ -17152,8 +17152,8 @@ style.css:1477
     line-height: 100px;
     border-radius: 50%;
     font-size: 40px;
-    transition: all .3s;
-    -webkit-transition: all .3s;
+    transition: all 0s;
+    -webkit-transition: all 0s;
 }
 .waves-block {
     position: absolute;
@@ -17246,7 +17246,7 @@ style.css:1477
 .how-box-one {
     position: relative;
     padding: 40px 20px;
-    transition: all .3s;
+    transition: all 0s;
 }
 .how-box-one:hover{
     box-shadow: 0 0 35px rgba(0,0,0,.1);
@@ -17607,7 +17607,7 @@ style.css:1477
     border-radius: 10px;
     margin-top: 20px;
     border: 1px solid #ccc;
-    transition: all 0.3s ease .3s;
+    transition: all 0s ease .3s;
 }
 .pricing-table .pricing-table-header{
     padding: 40px 0;
@@ -17656,7 +17656,7 @@ style.css:1477
     padding: 10px 35px;
     border-radius: 20px;
     text-transform: uppercase;
-    transition: all 0.3s ease 0s;
+    transition: all 0s ease 0s;
 }
 
 @media screen and (max-width: 991px){
@@ -17999,9 +17999,9 @@ style.css:1477
       box-sizing: border-box; }
     .switch-light a {
       display: block;
-      -webkit-transition: all 0.3s ease-out;
-      -moz-transition: all 0.3s ease-out;
-      transition: all 0.3s ease-out; outline:none; }
+      -webkit-transition: all 0s ease-out;
+      -moz-transition: all 0s ease-out;
+      transition: all 0s ease-out; outline:none; }
     .switch-light label, .switch-light > span {
       line-height: 30px;
       vertical-align: middle; height:30px; 	  cursor:pointer;}
@@ -18061,9 +18061,9 @@ style.css:1477
       box-sizing: border-box; }
     .switch-toggle a {
       display: block;
-      -webkit-transition: all 0.3s ease-out;
-      -moz-transition: all 0.3s ease-out;
-      transition: all 0.3s ease-out; }
+      -webkit-transition: all 0s ease-out;
+      -moz-transition: all 0s ease-out;
+      transition: all 0s ease-out; }
     .switch-toggle label, .switch-toggle > span {
       line-height: 30px;
       vertical-align: middle; }
@@ -18183,9 +18183,9 @@ style.css:1477
       background-color: white;
       border: 1px solid lightgrey;
       border-radius: 100%;
-      -webkit-transition: all 0.3s ease-out;
-      -moz-transition: all 0.3s ease-out;
-      transition: all 0.3s ease-out;
+      -webkit-transition: all 0s ease-out;
+      -moz-transition: all 0s ease-out;
+      transition: all 0s ease-out;
       box-shadow: inset 0 -3px 3px rgba(0, 0, 0, 0.025), 0 1px 4px rgba(0, 0, 0, 0.15), 0 4px 4px rgba(0, 0, 0, 0.1); }
     .switch-ios.switch-light > span span {
       width: 100%;
@@ -18230,9 +18230,9 @@ style.css:1477
     .switch-ios.switch-toggle a {
       background-color: #53d76a;
       border-radius: 25px;
-      -webkit-transition: all 0.3s ease-out;
-      -moz-transition: all 0.3s ease-out;
-      transition: all 0.3s ease-out; }
+      -webkit-transition: all 0s ease-out;
+      -moz-transition: all 0s ease-out;
+      transition: all 0s ease-out; }
     .switch-ios.switch-toggle label {
       color: #868686; }
   .switch-ios input:checked + label {
@@ -18254,7 +18254,7 @@ style.css:1477
 
   to {
     -webkit-transform: translate3d(0, 0, 0); } }
-/* 
+/*
  * 	Core Owl Carousel CSS File
  *	v1.24
  */
@@ -18293,7 +18293,7 @@ style.css:1477
 	-o-transition: height 500ms ease-in-out;
 	transition: height 500ms ease-in-out;
 }
-	
+
 .owl-carousel .owl-item{
 	float: left;
 }
@@ -18311,7 +18311,7 @@ style.css:1477
 }
 
 /* mouse grab icon */
-.grabbing { 
+.grabbing {
     cursor:url(grabbing.png) 8 8, move;
 }
 
@@ -18487,7 +18487,7 @@ style.css:1477
   to { opacity: 0; transform: scale(1.5); }
 }
 /*
-* 	Owl Carousel Owl Demo Theme 
+* 	Owl Carousel Owl Demo Theme
 *	v1.24
 */
 
@@ -19432,10 +19432,10 @@ ul#footer-nav li {
 }
 .transit-to-top h4 {
   text-align:center;
-  moz-transition: all 0.3s ease-in-out;
-  o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
+  moz-transition: all 0s ease-in-out;
+  o-transition: all 0s ease-in-out;
+  transition: all 0s ease-in-out;
+  -webkit-transition: all 0s ease-in-out;
   margin:20px 0 0 0;
   padding:0;
 }

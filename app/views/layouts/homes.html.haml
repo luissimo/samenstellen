@@ -1,6 +1,7 @@
 !!!
 %html{:lang => "nl"}
   %head
+    = csrf_meta_tags
     %meta{:charset => "utf-8"}/
     / Responsive Meta
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
@@ -78,7 +79,7 @@
         \=======================================
       %section#how-it-work.how-it-work
         .container.text-center
-          %header.text-center.mb-50
+          %header.text-center
             %h2.has-line-center
               Tenzen
           .how-one-container
@@ -91,7 +92,7 @@
                 %h3
                   %a{:href => "#"} Persoonlijke comfort
                 .text
-                  Elke matras wordt bij ons op basis van persoonlijke voorkeuren geproduceerd. Wij zijn van mening dat jij je niet aan je matras moet aanpassen, maar je matras aan jou aangepast moet worden!
+                  Elke matras wordt bij ons op basis van persoonlijke voorkeuren geproduceerd. Jij moet je niet aan je matras aanpassen, maar je matras moet zich aan jou aanpassen!
 
             / how it work Box
             .how-box-one.col-md-4.col-sm-6.col-xs-12
@@ -118,6 +119,79 @@
         \=======================================
         \==End about section==
         \=======================================
+
+      /
+        \=======================================
+        \==Start what we do section==
+        \=======================================
+      %section#services.what-we-do.has-gradient
+        %span.img-bg
+        .container.text-center
+          %header.text-center.mb-70
+            %h2.has-line-center
+              Tenzen matrassen
+            %p.limited-width.lead blabblablalblalblablblalba
+          .outer
+            / Logo
+            .inner-circle
+              =image_tag("tenzen-matrassen.png", alt: "Tenzen Matrassen", class: "mattress")
+            .row.clearfix
+              / Left Column
+              .left-column.col-lg-4.col-md-6.col-sm-6.col-xs-12
+                / Service Box
+                .service-box-three
+                  .inner-box
+                    .icon-box
+                      %span= image_tag("icon-aanpassend-vermogen.png", alt: "kwaliteit matrassen")
+                    %h3
+                      %a{:href => "/"} blabblablalblalblablblalba
+                    .text blabblablalbla lblablblalbablabbla blalblalblablbla lbablabblabl alblalblablblalba
+                / Service Box
+                .service-box-three
+                  .inner-box
+                    .icon-box
+                      %span= image_tag("icon-ademend.png", alt: "kwaliteit matrassen")
+                    %h3
+                      %a{:href => "/"} blabblablalblalblablblalba
+                    .text blabbla blalblalbla blblalbablabbl blalblalblablbl albablabbla blalblalblablblalba
+                / Service Box
+                .service-box-three
+                  .inner-box
+                    .icon-box
+                      %span= image_tag("icon-gevoel.png", alt: "kwaliteit matrassen")
+                    %h3
+                      %a{:href => "/"} blabblablalblalblablblalba
+                    .text blabblabla lblalblablblalbablabb lablalblalblablblalba blabblabla blalblablblalba
+              / Right Column
+              .right-column.col-lg-4.col-md-6.col-sm-6.col-xs-12
+                / Service Box
+                .service-box-four
+                  .inner-box
+                    .icon-box
+                      %span= image_tag("icon-kwaliteit.png", alt: "kwaliteit matrassen")
+                    %h3
+                      %a{:href => "/"} blabblablalblalblablblalba
+                    .text blabbl ablalblalblablbla lbablabblablalb lalblablblalbabl abblablalbla lblablblalba
+                / Service Box
+                .service-box-four
+                  .inner-box
+                    .icon-box
+                      %span= image_tag("icon-stevig.png", alt: "kwaliteit matrassen")
+                    %h3
+                      %a{:href => "/"} blabblablalblalblablblalba
+                    .text blabbl ablalblalblablb lalbablabblabl alblalblablbla lbablabblablalbla lblablblalba
+                / Service Box
+                .service-box-four
+                  .inner-box
+                    .icon-box
+                      %span= image_tag("icon-veilig.png", alt: "kwaliteit matrassen")
+                    %h3
+                      %a{:href => "/"} blabblablalblalblablblalba
+                    .text blabblab lalblalblab lblalb ablabb  lablalb lalblab blalbabl abblablalb lalblablbl alba
+      /
+        \=======================================
+        \==End what we do section==
+        \=======================================
       /
         \=======================================
         \==Start footer section==
@@ -128,7 +202,7 @@
           .auto-container
             .copyright-text
               ©
-              = @current_year
+              = current_year
               Tenzen
       /
         \=======================================

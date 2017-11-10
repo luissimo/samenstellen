@@ -16,6 +16,27 @@ class PagesController < ApplicationController
 
   def algemene_voorwaarden_simpel; end
 
-  def contact; end
+  def contact
+    @contact_form = ContactForm.new
+    @contact_form.request = request
+  end
 
+  def create_contact
+    @contact_form = ContactForm.new(contact_form_params.merge({ session_id: session.id }))
+
+    respond_to do |format|
+      if @contact_form.save
+        format.html { redirect_to contact_url }
+      else
+        format.html { render :contact }
+        format.json { render json: @contact_form.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  private
+
+  def contact_form_params
+    params.require(:contact_form).permit(:id, :session_id, :name, :email, :subject, :about, :message)
+  end
 end

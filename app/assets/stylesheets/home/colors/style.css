@@ -82,8 +82,8 @@ a:focus,
 a:hover {
     text-decoration: none;
     color: inherit;
-    -webkit-transition: all .3s;
-    transition: all .3s
+    -webkit-transition: all 0s;
+    transition: all 0s
 }
 
 body {
@@ -93,7 +93,7 @@ body {
 }
 
 section {
-    padding: 150px 0;
+    padding: 50px 0;
     overflow-x: hidden
 }
 
@@ -250,7 +250,7 @@ h2.has-line-center .heading-bg-text {
 .more-btn {
     position: relative;
     display: inline-block;
-    transition: all 0.3s;
+    transition: all 0s;
     line-height: 24px;
     padding: 12px 30px;
     text-align: center;
@@ -599,7 +599,7 @@ nav.main-navigation .navbar-nav .btn:hover{
 .service-box-one {
     position: relative;
     padding: 40px 20px;
-    transition: all .3s;
+    transition: all 0s;
 }
 .service-box-one:hover{
 	box-shadow: 0 0 35px rgba(0,0,0,.1);
@@ -797,8 +797,8 @@ nav.main-navigation .navbar-nav .btn:hover{
     -webkit-transform: scale(.52, .5);
     transform: scale(.52, .5);
     opacity: .6;
-    -webkit-transition: all .3s ease;
-    transition: all .3s ease
+    -webkit-transition: all 0s ease;
+    transition: all 0s ease
 }
 
 .screenshots .owl-carousel .active.center {
@@ -858,8 +858,8 @@ nav.main-navigation .navbar-nav .btn:hover{
     transform: translateY(-50%);
     color: #fff;
     border-radius: 50%;
-    -webkit-transition: all .3s ;
-    transition: all .3s ;
+    -webkit-transition: all 0s ;
+    transition: all 0s ;
 }
 .screenshots .owl-prev{
     left: 30px
@@ -936,7 +936,7 @@ nav.main-navigation .navbar-nav .btn:hover{
     display: inline-block;
     margin: 5px 5px 0 0;
     padding: 12px 30px;
-    transition: all .3s;
+    transition: all 0s;
 }
 
 .download .download-btn:hover{
@@ -976,8 +976,8 @@ nav.main-navigation .navbar-nav .btn:hover{
     line-height: 100px;
     border-radius: 50%;
     font-size: 40px;
-    transition: all .3s;
-    -webkit-transition: all .3s;
+    transition: all 0s;
+    -webkit-transition: all 0s;
 }
 .waves-block {
     position: absolute;
@@ -1075,10 +1075,9 @@ nav.main-navigation .navbar-nav .btn:hover{
 .how-box-one {
     position: relative;
     padding: 40px 20px;
-    transition: all .3s;
 }
 .how-box-one:hover{
-	box-shadow: 0 0 35px rgba(0,0,0,.1);
+	box-shadow: 0 0 5px rgba(0,0,0,.1);
 }
 .how-box-one:after{
     content: '';
@@ -1172,11 +1171,11 @@ nav.main-navigation .navbar-nav .btn:hover{
 	border-radius:50%;
 	z-index:2;
 }
-.what-we-do .outer .phone{
+.what-we-do .outer .mattress{
 	position: absolute;
     width: 100%;
     left: 50%;
-    top: -95px;
+    top: -170px;
     transform: translateX(-50.5%);
 }
 
@@ -1483,7 +1482,7 @@ nav.main-navigation .navbar-nav .btn:hover{
     padding-bottom: 40px;
     border-radius: 10px;
     margin-top: 20px;
-    transition: all 0.3s ease .3s;
+    transition: all 0s ease .3s;
 }
 .pricing-table .pricing-table-header{
     padding: 40px 0;
@@ -1533,7 +1532,7 @@ nav.main-navigation .navbar-nav .btn:hover{
     padding: 10px 35px;
     border-radius: 20px;
     text-transform: uppercase;
-    transition: all 0.3s ease 0s;
+    transition: all 0s ease 0s;
 }
 
 @media screen and (max-width: 991px){
@@ -1903,7 +1902,7 @@ nav.main-navigation .navbar-nav .btn:hover{
 .demos img{
     width: 80%;
 
-    transition: all .3s;
+    transition: all 0s;
 }
 .demos img:hover{
     box-shadow: 0 0 35px rgba(0, 0, 0, .3)

@@ -1594,6 +1594,8 @@ th {
 .table {
   width: 100%;
   margin-bottom: 20px;
+  table-layout: fixed;
+  word-wrap: break-word;
 }
 
 .table > thead > tr > th,
@@ -11344,7 +11346,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-brand {
   float: left;
   height: 50px;
-  padding: 15px 15px;
+  margin-bottom: 10px;
   font-size: 18px;
   line-height: 20px;
 }
@@ -14008,12 +14010,8 @@ body {
 }
 
 section {
-    padding: 150px 0;
+    padding: 50px 0px 100px 0px;
     overflow-x: hidden
-}
-
-section header {
-    margin-bottom: 30px
 }
 
 .scrollUp {
@@ -14384,7 +14382,7 @@ nav.main-navigation .navbar-nav a.active{
     border-style: solid;
     border-width: 0 0 2px 0;
     border-color: #fff;
-    padding: 20px 15px
+    padding: 30px 15px;
 }
 nav.main-navigation .navbar-brand{
     padding: 12px 15px;
@@ -14990,10 +14988,9 @@ nav.main-navigation .navbar-nav .btn:hover{
 .how-box-one {
     position: relative;
     padding: 40px 20px;
-    transition: all 0s;
 }
 .how-box-one:hover{
-	box-shadow: 0 0 35px rgba(0,0,0,.1);
+	box-shadow: 0 0 5px rgba(0,0,0,.1);
 }
 .how-box-one:after{
     content: '';
@@ -15087,11 +15084,11 @@ nav.main-navigation .navbar-nav .btn:hover{
 	border-radius:50%;
 	z-index:2;
 }
-.what-we-do .outer .phone{
+.what-we-do .outer .mattress{
 	position: absolute;
     width: 100%;
     left: 50%;
-    top: -95px;
+    top: -170px;
     transform: translateX(-50.5%);
 }
 
@@ -15732,7 +15729,6 @@ nav.main-navigation .navbar-nav .btn:hover{
 	text-transform:capitalize;
 }
 
-
 /***
 
 ====================================================================
@@ -15955,7 +15951,7 @@ nav.main-navigation .navbar-nav .btn:hover{
 }
 
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
-[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
 	font-family: Flaticon;
 	font-style: normal;
 }
@@ -16282,12 +16278,8 @@ body {
 }
 
 section {
-    padding: 100px 0;
+    padding: 50px 0px 100px 0px;
     overflow-x: hidden
-}
-
-section header {
-    margin-bottom: 30px
 }
 
 h1,
@@ -16528,7 +16520,7 @@ h2.has-line-center .heading-bg-text {
   height: 100%;
   opacity: 1;
   visibility: inherit;
-  background: transparent url("../../images/tenzen.jpg") repeat-x scroll 0 100%;
+  background: transparent url("../../images/tenzen.png") repeat-x scroll 0 100%;
   -webkit-animation: cloudwash 60s linear infinite;
   -moz-animation: cloudwash 60s linear infinite;
   animation: cloudwash 60s linear infinite;
@@ -16651,7 +16643,7 @@ nav.main-navigation .navbar-nav a.active{
     border-style: solid;
     border-width: 0 0 2px 0;
     border-color: #fff;
-    padding: 20px 15px
+    padding: 30px 15px;
 }
 nav.main-navigation .navbar-brand{
     height: 63px;
@@ -16698,7 +16690,7 @@ nav.main-navigation .navbar-nav .btn:hover{
 
 @media (max-width: 767px){
     nav.main-navigation .navbar-toggle{
-        margin-top: 14px;
+        margin-top: 22px;
         margin-bottom: 14px;
         border-bottom: 1px solid
     }
@@ -17093,9 +17085,6 @@ style.css:1477
     }
 }
 
-
-
-
 /***
 
 ====================================================================
@@ -17114,6 +17103,7 @@ style.css:1477
     margin: 5px 5px 0 0;
     padding: 12px 30px;
     transition: all 0s;
+    cursor: pointer;
 }
 
 .download .download-btn:hover{
@@ -17244,10 +17234,9 @@ style.css:1477
 .how-box-one {
     position: relative;
     padding: 40px 20px;
-    transition: all 0s;
 }
 .how-box-one:hover{
-    box-shadow: 0 0 35px rgba(0,0,0,.1);
+    box-shadow: 0 0 5px rgba(0,0,0,.1);
 }
 
 @media (max-width:991px){
@@ -17320,11 +17309,11 @@ style.css:1477
     border-radius:50%;
     z-index:2;
 }
-.what-we-do .outer .phone{
+.what-we-do .outer .mattress{
     position: absolute;
     width: 100%;
     left: 50%;
-    top: -95px;
+    top: -170px;
     transform: translateX(-50.5%);
 }
 
@@ -17376,8 +17365,7 @@ style.css:1477
     width:72px;
     height:72px;
     text-align:center;
-    line-height:72px;
-    background: #fff;
+    line-height:100px;
     color: #ABDBEA !important;
     font-size:50px;
     transition:all 300ms ease;
@@ -17438,9 +17426,8 @@ style.css:1477
     width:72px;
     height:72px;
     text-align:center;
-    line-height:72px;
+    line-height:100px;
     color: #ABDBEA;
-    background: #fff;
     font-size:50px;
     transition:all 300ms ease;
     -moz-transition:all 300ms ease;
@@ -18252,7 +18239,7 @@ style.css:1477
 
   to {
     -webkit-transform: translate3d(0, 0, 0); } }
-/*
+/* 
  * 	Core Owl Carousel CSS File
  *	v1.24
  */
@@ -18291,7 +18278,7 @@ style.css:1477
 	-o-transition: height 500ms ease-in-out;
 	transition: height 500ms ease-in-out;
 }
-
+	
 .owl-carousel .owl-item{
 	float: left;
 }
@@ -18309,7 +18296,7 @@ style.css:1477
 }
 
 /* mouse grab icon */
-.grabbing {
+.grabbing { 
     cursor:url(grabbing.png) 8 8, move;
 }
 
@@ -18485,7 +18472,7 @@ style.css:1477
   to { opacity: 0; transform: scale(1.5); }
 }
 /*
-* 	Owl Carousel Owl Demo Theme
+* 	Owl Carousel Owl Demo Theme 
 *	v1.24
 */
 

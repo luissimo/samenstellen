@@ -93,12 +93,8 @@ body {
 }
 
 section {
-    padding: 50px 0;
+    padding: 50px 0px 100px 0px;
     overflow-x: hidden
-}
-
-section header {
-
 }
 
 h1,
@@ -462,7 +458,7 @@ nav.main-navigation .navbar-nav a.active{
     border-style: solid;
     border-width: 0 0 2px 0;
     border-color: #fff;
-    padding: 30px 15px 0px 0px;
+    padding: 30px 15px;
 }
 nav.main-navigation .navbar-brand{
     height: 63px;
@@ -904,9 +900,6 @@ style.css:1477
     }
 }
 
-
-
-
 /***
 
 ====================================================================
@@ -925,6 +918,7 @@ style.css:1477
     margin: 5px 5px 0 0;
     padding: 12px 30px;
     transition: all 0s;
+    cursor: pointer;
 }
 
 .download .download-btn:hover{

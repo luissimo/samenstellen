@@ -44,14 +44,14 @@
               %span.icon-bar
             %a.navbar-brand{href: "/"}
               = image_tag('weblogo1_350x75.svg', width: '250px', height: '70px')
-          #navbar.collapse.navbar-collapse
+          .collapse.navbar-collapse#navbar
             %ul.nav.navbar-nav.navbar-right
               %li
                 %a.js-scroll-trigger{href: root_url} Home
               %li
                 %a.js-scroll-trigger{href: new_mattress_url} Eenpersoonsmatras
               %li
-                %a.js-scroll-trigger{href: hoeveel_personen_url} Tweepersoonsmatras
+                %a.js-scroll-trigger{href: root_url} Tweepersoonsmatras
               %li
                 %a.js-scroll-trigger{href: over_ons_url} Over ons
               %li
@@ -68,7 +68,24 @@
         .moving-bg
         .container
           .header-1-content.row
-            = yield
+            .col-md-7.col-sm-12.mt-63.home-question-1
+              %h1.has-line Perfect slapen kost je slechts 2 minuten
+              %p.lead
+                Kies hieronder wat voor matras je wilt samenstellen
+              .download
+                %a.download-btn{href: new_mattress_url}
+                  1-Persoonsmatras samenstellen
+                %a.download-btn.show-home-question-2
+                  2-Persoonsmatras samenstellen
+            .col-md-7.col-sm-12.mt-63.home-question-2
+              %h1.has-line Hoeveel personen slapen er op?
+              .download
+                %a.download-btn{href: new_double_mattress_one_url}
+                  1 Persoon
+                %a.download-btn{href: new_double_mattress_two_url}
+                  2 Personen
+            .col-md-5.hidden-sm.hidden-xs.mt-63
+              .center-block= image_tag("tenzen.png", alt: 'Tenzen Matras Samenstellen')
       /
         \=======================================
         \==End header-1 section==
@@ -203,7 +220,7 @@
             .copyright-text
               ©
               = current_year
-              Tenzen
+              \- Tenzen
       /
         \=======================================
         \==End footer section==

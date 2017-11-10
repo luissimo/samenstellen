@@ -641,7 +641,7 @@ a.button_medium_2:hover {background:#00aeef; color:#fff; border:2px solid  #00ae
 
 /** Header ==================== **/
 #top-area {
-  background-color:#abdbea;
+  background-image: -webkit-linear-gradient(-29deg,#ABDBEA 0,#233b88 100%);
   height: 500px;
 }
 header {
@@ -1293,7 +1293,11 @@ ul.data-list-2 li label.error {
 }
 
 #top-nav    {width:100%;float:left;}
-#top-nav      {display:none;}
+#top-nav {
+  display:none;
+  background-image: -webkit-linear-gradient(-29deg,#ABDBEA 0,#233b88 100%);
+  z-index: 200;
+    }
 #top-nav ul {float: none; padding:20px 0 20px 0; margin:0; }
 #top-nav ul li  {float: none; border-bottom: 1px solid rgba(255, 255, 255, 0.3); font-size:14px; padding:0; margin:0;}
 #top-nav ul li:last-child{ border-bottom:none;}

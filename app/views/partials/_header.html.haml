@@ -12,8 +12,14 @@
         %nav#top-nav.col-md-8.col-xs-9
           %ul
             %li
-              %a{"data-target" => "#myModal", "data-toggle" => "modal", :href => "#"} Over ons
+              %a{href: root_url}
             %li
-              %a{href: "#"} Veelgestelde vragen
+              %a{href: new_mattress_url} Eenpersoonsmatras
             %li
-              %a#purchase{:href => "#"} Contact
+              %a{href: root_url} Tweepersoonsmatras
+            %li
+              %a{href: over_ons_url} Over ons
+            %li
+              %a{href: veelgestelde_vragen_url} Veelgestelde vragen
+            %li
+              %a#purchase{href: contact_url} Contact

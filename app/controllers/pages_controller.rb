@@ -18,14 +18,14 @@ class PagesController < ApplicationController
 
   def contact
     @contact_form = ContactForm.new
-    @contact_form.request = request
   end
 
   def create_contact
     @contact_form = ContactForm.new(contact_form_params.merge({ session_id: session.id }))
+    @contact_form.request = request
 
     respond_to do |format|
-      if @contact_form.save
+      if @contact_form.deliver
         format.html { redirect_to contact_url }
       else
         format.html { render :contact }

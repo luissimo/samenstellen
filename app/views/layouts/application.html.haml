@@ -47,38 +47,16 @@
   %body
     = render 'partials/header'
     = yield
-    #toTop Terug naar boven
+    -# %footer
+    -#   %section#footer_2
+    -#     #footer-bottom.text-center
+    -#       ©
+    -#       = current_year
+    -#       \- Tenzen
 
-    / Modal About
-    #myModal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
-      .modal-dialog
-        .modal-content
-          .modal-header
-            %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} ×
-            %h4#myModalLabel.modal-title Over ons
-          .modal-body
-            %p
-              to be continued
-          .modal-footer
-            %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"} Sluiten
-        / /.modal-content
-      / /.modal-dialog
-    / /.modal
-    / Modal About
-    #terms-txt.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "termsLabel", :role => "dialog", :tabindex => "-1"}
-      .modal-dialog
-        .modal-content
-          .modal-header
-            %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} ×
-            %h4#termsLabel.modal-title Veelgestelde vragen
-          .modal-body
-            %p
-              to be continued
-          .modal-footer
-            %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"} Sluiten
-        / /.modal-content
-      / /.modal-dialog
-    / /.modal
+
+
+
 
     / CUSTOM JS
     = javascript_include_tag 'custom.js'

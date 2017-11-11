@@ -30,7 +30,7 @@ class DoubleMattressOnesController < ApplicationController
 
     respond_to do |format|
       if @double_mattress_one.save
-        format.html { redirect_to @double_mattress_one, notice: 'Je droommatras is aangemaakt!' }
+        format.html { redirect_to @double_mattress_one }
         format.json { render :show, status: :created, location: @double_mattress_one }
       else
         format.html { render :new }

@@ -37,7 +37,7 @@ class MattressesController < ApplicationController
 
     respond_to do |format|
       if @mattress.save
-        format.html { redirect_to @mattress, notice: 'Je droommatras is aangemaakt!' }
+        format.html { redirect_to @mattress }
         format.json { render :show, status: :created, location: @mattress }
       else
         format.html { render :new }

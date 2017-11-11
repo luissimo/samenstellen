@@ -98,20 +98,30 @@
         .container.text-center
           %header.text-center
             %h2.has-line-center
-              Tenzen
+              Droomservice
+            %p.limited-width.lead
+              Je krijgt gegarandeerd een perfect matras. Wij nemen al je zorgen weg.
           .how-one-container
-            / how it work Box
             .how-box-one.col-md-4.col-sm-6.col-xs-12
               .inner-box
                 .icon-box
                   %i
-                    = image_tag("persoonlijk.png", alt: 'Persoonlijke comfort', style: "height: 50px; width:50px")
+                    = image_tag("persoonlijk.png", alt: 'Persoonlijk comfort', style: "height: 50px; width:50px")
                 %h3
-                  %a{:href => "#"} Persoonlijke comfort
+                  %a{:href => "#"} Persoonlijk comfort
                 .text
                   Elke matras wordt bij ons op basis van persoonlijke voorkeuren geproduceerd. Jij moet je niet aan je matras aanpassen, maar je matras moet zich aan jou aanpassen!
 
-            / how it work Box
+            .how-box-one.col-md-4.col-sm-6.col-xs-12
+              .inner-box
+                .icon-box
+                  %i
+                    = image_tag("garantie.png", alt: 'Niet Tevreden = Geld Terug', style: "height: 50px; width:50px")
+                %h3
+                  %a{:href => "#"} 100 dagen Niet tevreden, geld terug
+                .text
+                  Je kunt 100 dagen proefslapen op je matras. Mocht het nou niet zijn wat je had gewenst, dan komen wij het gratis ophalen en krijg je het volledige aankoopbedrag terug, zonder gezeur
+
             .how-box-one.col-md-4.col-sm-6.col-xs-12
               .inner-box
                 .icon-box
@@ -121,17 +131,6 @@
                   %a{:href => "#"} Gratis verzending heen- en terug
                 .text
                   Je matras wordt gratis bezorgd tot in je slaapkamer. Mocht je het matras terug willen sturen, dan komen wij het ook weer gratis voor je ophalen. Geen zorgen dus.
-
-            / how it work Box
-            .how-box-one.col-md-4.col-sm-6.col-xs-12
-              .inner-box
-                .icon-box
-                  %i
-                    = image_tag("garantie.png", alt: 'Niet Tevreden = Geld Terug', style: "height: 50px; width:50px")
-                %h3
-                  %a{:href => "#"} 100 dagen Niet tevreden = geld terug
-                .text
-                  Je kunt 100 dagen proefslapen op je matras. Mocht het nou niet zijn wat je had gewenst, dan komen wij het gratis ophalen en krijg je het volledige aankoopbedrag terug, zonder gezeur
       /
         \=======================================
         \==End about section==
@@ -156,7 +155,7 @@
             .row.clearfix
               / Left Column
               .left-column.col-lg-4.col-md-6.col-sm-6.col-xs-12
-                / Service Box
+
                 .service-box-three
                   .inner-box
                     .icon-box
@@ -165,7 +164,7 @@
                       %a{:href => "/"} Aanpassend vermogen
                     .text
                       Je Tenzen matras zal een aanpassend vermogen hebben dat geschikt is voor jou. Zo kan je matras zich volledig aan jouw lichaam en slaapstijl aanpassen.
-                / Service Box
+
                 .service-box-three
                   .inner-box
                     .icon-box
@@ -174,7 +173,7 @@
                       %a{:href => "/"} Ademend
                     .text
                       Je Tenzen matras heeft een optimaal ademend vermogen. Zo zul je het nooit meer te warm of te koud krijgen in bed.
-                / Service Box
+
                 .service-box-three
                   .inner-box
                     .icon-box
@@ -185,25 +184,7 @@
                       Tenzen zal gemaakt zijn om jou een perfect gevoel te geven. Zo weet je zeker dat je matras het juiste comfort biedt voor een heerlijke nachtrust.
               / Right Column
               .right-column.col-lg-4.col-md-6.col-sm-6.col-xs-12
-                / Service Box
-                .service-box-four
-                  .inner-box
-                    .icon-box
-                      %span= image_tag("icon-kwaliteit.png", alt: "kwaliteit matrassen")
-                    %h3
-                      %a{:href => "/"} Kwaliteit
-                    .text
-                      Tenzen gebruikt alleen de beste kwaliteit materialen. Je hebt dan ook altijd minimaal 2 jaar garantie op je aankoop.
-                / Service Box
-                .service-box-four
-                  .inner-box
-                    .icon-box
-                      %span= image_tag("icon-stevig.png", alt: "kwaliteit matrassen")
-                    %h3
-                      %a{:href => "/"} Stevigheid
-                    .text
-                      Jouw Tenzen matras heeft precies de juiste stevigheid voor jouw lichaam. Zo weet je zeker dat je altijd tot rust kunt komen.
-                / Service Box
+
                 .service-box-four
                   .inner-box
                     .icon-box
@@ -212,6 +193,25 @@
                       %a{:href => "/"} Veilig en vertrouwd
                     .text
                       Al het schuim dat gebruikt wordt in je Tenzen matras is vrij van schadelijke chemicaliën en wordt compleet milieuvriendelijk geproduceerd.
+
+                .service-box-four
+                  .inner-box
+                    .icon-box
+                      %span= image_tag("icon-kwaliteit.png", alt: "kwaliteit matrassen")
+                    %h3
+                      %a{:href => "/"} Kwaliteit
+                    .text
+                      Tenzen gebruikt alleen de beste kwaliteit materialen. Je hebt dan ook altijd minimaal 2 jaar garantie op je aankoop.
+
+                .service-box-four
+                  .inner-box
+                    .icon-box
+                      %span= image_tag("icon-stevig.png", alt: "kwaliteit matrassen")
+                    %h3
+                      %a{:href => "/"} Stevigheid
+                    .text
+                      Jouw Tenzen matras heeft precies de juiste stevigheid voor jouw lichaam. Zo weet je zeker dat je altijd tot rust kunt komen.
+
       /
         \=======================================
         \==End what we do section==

@@ -39,3 +39,12 @@ $('.show_diseases_2').click(function() {
         $(".diseases_options_2").hide();
     }
 });
+
+// $(".elevator_select_section").hide();
+// $(".floor_select").on('change', function() {
+//   if ( $(".floor_select").val() === ("Begane grond") ){
+//     $(".elevator_select_section").hide();
+//   }else {
+//     $(".elevator_select_section").show();
+//   }
+// })

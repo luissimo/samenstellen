@@ -2,6 +2,15 @@
 %html{:lang => "nl"}
   %head
     = csrf_meta_tags
+
+    -# Google Tag Manager
+    :javascript
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-5257WHS');
+
     %meta{:charset => "utf-8"}/
     / Responsive Meta
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
@@ -28,6 +37,10 @@
       <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   %body
+    -# Google Tag Manager
+    %noscript
+      %iframe{:height => "0", :src => "https://www.googletagmanager.com/ns.html?id=GTM-5257WHS", :style => "display:none;visibility:hidden", :width => "0"}
+
     / Page Holder
     .page-holder
       /

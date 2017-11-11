@@ -47,14 +47,13 @@
           %h3.text-center Informatie
           .col-md-8.col-md-offset-2
             %ul.data-list
-              .styled-select
+              .styled-select.floor_select_section
                 %li= ba.select :floor, [ 'Begane grond', '1e verdieping', '2e verdieping', '3e verdieping', '4e verdieping', '5e verdieping', '6e verdieping', '7e verdieping', '8e verdieping', '9e verdieping', '10e verdieping of hoger'], prompt: 'Op welke verdieping woon je?*', class: 'required form-control'
               %br/
-              .styled-select
+              .styled-select.elevator_select_section
                 %li= ba.select :elevator, [ 'Ja, er is een lift.', 'Nee, er is geen lift.'], prompt: 'Is er een lift aanwezig?*', class: 'required form-control'
           .col-md-8.col-md-offset-2
             %ul.data-list
               %li= f.text_area :comment, class: 'required form-control', placeholder: 'Extra bericht of notitie (optioneel)'
 
       = f.submit 'Afrekenen', class: 'checkout_button btn btn-block btn-info submit', name: 'payment'
-

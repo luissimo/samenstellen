@@ -11356,6 +11356,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-brand > img {
   display: block;
+  margin: 15px;
 }
 @media (min-width: 768px) {
   .navbar > .container .navbar-brand,
@@ -14010,12 +14011,8 @@ body {
 }
 
 section {
-    padding: 150px 0;
+    padding: 50px 0px 100px 0px;
     overflow-x: hidden
-}
-
-section header {
-    margin-bottom: 30px
 }
 
 .scrollUp {
@@ -14386,7 +14383,7 @@ nav.main-navigation .navbar-nav a.active{
     border-style: solid;
     border-width: 0 0 2px 0;
     border-color: #fff;
-    padding: 20px 15px
+    padding: 30px 15px;
 }
 nav.main-navigation .navbar-brand{
     padding: 12px 15px;
@@ -14992,10 +14989,9 @@ nav.main-navigation .navbar-nav .btn:hover{
 .how-box-one {
     position: relative;
     padding: 40px 20px;
-    transition: all 0s;
 }
 .how-box-one:hover{
-	box-shadow: 0 0 35px rgba(0,0,0,.1);
+	box-shadow: 0 0 5px rgba(0,0,0,.1);
 }
 .how-box-one:after{
     content: '';
@@ -15089,11 +15085,11 @@ nav.main-navigation .navbar-nav .btn:hover{
 	border-radius:50%;
 	z-index:2;
 }
-.what-we-do .outer .phone{
+.what-we-do .outer .mattress{
 	position: absolute;
     width: 100%;
     left: 50%;
-    top: -95px;
+    top: -170px;
     transform: translateX(-50.5%);
 }
 
@@ -15734,7 +15730,6 @@ nav.main-navigation .navbar-nav .btn:hover{
 	text-transform:capitalize;
 }
 
-
 /***
 
 ====================================================================
@@ -15957,7 +15952,7 @@ nav.main-navigation .navbar-nav .btn:hover{
 }
 
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
-[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
 	font-family: Flaticon;
 	font-style: normal;
 }
@@ -16265,7 +16260,7 @@ section {
 }
 
 .btn-template,
-.pgae-holder {
+.page-holder {
     overflow: hidden
 }
 
@@ -16284,12 +16279,8 @@ body {
 }
 
 section {
-    padding: 100px 0;
+    padding: 50px 0px 100px 0px;
     overflow-x: hidden
-}
-
-section header {
-    margin-bottom: 30px
 }
 
 h1,
@@ -16653,7 +16644,7 @@ nav.main-navigation .navbar-nav a.active{
     border-style: solid;
     border-width: 0 0 2px 0;
     border-color: #fff;
-    padding: 30px 15px 0px 0px;
+    padding: 30px 15px;
 }
 nav.main-navigation .navbar-brand{
     height: 63px;
@@ -17095,9 +17086,6 @@ style.css:1477
     }
 }
 
-
-
-
 /***
 
 ====================================================================
@@ -17116,6 +17104,7 @@ style.css:1477
     margin: 5px 5px 0 0;
     padding: 12px 30px;
     transition: all 0s;
+    cursor: pointer;
 }
 
 .download .download-btn:hover{
@@ -17246,10 +17235,9 @@ style.css:1477
 .how-box-one {
     position: relative;
     padding: 40px 20px;
-    transition: all 0s;
 }
 .how-box-one:hover{
-    box-shadow: 0 0 35px rgba(0,0,0,.1);
+    box-shadow: 0 0 5px rgba(0,0,0,.1);
 }
 
 @media (max-width:991px){
@@ -17322,11 +17310,11 @@ style.css:1477
     border-radius:50%;
     z-index:2;
 }
-.what-we-do .outer .phone{
+.what-we-do .outer .mattress{
     position: absolute;
     width: 100%;
     left: 50%;
-    top: -95px;
+    top: -170px;
     transform: translateX(-50.5%);
 }
 
@@ -17378,8 +17366,7 @@ style.css:1477
     width:72px;
     height:72px;
     text-align:center;
-    line-height:72px;
-    background: #fff;
+    line-height:100px;
     color: #ABDBEA !important;
     font-size:50px;
     transition:all 300ms ease;
@@ -17440,9 +17427,8 @@ style.css:1477
     width:72px;
     height:72px;
     text-align:center;
-    line-height:72px;
+    line-height:100px;
     color: #ABDBEA;
-    background: #fff;
     font-size:50px;
     transition:all 300ms ease;
     -moz-transition:all 300ms ease;
@@ -18254,7 +18240,7 @@ style.css:1477
 
   to {
     -webkit-transform: translate3d(0, 0, 0); } }
-/*
+/* 
  * 	Core Owl Carousel CSS File
  *	v1.24
  */
@@ -18293,7 +18279,7 @@ style.css:1477
 	-o-transition: height 500ms ease-in-out;
 	transition: height 500ms ease-in-out;
 }
-
+	
 .owl-carousel .owl-item{
 	float: left;
 }
@@ -18311,7 +18297,7 @@ style.css:1477
 }
 
 /* mouse grab icon */
-.grabbing {
+.grabbing { 
     cursor:url(grabbing.png) 8 8, move;
 }
 
@@ -18487,7 +18473,7 @@ style.css:1477
   to { opacity: 0; transform: scale(1.5); }
 }
 /*
-* 	Owl Carousel Owl Demo Theme
+* 	Owl Carousel Owl Demo Theme 
 *	v1.24
 */
 
@@ -18566,6 +18552,20 @@ style.css:1477
 	min-height: 150px;
 	background: url(AjaxLoader.gif) no-repeat center center
 }
+/*#footer-bottom {
+  padding: 20px;
+  color: black;
+  background: whitesmoke;
+  line-height: 24px;
+  text-align: center;
+  display: block;
+  position:fixed;
+  bottom:0;
+  left:0;
+  width: 100%;
+}
+*/
+
 .align-usps {
   display: inline-block;
   margin-bottom: 10px;
@@ -19209,7 +19209,7 @@ a.button_medium_2:hover {background:#00aeef; color:#fff; border:2px solid  #00ae
 
 /** Header ==================== **/
 #top-area {
-  background-color:#abdbea;
+  background-image: -webkit-linear-gradient(-29deg,#ABDBEA 0,#233b88 100%);
   height: 500px;
 }
 header {
@@ -19728,6 +19728,9 @@ ul.data-list-2 li label.error {
 
 @media (min-width: 768px) and (max-width: 1200px) {
 
+#googleMap {
+  display: none;
+}
 
 .align-usps {
   display: inline-block;
@@ -19772,6 +19775,10 @@ ul.data-list-2 li label.error {
 
 }
 @media (min-width: 768px) and (max-width: 979px) {
+
+#googleMap {
+  display: none;
+}
 
 .align-usps {
   display: inline-block;
@@ -19831,6 +19838,10 @@ ul.data-list-2 li label.error {
 /* From tablet portrait to mobile */
 @media (max-width: 767px) {
 
+#googleMap {
+  display: none;
+}
+
 .align-usps {
   display: grid;
   margin-bottom: 10px;
@@ -19861,7 +19872,11 @@ ul.data-list-2 li label.error {
 }
 
 #top-nav    {width:100%;float:left;}
-#top-nav      {display:none;}
+#top-nav {
+  display:none;
+  background-image: -webkit-linear-gradient(-29deg,#ABDBEA 0,#233b88 100%);
+  z-index: 200;
+    }
 #top-nav ul {float: none; padding:20px 0 20px 0; margin:0; }
 #top-nav ul li  {float: none; border-bottom: 1px solid rgba(255, 255, 255, 0.3); font-size:14px; padding:0; margin:0;}
 #top-nav ul li:last-child{ border-bottom:none;}
@@ -19922,6 +19937,10 @@ ul.floated li {
 
 /* Mobile Landscape */
 @media (max-width: 480px) {
+
+#googleMap {
+  display: none;
+}
 
 .align-usps {
   display: grid;
@@ -20009,6 +20028,10 @@ ul.floated li {
 
 /* Mobile Portrait */
 @media only screen and (max-width: 320px) {
+
+#googleMap {
+  display: none;
+}
 
 .align-usps {
   display: grid;

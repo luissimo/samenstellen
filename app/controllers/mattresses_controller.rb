@@ -4,14 +4,6 @@ class MattressesController < ApplicationController
   include MattressTexts
   include SetGraphsOne
 
-  # GET /mattresses
-  # GET /mattresses.json
-  def index
-    @mattresses = Mattress.all.where(session_id: session.id)
-  end
-
-  # GET /mattresses/1
-  # GET /mattresses/1.json
   def show
     @mattress = Mattress.all.where(session_id: session.id).last
     session[:name] = @mattress.name
@@ -25,13 +17,10 @@ class MattressesController < ApplicationController
     @heat_regulation_text = heat_regulation_text
   end
 
-  # GET /mattresses/new
   def new
     @mattress = Mattress.new
   end
 
-  # POST /mattresses
-  # POST /mattresses.json
   def create
     @mattress = Mattress.new(mattress_params.merge({ session_id: session.id}) )
 

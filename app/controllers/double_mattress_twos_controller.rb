@@ -4,10 +4,6 @@ class DoubleMattressTwosController < ApplicationController
   include DoubleMattressTwoPrices
   include SetGraphsTwo
 
-  def index
-    @double_mattress_twos = DoubleMattressTwo.all.where(session_id: session.id)
-  end
-
   def show
     @double_mattress_two = DoubleMattressTwo.all.where(session_id: session.id).last
     session[:name] = @double_mattress_two.name + ' & ' + @double_mattress_two.name2

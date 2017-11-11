@@ -2,9 +2,9 @@ Rails.application.routes.draw do
 
 	# https://agile-bayou-11137.herokuapp.com/ | https://git.heroku.com/agile-bayou-11137.git
 
-  resources :mattresses, path: 'matras', except: [:edit, :update, :destroy]
-  resources :double_mattress_ones, path: '2persoonsmatras', except: [:edit, :update, :destroy]
-  resources :double_mattress_twos, path: '2persoonsmatras/duo', except: [:edit, :update, :destroy]
+  resources :mattresses, path: 'matras', except: [:index, :edit, :update, :destroy]
+  resources :double_mattress_ones, path: '2persoonsmatras', except: [:index, :edit, :update, :destroy]
+  resources :double_mattress_twos, path: '2persoonsmatras/duo', except: [:index, :edit, :update, :destroy]
 
   root 'homes#index'
   get 'customers/new'  			        => 'customers#new'

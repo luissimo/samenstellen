@@ -1,9 +1,11 @@
 class CustomersController < ApplicationController
 
-  before_action :set_stripe_api_key
-
   include MattressPrices
+  include DoubleMattressOnePrices
+  include DoubleMattressTwoPrices
   include HelperConcern
+
+  before_action :set_stripe_api_key
 
   def new
     @customer = Customer.new
@@ -14,7 +16,15 @@ class CustomersController < ApplicationController
   def create
     @customer = Customer.new(customer_params.merge({ session_id: session.id }))
     @name = session[:name]
-    calculate_price
+
+    set_price
+    case @customer.payment_method
+    when "50/50"
+      @price = @price / 2
+    else
+      @price = @price
+    end
+
     session[:price] = @price
 
     respond_to do |format|
@@ -75,11 +85,22 @@ class CustomersController < ApplicationController
   end
 
   def customer_params
-    params.require(:customer).permit(:id, :session_id, :comment,
+    params.require(:customer).permit(:id, :session_id, :comment, :payment_method,
     billing_address_attributes: [:id, :first_name, :last_name, :address, :address_addition,
                                  :zip_code, :city, :phone, :email, :floor, :elevator],
     shipping_address_attributes: [:id, :first_name, :last_name, :address, :address_addition,
                                  :zip_code, :city, :phone, :email, :floor, :elevator])
+  end
+
+  def set_price
+    case session[:flow]
+    when 'mattress'
+      calculate_price
+    when 'double_mattress_one'
+      calculate_price_double_mattress_one
+    when 'double_mattress_two'
+      calculate_price_double_mattress_two
+    end
   end
 
   def set_stripe_api_key

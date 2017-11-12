@@ -7,7 +7,8 @@ class DoubleMattressTwosController < ApplicationController
   def show
     @double_mattress_two = DoubleMattressTwo.all.where(session_id: session.id).last
     session[:name] = @double_mattress_two.name + ' & ' + @double_mattress_two.name2
-    calculate_price
+    session[:flow] = "double_mattress_two"
+    calculate_price_double_mattress_two
 
     @both_persons_names = @double_mattress_two.name + ' & ' + @double_mattress_two.name2
     set_graph_variables(DoubleMattressTwo)

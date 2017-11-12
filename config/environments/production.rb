@@ -12,7 +12,7 @@ Rails.application.configure do
       enable_starttls_auto: true,
       user_name:            ENV['GMAIL_USERNAME_DEV'],
       password:             ENV['GMAIL_PASSWORD_DEV']
-
+  }
   # Code is not reloaded between requests.
   config.cache_classes = true
 

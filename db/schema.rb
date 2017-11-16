@@ -10,23 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171112124551) do
-
-  create_table "billing_addresses", force: :cascade do |t|
-    t.string "first_name"
-    t.string "last_name"
-    t.string "address"
-    t.string "address_addition"
-    t.string "zip_code"
-    t.string "city"
-    t.string "phone"
-    t.string "email"
-    t.string "floor"
-    t.string "elevator"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string "customer_id"
-  end
+ActiveRecord::Schema.define(version: 20171116183617) do
 
   create_table "contact_forms", force: :cascade do |t|
     t.string "name"
@@ -44,13 +28,26 @@ ActiveRecord::Schema.define(version: 20171112124551) do
     t.datetime "updated_at", null: false
     t.string "session_id"
     t.string "payment_method"
+    t.string "first_name"
+    t.string "last_name"
+    t.string "phone"
+    t.string "email"
+    t.string "address"
+    t.string "address_addition"
+    t.string "zip_code"
+    t.string "city"
+    t.string "address_ship"
+    t.string "address_addition_ship"
+    t.string "zip_code_ship"
+    t.string "city_ship"
+    t.string "floor"
+    t.string "elevator"
   end
 
   create_table "double_mattress_ones", force: :cascade do |t|
     t.string "name"
     t.string "gender"
     t.integer "age"
-    t.string "email"
     t.string "weight"
     t.integer "length"
     t.string "sleep_position"
@@ -75,7 +72,6 @@ ActiveRecord::Schema.define(version: 20171112124551) do
     t.string "gender2"
     t.integer "age"
     t.integer "age2"
-    t.string "email"
     t.string "weight"
     t.string "weight2"
     t.integer "length"
@@ -106,7 +102,6 @@ ActiveRecord::Schema.define(version: 20171112124551) do
     t.string "name"
     t.string "gender"
     t.integer "age"
-    t.string "email"
     t.string "weight"
     t.integer "length"
     t.string "sleep_position"
@@ -122,22 +117,6 @@ ActiveRecord::Schema.define(version: 20171112124551) do
     t.string "comfort"
     t.string "diseases"
     t.string "chassis"
-  end
-
-  create_table "shipping_addresses", force: :cascade do |t|
-    t.string "first_name"
-    t.string "last_name"
-    t.string "address"
-    t.string "address_addition"
-    t.string "zip_code"
-    t.string "city"
-    t.string "phone"
-    t.string "email"
-    t.string "floor"
-    t.string "elevator"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string "customer_id"
   end
 
 end

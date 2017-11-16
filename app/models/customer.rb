@@ -1,7 +1,12 @@
 class Customer < ApplicationRecord
-	has_one :billing_address
-	has_one :shipping_address
-
-	accepts_nested_attributes_for :billing_address, reject_if: :all_blank
-	accepts_nested_attributes_for :shipping_address, reject_if: :all_blank
+  validates :first_name, presence: true
+  validates :last_name, presence: true
+  validates :address, presence: true
+  validates :zip_code, presence: true
+  validates :city, presence: true
+  validates :phone, presence: true
+  validates :email, presence: true
+  validates :floor, presence: true
+  validates :elevator, presence: true
+  validates :payment_method, presence: true
 end

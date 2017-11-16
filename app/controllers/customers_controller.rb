@@ -9,8 +9,6 @@ class CustomersController < ApplicationController
 
   def new
     @customer = Customer.new
-    @customer.build_billing_address
-    @customer.build_shipping_address
   end
 
   def create
@@ -40,7 +38,12 @@ class CustomersController < ApplicationController
   end
 
   def success
-    process_payment
+    begin
+      process_payment
+    rescue Stripe::InvalidRequestError => e
+      redirect_to root_url
+    end
+
     case session[:status]
     when 'success'
       @status = "Je bestelling is in goede orde ontvangen!"
@@ -85,11 +88,9 @@ class CustomersController < ApplicationController
   end
 
   def customer_params
-    params.require(:customer).permit(:id, :session_id, :comment, :payment_method,
-    billing_address_attributes: [:id, :first_name, :last_name, :address, :address_addition,
-                                 :zip_code, :city, :phone, :email, :floor, :elevator],
-    shipping_address_attributes: [:id, :first_name, :last_name, :address, :address_addition,
-                                 :zip_code, :city, :phone, :email, :floor, :elevator])
+    params.require(:customer).permit(:id, :session_id, :first_name, :last_name, :address, :address_addition,
+                                     :zip_code, :city, :phone, :email, :floor, :elevator, :address_ship,
+                                     :address_addition_ship, :zip_code_ship, :city_ship, :comment, :payment_method)
   end
 
   def set_price

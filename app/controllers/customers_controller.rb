@@ -24,6 +24,24 @@ class CustomersController < ApplicationController
     end
 
     session[:price] = @price
+    session[:order] = {
+      first_name: params[:customer][:first_name],
+      last_name: params[:customer][:last_name],
+      phone: params[:customer][:phone],
+      email: params[:customer][:email],
+      address: params[:customer][:address],
+      address_addition: params[:customer][:address_addition],
+      zip_code: params[:customer][:zip_code],
+      city: params[:customer][:city],
+      address_ship: params[:customer][:address_ship],
+      address_addition_ship: params[:customer][:address_addition_ship],
+      zip_code_ship: params[:customer][:zip_code_ship],
+      city_ship: params[:customer][:city_ship],
+      floor: params[:customer][:floor],
+      elevator: params[:customer][:elevator],
+      comment: params[:customer][:comment],
+      payment_method: params[:customer][:payment_method]
+    }
 
     respond_to do |format|
       if @customer.save
@@ -47,6 +65,7 @@ class CustomersController < ApplicationController
     case session[:status]
     when 'success'
       @status = "Je bestelling is in goede orde ontvangen!"
+      OrderMailer.order_success(email: session[:order]['email'], first_name: session[:order]['first_name']).deliver_now! #if session[:order][:email]
     else
       @status = "Er is iets misgegaan met de betaling, probeer het later nogmaals."
     end

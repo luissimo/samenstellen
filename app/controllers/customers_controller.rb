@@ -23,7 +23,6 @@ class CustomersController < ApplicationController
       @price = @price
     end
 
-    session[:price] = @price
     session[:order] = {
       first_name: params[:customer][:first_name],
       last_name: params[:customer][:last_name],
@@ -40,7 +39,8 @@ class CustomersController < ApplicationController
       floor: params[:customer][:floor],
       elevator: params[:customer][:elevator],
       comment: params[:customer][:comment],
-      payment_method: params[:customer][:payment_method]
+      payment_method: params[:customer][:payment_method],
+      price: @price
     }
 
     respond_to do |format|
@@ -65,7 +65,7 @@ class CustomersController < ApplicationController
     case session[:status]
     when 'success'
       @status = "Je bestelling is in goede orde ontvangen!"
-      OrderMailer.order_success(email: session[:order]['email'], first_name: session[:order]['first_name']).deliver_now! #if session[:order][:email]
+      OrderMailer.order_success(details: session[:order]['email'], first_name: session[:order]['first_name']).deliver_now! if session[:order]['email']
     else
       @status = "Er is iets misgegaan met de betaling, probeer het later nogmaals."
     end
@@ -77,9 +77,27 @@ class CustomersController < ApplicationController
     if @source_status.eql?('chargeable')
      session[:status] = 'pending'
      Stripe::Charge.create({
-       amount: session[:price],
+       amount: session[:order]['price'],
        currency: 'eur',
-       source: session[:stripe_source_id]
+       source: session[:stripe_source_id],
+       metadata: {
+         first_name: session[:order]['first_name'],
+         last_name: session[:order]['last_name'],
+         phone: session[:order]['phone_name'],
+         email: session[:order]['email'],
+         address: session[:order]['address'],
+         address_addition: session[:order]['address_addition'],
+         zip_code: session[:order]['zip_code'],
+         city: session[:order]['city'],
+         address_ship: session[:order]['address_ship'],
+         address_addition_ship: session[:order]['address_addition_ship'],
+         zip_code_ship: session[:order]['zip_code_ship'],
+         city_ship: session[:order]['city_ship'],
+         floor: session[:order]['floor'],
+         elevator: session[:order]['elevator'],
+         comment: session[:order]['comment'],
+         payment_method: session[:order]['payment_method'],
+       }
      })
      process_payment
      # if source[:status] == 'consumed' payment is authorized otherwise it gives source[:status] == 'failed'
@@ -95,7 +113,7 @@ class CustomersController < ApplicationController
   def create_stripe_source
     @payment = Stripe::Source.create(
       type: "ideal",
-      amount: session[:price],
+      amount: session[:order]['price'],
       currency: 'eur',
       owner: {
         name: @name.to_s,

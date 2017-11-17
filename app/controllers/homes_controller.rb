@@ -8,9 +8,7 @@ class HomesController < ApplicationController
   private
 
   def send_mail
-    @customer = Customer.all.where(session_id: session.id).last
-    @email = @customer.email
-    OrderMailer.order_success(@email).deliver_now!
+    OrderMailer.order_success(details: session[:order]).deliver_now!
   end
 
 end

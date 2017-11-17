@@ -40,7 +40,8 @@ class CustomersController < ApplicationController
       elevator: params[:customer][:elevator],
       comment: params[:customer][:comment],
       payment_method: params[:customer][:payment_method],
-      price: @price
+      price: @price,
+      order_number: create_order_number
     }
 
     respond_to do |format|
@@ -65,7 +66,7 @@ class CustomersController < ApplicationController
     case session[:status]
     when 'success'
       @status = "Je bestelling is in goede orde ontvangen!"
-      OrderMailer.order_success(details: session[:order]['email'], first_name: session[:order]['first_name']).deliver_now! if session[:order]['email']
+      OrderMailer.order_success(details: session[:order]).deliver_now! if session[:order]['email']
     else
       @status = "Er is iets misgegaan met de betaling, probeer het later nogmaals."
     end
@@ -97,6 +98,7 @@ class CustomersController < ApplicationController
          elevator: session[:order]['elevator'],
          comment: session[:order]['comment'],
          payment_method: session[:order]['payment_method'],
+         order_number: session[:order]['order_number']
        }
      })
      process_payment
@@ -113,7 +115,7 @@ class CustomersController < ApplicationController
   def create_stripe_source
     @payment = Stripe::Source.create(
       type: "ideal",
-      amount: session[:order]['price'],
+      amount: session[:order][:price],
       currency: 'eur',
       owner: {
         name: @name.to_s,
@@ -139,6 +141,12 @@ class CustomersController < ApplicationController
     when 'double_mattress_two'
       calculate_price_double_mattress_two
     end
+  end
+
+  def create_order_number
+    time = Time.now.strftime("%d%m%Y")
+    random_number = SecureRandom.uuid.last(4).upcase
+    [time, random_number].join("-")
   end
 
   def set_stripe_api_key

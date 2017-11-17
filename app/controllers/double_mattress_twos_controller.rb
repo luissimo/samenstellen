@@ -78,7 +78,7 @@ class DoubleMattressTwosController < ApplicationController
       separation = @mattress.separation
 
       category = double_mattress_two_diseases_on? ? 'Premium' : @mattress.category
-      category2 = double_mattress_two_diseases2_on? ? 'Premium' : @mattress.category2
+      category2 = double_mattress_two_diseases2_on? ? 'Premium' : @mattress.category
       fused_category = category.eql?('Premium') || category2.eql?("Premium") ? "Premium" : category
       fused_category2 = category.eql?('Premium') || category2.eql?("Premium") ? "Premium" : category2
 

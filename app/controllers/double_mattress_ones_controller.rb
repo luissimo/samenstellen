@@ -16,6 +16,25 @@ class DoubleMattressOnesController < ApplicationController
     @comfort_text = comfort_text
     @elasticity_text = elasticity_text
     @heat_regulation_text = heat_regulation_text
+
+    session.delete(:answers) if session[:answers]
+    session[:answers] = {
+      name: @double_mattress_one.name,
+      gender: @double_mattress_one.gender,
+      age: @double_mattress_one.age,
+      weight: @double_mattress_one.weight,
+      length: @double_mattress_one.length,
+      sleep_position: @double_mattress_one.sleep_position,
+      body_shape: @double_mattress_one.body_shape,
+      warm_sleeping: @double_mattress_one.warm_sleeping,
+      neck_or_back_pain: @double_mattress_one.neck_or_back_pain,
+      mattress_length: @double_mattress_one.mattress_length,
+      mattress_width: @double_mattress_one.mattress_width,
+      category: @double_mattress_one.category,
+      comfort: @double_mattress_one.comfort,
+      diseases: @double_mattress_one.diseases,
+      chassis: @double_mattress_one.chassis
+    }
   end
 
   def new

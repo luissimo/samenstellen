@@ -9,6 +9,7 @@ class HomesController < ApplicationController
 
   def send_mail
     OrderMailer.order_success(details: session[:order]).deliver_now!
+    OrderMailer.order_received(details: session[:order], answers: session[:answers]).deliver_now!
   end
 
 end

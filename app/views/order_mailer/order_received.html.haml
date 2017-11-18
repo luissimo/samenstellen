@@ -1,18 +1,143 @@
-%h2 HOERRRRRA nieuwe bestelling!
-%p= @details[:first_name]
-%p= @details[:last_name]
-%p= @details[:phone]
-%p= @details[:email]
-%p= @details[:address]
-%p= @details[:address_addition]
-%p= @details[:zip_code]
-%p= @details[:city]
-%p= @details[:address_ship]
-%p= @details[:address_addition_ship]
-%p= @details[:zip_code_ship]
-%p= @details[:city_ship]
-%p= @details[:floor]
-%p= @details[:elevator]
-%p= @details[:comment]
-%p= @details[:payment_method]
-%p= @details[:order_number]
+%h1 HOERRRRRA nieuwe bestelling!
+%h2
+  Ordernummer:
+  = @details[:order_number]
+%h3= @details[:type]
+%hr/
+
+%h3 Klantgegevens:
+%hr/
+%p
+  %strong Voornaam:
+  = @details[:first_name]
+%p
+  %strong Voornaam:
+  = @details[:last_name]
+%p
+  %strong Telefoonnummer:
+  = @details[:phone]
+%p
+  %strong Email:
+  = @details[:email]
+%p
+  %strong Adres:
+  = @details[:address]
+%p
+  %strong Adres-toevoeging:
+  = @details[:address_addition]
+%p
+  %strong Postcode:
+  = @details[:zip_code]
+%p
+  %strong Stad:
+  = @details[:city]
+%p
+  %strong Verdieping:
+  = @details[:floor]
+%p
+  %strong Is er een lift?
+  = @details[:elevator]
+%p
+  %strong Gebruikte betaalmethode:
+  = @details[:payment_method]
+
+%p
+  %strong COMMENT/NOTITIE:
+  = @details[:comment]
+
+- if @details[:address_ship]
+  %br/
+  %h4 Andere Verzendadres:
+  %p= @details[:address_ship]
+  %p= @details[:address_addition_ship]
+  %p= @details[:zip_code_ship]
+  %p= @details[:city_ship]
+
+%hr/
+%h4 Persoon 1:
+%p
+  %strong Naam:
+  = @answers[:name]
+%p
+  %strong Geslacht:
+  = @answers[:gender]
+%p
+  %strong Leeftijd:
+  = @answers[:age]
+%p
+  %strong Gewicht:
+  = @answers[:weight]
+%p
+  %strong Lengte:
+  = @answers[:length]
+%p
+  %strong Slaappositie:
+  = @answers[:sleep_position]
+%p
+  %strong Lichaamsvorm:
+  = @answers[:body_shape]
+%p
+  %strong Warm/koud tijdens slapen:
+  = @answers[:warm_sleeping]
+%p
+  %strong Nek-of-rugklachten:
+  = @answers[:neck_or_back_pain]
+%p
+  %strong Lengte matras:
+  = @answers[:mattress_length]
+%p
+  %strong Breedte matras:
+  = @answers[:mattress_width]
+%p
+  %strong Categorie:
+  = @answers[:category]
+%p
+  %strong Comfort:
+  = @answers[:comfort]
+%p
+  %strong Medische klachten:
+  = @answers[:diseases]
+%p
+  %strong Verstelbaar onderstel:
+  = @answers[:chassis]
+
+%hr/
+- if @answers[:name2]
+  %h4 Persoon 2:
+  %p
+    %strong Naam:
+    = @answers[:name2]
+  %p
+    %strong Geslacht:
+    = @answers[:gender2]
+  %p
+    %strong Leeftijd:
+    = @answers[:age2]
+  %p
+    %strong Gewicht:
+    = @answers[:weight2]
+  %p
+    %strong Lengte:
+    = @answers[:length2]
+  %p
+    %strong Slaappositie:
+    = @answers[:sleep_position2]
+  %p
+    %strong Lichaamsvorm:
+    = @answers[:body_shape2]
+  %p
+    %strong Warm/koud tijdens slapen:
+    = @answers[:warm_sleeping2]
+  %p
+    %strong Nek-of-rugklachten:
+    = @answers[:neck_or_back_pain2]
+  %p
+    %strong Comfort:
+    = @answers[:comfort2]
+  %p
+    %strong Medische klachten:
+    = @answers[:diseases2]
+  %p
+    %strong Scheiding matras:
+    = @answers[:separation]
+

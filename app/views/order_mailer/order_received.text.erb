@@ -1,18 +1,189 @@
-HOERRRRRA nieuwe bestelling!
-
-<%= @details[:first_name] %>
-<%= @details[:last_name] %>
-<%= @details[:phone] %>
-<%= @details[:email] %>
-<%= @details[:address] %>
-<%= @details[:address_addition] %>
-<%= @details[:zip_code] %>
-<%= @details[:city] %>
-<%= @details[:address_ship] %>
-<%= @details[:address_addition_ship] %>
-<%= @details[:zip_code_ship] %>
-<%= @details[:city_ship] %>
-<%= @details[:floor] %>
-<%= @details[:elevator] %>
-<%= @details[:comment] %>
-<%= @details[:payment_method] %>
+<h1>HOERRRRRA nieuwe bestelling!</h1>
+<h2>
+  Ordernummer:
+  <%= @details[:order_number] %>
+</h2>
+<h3>
+  <%= @details[:type] %>
+</h3>
+<hr/>
+<h3>Klantgegevens:</h3>
+<hr/>
+<p>
+  <strong>Voornaam:</strong>
+  <%= @details[:first_name] %>
+</p>
+<p>
+  <strong>Voornaam:</strong>
+  <%= @details[:last_name] %>
+</p>
+<p>
+  <strong>Telefoonnummer:</strong>
+  <%= @details[:phone] %>
+</p>
+<p>
+  <strong>Email:</strong>
+  <%= @details[:email] %>
+</p>
+<p>
+  <strong>Adres:</strong>
+  <%= @details[:address] %>
+</p>
+<p>
+  <strong>Adres-toevoeging:</strong>
+  <%= @details[:address_addition] %>
+</p>
+<p>
+  <strong>Postcode:</strong>
+  <%= @details[:zip_code] %>
+</p>
+<p>
+  <strong>Stad:</strong>
+  <%= @details[:city] %>
+</p>
+<p>
+  <strong>Verdieping:</strong>
+  <%= @details[:floor] %>
+</p>
+<p>
+  <strong>Is er een lift?</strong>
+  <%= @details[:elevator] %>
+</p>
+<p>
+  <strong>Gebruikte betaalmethode:</strong>
+  <%= @details[:payment_method] %>
+</p>
+<p>
+  <strong>COMMENT/NOTITIE:</strong>
+  <%= @details[:comment] %>
+</p>
+<% if @details[:address_ship] %>
+  <br/>
+  <h4>Andere Verzendadres:</h4>
+  <p>
+    <%= @details[:address_ship] %>
+  </p>
+  <p>
+    <%= @details[:address_addition_ship] %>
+  </p>
+  <p>
+    <%= @details[:zip_code_ship] %>
+  </p>
+  <p>
+    <%= @details[:city_ship] %>
+  </p>
+<% end %>
+<hr/>
+<h4>Persoon 1:</h4>
+<p>
+  <strong>Naam:</strong>
+  <%= @answers[:name] %>
+</p>
+<p>
+  <strong>Geslacht:</strong>
+  <%= @answers[:gender] %>
+</p>
+<p>
+  <strong>Leeftijd:</strong>
+  <%= @answers[:age] %>
+</p>
+<p>
+  <strong>Gewicht:</strong>
+  <%= @answers[:weight] %>
+</p>
+<p>
+  <strong>Lengte:</strong>
+  <%= @answers[:length] %>
+</p>
+<p>
+  <strong>Slaappositie:</strong>
+  <%= @answers[:sleep_position] %>
+</p>
+<p>
+  <strong>Lichaamsvorm:</strong>
+  <%= @answers[:body_shape] %>
+</p>
+<p>
+  <strong>Warm/koud tijdens slapen:</strong>
+  <%= @answers[:warm_sleeping] %>
+</p>
+<p>
+  <strong>Nek-of-rugklachten:</strong>
+  <%= @answers[:neck_or_back_pain] %>
+</p>
+<p>
+  <strong>Lengte matras:</strong>
+  <%= @answers[:mattress_length] %>
+</p>
+<p>
+  <strong>Breedte matras:</strong>
+  <%= @answers[:mattress_width] %>
+</p>
+<p>
+  <strong>Categorie:</strong>
+  <%= @answers[:category] %>
+</p>
+<p>
+  <strong>Comfort:</strong>
+  <%= @answers[:comfort] %>
+</p>
+<p>
+  <strong>Medische klachten:</strong>
+  <%= @answers[:diseases] %>
+</p>
+<p>
+  <strong>Verstelbaar onderstel:</strong>
+  <%= @answers[:chassis] %>
+</p>
+<hr/>
+<% if @answers[:name2] %>
+  <h4>Persoon 2:</h4>
+  <p>
+    <strong>Naam:</strong>
+    <%= @answers[:name2] %>
+  </p>
+  <p>
+    <strong>Geslacht:</strong>
+    <%= @answers[:gender2] %>
+  </p>
+  <p>
+    <strong>Leeftijd:</strong>
+    <%= @answers[:age2] %>
+  </p>
+  <p>
+    <strong>Gewicht:</strong>
+    <%= @answers[:weight2] %>
+  </p>
+  <p>
+    <strong>Lengte:</strong>
+    <%= @answers[:length2] %>
+  </p>
+  <p>
+    <strong>Slaappositie:</strong>
+    <%= @answers[:sleep_position2] %>
+  </p>
+  <p>
+    <strong>Lichaamsvorm:</strong>
+    <%= @answers[:body_shape2] %>
+  </p>
+  <p>
+    <strong>Warm/koud tijdens slapen:</strong>
+    <%= @answers[:warm_sleeping2] %>
+  </p>
+  <p>
+    <strong>Nek-of-rugklachten:</strong>
+    <%= @answers[:neck_or_back_pain2] %>
+  </p>
+  <p>
+    <strong>Comfort:</strong>
+    <%= @answers[:comfort2] %>
+  </p>
+  <p>
+    <strong>Medische klachten:</strong>
+    <%= @answers[:diseases2] %>
+  </p>
+  <p>
+    <strong>Scheiding matras:</strong>
+    <%= @answers[:separation] %>
+  </p>
+<% end %>

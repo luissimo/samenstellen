@@ -13,7 +13,7 @@ class CustomersController < ApplicationController
 
   def create
     @customer = Customer.new(customer_params.merge({ session_id: session.id }))
-    @name = session[:name]
+    @name = session[:answers][:name]
 
     set_price
     case @customer.payment_method
@@ -24,6 +24,7 @@ class CustomersController < ApplicationController
     end
 
     session[:order] = {
+      type: session[:flow],
       first_name: params[:customer][:first_name],
       last_name: params[:customer][:last_name],
       phone: params[:customer][:phone],
@@ -41,7 +42,12 @@ class CustomersController < ApplicationController
       comment: params[:customer][:comment],
       payment_method: params[:customer][:payment_method],
       price: @price,
-      order_number: create_order_number
+      order_number: create_order_number,
+      answers: session[:answers],
+      mattress: session[:mattress],
+      topper: session[:topper],
+      mattress2: session[:mattress2],
+      topper2: session[:topper2]
     }
 
     respond_to do |format|
@@ -66,8 +72,9 @@ class CustomersController < ApplicationController
     case session[:status]
     when 'success'
       @status = "Je bestelling is in goede orde ontvangen!"
-      OrderMailer.order_success(details: session[:order]).deliver_now! if session[:order]['email']
-    else
+      OrderMailer.order_success(details: session[:order]).deliver_now! if session[:order][:email]
+      OrderMailer.order_received(details: session[:order], answers: session[:answers]).deliver_now if session[:order] && session[:answers]
+     else
       @status = "Er is iets misgegaan met de betaling, probeer het later nogmaals."
     end
   end
@@ -78,27 +85,27 @@ class CustomersController < ApplicationController
     if @source_status.eql?('chargeable')
      session[:status] = 'pending'
      Stripe::Charge.create({
-       amount: session[:order]['price'],
+       amount: session[:order][:price],
        currency: 'eur',
        source: session[:stripe_source_id],
        metadata: {
-         first_name: session[:order]['first_name'],
-         last_name: session[:order]['last_name'],
-         phone: session[:order]['phone_name'],
-         email: session[:order]['email'],
-         address: session[:order]['address'],
-         address_addition: session[:order]['address_addition'],
-         zip_code: session[:order]['zip_code'],
-         city: session[:order]['city'],
-         address_ship: session[:order]['address_ship'],
-         address_addition_ship: session[:order]['address_addition_ship'],
-         zip_code_ship: session[:order]['zip_code_ship'],
-         city_ship: session[:order]['city_ship'],
-         floor: session[:order]['floor'],
-         elevator: session[:order]['elevator'],
-         comment: session[:order]['comment'],
-         payment_method: session[:order]['payment_method'],
-         order_number: session[:order]['order_number']
+         first_name: session[:order][:first_name],
+         last_name: session[:order][:last_name],
+         phone: session[:order][:phone_name],
+         email: session[:order][:email],
+         address: session[:order][:address],
+         address_addition: session[:order][:address_addition],
+         zip_code: session[:order][:zip_code],
+         city: session[:order][:city],
+         address_ship: session[:order][:address_ship],
+         address_addition_ship: session[:order][:address_addition_ship],
+         zip_code_ship: session[:order][:zip_code_ship],
+         city_ship: session[:order][:city_ship],
+         floor: session[:order][:floor],
+         elevator: session[:order][:elevator],
+         comment: session[:order][:comment],
+         payment_method: session[:order][:payment_method],
+         order_number: session[:order][:order_number]
        }
      })
      process_payment

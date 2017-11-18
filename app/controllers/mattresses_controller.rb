@@ -6,16 +6,35 @@ class MattressesController < ApplicationController
 
   def show
     @mattress = Mattress.all.where(session_id: session.id).last
-    session[:name] = @mattress.name
     session[:flow] = "mattress"
     calculate_price
     set_graph_variables(Mattress)
     set_product_names
+    # results texts
     @bmi = calculate_bmi
     @firmness_text = firmness_text
     @comfort_text = comfort_text
     @elasticity_text = elasticity_text
     @heat_regulation_text = heat_regulation_text
+
+    session.delete(:answers) if session[:answers]
+    session[:answers] = {
+      name: @mattress.name,
+      gender: @mattress.gender,
+      age: @mattress.age,
+      weight: @mattress.weight,
+      length: @mattress.length,
+      sleep_position: @mattress.sleep_position,
+      body_shape: @mattress.body_shape,
+      warm_sleeping: @mattress.warm_sleeping,
+      neck_or_back_pain: @mattress.neck_or_back_pain,
+      mattress_length: @mattress.mattress_length,
+      mattress_width: @mattress.mattress_width,
+      category: @mattress.category,
+      comfort: @mattress.comfort,
+      diseases: @mattress.diseases,
+      chassis: @mattress.chassis
+    }
   end
 
   def new

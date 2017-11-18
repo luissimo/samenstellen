@@ -1,7 +1,7 @@
 module DoubleMattressTwoPrices
   extend ActiveSupport::Concern
 
-  # 1 PERSOONS MATRAS PRIJZEN
+  # 2 PERSOONS MATRAS PRIJZEN
   def calculate_price_double_mattress_two
     @double_mattress_two = DoubleMattressTwo.all.where(session_id: session.id).last
 

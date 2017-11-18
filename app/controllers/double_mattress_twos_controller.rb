@@ -28,6 +28,37 @@ class DoubleMattressTwosController < ApplicationController
     @elasticity_text_2 = elasticity_text_2
     @firmness_text_2 = firmness_text_2
     @heat_regulation_text_2 = heat_regulation_text_2
+
+    session.delete(:answers) if session[:answers]
+    session[:answers] = {
+      name: @double_mattress_two.name,
+      name2: @double_mattress_two.name2,
+      gender: @double_mattress_two.gender,
+      gender2: @double_mattress_two.gender2,
+      age: @double_mattress_two.age,
+      age2: @double_mattress_two.age2,
+      weight: @double_mattress_two.weight,
+      weight2: @double_mattress_two.weight2,
+      length: @double_mattress_two.length,
+      length2: @double_mattress_two.length2,
+      sleep_position: @double_mattress_two.sleep_position,
+      sleep_position2: @double_mattress_two.sleep_position2,
+      body_shape: @double_mattress_two.body_shape,
+      body_shape2: @double_mattress_two.body_shape2,
+      warm_sleeping: @double_mattress_two.warm_sleeping,
+      warm_sleeping2: @double_mattress_two.warm_sleeping2,
+      neck_or_back_pain: @double_mattress_two.neck_or_back_pain,
+      neck_or_back_pain2: @double_mattress_two.neck_or_back_pain2,
+      mattress_length: @double_mattress_two.mattress_length,
+      mattress_width: @double_mattress_two.mattress_width,
+      category: @double_mattress_two.category,
+      comfort: @double_mattress_two.comfort,
+      comfort2: @double_mattress_two.comfort2,
+      diseases: @double_mattress_two.diseases,
+      diseases2: @double_mattress_two.diseases2,
+      chassis: @double_mattress_two.chassis,
+      separation: @double_mattress_two.separation
+    }
   end
 
   def new

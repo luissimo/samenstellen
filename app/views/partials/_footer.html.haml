@@ -1,21 +1,23 @@
-/ --------- Footer ----------
 %footer.footer-bs
   .row
     .col-md-3.footer-brand.animated.fadeInLeft
-      = image_tag('LogoHuisstijlWit.svg', width: '300px', height: '200px')
+      = link_to root_url do
+        = image_tag('LogoHuisstijlWit.svg', width: '300px', height: '200px')
     .col-md-4.footer-nav.animated.fadeInUp
       .col-md-6
         %ul.pages
           %li
-            %a{:href => "#"} Home
+            %a{:href => root_url} Home
           %li
-            %a{:href => "#"} EENPERSOONSMATRAS
+            %a{:href => new_mattress_url} EENPERSOONSMATRAS
           %li
-            %a{:href => "#"} TWEEPERSOONSMATRAS
+            %a{:href => root_url} TWEEPERSOONSMATRAS
           %li
-            %a{:href => "#"} FAQ'S
+            %a{:href => veelgestelde_vragen_url} FAQ'S
           %li
-            %a{:href => "#"} CONTACT
+            %a{:href => over_ons_url} OVER ONS
+          %li
+            %a{:href => contact_url} CONTACT
       .col-md-6
         %ul.list
           %li
@@ -32,6 +34,6 @@
       %h4 Volg ons
       %ul
         %li
-          %a{:href => "#"} Facebook
+          %a{:href => "https://www.facebook.com/tenzenslapen", target: "_blank"} Facebook
     .col-md-3.footer-ns.animated.fadeInRight
-      = image_tag "thuiswinkelwaarborg.svg", alt: 'thuiswinkelwaarborg', height: '200px', width: '200px'
+      = image_tag "thuiswinkelwaarborg.png", alt: 'thuiswinkelwaarborg', height: '150px', width: '150px'

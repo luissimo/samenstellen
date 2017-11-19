@@ -4,15 +4,52 @@ Bedankt voor je bestelling:
 <%= @details[:last_name] %>
 <%= @details[:phone] %>
 <%= @details[:email] %>
+
+Factuuradres
 <%= @details[:address] %>
 <%= @details[:address_addition] %>
 <%= @details[:zip_code] %>
 <%= @details[:city] %>
+
+<% if @details[:address_ship] %>
+Verzendadres:
 <%= @details[:address_ship] %>
 <%= @details[:address_addition_ship] %>
 <%= @details[:zip_code_ship] %>
 <%= @details[:city_ship] %>
+<% end %>
+Verdieping:
 <%= @details[:floor] %>
+
+Lift:
 <%= @details[:elevator] %>
+
+
+Bericht
 <%= @details[:comment] %>
+
+Gebruikte betaalmethode
 <%= @details[:payment_method] %>
+
+<% if @details[:payment_method].eql?("50/50") %>
+  <% @full_price = @details[:price] * 2 %>
+  <% @price_inc_btw = [@full_price.to_s[0..-3], @full_price.to_s[-2..-1]].join(',') %>
+<% else %>
+  <% @price_inc_btw = [@details[:price].to_s[0..-3], @details[:price].to_s[-2..-1]].join(',') %>
+<% end %>
+<% @price_ex_btw = (@price_inc_btw.to_f / 121) * 100 %>
+<% @btw_amount = (@price_inc_btw.to_f / 121) * 21 %>
+
+
+Prijs exclusief btw:
+<%= @price_ex_btw.round(2) %>
+btw (21%):
+<%= @btw_amount.round(2) %>
+
+Totaal
+<%= @price_inc_btw %>
+
+
+<% if @details[:payment_method].eql?('50/50') %>
+* Dit betreft een 50/50 betaling, het resterende bedrag van €<%= [@details[:price].to_s[0..-3], @details[:price].to_s[-2..-1]].join(',') %> kan aan de deur gepind worden.
+<% end %>

@@ -1,0 +1,37 @@
+/ --------- Footer ----------
+%footer.footer-bs
+  .row
+    .col-md-3.footer-brand.animated.fadeInLeft
+      = image_tag('LogoHuisstijlWit.svg', width: '300px', height: '200px')
+    .col-md-4.footer-nav.animated.fadeInUp
+      .col-md-6
+        %ul.pages
+          %li
+            %a{:href => "#"} Home
+          %li
+            %a{:href => "#"} EENPERSOONSMATRAS
+          %li
+            %a{:href => "#"} TWEEPERSOONSMATRAS
+          %li
+            %a{:href => "#"} FAQ'S
+          %li
+            %a{:href => "#"} CONTACT
+      .col-md-6
+        %ul.list
+          %li
+            %a{:href => algemene_voorwaarden_simpel_url} Algemene voorwaarden
+          %li
+            %a{:href => garanties_url} Garanties
+          %li
+            %a{:href => retourneren_url} Retourneren
+          %li
+            %a{:href => privacy_beleid_url} Privacybeleid
+          %li
+            %a{:href => cookie_beleid_url} Cookiebeleid
+    .col-md-2.footer-social.animated.fadeInDown
+      %h4 Volg ons
+      %ul
+        %li
+          %a{:href => "#"} Facebook
+    .col-md-3.footer-ns.animated.fadeInRight
+      = image_tag "thuiswinkelwaarborg.svg", alt: 'thuiswinkelwaarborg', height: '200px', width: '200px'

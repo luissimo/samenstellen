@@ -62,11 +62,11 @@
           .collapse.navbar-collapse#navbar
             %ul.nav.navbar-nav.navbar-right
               %li
-                %a.js-scroll-trigger{href: new_mattress_url} Eenpersoonsmatras
+                %a.js-scroll-trigger{href: new_mattress_url} EENPERSOONSMATRAS
               %li
-                %a.js-scroll-trigger{href: root_url} Tweepersoonsmatras
+                %a.js-scroll-trigger{href: root_url} TWEEPERSOONSMATRAS
               %li
-                %a.js-scroll-trigger{href: over_ons_url} Over ons
+                %a.js-scroll-trigger{href: over_ons_url} OVER ONS
               %li
                 %a.js-scroll-trigger{href: veelgestelde_vragen_url} FAQ's
 
@@ -83,14 +83,17 @@
         .container
           .header-1-content.row
             .col-md-7.col-sm-12.mt-63.home-question-1
-              %h1.has-line Perfect slapen kost je slechts 2 minuten
+              %h1 Stel nu je eigen matras samen
+              %br/
               %p.lead
-                Kies hieronder wat voor matras je wilt samenstellen
+                Elk lichaam is anders, dus waarom zou jouw matras dat niet zijn? Stel binnen twee minuten jouw persoonlijke matras samen en geniet van slaapcomfort als nooit tevoren!
+                %hr/
+                %strong Kies je maatvoering en begin direct.
               .download
                 %a.download-btn{href: new_mattress_url}
-                  1-Persoonsmatras samenstellen
+                  Eenpersoons
                 %a.download-btn.show-home-question-2
-                  2-Persoonsmatras samenstellen
+                  Tweepersoons
             .col-md-7.col-sm-12.mt-63.home-question-2
               %h1.has-line Hoeveel personen slapen er op?
               .download
@@ -113,8 +116,8 @@
           %header.text-center
             %h2.has-line-center
               Droomservice
-            %p.limited-width.lead
-              Je krijgt gegarandeerd een perfect matras. Wij nemen al je zorgen weg.
+            %p.lead
+              Bij Tenzen draait alles om jou. ‘Wij slapen pas lekker, als jij lekker slaapt’ is ons motto. Je hoeft alleen maar online te bestellen. Wij zorgen ervoor dat jij daarna nergens naar om hoeft te kijken. Wij stellen het beste matras voor jou samen en bezorgen het gratis tot in je slaapkamer.
           .how-one-container
             .how-box-one.col-md-4.col-sm-6.col-xs-12
               .inner-box
@@ -124,27 +127,29 @@
                 %h3
                   %a{:href => "#"} Persoonlijk comfort
                 .text
-                  Elke matras wordt bij ons op basis van persoonlijke voorkeuren geproduceerd. Jij moet je niet aan je matras aanpassen, maar je matras moet zich aan jou aanpassen!
-
-            .how-box-one.col-md-4.col-sm-6.col-xs-12
-              .inner-box
-                .icon-box
-                  %i
-                    = image_tag("garantie.png", alt: 'Niet Tevreden = Geld Terug', style: "height: 50px; width:50px")
-                %h3
-                  %a{:href => "#"} 100 dagen Niet tevreden, geld terug
-                .text
-                  Je kunt 100 dagen proefslapen op je matras. Mocht het nou niet zijn wat je had gewenst, dan komen wij het gratis ophalen en krijg je het volledige aankoopbedrag terug, zonder gezeur
-
+                  Elk matras wordt bij ons op basis van persoonlijke voorkeuren geproduceerd. Jij moet je niet aan je matras aanpassen, maar je matras moet zich aan jou aanpassen! Je krijgt
+                  %strong gegarandeerd
+                  het perfecte matras voor jou. Wij nemen al je zorgen weg en laten je lekker slapen.
             .how-box-one.col-md-4.col-sm-6.col-xs-12
               .inner-box
                 .icon-box
                   %i
                     = image_tag("bezorging.png", alt: 'Gratis bezorging', style: "height: 50px; width:50px")
                 %h3
-                  %a{:href => "#"} Gratis verzending heen- en terug
+                  %a{:href => "#"} Gratis verzend- en ophaalservice
                 .text
-                  Je matras wordt gratis bezorgd tot in je slaapkamer. Mocht je het matras terug willen sturen, dan komen wij het ook weer gratis voor je ophalen. Geen zorgen dus.
+                  Je matras wordt gratis thuisbezorgd, tot in je slaapkamer. Mocht je het matras
+                  %strong terug willen sturen
+                  ,dan komen wij het ook weer gratis bij je ophalen. Geen zorgen dus.
+            .how-box-one.col-md-4.col-sm-6.col-xs-12
+              .inner-box
+                .icon-box
+                  %i
+                    = image_tag("garantie.png", alt: 'Niet Tevreden = Geld Terug', style: "height: 50px; width:50px")
+                %h3
+                  %a{:href => "#"} Niet goed, geld terug
+                .text
+                  Je kunt honderd dagen proefslapen op je matras. Mocht het niet zijn wat je had gewenst, dan komen wij het gratis ophalen en krijg je het volledige aankoopbedrag terug. Daar doen we niet moeilijk over.
       /
         \=======================================
         \==End about section==
@@ -159,9 +164,9 @@
         .container.text-center
           %header.text-center.mb-70
             %h2.has-line-center
-              Jouw Tenzen matras
-            %p.limited-width.lead
-              Je Tenzen matras wordt altijd onder strenge kwaliteitseisen gemaakt. Veiligheid en kwaliteit zijn essentieel.
+              Jouw Tenzen-matras
+            %p.lead
+              Wij laten al onze matrassen onder strenge kwaliteitscontroles speciaal produceren in Duitsland. Hierdoor weet je zeker dat je altijd op een kwalitatief goede, en vooral ook een veilige matras slaapt.
           .outer
             / Logo
             .inner-circle
@@ -174,28 +179,23 @@
                   .inner-box
                     .icon-box
                       %span= image_tag("icon-aanpassend-vermogen.png", alt: "kwaliteit matrassen")
-                    %h3
-                      %a{:href => "/"} Aanpassend vermogen
+                    %h3{style: "color: white"} Corrigerend
                     .text
-                      Je Tenzen matras zal een aanpassend vermogen hebben dat geschikt is voor jou. Zo kan je matras zich volledig aan jouw lichaam en slaapstijl aanpassen.
-
+                      Je Tenzen-matras heeft een aanpassend vermogen. Het matras kan zich volledig aan jouw lichaam en slaapstijl aanpassen.
                 .service-box-three
                   .inner-box
                     .icon-box
                       %span= image_tag("icon-ademend.png", alt: "kwaliteit matrassen")
-                    %h3
-                      %a{:href => "/"} Ademend
+                    %h3{style: "color: white"} Ademend
                     .text
-                      Je Tenzen matras heeft een optimaal ademend vermogen. Zo zul je het nooit meer te warm of te koud krijgen in bed.
-
+                      Je Tenzen-matras heeft een optimaal ademend vermogen. Zo zul je het nooit meer te warm of koud hebben in bed.
                 .service-box-three
                   .inner-box
                     .icon-box
                       %span= image_tag("icon-gevoel.png", alt: "kwaliteit matrassen")
-                    %h3
-                      %a{:href => "/"} Gevoel
+                    %h3{style: "color: white"} Comfortabel
                     .text
-                      Tenzen zal gemaakt zijn om jou een perfect gevoel te geven. Zo weet je zeker dat je matras het juiste comfort biedt voor een heerlijke nachtrust.
+                      Je Tenzen-matras wordt speciaal voor jou gemaakt om je de perfecte slaaphouding te geven. Zo weet je zeker dat je matras het juiste comfort biedt voor een heerlijke nachtrust.
               / Right Column
               .right-column.col-lg-4.col-md-6.col-sm-6.col-xs-12
 
@@ -203,28 +203,27 @@
                   .inner-box
                     .icon-box
                       %span= image_tag("icon-veilig.png", alt: "kwaliteit matrassen")
-                    %h3
-                      %a{:href => "/"} Veilig en vertrouwd
+                    %h3{style: "color: white"} Veilig en vertrouwd
                     .text
-                      Al het schuim dat gebruikt wordt in je Tenzen matras is vrij van schadelijke chemicaliën en wordt compleet milieuvriendelijk geproduceerd.
-
+                      Al het schuim dat gebruikt wordt in je Tenzen-matras is vrij van schadelijke chemicaliën en wordt compleet milieuvriendelijk geproduceerd.
                 .service-box-four
                   .inner-box
                     .icon-box
                       %span= image_tag("icon-kwaliteit.png", alt: "kwaliteit matrassen")
-                    %h3
-                      %a{:href => "/"} Kwaliteit
+                    %h3{style: "color: white"} Kwaliteit
                     .text
-                      Tenzen gebruikt alleen de beste kwaliteit materialen. Je hebt dan ook altijd minimaal 2 jaar garantie op je aankoop.
+                      Tenzen gebruikt alleen de beste kwaliteit materialen. Je hebt dan ook altijd minimaal twee jaar
+                      %strong garantie
+                      op je aankoop.
 
                 .service-box-four
                   .inner-box
                     .icon-box
                       %span= image_tag("icon-stevig.png", alt: "kwaliteit matrassen")
-                    %h3
-                      %a{:href => "/"} Stevigheid
+                    %h3{style: "color: white"} Duurzaam
                     .text
-                      Jouw Tenzen matras heeft precies de juiste stevigheid voor jouw lichaam. Zo weet je zeker dat je altijd tot rust kunt komen.
+                      Jouw Tenzen-matras heeft precies de juiste stevigheid voor jouw lichaam. Hierdoor slaap je beter en wordt de levensduur van je matras langer.
+
 
       /
         \=======================================
@@ -234,14 +233,7 @@
         \=======================================
         \==Start footer section==
         \=======================================
-      %footer.main-footer.footer-style-two.text-center
-        / Footer Bottom
-        .footer-bottom
-          .auto-container
-            .copyright-text
-              ©
-              = current_year
-              \- Tenzen
+      = render 'partials/footer'
       /
         \=======================================
         \==End footer section==

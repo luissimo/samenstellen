@@ -1,6 +1,6 @@
 class HomesController < ApplicationController
 
-  before_action :send_mail
+  # before_action :send_mail
 
   def index
   end

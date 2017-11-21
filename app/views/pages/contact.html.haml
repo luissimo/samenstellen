@@ -12,7 +12,7 @@
                   %p.alert.alert-success= notice
                 - elsif alert
                   %p.alert.alert-info= alert
-                #googleMap{:style => "width:100%;height:300px;"}
+                -# #googleMap{:style => "width:100%;height:300px;"}
                 .li-holder
                   .li-content
                     .text-content
@@ -39,22 +39,31 @@
                         .row
                           .head-title-v4 Krijg snel antwoord!
                           %p
-                            Het is ons doel om je altijd binnen 24 uur antwoord te geven op jouw persoonlijke bericht/email. Mochten we binnen 48 uur nog niet gereageerd hebben neem dan even telefonisch contact met ons op via het onderstaande nummer.
+                            Het is ons doel om je altijd binnen 1 uur antwoord te geven op jouw persoonlijke bericht/email. Mochten we binnen 24 uur nog niet gereageerd hebben neem dan even telefonisch contact met ons op via het onderstaande nummer.
                         .row
                           .head-title-v4 Tenzen.nl
                           %p
-                            %i.fa.fa-address-book
-                            Adres: Essebaan 19A, 2908LJ, Capelle aan den IJssel
+                            Adres:
+                            Essebaan 19A, 2908LJ, Capelle aan den IJssel
                             %br
-                            Telefoon: 088 40 40 700a
-
-:javascript
-  function myMap() {
-  var mapProp= {
-      center:new google.maps.LatLng(51.959388,4.581676),
-      zoom:17,
-      mapTypeId: google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-  }
-%script{:src => "https://maps.googleapis.com/maps/api/js?key=AIzaSyAqwN0i8POFPMlxjeFvNC8TA8KsxehAMXY&callback=myMap"}
+                            Telefoon: 088 40 40 700
+                            %br
+                            Email: info@tenzen.nl
+                            %br
+                            KVK: 67209815
+                            %br
+                            BTW: NL856876951B01
+                        .row
+                          .head-title-v4 Openingstijden
+                          %p
+                            Donderdag t/m Maandag: 10:00 - 18:00
+-# :javascript
+-#   function myMap() {
+-#   var mapProp= {
+-#       center:new google.maps.LatLng(51.959388,4.581676),
+-#       zoom:17,
+-#       mapTypeId: google.maps.MapTypeId.ROADMAP
+-#   };
+-#   var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+-#   }
+-# %script{:src => "https://maps.googleapis.com/maps/api/js?key=AIzaSyAhi53_xZ1Ui0CSyBfili-mYNT89xZLrFg&callback=myMap"}

@@ -122,7 +122,7 @@
                       .icon
                         .summary_box.text-center
                           .box-title-small.text-center
-                            Wat krijg je?
+                            Winkelwagen:
                           %p
                             = @mattress_product
                           - if @mattress_product2
@@ -138,7 +138,8 @@
                             = @price.to_s[0..-3]
                           .delivery_tag
                             Levertijd: 6 weken
-
+                            %br
+                            %span{style: 'font-size: 12px; text-decoration:underline;'}= link_to 'Antwoorden wijzigen', 'javascript:history.go(-1);'
                   .checkout_button.title-v4.text-center
                     %a.btn-primary.btn-success.btn-block{href: customers_new_path}
                       Doorgaan

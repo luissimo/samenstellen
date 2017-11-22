@@ -46,12 +46,29 @@
         #block_other_information
           %h3.text-center Informatie
           .col-md-8.col-md-offset-2
-            %ul.data-list
-              .styled-select
-                %li= f.select :floor, [ 'Begane grond', '1e verdieping', '2e verdieping', '3e verdieping', '4e verdieping', '5e verdieping', '6e verdieping', '7e verdieping', '8e verdieping', '9e verdieping', '10e verdieping of hoger'], prompt: 'Op welke verdieping woon je?*', class: 'required form-control'
-              %br/
-              .styled-select
-                %li= f.select :elevator, [ 'Ja, er is een lift.', 'Nee, er is geen lift.'], prompt: 'Is er een lift aanwezig?*', class: 'required form-control'
+            %ul#terms.data-list
+              %li
+                %strong
+                  Woon je op de begane grond?
+                %label.switch-light.switch-ios
+                  %input.required.fix_ie8#floor_select{:name => "terms", :type => "checkbox", :value => "Ja", :checked => "checked"}/
+                  %span
+                    %span.ie8_hide Nee
+                    %span Ja
+                  %a
+            %br/
+            %br/
+            #floor_options
+              %ul.data-list
+                %h5
+                  Op welke verdieping woon je?*
+                .styled-select
+                  %li= f.select :floor, ['1e verdieping', '2e verdieping', '3e verdieping', '4e verdieping', '5e verdieping', '6e verdieping', '7e verdieping', '8e verdieping', '9e verdieping', '10e verdieping of hoger'], class: 'required form-control'
+                %br/
+                %h5
+                  Is er een lift aanwezig?*
+                .styled-select
+                  %li= f.select :elevator, ['Ja, er is een lift.', 'Nee, er is geen lift.'], class: 'required form-control'
           .col-md-8.col-md-offset-2
             %ul.data-list
               %li= f.text_area :comment, class: 'required form-control', placeholder: 'Extra bericht of notitie (optioneel)'
@@ -63,9 +80,13 @@
               %li
                 = f.radio_button :payment_method, 'iDeal', class: 'required check_radio', checked: true
                 = f.label :payment_method_a, 'iDeal'
+                %span.payment_method_image{style: "float: right;"}
+                  = image_tag 'ideal_mobile.png', alt: 'iDeal', height: '42px', width: '168px'
               %li
                 = f.radio_button :payment_method, "50/50", class: 'required check_radio'
                 = f.label :payment_method_b, "50% met ideal en 50% pinnen aan huis"
+                %span.payment_method_image{style: "float: right;"}
+                  = image_tag 'pinnen_mobile.png', alt: "50% met ideal en 50% pinnen aan huis", height: '42px', width: '168px'
             %hr
             %ul#terms.data-list
               %li

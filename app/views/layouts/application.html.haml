@@ -54,6 +54,8 @@
     = javascript_include_tag 'modernizr.custom.17475.js'
     / Support media queries for IE8
     = javascript_include_tag 'respond.min.js'
+
+
   %body
     -# Google Tag Manager
     %noscript
@@ -61,7 +63,6 @@
     = render 'partials/header'
     = yield
     = render 'partials/footer'
-
 
     / CUSTOM JS
     = javascript_include_tag 'custom.js'

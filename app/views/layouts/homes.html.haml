@@ -45,10 +45,6 @@
 
     / Page Holder
     .page-holder
-      /
-        \=======================================
-        \==Start  Nav section==
-        \=======================================
       %nav.navbar.main-navigation.navbar-fixed-top.has-shadow
         .container
           .navbar-header
@@ -70,14 +66,6 @@
               %li
                 %a.js-scroll-trigger{href: veelgestelde_vragen_url} FAQ's
 
-      /
-        \=======================================
-        \==End Nav section==
-        \=======================================
-      /
-        \=======================================
-        \==Start header-1 section==
-        \=======================================
       #home.header-1.demo-1.has-gradient
         .moving-bg
         .container
@@ -103,14 +91,7 @@
                   2 Personen
             .col-md-5.hidden-sm.hidden-xs.mt-63
               .center-block= image_tag("tenzen.png", alt: 'Tenzen Matras Samenstellen')
-      /
-        \=======================================
-        \==End header-1 section==
-        \=======================================
-      /
-        \=======================================
-        \==Start about section==
-        \=======================================
+
       %section#how-it-work.how-it-work
         .container.text-center
           %header.text-center
@@ -150,15 +131,7 @@
                   %a{:href => "#"} Niet goed, geld terug
                 .text
                   Je kunt honderd dagen proefslapen op je matras. Mocht het niet zijn wat je had gewenst, dan komen wij het gratis ophalen en krijg je het volledige aankoopbedrag terug. Daar doen we niet moeilijk over.
-      /
-        \=======================================
-        \==End about section==
-        \=======================================
 
-      /
-        \=======================================
-        \==Start what we do section==
-        \=======================================
       %section#services.what-we-do.has-gradient
         %span.img-bg
         .container.text-center
@@ -224,31 +197,8 @@
                     .text
                       Jouw Tenzen-matras heeft precies de juiste stevigheid voor jouw lichaam. Hierdoor slaap je beter en wordt de levensduur van je matras langer.
 
-
-      /
-        \=======================================
-        \==End what we do section==
-        \=======================================
-      /
-        \=======================================
-        \==Start footer section==
-        \=======================================
       = render 'partials/footer'
-      /
-        \=======================================
-        \==End footer section==
-        \=======================================
-      /
-        \=======================================
-        \==Start preloader section==
-        \=======================================
-      .preloader
-        .loader
-          .loader-inner
-      /
-        \=======================================
-        \==End preloader section==
-        \=======================================
+
     / End Page Holder
     = javascript_include_tag "home/jquery.min.js"
     = javascript_include_tag "home/bootstrap.js"

@@ -16378,7 +16378,7 @@ a:hover {
 
 body {
     font-family: 'Avenir', sans-serif!important;
-    overflow: hidden;
+    overflow: auto;
 }
 
 section {

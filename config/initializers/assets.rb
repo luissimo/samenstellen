@@ -19,7 +19,7 @@ Rails.application.config.assets.precompile += %w( custom.js jquery.validate.js j
 																									fancybox/source/jquery.fancybox.pack.js fancybox/source/helpers/jquery.fancybox-media.js
 
                                                   home/jquery.min.js home/bootstrap.js home/jquery.counterup.min.js home/owl.carousel.min.js
-                                                  home/owl.carousel.min.js home/jquery.easing.min.js home/easyscroll.min.js home/script.js
+                                                  home/owl.carousel.min.js home/jquery.easing.min.js home/script.js
 
 																									bootstrap.css style.css fancybox/source/jquery.fancybox.css
 																									check_radio/skins/square/aero.css jquery.switch.css owl.carousel.css owl.theme.css

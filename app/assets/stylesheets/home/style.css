@@ -1113,9 +1113,6 @@ style.css:1477
     font-size: 32px;
     width: 80px;
     height: 80px;
-    border: 2px solid;
-    line-height: 80px;
-    border-radius: 50%;
     margin: 0 auto 20px;
     transition: all 300ms ease;
     -moz-transition: all 300ms ease;
@@ -1230,7 +1227,7 @@ style.css:1477
     height:72px;
     text-align:center;
     line-height:100px;
-    color: #ABDBEA !important;
+    color: #5777ab !important;
     font-size:50px;
     transition:all 300ms ease;
     -moz-transition:all 300ms ease;
@@ -1291,7 +1288,7 @@ style.css:1477
     height:72px;
     text-align:center;
     line-height:100px;
-    color: #ABDBEA;
+    color: #5777ab;
     font-size:50px;
     transition:all 300ms ease;
     -moz-transition:all 300ms ease;

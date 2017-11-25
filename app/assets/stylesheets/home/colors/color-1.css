@@ -26,7 +26,7 @@ nav.main-navigation .navbar-brand i,
 .main-footer .contact-info li .icon,
 .features .service-box-one .inner-box strong
 {
-	color: #ABDBEA !important;
+	color: #5777ab !important;
 }
 
 nav.main-navigation .navbar-toggle,
@@ -46,7 +46,7 @@ nav.main-navigation .navbar-nav .btn,
 .main-footer .about-widget .social-links li a:hover,
 .preloader
 {
-	background: #ABDBEA !important
+	background: #5777ab !important
 }
 
 nav.main-navigation .navbar-nav a:hover,
@@ -60,7 +60,7 @@ nav.main-navigation .navbar-nav .btn,
 .main-footer .newsletter-widget input:focus,
 .main-footer .newsletter-widget select:focus
 {
-	border-color: #ABDBEA !important
+	border-color: #5777ab !important
 }
 
 /*** Darker color ***/
@@ -71,14 +71,14 @@ nav.main-navigation .navbar-nav .btn,
 }
 
 .has-gradient {
-    background-image: -moz-linear-gradient(-29deg,#ABDBEA 0,#233b88 100%);
-    background-image: -webkit-linear-gradient(-29deg,#ABDBEA 0,#233b88 100%);
-    background-image: -ms-linear-gradient(-29deg,#ABDBEA 0,#233b88 100%);
+    background-image: -moz-linear-gradient(-29deg,#233b88 0,#5777ab 100%);
+    background-image: -webkit-linear-gradient(-29deg,#233b88 0,#5777ab 100%);
+    background-image: -ms-linear-gradient(-29deg,#233b88 0,#5777ab 100%);
     color: #fff
 }
 
 .pricing-table .pricing-table-signup a:hover{
-    box-shadow: 0 0 10px #ABDBEA;
+    box-shadow: 0 0 10px #5777ab;
 }
 nav.main-navigation .navbar-nav .btn:hover {
     background: transparent !important;

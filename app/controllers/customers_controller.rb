@@ -8,6 +8,7 @@ class CustomersController < ApplicationController
   before_action :set_stripe_api_key
 
   def new
+    redirect_to root_url unless session[:flow]
     @customer = Customer.new
   end
 

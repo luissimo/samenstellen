@@ -37,4 +37,7 @@ Rails.application.routes.draw do
   post 'afrekenen'                              => 'customers#create', as: 'afrekenen_post'
   get  'bedankt'                                => 'customers#success', as: 'bedankt'
 
+
+  # REDIRECT ALL UNKNOWN ROUTES TO ROOT
+  get '*path' => redirect('/')
 end

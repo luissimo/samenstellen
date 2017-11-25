@@ -1,0 +1,14 @@
+%section#main.container
+  #survey_container
+    #middle-wizard
+      .step
+        .row.text-center
+          %h2.col-md-12 Hoeveel personen slapen er op?
+          %br/
+          .col-md-6
+            = link_to bestellen_tweepersoons_solo_url do
+              .btn.btn-choose.btn-lg.btn-block{style: 'margin-bottom: 10px'} 1 Persoon
+          .col-md-6
+            = link_to bestellen_tweepersoons_duo_url do
+              .btn.btn-choose.btn-lg.btn-block 2 Personen
+          %br/

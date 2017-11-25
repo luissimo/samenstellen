@@ -1,0 +1,14 @@
+%section#main.container
+  #survey_container
+    #middle-wizard
+      .step
+        .row.text-center
+          %h2.col-md-12 Kies je maatvoering
+          %br/
+          .col-md-6
+            = link_to bestellen_eenpersoons_url do
+              .btn.btn-choose.btn-lg.btn-block{style: 'margin-bottom: 10px'} Eenpersoons
+          .col-md-6
+            = link_to bestellen_tweepersoons_url do
+              .btn.btn-choose.btn-lg.btn-block Tweepersoons
+          %br/

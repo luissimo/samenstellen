@@ -1,5 +1,11 @@
 %section#main.container
-  / Start Survey container
-  #survey_container
-    #middle_wizard
-      %p= @status
+  #survey_container_result
+    #middle-wizard-result
+      .wrapper-v4
+        .v4-bordered
+          .specs-boxs
+            .box-title.title-v4.text-center#advies
+              = @title
+            %ul.text-center
+              %li
+                %h4{style: "margin-top: 20px"}= @explanation

@@ -66,16 +66,24 @@ class CustomersController < ApplicationController
     begin
       process_payment
     rescue Stripe::InvalidRequestError => e
-      redirect_to root_url
+      return redirect_to root_url
+    rescue
+      return redirect_to root_url
     end
 
     case session[:status]
     when 'success'
-      @status = "Je bestelling is in goede orde ontvangen!"
+      @title = "Bedankt voor je bestelling!"
+      @explanation = "Je bestelling is in goede orde ontvangen. <br> We gaan meteen aan de slag om je bestelling verzendklaar te maken.<br><br> Je kunt dit venster sluiten.".html_safe
+
       OrderMailer.order_success(details: session[:order]).deliver_now! if session[:order][:email]
       OrderMailer.order_received(details: session[:order], answers: session[:answers]).deliver_now if session[:order] && session[:answers]
+
+      reset_session
      else
-      @status = "Er is iets misgegaan met de betaling, probeer het later nogmaals."
+      @title = "Er is iets misgegaan met de betaling."
+      @explanation = "Je betaling is niet gelukt, probeer het later nogmaals."
+      reset_session
     end
   end
 

@@ -8,14 +8,14 @@
               Contact
             %ul
               %li
-                - if notice
-                  %p.alert.alert-success= notice
-                - elsif alert
-                  %p.alert.alert-info= alert
                 -# #googleMap{:style => "width:100%;height:300px;"}
                 .li-holder
                   .li-content
                     .text-content
+                      - if flash[:notice]
+                        %p.alert.alert-success.text-center= flash[:notice]
+                      - elsif flash[:alert]
+                        %p.alert.alert-info.text-center= flash[:alert]
                       .col-md-6
                         = form_for :contact_form do |f|
                           %ul.data-list

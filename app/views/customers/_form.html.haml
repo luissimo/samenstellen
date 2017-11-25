@@ -1,7 +1,7 @@
 %section#main.container
   / Start Survey container
   #survey_container_result
-    = form_for :customer do |f|
+    = form_for @customer, url: afrekenen_post_path do |f|
       #middle-wizard
         #block_personal_information
           %h3.text-center Persoonlijke gegevens
@@ -26,7 +26,7 @@
                 %strong
                   Verzenden naar een ander adres?
                 %label.switch-light.switch-ios
-                  %input.required.fix_ie8.ship_to_different_address{:name => "terms", :type => "checkbox", :value => "nee"}/
+                  %input.required.fix_ie8.ship_to_different_address{:name => "different_shipping_address", :type => "checkbox", :value => "nee"}/
                   %span
                     %span.ie8_hide Nee
                     %span Ja
@@ -51,7 +51,7 @@
                 %strong
                   Woon je op de begane grond?
                 %label.switch-light.switch-ios
-                  %input.required.fix_ie8#floor_select{:name => "terms", :type => "checkbox", :value => "Ja", :checked => "checked"}/
+                  %input.required.fix_ie8#floor_select{:name => "floor_living", :type => "checkbox", :value => "Ja", :checked => "checked"}/
                   %span
                     %span.ie8_hide Nee
                     %span Ja
@@ -63,12 +63,12 @@
                 %h5
                   Op welke verdieping woon je?*
                 .styled-select
-                  %li= f.select :floor, ['1e verdieping', '2e verdieping', '3e verdieping', '4e verdieping', '5e verdieping', '6e verdieping', '7e verdieping', '8e verdieping', '9e verdieping', '10e verdieping of hoger'], class: 'required form-control'
+                  %li= f.select :floor, ['1e verdieping', '2e verdieping', '3e verdieping', '4e verdieping', '5e verdieping', '6e verdieping', '7e verdieping', '8e verdieping', '9e verdieping', '10e verdieping of hoger'], prompt: 'Kies een verdieping..', class: 'required form-control'
                 %br/
                 %h5
                   Is er een lift aanwezig?*
                 .styled-select
-                  %li= f.select :elevator, ['Ja, er is een lift.', 'Nee, er is geen lift.'], class: 'required form-control'
+                  %li= f.select :elevator, ['Ja, er is een lift.', 'Nee, er is geen lift.'], prompt: 'Kies een optie..', class: 'required form-control'
           .col-md-8.col-md-offset-2
             %ul.data-list
               %li= f.text_area :comment, class: 'required form-control', placeholder: 'Extra bericht of notitie (optioneel)'
@@ -92,7 +92,7 @@
               %li
                 %strong
                   Ik ga akkoord met de
-                  = link_to "algemene voorwaarden", algemene_voorwaarden_simpel_url, target: "_blank"
+                  = link_to "algemene voorwaarden", algemene_voorwaarden_url, target: "_blank"
                 %label.switch-light.switch-ios
                   %input.required.fix_ie8#terms_of_agreement{:name => "terms", :type => "checkbox", value: "Ja"}/
                   %span

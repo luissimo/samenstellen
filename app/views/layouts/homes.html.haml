@@ -54,23 +54,21 @@
               %span.icon-bar
               %span.icon-bar
             %a.navbar-brand{href: "/"}
-              = image_tag('LogoHuisstijl.svg', width: '150px', height: '50px')
+              = image_tag('LogoHuisstijl.svg', alt: 'Tenzen', width: '150px', height: '50px')
           .collapse.navbar-collapse#navbar
             %ul.nav.navbar-nav.navbar-right
               %li
-                %a.js-scroll-trigger{href: new_mattress_url} EENPERSOONSMATRAS
+                %a.js-scroll-trigger{href: bestellen_url} BESTELLEN
               %li
-                %a.js-scroll-trigger{href: root_url} TWEEPERSOONSMATRAS
+                %a.js-scroll-trigger{href: over_tenzen_url} OVER TENZEN
               %li
-                %a.js-scroll-trigger{href: over_ons_url} OVER ONS
-              %li
-                %a.js-scroll-trigger{href: veelgestelde_vragen_url} FAQ's
+                %a.js-scroll-trigger{href: vragen_url} FAQ's
 
       #home.header-1.demo-1.has-gradient
         .moving-bg
         .container
           .header-1-content.row
-            .col-md-7.col-sm-12.mt-63.home-question-1
+            .col-md-7.col-sm-12.mt-63
               %h1 Stel nu je eigen matras samen
               %br/
               %p.lead
@@ -78,17 +76,10 @@
                 %hr/
                 %strong Kies je maatvoering en begin direct.
               .download
-                %a.download-btn{href: new_mattress_url}
+                %a.download-btn{href: bestellen_eenpersoons_url}
                   Eenpersoons
-                %a.download-btn.show-home-question-2
+                %a.download-btn{href: bestellen_tweepersoons_url}
                   Tweepersoons
-            .col-md-7.col-sm-12.mt-63.home-question-2
-              %h1.has-line Hoeveel personen slapen er op?
-              .download
-                %a.download-btn{href: new_double_mattress_one_url}
-                  1 Persoon
-                %a.download-btn{href: new_double_mattress_two_url}
-                  2 Personen
             .col-md-5.hidden-sm.hidden-xs.mt-63
               .center-block= image_tag("tenzen.png", alt: 'Tenzen Matras Samenstellen')
 

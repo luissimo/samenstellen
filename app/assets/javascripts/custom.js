@@ -13,7 +13,7 @@ $('.name_person_2').change(function() {
 // Show diseases on fields on click checkbox
 $(".diseases_options").hide();
 $('.show_diseases').click(function() {
-    if( $(this).is(':checked')) {
+    if( this.checked ) {
         $(".diseases_options").show();
     } else {
         $(".diseases_options").hide();
@@ -23,7 +23,7 @@ $('.show_diseases').click(function() {
 // Show diseases2 on fields on click checkbox
 $(".diseases_options_2").hide();
 $('.show_diseases_2').click(function() {
-    if( $(this).is(':checked')) {
+    if( this.checked ) {
         $(".diseases_options_2").show();
     } else {
         $(".diseases_options_2").hide();

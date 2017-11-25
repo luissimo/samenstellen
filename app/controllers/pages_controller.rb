@@ -1,20 +1,24 @@
 class PagesController < ApplicationController
 
-  def over_ons; end #
+  def over_tenzen; end #
 
-  def faq; end #
+  def vragen; end #
 
-  def privacy_policy; end #
+  def privacy_beleid; end #
 
   def garanties; end #
 
-  def cookie_policy; end #
+  def cookie_beleid; end #
 
   def retourneren; end #
 
+  def algemene_voorwaarden_ingewikkeld; end
+
   def algemene_voorwaarden; end
 
-  def algemene_voorwaarden_simpel; end
+  def bestellen; end
+
+  def solo_or_duo; end
 
   def contact
     @contact_form = ContactForm.new
@@ -26,9 +30,9 @@ class PagesController < ApplicationController
 
     respond_to do |format|
       if @contact_form.deliver
-        format.html { redirect_to contact_url }
+        format.html { redirect_to contact_url, notice: "Je bericht is verstuurd. <br> Wij nemen zo spoedig mogelijk contact met je op.".html_safe }
       else
-        format.html { render :contact }
+        format.html { render :contact, alert: "Je hebt niet alle velden ingevuld. Probeer het nogmaals." }
         format.json { render json: @contact_form.errors, status: :unprocessable_entity }
       end
     end

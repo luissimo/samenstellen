@@ -1,3 +1,16 @@
+
+.btn-choose {
+  color:white;
+  background-color: #6D90BA;
+  border-color: #6D90BA;
+}
+
+.btn-choose:hover {
+  color: #ffffff;
+  background-color: #5777AA;
+  border-color: #5777AA;
+}
+
 /* FOOTER */
 .footer-bs {
   background-color: #3c3d41;
@@ -712,7 +725,7 @@ header {
 .bar {display: block; width:18px;height:2px; margin:5px; background:#fff; -webkit-border-radius: 1px;-moz-border-radius: 1px;border-radius: 1px;}
 .show{display:block!important}
 
-#main { padding-bottom:60px; }
+#main { padding-bottom: 150px; }
 
 
 /** Footer ==================== **/

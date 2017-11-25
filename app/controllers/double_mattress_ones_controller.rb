@@ -46,8 +46,8 @@ class DoubleMattressOnesController < ApplicationController
 
     respond_to do |format|
       if @double_mattress_one.save
-        format.html { redirect_to @double_mattress_one }
-        format.json { render :show, status: :created, location: @double_mattress_one }
+        format.html { redirect_to bestellen_tweepersoons_solo_resultaat_url }
+        format.json { render :show, status: :created, location: bestellen_tweepersoons_solo_resultaat_url }
       else
         format.html { render :new }
         format.json { render json: @double_mattress_one.errors, status: :unprocessable_entity }

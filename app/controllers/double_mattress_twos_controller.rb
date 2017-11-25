@@ -70,8 +70,8 @@ class DoubleMattressTwosController < ApplicationController
 
     respond_to do |format|
       if @double_mattress_two.save
-        format.html { redirect_to @double_mattress_two }
-        format.json { render :show, status: :created, location: @double_mattress_two }
+        format.html { redirect_to bestellen_tweepersoons_duo_resultaat_url }
+        format.json { render :show, status: :created, location: bestellen_tweepersoons_duo_resultaat_url }
       else
         format.html { render :new }
         format.json { render json: @double_mattress_two.errors, status: :unprocessable_entity }

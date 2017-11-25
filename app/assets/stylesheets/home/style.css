@@ -139,7 +139,7 @@ a:hover {
 }
 
 body {
-    font-family: 'Avenir', sans-serif!important;
+    font-family: 'Avenir', Arial !important;
     overflow: auto;
 }
 
@@ -154,7 +154,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Avenir', sans-serf;
+    font-family: 'Avenir', Arial;
     margin: 10px 0;
     font-weight: 400;
     display: inline-block;

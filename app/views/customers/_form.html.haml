@@ -1,10 +1,6 @@
 %section#main.container
   / Start Survey container
   #survey_container_result
-    - if flash[:notice]
-      %p.alert.alert-success.text-center= flash[:notice]
-    - elsif flash[:alert]
-      %p.alert.alert-info.text-center= flash[:alert]
     = form_for @customer, url: afrekenen_post_path do |f|
       #middle-wizard
         #block_personal_information
@@ -106,3 +102,12 @@
             %br
 
       = f.submit 'Afrekenen', class: 'checkout_button btn btn-block btn-info submit', name: 'Volgende', id: 'pay_now_button', disabled: true
+
+:javascript
+  $(document).ready(function() {
+    if ( $("#customer_first_name").val().length > 0 || $("#customer_last_name").val().length > 0 || $("#customer_phone").val().length > 0 || $("#last_field_personal_information").val().length > 0) {
+      $("#block_address_information").show();
+      $("#block_other_information").show();
+      $("#block_payment_information").show();
+    }
+  })

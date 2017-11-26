@@ -80,13 +80,3 @@ $('#floor_select').click(function() {
       $("#floor_options").hide();
     }
 });
-
-$(document).ready(function() {
-  if ( $("#customer_first_name").val().length > 0 || $("#customer_last_name").val().length > 0 || $("#customer_phone").val().length > 0 || $("#last_field_personal_information").val().length > 0) {
-    $("#block_address_information").show();
-    $("#block_other_information").show();
-    $("#block_payment_information").show();
-  };
-
-  $("")
-})

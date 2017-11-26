@@ -1,6 +1,10 @@
 %section#main.container
   / Start Survey container
   #survey_container_result
+    - if flash[:notice]
+      %p.alert.alert-success.text-center= flash[:notice]
+    - elsif flash[:alert]
+      %p.alert.alert-info.text-center= flash[:alert]
     = form_for @customer, url: afrekenen_post_path do |f|
       #middle-wizard
         #block_personal_information
@@ -8,19 +12,18 @@
           %br/
           .col-md-8.col-md-offset-2
             %ul.data-list
-              %li= f.text_field :first_name, class: 'required form-control name_person_1', placeholder: 'Voornaam*'
-              %li= f.text_field :last_name, class: 'required form-control', placeholder: 'Achternaam*'
-              %li= f.text_field :phone, class: 'required form-control', placeholder: 'Telefoonnummer*'
-              %li= f.email_field :email, class: 'required form-control', placeholder: 'E-mailadres*', id: 'last_field_personal_information'
+              %li= f.text_field :first_name, class: 'required form-control', placeholder: 'Voornaam*', required: true, oninvalid: "this.setCustomValidity('Dit veld is verplicht.')", oninput: "setCustomValidity('')"
+              %li= f.text_field :last_name, class: 'required form-control', placeholder: 'Achternaam*', required: true, oninvalid: "this.setCustomValidity('Dit veld is verplicht.')", oninput: "setCustomValidity('')"
+              %li= f.text_field :phone, class: 'required form-control', placeholder: 'Telefoonnummer*', required: true, oninvalid: "this.setCustomValidity('Dit veld is verplicht.')", oninput: "setCustomValidity('')"
+              %li= f.email_field :email, class: 'required form-control', placeholder: 'E-mailadres*', id: 'last_field_personal_information', required: true, oninvalid: "this.setCustomValidity('Vul een geldig emailadres in.')", oninput: "setCustomValidity('')"
         #block_address_information
           %h3.text-center Adresgegevens
           .col-md-8.col-md-offset-2
             %ul.data-list
-              %li= f.text_field :address, class: 'required form-control', placeholder: 'Straatnaam + huisnummer*'
+              %li= f.text_field :address, class: 'required form-control', placeholder: 'Straatnaam + huisnummer*', required: true, oninvalid: "this.setCustomValidity('Dit veld is verplicht.')", oninput: "setCustomValidity('')"
               %li= f.text_field :address_addition, class: 'required form-control', placeholder: 'Toevoeging (suite, appartement etc..)'
-              %li= f.text_field :zip_code, class: 'required form-control', placeholder: 'Postcode*'
-              %li= f.text_field :city, class: 'required form-control last_field_address_information', placeholder: 'Stad*'
-              %li
+              %li= f.text_field :zip_code, class: 'required form-control', placeholder: 'Postcode*', required: true, oninvalid: "this.setCustomValidity('Dit veld is verplicht.')", oninput: "setCustomValidity('')"
+              %li= f.text_field :city, class: 'required form-control last_field_address_information', placeholder: 'Stad*', required: true, oninvalid: "this.setCustomValidity('Dit veld is verplicht.')", oninput: "setCustomValidity('')"
             %ul#terms.data-list
               %li
                 %strong
@@ -61,14 +64,14 @@
             #floor_options
               %ul.data-list
                 %h5
-                  Op welke verdieping woon je?*
+                  Op welke verdieping woon je?
                 .styled-select
-                  %li= f.select :floor, ['1e verdieping', '2e verdieping', '3e verdieping', '4e verdieping', '5e verdieping', '6e verdieping', '7e verdieping', '8e verdieping', '9e verdieping', '10e verdieping of hoger'], prompt: 'Kies een verdieping..', class: 'required form-control'
+                  %li= f.select :floor, ['1e verdieping', '2e verdieping', '3e verdieping', '4e verdieping', '5e verdieping', '6e verdieping', '7e verdieping', '8e verdieping', '9e verdieping', '10e verdieping of hoger'], class: 'required form-control'
                 %br/
                 %h5
-                  Is er een lift aanwezig?*
+                  Is er een lift aanwezig?
                 .styled-select
-                  %li= f.select :elevator, ['Ja, er is een lift.', 'Nee, er is geen lift.'], prompt: 'Kies een optie..', class: 'required form-control'
+                  %li= f.select :elevator, ['Ja, er is een lift.', 'Nee, er is geen lift.'], class: 'required form-control'
           .col-md-8.col-md-offset-2
             %ul.data-list
               %li= f.text_area :comment, class: 'required form-control', placeholder: 'Extra bericht of notitie (optioneel)'
@@ -101,4 +104,5 @@
                   %a
             %br
             %br
-      = f.submit 'Afrekenen', class: 'checkout_button btn btn-block btn-info submit', name: 'payment', id: 'pay_now_button', disabled: true
+
+      = f.submit 'Afrekenen', class: 'checkout_button btn btn-block btn-info submit', name: 'Volgende', id: 'pay_now_button', disabled: true

@@ -8,59 +8,69 @@
       .shadow
     = form_for @mattress, url: bestellen_eenpersoons_post_path do |f|
       #middle-wizard
-        .step.row
-          %h2.col-md-12.text-center Stel jezelf eens voor
-          %br/
-          .col-md-6
-            %ul.data-list
-              %h5 Voornaam
-              %li= f.text_field :name, class: 'required form-control name_person_1', placeholder: 'Voornaam'
-              %h5 Leeftijd
-              %li= f.number_field :age, class: 'required form-control', placeholder: 'Leeftijd'
-          / end col-md-6
-          .col-md-6
-            %ul.data-list
-              %h5 Gewicht in kilogrammen
-              %li= f.number_field :weight, class: 'required form-control', placeholder: 'Gewicht in kg'
-              %h5 Lengte in centimeters
-              %li= f.number_field :length, class: 'required form-control', placeholder: 'Lengte in cm'
-          .col-md-12
-            .col-md-2.col-md-offset-2
-              = f.radio_button :gender, 'Man', class: 'required check_radio'
-              %label.label_gender Man
-            .col-md-2.col-md-offset-4
-              = f.radio_button :gender, 'Vrouw', class: 'required check_radio'
-              %label.label_gender Vrouw
-          %br/
-          %br/
+        .step
+          .row
+            %h2.col-md-12.text-center Stel jezelf eens voor
+            %br/
+            .col-md-6
+              %ul.data-list
+                %h5 Voornaam
+                %li= f.text_field :name, class: 'required form-control name_person_1', placeholder: 'Voornaam'
+                %h5 Leeftijd
+                %li= f.number_field :age, class: 'required form-control', placeholder: 'Leeftijd'
+            / end col-md-6
+            .col-md-6
+              %ul.data-list
+                %h5 Gewicht in kilogrammen
+                %li= f.number_field :weight, class: 'required form-control', placeholder: 'Gewicht in kg'
+                %h5 Lengte in centimeters
+                %li= f.number_field :length, class: 'required form-control', placeholder: 'Lengte in cm'
+            .col-md-12
+              .col-md-2.col-md-offset-2
+                %label.label_gender
+                  Man
+                  = f.radio_button :gender, 'Man', class: 'required check_radio'
+              .col-md-2.col-md-offset-4
+                %label.label_gender
+                  Vrouw
+                  = f.radio_button :gender, 'Vrouw', class: 'required check_radio'
+            %br/
+            %br/
         .step.row
           .col-md-6
             %h3 Hoe slaap je normaal gesproken? *
             %ul.data-list-2
               %li
-                = f.radio_button :sleep_position, 'Rug', class: 'required check_radio'
-                = f.label :sleep_position_a, 'Rug'
+                %label
+                  Rug
+                  = f.radio_button :sleep_position, 'Rug', class: 'required check_radio'
               %li
-                = f.radio_button :sleep_position, 'Zij', class: 'required check_radio'
-                = f.label :sleep_position_b, 'Zij'
+                %label
+                  Zij
+                  = f.radio_button :sleep_position, 'Zij', class: 'required check_radio'
               %li
-                = f.radio_button :sleep_position, 'Buik', class: 'required check_radio'
-                = f.label :sleep_position_c, 'Buik'
+                %label
+                  Buik
+                  = f.radio_button :sleep_position, 'Buik', class: 'required check_radio'
           .col-md-6
             %h3 Heb je weleens nek-of rugklachten? *
             %ul.data-list-2
               %li
-                = f.radio_button :neck_or_back_pain, 'Ja, nekklachten en rugklachten', class: 'required check_radio'
-                = f.label :neck_or_back_pain_a, 'Ja, nekklachten en rugklachten'
+                %label
+                  Ja, nekklachten en rugklachten
+                  = f.radio_button :neck_or_back_pain, 'Ja, nekklachten en rugklachten', class: 'required check_radio'
               %li
-                = f.radio_button :neck_or_back_pain, 'Ja, alleen nekklachten', class: 'required check_radio'
-                = f.label :neck_or_back_pain_b, 'Ja, alleen nekklachten'
+                %label
+                  Ja, alleen nekklachten
+                  = f.radio_button :neck_or_back_pain, 'Ja, alleen nekklachten', class: 'required check_radio'
               %li
-                = f.radio_button :neck_or_back_pain, 'Ja, alleen rugklachten', class: 'required check_radio'
-                = f.label :neck_or_back_pain_c, 'Ja, alleen rugklachten'
+                %label
+                  Ja, alleen rugklachten
+                  = f.radio_button :neck_or_back_pain, 'Ja, alleen rugklachten', class: 'required check_radio'
               %li
-                = f.radio_button :neck_or_back_pain, 'Nee, geen klachten', class: 'required check_radio'
-                = f.label :neck_or_back_pain_d, 'Nee, geen klachten'
+                %label
+                  Nee, geen klachten
+                  = f.radio_button :neck_or_back_pain, 'Nee, geen klachten', class: 'required check_radio'
         / end step
         .step.row
           .col-md-4.col-md-offset-4
@@ -68,31 +78,38 @@
               Wat is je lichaamsvorm? *
             %ul.data-list-2
               %li
-                = f.radio_button :body_shape, 'Ik heb brede schouders', class: 'required check_radio'
-                = f.label :body_shape_a, 'Ik heb brede schouders'
+                %label
+                  Ik heb brede schouders
+                  = f.radio_button :body_shape, 'Ik heb brede schouders', class: 'required check_radio'
               %li
-                = f.radio_button :body_shape, 'Ik heb brede heupen', class: 'required check_radio'
-                = f.label :body_shape_b, 'Ik heb brede heupen'
+                %label
+                  Ik heb brede heupen
+                  = f.radio_button :body_shape, 'Ik heb brede heupen', class: 'required check_radio'
               %li
-                = f.radio_button :body_shape, 'Ik heb brede schouders en heupen', class: 'required check_radio'
-                = f.label :body_shape_c, 'Ik heb brede schouders en heupen'
+                %label
+                  Ik heb brede schouders en heupen
+                  = f.radio_button :body_shape, 'Ik heb brede schouders en heupen', class: 'required check_radio'
               %li
-                = f.radio_button :body_shape, 'Geen van bovenstaande', class: 'required check_radio'
-                = f.label :body_shape_d, 'Geen van bovenstaande'
+                %label
+                  Geen van bovenstaande
+                  = f.radio_button :body_shape, 'Geen van bovenstaande', class: 'required check_radio'
         / end step
         .step.row
           .col-md-4.col-md-offset-4
             %h3 Heb je het vaak te koud of te warm in bed? *
             %ul.data-list-2
               %li
-                = f.radio_button :warm_sleeping, 'Koud', class: 'required check_radio'
-                = f.label :warm_sleeping_a, 'Koud'
+                %label
+                  Koud
+                  = f.radio_button :warm_sleeping, 'Koud', class: 'required check_radio'
               %li
-                = f.radio_button :warm_sleeping, 'Warm', class: 'required check_radio'
-                = f.label :warm_sleeping_b, 'Warm'
+                %label
+                  Warm
+                  = f.radio_button :warm_sleeping, 'Warm', class: 'required check_radio'
               %li
-                = f.radio_button :warm_sleeping, 'Niet warm, niet koud', class: 'required check_radio'
-                = f.label :warm_sleeping_c, 'Niet warm, niet koud'
+                %label
+                  Niet warm, niet koud
+                  = f.radio_button :warm_sleeping, 'Niet warm, niet koud', class: 'required check_radio'
         / end step
         .step.row
           .col-md-8.col-md-offset-3
@@ -178,55 +195,67 @@
               %ul.data-list-2
                 %h4 Breedte
                 %li
-                  = f.radio_button :mattress_width, '80cm', class: 'required check_radio'
-                  = f.label :mattress_width_a, '80cm'
+                  %label
+                    80cm
+                    = f.radio_button :mattress_width, '80cm', class: 'required check_radio'
                 %li
-                  = f.radio_button :mattress_width, '90cm', class: 'required check_radio'
-                  = f.label :mattress_width_b, '90cm'
+                  %label
+                    90cm
+                    = f.radio_button :mattress_width, '90cm', class: 'required check_radio'
                 %li
-                  = f.radio_button :mattress_width, '100cm', class: 'required check_radio'
-                  = f.label :mattress_width_c, '100cm'
+                  %label
+                    100cm
+                    = f.radio_button :mattress_width, '100cm', class: 'required check_radio'
+
             .col-md-4.col-md-offset-1
               %ul.data-list-2
                 %h4 Lengte
                 %li
-                  = f.radio_button :mattress_length, '200cm', class: 'required check_radio'
-                  = f.label :mattress_length_a, '200cm'
+                  %label
+                    200cm
+                    = f.radio_button :mattress_length, '200cm', class: 'required check_radio'
                 %li
-                  = f.radio_button :mattress_length, '210cm', class: 'required check_radio'
-                  = f.label :mattress_length_b, '210cm'
+                  %label
+                    210cm
+                    = f.radio_button :mattress_length, '210cm', class: 'required check_radio'
                 %li
-                  = f.radio_button :mattress_length, '220cm', class: 'required check_radio'
-                  = f.label :mattress_length_C, '220cm'
+                  %label
+                    220cm
+                    = f.radio_button :mattress_length, '220cm', class: 'required check_radio'
         / end step
         .step.row
           .col-md-4.col-md-offset-4
             %h3 Hoe moet je matras aanvoelen?
             %ul.data-list-2
               %li
-                = f.radio_button :comfort, 'Zacht', class: 'required check_radio'
-                = f.label :comfort_b, 'Zacht'
+                %label
+                  Zacht
+                  = f.radio_button :comfort, 'Zacht', class: 'required check_radio'
               %li
-                = f.radio_button :comfort, 'Niet hard, niet zacht', class: 'required check_radio'
-                = f.label :comfort_c, 'Niet hard, niet zacht'
+                %label
+                  Niet hard, niet zacht
+                  = f.radio_button :comfort, 'Niet hard, niet zacht', class: 'required check_radio'
               %li
-                = f.radio_button :comfort, 'Hard', class: 'required check_radio'
-                = f.label :comfort_d, 'Hard'
+                %label
+                  Hard
+                  = f.radio_button :comfort, 'Hard', class: 'required check_radio'
         / end step
-
         .step.row
           .col-md-12.col-md-offset-3
             %h3 Kies een comfortcategorie voor je matras
             %ul.data-list-2
               %li
-                = f.radio_button :category, 'Budget', class: 'required check_radio'
-                = f.label :category_a, 'Budget (Redelijk comfort)'
+                %label
+                  Budget (Redelijk comfort)
+                  = f.radio_button :category, 'Budget', class: 'required check_radio'
               %li
-                = f.radio_button :category, 'Comfort', class: 'required check_radio'
-                = f.label :category_b, 'Comfort (Goed comfort)'
+                %label
+                  Comfort (Goed comfort)
+                  = f.radio_button :category, 'Comfort', class: 'required check_radio'
               %li
-                = f.radio_button :category, 'Premium', class: 'required check_radio'
-                = f.label :category_c, 'Premium (Beste comfort)'
+                %label
+                  Premium (Beste comfort)
+                  = f.radio_button :category, 'Premium', class: 'required check_radio'
           %br/
           .col-md-12
             %table.table.table-bordered
@@ -295,22 +324,24 @@
                   %td
                   %td
                     Emissieneutraal
-        / end step
-        .step.row
-          .col-md-4.col-md-offset-4
-            %h3 Is je bedbodem verstelbaar?
-            %ul.data-list-2
-              %li
-                = f.radio_button :chassis, 'Ja', class: 'required check_radio'
-                = f.label :chassis_a, 'Ja'
-              %li
-                = f.radio_button :chassis, 'Nee', class: 'required check_radio'
-                = f.label :chassis_b, 'Nee'
+          / end step
+          .step.row
+            .col-md-4.col-md-offset-4
+              %h3 Is je bedbodem verstelbaar?
+              %ul.data-list-2
+                %li
+                  %label
+                    Ja
+                    = f.radio_button :chassis, 'Ja', class: 'required check_radio'
+                %li
+                  %label
+                    Nee
+                    = f.radio_button :chassis, 'Nee', class: 'required check_radio'
         / end step
         #complete.submit.step
           %i.icon-check
           %h3 Dit waren alle vragen, bekijk het resultaat door op de knop hieronder te klikken.
-          = f.submit 'Bekijk het resultaat..', class: 'btn btn-block btn-info submit', name: 'process'
+          = f.submit 'Bekijk het resultaat..', class: 'btn btn-block btn-info submit', name: 'process', id: 'check_result_mattresses'
         / end submit step
       / end middle-wizard
       #bottom-wizard

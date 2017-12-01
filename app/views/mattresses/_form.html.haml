@@ -324,19 +324,19 @@
                   %td
                   %td
                     Emissieneutraal
-          / end step
-          .step.row
-            .col-md-4.col-md-offset-4
-              %h3 Is je bedbodem verstelbaar?
-              %ul.data-list-2
-                %li
-                  %label
-                    Ja
-                    = f.radio_button :chassis, 'Ja', class: 'required check_radio'
-                %li
-                  %label
-                    Nee
-                    = f.radio_button :chassis, 'Nee', class: 'required check_radio'
+            / end step
+        .step.row
+          .col-md-4.col-md-offset-4
+            %h3 Is je bedbodem verstelbaar?
+            %ul.data-list-2
+              %li
+                %label
+                  Ja
+                  = f.radio_button :chassis, 'Ja', class: 'required check_radio'
+              %li
+                %label
+                  Nee
+                  = f.radio_button :chassis, 'Nee', class: 'required check_radio'
         / end step
         #complete.submit.step
           %i.icon-check

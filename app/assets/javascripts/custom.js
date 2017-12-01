@@ -10,24 +10,39 @@ $('.name_person_2').change(function() {
    $('.show_name_person_2').text( $('.name_person_2').val() );
 });
 
-// Show diseases on fields on click checkbox
+// Show diseases on fields on click checkbox && show/display category question
 $(".diseases_options").hide();
 $('.show_diseases').click(function() {
     if( this.checked ) {
         $(".diseases_options").show();
+        $(".optional_question_category").hide();
     } else {
         $(".diseases_options").hide();
-    }
+        $(".optional_question_category").show();
+    };
+
+    if( this.checked || !$('.show_diseases_2').checked ) {
+      $(".optional_question_category").hide();
+    } else {
+      $(".optional_question_category").show();
+    };
+
 });
 
-// Show diseases2 on fields on click checkbox
+// Show diseases2 on fields on click checkbox && show/display category question
 $(".diseases_options_2").hide();
 $('.show_diseases_2').click(function() {
     if( this.checked ) {
         $(".diseases_options_2").show();
     } else {
         $(".diseases_options_2").hide();
-    }
+    };
+
+    if( this.checked || !$('.show_diseases').checked ) {
+      $(".optional_question_category").hide();
+    } else {
+      $(".optional_question_category").show();
+    };
 });
 
 /////// CHECKOUT PAGE ////////

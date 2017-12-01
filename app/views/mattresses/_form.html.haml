@@ -8,32 +8,31 @@
       .shadow
     = form_for @mattress, url: bestellen_eenpersoons_post_path do |f|
       #middle-wizard
-        .step
-          .row
-            %h2.col-md-12.text-center Stel jezelf eens voor
-            %br/
-            .col-md-6
-              %ul.data-list
-                %h5 Voornaam
-                %li= f.text_field :name, class: 'required form-control name_person_1', placeholder: 'Voornaam'
-                %h5 Leeftijd
-                %li= f.number_field :age, class: 'required form-control', placeholder: 'Leeftijd'
-            / end col-md-6
-            .col-md-6
-              %ul.data-list
-                %h5 Gewicht in kilogrammen
-                %li= f.number_field :weight, class: 'required form-control', placeholder: 'Gewicht in kg'
-                %h5 Lengte in centimeters
-                %li= f.number_field :length, class: 'required form-control', placeholder: 'Lengte in cm'
-            .col-md-12
-              .col-md-2.col-md-offset-2
-                = f.radio_button :gender, 'Man', class: 'required check_radio'
-                %label.label_gender Man
-              .col-md-2.col-md-offset-4
-                = f.radio_button :gender, 'Vrouw', class: 'required check_radio'
-                %label.label_gender Vrouw
-            %br/
-            %br/
+        .step.row
+          %h2.col-md-12.text-center Stel jezelf eens voor
+          %br/
+          .col-md-6
+            %ul.data-list
+              %h5 Voornaam
+              %li= f.text_field :name, class: 'required form-control name_person_1', placeholder: 'Voornaam'
+              %h5 Leeftijd
+              %li= f.number_field :age, class: 'required form-control', placeholder: 'Leeftijd'
+          / end col-md-6
+          .col-md-6
+            %ul.data-list
+              %h5 Gewicht in kilogrammen
+              %li= f.number_field :weight, class: 'required form-control', placeholder: 'Gewicht in kg'
+              %h5 Lengte in centimeters
+              %li= f.number_field :length, class: 'required form-control', placeholder: 'Lengte in cm'
+          .col-md-12
+            .col-md-2.col-md-offset-2
+              = f.radio_button :gender, 'Man', class: 'required check_radio'
+              %label.label_gender Man
+            .col-md-2.col-md-offset-4
+              = f.radio_button :gender, 'Vrouw', class: 'required check_radio'
+              %label.label_gender Vrouw
+          %br/
+          %br/
         .step.row
           .col-md-6
             %h3 Hoe slaap je normaal gesproken? *
@@ -214,89 +213,89 @@
                 = f.radio_button :comfort, 'Hard', class: 'required check_radio'
                 = f.label :comfort_d, 'Hard'
         / end step
-        .optional_question_category
-          .step.row
-            .col-md-12.col-md-offset-3
-              %h3 Kies een comfortcategorie voor je matras
-              %ul.data-list-2
-                %li
-                  = f.radio_button :category, 'Budget', class: 'required check_radio'
-                  = f.label :category_a, 'Budget (Redelijk comfort)'
-                %li
-                  = f.radio_button :category, 'Comfort', class: 'required check_radio'
-                  = f.label :category_b, 'Comfort (Goed comfort)'
-                %li
-                  = f.radio_button :category, 'Premium', class: 'required check_radio'
-                  = f.label :category_c, 'Premium (Beste comfort)'
-            %br/
-            .col-md-12
-              %table.table.table-bordered
-                %thead
-                  %tr
-                    %th
-                      Budget
-                    %th
-                      Comfort
-                    %th
-                      Premium
-                %tbody
-                  %tr
-                    %td
-                      2 jaar garantie
-                    %td
-                      5 jaar garantie
-                    %td
-                      10 jaar garantie
-                  %tr
-                    %td
-                      Redelijke kwaliteit materialen
-                      (bijv. HR40 schuim)
-                    %td
-                      Goede kwaliteit materialen
-                      (bijv. HR50 schuim)
-                    %td
-                      Beste kwaliteit materialen
-                      (bijv. HR65 schuim)
-                  %tr
-                    %td
-                      Totale hoogte ca. 30cm
-                    %td
-                      Totale hoogte ca. 36cm
-                    %td
-                      Totale hoogte ca. 41cm
-                  %tr
-                    %td
-                      LGA-gecertificeerd
-                      (schadestofvrij)
-                    %td
-                      LGA-gecertificeerd
-                      (schadestofvrij)
-                    %td
-                      LGA-gecertificeerd
-                      (schadestofvrij)
-                  %tr
-                    %td
-                      4 cm. topdekmatras
-                    %td
-                      6 cm. topdekmatras
-                    %td
-                      6 cm. topdekmatras
-                  %tr
-                    %td
-                    %td
-                    %td
-                      Medisch gecertificeerd
-                  %tr
-                    %td
-                    %td
-                    %td
-                      Ventilerende band
-                  %tr
-                    %td
-                    %td
-                    %td
-                      Emissieneutraal
-          / end step
+
+        .step.row
+          .col-md-12.col-md-offset-3
+            %h3 Kies een comfortcategorie voor je matras
+            %ul.data-list-2
+              %li
+                = f.radio_button :category, 'Budget', class: 'required check_radio'
+                = f.label :category_a, 'Budget (Redelijk comfort)'
+              %li
+                = f.radio_button :category, 'Comfort', class: 'required check_radio'
+                = f.label :category_b, 'Comfort (Goed comfort)'
+              %li
+                = f.radio_button :category, 'Premium', class: 'required check_radio'
+                = f.label :category_c, 'Premium (Beste comfort)'
+          %br/
+          .col-md-12
+            %table.table.table-bordered
+              %thead
+                %tr
+                  %th
+                    Budget
+                  %th
+                    Comfort
+                  %th
+                    Premium
+              %tbody
+                %tr
+                  %td
+                    2 jaar garantie
+                  %td
+                    5 jaar garantie
+                  %td
+                    10 jaar garantie
+                %tr
+                  %td
+                    Redelijke kwaliteit materialen
+                    (bijv. HR40 schuim)
+                  %td
+                    Goede kwaliteit materialen
+                    (bijv. HR50 schuim)
+                  %td
+                    Beste kwaliteit materialen
+                    (bijv. HR65 schuim)
+                %tr
+                  %td
+                    Totale hoogte ca. 30cm
+                  %td
+                    Totale hoogte ca. 36cm
+                  %td
+                    Totale hoogte ca. 41cm
+                %tr
+                  %td
+                    LGA-gecertificeerd
+                    (schadestofvrij)
+                  %td
+                    LGA-gecertificeerd
+                    (schadestofvrij)
+                  %td
+                    LGA-gecertificeerd
+                    (schadestofvrij)
+                %tr
+                  %td
+                    4 cm. topdekmatras
+                  %td
+                    6 cm. topdekmatras
+                  %td
+                    6 cm. topdekmatras
+                %tr
+                  %td
+                  %td
+                  %td
+                    Medisch gecertificeerd
+                %tr
+                  %td
+                  %td
+                  %td
+                    Ventilerende band
+                %tr
+                  %td
+                  %td
+                  %td
+                    Emissieneutraal
+        / end step
         .step.row
           .col-md-4.col-md-offset-4
             %h3 Is je bedbodem verstelbaar?

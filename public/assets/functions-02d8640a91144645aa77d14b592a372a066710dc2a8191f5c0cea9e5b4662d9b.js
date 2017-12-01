@@ -143,3 +143,4 @@ $('.latest-tweets').find('ul').addClass('slider');
 
 
 
+;

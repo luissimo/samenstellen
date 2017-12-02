@@ -10,55 +10,51 @@
     / end top-wizard
     = form_for @double_mattress_two, url: bestellen_tweepersoons_duo_post_path do |f|
       #middle-wizard
-        .step
-          .row
-            %h2.col-md-12.text-center Wie slapen op deze matrassen?
-            %br/
-            .col-md-6
-              %h2 Persoon 1
-              %ul.data-list
-                %h5 Voornaam
-                %li= f.text_field :name, class: 'required form-control name_person_1', placeholder: 'Voornaam'
-                %h5 Leeftijd
-                %li= f.number_field :age, class: 'required form-control', placeholder: 'Leeftijd'
-                %h5 Gewicht in kilogrammen
-                %li= f.number_field :weight, class: 'required form-control', placeholder: 'Gewicht in kg'
-                %h5 Lengte in centimeters
-                %li= f.number_field :length, class: 'required form-control', placeholder: 'Lengte in cm'
-                %li
-                  %label.label_gender
-                    Man
-                    = f.radio_button :gender, 'Man', class: 'required check_radio'
-                %li
-                  %label.label_gender
-                    Vrouw
-                    = f.radio_button :gender, 'Vrouw', class: 'required check_radio'
-            / end col-md-6
-            .col-md-6
-              %h2 Persoon 2
-              %ul.data-list
-                %h5 Voornaam
-                %li= f.text_field :name2, class: 'required form-control name_person_2', placeholder: 'Voornaam'
-                %h5 Leeftijd
-                %li= f.number_field :age2, class: 'required form-control', placeholder: 'Leeftijd'
-                %h5 Gewicht in kilogrammen
-                %li= f.number_field :weight2, class: 'required form-control', placeholder: 'Gewicht in kg'
-                %h5 Lengte in centimeters
-                %li= f.number_field :length2, class: 'required form-control', placeholder: 'Lengte in cm'
-                %li
-                  %label.label_gender
-                    Man
-                    = f.radio_button :gender2, 'Man', class: 'required check_radio'
-                %li
-                  %label.label_gender
-                    Vrouw
-                    = f.radio_button :gender2, 'Vrouw', class: 'required check_radio'
-            %br/
-            %br/
-            / end col-md-6
-          / end row
-        / end step
-        .step.row
+        .step.row#step_1
+          %h2.col-md-12.text-center Wie slapen op deze matrassen?
+          %br/
+          .col-md-6
+            %h2 Persoon 1
+            %ul.data-list
+              %h5 Voornaam
+              %li= f.text_field :name, class: 'required form-control name_person_1', placeholder: 'Voornaam'
+              %h5 Leeftijd
+              %li= f.number_field :age, class: 'required form-control', placeholder: 'Leeftijd'
+              %h5 Gewicht in kilogrammen
+              %li= f.number_field :weight, class: 'required form-control', placeholder: 'Gewicht in kg'
+              %h5 Lengte in centimeters
+              %li= f.number_field :length, class: 'required form-control', placeholder: 'Lengte in cm'
+              %li
+                %label.label_gender
+                  Man
+                  = f.radio_button :gender, 'Man', class: 'required check_radio'
+              %li
+                %label.label_gender
+                  Vrouw
+                  = f.radio_button :gender, 'Vrouw', class: 'required check_radio'
+          / end col-md-6
+          .col-md-6
+            %h2 Persoon 2
+            %ul.data-list
+              %h5 Voornaam
+              %li= f.text_field :name2, class: 'required form-control name_person_2', placeholder: 'Voornaam'
+              %h5 Leeftijd
+              %li= f.number_field :age2, class: 'required form-control', placeholder: 'Leeftijd'
+              %h5 Gewicht in kilogrammen
+              %li= f.number_field :weight2, class: 'required form-control', placeholder: 'Gewicht in kg'
+              %h5 Lengte in centimeters
+              %li= f.number_field :length2, class: 'required form-control', placeholder: 'Lengte in cm'
+              %li
+                %label.label_gender
+                  Man
+                  = f.radio_button :gender2, 'Man', class: 'required check_radio'
+              %li
+                %label.label_gender
+                  Vrouw
+                  = f.radio_button :gender2, 'Vrouw', class: 'required check_radio'
+          %br/
+          %br/
+        .step.row#step_2
           .col-md-6
             %h3
               Hoe slaapt
@@ -95,9 +91,7 @@
                 %label
                   Buik
                   = f.radio_button :sleep_position2, 'Buik', class: 'required check_radio'
-        / end step
-
-        .step.row
+        .step.row#step_3
           .col-md-6
             %h3
               Heeft
@@ -142,9 +136,8 @@
                 %label
                   Nee, geen klachten
                   = f.radio_button :neck_or_back_pain2, 'Nee, geen klachten', class: 'required check_radio'
-
         / end step
-        .step.row
+        .step.row#step_4
           .col-md-6
             %h3
               Wat is de lichaamsvorm van
@@ -192,7 +185,7 @@
                   = f.radio_button :body_shape2, 'Geen van bovenstaande', class: 'required check_radio'
 
         / end step
-        .step.row
+        .step.row#step_5
           .col-md-6
             %h3
               Heeft
@@ -232,7 +225,7 @@
                   = f.radio_button :warm_sleeping2, 'Niet warm, niet koud', class: 'required check_radio'
 
         / end step
-        .step.row
+        .step.row#step_6
           .col-md-8.col-md-offset-3
             %h3
               Heeft
@@ -331,7 +324,7 @@
                     = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Een andere medische klacht die hier niet tussen staat", nil
 
         / end step
-        .step.row
+        .step.row#step_7
           .col-md-8.col-md-offset-3
             %h3
               Heeft
@@ -430,7 +423,7 @@
                     = f.check_box :diseases2, { multiple: true, class: 'required check_radio' }, "Een andere medische klacht die hier niet tussen staat", nil
 
         / end step
-        .step.row
+        .step.row#step_8
           .col-md-6.col-md-offset-3
             %h3 Kies de gezamenlijke breedte en lengte van jullie matrassen
             .col-md-4.col-md-offset-1
@@ -469,7 +462,7 @@
                     = f.radio_button :mattress_length, '220cm', class: 'required check_radio'
 
         / end step
-        .step.row
+        .step.row#step_9
           .col-md-6
             %h3
               Hoe moet het matras van
@@ -509,7 +502,7 @@
                   = f.radio_button :comfort2, 'Hard', class: 'required check_radio'
 
         / end step
-        .step.row
+        .step.row#step_10
           .col-md-12.col-md-offset-3
             %h3 Kies een comfortcategorie voor jullie matrassen
             %ul.data-list-2
@@ -593,9 +586,8 @@
                   %td
                   %td
                     Emissieneutraal
-
           / end step
-        .step.row
+        .step.row#step_11
           .col-md-4.col-md-offset-4
             %h3 Is jullie bedbodem verstelbaar?
             %ul.data-list-2
@@ -607,7 +599,7 @@
                 %label
                   Nee
                   = f.radio_button :chassis, 'Nee', class: 'required check_radio'
-        .step.row
+        .step.row#step_12
           .col-md-4.col-md-offset-4
             %h3 Hoe willen jullie het matras hebben?
             %ul.data-list-2
@@ -620,15 +612,15 @@
                   Een tweepersoonsmatras
                   = f.radio_button :separation, 'Een tweepersoonsmatras', class: 'required check_radio'
 
-        #complete.submit.step
+        #complete.submit.step#step_13
           %i.icon-check
           %h3 Dit waren alle vragen, bekijk het resultaat door op de knop hieronder te klikken.
-          = f.submit 'Bekijk het resultaat..', class: 'btn btn-block btn-info submit', name: 'process'
+          = f.submit 'Bekijk het resultaat..', class: 'btn btn-block btn-info submit', name: 'process', id: 'check_result_double_mattress_twos'
         / end submit step
       / end middle-wizard
       #bottom-wizard
-        %button.backward{:name => "Vorige", :type => "button"} Vorige
-        %button.forward{:name => "Volgende", :type => "button"} Volgende
+        %button.backward{ name: "Vorige", type: "button"} Vorige
+        %button.forward{ name: "Volgende", type: "button"} Volgende
       / end bottom-wizard
   / end Survey container
 / end section main container

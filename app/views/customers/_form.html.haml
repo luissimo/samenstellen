@@ -30,7 +30,7 @@
                 %strong
                   Verzenden naar een ander adres?
                 %label.switch-light.switch-ios
-                  %input.required.fix_ie8.ship_to_different_address{:name => "different_shipping_address", :type => "checkbox", :value => "nee"}/
+                  %input.required.fix_ie8.ship_to_different_address{ name: "different_shipping_address", type: "checkbox", value: "nee"}/
                   %span
                     %span.ie8_hide Nee
                     %span Ja
@@ -73,7 +73,7 @@
                 %strong
                   Woon je op de begane grond?
                 %label.switch-light.switch-ios
-                  %input.required.fix_ie8#floor_select{:name => "floor_living", :type => "checkbox", :value => "Ja", :checked => "checked"}/
+                  %input.required.fix_ie8#floor_select{ name: "floor_living", type: "checkbox", value: "Ja", checked: "checked"}/
                   %span
                     %span.ie8_hide Nee
                     %span Ja
@@ -118,7 +118,7 @@
                   Ik ga akkoord met de
                   = link_to "algemene voorwaarden", algemene_voorwaarden_url, target: "_blank"
                 %label.switch-light.switch-ios
-                  %input.required.fix_ie8#terms_of_agreement{:name => "terms", :type => "checkbox", value: "Ja"}/
+                  %input.required.fix_ie8#terms_of_agreement{ name: "terms", type: "checkbox", value: "Ja"}/
                   %span
                     %span.ie8_hide Nee
                     %span Ja

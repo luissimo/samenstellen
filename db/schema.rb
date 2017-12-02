@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171118163425) do
+ActiveRecord::Schema.define(version: 20171202130625) do
 
   create_table "contact_forms", force: :cascade do |t|
     t.string "name"
@@ -42,6 +42,7 @@ ActiveRecord::Schema.define(version: 20171118163425) do
     t.string "city_ship"
     t.string "floor"
     t.string "elevator"
+    t.string "retour_old_mattress"
   end
 
   create_table "double_mattress_ones", force: :cascade do |t|
@@ -116,7 +117,6 @@ ActiveRecord::Schema.define(version: 20171118163425) do
     t.string "category"
     t.string "comfort"
     t.string "diseases"
-    t.string "chassis"
   end
 
   create_table "sessions", force: :cascade do |t|

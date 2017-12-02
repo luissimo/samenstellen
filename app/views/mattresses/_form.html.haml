@@ -37,7 +37,7 @@
             %br/
             %br/
         .step.row
-          .col-md-6
+          .col-md-6.col-md-offset-4
             %h3 Hoe slaap je normaal gesproken? *
             %ul.data-list-2
               %li
@@ -52,7 +52,8 @@
                 %label
                   Buik
                   = f.radio_button :sleep_position, 'Buik', class: 'required check_radio'
-          .col-md-6
+        .step.row
+          .col-md-6.col-md-offset-4
             %h3 Heb je weleens nek-of rugklachten? *
             %ul.data-list-2
               %li
@@ -73,7 +74,7 @@
                   = f.radio_button :neck_or_back_pain, 'Nee, geen klachten', class: 'required check_radio'
         / end step
         .step.row
-          .col-md-4.col-md-offset-4
+          .col-md-6.col-md-offset-4
             %h3
               Wat is je lichaamsvorm? *
             %ul.data-list-2
@@ -95,7 +96,7 @@
                   = f.radio_button :body_shape, 'Geen van bovenstaande', class: 'required check_radio'
         / end step
         .step.row
-          .col-md-4.col-md-offset-4
+          .col-md-6.col-md-offset-4
             %h3 Heb je het vaak te koud of te warm in bed? *
             %ul.data-list-2
               %li
@@ -242,7 +243,7 @@
                     = f.radio_button :mattress_length, '220cm', class: 'required check_radio'
         / end step
         .step.row
-          .col-md-4.col-md-offset-4
+          .col-md-6.col-md-offset-4
             %h3 Hoe moet je matras aanvoelen?
             %ul.data-list-2
               %li
@@ -343,19 +344,6 @@
                   %td
                     Emissieneutraal
             / end step
-        .step.row
-          .col-md-4.col-md-offset-4
-            %h3 Is je bedbodem verstelbaar?
-            %ul.data-list-2
-              %li
-                %label
-                  Ja
-                  = f.radio_button :chassis, 'Ja', class: 'required check_radio'
-              %li
-                %label
-                  Nee
-                  = f.radio_button :chassis, 'Nee', class: 'required check_radio'
-        / end step
         #complete.submit.step
           %i.icon-check
           %h3 Dit waren alle vragen, bekijk het resultaat door op de knop hieronder te klikken.

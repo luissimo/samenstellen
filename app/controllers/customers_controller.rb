@@ -42,6 +42,7 @@ class CustomersController < ApplicationController
       elevator: params[:customer][:elevator],
       comment: params[:customer][:comment],
       payment_method: params[:customer][:payment_method],
+      retour_old_mattress: params[:customer][:retour_old_mattress],
       price: @price,
       order_number: create_order_number,
       answers: session[:answers],
@@ -114,6 +115,7 @@ class CustomersController < ApplicationController
          elevator: session[:order][:elevator],
          comment: session[:order][:comment],
          payment_method: session[:order][:payment_method],
+         retour_old_mattress: session[:order][:retour_old_mattress],
          order_number: session[:order][:order_number]
        }
      })
@@ -145,7 +147,7 @@ class CustomersController < ApplicationController
   def customer_params
     params.require(:customer).permit(:id, :session_id, :first_name, :last_name, :address, :address_addition,
                                      :zip_code, :city, :phone, :email, :floor, :elevator, :address_ship,
-                                     :address_addition_ship, :zip_code_ship, :city_ship, :comment, :payment_method)
+                                     :address_addition_ship, :zip_code_ship, :city_ship, :comment, :retour_old_mattress, :payment_method)
   end
 
   def set_price

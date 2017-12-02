@@ -16,10 +16,15 @@
           %h3.text-center Adresgegevens
           .col-md-8.col-md-offset-2
             %ul.data-list
-              %li= f.text_field :address, class: 'required form-control', placeholder: 'Straatnaam + huisnummer*', required: true, oninvalid: "this.setCustomValidity('Dit veld is verplicht.')", oninput: "setCustomValidity('')"
-              %li= f.text_field :address_addition, class: 'required form-control', placeholder: 'Toevoeging (suite, appartement etc..)'
-              %li= f.text_field :zip_code, class: 'required form-control', placeholder: 'Postcode*', required: true, oninvalid: "this.setCustomValidity('Dit veld is verplicht.')", oninput: "setCustomValidity('')"
-              %li= f.text_field :city, class: 'required form-control last_field_address_information', placeholder: 'Stad*', required: true, oninvalid: "this.setCustomValidity('Dit veld is verplicht.')", oninput: "setCustomValidity('')"
+              %li
+                .col-md-7
+                  = f.text_field :address, class: 'required form-control', placeholder: 'Straatnaam + huisnummer*', required: true, oninvalid: "this.setCustomValidity('Dit veld is verplicht.')", oninput: "setCustomValidity('')"
+                .col-md-5
+                  = f.text_field :address_addition, class: 'required form-control', placeholder: 'Huisnr. toevoeging'
+              %ul.data-list
+                .col-md-12
+                  %li= f.text_field :zip_code, class: 'required form-control', placeholder: 'Postcode*', required: true, oninvalid: "this.setCustomValidity('Dit veld is verplicht.')", oninput: "setCustomValidity('')"
+                  %li= f.text_field :city, class: 'required form-control last_field_address_information', placeholder: 'Stad*', required: true, oninvalid: "this.setCustomValidity('Dit veld is verplicht.')", oninput: "setCustomValidity('')"
             %ul#terms.data-list
               %li
                 %strong
@@ -37,12 +42,30 @@
             %h3.text-center Verzendadres
             .col-md-8.col-md-offset-2
               %ul.data-list
-                %li= f.text_field :address_ship, class: 'required form-control', placeholder: 'Straatnaam + huisnummer'
-                %li= f.text_field :address_addition_ship, class: 'required form-control', placeholder: 'Toevoeging (suite, appartement etc..)'
-                %li= f.text_field :zip_code_ship, class: 'required form-control', placeholder: 'Postcode'
-                %li= f.text_field :city_ship, class: 'required form-control last_field_address_information', placeholder: 'Stad'
+                %li
+                  .col-md-7
+                    = f.text_field :address_ship, class: 'required form-control', placeholder: 'Straatnaam + huisnummer'
+                  .col-md-5
+                    = f.text_field :address_addition_ship, class: 'required form-control', placeholder: 'Huisnr. toevoeging'
+              %ul.data-list
+                .col-md-12
+                  %li= f.text_field :zip_code_ship, class: 'required form-control', placeholder: 'Postcode'
+                  %li= f.text_field :city_ship, class: 'required form-control last_field_address_information', placeholder: 'Stad'
 
         #block_other_information
+          .col-md-8.col-md-offset-2
+            %ul#terms.data-list
+              %li
+                %strong
+                  Wil je dat wij je oude matras(sen) meenemen?
+                %label.switch-light.switch-ios
+                  = f.check_box :retour_old_mattress, { name: 'customer[retour_old_mattress]', class: "fix_ie8" }, nil, nil
+                  %span
+                    %span.ie8_hide Nee
+                    %span Ja
+                  %a
+            %br/
+            %br/
           %h3.text-center Informatie
           .col-md-8.col-md-offset-2
             %ul#terms.data-list
@@ -68,9 +91,6 @@
                   Is er een lift aanwezig?
                 .styled-select
                   %li= f.select :elevator, ['Ja, er is een lift.', 'Nee, er is geen lift.'], class: 'required form-control'
-          .col-md-8.col-md-offset-2
-            %ul.data-list
-              %li= f.text_area :comment, class: 'required form-control', placeholder: 'Extra bericht of notitie (optioneel)'
 
         #block_payment_information
           %h3.text-center Betaalmethode
@@ -88,6 +108,9 @@
                   = f.radio_button :payment_method, "50/50", class: 'required check_radio'
                 %span.payment_method_image{style: "float: right;"}
                   = image_tag 'pinnen_mobile.png', alt: "50% met ideal en 50% pinnen aan huis", height: '42px', width: '168px'
+          .col-md-8.col-md-offset-2
+            %ul.data-list
+              %li= f.text_area :comment, class: 'required form-control', placeholder: 'Extra bericht of notitie (optioneel)'
             %hr
             %ul#terms.data-list
               %li

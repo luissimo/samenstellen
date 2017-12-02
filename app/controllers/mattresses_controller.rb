@@ -5,6 +5,10 @@ class MattressesController < ApplicationController
   include SetGraphsOne
 
   def show
+    @page_title = t('bestellen_eenpersoons_resultaat.title')
+    @meta_title = t('bestellen_eenpersoons_resultaat.meta_title')
+    @meta_description = t('bestellen_eenpersoons_resultaat.meta_description')
+
     @mattress = Mattress.all.where(session_id: session.id).last
     session[:flow] = "mattress"
     calculate_price
@@ -37,6 +41,9 @@ class MattressesController < ApplicationController
   end
 
   def new
+    @page_title = t('bestellen_eenpersoons.title')
+    @meta_title = t('bestellen_eenpersoons.meta_title')
+    @meta_description = t('bestellen_eenpersoons.meta_description')
     @mattress = Mattress.new
   end
 

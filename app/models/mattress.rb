@@ -1,8 +1,7 @@
 class Mattress < ApplicationRecord
 
-# enum Format: { eenpersoons: 0, tweepersoons: 1 }
+  validates_length_of :age, in: 1..4
+  validates_length_of :weight, in: 1..4
+  validates_length_of :length, in: 1..4
 
-# validates_presence_of :name, :gender, :age, :email, :weight,
-# 											:length, :sleep_position, :body_shape,
-# 											:warm_sleeping, :diseases, :size, :format
 end

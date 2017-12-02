@@ -9,6 +9,11 @@ class CustomersController < ApplicationController
 
   def new
     redirect_to root_url unless session[:flow]
+
+    @page_title = t('afrekenen.title')
+    @meta_title = t('afrekenen.meta_title')
+    @meta_description = t('afrekenen.meta_description')
+
     @customer = Customer.new
   end
 

@@ -5,6 +5,10 @@ class DoubleMattressOnesController < ApplicationController
   include SetGraphsOne
 
   def show
+    @page_title = t('bestellen_tweepersoons_solo_resultaat.title')
+    @meta_title = t('bestellen_tweepersoons_solo_resultaat.meta_title')
+    @meta_description = t('bestellen_tweepersoons_solo_resultaat.meta_description')
+
     @double_mattress_one = DoubleMattressOne.all.where(session_id: session.id).last
     session[:name] = @double_mattress_one.name
     session[:flow] = "double_mattress_one"
@@ -38,6 +42,10 @@ class DoubleMattressOnesController < ApplicationController
   end
 
   def new
+    @page_title = t('bestellen_tweepersoons_solo.title')
+    @meta_title = t('bestellen_tweepersoons_solo.meta_title')
+    @meta_description = t('bestellen_tweepersoons_solo.meta_description')
+
     @double_mattress_one = DoubleMattressOne.new
   end
 

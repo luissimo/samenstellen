@@ -8,23 +8,48 @@
           %br/
           .col-md-8.col-md-offset-2
             %ul.data-list
-              %li= f.text_field :first_name, class: 'required form-control', placeholder: 'Voornaam*', required: true, oninvalid: "this.setCustomValidity('Dit veld is verplicht.')", oninput: "setCustomValidity('')"
-              %li= f.text_field :last_name, class: 'required form-control', placeholder: 'Achternaam*', required: true, oninvalid: "this.setCustomValidity('Dit veld is verplicht.')", oninput: "setCustomValidity('')"
-              %li= f.text_field :phone, class: 'required form-control', placeholder: 'Telefoonnummer*', required: true, oninvalid: "this.setCustomValidity('Dit veld is verplicht.')", oninput: "setCustomValidity('')"
-              %li= f.email_field :email, class: 'required form-control', placeholder: 'E-mailadres*', id: 'last_field_personal_information', required: true, oninvalid: "this.setCustomValidity('Vul een geldig emailadres in.')", oninput: "setCustomValidity('')"
+              %li
+                %label
+                  Voornaam*
+                = f.text_field :first_name, class: 'required form-control', required: true, oninvalid: "this.setCustomValidity('Dit veld is verplicht.')", oninput: "setCustomValidity('')"
+              %li
+                %label
+                  Achternaam*
+                = f.text_field :last_name, class: 'required form-control', required: true, oninvalid: "this.setCustomValidity('Dit veld is verplicht.')", oninput: "setCustomValidity('')"
+              %li
+                %label
+                  Telefoonnummer*
+                = f.text_field :phone, class: 'required form-control', required: true, oninvalid: "this.setCustomValidity('Dit veld is verplicht.')", oninput: "setCustomValidity('')"
+              %li
+                %label
+                  Email*
+                = f.email_field :email, class: 'required form-control', id: 'last_field_personal_information', required: true, oninvalid: "this.setCustomValidity('Vul een geldig emailadres in.')", oninput: "setCustomValidity('')"
         #block_address_information
           %h3.text-center Adresgegevens
           .col-md-8.col-md-offset-2
             %ul.data-list
-              %li
-                .col-md-7
-                  = f.text_field :address, class: 'required form-control', placeholder: 'Straatnaam + huisnummer*', required: true, oninvalid: "this.setCustomValidity('Dit veld is verplicht.')", oninput: "setCustomValidity('')"
-                .col-md-5
-                  = f.text_field :address_addition, class: 'required form-control', placeholder: 'Huisnr. toevoeging'
-              %ul.data-list
-                .col-md-12
-                  %li= f.text_field :zip_code, class: 'required form-control', placeholder: 'Postcode*', required: true, oninvalid: "this.setCustomValidity('Dit veld is verplicht.')", oninput: "setCustomValidity('')"
-                  %li= f.text_field :city, class: 'required form-control last_field_address_information', placeholder: 'Stad*', required: true, oninvalid: "this.setCustomValidity('Dit veld is verplicht.')", oninput: "setCustomValidity('')"
+              .col-md-7
+                %li
+                  %label
+                    Straatnaam + Huisnummer*
+                  = f.text_field :address, class: 'required form-control', required: true, oninvalid: "this.setCustomValidity('Dit veld is verplicht.')", oninput: "setCustomValidity('')"
+              .col-md-5
+                %li
+                  %label
+                    Huisnummer toevoeging
+                  = f.text_field :address_addition, class: 'required form-control'
+            %hr/
+            %hr/
+            %ul.data-list
+              .col-md-12
+                %li
+                  %label
+                    Postcode*
+                  = f.text_field :zip_code, class: 'required form-control', required: true, oninvalid: "this.setCustomValidity('Dit veld is verplicht.')", oninput: "setCustomValidity('')"
+                %li
+                  %label
+                    Stad*
+                  = f.text_field :city, class: 'required form-control last_field_address_information', required: true, oninvalid: "this.setCustomValidity('Dit veld is verplicht.')", oninput: "setCustomValidity('')"
             %ul#terms.data-list
               %li
                 %strong
@@ -44,15 +69,28 @@
               %ul.data-list
                 %li
                   .col-md-7
-                    = f.text_field :address_ship, class: 'required form-control', placeholder: 'Straatnaam + huisnummer'
+                    %label
+                      Straatnaam + Huisnummer
+                    = f.text_field :address_ship, class: 'required form-control'
                   .col-md-5
-                    = f.text_field :address_addition_ship, class: 'required form-control', placeholder: 'Huisnr. toevoeging'
+                    %label
+                      Huisnummer toevoeging
+                    = f.text_field :address_addition_ship, class: 'required form-control'
+              %hr/
+              %hr/
               %ul.data-list
                 .col-md-12
-                  %li= f.text_field :zip_code_ship, class: 'required form-control', placeholder: 'Postcode'
-                  %li= f.text_field :city_ship, class: 'required form-control last_field_address_information', placeholder: 'Stad'
+                  %li
+                    %label
+                      Postcode
+                    = f.text_field :zip_code_ship, class: 'required form-control'
+                  %li
+                    %label
+                      Stad
+                    = f.text_field :city_ship, class: 'required form-control last_field_address_information'
 
         #block_other_information
+          %h3.text-center Informatie
           .col-md-8.col-md-offset-2
             %ul#terms.data-list
               %li
@@ -66,8 +104,6 @@
                   %a
             %br/
             %br/
-          %h3.text-center Informatie
-          .col-md-8.col-md-offset-2
             %ul#terms.data-list
               %li
                 %strong
@@ -82,12 +118,12 @@
             %br/
             #floor_options
               %ul.data-list
-                %h5
+                %label
                   Op welke verdieping woon je?
                 .styled-select
                   %li= f.select :floor, ['1e verdieping', '2e verdieping', '3e verdieping', '4e verdieping', '5e verdieping', '6e verdieping', '7e verdieping', '8e verdieping', '9e verdieping', '10e verdieping of hoger'], class: 'required form-control'
                 %br/
-                %h5
+                %label
                   Is er een lift aanwezig?
                 .styled-select
                   %li= f.select :elevator, ['Ja, er is een lift.', 'Nee, er is geen lift.'], class: 'required form-control'
@@ -101,16 +137,18 @@
                   iDeal
                   = f.radio_button :payment_method, 'iDeal', class: 'required check_radio', checked: true
                 %span.payment_method_image{style: "float: right;"}
-                  = image_tag 'ideal_mobile.png', alt: 'iDeal', height: '42px', width: '168px'
+                  = image_tag 'ideal.svg', alt: 'iDeal', height: '42px', width: '168px'
               %li
                 %label
                   50% met ideal en 50% pinnen aan huis
                   = f.radio_button :payment_method, "50/50", class: 'required check_radio'
                 %span.payment_method_image{style: "float: right;"}
-                  = image_tag 'pinnen_mobile.png', alt: "50% met ideal en 50% pinnen aan huis", height: '42px', width: '168px'
+                  = image_tag 'pinnen.svg', alt: "50% met ideal en 50% pinnen aan huis", height: '42px', width: '168px'
           .col-md-8.col-md-offset-2
             %ul.data-list
-              %li= f.text_area :comment, class: 'required form-control', placeholder: 'Extra bericht of notitie (optioneel)'
+              %label
+                Extra bericht of notitie (optioneel)
+              %li= f.text_area :comment, class: 'required form-control', placeholder: '....'
             %hr
             %ul#terms.data-list
               %li

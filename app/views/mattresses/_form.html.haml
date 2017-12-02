@@ -16,14 +16,14 @@
               %h5 Voornaam
               %li= f.text_field :name, class: 'required form-control name_person_1', placeholder: 'Voornaam'
               %h5 Leeftijd
-              %li= f.number_field :age, class: 'required form-control', placeholder: 'Leeftijd'
+              %li= f.number_field :age, class: 'required form-control', placeholder: 'Leeftijd', maxlength: 3
           / end col-md-6
           .col-md-6
             %ul.data-list
               %h5 Gewicht in kilogrammen
-              %li= f.number_field :weight, class: 'required form-control', placeholder: 'Gewicht in kg'
+              %li= f.number_field :weight, class: 'required form-control', placeholder: 'Gewicht in kg', maxlength: 3
               %h5 Lengte in centimeters
-              %li= f.number_field :length, class: 'required form-control', placeholder: 'Lengte in cm'
+              %li= f.number_field :length, class: 'required form-control', placeholder: 'Lengte in cm', maxlength: 3
           .col-md-12
             .col-md-2.col-md-offset-2
               %label.label_gender

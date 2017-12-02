@@ -1,0 +1,86 @@
+nl:
+  home:
+    title: "Tenzen – Persoonlijke Matrassen"
+    meta_title: "Tenzen – Persoonlijke Matrassen"
+    meta_description: "Elk lichaam is anders, dus waarom zou jouw matras dat niet zijn? Stel binnen twee minuten jouw persoonlijke matras samen en geniet van ongekend slaapcomfort!"
+  over_tenzen:
+    title: "Over Tenzen"
+    meta_title: "Over Tenzen"
+    meta_description: "Tenzen is een start-up met een unieke service en garanties die op maat gemaakte matrassen levert voor ieder lichaam. Wij slapen pas lekker, als jij lekker slaapt."
+  privacy_beleid:
+    title: "Privacybeleid"
+    meta_title: "Privacybeleid"
+    meta_description: "Wij respecteren je privacy en verwerken je persoonsgegevens alleen voor het doel waarvoor je ze hebt verstrekt en in overeenstemming met de Wbp en de Telecommunicatiewet."
+  vragen:
+    title: "Veelgestelde Vragen"
+    meta_title: "Veelgestelde Vragen"
+    meta_description: "Veelgestelde vragen over Tenzen. Hier vind je antwoorden op de veelgestelde vragen. Heb je een andere vraag? Kijk dan op onze contactpagina."
+  garanties:
+    title: "Garanties – Wat mag je verwachten?"
+    meta_title: "Garanties – Wat mag je verwachten?"
+    meta_description: "Tenzen gebruikt alleen de beste kwaliteit materialen. Je kunt tot wel 10 jaar garantie krijgen op je aankoop."
+  cookie_beleid:
+    title: "Cookies"
+    meta_title: "Cookies"
+    meta_description: "Om je beter en persoonlijker te helpen, maken wij gebruiken van cookies. Meer weten?"
+  retourneren:
+    title: "Retourneren - Hoe retourneer ik mijn matras?"
+    meta_title: "Retourneren - Hoe retourneer ik mijn matras?"
+    meta_description: "Omdat wij service belangrijk vinden, mag je jouw matras altijd binnen honderd dagen na ontvangst terugsturen. Lees meer over hoe je je retour kunt aanmelden."
+  algemene_voorwaarden:
+    title: "Algemene Voorwaarden Tenzen"
+    meta_title: "Algemene Voorwaarden Tenzen"
+    meta_description: "Wij hebben hier onze algemene voorwaarden in duidelijke, simpele taal opgeschreven. Dat is wel zo fijn."
+  algemene_voorwaarden_ingewikkeld:
+    title: "Algemene Voorwaarden Ingewikkeld"
+    meta_title: "Algemene Voorwaarden Ingewikkeld"
+    meta_description: "Wil je toch liever de ingewikkelde algemene voorwaarden? De Nederlandse Thuiswinkel Organisatie heeft deze voor ons opgesteld, maar dan lekker moeilijk."
+  contact:
+    title: "Contact - Klantenservice"
+    meta_title: "Contact - Klantenservice"
+    meta_description: "Wil je contact opnemen met onze klantenservice? Je kunt dit op verschillende manieren doen. Kijk hier hoe je ons kunt bereiken."
+  bestellen:
+    title: "Bestellen – Bestel direct jouw Tenzen matras online"
+    meta_title: "Bestellen – Bestel direct jouw Tenzen matras online"
+    meta_description: "Je kunt je Tenzen matras makkelijk online kopen. Wij zorgen ervoor dat jij daarna nergens naar om hoeft te kijken. Bestel vandaag nog!"
+  solo_or_duo:
+    title: "Hoeveel personen slapen op dit matras?"
+    meta_title: "Hoeveel personen slapen op dit matras?"
+    meta_description: "Hoeveel personen slapen op dit matras?"
+  bestellen_eenpersoons:
+    title: "Eenpersoons Tenzen-matras samenstellen"
+    meta_title: "Eenpersoons Tenzen-matras samenstellen"
+    meta_description: "Eenpersoons Tenzen-matras samenstellen"
+  bestellen_eenpersoons_resultaat:
+    title: "Jouw Tenzen-matras"
+    meta_title: "Jouw Tenzen-matras"
+    meta_description: "Jouw Tenzen-matras"
+  bestellen_tweepersoons_solo:
+    title: "Tweepersoons Tenzen-matras samenstellen"
+    meta_title: "Tweepersoons Tenzen-matras samenstellen"
+    meta_description: "Tweepersoons Tenzen-matras samenstellen"
+  bestellen_tweepersoons_solo_resultaat:
+    title: "Jouw Tenzen-matras"
+    meta_title: "Jouw Tenzen-matras"
+    meta_description: "Jouw Tenzen-matras"
+  bestellen_tweepersoons_duo:
+    title: "Tweepersoons Tenzen-matras samenstellen"
+    meta_title: "Tweepersoons Tenzen-matras samenstellen"
+    meta_description: "Tweepersoons Tenzen-matras samenstellen"
+  bestellen_tweepersoons_duo_resultaat:
+    title: "Jullie Tenzen-matras"
+    meta_title: "Jullie Tenzen-matras"
+    meta_description: "Jullie Tenzen-matras"
+  afrekenen:
+    title: "Bestelling afronden"
+    meta_title: "Afrekenen"
+    meta_description: "Gegevens invullen en bestelling afronden"
+  bedankt:
+    gelukt:
+      title: "Bedankt! Je bestelling is gelukt."
+      meta_title: "Bedankt! Je bestelling is gelukt."
+      meta_description: "Bedankt voor je bestelling! Wij hebben je bestelling in goede orde ontvangen."
+    mislukt:
+      title: "Helaas! Je bestelling is mislukt."
+      meta_title: "Helaas! Je bestelling is mislukt."
+      meta_description: "Je betaling is niet gelukt, probeer het later nogmaals."

@@ -13,11 +13,13 @@
       j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
       })(window,document,'script','dataLayer','GTM-5257WHS');
-
     %meta{:charset => "utf-8"}/
-    %title Tenzen | Matras samenstellen
-    %meta{:content => "", :name => "description"}/
+
+    %title= @page_title
+    %meta{:content => "#{@meta_title}", :name => "title"}/
+    %meta{:content => "#{@meta_description}", :name => "description"}/
     %meta{:content => "Tenzen.nl", :name => "author"}/
+
     -#  toolbar color for chrome on android
     %meta{:content => "#5777ab", :name => "theme-color"}/
     / Favicons
@@ -28,6 +30,8 @@
     -# %link{:href => "apple-touch-icon-144x144-precomposed.png", :rel => "apple-touch-icon", :sizes => "144x144", :type => "image/x-icon"}/
     / Mobile Specific Metas
     %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    / IE Compatibility Meta
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
     / CSS
     = stylesheet_link_tag    'bootstrap.css', media: 'all'
     = stylesheet_link_tag    'style.css', media: 'all'

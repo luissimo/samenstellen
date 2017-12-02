@@ -10,16 +10,19 @@
       j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
       })(window,document,'script','dataLayer','GTM-5257WHS');
-
     %meta{:charset => "utf-8"}/
+
+    %title= @page_title
+    %meta{:content => "#{@meta_title}", :name => "title"}/
+    %meta{:content => "#{@meta_description}", :name => "description"}/
+    %meta{:content => "Tenzen.nl", :name => "author"}/
+
     / Responsive Meta
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
     / IE Compatibility Meta
     %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
     -#  toolbar color for chrome on android
     %meta{:content => "#5777ab", :name => "theme-color"}/
-    / Page Title
-    %title Tenzen | Matras Samenstellen
     / Favicon
     %link{:href => "images/favicon.ico", :rel => "shortcut icon"}/
     / Bootstrap Stylesheet

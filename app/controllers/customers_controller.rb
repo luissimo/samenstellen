@@ -75,6 +75,9 @@ class CustomersController < ApplicationController
 
     case session[:status]
     when 'success'
+      @page_title = t('bedankt.gelukt.title')
+      @meta_title = t('bedankt.gelukt.meta_title')
+      @meta_description = t('bedankt.gelukt.meta_description')
       @title = "Bedankt voor je bestelling!"
       @explanation = "Je bestelling is in goede orde ontvangen. <br> We gaan meteen aan de slag om je bestelling verzendklaar te maken.<br><br> Je kunt dit venster sluiten.".html_safe
 
@@ -83,6 +86,9 @@ class CustomersController < ApplicationController
 
       reset_session
      else
+      @page_title = t('bedankt.mislukt.title')
+      @meta_title = t('bedankt.mislukt.meta_title')
+      @meta_description = t('bedankt.mislukt.meta_description')
       @title = "Er is iets misgegaan met de betaling."
       @explanation = "Je betaling is niet gelukt, probeer het later nogmaals."
       reset_session

@@ -3,6 +3,9 @@ class HomesController < ApplicationController
   # before_action :send_mail
 
   def index
+    @page_title = t('home.title')
+    @meta_title = t('home.meta_title')
+    @meta_description = t('home.meta_description')
   end
 
   private

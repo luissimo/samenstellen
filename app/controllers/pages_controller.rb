@@ -1,26 +1,69 @@
 class PagesController < ApplicationController
 
-  def over_tenzen; end #
+  def over_tenzen
+    @page_title = t('home.title')
+    @meta_title = t('home.meta_title')
+    @meta_description = t('home.meta_description')
+  end
 
-  def vragen; end #
+  def vragen
+    @page_title = t('vragen.title')
+    @meta_title = t('vragen.meta_title')
+    @meta_description = t('vragen.meta_description')
+  end
 
-  def privacy_beleid; end #
+  def privacy_beleid
+    @page_title = t('privacy_beleid.title')
+    @meta_title = t('privacy_beleid.meta_title')
+    @meta_description = t('privacy_beleid.meta_description')
+  end
 
-  def garanties; end #
+  def garanties
+    @page_title = t('garanties.title')
+    @meta_title = t('garanties.meta_title')
+    @meta_description = t('garanties.meta_description')
+  end
 
-  def cookie_beleid; end #
+  def cookie_beleid
+    @page_title = t('cookie_beleid.title')
+    @meta_title = t('cookie_beleid.meta_title')
+    @meta_description = t('cookie_beleid.meta_description')
+  end
 
-  def retourneren; end #
+  def retourneren
+    @page_title = t('retourneren.title')
+    @meta_title = t('retourneren.meta_title')
+    @meta_description = t('retourneren.meta_description')
+  end
 
-  def algemene_voorwaarden_ingewikkeld; end
+  def algemene_voorwaarden_ingewikkeld
+    @page_title = t('algemene_voorwaarden_ingewikkeld.title')
+    @meta_title = t('algemene_voorwaarden_ingewikkeld.meta_title')
+    @meta_description = t('algemene_voorwaarden_ingewikkeld.meta_description')
+  end
 
-  def algemene_voorwaarden; end
+  def algemene_voorwaarden
+    @page_title = t('algemene_voorwaarden.title')
+    @meta_title = t('algemene_voorwaarden.meta_title')
+    @meta_description = t('algemene_voorwaarden.meta_description')
+  end
 
-  def bestellen; end
+  def bestellen
+    @page_title = t('bestellen.title')
+    @meta_title = t('bestellen.meta_title')
+    @meta_description = t('bestellen.meta_description')
+  end
 
-  def solo_or_duo; end
+  def solo_or_duo
+    @page_title = t('solo_or_duo.title')
+    @meta_title = t('solo_or_duo.meta_title')
+    @meta_description = t('solo_or_duo.meta_description')
+  end
 
   def contact
+    @page_title = t('contact.title')
+    @meta_title = t('contact.meta_title')
+    @meta_description = t('contact.meta_description')
     @contact_form = ContactForm.new
   end
 

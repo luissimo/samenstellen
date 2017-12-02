@@ -77,13 +77,15 @@
           .col-md-8.col-md-offset-2
             %ul.data-list-2
               %li
-                = f.radio_button :payment_method, 'iDeal', class: 'required check_radio', checked: true
-                = f.label :payment_method_a, 'iDeal'
+                %label
+                  iDeal
+                  = f.radio_button :payment_method, 'iDeal', class: 'required check_radio', checked: true
                 %span.payment_method_image{style: "float: right;"}
                   = image_tag 'ideal_mobile.png', alt: 'iDeal', height: '42px', width: '168px'
               %li
-                = f.radio_button :payment_method, "50/50", class: 'required check_radio'
-                = f.label :payment_method_b, "50% met ideal en 50% pinnen aan huis"
+                %label
+                  50% met ideal en 50% pinnen aan huis
+                  = f.radio_button :payment_method, "50/50", class: 'required check_radio'
                 %span.payment_method_image{style: "float: right;"}
                   = image_tag 'pinnen_mobile.png', alt: "50% met ideal en 50% pinnen aan huis", height: '42px', width: '168px'
             %hr

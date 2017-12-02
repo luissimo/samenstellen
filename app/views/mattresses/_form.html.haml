@@ -130,63 +130,81 @@
             %ul.data-list-2
               .col-md-4
                 %li
-                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Artrose", nil
-                  = f.label :option_a, "Artrose"
+                  %label
+                    Artrose
+                    = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Artrose", nil
                 %li
-                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Hernia", nil
-                  = f.label :option_b, "Hernia"
+                  %label
+                    Hernia
+                    = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Hernia", nil
                 %li
-                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Decubitus", nil
-                  = f.label :option_c, "Decubitus"
+                  %label
+                    Decubitis
+                    = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Decubitus", nil
                 %li
-                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Discusbulging", nil
-                  = f.label :option_d, "Discusbulging"
+                  %label
+                    Discusbulging
+                    = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Discusbulging", nil
                 %li
-                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Discusdegeneratie", nil
-                  = f.label :option_e, "Discusdegeneratie"
+                  %label
+                    Discusdegeneratie
+                    = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Discusdegeneratie", nil
                 %li
-                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Fibromyalgie", nil
-                  = f.label :option_f, "Fibromyalgie"
+                  %label
+                    Fibromyalgie
+                    = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Fibromyalgie", nil
 
               .col-md-4
                 %li
-                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Heupdysplasie", nil
-                  = f.label :option_g, "Heupdysplasie"
+                  %label
+                    Heupdysplasie
+                    = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Heupdysplasie", nil
                 %li
-                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Hypermobiliteit", nil
-                  = f.label :option_h, "Hypermobiliteit"
+                  %label
+                    Hypermobiliteit
+                    = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Hypermobiliteit", nil
                 %li
-                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Ischias", nil
-                  = f.label :option_i, "Ischias"
+                  %label
+                    Ischias
+                    = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Ischias", nil
                 %li
-                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Lumbago", nil
-                  = f.label :option_j, "Lumbago"
+                  %label
+                    Lumbago
+                    = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Lumbago", nil
                 %li
-                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Obesitas", nil
-                  = f.label :option_k, "Obesitas"
+                  %label
+                    Obesitas
+                    = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Obesitas", nil
                 %li
-                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Osteoporose", nil
-                  = f.label :option_l, "Osteoporose"
+                  %label
+                    Osteoporose
+                    = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Osteoporose", nil
 
               .col-md-4
                 %li
-                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Parkinson", nil
-                  = f.label :option_m, "Parkinson"
+                  %label
+                    Parkinson
+                    = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Parkinson", nil
                 %li
-                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Reuma", nil
-                  = f.label :option_n, "Reuma"
+                  %label
+                    Reuma
+                    = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Reuma", nil
                 %li
-                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Spondylolyse", nil
-                  = f.label :option_o, "Spondylolyse"
+                  %label
+                    Spondylolyse
+                    = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Spondylolyse", nil
                 %li
-                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Scoliose", nil
-                  = f.label :option_p, "Scoliose"
+                  %label
+                    Scoliose
+                    = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Scoliose", nil
                 %li
-                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Ziekte van Bechterew", nil
-                  = f.label :option_q, "Ziekte van Bechterew"
+                  %label
+                    Ziekte van Bechterew
+                    = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Ziekte van Bechterew", nil
                 %li
-                  = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Een andere medische klacht die hier niet tussen staat", nil
-                  = f.label :option_r, "Een andere medische klacht die hier niet tussen staat"
+                  %label
+                    Een andere medische klacht die hier niet tussen staat
+                    = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Een andere medische klacht die hier niet tussen staat", nil
         / end step
         .step.row
           .col-md-6.col-md-offset-3

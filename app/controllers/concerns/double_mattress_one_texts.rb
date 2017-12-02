@@ -176,7 +176,7 @@ module DoubleMattressOneTexts
 
   # Stevigheid
   def firmness_text
-    mattress = Mattress.all.where(session_id: session.id).last
+    mattress = DoubleMattressOne.all.where(session_id: session.id).last
     sleep_position = mattress.sleep_position
     body_shape = mattress.body_shape
 

@@ -10,7 +10,7 @@
     / end top-wizard
     = form_for @double_mattress_two, url: bestellen_tweepersoons_duo_post_path do |f|
       #middle-wizard
-        .step.row#step_1
+        .step.row#step_1_duo
           %h2.col-md-12.text-center Wie slapen op deze matrassen?
           %br/
           .col-md-6
@@ -54,7 +54,7 @@
                   = f.radio_button :gender2, 'Vrouw', class: 'required check_radio'
           %br/
           %br/
-        .step.row#step_2
+        .step.row#step_2_duo
           .col-md-6
             %h3
               Hoe slaapt
@@ -91,7 +91,7 @@
                 %label
                   Buik
                   = f.radio_button :sleep_position2, 'Buik', class: 'required check_radio'
-        .step.row#step_3
+        .step.row#step_3_duo
           .col-md-6
             %h3
               Heeft
@@ -137,7 +137,7 @@
                   Nee, geen klachten
                   = f.radio_button :neck_or_back_pain2, 'Nee, geen klachten', class: 'required check_radio'
         / end step
-        .step.row#step_4
+        .step.row#step_4_duo
           .col-md-6
             %h3
               Wat is de lichaamsvorm van
@@ -185,7 +185,7 @@
                   = f.radio_button :body_shape2, 'Geen van bovenstaande', class: 'required check_radio'
 
         / end step
-        .step.row#step_5
+        .step.row#step_5_duo
           .col-md-6
             %h3
               Heeft
@@ -225,7 +225,7 @@
                   = f.radio_button :warm_sleeping2, 'Niet warm, niet koud', class: 'required check_radio'
 
         / end step
-        .step.row#step_6
+        .step.row#step_6_duo
           .col-md-8.col-md-offset-3
             %h3
               Heeft
@@ -324,7 +324,7 @@
                     = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Een andere medische klacht die hier niet tussen staat", nil
 
         / end step
-        .step.row#step_7
+        .step.row#step_7_duo
           .col-md-8.col-md-offset-3
             %h3
               Heeft
@@ -423,7 +423,7 @@
                     = f.check_box :diseases2, { multiple: true, class: 'required check_radio' }, "Een andere medische klacht die hier niet tussen staat", nil
 
         / end step
-        .step.row#step_8
+        .step.row#step_8_duo
           .col-md-6.col-md-offset-3
             %h3 Kies de gezamenlijke breedte en lengte van jullie matrassen
             .col-md-4.col-md-offset-1
@@ -462,7 +462,7 @@
                     = f.radio_button :mattress_length, '220cm', class: 'required check_radio'
 
         / end step
-        .step.row#step_9
+        .step.row#step_9_duo
           .col-md-6
             %h3
               Hoe moet het matras van
@@ -502,18 +502,18 @@
                   = f.radio_button :comfort2, 'Hard', class: 'required check_radio'
 
         / end step
-        .step.row#step_10
+        .step.row#step_10_duo
           .col-md-12.col-md-offset-3
             %h3 Kies een comfortcategorie voor jullie matrassen
             %ul.data-list-2
-              %li
+              %li.disable_on_diseases
                 %label
                   Budget (Redelijk comfort)
-                  = f.radio_button :category, 'Budget', class: 'required check_radio'
-              %li
+                  = f.radio_button :category, 'Budget', class: 'required check_radio disable_on_diseases'
+              %li.disable_on_diseases
                 %label
                   Comfort (Goed comfort)
-                  = f.radio_button :category, 'Comfort', class: 'required check_radio'
+                  = f.radio_button :category, 'Comfort', class: 'required check_radio disable_on_diseases'
               %li
                 %label
                   Premium (Beste comfort)
@@ -587,7 +587,7 @@
                   %td
                     Emissieneutraal
           / end step
-        .step.row#step_11
+        .step.row#step_11_duo
           .col-md-4.col-md-offset-4
             %h3 Is jullie bedbodem verstelbaar?
             %ul.data-list-2
@@ -599,7 +599,7 @@
                 %label
                   Nee
                   = f.radio_button :chassis, 'Nee', class: 'required check_radio'
-        .step.row#step_12
+        .step.row#step_12_duo
           .col-md-4.col-md-offset-4
             %h3 Hoe willen jullie het matras hebben?
             %ul.data-list-2
@@ -612,7 +612,7 @@
                   Een tweepersoonsmatras
                   = f.radio_button :separation, 'Een tweepersoonsmatras', class: 'required check_radio'
 
-        #complete.submit.step#step_13
+        #complete.submit.step#step_13_duo
           %i.icon-check
           %h3 Dit waren alle vragen, bekijk het resultaat door op de knop hieronder te klikken.
           = f.submit 'Bekijk het resultaat..', class: 'btn btn-block btn-info submit', name: 'process', id: 'check_result_double_mattress_twos'

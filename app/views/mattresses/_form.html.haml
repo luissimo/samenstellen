@@ -262,14 +262,14 @@
           .col-md-12.col-md-offset-3
             %h3 Kies een comfortcategorie voor je matras
             %ul.data-list-2
-              %li
+              %li.disable_on_diseases
                 %label
                   Budget (Redelijk comfort)
-                  = f.radio_button :category, 'Budget', class: 'required check_radio'
-              %li
+                  = f.radio_button :category, 'Budget', class: 'required check_radio disable_on_diseases'
+              %li.disable_on_diseases
                 %label
                   Comfort (Goed comfort)
-                  = f.radio_button :category, 'Comfort', class: 'required check_radio'
+                  = f.radio_button :category, 'Comfort', class: 'required check_radio disable_on_diseases'
               %li
                 %label
                   Premium (Beste comfort)

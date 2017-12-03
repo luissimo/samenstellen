@@ -15,16 +15,16 @@
           %br/
           .col-md-6
             %ul.data-list
-              %h5 Voornaam
+              %label Voornaam
               %li= f.text_field :name, class: 'required form-control name_person_1', placeholder: 'Voornaam'
-              %h5 Leeftijd
+              %label Leeftijd
               %li= f.number_field :age, class: 'required form-control', placeholder: 'Leeftijd', maxlength: 3
           / end col-md-6
           .col-md-6
             %ul.data-list
-              %h5 Gewicht in kilogrammen
+              %label Gewicht in kilogrammen
               %li= f.number_field :weight, class: 'required form-control', placeholder: 'Gewicht in kg', maxlength: 3
-              %h5 Lengte in centimeters
+              %label Lengte in centimeters
               %li= f.number_field :length, class: 'required form-control', placeholder: 'Lengte in cm', maxlength: 3
           .col-md-12
             .col-md-2.col-md-offset-2
@@ -39,7 +39,9 @@
           %br/
         .step.row#step_2_solo
           .col-md-6.col-md-offset-4
-            %h3 Hoe slaap je normaal gesproken? *
+            %h3
+              Hoe slaap je normaal gesproken? *
+              = question_icon_md(t("explanations.double_mattress_one.sleep_position"))
             %ul.data-list-2
               %li
                 %label
@@ -78,6 +80,7 @@
           .col-md-6.col-md-offset-4
             %h3
               Wat is je lichaamsvorm? *
+              = question_icon_md(t("explanations.double_mattress_one.body_shape"))
             %ul.data-list-2
               %li
                 %label
@@ -98,7 +101,9 @@
         / end step
         .step.row#step_5_solo
           .col-md-6.col-md-offset-4
-            %h3 Heb je het vaak te koud of te warm in bed? *
+            %h3
+              Heb je het vaak te koud of te warm in bed? *
+              = question_icon_md(t("explanations.double_mattress_one.warm_sleeping"))
             %ul.data-list-2
               %li
                 %label
@@ -115,7 +120,9 @@
         / end step
         .step.row#step_6_solo
           .col-md-8.col-md-offset-3
-            %h3 Heb je medische klachten? Zo ja, welke?
+            %h3
+              Heb je medische klachten? Zo ja, welke?
+              = question_icon_md(t("explanations.double_mattress_one.diseases"))
           .col-md-8.col-md-offset-2
             %ul#terms.data-list
               %li
@@ -248,7 +255,9 @@
         / end step
         .step.row#step_8_solo
           .col-md-6.col-md-offset-4
-            %h3 Hoe moet je matras aanvoelen?
+            %h3
+              Hoe moet je matras aanvoelen?
+              = question_icon_md(t("explanations.double_mattress_one.comfort"))
             %ul.data-list-2
               %li
                 %label
@@ -265,7 +274,9 @@
         / end step
         .step.row#step_9_solo
           .col-md-12.col-md-offset-3
-            %h3 Kies een comfortcategorie voor je matras
+            %h3
+              Kies een comfortcategorie voor je matras
+              = question_icon_md(t("explanations.double_mattress_one.category"))
             %ul.data-list-2
               %li.disable_on_diseases
                 %label
@@ -349,7 +360,9 @@
                     Emissieneutraal
         .step.row#step_10_solo
           .col-md-6.col-md-offset-4
-            %h3 Is je bedbodem verstelbaar?
+            %h3
+              Is je bedbodem verstelbaar?
+              = question_icon_md(t("explanations.double_mattress_one.chassis"))
             %ul.data-list-2
               %li
                 %label

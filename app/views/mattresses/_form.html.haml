@@ -13,16 +13,15 @@
           %br/
           .col-md-6
             %ul.data-list
-              %h5 Voornaam
+              %label Voornaam
               %li= f.text_field :name, class: 'required form-control name_person_1', placeholder: 'Voornaam'
-              %h5 Leeftijd
+              %label Leeftijd
               %li= f.number_field :age, class: 'required form-control', placeholder: 'Leeftijd', maxlength: 3
-          / end col-md-6
           .col-md-6
             %ul.data-list
-              %h5 Gewicht in kilogrammen
+              %label Gewicht in kilogrammen
               %li= f.number_field :weight, class: 'required form-control', placeholder: 'Gewicht in kg', maxlength: 3
-              %h5 Lengte in centimeters
+              %label Lengte in centimeters
               %li= f.number_field :length, class: 'required form-control', placeholder: 'Lengte in cm', maxlength: 3
           .col-md-12
             .col-md-2.col-md-offset-2
@@ -37,7 +36,9 @@
           %br/
         .step.row#step_2
           .col-md-6.col-md-offset-4
-            %h3 Hoe slaap je normaal gesproken? *
+            %h3
+              Hoe slaap je normaal gesproken? *
+              = question_icon_md(t("explanations.mattress.sleep_position"))
             %ul.data-list-2
               %li
                 %label
@@ -71,11 +72,11 @@
                 %label
                   Nee, geen klachten
                   = f.radio_button :neck_or_back_pain, 'Nee, geen klachten', class: 'required check_radio'
-        / end step
         .step.row#step_4
           .col-md-6.col-md-offset-4
             %h3
               Wat is je lichaamsvorm? *
+              = question_icon_md(t("explanations.mattress.body_shape"))
             %ul.data-list-2
               %li
                 %label
@@ -93,10 +94,11 @@
                 %label
                   Geen van bovenstaande
                   = f.radio_button :body_shape, 'Geen van bovenstaande', class: 'required check_radio'
-        / end step
         .step.row#step_5
           .col-md-6.col-md-offset-4
-            %h3 Heb je het vaak te koud of te warm in bed? *
+            %h3
+              Heb je het vaak te koud of te warm in bed? *
+              = question_icon_md(t("explanations.mattress.warm_sleeping"))
             %ul.data-list-2
               %li
                 %label
@@ -110,10 +112,11 @@
                 %label
                   Niet warm, niet koud
                   = f.radio_button :warm_sleeping, 'Niet warm, niet koud', class: 'required check_radio'
-        / end step
         .step.row#step_6
           .col-md-8.col-md-offset-3
-            %h3 Heb je medische klachten? Zo ja, welke?
+            %h3
+              Heb je medische klachten? Zo ja, welke?
+              = question_icon_md(t("explanations.mattress.diseases"))
           .col-md-8.col-md-offset-2
             %ul#terms.data-list
               %li
@@ -205,7 +208,6 @@
                   %label
                     Een andere medische klacht die hier niet tussen staat
                     = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Een andere medische klacht die hier niet tussen staat", nil
-        / end step
         .step.row#step_7
           .col-md-6.col-md-offset-3
             %h3 Kies de breedte en lengte voor je matras
@@ -240,10 +242,11 @@
                   %label
                     220cm
                     = f.radio_button :mattress_length, '220cm', class: 'required check_radio'
-        / end step
         .step.row#step_8
           .col-md-6.col-md-offset-4
-            %h3 Hoe moet je matras aanvoelen?
+            %h3
+              Hoe moet je matras aanvoelen?
+              = question_icon_md(t("explanations.mattress.comfort"))
             %ul.data-list-2
               %li
                 %label
@@ -257,10 +260,11 @@
                 %label
                   Hard
                   = f.radio_button :comfort, 'Hard', class: 'required check_radio'
-        / end step
         .step.row#step_9
           .col-md-12.col-md-offset-3
-            %h3 Kies een comfortcategorie voor je matras
+            %h3
+              Kies een comfortcategorie voor je matras
+              = question_icon_md(t("explanations.mattress.category"))
             %ul.data-list-2
               %li.disable_on_diseases
                 %label
@@ -342,16 +346,10 @@
                   %td
                   %td
                     Emissieneutraal
-            / end step
         #complete.submit.step#step_10
           %i.icon-check
           %h3 Dit waren alle vragen, bekijk het resultaat door op de knop hieronder te klikken.
           = f.submit 'Bekijk het resultaat..', class: 'btn btn-block btn-info submit', name: 'process', id: 'check_result_mattresses'
-        / end submit step
-      / end middle-wizard
       #bottom-wizard
         %button.backward{ name: "Vorige", type: "button" } Vorige
         %button.forward{ name: "Volgende", type: "button" } Volgende
-      / end bottom-wizard
-  / end Survey container
-/ end section main container

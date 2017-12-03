@@ -1,5 +1,4 @@
 %section#main.container
-  / Start Survey container
   #survey_container
     #top-wizard
       %strong
@@ -7,7 +6,6 @@
         %span#location
       #progressbar
       .shadow
-    / end top-wizard
     = form_for @double_mattress_one, url: bestellen_tweepersoons_solo_post_path do |f|
       #middle-wizard
         .step.row#step_1_solo
@@ -19,7 +17,6 @@
               %li= f.text_field :name, class: 'required form-control name_person_1', placeholder: 'Voornaam'
               %label Leeftijd
               %li= f.number_field :age, class: 'required form-control', placeholder: 'Leeftijd', maxlength: 3
-          / end col-md-6
           .col-md-6
             %ul.data-list
               %label Gewicht in kilogrammen
@@ -377,11 +374,6 @@
           %i.icon-check
           %h3 Dit waren alle vragen, bekijk het resultaat door op de knop hieronder te klikken.
           = f.submit 'Bekijk het resultaat..', class: 'btn btn-block btn-info submit', name: 'process', id: 'check_result_double_mattress_ones'
-        / end submit step
-      / end middle-wizard
       #bottom-wizard
         %button.backward{ name: "Vorige", type: "button"} Vorige
         %button.forward{ name: "Volgende", type: "button"} Volgende
-      / end bottom-wizard
-  / end Survey container
-/ end section main container

@@ -4,6 +4,10 @@ class DoubleMattressOnesController < ApplicationController
   include DoubleMattressOnePrices
   include SetGraphsOne
 
+  before_action only: [:show] do
+    redirect_to_root_if_object_nil(DoubleMattressOne.all.where(session_id: session.id).last)
+  end
+
   def show
     @page_title = t('bestellen_tweepersoons_solo_resultaat.title')
     @meta_title = t('bestellen_tweepersoons_solo_resultaat.meta_title')

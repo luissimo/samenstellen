@@ -4,6 +4,10 @@ class DoubleMattressTwosController < ApplicationController
   include DoubleMattressTwoPrices
   include SetGraphsTwo
 
+  before_action only: [:show] do
+    redirect_to_root_if_object_nil(DoubleMattressTwo.all.where(session_id: session.id).last)
+  end
+
   def show
     @page_title = t('bestellen_tweepersoons_duo_resultaat.title')
     @meta_title = t('bestellen_tweepersoons_duo_resultaat.meta_title')
@@ -124,7 +128,7 @@ class DoubleMattressTwosController < ApplicationController
       length = @mattress.mattress_length.to_s[0..-3]
       width = @mattress.mattress_width.to_s[0..-3]
       size = width + 'x' + length
-      half_size = (width.to_i / 2).to_s + 'x' + (length.to_i / 2).to_s
+      half_size = (width.to_i / 2).to_s + 'x' + length
 
       case chassis
       when 'Ja'

@@ -130,43 +130,22 @@ class DoubleMattressTwosController < ApplicationController
       size = width + 'x' + length
       half_size = (width.to_i / 2).to_s + 'x' + length
 
-      case chassis
-      when 'Ja'
-        case separation
-        when 'Een tweepersoonsmatras'
-          @mattress_product = "1x - " +  fused_category + ' Tenzen Matras '+ size + ' - ' + @mattress.name
-          @mattress_product2 = "1x - " +  fused_category2 + ' Tenzen Matras '+ size + ' - ' + @mattress.name2
-          @topper_product = "1x - " + fused_category + ' Tenzen Split Topdekmatras ' + size + ' - ' + @mattress.name + ' & ' + @mattress.name2
-          session[:mattress] = @mattress_product
-          session[:mattress2] = @mattress_product2
-          session[:topper] = @topper_product
-        when 'Twee eenpersoonsmatrassen'
-          @mattress_product = "1x - " +  category + ' Tenzen Matras ' + half_size + ' - ' + @mattress.name
-          @mattress_product2 = "1x - " +  category2 + ' Tenzen Matras ' + half_size + ' - ' + @mattress.name2
-          @topper_product = "1x - " + category + ' Tenzen Topdekmatras ' + half_size + ' - ' + @mattress.name
-          @topper_product2 = "1x - " + category2 + ' Tenzen Topdekmatras ' + half_size + ' - ' + @mattress.name2
-          session[:mattress] = @mattress_product
-          session[:mattress2] = @mattress_product2
-          session[:topper] = @topper_product
-          session[:topper2] = @topper_product2
-        end
-      when 'Nee'
-        case separation
-        when 'Een tweepersoonsmatras'
-          @mattress_product = "1x - " +  fused_category + ' Tenzen Matras ' + size + ' - ' + @mattress.name + ' & ' + @mattress.name2
-          @topper_product = "1x - " + fused_category2 + ' Tenzen Split Topdekmatras ' + size + ' - ' + @mattress.name + ' & ' + @mattress.name2
-          session[:mattress] = @mattress_product
-          session[:topper] = @topper_product
-        when 'Twee eenpersoonsmatrassen'
-          @mattress_product = "1x - " +  category + ' Tenzen Matras ' + half_size + ' - ' + @mattress.name
-          @mattress_product2 = "1x - " +  category2 + ' Tenzen Matras ' + half_size + ' - ' + @mattress.name2
-          @topper_product = "1x - " + category + ' Tenzen Topdekmatras ' + half_size + ' - ' + @mattress.name
-          @topper_product2 = "1x - " + category2 + ' Tenzen Topdekmatras ' + half_size + ' - ' + @mattress.name2
-          session[:mattress] = @mattress_product
-          session[:mattress2] = @mattress_product2
-          session[:topper] = @topper_product
-          session[:topper2] = @topper_product2
-        end
+      case separation
+      when 'Een tweepersoonsmatras'
+        @mattress_product = "1x - " + fused_category + ' Tenzen Matras ' + size + ' - ' + @mattress.name + ' & ' + @mattress.name2
+        @topper_product = "1x - " + fused_category + ' Tenzen Topdekmatras ' + size + ' - ' + @mattress.name + ' & ' + @mattress.name2
+        session[:mattress] = @mattress_product
+        session[:mattress2] = @mattress_product2
+        session[:topper] = @topper_product
+      when 'Twee eenpersoonsmatrassen'
+        @mattress_product = "1x - " +  category + ' Tenzen Matras ' + half_size + ' - ' + @mattress.name
+        @mattress_product2 = "1x - " +  category2 + ' Tenzen Matras ' + half_size + ' - ' + @mattress.name2
+        @topper_product = "1x - " + category + ' Tenzen Topdekmatras ' + half_size + ' - ' + @mattress.name
+        @topper_product2 = "1x - " + category2 + ' Tenzen Topdekmatras ' + half_size + ' - ' + @mattress.name2
+        session[:mattress] = @mattress_product
+        session[:mattress2] = @mattress_product2
+        session[:topper] = @topper_product
+        session[:topper2] = @topper_product2
       end
     end
 end

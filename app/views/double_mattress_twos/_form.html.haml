@@ -599,6 +599,10 @@
                 %label
                   Nee
                   = f.radio_button :chassis, 'Nee', class: 'required check_radio'
+              %li
+                %label
+                  Wij hebben nog geen bodem
+                  = f.radio_button :chassis, "Geen bodem", class: 'required check_radio'
         .step.row#step_12_duo
           .col-md-4.col-md-offset-4
             %h3 Hoe willen jullie het matras hebben?

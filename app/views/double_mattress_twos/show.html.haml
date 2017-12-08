@@ -6,7 +6,7 @@
         .v4-bordered
           .specs-box
             .box-title.title-v4.text-center
-              Jullie Tenzen
+              = t('results.titles.header', aanhef: 'Jullie')
             %ul
               %li
                 .li-holder
@@ -15,7 +15,7 @@
                       .icon
                         .summary_box
                           .box-title-small.text-center
-                            Personalisatie -
+                            = [t('results.titles.graphs'), " -"].join
                             = @double_mattress_two.name
                           .text-content
                             .text-v4
@@ -63,7 +63,7 @@
                       .icon
                         .summary_box
                           .box-title-small.text-center
-                            Personalisatie -
+                            = [t('results.titles.graphs'), " -"].join
                             = @double_mattress_two.name2
                           .text-content
                             .text-v4
@@ -110,11 +110,14 @@
               %li
                 %p.align-usps-2p
                   = image_tag('persoonlijk.png', alt: 'Personalisatie')
-                  %span Persoonlijk comfort
+                  %span
+                    = t('general.usp.title.comfort')
                   = image_tag('bezorging.png', alt: 'Gratis bezorging')
-                  %span Gratis verzending
+                  %span
+                    = t('general.usp.title.delivery')
                   = image_tag('garantie.png', alt: '100 dagen proefslapen, niet goed, geld terug')
-                  %span Niet tevreden = geld terug
+                  %span
+                    = t('general.usp.title.money_back')
               %li
                 .li-holder
                   .li-content
@@ -122,7 +125,7 @@
                       .icon
                         .summary_box.text-center
                           .box-title-small.text-center
-                            Winkelwagen:
+                            = t('results.titles.cart')
                           %p
                             = @mattress_product
                           - if @mattress_product2
@@ -142,7 +145,7 @@
                             %span{style: 'font-size: 12px; text-decoration:underline;'}= link_to 'Antwoorden wijzigen', 'javascript:history.go(-1);'
                   .checkout_button.title-v4.text-center
                     %a.btn-primary.btn-success.btn-block{href: afrekenen_path}
-                      Doorgaan
+                      = t("general.button.continue")
 %section#main.container
   #survey_container_result_advice
     #middle-wizard-result
@@ -150,11 +153,13 @@
         .v4-bordered
           .specs-boxs
             .box-title.title-v4.text-center#advies
-              Hoe komen wij op dit advies?
+              = t('results.titles.header_advice')
             %ul
               - if double_mattress_two_diseases_on? || double_mattress_two_diseases2_on?
                 %li
-                  .head-title-v4 Medische klachten
+                  .head-title-v4
+                    Medische klachten
+                    = question_icon_md(t("results.explanations.diseases"))
                   .li-holder
                     .li-content
                       .text-content
@@ -172,14 +177,13 @@
                           .title-smaller= @person_2_name
                           .text-v4
                             Je hebt aangegeven last te hebben van medische klachten. Extra drukverlaging is van essentieel belang voor jou. Zo hebben je gewrichten en ledematen minimale tegendruk en geniet je van een gezonde bloedcirculatie omdat er geen knellingen plaatsvinden.
-                        -# .title-extra-smaller Uitleg medische klachten
-                        -# .text-v4
-                        -#   Medische matrassen bieden extra comfort en drukverlaging. Door de drukverlagende eigenschappen kunnen mensen die pijn ondervinden bij het slapen beter tot rust komen. Omdat er minimale druk wordt uitgeoefend op het lichaam zal de slaper veel minder last hebben van pijn.
                       .icon-holder-right
                         .icon
                           = image_tag("medisch-matras.png", class: 'img-responsive')
               %li
-                .head-title-v4 Comfort matras
+                .head-title-v4
+                  Comfort matras
+                  = question_icon_md(t("results.explanations.comfort"))
                 .li-holder
                   .li-content
                     .icon-holder-left
@@ -193,11 +197,10 @@
                       .title-smaller= @person_2_name
                       .text-v4
                         = @comfort_text_2
-                      -# .title-extra-smaller Uitleg comfort
-                      -# .text-v4
-                      -#   Matrassen beschikken over een comfortlaag aan de bovenzijde en soms ook aan de onderzijde. Dit is iets anders dan de stevigheid van een matras. Een matras kan namelijk stevig zijn, maar toch lekker zacht aanvoelen. De comfortlaag is bepalend voor het gevoel dat je krijgt op je matras.
               %li
-                .head-title-v4 Elasticiteit matras
+                .head-title-v4
+                  Elasticiteit matras
+                  = question_icon_md(t("results.explanations.elasticity"))
                 .li-holder
                   .li-content
                     .text-content
@@ -208,14 +211,13 @@
                       .title-smaller= @person_2_name
                       .text-v4
                         = @elasticity_text_2
-                      -# .title-extra-smaller Uitleg elasticiteit
-                      -# .text-v4
-                      -#   De elasticiteit van een matras is de mate waarin het een aanpassend vermogen heeft op één specifiek punt. Je lichaamsvorm en slaappositie zijn van belang om de elasticiteit te bepalen. Een hoge elasticiteit zorgt namelijk dat mensen met curves beter kunnen inzakken in het matras, waardoor hun ruggengraat een betere positie aanneemt.
                     .icon-holder-right
                       .icon
                         = image_tag("elasticiteit.png", class: 'img-responsive')
               %li
-                .head-title-v4 Stevigheid matras
+                .head-title-v4
+                  Stevigheid matras
+                  = question_icon_md(t("results.explanations.firmness"))
                 .li-holder
                   .li-content
                     .icon-holder-left
@@ -229,11 +231,10 @@
                       .title-smaller= @person_2_name
                       .text-v4
                         = @firmness_text_2
-                      -# .title-extra-smaller Uitleg stevigheid
-                      -# .text-v4
-                      -#   De stevigheid van je matras wordt bepaald door je BMI, je lichaamsvorm en je slaappositie. BMI is een waarde die kijkt naar de verhouding tussen je lengte en je gewicht. Een matras moet een goed aanpassingsvermogen hebben voor ieder individu. Door te letten op deze drie aspecten kunnen we de optimale stevigheid bepalen voor jou.
               %li
-                .head-title-v4 Warmte-regulatie matras
+                .head-title-v4
+                  Warmte-regulatie matras
+                  = question_icon_md(t("results.explanations.heat_regulation"))
                 .li-holder
                   .li-content
                     .text-content
@@ -244,12 +245,9 @@
                       .title-smaller= @person_2_name
                       .text-v4
                         = @heat_regulation_text_2
-                      -# .title-extra-smaller Uitleg warmte-regulatie
-                      -# .text-v4
-                      -#   Een van de aspecten die bijdragen aan een goede nachtrust is je lichaamstemperatuur. Sommige matrassen houden warmte vast, terwijl andere juist koud aanvoelen. Door de juiste materialen te kiezen zorgen wij dat jij de juiste lichaamstemperatuur krijgt tijdens het slapen.
                     .icon-holder-right
                       .icon
                         = image_tag("warmte-regulatie.png", class: 'img-responsive')
                   .checkout_button.title-v4.text-center
                     %a.btn-primary.btn-success.btn-block{href: afrekenen_path}
-                      Doorgaan
+                      = t("general.button.continue")

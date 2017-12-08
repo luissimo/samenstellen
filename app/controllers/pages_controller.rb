@@ -1,9 +1,9 @@
 class PagesController < ApplicationController
 
   def over_tenzen
-    @page_title = t('home.title')
-    @meta_title = t('home.meta_title')
-    @meta_description = t('home.meta_description')
+    @page_title = t('over_tenzen.title')
+    @meta_title = t('over_tenzen.meta_title')
+    @meta_description = t('over_tenzen.meta_description')
   end
 
   def vragen

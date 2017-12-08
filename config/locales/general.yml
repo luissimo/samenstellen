@@ -1,0 +1,68 @@
+nl:
+  general:
+    usp:
+      title:
+        comfort: Persoonlijk comfort
+        delivery: Gratis verzend- en ophaalservice
+        money_back: Niet goed, geld terug
+      explanation:
+        comfort: Elk matras wordt bij ons op basis van persoonlijke voorkeuren geproduceerd. Jij moet je niet aan je matras aanpassen, maar je matras moet zich aan jou aanpassen! Je krijgt gegarandeerd het perfecte matras voor jou. Wij nemen al je zorgen weg en laten je lekker slapen.
+        delivery: Je matras wordt gratis thuisbezorgd, tot in je slaapkamer. Mocht je het matras terug willen sturen, dan komen wij het ook weer gratis bij je ophalen. Geen zorgen dus.
+        money_back: Je kunt honderd dagen proefslapen op je matras. Mocht het niet zijn wat je had gewenst, dan komen wij het gratis ophalen en krijg je het volledige aankoopbedrag terug. Daar doen we niet moeilijk over.
+    button:
+      continue: Doorgaan
+      checkout: Afrekenen
+      1_person: "1 Persoon"
+      2_persons: "2 Personen"
+      one_person: Eenpersoons
+      two_persons: Tweepersoons
+    home:
+      block_1:
+        header: Stel nu je eigen matras samen
+        subheader: Elk lichaam is anders, dus waarom zou jouw matras dat niet zijn? Stel binnen twee minuten jouw persoonlijke matras samen en geniet van slaapcomfort als nooit tevoren!
+        text:
+          choose_size_and_start: Kies je maatvoering en begin direct.
+      block_2:
+        header: Droomservice
+        subheader: "Bij Tenzen draait alles om jou. ‘Wij slapen pas lekker, als jij lekker slaapt’ is ons motto. Je hoeft alleen maar online te bestellen. Wij zorgen ervoor dat jij daarna nergens naar om hoeft te kijken. Wij stellen het beste matras voor jou samen en bezorgen het gratis tot in je slaapkamer."
+      block_3:
+        header: Jouw Tenzen-matras
+        subheader: Wij laten al onze matrassen onder strenge kwaliteitscontroles speciaal produceren in Duitsland. Hierdoor weet je zeker dat je altijd op een kwalitatief goede, en vooral ook een veilige matras slaapt.
+        descriptions:
+          correcting:
+            title: Corrigerend
+            explanation: Je Tenzen-matras heeft een aanpassend vermogen. Het matras kan zich volledig aan jouw lichaam en slaapstijl aanpassen.
+          breathable:
+            title: Ademend
+            explanation: Je Tenzen-matras heeft een optimaal ademend vermogen. Zo zul je het nooit meer te warm of koud hebben in bed.
+          comfortable:
+            title: Comfortabel
+            explanation: Je Tenzen-matras wordt speciaal voor jou gemaakt om je de perfecte slaaphouding te geven. Zo weet je zeker dat je matras het juiste comfort biedt voor een heerlijke nachtrust.
+          safe_and_trustworthy:
+            title: Veilig en vertrouwd
+            explanation: Al het schuim dat gebruikt wordt in je Tenzen-matras is vrij van schadelijke chemicaliën en wordt compleet milieuvriendelijk geproduceerd.
+          quality:
+            title: Kwaliteit
+            explanation: Tenzen gebruikt alleen de beste kwaliteit materialen. Je hebt dan ook altijd minimaal twee jaar garantie op je aankoop.
+          sustainable:
+            title: Duurzaam
+            explanation: Jouw Tenzen-matras heeft precies de juiste stevigheid voor jouw lichaam. Hierdoor slaap je beter en wordt de levensduur van je matras langer.
+    header:
+      order: BESTELLEN
+      about_tenzen: OVER TENZEN
+      questions: VRAGEN
+    footer:
+      navigation:
+        home: HOME
+        order: BESTELLEN
+        questions: VRAGEN
+        about_tenzen: OVER TENZEN
+        contact: CONTACT
+      subnavigation:
+        toa: Algemene voorwaarden
+        guarantees: Garanties
+        retour: Retourneren
+        privacy_policy: Privacybeleid
+        cookie_policy: Cookiebeleid
+      social_media:
+        facebook: Facebook

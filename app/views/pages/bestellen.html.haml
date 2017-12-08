@@ -7,8 +7,10 @@
           %br/
           .col-md-6
             = link_to bestellen_eenpersoons_url do
-              .btn.btn-choose.btn-lg.btn-block{style: 'margin-bottom: 10px'} Eenpersoons
+              .btn.btn-choose.btn-lg.btn-block{style: 'margin-bottom: 10px'}
+                = t('general.button.one_person')
           .col-md-6
             = link_to bestellen_tweepersoons_url do
-              .btn.btn-choose.btn-lg.btn-block Tweepersoons
+              .btn.btn-choose.btn-lg.btn-block
+                = t('general.button.two_persons')
           %br/

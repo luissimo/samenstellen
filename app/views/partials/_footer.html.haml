@@ -7,31 +7,42 @@
       .col-md-6
         %ul.pages
           %li
-            %a{:href => root_url} Home
+            %a{:href => root_url}
+              = t("general.footer.navigation.home")
           %li
-            %a{:href => bestellen_url} BESTELLEN
+            %a{:href => bestellen_url}
+              = t("general.footer.navigation.order")
           %li
-            %a{:href => vragen_url} VRAGEN
+            %a{:href => vragen_url}
+              = t("general.footer.navigation.questions")
           %li
-            %a{:href => over_tenzen_url} OVER TENZEN
+            %a{:href => over_tenzen_url}
+              = t("general.footer.navigation.about_tenzen")
           %li
-            %a{:href => contact_url} CONTACT
+            %a{:href => contact_url}
+              = t("general.footer.navigation.contact")
       .col-md-6
         %ul.list
           %li
-            %a{:href => algemene_voorwaarden_url} Algemene voorwaarden
+            %a{:href => algemene_voorwaarden_url}
+              = t("general.footer.subnavigation.toa")
           %li
-            %a{:href => garanties_url} Garanties
+            %a{:href => garanties_url}
+              = t("general.footer.subnavigation.guarantees")
           %li
-            %a{:href => retourneren_url} Retourneren
+            %a{:href => retourneren_url}
+              = t("general.footer.subnavigation.retour")
           %li
-            %a{:href => privacybeleid_url} Privacybeleid
+            %a{:href => privacybeleid_url}
+              = t("general.footer.subnavigation.privacy_policy")
           %li
-            %a{:href => cookiebeleid_url} Cookiebeleid
+            %a{:href => cookiebeleid_url}
+              = t("general.footer.subnavigation.cookie_policy")
     .col-md-2.footer-social.animated.fadeInDown
       %h4 Volg ons
       %ul
         %li
-          %a{href: "https://www.facebook.com/tenzenslapen", target: "_blank"} Facebook
+          %a{href: "https://www.facebook.com/tenzenslapen", target: "_blank"}
+            = t("general.footer.social_media.facebook")
     .col-md-3.footer-ns.animated.fadeInRight
       = image_tag "thuiswinkelwaarborg.png", alt: 'thuiswinkelwaarborg', height: '150px', width: '150px'

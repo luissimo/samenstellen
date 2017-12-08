@@ -61,28 +61,33 @@
           .collapse.navbar-collapse#navbar
             %ul.nav.navbar-nav.navbar-right
               %li
-                %a.js-scroll-trigger{href: bestellen_url} BESTELLEN
+                %a.js-scroll-trigger{href: bestellen_url}
+                  = t("general.header.order")
               %li
-                %a.js-scroll-trigger{href: over_tenzen_url} OVER TENZEN
+                %a.js-scroll-trigger{href: over_tenzen_url}
+                  = t("general.header.about_tenzen")
               %li
-                %a.js-scroll-trigger{href: vragen_url} VRAGEN
+                %a.js-scroll-trigger{href: vragen_url}
+                  = t("general.header.questions")
 
       #home.header-1.demo-1.has-gradient
         .moving-bg
         .container
           .header-1-content.row
             .col-md-7.col-sm-12.mt-63
-              %h1 Stel nu je eigen matras samen
+              %h1
+                = t("general.home.block_1.header")
               %br/
               %p.lead
-                Elk lichaam is anders, dus waarom zou jouw matras dat niet zijn? Stel binnen twee minuten jouw persoonlijke matras samen en geniet van slaapcomfort als nooit tevoren!
+                = t("general.home.block_1.subheader")
                 %hr/
-                %strong Kies je maatvoering en begin direct.
+                %strong
+                  = t("general.home.block_1.text.choose_size_and_start")
               .download
                 %a.download-btn{href: bestellen_eenpersoons_url}
-                  Eenpersoons
+                  = t('general.button.one_person')
                 %a.download-btn{href: bestellen_tweepersoons_url}
-                  Tweepersoons
+                  = t('general.button.two_persons')
             .col-md-5.hidden-sm.hidden-xs.mt-63
               .center-block= image_tag("tenzen.png", alt: 'Tenzen Matras Samenstellen')
 
@@ -90,9 +95,9 @@
         .container.text-center
           %header.text-center
             %h2.has-line-center
-              Droomservice
+              = t("general.home.block_2.header")
             %p.lead
-              Bij Tenzen draait alles om jou. ‘Wij slapen pas lekker, als jij lekker slaapt’ is ons motto. Je hoeft alleen maar online te bestellen. Wij zorgen ervoor dat jij daarna nergens naar om hoeft te kijken. Wij stellen het beste matras voor jou samen en bezorgen het gratis tot in je slaapkamer.
+              = t("general.home.block_2.subheader")
           .how-one-container
             .how-box-one.col-md-4.col-sm-6.col-xs-12
               .inner-box
@@ -100,40 +105,36 @@
                   %i
                     = image_tag("persoonlijk.png", alt: 'Persoonlijk comfort', style: "height: 50px; width:50px")
                 %h3
-                  %a{:href => "#"} Persoonlijk comfort
+                  = t('general.usp.title.comfort')
                 .text
-                  Elk matras wordt bij ons op basis van persoonlijke voorkeuren geproduceerd. Jij moet je niet aan je matras aanpassen, maar je matras moet zich aan jou aanpassen! Je krijgt
-                  %strong gegarandeerd
-                  het perfecte matras voor jou. Wij nemen al je zorgen weg en laten je lekker slapen.
+                  = t("general.usp.explanation.comfort")
             .how-box-one.col-md-4.col-sm-6.col-xs-12
               .inner-box
                 .icon-box
                   %i
                     = image_tag("bezorging.png", alt: 'Gratis bezorging', style: "height: 50px; width:50px")
                 %h3
-                  %a{:href => "#"} Gratis verzend- en ophaalservice
+                  = t('general.usp.title.delivery')
                 .text
-                  Je matras wordt gratis thuisbezorgd, tot in je slaapkamer. Mocht je het matras
-                  %strong terug willen sturen
-                  ,dan komen wij het ook weer gratis bij je ophalen. Geen zorgen dus.
+                  = t("general.usp.explanation.delivery")
             .how-box-one.col-md-4.col-sm-6.col-xs-12
               .inner-box
                 .icon-box
                   %i
                     = image_tag("garantie.png", alt: 'Niet Tevreden = Geld Terug', style: "height: 50px; width:50px")
                 %h3
-                  %a{:href => "#"} Niet goed, geld terug
+                  = t('general.usp.title.money_back')
                 .text
-                  Je kunt honderd dagen proefslapen op je matras. Mocht het niet zijn wat je had gewenst, dan komen wij het gratis ophalen en krijg je het volledige aankoopbedrag terug. Daar doen we niet moeilijk over.
+                  = t("general.usp.explanation.money_back")
 
       %section#services.what-we-do.has-gradient
         %span.img-bg
         .container.text-center
           %header.text-center.mb-70
             %h2.has-line-center
-              Jouw Tenzen-matras
+              = t("general.home.block_3.header")
             %p.lead
-              Wij laten al onze matrassen onder strenge kwaliteitscontroles speciaal produceren in Duitsland. Hierdoor weet je zeker dat je altijd op een kwalitatief goede, en vooral ook een veilige matras slaapt.
+              = t("general.home.block_3.subheader")
           .outer
             / Logo
             .inner-circle
@@ -145,51 +146,55 @@
                 .service-box-three
                   .inner-box
                     .icon-box
-                      %span= image_tag("icon-aanpassend-vermogen.png", alt: "kwaliteit matrassen")
-                    %h3{style: "color: white"} Corrigerend
+                      %span= image_tag("icon-aanpassend-vermogen.png", alt: "Aanpassende vermogen matrassen")
+                    %h3{style: "color: white"}
+                      = t("general.home.block_3.descriptions.correcting.title")
                     .text
-                      Je Tenzen-matras heeft een aanpassend vermogen. Het matras kan zich volledig aan jouw lichaam en slaapstijl aanpassen.
+                      = t("general.home.block_3.descriptions.correcting.explanation")
                 .service-box-three
                   .inner-box
                     .icon-box
-                      %span= image_tag("icon-ademend.png", alt: "kwaliteit matrassen")
-                    %h3{style: "color: white"} Ademend
+                      %span= image_tag("icon-ademend.png", alt: "Ademende matrassen")
+                    %h3{style: "color: white"}
+                      = t("general.home.block_3.descriptions.breathable.title")
                     .text
-                      Je Tenzen-matras heeft een optimaal ademend vermogen. Zo zul je het nooit meer te warm of koud hebben in bed.
+                      = t("general.home.block_3.descriptions.breathable.explanation")
                 .service-box-three
                   .inner-box
                     .icon-box
-                      %span= image_tag("icon-gevoel.png", alt: "kwaliteit matrassen")
-                    %h3{style: "color: white"} Comfortabel
+                      %span= image_tag("icon-gevoel.png", alt: "Comfortabele matrassen")
+                    %h3{style: "color: white"}
+                      = t("general.home.block_3.descriptions.comfortable.title")
                     .text
-                      Je Tenzen-matras wordt speciaal voor jou gemaakt om je de perfecte slaaphouding te geven. Zo weet je zeker dat je matras het juiste comfort biedt voor een heerlijke nachtrust.
+                      = t("general.home.block_3.descriptions.comfortable.explanation")
               / Right Column
               .right-column.col-lg-4.col-md-6.col-sm-6.col-xs-12
 
                 .service-box-four
                   .inner-box
                     .icon-box
-                      %span= image_tag("icon-veilig.png", alt: "kwaliteit matrassen")
-                    %h3{style: "color: white"} Veilig en vertrouwd
+                      %span= image_tag("icon-veilig.png", alt: "Vertrouwde en veilige matrassen")
+                    %h3{style: "color: white"}
+                      = t("general.home.block_3.descriptions.safe_and_trustworthy.title")
                     .text
-                      Al het schuim dat gebruikt wordt in je Tenzen-matras is vrij van schadelijke chemicaliën en wordt compleet milieuvriendelijk geproduceerd.
+                      = t("general.home.block_3.descriptions.safe_and_trustworthy.explanation")
                 .service-box-four
                   .inner-box
                     .icon-box
                       %span= image_tag("icon-kwaliteit.png", alt: "kwaliteit matrassen")
-                    %h3{style: "color: white"} Kwaliteit
+                    %h3{style: "color: white"}
+                      = t("general.home.block_3.descriptions.quality.title")
                     .text
-                      Tenzen gebruikt alleen de beste kwaliteit materialen. Je hebt dan ook altijd minimaal twee jaar
-                      %strong garantie
-                      op je aankoop.
+                      = t("general.home.block_3.descriptions.quality.explanation")
 
                 .service-box-four
                   .inner-box
                     .icon-box
-                      %span= image_tag("icon-stevig.png", alt: "kwaliteit matrassen")
-                    %h3{style: "color: white"} Duurzaam
+                      %span= image_tag("icon-stevig.png", alt: "Duurzame matrassen")
+                    %h3{style: "color: white"}
+                      = t("general.home.block_3.descriptions.sustainable.title")
                     .text
-                      Jouw Tenzen-matras heeft precies de juiste stevigheid voor jouw lichaam. Hierdoor slaap je beter en wordt de levensduur van je matras langer.
+                      = t("general.home.block_3.descriptions.sustainable.explanation")
 
       = render 'partials/footer'
 

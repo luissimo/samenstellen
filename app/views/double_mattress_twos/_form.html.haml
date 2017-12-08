@@ -2,7 +2,7 @@
   #survey_container
     #top-wizard
       %strong
-        Voortgang
+        = t("general.progress")
         %span#location
       #progressbar
       .shadow
@@ -57,6 +57,7 @@
               Hoe slaapt
               %span.show_name_person_1
               normaal gesproken? *
+              = question_icon_md(t("questions.explanations.double_mattress_two.sleep_position"))
             %ul.data-list-2
               %li
                 %label
@@ -75,6 +76,7 @@
               Hoe slaapt
               %span.show_name_person_2
               normaal gesproken? *
+              = question_icon_md(t("questions.explanations.double_mattress_two.sleep_position"))
             %ul.data-list-2
               %li
                 %label
@@ -94,6 +96,7 @@
               Heeft
               %span.show_name_person_1
               weleens nek-of rugklachten? *
+              = question_icon_md(t("questions.explanations.double_mattress_two.neck_or_back_pain"))
             %ul.data-list-2
               %li
                 %label
@@ -116,6 +119,7 @@
               Heeft
               %span.show_name_person_2
               weleens nek-of rugklachten? *
+              = question_icon_md(t("questions.explanations.double_mattress_two.neck_or_back_pain"))
             %ul.data-list-2
               %li
                 %label
@@ -140,6 +144,7 @@
               Wat is de lichaamsvorm van
               %span.show_name_person_1
               ? *
+              = question_icon_md(t("questions.explanations.double_mattress_two.body_shape"))
             %ul.data-list-2
               %li
                 %label
@@ -163,6 +168,7 @@
               Wat is de lichaamsvorm van
               %span.show_name_person_2
               ? *
+              = question_icon_md(t("questions.explanations.double_mattress_two.body_shape"))
             %ul.data-list-2
               %li
                 %label
@@ -188,6 +194,7 @@
               Heeft
               %span.show_name_person_1
               het vaak te koud of te warm in bed? *
+              = question_icon_md(t("questions.explanations.double_mattress_two.warm_sleeping"))
             %ul.data-list-2
               %li
                 %label
@@ -207,6 +214,7 @@
               Heeft
               %span.show_name_person_2
               het vaak te koud of te warm in bed? *
+              = question_icon_md(t("questions.explanations.double_mattress_two.warm_sleeping"))
             %ul.data-list-2
               %li
                 %label
@@ -228,6 +236,7 @@
               Heeft
               %span.show_name_person_1
               medische klachten? Zo ja, welke?
+              = question_icon_md(t("questions.explanations.double_mattress_two.diseases"))
           .col-md-8.col-md-offset-2
             %ul#terms.data-list
               %li
@@ -327,6 +336,7 @@
               Heeft
               %span.show_name_person_2
               medische klachten? Zo ja, welke?
+              = question_icon_md(t("questions.explanations.double_mattress_two.diseases"))
           .col-md-8.col-md-offset-2
             %ul#terms.data-list
               %li
@@ -465,6 +475,7 @@
               Hoe moet het matras van
               %span.show_name_person_1
               aanvoelen? *
+              = question_icon_md(t("questions.explanations.double_mattress_two.comfort"))
             %ul.data-list-2
               %li
                 %label
@@ -484,6 +495,7 @@
               Hoe moet het matras van
               %span.show_name_person_2
               aanvoelen? *
+              = question_icon_md(t("questions.explanations.double_mattress_two.comfort"))
             %ul.data-list-2
               %li
                 %label
@@ -501,7 +513,9 @@
         / end step
         .step.row#step_10_duo
           .col-md-12.col-md-offset-3
-            %h3 Kies een comfortcategorie voor jullie matrassen
+            %h3
+              Kies een comfortcategorie voor jullie matrassen
+              = question_icon_md(t("questions.explanations.double_mattress_two.category"))
             %ul.data-list-2
               %li.disable_on_diseases
                 %label
@@ -586,7 +600,9 @@
           / end step
         .step.row#step_11_duo
           .col-md-4.col-md-offset-4
-            %h3 Is jullie bedbodem verstelbaar?
+            %h3
+              Is jullie bedbodem verstelbaar?
+              = question_icon_md(t("questions.explanations.double_mattress_two.chassis"))
             %ul.data-list-2
               %li
                 %label
@@ -602,7 +618,9 @@
                   = f.radio_button :chassis, "Geen bodem", class: 'required check_radio'
         .step.row#step_12_duo
           .col-md-4.col-md-offset-4
-            %h3 Hoe willen jullie het matras hebben?
+            %h3
+              Hoe willen jullie het matras hebben?
+              = question_icon_md(t("questions.explanations.double_mattress_two.separation"))
             %ul.data-list-2
               %li
                 %label
@@ -615,9 +633,11 @@
 
         #complete.submit.step#step_13_duo
           %i.icon-check
-          %h3 Dit waren alle vragen, bekijk het resultaat door op de knop hieronder te klikken.
-          = f.submit 'Bekijk het resultaat..', class: 'btn btn-block btn-info submit', name: 'process', id: 'check_result_double_mattress_twos'
-        / end submit step
+          %h3
+            = t("questions.labels.confirmation")
+          = f.submit t("general.button.check_result"), class: 'btn btn-block btn-info submit', name: 'process', id: 'check_result_double_mattress_twos'
       #bottom-wizard
-        %button.backward{ name: "Vorige", type: "button"} Vorige
-        %button.forward{ name: "Volgende", type: "button"} Volgende
+        %button.backward{ name: "Vorige", type: "button"}
+          = t("general.button.previous")
+        %button.forward{ name: "Volgende", type: "button"}
+          = t("general.button.next")

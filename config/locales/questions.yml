@@ -1,6 +1,73 @@
 nl:
   questions:
+    introduce_yourself:
+      title: Stel jezelf eens voor
+      first_name: Voornaam
+      age: Leeftijd
+      weight: Gewicht in kilogrammen
+      length: Lengte in centimeters
+      male: Man
+      female: Vrouw
+    sleep_position:
+      title: Hoe slaap je normaal gesproken? *
+      back: Rug
+      side: Zij
+      stomach: Buik
+    neck_or_back_pain:
+      title: Heb je weleens nek-of rugklachten? *
+      neck_and_back: Ja, nekklachten en rugklachten
+      only_neck: Ja, alleen nekklachten
+      only_back: Ja, alleen rugklachten
+      no_complaints: Nee, geen klachten
+    body_shape:
+      title: Wat is je lichaamsvorm? *
+      broad_shoulders: Ik heb brede schouders
+      broad_hips: Ik heb brede heupen
+      broad_shoulders_and_hips: Ik heb brede schouders en heupen
+      none_of_the_above: Geen van bovenstaande
+    warm_sleeping:
+      title: Heb je het vaak te koud of te warm in bed? *
+      cold: Koud
+      warm: Warm
+      neither_warm_nor_cold: Niet warm, niet koud
+    diseases:
+      title: Heb je medische klachten? Zo ja, welke? *
+      nope: Nee
+      yeah: Ja
+    size:
+      title: Kies de breedte en lengte voor je matras *
+      width:
+        title: Breedte
+        80cm: 80cm
+        90cm: 90cm
+        100cm: 100cm
+        140cm: 140cm
+        160cm: 160cm
+        180cm: 180cm
+        200cm: 200cm
+      length:
+        title: Lengte
+        200cm: 200cm
+        210cm: 210cm
+        220cm: 220cm
+    comfort:
+      title: Hoe moet je matras aanvoelen? *
+      soft: Zacht
+      not_soft_not_hard: Niet hard, niet zacht
+      hard: Hard
+    category:
+      title: Kies een comfortcategorie voor je matras
+      budget: Budget (Redelijk comfort)
+      comfort: Comfort (Goed comfort)
+      premium: Premium (Beste comfort)
+    chassis:
+      title: Is je bedbodem verstelbaar? *
+      yeah: Ja
+      nope: Nee
+
     labels:
+      confirmation: Dit waren alle vragen, bekijk het resultaat door op de knop hieronder te klikken.
+
     explanations:
       mattress:
         name: Vul hier je voornaam in
@@ -12,7 +79,8 @@ nl:
         warm_sleeping: Heb je het vaak koud of warm in bed? Als je zweet en je je benen onder je dekens uitsteekt, dan heb je het te warm. Als je het snel koud hebt, gebruik je altijd dikke dekens.
         diseases: Heb jij last van medische klachten, bijvoorbeeld door reuma of een hernia? Geef dat hier aan. Deze vraag heeft geen betrekking op allergieën. Al onze matrassen zijn standaard antiallergisch. Als je alleen een huisstofmijtallergie hebt, kun je deze vraag dus met nee beantwoorden.
         comfort: "Heb je een voorkeur voor een matras dat zacht aanvoelt, of een matras dat hard aanvoelt? Let op: deze vraag heeft geen betrekking op de stevigheid van je matras, maar enkel op je voorkeur voor zachtheid."
-        category: Onze matrassen zijn verkrijgbaar in drie categorieën. Voor het beste comfort raden wij altijd een Premium-matras aan. Moet je rekening houden met je budget, kies dan een van de andere opties.
+        category: Onze matrassen zijn verkrijgbaar in drie categorieën. Voor het beste comfort raden wij altijd een Premium-matras aan. Moet je rekening houden met je budget, kies dan een van de andere opties. Heb je last van medische klachten? Dan kun je alleen voor een Premium-matras kiezen.
+        neck_or_back_pain: Geef hier aan of je weleens last hebt van nekpijn en/of rugpijn als je wakker wordt.
       double_mattress_one:
         name: Vul hier je voornaam in
         age:  Vul hier je leeftijd in
@@ -23,8 +91,9 @@ nl:
         warm_sleeping: Heb je het vaak koud of warm in bed? Als je zweet en je je benen onder je dekens uitsteekt, dan heb je het te warm. Als je het snel koud hebt, gebruik je altijd dikke dekens.
         diseases: Heb jij last van medische klachten, bijvoorbeeld door reuma of een hernia? Geef dat hier aan. Deze vraag heeft geen betrekking op allergieën. Al onze matrassen zijn standaard antiallergisch. Als je alleen een huisstofmijtallergie hebt, kun je deze vraag dus met nee beantwoorden.
         comfort: "Heb je een voorkeur voor een matras dat zacht aanvoelt, of een matras dat hard aanvoelt? Let op: deze vraag heeft geen betrekking op de stevigheid van je matras, maar enkel op je voorkeur voor zachtheid."
-        category: Onze matrassen zijn verkrijgbaar in drie categorieën. Voor het beste comfort raden wij altijd een Premium-matras aan. Moet je rekening houden met je budget, kies dan een van de andere opties.
+        category: Onze matrassen zijn verkrijgbaar in drie categorieën. Voor het beste comfort raden wij altijd een Premium-matras aan. Moet je rekening houden met je budget, kies dan een van de andere opties. Heb je last van medische klachten? Dan kun je alleen voor een Premium-matras kiezen.
         chassis: Sommige bedbodems zijn elektrisch verstelbaar. Deze maken gebruik van een motor die het voeteneinde en hoofdeinde kan laten bewegen. Heb jij zo’n elektrisch verstelbare bedbodem?
+        neck_or_back_pain: Geef hier aan of je weleens last hebt van nekpijn en/of rugpijn als je wakker wordt.
       double_mattress_two:
         name: Vul hier je voornaam in
         name2: Vul hier je voornaam in
@@ -39,5 +108,7 @@ nl:
         warm_sleeping: Heb je het vaak koud of warm in bed? Als je zweet en je je benen onder je dekens uitsteekt, dan heb je het te warm. Als je het snel koud hebt, gebruik je altijd dikke dekens.
         diseases: Heb jij last van medische klachten, bijvoorbeeld door reuma of een hernia? Geef dat hier aan. Deze vraag heeft geen betrekking op allergieën. Al onze matrassen zijn standaard antiallergisch. Als je alleen een huisstofmijtallergie hebt, kun je deze vraag dus met nee beantwoorden.
         comfort: "Heb je een voorkeur voor een matras dat zacht aanvoelt, of een matras dat hard aanvoelt? Let op: deze vraag heeft geen betrekking op de stevigheid van je matras, maar enkel op je voorkeur voor zachtheid."
-        category: Onze matrassen zijn verkrijgbaar in drie categorieën. Voor het beste comfort raden wij altijd een Premium-matras aan. Moet je rekening houden met je budget, kies dan een van de andere opties.
+        category: Onze matrassen zijn verkrijgbaar in drie categorieën. Voor het beste comfort raden wij altijd een Premium-matras aan. Moet je rekening houden met je budget, kies dan een van de andere opties. Heb je last van medische klachten? Dan kun je alleen voor een Premium-matras kiezen.
         chassis: Sommige bedbodems zijn elektrisch verstelbaar. Deze maken gebruik van een motor die het voeteneinde en hoofdeinde kan laten bewegen. Heb jij zo’n elektrisch verstelbare bedbodem?
+        neck_or_back_pain: Geef hier aan of je weleens last hebt van nekpijn en/of rugpijn als je wakker wordt.
+        separation: Jullie kunnen het door jullie gekozen formaat op twee manieren bestellen. Jullie kunnen kiezen voor twee éénpersoonsmatrassen, voor het beste persoonlijke comfort of voor één tweepersoonsmatras, voor de optimale mix van jullie persoonlijke matraseigenschappen.

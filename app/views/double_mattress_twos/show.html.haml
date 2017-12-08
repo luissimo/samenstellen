@@ -1,5 +1,4 @@
 %section#main.container
-  / Start Survey container
   #survey_container_result
     #middle-wizard-result
       .wrapper-v4
@@ -17,6 +16,8 @@
                           .box-title-small.text-center
                             = [t('results.titles.graphs'), " -"].join
                             = @double_mattress_two.name
+                            %span.question_label_icon_wrapper
+                              = question_icon_md(t("results.explanations.personalisation_duo"))
                           .text-content
                             .text-v4
                               %table.table
@@ -58,6 +59,8 @@
                                     %td.text-center
                                       Body Mass Index(BMI):
                                       %strong #{@bmi}
+                                      %span.question_label_icon_wrapper
+                                        = question_icon_md(t("results.explanations.bmi"))
                           %a.read_more{href: '#advies'} bekijk advies
                     .box-holder
                       .icon
@@ -65,6 +68,8 @@
                           .box-title-small.text-center
                             = [t('results.titles.graphs'), " -"].join
                             = @double_mattress_two.name2
+                            %span.question_label_icon_wrapper
+                              = question_icon_md(t("results.explanations.personalisation_duo"))
                           .text-content
                             .text-v4
                               %table.table
@@ -106,16 +111,18 @@
                                     %td.text-center
                                       Body Mass Index(BMI):
                                       %strong #{@bmi_2}
+                                      %span.question_label_icon_wrapper
+                                        = question_icon_md(t("results.explanations.bmi"))
                           %a.read_more{href: '#advies'} bekijk advies
               %li
                 %p.align-usps-2p
-                  = image_tag('persoonlijk.png', alt: 'Personalisatie')
+                  = image_tag('persoonlijk.png', alt: 'Persoonlijk comfort')
                   %span
                     = t('general.usp.title.comfort')
-                  = image_tag('bezorging.png', alt: 'Gratis bezorging')
+                  = image_tag('bezorging.png', alt: 'Gratis verzend- en ophaalservice')
                   %span
                     = t('general.usp.title.delivery')
-                  = image_tag('garantie.png', alt: '100 dagen proefslapen, niet goed, geld terug')
+                  = image_tag('garantie.png', alt: 'Niet goed, geld terug')
                   %span
                     = t('general.usp.title.money_back')
               %li
@@ -159,7 +166,7 @@
                 %li
                   .head-title-v4
                     Medische klachten
-                    %span{style: "text-transform: none !important;"}
+                    %span.question_label_icon_wrapper
                       = question_icon_md(t("results.explanations.diseases"))
                   .li-holder
                     .li-content
@@ -184,7 +191,7 @@
               %li
                 .head-title-v4
                   Comfort matras
-                  %span{style: "text-transform: none !important;"}
+                  %span.question_label_icon_wrapper
                     = question_icon_md(t("results.explanations.comfort"))
                 .li-holder
                   .li-content
@@ -202,7 +209,7 @@
               %li
                 .head-title-v4
                   Elasticiteit matras
-                  %span{style: "text-transform: none !important;"}
+                  %span.question_label_icon_wrapper
                     = question_icon_md(t("results.explanations.elasticity"))
                 .li-holder
                   .li-content
@@ -220,7 +227,7 @@
               %li
                 .head-title-v4
                   Stevigheid matras
-                  %span{style: "text-transform: none !important;"}
+                  %span.question_label_icon_wrapper
                     = question_icon_md(t("results.explanations.firmness"))
                 .li-holder
                   .li-content
@@ -238,7 +245,7 @@
               %li
                 .head-title-v4
                   Warmte-regulatie matras
-                  %span{style: "text-transform: none !important;"}
+                  %span.question_label_icon_wrapper
                     = question_icon_md(t("results.explanations.heat_regulation"))
                 .li-holder
                   .li-content

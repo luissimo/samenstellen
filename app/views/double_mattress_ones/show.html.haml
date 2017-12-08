@@ -15,6 +15,8 @@
                         .summary_box
                           .box-title-small.text-center
                             = t('results.titles.graphs')
+                            %span.question_label_icon_wrapper
+                              = question_icon_md(t("results.explanations.personalisation"))
                           .text-content
                             .text-v4
                               %table.table
@@ -56,8 +58,9 @@
                                     %td.text-center
                                       Je Body Mass Index(BMI) is:
                                       %strong #{@bmi}
+                                      %span.question_label_icon_wrapper
+                                        = question_icon_md(t("results.explanations.bmi"))
                           %a.read_more{href: '#advies'} bekijk advies
-
                     .box-holder
                       .icon
                         .summary_box
@@ -75,13 +78,13 @@
                             %br
                             %span{style: 'font-size: 12px; text-decoration:underline;'}= link_to 'Antwoorden wijzigen', 'javascript:history.go(-1);'
                       %p.align-usps
-                        = image_tag('persoonlijk.png', alt: 'Personalisatie', class: 'usp-description')
+                        = image_tag('persoonlijk.png', alt: 'Persoonlijk comfort', class: 'usp-description')
                         = t('general.usp.title.comfort')
                         %br
-                        = image_tag('bezorging.png', alt: 'Gratis bezorging', class: 'usp-description')
+                        = image_tag('bezorging.png', alt: 'Gratis verzend- en ophaalservice', class: 'usp-description')
                         = t('general.usp.title.delivery')
                         %br
-                        = image_tag('garantie.png', alt: '100 dagen proefslapen, niet goed, geld terug', class: 'usp-description')
+                        = image_tag('garantie.png', alt: 'Niet goed, geld terug', class: 'usp-description')
                         = t('general.usp.title.money_back')
 
                   .checkout_button.title-v4.text-center
@@ -101,7 +104,7 @@
                 %li
                   .head-title-v4
                     Medische klachten
-                    %span{style: "text-transform: none !important;"}
+                    %span.question_label_icon_wrapper
                       = question_icon_md(t("results.explanations.diseases"))
                   .li-holder
                     .li-content
@@ -115,7 +118,7 @@
               %li
                 .head-title-v4
                   Comfort matras
-                  %span{style: "text-transform: none !important;"}
+                  %span.question_label_icon_wrapper
                     = question_icon_md(t("results.explanations.comfort"))
                 .li-holder
                   .li-content
@@ -129,7 +132,7 @@
               %li
                 .head-title-v4
                   Elasticiteit matras
-                  %span{style: "text-transform: none !important;"}
+                  %span.question_label_icon_wrapper
                     = question_icon_md(t("results.explanations.elasticity"))
                 .li-holder
                   .li-content
@@ -143,7 +146,7 @@
               %li
                 .head-title-v4
                   Stevigheid matras
-                  %span{style: "text-transform: none !important;"}
+                  %span.question_label_icon_wrapper
                     = question_icon_md(t("results.explanations.firmness"))
                 .li-holder
                   .li-content
@@ -157,7 +160,7 @@
               %li
                 .head-title-v4
                   Warmte-regulatie matras
-                  %span{style: "text-transform: none !important;"}
+                  %span.question_label_icon_wrapper
                     = question_icon_md(t("results.explanations.heat_regulation"))
                 .li-holder
                   .li-content

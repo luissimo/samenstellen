@@ -15,6 +15,8 @@
                         .summary_box
                           .box-title-small.text-center
                             = t('results.titles.graphs')
+                            %span.question_label_icon_wrapper
+                              = question_icon_md(t("results.explanations.personalisation"))
                           .text-content
                             .text-v4
                               %table.table
@@ -56,7 +58,8 @@
                                     %td.text-center
                                       Je Body Mass Index(BMI) is:
                                       %strong #{@bmi}
-
+                                      %span.question_label_icon_wrapper
+                                        = question_icon_md(t("results.explanations.bmi"))
                           %a.read_more{href: '#advies'} bekijk advies
                     .box-holder
                       .icon
@@ -101,7 +104,7 @@
                 %li
                   .head-title-v4
                     Medische klachten
-                    %span{style: "text-transform: none !important;"}
+                    %span.question_label_icon_wrapper
                       = question_icon_md(t("results.explanations.diseases"))
                   .li-holder
                     .li-content
@@ -115,7 +118,7 @@
               %li
                 .head-title-v4
                   Comfort matras
-                  %span{style: "text-transform: none !important;"}
+                  %span.question_label_icon_wrapper
                     = question_icon_md(t("results.explanations.comfort"))
                 .li-holder
                   .li-content
@@ -129,7 +132,7 @@
               %li
                 .head-title-v4
                   Elasticiteit matras
-                  %span{style: "text-transform: none !important;"}
+                  %span.question_label_icon_wrapper
                     = question_icon_md(t("results.explanations.elasticity"))
                 .li-holder
                   .li-content
@@ -143,7 +146,7 @@
               %li
                 .head-title-v4
                   Stevigheid matras
-                  %span{style: "text-transform: none !important;"}
+                  %span.question_label_icon_wrapper
                     = question_icon_md(t("results.explanations.firmness"))
                 .li-holder
                   .li-content
@@ -157,7 +160,7 @@
               %li
                 .head-title-v4
                   Warmte-regulatie matras
-                  %span{style: "text-transform: none !important;"}
+                  %span.question_label_icon_wrapper
                     = question_icon_md(t("results.explanations.heat_regulation"))
                 .li-holder
                   .li-content

@@ -16,6 +16,9 @@ nl:
       2_persons: "2 Personen"
       one_person: Eenpersoons
       two_persons: Tweepersoons
+      previous: Vorige
+      next: Volgende
+      check_result: Bekijk het resultaat..
     home:
       block_1:
         header: Stel nu je eigen matras samen
@@ -66,3 +69,4 @@ nl:
         cookie_policy: Cookiebeleid
       social_media:
         facebook: Facebook
+    progress: Voortgang

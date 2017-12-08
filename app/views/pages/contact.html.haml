@@ -33,6 +33,8 @@
                               %li= f.text_field :subject, class: 'required form-control'
                               %h5{style: "font-weight: initial"} Bericht*
                               %li= f.text_area :message, class: 'required form-control', style: "width: 100%; height: 100px"
+                              .hidden
+                                = f.text_area :nickname, hint: 'leave this field blank'
                               %li= f.submit 'Verstuur bericht', class: 'btn btn-block btn-info submit'
                       %br
                       .col-md-6.text-center

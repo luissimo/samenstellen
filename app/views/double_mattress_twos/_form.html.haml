@@ -1,5 +1,4 @@
 %section#main.container
-  / Start Survey container
   #survey_container
     #top-wizard
       %strong
@@ -7,7 +6,6 @@
         %span#location
       #progressbar
       .shadow
-    / end top-wizard
     = form_for @double_mattress_two, url: bestellen_tweepersoons_duo_post_path do |f|
       #middle-wizard
         .step.row#step_1_duo
@@ -32,7 +30,6 @@
                 %label.label_gender
                   Vrouw
                   = f.radio_button :gender, 'Vrouw', class: 'required check_radio'
-          / end col-md-6
           .col-md-6
             %h2 Persoon 2
             %ul.data-list
@@ -621,10 +618,6 @@
           %h3 Dit waren alle vragen, bekijk het resultaat door op de knop hieronder te klikken.
           = f.submit 'Bekijk het resultaat..', class: 'btn btn-block btn-info submit', name: 'process', id: 'check_result_double_mattress_twos'
         / end submit step
-      / end middle-wizard
       #bottom-wizard
         %button.backward{ name: "Vorige", type: "button"} Vorige
         %button.forward{ name: "Volgende", type: "button"} Volgende
-      / end bottom-wizard
-  / end Survey container
-/ end section main container

@@ -5,31 +5,25 @@ nl:
     last_name: Achternaam*
     phone_number: Telefoonnummer*
     email: Email*
-
     title_address: Adresgegevens
     street_and_house_number: Straatnaam + Huisnummer*
     house_number_addition: Huisnummer toevoeging
     zip_code: Postcode*
     city: Stad*
-
-    title_address_ship: Verzendadres
-    street_and_house_number_ship: Straatnaam + Huisnummer
-    house_number_addition_ship: Huisnummer toevoeging
-    zip_code_ship: Postcode
-    city_ship: Stad
-
+    ship:
+      ship_to_different_address: Verzenden naar een ander adres?
+      title_address: Verzendadres
+      street_and_house_number: Straatnaam + Huisnummer
+      house_number_addition: Huisnummer toevoeging
+      zip_code: Postcode
+      city: Stad
     title_information: Informatie
     retour_old_mattress: Wil je dat wij je oude matras(sen) meenemen?
     living_floor: Woon je op de begane grond?
     floor: Op welke verdieping woon je?
-    lift: Is er een lift aanwezig?
-
+    elevator: Is er een lift aanwezig?
     title_payment: Betaalmethode
     ideal: iDeal
     50_ideal_50_pin: 50% met ideal en 50% pinnen aan huis
     comment: Extra bericht of notitie (optioneel)
-
-    agree_toa:
-      title: "Ik heb mijn bestelling en gegevens gecontroleerd en ga akkoord met de <a href='/algemene-voorwaarden' target='_blank'>algemene voorwaarden</a>"
-      yeah: Ja
-      nope: Nee
+    agree_toa: "Ik heb mijn bestelling en gegevens gecontroleerd en ga akkoord met de <a href='/algemene-voorwaarden' target='_blank'>algemene voorwaarden</a>"

@@ -83,8 +83,8 @@ class CustomersController < ApplicationController
       @page_title = t('bedankt.gelukt.title')
       @meta_title = t('bedankt.gelukt.meta_title')
       @meta_description = t('bedankt.gelukt.meta_description')
-      @title = "Bedankt voor je bestelling!"
-      @explanation = "Je bestelling is in goede orde ontvangen. <br> We gaan meteen aan de slag om je bestelling verzendklaar te maken.<br><br> Je kunt dit venster sluiten.".html_safe
+      @title = t("pages.bedankt.success.title")
+      @explanation = t("pages.bedankt.success.explanation").html_safe
 
       OrderMailer.order_success(details: session[:order]).deliver_now! if session[:order][:email]
       OrderMailer.order_received(details: session[:order], answers: session[:answers]).deliver_now if session[:order] && session[:answers]
@@ -94,8 +94,8 @@ class CustomersController < ApplicationController
       @page_title = t('bedankt.mislukt.title')
       @meta_title = t('bedankt.mislukt.meta_title')
       @meta_description = t('bedankt.mislukt.meta_description')
-      @title = "Er is iets misgegaan met de betaling."
-      @explanation = "Je betaling is niet gelukt, probeer het later nogmaals."
+      @title = t("pages.bedankt.failure.title")
+      @explanation = t("pages.bedankt.failure.explanation")
       reset_session
     end
   end

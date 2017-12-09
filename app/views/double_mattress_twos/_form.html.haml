@@ -9,233 +9,211 @@
     = form_for @double_mattress_two, url: bestellen_tweepersoons_duo_post_path do |f|
       #middle-wizard
         .step.row#step_1_duo
-          %h2.col-md-12.text-center Wie slapen op deze matrassen?
+          %h2.col-md-12.text-center= t("questions.introduce_yourself.title_duo")
           %br/
           .col-md-6
-            %h2 Persoon 1
+            %h2= t("questions.introduce_yourself.person_1")
             %ul.data-list
-              %label Voornaam
+              %label= t("questions.introduce_yourself.first_name")
               %li= f.text_field :name, class: 'required form-control name_person_1', placeholder: 'Voornaam'
-              %label Leeftijd
+              %label= t("questions.introduce_yourself.age")
               %li= f.number_field :age, class: 'required form-control', placeholder: 'Leeftijd', maxlength: 3
-              %label Gewicht in kilogrammen
+              %label= t("questions.introduce_yourself.weight")
               %li= f.number_field :weight, class: 'required form-control', placeholder: 'Gewicht in kg', maxlength: 3
-              %label Lengte in centimeters
+              %label= t("questions.introduce_yourself.length")
               %li= f.number_field :length, class: 'required form-control', placeholder: 'Lengte in cm', maxlength: 3
               %li
                 %label.label_gender
-                  Man
+                  = t("questions.introduce_yourself.male")
                   = f.radio_button :gender, 'Man', class: 'required check_radio'
               %li
                 %label.label_gender
-                  Vrouw
+                  = t("questions.introduce_yourself.female")
                   = f.radio_button :gender, 'Vrouw', class: 'required check_radio'
           .col-md-6
-            %h2 Persoon 2
+            %h2= t("questions.introduce_yourself.person_2")
             %ul.data-list
-              %label Voornaam
+              %label= t("questions.introduce_yourself.first_name")
               %li= f.text_field :name2, class: 'required form-control name_person_2', placeholder: 'Voornaam'
-              %label Leeftijd
+              %label= t("questions.introduce_yourself.age")
               %li= f.number_field :age2, class: 'required form-control', placeholder: 'Leeftijd', maxlength: 3
-              %label Gewicht in kilogrammen
+              %label= t("questions.introduce_yourself.weight")
               %li= f.number_field :weight2, class: 'required form-control', placeholder: 'Gewicht in kg', maxlength: 3
-              %label Lengte in centimeters
+              %label= t("questions.introduce_yourself.length")
               %li= f.number_field :length2, class: 'required form-control', placeholder: 'Lengte in cm', maxlength: 3
               %li
                 %label.label_gender
-                  Man
+                  = t("questions.introduce_yourself.male")
                   = f.radio_button :gender2, 'Man', class: 'required check_radio'
               %li
                 %label.label_gender
-                  Vrouw
+                  = t("questions.introduce_yourself.female")
                   = f.radio_button :gender2, 'Vrouw', class: 'required check_radio'
           %br/
           %br/
         .step.row#step_2_duo
           .col-md-6
             %h3
-              Hoe slaapt
-              %span.show_name_person_1
-              normaal gesproken? *
+              = t("questions.duo.sleep_position1").html_safe
               = question_icon_md(t("questions.explanations.double_mattress_two.sleep_position"))
             %ul.data-list-2
               %li
                 %label
-                  Rug
+                  = t("questions.sleep_position.back")
                   = f.radio_button :sleep_position, 'Rug', class: 'required check_radio'
               %li
                 %label
-                  Zij
+                  = t("questions.sleep_position.side")
                   = f.radio_button :sleep_position, 'Zij', class: 'required check_radio'
               %li
                 %label
-                  Buik
+                  = t("questions.sleep_position.stomach")
                   = f.radio_button :sleep_position, 'Buik', class: 'required check_radio'
           .col-md-6
             %h3
-              Hoe slaapt
-              %span.show_name_person_2
-              normaal gesproken? *
+              = t("questions.duo.sleep_position2").html_safe
               = question_icon_md(t("questions.explanations.double_mattress_two.sleep_position"))
             %ul.data-list-2
               %li
                 %label
-                  Rug
+                  = t("questions.sleep_position.back")
                   = f.radio_button :sleep_position2, 'Rug', class: 'required check_radio'
               %li
                 %label
-                  Zij
+                  = t("questions.sleep_position.side")
                   = f.radio_button :sleep_position2, 'Zij', class: 'required check_radio'
               %li
                 %label
-                  Buik
+                  = t("questions.sleep_position.stomach")
                   = f.radio_button :sleep_position2, 'Buik', class: 'required check_radio'
         .step.row#step_3_duo
           .col-md-6
             %h3
-              Heeft
-              %span.show_name_person_1
-              weleens nek-of rugklachten? *
+              = t("questions.duo.neck_or_back_pain1").html_safe
               = question_icon_md(t("questions.explanations.double_mattress_two.neck_or_back_pain"))
             %ul.data-list-2
               %li
                 %label
-                  Ja, nekklachten en rugklachten
+                  = t("questions.neck_or_back_pain.neck_and_back")
                   = f.radio_button :neck_or_back_pain, 'Ja, nekklachten en rugklachten', class: 'required check_radio'
               %li
                 %label
-                  Ja, alleen nekklachten
+                  = t("questions.neck_or_back_pain.only_neck")
                   = f.radio_button :neck_or_back_pain, 'Ja, alleen nekklachten', class: 'required check_radio'
               %li
                 %label
-                  Ja, alleen rugklachten
+                  = t("questions.neck_or_back_pain.only_back")
                   = f.radio_button :neck_or_back_pain, 'Ja, alleen rugklachten', class: 'required check_radio'
               %li
                 %label
-                  Nee, geen klachten
+                  = t("questions.neck_or_back_pain.no_complaints")
                   = f.radio_button :neck_or_back_pain, 'Nee, geen klachten', class: 'required check_radio'
           .col-md-6
             %h3
-              Heeft
-              %span.show_name_person_2
-              weleens nek-of rugklachten? *
+              = t("questions.duo.neck_or_back_pain2").html_safe
               = question_icon_md(t("questions.explanations.double_mattress_two.neck_or_back_pain"))
             %ul.data-list-2
               %li
                 %label
-                  Ja, nekklachten en rugklachten
+                  = t("questions.neck_or_back_pain.neck_and_back")
                   = f.radio_button :neck_or_back_pain2, 'Ja, nekklachten en rugklachten', class: 'required check_radio'
               %li
                 %label
-                  Ja, alleen nekklachten
+                  = t("questions.neck_or_back_pain.only_neck")
                   = f.radio_button :neck_or_back_pain2, 'Ja, alleen nekklachten', class: 'required check_radio'
               %li
                 %label
-                  Ja, alleen rugklachten
+                  = t("questions.neck_or_back_pain.only_back")
                   = f.radio_button :neck_or_back_pain2, 'Ja, alleen rugklachten', class: 'required check_radio'
               %li
                 %label
-                  Nee, geen klachten
+                  = t("questions.neck_or_back_pain.no_complaints")
                   = f.radio_button :neck_or_back_pain2, 'Nee, geen klachten', class: 'required check_radio'
         / end step
         .step.row#step_4_duo
           .col-md-6
             %h3
-              Wat is de lichaamsvorm van
-              %span.show_name_person_1
-              ? *
+              = t("questions.duo.body_shape.person_1").html_safe
               = question_icon_md(t("questions.explanations.double_mattress_two.body_shape"))
             %ul.data-list-2
               %li
                 %label
-                  Brede schouders
+                  = t("questions.duo.body_shape.broad_shoulders")
                   = f.radio_button :body_shape, 'Brede schouders', class: 'required check_radio'
               %li
                 %label
-                  Brede heupen
+                  = t("questions.duo.body_shape.broad_hips")
                   = f.radio_button :body_shape, 'Brede heupen', class: 'required check_radio'
               %li
                 %label
-                  Brede schouders en heupen
+                  = t("questions.duo.body_shape.broad_shoulders_and_hips")
                   = f.radio_button :body_shape, 'Brede schouders en heupen', class: 'required check_radio'
               %li
                 %label
-                  Geen van bovenstaande
+                  = t("questions.duo.body_shape.none_of_the_above")
                   = f.radio_button :body_shape, 'Geen van bovenstaande', class: 'required check_radio'
-
           .col-md-6
             %h3
-              Wat is de lichaamsvorm van
-              %span.show_name_person_2
-              ? *
+              = t("questions.duo.body_shape.person_2").html_safe
               = question_icon_md(t("questions.explanations.double_mattress_two.body_shape"))
             %ul.data-list-2
               %li
                 %label
-                  Brede schouders
+                  = t("questions.duo.body_shape.broad_shoulders")
                   = f.radio_button :body_shape2, 'Brede schouders', class: 'required check_radio'
               %li
                 %label
-                  Brede heupen
+                  = t("questions.duo.body_shape.broad_hips")
                   = f.radio_button :body_shape2, 'Brede heupen', class: 'required check_radio'
               %li
                 %label
-                  Brede schouders en heupen
+                  = t("questions.duo.body_shape.broad_shoulders_and_hips")
                   = f.radio_button :body_shape2, 'Brede schouders en heupen', class: 'required check_radio'
               %li
                 %label
-                  Geen van bovenstaande
+                  = t("questions.duo.body_shape.none_of_the_above")
                   = f.radio_button :body_shape2, 'Geen van bovenstaande', class: 'required check_radio'
-
         / end step
         .step.row#step_5_duo
           .col-md-6
             %h3
-              Heeft
-              %span.show_name_person_1
-              het vaak te koud of te warm in bed? *
+              = t("questions.duo.warm_sleeping1").html_safe
               = question_icon_md(t("questions.explanations.double_mattress_two.warm_sleeping"))
             %ul.data-list-2
               %li
                 %label
-                  Koud
+                  = t("questions.warm_sleeping.cold")
                   = f.radio_button :warm_sleeping, 'Koud', class: 'required check_radio'
               %li
                 %label
-                  Warm
+                  = t("questions.warm_sleeping.warm")
                   = f.radio_button :warm_sleeping, 'Warm', class: 'required check_radio'
               %li
                 %label
-                  Niet warm, niet koud
+                  = t("questions.warm_sleeping.not_warm_not_cold")
                   = f.radio_button :warm_sleeping, 'Niet warm, niet koud', class: 'required check_radio'
-
           .col-md-6
             %h3
-              Heeft
-              %span.show_name_person_2
-              het vaak te koud of te warm in bed? *
+              = t("questions.duo.warm_sleeping2").html_safe
               = question_icon_md(t("questions.explanations.double_mattress_two.warm_sleeping"))
             %ul.data-list-2
               %li
                 %label
-                  Koud
+                  = t("questions.warm_sleeping.cold")
                   = f.radio_button :warm_sleeping2, 'Koud', class: 'required check_radio'
               %li
                 %label
-                  Warm
+                  = t("questions.warm_sleeping.warm")
                   = f.radio_button :warm_sleeping2, 'Warm', class: 'required check_radio'
               %li
                 %label
-                  Niet warm, niet koud
+                  = t("questions.warm_sleeping.not_warm_not_cold")
                   = f.radio_button :warm_sleeping2, 'Niet warm, niet koud', class: 'required check_radio'
-
         / end step
         .step.row#step_6_duo
           .col-md-8.col-md-offset-3
             %h3
-              Heeft
-              %span.show_name_person_1
-              medische klachten? Zo ja, welke?
+              = t("questions.duo.diseases1").html_safe
               = question_icon_md(t("questions.explanations.double_mattress_two.diseases"))
           .col-md-8.col-md-offset-2
             %ul#terms.data-list
@@ -243,12 +221,11 @@
                 %label.switch-light.switch-ios
                   = f.check_box :diseases, { name: "double_mattress_two[diseases][]", class: "fix_ie8 show_diseases" }, nil, nil
                   %span
-                    %span.ie8_hide Nee
-                    %span Ja
+                    %span.ie8_hide= t("general.nope")
+                    %span= t("general.yeah")
                   %a
             %br/
             %br/
-
           .col-md-12.diseases_options
             %ul.data-list-2
               .col-md-4
@@ -328,14 +305,11 @@
                   %label
                     Een andere medische klacht die hier niet tussen staat
                     = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Een andere medische klacht die hier niet tussen staat", nil
-
         / end step
         .step.row#step_7_duo
           .col-md-8.col-md-offset-3
             %h3
-              Heeft
-              %span.show_name_person_2
-              medische klachten? Zo ja, welke?
+              = t("questions.duo.diseases2").html_safe
               = question_icon_md(t("questions.explanations.double_mattress_two.diseases"))
           .col-md-8.col-md-offset-2
             %ul#terms.data-list
@@ -343,12 +317,11 @@
                 %label.switch-light.switch-ios
                   = f.check_box :diseases2, { name: "double_mattress_two[diseases2][]", class: "fix_ie8 show_diseases_2" }, nil, nil
                   %span
-                    %span.ie8_hide Nee
-                    %span Ja
+                    %span.ie8_hide= t("general.nope")
+                    %span= t("general.yeah")
                   %a
             %br/
             %br/
-
           .col-md-12.diseases_options_2
             %ul.data-list-2
               .col-md-4
@@ -428,106 +401,98 @@
                   %label
                     Een andere medische klacht die hier niet tussen staat
                     = f.check_box :diseases2, { multiple: true, class: 'required check_radio' }, "Een andere medische klacht die hier niet tussen staat", nil
-
         / end step
         .step.row#step_8_duo
           .col-md-6.col-md-offset-3
-            %h3 Kies de gezamenlijke breedte en lengte van jullie matrassen
+            %h3= t("questions.duo.size")
             .col-md-4.col-md-offset-1
               %ul.data-list-2
                 %h4 Breedte
                 %li
                   %label
-                    140cm
+                    = t("questions.size.width.140cm")
                     = f.radio_button :mattress_width, '140cm', class: 'required check_radio'
                 %li
                   %label
-                    160cm
+                    = t("questions.size.width.160cm")
                     = f.radio_button :mattress_width, '160cm', class: 'required check_radio'
                 %li
                   %label
-                    180cm
+                    = t("questions.size.width.180cm")
                     = f.radio_button :mattress_width, '180cm', class: 'required check_radio'
                 %li
                   %label
-                    200cm
+                    = t("questions.size.width.200cm")
                     = f.radio_button :mattress_width, '200cm', class: 'required check_radio'
             .col-md-4.col-md-offset-1
               %ul.data-list-2
                 %h4 Lengte
                 %li
                   %label
-                    200cm
+                    = t("questions.size.length.200cm")
                     = f.radio_button :mattress_length, '200cm', class: 'required check_radio'
                 %li
                   %label
-                    210cm
+                    = t("questions.size.length.210cm")
                     = f.radio_button :mattress_length, '210cm', class: 'required check_radio'
                 %li
                   %label
-                    220cm
+                    = t("questions.size.length.220cm")
                     = f.radio_button :mattress_length, '220cm', class: 'required check_radio'
-
         / end step
         .step.row#step_9_duo
           .col-md-6
             %h3
-              Hoe moet het matras van
-              %span.show_name_person_1
-              aanvoelen? *
+              = t("questions.duo.comfort1").html_safe
               = question_icon_md(t("questions.explanations.double_mattress_two.comfort"))
             %ul.data-list-2
               %li
                 %label
-                  Zacht
+                  = t("questions.comfort.soft")
                   = f.radio_button :comfort, 'Zacht', class: 'required check_radio'
               %li
                 %label
-                  Niet hard, niet zacht
+                  = t("questions.comfort.not_soft_not_hard")
                   = f.radio_button :comfort, 'Niet hard, niet zacht', class: 'required check_radio'
               %li
                 %label
                   Hard
                   = f.radio_button :comfort, 'Hard', class: 'required check_radio'
-
           .col-md-6
             %h3
-              Hoe moet het matras van
-              %span.show_name_person_2
-              aanvoelen? *
+              = t("questions.duo.comfort2").html_safe
               = question_icon_md(t("questions.explanations.double_mattress_two.comfort"))
             %ul.data-list-2
               %li
                 %label
-                  Zacht
+                  = t("questions.comfort.soft")
                   = f.radio_button :comfort2, 'Zacht', class: 'required check_radio'
               %li
                 %label
-                  Niet hard, niet zacht
+                  = t("questions.comfort.not_soft_not_hard")
                   = f.radio_button :comfort2, 'Niet hard, niet zacht', class: 'required check_radio'
               %li
                 %label
-                  Hard
+                  = t("questions.comfort.hard")
                   = f.radio_button :comfort2, 'Hard', class: 'required check_radio'
-
         / end step
         .step.row#step_10_duo
           .col-md-12.col-md-offset-3
             %h3
-              Kies een comfortcategorie voor jullie matrassen
+              = t("questions.duo.category")
               = question_icon_md(t("questions.explanations.double_mattress_two.category"))
             %ul.data-list-2
               %li.disable_on_diseases
                 %label
-                  Budget (Redelijk comfort)
+                  = t("questions.category.budget")
                   = f.radio_button :category, 'Budget', class: 'required check_radio disable_on_diseases'
               %li.disable_on_diseases
                 %label
-                  Comfort (Goed comfort)
+                  = t("questions.category.comfort")
                   = f.radio_button :category, 'Comfort', class: 'required check_radio disable_on_diseases'
               %li
                 %label
-                  Premium (Beste comfort)
+                  = t("questions.category.premium")
                   = f.radio_button :category, 'Premium', class: 'required check_radio'
           %br/
           .col-md-12
@@ -535,102 +500,95 @@
               %thead
                 %tr
                   %th
-                    Budget
+                    = t("general.category_table.header.budget")
                   %th
-                    Comfort
+                    = t("general.category_table.header.comfort")
                   %th
-                    Premium
+                    = t("general.category_table.header.premium")
               %tbody
                 %tr
                   %td
-                    2 jaar garantie
+                    = t("general.category_table.body.budget.one")
                   %td
-                    5 jaar garantie
+                    = t("general.category_table.body.comfort.one")
                   %td
-                    10 jaar garantie
+                    = t("general.category_table.body.premium.one")
                 %tr
                   %td
-                    Redelijke kwaliteit materialen
-                    (bijv. HR40 schuim)
+                    = t("general.category_table.body.budget.two")
                   %td
-                    Goede kwaliteit materialen
-                    (bijv. HR50 schuim)
+                    = t("general.category_table.body.comfort.two")
                   %td
-                    Beste kwaliteit materialen
-                    (bijv. HR65 schuim)
+                    = t("general.category_table.body.premium.two")
                 %tr
                   %td
-                    Totale hoogte ca. 30cm
+                    = t("general.category_table.body.budget.three")
                   %td
-                    Totale hoogte ca. 36cm
+                    = t("general.category_table.body.comfort.three")
                   %td
-                    Totale hoogte ca. 41cm
+                    = t("general.category_table.body.premium.three")
                 %tr
                   %td
-                    LGA-gecertificeerd
-                    (schadestofvrij)
+                    = t("general.category_table.body.budget.four")
                   %td
-                    LGA-gecertificeerd
-                    (schadestofvrij)
+                    = t("general.category_table.body.comfort.four")
                   %td
-                    LGA-gecertificeerd
-                    (schadestofvrij)
+                    = t("general.category_table.body.premium.four")
                 %tr
                   %td
-                    4 cm. topdekmatras
+                    = t("general.category_table.body.budget.five")
                   %td
-                    6 cm. topdekmatras
+                    = t("general.category_table.body.comfort.five")
                   %td
-                    6 cm. topdekmatras
+                    = t("general.category_table.body.premium.five")
                 %tr
                   %td
                   %td
                   %td
-                    Medisch gecertificeerd
+                    = t("general.category_table.body.premium.six")
                 %tr
                   %td
                   %td
                   %td
-                    Ventilerende band
+                    = t("general.category_table.body.premium.seven")
                 %tr
                   %td
                   %td
                   %td
-                    Emissieneutraal
+                    = t("general.category_table.body.premium.eight")
           / end step
         .step.row#step_11_duo
           .col-md-4.col-md-offset-4
             %h3
-              Is jullie bedbodem verstelbaar?
+              = t("questions.chassis.title_duo")
               = question_icon_md(t("questions.explanations.double_mattress_two.chassis"))
             %ul.data-list-2
               %li
                 %label
-                  Ja
+                  = t("general.yeah")
                   = f.radio_button :chassis, 'Ja', class: 'required check_radio'
               %li
                 %label
-                  Nee
+                  = t("general.nope")
                   = f.radio_button :chassis, 'Nee', class: 'required check_radio'
               %li
                 %label
-                  Wij hebben nog geen bodem
+                  = t("questions.chassis.no_bottom")
                   = f.radio_button :chassis, "Geen bodem", class: 'required check_radio'
         .step.row#step_12_duo
           .col-md-4.col-md-offset-4
             %h3
-              Hoe willen jullie het matras hebben?
+              = t("questions.duo.separation.title")
               = question_icon_md(t("questions.explanations.double_mattress_two.separation"))
             %ul.data-list-2
               %li
                 %label
-                  Twee eenpersoonsmatrassen
+                  = t("questions.duo.separation.two_solo")
                   = f.radio_button :separation, 'Twee eenpersoonsmatrassen', class: 'required check_radio'
               %li
                 %label
-                  Een tweepersoonsmatras
+                  = t("questions.duo.separation.one_duo")
                   = f.radio_button :separation, 'Een tweepersoonsmatras', class: 'required check_radio'
-
         #complete.submit.step#step_13_duo
           %i.icon-check
           %h3

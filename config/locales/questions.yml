@@ -2,6 +2,9 @@ nl:
   questions:
     introduce_yourself:
       title: Stel jezelf eens voor
+      title_duo: Wie slapen op deze matrassen?
+      person_1: Persoon 1
+      person_2: Persoon 2
       first_name: Voornaam
       age: Leeftijd
       weight: Gewicht in kilogrammen
@@ -29,11 +32,9 @@ nl:
       title: Heb je het vaak te koud of te warm in bed? *
       cold: Koud
       warm: Warm
-      neither_warm_nor_cold: Niet warm, niet koud
+      not_warm_not_cold: Niet warm, niet koud
     diseases:
       title: Heb je medische klachten? Zo ja, welke? *
-      nope: Nee
-      yeah: Ja
     size:
       title: Kies de breedte en lengte voor je matras *
       width:
@@ -62,12 +63,35 @@ nl:
       premium: Premium (Beste comfort)
     chassis:
       title: Is je bedbodem verstelbaar? *
-      yeah: Ja
-      nope: Nee
+      title_duo: Is jullie bedbodem verstelbaar? *
+      no_bottom: Wij hebben nog geen bedbodem
+    duo:
+      sleep_position1: "Hoe slaapt <span class='show_name_person_1'></span> normaal gesproken? *"
+      sleep_position2: "Hoe slaapt <span class='show_name_person_2'></span> normaal gesproken? *"
+      neck_or_back_pain1: "Heeft <span class='show_name_person_1'></span> weleens nek-of rugklachten? *"
+      neck_or_back_pain2: "Heeft <span class='show_name_person_2'></span> weleens nek-of rugklachten? *"
+      body_shape:
+        person_1: "Wat is de lichaamsvorm van <span class='show_name_person_1'></span>? *"
+        person_2: "Wat is de lichaamsvorm van <span class='show_name_person_2'></span>? *"
+        broad_shoulders: Brede schouders
+        broad_hips: Brede heupen
+        broad_shoulders_and_hips: Brede schouders en heupen
+        none_of_the_above: Geen van bovenstaande
+      warm_sleeping1: "Heeft <span class='show_name_person_1'></span> het vaak te koud of te warm in bed? *"
+      warm_sleeping2: "Heeft <span class='show_name_person_2'></span> het vaak te koud of te warm in bed? *"
+      diseases1: "Heeft <span class='show_name_person_1'></span> medische klachten? Zo ja, welke? * "
+      diseases2: "Heeft <span class='show_name_person_2'></span> medische klachten? Zo ja, welke? *"
+      size: Kies de gezamenlijke breedte en lengte van jullie matras(sen) *
+      comfort1: "Hoe moet het matras van <span class='show_name_person_1'></span> aanvoelen? *"
+      comfort2: "Hoe moet het matras van <span class='show_name_person_2'></span> aanvoelen? *"
+      category: Kies een comfortcategorie voor jullie matras(sen) *
+      separation:
+        title: Hoe willen jullie het matras hebben?
+        two_solo: Twee eenpersoonsmatrassen
+        one_duo: Een tweepersoonsmatras
 
     labels:
       confirmation: Dit waren alle vragen, bekijk het resultaat door op de knop hieronder te klikken.
-
     explanations:
       mattress:
         name: Vul hier je voornaam in

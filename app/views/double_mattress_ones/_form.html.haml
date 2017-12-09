@@ -123,7 +123,7 @@
                   = f.radio_button :warm_sleeping, 'Warm', class: 'required check_radio'
               %li
                 %label
-                  = t("questions.warm_sleeping.neither_warm_nor_cold")
+                  = t("questions.warm_sleeping.not_warm_not_cold")
                   = f.radio_button :warm_sleeping, 'Niet warm, niet koud', class: 'required check_radio'
         / end step
         .step.row#step_6_solo
@@ -138,8 +138,8 @@
                 %label.switch-light.switch-ios
                   = f.check_box :diseases, { name: "double_mattress_one[diseases][]", class: "fix_ie8 show_diseases" }, nil, nil
                   %span
-                    %span.ie8_hide= t("questions.diseases.nope")
-                    %span= t("questions.diseases.yeah")
+                    %span.ie8_hide= t("general.nope")
+                    %span= t("general.yeah")
                   %a
             %br/
             %br/
@@ -308,68 +308,62 @@
               %thead
                 %tr
                   %th
-                    Budget
+                    = t("general.category_table.header.budget")
                   %th
-                    Comfort
+                    = t("general.category_table.header.comfort")
                   %th
-                    Premium
+                    = t("general.category_table.header.premium")
               %tbody
                 %tr
                   %td
-                    2 jaar garantie
+                    = t("general.category_table.body.budget.one")
                   %td
-                    5 jaar garantie
+                    = t("general.category_table.body.comfort.one")
                   %td
-                    10 jaar garantie
+                    = t("general.category_table.body.premium.one")
                 %tr
                   %td
-                    Redelijke kwaliteit materialen
-                    (bijv. HR40 schuim)
+                    = t("general.category_table.body.budget.two")
                   %td
-                    Goede kwaliteit materialen
-                    (bijv. HR50 schuim)
+                    = t("general.category_table.body.comfort.two")
                   %td
-                    Beste kwaliteit materialen
-                    (bijv. HR65 schuim)
+                    = t("general.category_table.body.premium.two")
                 %tr
                   %td
-                    Totale hoogte ca. 30cm
+                    = t("general.category_table.body.budget.three")
                   %td
-                    Totale hoogte ca. 36cm
+                    = t("general.category_table.body.comfort.three")
                   %td
-                    Totale hoogte ca. 41cm
+                    = t("general.category_table.body.premium.three")
                 %tr
                   %td
-                    LGA-gecertificeerd
-                    (schadestofvrij)
+                    = t("general.category_table.body.budget.four")
                   %td
-                    LGA-gecertificeerd
-                    (schadestofvrij)
+                    = t("general.category_table.body.comfort.four")
                   %td
-                    LGA-gecertificeerd
-                    (schadestofvrij)
+                    = t("general.category_table.body.premium.four")
                 %tr
                   %td
-                    4 cm. topdekmatras
+                    = t("general.category_table.body.budget.five")
                   %td
-                    6 cm. topdekmatras
+                    = t("general.category_table.body.comfort.five")
                   %td
-                    6 cm. topdekmatras
+                    = t("general.category_table.body.premium.five")
                 %tr
                   %td
                   %td
                   %td
-                    Medisch gecertificeerd
+                    = t("general.category_table.body.premium.six")
                 %tr
                   %td
                   %td
                   %td
-                    Ventilerende band
+                    = t("general.category_table.body.premium.seven")
                 %tr
                   %td
                   %td
                   %td
-                    Emissieneutraal
+                    = t("general.category_table.body.premium.eight")
         .step.row#step_10_solo
           .col-md-6.col-md-offset-4
             %h3
@@ -379,12 +373,16 @@
             %ul.data-list-2
               %li
                 %label
-                  = t("questions.chassis.yeah")
+                  = t("general.yeah")
                   = f.radio_button :chassis, 'Ja', class: 'required check_radio'
               %li
                 %label
-                  = t("questions.chassis.nope")
+                  = t("general.nope")
                   = f.radio_button :chassis, 'Nee', class: 'required check_radio'
+              %li
+                %label
+                  = t("questions.chassis.no_bottom")
+                  = f.radio_button :chassis, "Geen bodem", class: 'required check_radio'
         / end step
         #complete.submit.step#step_11_solo
           %i.icon-check

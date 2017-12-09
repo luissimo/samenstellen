@@ -4,39 +4,39 @@
     = form_for @customer, url: afrekenen_post_path do |f|
       #middle-wizard
         #block_personal_information
-          %h3.text-center Persoonlijke gegevens
+          %h3.text-center= t("checkout.title_personal")
           %br/
           .col-md-8.col-md-offset-2
             %ul.data-list
               %li
                 %label
-                  Voornaam*
+                  = t("checkout.first_name")
                 = f.text_field :first_name, class: 'required form-control', required: true, oninvalid: "this.setCustomValidity('Dit veld is verplicht.')", oninput: "setCustomValidity('')"
               %li
                 %label
-                  Achternaam*
+                  = t("checkout.last_name")
                 = f.text_field :last_name, class: 'required form-control', required: true, oninvalid: "this.setCustomValidity('Dit veld is verplicht.')", oninput: "setCustomValidity('')"
               %li
                 %label
-                  Telefoonnummer*
+                  = t("checkout.phone_number")
                 = f.text_field :phone, class: 'required form-control', required: true, oninvalid: "this.setCustomValidity('Dit veld is verplicht.')", oninput: "setCustomValidity('')"
               %li
                 %label
-                  Email*
+                  = t("checkout.email")
                 = f.email_field :email, class: 'required form-control', id: 'last_field_personal_information', required: true, oninvalid: "this.setCustomValidity('Vul een geldig emailadres in.')", oninput: "setCustomValidity('')"
         #block_address_information
-          %h3.text-center Adresgegevens
+          %h3.text-center= t("checkout.title_address")
           .col-md-8.col-md-offset-2
             %ul.data-list
               .col-md-7
                 %li
                   %label
-                    Straatnaam + Huisnummer*
+                    = t("checkout.street_and_house_number")
                   = f.text_field :address, class: 'required form-control', required: true, oninvalid: "this.setCustomValidity('Dit veld is verplicht.')", oninput: "setCustomValidity('')"
               .col-md-5
                 %li
                   %label
-                    Huisnummer toevoeging
+                    = t("checkout.house_number_addition")
                   = f.text_field :address_addition, class: 'required form-control'
             %hr/
             %hr/
@@ -44,37 +44,37 @@
               .col-md-12
                 %li
                   %label
-                    Postcode*
+                    = t("checkout.zip_code")
                   = f.text_field :zip_code, class: 'required form-control', required: true, oninvalid: "this.setCustomValidity('Dit veld is verplicht.')", oninput: "setCustomValidity('')"
                 %li
                   %label
-                    Stad*
+                    = t("checkout.city")
                   = f.text_field :city, class: 'required form-control last_field_address_information', required: true, oninvalid: "this.setCustomValidity('Dit veld is verplicht.')", oninput: "setCustomValidity('')"
             %ul#terms.data-list
               %li
                 %strong
-                  Verzenden naar een ander adres?
+                  = t("checkout.ship.ship_to_different_address")
                 %label.switch-light.switch-ios
                   %input.required.fix_ie8.ship_to_different_address{ name: "different_shipping_address", type: "checkbox", value: "nee"}/
                   %span
-                    %span.ie8_hide Nee
-                    %span Ja
+                    %span.ie8_hide= t("general.nope")
+                    %span= t("general.yeah")
                   %a
             %br/
             %br/
 
           .ship_to_different_address_fields
-            %h3.text-center Verzendadres
+            %h3.text-center= t("checkout.ship.title_address")
             .col-md-8.col-md-offset-2
               %ul.data-list
                 %li
                   .col-md-7
                     %label
-                      Straatnaam + Huisnummer
+                      = t("checkout.ship.street_and_house_number")
                     = f.text_field :address_ship, class: 'required form-control'
                   .col-md-5
                     %label
-                      Huisnummer toevoeging
+                      = t("checkout.ship.house_number_addition")
                     = f.text_field :address_addition_ship, class: 'required form-control'
               %hr/
               %hr/
@@ -82,84 +82,83 @@
                 .col-md-12
                   %li
                     %label
-                      Postcode
+                      = t("checkout.ship.zip_code")
                     = f.text_field :zip_code_ship, class: 'required form-control'
                   %li
                     %label
-                      Stad
+                      = t("checkout.ship.city")
                     = f.text_field :city_ship, class: 'required form-control last_field_address_information'
 
         #block_other_information
-          %h3.text-center Informatie
+          %h3.text-center= t("checkout.title_information")
           .col-md-8.col-md-offset-2
             %ul#terms.data-list
               %li
                 %strong
-                  Wil je dat wij je oude matras(sen) meenemen?
+                  = t("checkout.retour_old_mattress")
                 %label.switch-light.switch-ios
                   = f.check_box :retour_old_mattress, { name: 'customer[retour_old_mattress]', class: "fix_ie8" }, nil, nil
                   %span
-                    %span.ie8_hide Nee
-                    %span Ja
+                    %span.ie8_hide= t("general.nope")
+                    %span= t("general.yeah")
                   %a
             %br/
             %br/
             %ul#terms.data-list
               %li
                 %strong
-                  Woon je op de begane grond?
+                  = t("checkout.living_floor")
                 %label.switch-light.switch-ios
                   %input.required.fix_ie8#floor_select{ name: "floor_living", type: "checkbox", value: "Ja", checked: "checked"}/
                   %span
-                    %span.ie8_hide Nee
-                    %span Ja
+                    %span.ie8_hide= t("general.nope")
+                    %span= t("general.yeah")
                   %a
             %br/
             %br/
             #floor_options
               %ul.data-list
                 %label
-                  Op welke verdieping woon je?
+                  = t("checkout.floor")
                 .styled-select
                   %li= f.select :floor, ['1e verdieping', '2e verdieping', '3e verdieping', '4e verdieping', '5e verdieping', '6e verdieping', '7e verdieping', '8e verdieping', '9e verdieping', '10e verdieping of hoger'], class: 'required form-control'
                 %br/
                 %label
-                  Is er een lift aanwezig?
+                  = t("checkout.elevator")
                 .styled-select
                   %li= f.select :elevator, ['Ja, er is een lift.', 'Nee, er is geen lift.'], class: 'required form-control'
 
         #block_payment_information
-          %h3.text-center Betaalmethode
+          %h3.text-center= t("checkout.title_payment")
           .col-md-8.col-md-offset-2
             %ul.data-list-2
               %li
                 %label
-                  iDeal
+                  = t("checkout.ideal")
                   = f.radio_button :payment_method, 'iDeal', class: 'required check_radio', checked: true
                 %span.payment_method_image{style: "float: right;"}
                   = image_tag 'ideal.svg', alt: 'iDeal', height: '42px', width: '168px'
               %li
                 %label
-                  50% met ideal en 50% pinnen aan huis
+                  = t("checkout.50_ideal_50_pin")
                   = f.radio_button :payment_method, "50/50", class: 'required check_radio'
                 %span.payment_method_image{style: "float: right;"}
                   = image_tag 'pinnen.svg', alt: "50% met ideal en 50% pinnen aan huis", height: '42px', width: '168px'
           .col-md-8.col-md-offset-2
             %ul.data-list
               %label
-                Extra bericht of notitie (optioneel)
+                = t('checkout.comment')
               %li= f.text_area :comment, class: 'required form-control', placeholder: '....'
             %hr
             %ul#terms.data-list
               %li
                 %strong
-                  Ik heb mijn bestelling en gegevens gecontroleerd en ga akkoord met de
-                  = link_to "algemene voorwaarden", algemene_voorwaarden_url, target: "_blank"
+                  = t('checkout.agree_toa').html_safe
                 %label.switch-light.switch-ios
                   %input.required.fix_ie8#terms_of_agreement{ name: "terms", type: "checkbox", value: "Ja"}/
                   %span
-                    %span.ie8_hide Nee
-                    %span Ja
+                    %span.ie8_hide= t("general.nope")
+                    %span= t("general.yeah")
                   %a
             %br
             %br

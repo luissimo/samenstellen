@@ -1,5 +1,6 @@
 User-agent: *
 Disallow: /afrekenen
 Disallow: /bedankt
+
 Disallow: /bestellen/eenpersoons*
 Disallow: /bestellen/tweepersoons*

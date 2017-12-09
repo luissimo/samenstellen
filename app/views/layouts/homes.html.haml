@@ -41,6 +41,7 @@
     /[if lt IE 9]
       <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
   %body
     -# Google Tag Manager
     %noscript
@@ -206,3 +207,14 @@
     = javascript_include_tag "home/owl.carousel.min.js"
     = javascript_include_tag "home/jquery.easing.min.js"
     = javascript_include_tag "home/script.js"
+
+    :javascript
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/5a2c0b6cd0795768aaf8e4fa/default';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+      })();

@@ -6,8 +6,9 @@ nl:
       elasticity: De elasticiteit van een matras is de mate waarin het een aanpassend vermogen heeft op één specifiek punt. Je lichaamsvorm en slaappositie zijn van belang om de juiste elasticiteit voor jouw matras te bepalen. Een hoge elasticiteit zorgt namelijk dat mensen met curves beter kunnen inzakken in het matras, waardoor hun ruggengraat een betere positie aanneemt.
       firmness: De stevigheid van je matras wordt bepaald door je body mass index (BMI), je lichaamsvorm en je slaappositie. BMI is een waarde die kijkt naar de verhouding tussen je lengte en je gewicht. Een maatwerkmatras heeft een goed aanpassingsvermogen voor een specifiek individu. Door te letten op deze drie aspecten kunnen we de optimale stevigheid bepalen voor jou.
       heat_regulation: Een van de aspecten die bijdragen aan een goede nachtrust is je lichaamstemperatuur. Sommige matrassen houden warmte vast, terwijl andere juist koud aanvoelen. Door de juiste materialen te kiezen, zorgen wij dat jij de juiste lichaamstemperatuur behoudt tijdens het slapen.
-      personalisation: Hier zie je de eigenschappen van jouw perfecte Tenzen-matras. Onderaan de pagina worden de onderdelen afzonderlijk besproken.
-      personalisation_duo: Hier zien jullie de eigenschappen van jullie perfecte Tenzen-matras. Onderaan de pagina worden de onderdelen afzonderlijk besproken.
+      personalisation:
+        solo: Hier zie je de eigenschappen van jouw perfecte Tenzen-matras. Onderaan de pagina worden de onderdelen afzonderlijk besproken.
+        duo: "Voor %{name} gebruiken we onderstaande matraseigenschappen bij jullie optimaal gemixte matras. Onderaan de pagina worden de onderdelen afzonderlijk besproken."
       bmi: BMI staat voor Body Mass Index. Je BMI geeft de verhouding tussen je lengte en gewicht aan. Voor ons is je BMI belangrijk zodat we de juiste stevigheid voor je matras kunnen kiezen. Samen met je slaappositie en lichaamsbouw bepaalt je BMI de stevigheid van je Tenzen-matras.
     titles:
       header: "%{aanhef} Tenzen"

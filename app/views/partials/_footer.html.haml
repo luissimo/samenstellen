@@ -24,20 +24,23 @@
       .col-md-6
         %ul.list
           %li
-            %a{:href => algemene_voorwaarden_url}
-              = t("general.footer.subnavigation.toa")
-          %li
             %a{:href => garanties_url}
               = t("general.footer.subnavigation.guarantees")
           %li
             %a{:href => retourneren_url}
               = t("general.footer.subnavigation.retour")
           %li
+            %a{:href => algemene_voorwaarden_url}
+              %small
+                = t("general.footer.subnavigation.toa")
+          %li
             %a{:href => privacybeleid_url}
-              = t("general.footer.subnavigation.privacy_policy")
+              %small
+                = t("general.footer.subnavigation.privacy_policy")
           %li
             %a{:href => cookiebeleid_url}
-              = t("general.footer.subnavigation.cookie_policy")
+              %small
+                = t("general.footer.subnavigation.cookie_policy")
     .col-md-2.footer-social.animated.fadeInDown
       %h4 Volg ons
       %ul

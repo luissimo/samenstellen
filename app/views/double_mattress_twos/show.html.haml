@@ -17,7 +17,7 @@
                             = [t('results.titles.graphs'), " -"].join
                             = @double_mattress_two.name
                             %span.question_label_icon_wrapper
-                              = question_icon_md(t("results.explanations.personalisation_duo"))
+                              = question_icon_md(t("results.explanations.personalisation.duo", name: @double_mattress_two.name))
                           .text-content
                             .text-v4
                               %table.table
@@ -69,7 +69,7 @@
                             = [t('results.titles.graphs'), " -"].join
                             = @double_mattress_two.name2
                             %span.question_label_icon_wrapper
-                              = question_icon_md(t("results.explanations.personalisation_duo"))
+                              = question_icon_md(t("results.explanations.personalisation.duo", name: @double_mattress_two.name2))
                           .text-content
                             .text-v4
                               %table.table

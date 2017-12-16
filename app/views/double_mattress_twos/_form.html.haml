@@ -566,7 +566,7 @@
               %li
                 %label
                   = t("general.yeah")
-                  = f.radio_button :chassis, 'Ja', class: 'required check_radio', id: 'show_chassis_chosen_warning'
+                  = f.radio_button :chassis, 'Ja', class: 'required check_radio show_chassis_chosen_warning'
               %li
                 %label
                   = t("general.nope")
@@ -574,7 +574,7 @@
               %li
                 %label
                   = t("questions.chassis.no_bottom")
-                  = f.radio_button :chassis, "Geen bodem", class: 'required check_radio', id: 'show_chassis_chosen_warning'
+                  = f.radio_button :chassis, "Geen bodem", class: 'required check_radio show_chassis_chosen_warning'
         .step.row#step_12_duo
           .col-md-4.col-md-offset-4
             %h3

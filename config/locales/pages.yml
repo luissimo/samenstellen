@@ -31,6 +31,29 @@ nl:
           sustainable:
             title: Duurzaam
             explanation: Jouw Tenzen-matras heeft precies de juiste stevigheid voor jouw lichaam. Hierdoor slaap je beter en wordt de levensduur van je matras langer.
+      block_4:
+        header: Hoe werkt het?
+        subheader: "Tenzen verbetert je nachtrust zonder dat jij er uren aan kwijt bent. Sterker nog: perfect slapen kost je slechts twee minuten. <br> Je hoeft er niet eens je huis voor uit!"
+        step_1:
+          number: "1.."
+          title: MAAT KIEZEN
+          explanation: Kies de juiste maatvoering voor je matras om het samenstellen te starten.
+        step_2:
+          number: "2.."
+          title: SAMENSTELLEN
+          explanation: Beantwoord de vragen zodat wij weten wat het best bij jou past.
+        step_3:
+          number: "3.."
+          title: PRODUCEREN
+          explanation: Wij maken het matras voor je dat perfect bij jouw lichaam en slaaphouding past.
+        step_4:
+          number: "4"
+          title: DROMEN
+          explanation: Je matras wordt gratis bezorgd. Het enige wat jij hoeft te doen is heerlijk, onbezorgd slapen.
+      block_5:
+        header: Direct bestellen
+        subheader: Ben je enthousiast geworden? Kies hieronder een maatvoering en stel binnen twee minuten jouw ideale matras samen!
+
     bedankt:
       success:
         title: "Bedankt voor je bestelling!"

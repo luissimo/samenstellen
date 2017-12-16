@@ -86,8 +86,10 @@
                   = t("pages.home.block_1.text.choose_size_and_start")
               .download
                 %a.download-btn.text-center{href: bestellen_eenpersoons_url}
+                  %span= image_tag("1p_normal.svg", height: 15, width: 15)
                   = t('general.button.one_person')
                 %a.download-btn.text-center{href: bestellen_tweepersoons_url}
+                  %span= image_tag("2p_normal.svg", height: 15, width: 15)
                   = t('general.button.two_persons')
             .col-md-5.hidden-sm.hidden-xs.mt-63
               .center-block= image_tag("tenzen.png", alt: 'Tenzen Matras Samenstellen')
@@ -196,6 +198,55 @@
                       = t("pages.home.block_3.descriptions.sustainable.title")
                     .text
                       = t("pages.home.block_3.descriptions.sustainable.explanation")
+      %section.features
+        %header.text-center
+          %h2.has-line-center
+            = t('pages.home.block_4.header')
+          %p.lead
+            = t('pages.home.block_4.subheader').html_safe
+        .container
+          .service-one-container
+            .service-box-one.col-md-3.col-sm-6.col-xs-12
+              .inner-box
+                %strong= t('pages.home.block_4.step_1.number')
+                %h3
+                  %a= t('pages.home.block_4.step_1.title')
+                .text= t('pages.home.block_4.step_1.explanation')
+            .service-box-one.col-md-3.col-sm-6.col-xs-12
+              .inner-box
+                %strong= t('pages.home.block_4.step_2.number')
+                %h3
+                  %a= t('pages.home.block_4.step_2.title')
+                .text= t('pages.home.block_4.step_2.explanation')
+            .service-box-one.col-md-3.col-sm-6.col-xs-12
+              .inner-box
+                %strong= t('pages.home.block_4.step_3.number')
+                %h3
+                  %a= t('pages.home.block_4.step_3.title')
+                .text= t('pages.home.block_4.step_3.explanation')
+            .service-box-one.col-md-3.col-sm-6.col-xs-12
+              .inner-box
+                %strong= t('pages.home.block_4.step_4.number')
+                %h3
+                  %a= t('pages.home.block_4.step_4.title')
+                .text= t('pages.home.block_4.step_4.explanation')
+
+      %section.download.padding-top-small.padding-bottom-small.has-gradient.text-center
+        %span.img-bg
+        .container
+          %header.text-center
+            %h2.has-line-center= t('pages.home.block_5.header')
+          .col-md-offset-3.col-md-6.col-xs-12
+            %p.lead
+              = t('pages.home.block_5.subheader')
+            .header-button
+              %a.download-btn{:href => bestellen_eenpersoons_url}
+                %span= image_tag("1p_normal.svg", height: 15, width: 15)
+                = t('general.button.one_person')
+              %a.download-btn{:href => bestellen_tweepersoons_url}
+                %span= image_tag("2p_normal.svg", height: 15, width: 15)
+                = t('general.button.two_persons')
+
 
       = render 'partials/footer'
 

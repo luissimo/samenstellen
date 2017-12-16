@@ -603,8 +603,7 @@ nav.main-navigation .navbar-nav .btn:hover{
  ***/
 .service-box-one {
     position: relative;
-    padding: 40px 20px;
-    transition: all 0s;
+    padding: 10px 20px 40px 40px;
 }
 .service-box-one:hover{
     box-shadow: 0 0 35px rgba(0,0,0,.1);
@@ -625,9 +624,7 @@ nav.main-navigation .navbar-nav .btn:hover{
     -o-transition: all 300ms ease;
 }
 .service-box-one .inner-box strong{
-    font-size: 3em;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
-    color: #b06ab3;
+    font-size: 4em;
     display:block;
 }
 .service-box-one h3 {

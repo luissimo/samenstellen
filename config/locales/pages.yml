@@ -35,15 +35,15 @@ nl:
         header: Hoe werkt het?
         subheader: "Tenzen verbetert je nachtrust zonder dat jij er uren aan kwijt bent. Sterker nog: perfect slapen kost je slechts twee minuten. <br> Je hoeft er niet eens je huis voor uit!"
         step_1:
-          number: "1.."
+          number: "1"
           title: MAAT KIEZEN
           explanation: Kies de juiste maatvoering voor je matras om het samenstellen te starten.
         step_2:
-          number: "2.."
+          number: "2"
           title: SAMENSTELLEN
           explanation: Beantwoord de vragen zodat wij weten wat het best bij jou past.
         step_3:
-          number: "3.."
+          number: "3"
           title: PRODUCEREN
           explanation: Wij maken het matras voor je dat perfect bij jouw lichaam en slaaphouding past.
         step_4:

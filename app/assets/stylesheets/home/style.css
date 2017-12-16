@@ -961,17 +961,21 @@ style.css:1477
     background: #fff !important
 }
 .download .download-btn{
-    border: 1px solid #ffffff;
-    color: #fff;
+    border: 1px solid #759bc4;
     display: inline-block;
     margin: 5px 5px 0 0;
-    padding: 12px 30px;
-    transition: all 0s;
     cursor: pointer;
+    background: #5cb85c;
+    color: #fff;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33;
 }
 
 .download .download-btn:hover{
-    background: #fff
+    border: 1px solid #47a447;
+    background: #47a447;
+    color: #ffffff;
 }
 
 .download .download-btn i{

@@ -1,3 +1,22 @@
+.alert-labeled{
+  padding: 0px;
+  border-color: #5777ab;
+}
+
+.alert-labeled-row{
+  display: table-row;
+  padding: 0px;
+}
+
+.alert-labelled-cell{
+  padding: 10px 0 10px 10px;
+  display: table-cell;
+  vertical-align: middle;
+}
+.alert {
+  background: #5777ab;
+  color: white;
+}
 .question_label_icon_sm {
   display: inline-block;
   height: 20px;

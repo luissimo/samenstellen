@@ -1,0 +1,7 @@
+.alert.alert-info.alert-labeled{id: id}
+  .alert-labeled-row
+    %p.alert-body.alert-body-right.alert-labelled-cell
+      - if warning == true
+        %strong
+          = warning_message
+      = message

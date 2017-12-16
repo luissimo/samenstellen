@@ -1,5 +1,8 @@
 nl:
   general:
+    beware: "LET OP:"
+    alert:
+      chassis_chosen: Als je kiest voor 'Een tweepersoonsmatras' dan kun je je bedhelften niet afzonderlijk verstellen.
     usp:
       title:
         comfort: Persoonlijk comfort

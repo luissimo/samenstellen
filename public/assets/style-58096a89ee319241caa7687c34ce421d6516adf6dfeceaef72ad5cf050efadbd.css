@@ -1,3 +1,64 @@
+.submit-questions {
+  background-color: #5cb85c;
+  border: none;
+  color: #fff;
+  padding: 7px 30px 7px 30px;
+  text-decoration: none;
+  transition: background .5s ease;
+  -moz-transition: background .5s ease;
+  -webkit-transition: background .5s ease;
+  -o-transition: background .5s ease;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: uppercase;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+  border-radius: 0 !important;
+}
+
+.submit-questions:hover {
+  background-color: #47a447;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  padding: 7px 30px 7px 30px;
+  text-decoration: none;
+  transition: background .5s ease;
+  -moz-transition: background .5s ease;
+  -webkit-transition: background .5s ease;
+  -o-transition: background .5s ease;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: uppercase;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+  border-radius: 0 !important;
+}
+
+.alert-labeled{
+  padding: 0px;
+  border-color: #5777ab;
+}
+
+.alert-labeled-row{
+  display: table-row;
+  padding: 0px;
+}
+
+.alert-labelled-cell{
+  padding: 10px 0 10px 10px;
+  display: table-cell;
+  vertical-align: middle;
+}
+.alert {
+  background: #5777ab;
+  color: white;
+}
+
 .question_label_icon_sm {
   display: inline-block;
   height: 20px;
@@ -309,7 +370,7 @@
 }
 
 .wrapper-v4 {
-    padding: 0 48px;
+    padding: 0;
     margin: 0 auto;
     position: relative;
     box-sizing: border-box;
@@ -318,7 +379,6 @@
 .v4-bordered {
     margin-top: 20px;
     border: #5777ab solid 1px;
-    border-top: #5777ab dashed 5px;
     border-bottom-width: 1px;
 }
 
@@ -704,7 +764,8 @@ a.button_medium_2:hover {background:#00aeef; color:#fff; border:2px solid  #00ae
   outline:none;
   background: #759bc4;
   position:relative;
-   }
+  border-radius: 0 !important;
+}
 
 .backward {padding:7px 20px 7px 30px;}
 
@@ -866,7 +927,7 @@ ul#footer-nav li {
 }
 
 #middle-wizard-result {
-  padding: 50px 0px 50px 0px;
+  padding: 0;
 }
 
 #bottom-wizard {

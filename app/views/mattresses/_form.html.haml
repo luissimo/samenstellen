@@ -355,13 +355,9 @@
                   %td
                   %td
                     = t("general.category_table.body.premium.eight")
-        #complete.submit.step#step_10
-          %i.icon-check
-          %h3
-            = t("questions.labels.confirmation")
-          = f.submit t("general.button.check_result"), class: 'btn btn-block btn-info submit', name: 'process', id: 'check_result_mattresses'
       #bottom-wizard
         %button.backward{ name: "Vorige", type: "button" }
           = t("general.button.previous")
         %button.forward{ name: "Volgende", type: "button" }
           = t("general.button.next")
+        = f.submit t("general.button.check_result"), class: 'submit-questions', name: 'process', id: 'check_result_mattresses'

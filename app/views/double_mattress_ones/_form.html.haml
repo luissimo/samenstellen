@@ -81,7 +81,6 @@
                 %label
                   = t("questions.neck_or_back_pain.no_complaints")
                   = f.radio_button :neck_or_back_pain, 'Nee, geen klachten', class: 'required check_radio'
-        / end step
         .step.row#step_4_solo
           .col-md-6.col-md-offset-4
             %h3
@@ -105,7 +104,6 @@
                 %label
                   = t("questions.body_shape.none_of_the_above")
                   = f.radio_button :body_shape, 'Geen van bovenstaande', class: 'required check_radio'
-        / end step
         .step.row#step_5_solo
           .col-md-6.col-md-offset-4
             %h3
@@ -125,7 +123,6 @@
                 %label
                   = t("questions.warm_sleeping.not_warm_not_cold")
                   = f.radio_button :warm_sleeping, 'Niet warm, niet koud', class: 'required check_radio'
-        / end step
         .step.row#step_6_solo
           .col-md-8.col-md-offset-3
             %h3
@@ -223,7 +220,6 @@
                   %label
                     Een andere medische klacht die hier niet tussen staat
                     = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Een andere medische klacht die hier niet tussen staat", nil
-        / end step
         .step.row#step_7_solo
           .col-md-6.col-md-offset-3
             %h3
@@ -262,7 +258,6 @@
                   %label
                     = t("questions.size.length.220cm")
                     = f.radio_button :mattress_length, '220cm', class: 'required check_radio'
-        / end step
         .step.row#step_8_solo
           .col-md-6.col-md-offset-4
             %h3
@@ -282,7 +277,6 @@
                 %label
                   = t("questions.comfort.hard")
                   = f.radio_button :comfort, 'Hard', class: 'required check_radio'
-        / end step
         .step.row#step_9_solo
           .col-md-12.col-md-offset-3
             %h3
@@ -383,14 +377,9 @@
                 %label
                   = t("questions.chassis.no_bottom")
                   = f.radio_button :chassis, "Geen bodem", class: 'required check_radio'
-        / end step
-        #complete.submit.step#step_11_solo
-          %i.icon-check
-          %h3
-            = t("questions.labels.confirmation")
-          = f.submit t("general.button.check_result"), class: 'btn btn-block btn-info submit', name: 'process', id: 'check_result_double_mattress_ones'
       #bottom-wizard
         %button.backward{ name: "Vorige", type: "button"}
           = t("general.button.previous")
         %button.forward{ name: "Volgende", type: "button"}
           = t("general.button.next")
+        = f.submit t("general.button.check_result"), class: 'submit-questions', name: 'process', id: 'check_result_double_mattress_ones'

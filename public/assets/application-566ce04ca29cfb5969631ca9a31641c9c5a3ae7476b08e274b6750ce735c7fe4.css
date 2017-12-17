@@ -313,6 +313,10 @@ body {
   background-color: #ffffff;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 input,
 button,
 select,
@@ -782,8 +786,6 @@ pre code {
 }
 
 .container {
-  padding-right: 15px;
-  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -2211,7 +2213,6 @@ textarea.input-lg {
   cursor: pointer;
   background-image: none;
   border: 1px solid transparent;
-  border-radius: 4px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -2538,7 +2539,6 @@ fieldset[disabled] .btn-link:focus {
   padding: 10px 16px;
   font-size: 18px;
   line-height: 1.33;
-  border-radius: 6px;
 }
 
 .btn-sm,
@@ -13843,7 +13843,6 @@ nav.main-navigation .navbar-nav a:hover,
 nav.main-navigation .navbar-brand i,
 .service-box-one .icon-box,
 .service-box-one .inner-box strong,
-.download .download-btn:hover,
 .video-2 .video-2-icon:hover,
 .how-box-one .icon-box,
 .how-box-one:hover h3 a,
@@ -14773,8 +14772,7 @@ nav.main-navigation .navbar-nav .btn:hover{
  ***/
 .service-box-one {
     position: relative;
-    padding: 40px 20px;
-    transition: all 0s;
+    padding: 10px 20px 40px 40px;
 }
 .service-box-one:hover{
     box-shadow: 0 0 35px rgba(0,0,0,.1);
@@ -14795,9 +14793,7 @@ nav.main-navigation .navbar-nav .btn:hover{
     -o-transition: all 300ms ease;
 }
 .service-box-one .inner-box strong{
-    font-size: 3em;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
-    color: #b06ab3;
+    font-size: 4em;
     display:block;
 }
 .service-box-one h3 {
@@ -15131,17 +15127,21 @@ style.css:1477
     background: #fff !important
 }
 .download .download-btn{
-    border: 1px solid #ffffff;
-    color: #fff;
+    border: 1px solid #759bc4;
     display: inline-block;
     margin: 5px 5px 0 0;
-    padding: 12px 30px;
-    transition: all 0s;
     cursor: pointer;
+    background: #5cb85c;
+    color: #fff;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33;
 }
 
 .download .download-btn:hover{
-    background: #fff
+    border: 1px solid #47a447;
+    background: #47a447;
+    color: #ffffff;
 }
 
 .download .download-btn i{
@@ -16582,6 +16582,47 @@ style.css:1477
 	min-height: 150px;
 	background: url(AjaxLoader.gif) no-repeat center center
 }
+.submit-questions {
+  background-color: #5cb85c;
+  border: none;
+  color: #fff;
+  padding: 7px 30px 7px 30px;
+  text-decoration: none;
+  transition: background .5s ease;
+  -moz-transition: background .5s ease;
+  -webkit-transition: background .5s ease;
+  -o-transition: background .5s ease;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: uppercase;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+  border-radius: 0 !important;
+}
+
+.submit-questions:hover {
+  background-color: #47a447;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  padding: 7px 30px 7px 30px;
+  text-decoration: none;
+  transition: background .5s ease;
+  -moz-transition: background .5s ease;
+  -webkit-transition: background .5s ease;
+  -o-transition: background .5s ease;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: uppercase;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+  border-radius: 0 !important;
+}
+
 .alert-labeled{
   padding: 0px;
   border-color: #5777ab;
@@ -16601,6 +16642,7 @@ style.css:1477
   background: #5777ab;
   color: white;
 }
+
 .question_label_icon_sm {
   display: inline-block;
   height: 20px;
@@ -16912,7 +16954,7 @@ style.css:1477
 }
 
 .wrapper-v4 {
-    padding: 0 48px;
+    padding: 0;
     margin: 0 auto;
     position: relative;
     box-sizing: border-box;
@@ -16921,7 +16963,6 @@ style.css:1477
 .v4-bordered {
     margin-top: 20px;
     border: #5777ab solid 1px;
-    border-top: #5777ab dashed 5px;
     border-bottom-width: 1px;
 }
 
@@ -17307,7 +17348,8 @@ a.button_medium_2:hover {background:#00aeef; color:#fff; border:2px solid  #00ae
   outline:none;
   background: #759bc4;
   position:relative;
-   }
+  border-radius: 0 !important;
+}
 
 .backward {padding:7px 20px 7px 30px;}
 
@@ -17469,7 +17511,7 @@ ul#footer-nav li {
 }
 
 #middle-wizard-result {
-  padding: 50px 0px 50px 0px;
+  padding: 0;
 }
 
 #bottom-wizard {

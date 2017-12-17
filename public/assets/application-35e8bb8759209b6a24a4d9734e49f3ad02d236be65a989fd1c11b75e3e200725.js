@@ -15315,6 +15315,19 @@ j){return void 0===j?h.isPlainObject(l)?this.each(function(j,k){h.each(l,functio
 // CUSTOM TENZEN SAMENSTELLEN JAVASCRIPT //
 // *** BY KHEYBAR QAYOUMI *** //
 
+// - Possible events radio buttons.
+// ifClicked - user clicked on a customized input or an assigned label
+// ifChanged - input's checked, disabled or indeterminate state is changed
+// ifChecked - input's state is changed to checked
+// ifUnchecked - checked state is removed
+// ifToggled - input's checked state is changed
+// ifDisabled -input's state is changed to disabled
+// ifEnabled - disabled state is removed
+// ifIndeterminate - input's state is changed to indeterminate
+// ifDeterminate - indeterminate state is removed
+// ifCreatedinput - is just customized
+// ifDestroyed - customization is just removed
+
 // SHOW NAME PERSON 1 BASED ON VALUE .NAME_PERSON_1
 $('.name_person_1').change(function() {
    $('.show_name_person_1').text( $('.name_person_1').val() );
@@ -15409,6 +15422,16 @@ $('#floor_select').click(function() {
     } else {
       $("#floor_options").hide();
     }
+});
+
+// show alert text if specific answer is chosen
+$("#chassis_chosen").hide();
+$(".show_chassis_chosen_warning").on('ifChanged', function() {
+  if (this.checked) {
+    $("#chassis_chosen").show();
+  } else {
+    $("#chassis_chosen").hide();
+  }
 });
 
 
@@ -18135,20 +18158,20 @@ $(function() {
 
 if( window.innerWidth < 770 ) {
 	$("button.forward, button.backward").click(function() {
-  $("html, body").animate({ scrollTop: 115 }, "fast");
+  $("html, body").animate({ scrollTop: 0 });
   return false;
 });
 }
 
 if( window.innerWidth < 500 ) {
 	$("button.forward, button.backward").click(function() {
-  $("html, body").animate({ scrollTop: 245 }, "fast");
+  $("html, body").animate({ scrollTop: 0 });
   return false;
 });
 }
 if( window.innerWidth < 340 ) {
 	$("button.forward, button.backward").click(function() {
-  $("html, body").animate({ scrollTop: 280 }, "fast");
+  $("html, body").animate({ scrollTop: 0 });
   return false;
 });
 }
@@ -32240,6 +32263,7 @@ $.widget( "kf." + wizard, {
 	},
 
 	_create: function() {
+		$(".submit-questions").hide();
 		var $form, $header,
 			self = this,
 			o = self.options,
@@ -32604,15 +32628,19 @@ $.widget( "kf." + wizard, {
 
 		if ( ( state.isLastStepInBranch && !state.step.attr( o.stateAttribute ) ) ||
 			state.step.hasClass( o.stepClasses.stop ) ) {
-			this.elements.forward.attr( disabled, true );
-
+			// this.elements.forward.attr( disabled, true );
+		    $(".forward").hide();
+		    $(".submit-questions").show();
+		    $('.submit-questions').removeAttr('data-disable-with');
 		} else {
-			this.elements.forward.removeAttr( disabled );
+			// this.elements.forward.removeAttr( disabled );
+			$(".forward").show();
+		    $(".submit-questions").hide();
 		}
 
 		if ( o.enableSubmit || state.step.hasClass( o.stepClasses.submit ) ) {
 			this.elements.submit.removeAttr( disabled );
-
+			$('.submit-questions').removeAttr('data-disable-with');
 		} else {
 			this.elements.submit.attr( disabled, true );
 		}
@@ -32856,38 +32884,38 @@ MOBILE SELECT MENU
 
   //variable for storing the menu count when no ID is present
   var menuCount = 0;
-  
+
   //plugin code
   $.fn.mobileMenu = function(options){
-    
+
     //plugin's default options
     var settings = {
       switchWidth: 769,
       topOptionText: 'Select a page',
       indentString: '&nbsp;&nbsp;&nbsp; - '
     };
-    
-    
+
+
     //function to check if selector matches a list
     function isList($this){
       return $this.is('ul, ol');
     }
-  
-  
+
+
     //function to decide if mobile or not
     function isMobile(){
       return ($(window).width() < settings.switchWidth);
     }
-    
-    
+
+
     //check if dropdown exists for the current element
     function menuExists($this){
-      
+
       //if the list has an ID, use it to give the menu an ID
       if($this.attr('id')){
         return ($('#mobileMenu_'+$this.attr('id')).length > 0);
-      } 
-      
+      }
+
       //otherwise, give the list and select elements a generated ID
       else {
         menuCount++;
@@ -32895,102 +32923,102 @@ MOBILE SELECT MENU
         return ($('#mobileMenu_mm'+menuCount).length > 0);
       }
     }
-    
-    
+
+
     //change page on mobile menu selection
     function goToPage($this){
       if($this.val() !== null){document.location.href = $this.val()}
     }
-    
-    
+
+
     //show the mobile menu
     function showMenu($this){
       $this.css('display', 'none');
       $('#mobileMenu_'+$this.attr('id')).show();
     }
-    
-    
+
+
     //hide the mobile menu
     function hideMenu($this){
       $this.css('display', '');
       $('#mobileMenu_'+$this.attr('id')).hide();
     }
-    
-    
+
+
     //create the mobile menu
     function createMenu($this){
       if(isList($this)){
-                
+
         //generate select element as a string to append via jQuery
         var selectString = '<select id="mobileMenu_'+$this.attr('id')+'" class="mobileMenu">';
-        
+
         //create first option (no value)
         selectString += '<option value="">'+settings.topOptionText+'</option>';
-        
+
         //loop through list items
         $this.find('li').each(function(){
-          
+
           //when sub-item, indent
           var levelStr = '';
           var len = $(this).parents('ul, ol').length;
           for(i=1;i<len;i++){levelStr += settings.indentString;}
-          
+
           //get url and text for option
           var link = $(this).find('a:first-child').attr('href');
           var text = levelStr + $(this).clone().children('ul, ol').remove().end().text();
-          
+
           //add option
           selectString += '<option value="'+link+'">'+text+'</option>';
         });
-        
+
         selectString += '</select>';
-        
+
         //append select element to ul/ol's container
         $this.parent().append(selectString);
-        
+
         //add change event handler for mobile menu
         $('#mobileMenu_'+$this.attr('id')).change(function(){
           goToPage($(this));
         });
-        
+
         //hide current menu, show mobile menu
         showMenu($this);
       } else {
         alert('mobileMenu will only work with UL or OL elements!');
       }
     }
-    
-    
+
+
     //plugin functionality
     function run($this){
-      
+
       //menu doesn't exist
       if(isMobile() && !menuExists($this)){
         createMenu($this);
       }
-      
+
       //menu already exists
       else if(isMobile() && menuExists($this)){
         showMenu($this);
       }
-      
+
       //not mobile browser
       else if(!isMobile() && menuExists($this)){
         hideMenu($this);
       }
 
     }
-    
+
     //run plugin on each matched ul/ol
     //maintain chainability by returning "this"
     return this.each(function() {
-      
+
       //override the default settings if user provides some
       if(options){$.extend(settings, options);}
-      
+
       //cache "this"
       var $this = $(this);
-    
+
       //bind event to browser resize
       $(window).resize(function(){run($this);});
 
@@ -32998,9 +33026,9 @@ MOBILE SELECT MENU
       run($this);
 
     });
-    
+
   };
-  
+
 })(jQuery);
 /* Modernizr 2.6.2 (Custom Build) | MIT & BSD
  * Build: http://modernizr.com/download/#-csstransforms-csstransitions-touch-shiv-cssclasses-prefixed-teststyles-testprop-testallprops-prefixes-domprefixes-load

@@ -89,8 +89,6 @@ nl:
         two_solo: Twee eenpersoonsmatrassen
         one_duo: Een tweepersoonsmatras
 
-    labels:
-      confirmation: Dit waren alle vragen, bekijk het resultaat door op de knop hieronder te klikken.
     explanations:
       mattress:
         name: Vul hier je voornaam in

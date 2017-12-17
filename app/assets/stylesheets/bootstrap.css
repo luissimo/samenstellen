@@ -312,6 +312,10 @@ body {
   background-color: #ffffff;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 input,
 button,
 select,

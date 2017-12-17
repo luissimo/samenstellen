@@ -590,13 +590,9 @@
                 %label
                   = t("questions.duo.separation.one_duo")
                   = f.radio_button :separation, 'Een tweepersoonsmatras', class: 'required check_radio'
-        #complete.submit.step#step_13_duo
-          %i.icon-check
-          %h3
-            = t("questions.labels.confirmation")
-          = f.submit t("general.button.check_result"), class: 'btn btn-block btn-info submit', name: 'process', id: 'check_result_double_mattress_twos'
       #bottom-wizard
         %button.backward{ name: "Vorige", type: "button"}
           = t("general.button.previous")
         %button.forward{ name: "Volgende", type: "button"}
           = t("general.button.next")
+        = f.submit t("general.button.check_result"), class: 'submit-questions', name: 'process', id: 'check_result_double_mattress_twos'

@@ -1,3 +1,44 @@
+.submit-questions {
+  background-color: #5cb85c;
+  border: none;
+  color: #fff;
+  padding: 7px 30px 7px 30px;
+  text-decoration: none;
+  transition: background .5s ease;
+  -moz-transition: background .5s ease;
+  -webkit-transition: background .5s ease;
+  -o-transition: background .5s ease;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: uppercase;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+  border-radius: 0 !important;
+}
+
+.submit-questions:hover {
+  background-color: #47a447;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  padding: 7px 30px 7px 30px;
+  text-decoration: none;
+  transition: background .5s ease;
+  -moz-transition: background .5s ease;
+  -webkit-transition: background .5s ease;
+  -o-transition: background .5s ease;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: uppercase;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+  border-radius: 0 !important;
+}
+
 .alert-labeled{
   padding: 0px;
   border-color: #5777ab;
@@ -17,6 +58,7 @@
   background: #5777ab;
   color: white;
 }
+
 .question_label_icon_sm {
   display: inline-block;
   height: 20px;

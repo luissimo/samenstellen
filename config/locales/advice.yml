@@ -1,0 +1,37 @@
+nl:
+  advice:
+    comfort_soft: "Je hebt aangegeven het liefst op een matras te slapen dat zacht aanvoelt. Bij het samenstellen van de comfortlaag van je matras zullen we hier rekening mee houden. Je matras zal lekker zacht aanvoelen."
+    comfort_not_soft_not_hard: "Je hebt aangegeven het liefst op een matras te slapen dat niet zacht of hard aanvoelt. Bij het samenstellen van de comfortlaag van je matras zullen we hier rekening mee houden."
+    comfort_hard: "Je hebt aangegeven het liefst op een matras te slapen dat hard aanvoelt. Bij het samenstellen van de comfortlaag van je matras zullen we hier rekening mee houden. Je matras zal lekker hard aanvoelen."
+
+    elasticity_back_broad_shoulders: "Je matras zal een hoge puntelasticiteit hebben. Rugslapers hebben normaal geen hoge puntelasticiteit nodig. Maar jouw brede schouders moeten wat verder kunnen inzakken, zodat je drukverlagend kunt slapen."
+    elasticity_back_broad_hips: "Je matras zal een hoge punt-elasticiteit hebben. Rugslapers hebben normaal geen hoge punt-elasticiteit nodig. Maar jouw brede heupen moeten wat verder kunnen inzakken, zodat je drukverlagend kunt slapen."
+    elasticity_back_broad_shoulders_and_hips: "Je matras zal een hoge punt-elasticiteit hebben. Rugslapers hebben normaal geen hoge punt-elasticiteit nodig. Maar jouw brede schouders en heupen moeten wat verder kunnen inzakken, zodat je drukverlagend kunt slapen."
+    elasticity_back_none_of_the_above: "Als rugslaper zonder brede schouders of heupen heb je een lage puntelasticiteit nodig. Bij een rugslaper neemt de wervelkolom dan een betere positie aan waardoor je kunt genieten van optimale drukverlaging."
+
+    elasticity_side_broad_shoulders: "Als zijslaper met brede schouders heb je een matras nodig met een zeer hoge puntelasticiteit. Doordat je schouders dieper kunnen inzakken, blijft je wervelkolom recht en geniet je van optimaal comfort."
+    elasticity_side_broad_hips: "Als zijslaper met brede heupen heb je een matras nodig met een zeer hoge puntelasticiteit. Doordat je heupen dieper kunnen inzakken, blijft je wervelkolom recht en geniet je van optimaal comfort."
+    elasticity_side_broad_shoulders_and_hips: "Als zijslaper ervaart je lichaam ontzettend veel druk bij de schouders en de heupen. Een matras met drukverlagende eigenschappen en een hoge punt-elasticiteit zorgt dat je wervelkolom recht blijft tijdens het slapen. Zo geniet je van optimaal comfort."
+    elasticity_side_none_of_the_above: "Als zijslaper ervaart je lichaam ontzettend veel druk bij de schouders en de heupen. Een matras met drukverlagende eigenschappen en een hoge puntelasticiteit zorgt dat je wervelkolom recht blijft tijdens het slapen. Zo geniet je van optimaal comfort."
+
+    elasticity_stomach: "Als buikslaper heb je een matras met een lage puntelasticiteit nodig. Je kunt dan minder diep inzakken in het matras, waardoor er bij je ruggengraat geen holvorming plaats kan vinden."
+
+    firmness_soft_back: "Door de combinatie van je gewicht, lengte en slaappositie heb je een zacht matras nodig. Je matras zal het juiste comfort bieden zodat de natuurlijke S-vorm van je rug behouden blijft."
+    firmness_soft_side: "Door de combinatie van je gewicht, lengte en slaappositie heb je een zacht matras nodig. Je matras zal drukverlagende eigenschappen bezitten. Zo zal je matras het juiste comfort bieden zodat je wervelkolom geen druk ervaart."
+    firmness_soft_stomach: "Door de combinatie van je gewicht, lengte en slaappositie heb je een medium matras nodig. Als buikslaper heb je een stevigere matras nodig dan gebruikelijk. Hierdoor blijft je wervelkolom zo recht mogelijk tijdens het slapen."
+
+    firmness_medium_back: "Door de combinatie van je gewicht, lengte en slaappositie heb je een medium matras nodig. Je matras zal het juiste comfort bieden zodat de natuurlijke S-vorm van je rug behouden blijft."
+    firmness_medium_side: "Door de combinatie van je gewicht, lengte en slaappositie heb je een medium matras nodig. Je matras zal drukverlagende eigenschappen bezitten. Zo zal je matras het juiste comfort bieden zodat je wervelkolom geen druk ervaart."
+    firmness_medium_stomach: "Door de combinatie van je gewicht, lengte en slaappositie heb je een stevig matras nodig. Als buikslaper heb je een stevigere matras nodig dan gebruikelijk. Hierdoor blijft je wervelkolom zo recht mogelijk tijdens het slapen."
+
+    firmness_firm_back: "Door de combinatie van je gewicht, lengte en slaappositie heb je een stevig matras nodig. Je matras zal het juiste comfort bieden zodat de natuurlijke S-vorm van je rug behouden blijft."
+    firmness_firm_side: "Door de combinatie van je gewicht, lengte en slaappositie heb je een stevig matras nodig. Je matras zal drukverlagende eigenschappen bezitten. Zo zal je matras het juiste comfort bieden zodat je wervelkolom geen druk ervaart."
+    firmness_firm_stomach: "Door de combinatie van je gewicht, lengte en slaappositie heb je een zeer stevig matras nodig. Als buikslaper heb je een stevigere matras nodig dan gebruikelijk. Hierdoor blijft je wervelkolom zo recht mogelijk tijdens het slapen."
+
+    firmness_very_firm_back: "Door de combinatie van je gewicht, lengte en slaappositie heb je een zeer stevig matras nodig. Je matras zal het juiste comfort bieden zodat de natuurlijke S-vorm van je rug behouden blijft."
+    firmness_very_firm_side: "Door de combinatie van je gewicht, lengte en slaappositie heb je een zeer stevig matras nodig. Je matras zal drukverlagende eigenschappen bezitten. Zo zal je matras het juiste comfort bieden zodat je wervelkolom geen druk ervaart."
+    firmness_very_firm_stomach: "Door de combinatie van je gewicht, lengte en slaappositie heb je een zeer stevig matras nodig. Als buikslaper heb je een stevigere matras nodig dan gebruikelijk. Hierdoor blijft je wervelkolom zo recht mogelijk tijdens het slapen."
+
+    heat_regulation_cold: "Je matras zal warm aanvoelen. Het zal warmte-isolerend zijn en toch de juiste ventilatie hebben. Het zal uitermate geschikt zijn voor mensen die het snel te koud hebben in bed."
+    heat_regulation_warm: "Je matras zal koud aanvoelen. Het zal zeer goed ademen en vocht kunnen afvoeren. Ventilatie is heel belangrijk voor mensen die het vaak te warm hebben tijdens het slapen."
+    heat_regulation_not_warm_not_cold: "Het maakt niet uit van wat voor materiaal jouw matras is gemaakt. Je matras zal optimale ventilatie en ademend vermogen bieden."

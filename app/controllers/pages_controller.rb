@@ -84,7 +84,6 @@ class PagesController < ApplicationController
   def sitemap
   end
 
-
   private
 
   def contact_form_params

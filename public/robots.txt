@@ -1,6 +1,9 @@
 User-agent: *
+Sitemap: https://www.tenzen.nl/sitemap
+
 Disallow: /afrekenen
 Disallow: /bedankt
 
 Disallow: /bestellen/eenpersoons*
 Disallow: /bestellen/tweepersoons*
+

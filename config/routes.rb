@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   get  'algemene-voorwaarden-ingewikkeld'       => 'pages#algemene_voorwaarden_ingewikkeld'
   get  'contact'                                => 'pages#contact'
   post 'contact'                                => 'pages#create_contact'
+  get  'sitemap'                                => 'pages#sitemap'
 
   # BESTELLEN
   scope("bestellen") do

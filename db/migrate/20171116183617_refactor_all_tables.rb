@@ -1,8 +1,5 @@
 class RefactorAllTables < ActiveRecord::Migration[5.1]
   def change
-    drop_table :shipping_addresses
-    drop_table :billing_addresses
-
     remove_column :double_mattress_ones, :email, :string
     remove_column :double_mattress_twos, :email, :string
     remove_column :mattresses, :email, :string

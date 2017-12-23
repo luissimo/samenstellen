@@ -125,9 +125,3 @@ $(".show_chassis_chosen_warning").on('ifChanged', function() {
 $(document).ready(function(){
   $('[data-toggle="popover"]').popover();
 });
-
-
-// remove cookie notice on click outside of notice
-$("body").on('click', function() {
-  $('cloudflare-app[app="cookiless"]').hide();
-});

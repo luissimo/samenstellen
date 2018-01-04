@@ -48,4 +48,5 @@
           %a{href: "https://www.facebook.com/tenzenslapen", target: "_blank"}
             = t("general.footer.social_media.facebook")
     .col-md-3.footer-ns.animated.fadeInRight
-      = image_tag "thuiswinkelwaarborg.png", alt: 'thuiswinkelwaarborg', height: '150px', width: '150px'
+      = link_to 'https://www.thuiswinkel.org/leden/tenzen/certificaat', target: '_blank' do
+        = image_tag "thuiswinkelwaarborg.png", alt: 'thuiswinkelwaarborg', height: '150px', width: '150px'

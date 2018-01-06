@@ -9,7 +9,11 @@
     = form_for @double_mattress_two, url: bestellen_tweepersoons_duo_post_path do |f|
       #middle-wizard
         .step.row#step_1_duo
-          %h2.col-md-12.text-center= t("questions.introduce_yourself.title")
+          .col-md-12
+            %h2
+              = t("questions.introduce_yourself.title")
+              .question_label_icon_wrapper_lg
+                = question_icon_md(t("questions.explanations.double_mattress_two.introduce_yourselves"))
           %br/
           .col-md-6
             %h2= t("questions.introduce_yourself.person_1")

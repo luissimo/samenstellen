@@ -81,6 +81,15 @@
   text-decoration: none !important;
 }
 
+.question_label_icon_wrapper_lg {
+  font-size: 20px !important;
+  font-weight: normal !important;
+  text-transform: none !important;
+  line-height: inherit !important;
+  text-decoration: none !important;
+  display: inline-flex !important;
+}
+
 .btn-choose {
   color:white;
   background-color: #759bc4;

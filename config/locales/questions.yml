@@ -91,6 +91,7 @@ nl:
 
     explanations:
       mattress:
+        introduce_yourself: Waarom hebben wij dit nodig? Wij zorgen dat jouw matras perfect bij jouw lichaam past. De stevigheid en aanpassingsvermogen van je matras hangt bijvoorbeeld af van je gewicht, lengte, lichaamsbouw en slaappositie. Deze gegevens delen wij nooit met derden.
         name: Vul hier je voornaam in
         age:  Vul hier je leeftijd in
         weight: Vul hier je gewicht in
@@ -102,6 +103,7 @@ nl:
         comfort: "Heb je een voorkeur voor een matras dat zacht aanvoelt, of een matras dat hard aanvoelt? Let op: deze vraag heeft geen betrekking op de stevigheid van je matras, maar enkel op je voorkeur voor zachtheid."
         neck_or_back_pain: Geef hier aan of je weleens last hebt van nekpijn en/of rugpijn als je wakker wordt.
       double_mattress_one:
+        introduce_yourself: Waarom hebben wij dit nodig? Wij zorgen dat jouw matras perfect bij jouw lichaam past. De stevigheid en aanpassingsvermogen van je matras hangt bijvoorbeeld af van je gewicht, lengte, lichaamsbouw en slaappositie. Deze gegevens delen wij nooit met derden.
         name: Vul hier je voornaam in
         age:  Vul hier je leeftijd in
         weight: Vul hier je gewicht in
@@ -114,6 +116,7 @@ nl:
         chassis: Sommige bedbodems zijn elektrisch verstelbaar. Deze maken gebruik van een motor die het voeteneinde en hoofdeinde kan laten bewegen. Heb jij zo’n elektrisch verstelbare bedbodem?
         neck_or_back_pain: Geef hier aan of je weleens last hebt van nekpijn en/of rugpijn als je wakker wordt.
       double_mattress_two:
+        introduce_yourselves: Waarom hebben wij dit nodig? Wij zorgen dat jullie matras perfect bij jullie lichaam past. De stevigheid en aanpassingsvermogen van jullie matras hangt bijvoorbeeld af van jullie gewicht, lengte, lichaamsbouw en slaappositie. Deze gegevens delen wij nooit met derden.
         name: Vul hier je voornaam in
         name2: Vul hier je voornaam in
         age: Vul hier je leeftijd in

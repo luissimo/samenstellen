@@ -10,8 +10,7 @@ class DoubleMattressTwo < ApplicationRecord
 
 
   [:name, :name2, :gender, :gender2, :age, :age2, :weight, :weight2, :length, :length2, :sleep_position, :sleep_position2,
-   :body_shape, :body_shape2, :warm_sleeping, :warm_sleeping2, :neck_or_back_pain, :neck_or_back_pain2, :mattress_length, :mattress_width,
-   :category, :comfort, :comfort2, :chassis, :separation].each do |attribute|
+   :body_shape, :body_shape2, :warm_sleeping, :warm_sleeping2, :neck_or_back_pain, :neck_or_back_pain2, :mattress_length, :mattress_width, :comfort, :comfort2, :chassis, :separation].each do |attribute|
     validates attribute, presence: true
   end
 

@@ -477,87 +477,6 @@
                   = f.radio_button :comfort2, 'Hard', class: 'required check_radio'
         / end step
         .step.row#step_10_duo
-          .col-md-12.col-md-offset-3
-            %h3
-              = t("questions.duo.category")
-              = question_icon_md(t("questions.explanations.double_mattress_two.category"))
-            %ul.data-list-2
-              %li.disable_on_diseases
-                %label
-                  = t("questions.category.budget")
-                  = f.radio_button :category, 'Budget', class: 'required check_radio disable_on_diseases'
-              %li.disable_on_diseases
-                %label
-                  = t("questions.category.comfort")
-                  = f.radio_button :category, 'Comfort', class: 'required check_radio disable_on_diseases'
-              %li
-                %label
-                  = t("questions.category.premium")
-                  = f.radio_button :category, 'Premium', class: 'required check_radio'
-          %br/
-          .col-md-12
-            %table.table.table-bordered
-              %thead
-                %tr
-                  %th
-                    = t("general.category_table.header.budget")
-                  %th
-                    = t("general.category_table.header.comfort")
-                  %th
-                    = t("general.category_table.header.premium")
-              %tbody
-                %tr
-                  %td
-                    = t("general.category_table.body.budget.one")
-                  %td
-                    = t("general.category_table.body.comfort.one")
-                  %td
-                    = t("general.category_table.body.premium.one")
-                %tr
-                  %td
-                    = t("general.category_table.body.budget.two")
-                  %td
-                    = t("general.category_table.body.comfort.two")
-                  %td
-                    = t("general.category_table.body.premium.two")
-                %tr
-                  %td
-                    = t("general.category_table.body.budget.three")
-                  %td
-                    = t("general.category_table.body.comfort.three")
-                  %td
-                    = t("general.category_table.body.premium.three")
-                %tr
-                  %td
-                    = t("general.category_table.body.budget.four")
-                  %td
-                    = t("general.category_table.body.comfort.four")
-                  %td
-                    = t("general.category_table.body.premium.four")
-                %tr
-                  %td
-                    = t("general.category_table.body.budget.five")
-                  %td
-                    = t("general.category_table.body.comfort.five")
-                  %td
-                    = t("general.category_table.body.premium.five")
-                %tr
-                  %td
-                  %td
-                  %td
-                    = t("general.category_table.body.premium.six")
-                %tr
-                  %td
-                  %td
-                  %td
-                    = t("general.category_table.body.premium.seven")
-                %tr
-                  %td
-                  %td
-                  %td
-                    = t("general.category_table.body.premium.eight")
-          / end step
-        .step.row#step_11_duo
           .col-md-4.col-md-offset-4
             %h3
               = t("questions.chassis.title_duo")
@@ -575,7 +494,7 @@
                 %label
                   = t("questions.chassis.no_bottom")
                   = f.radio_button :chassis, "Geen bodem", class: 'required check_radio show_chassis_chosen_warning'
-        .step.row#step_12_duo
+        .step.row#step_11_duo
           .col-md-4.col-md-offset-4
             %h3
               = t("questions.duo.separation.title")

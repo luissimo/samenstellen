@@ -38,7 +38,6 @@ class DoubleMattressOnesController < ApplicationController
       neck_or_back_pain: @double_mattress_one.neck_or_back_pain,
       mattress_length: @double_mattress_one.mattress_length,
       mattress_width: @double_mattress_one.mattress_width,
-      category: @double_mattress_one.category,
       comfort: @double_mattress_one.comfort,
       diseases: @double_mattress_one.diseases,
       chassis: @double_mattress_one.chassis
@@ -80,11 +79,11 @@ class DoubleMattressOnesController < ApplicationController
       params.require(:double_mattress_one).permit(:name, :gender, :age, :email, :weight,
                                                   :length, :sleep_position, :body_shape, :warm_sleeping,
                                                   :neck_or_back_pain, :session_id, :mattress_length,
-                                                  :mattress_width, :category, :comfort, :chassis, diseases: [])
+                                                  :mattress_width, :comfort, :chassis, diseases: [])
     end
 
     def set_product_names
-      category = double_mattress_one_diseases_on? ? 'Premium' : @mattress.category
+      category = double_mattress_one_diseases_on? ? 'Medisch' : ''
       length = @mattress.mattress_length.to_s[0..-3]
       width = @mattress.mattress_width.to_s[0..-3]
       size = width + 'x' + length

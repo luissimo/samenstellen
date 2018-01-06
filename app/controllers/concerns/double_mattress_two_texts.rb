@@ -26,22 +26,22 @@ module DoubleMattressTwoTexts
     case sleep_position # 2
     when 'Rug'
       case body_shape # 3
-      when 'Ik heb brede schouders'
+      when 'Brede schouders'
         t("advice.elasticity_back_broad_shoulders")
-      when 'Ik heb brede heupen'
+      when 'Brede heupen'
         t("advice.elasticity_back_broad_hips")
-      when 'Ik heb brede schouders en heupen'
+      when 'Brede schouders en heupen'
         t("advice.elasticity_back_broad_shoulders_and_hips")
       when 'Geen van bovenstaande'
         t("advice.elasticity_back_none_of_the_above")
       end
     when 'Zij'
       case body_shape # 3
-      when 'Ik heb brede schouders'
+      when 'Brede schouders'
         t("advice.elasticity_side_broad_shoulders")
-      when 'Ik heb brede heupen'
+      when 'Brede heupen'
         t("advice.elasticity_side_broad_hips")
-      when 'Ik heb brede schouders en heupen'
+      when 'Brede schouders en heupen'
         t("advice.elasticity_side_broad_shoulders_and_hips")
       when 'Geen van bovenstaande'
         t("advice.elasticity_side_none_of_the_above")
@@ -148,22 +148,22 @@ module DoubleMattressTwoTexts
     case sleep_position # 2
     when 'Rug'
       case body_shape # 3
-      when 'Ik heb brede schouders'
+      when 'Brede schouders'
         t("advice.elasticity_back_broad_shoulders")
-      when 'Ik heb brede heupen'
+      when 'Brede heupen'
         t("advice.elasticity_back_broad_hips")
-      when 'Ik heb brede schouders en heupen'
+      when 'Brede schouders en heupen'
         t("advice.elasticity_back_broad_shoulders_and_hips")
       when 'Geen van bovenstaande'
         t("advice.elasticity_back_none_of_the_above")
       end
     when 'Zij'
       case body_shape # 3
-      when 'Ik heb brede schouders'
+      when 'Brede schouders'
         t("advice.elasticity_side_broad_shoulders")
-      when 'Ik heb brede heupen'
+      when 'Brede heupen'
         t("advice.elasticity_side_broad_hips")
-      when 'Ik heb brede schouders en heupen'
+      when 'Brede schouders en heupen'
         t("advice.elasticity_side_broad_shoulders_and_hips")
       when 'Geen van bovenstaande'
         t("advice.elasticity_side_none_of_the_above")

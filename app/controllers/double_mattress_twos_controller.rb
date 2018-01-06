@@ -59,7 +59,6 @@ class DoubleMattressTwosController < ApplicationController
       neck_or_back_pain2: @double_mattress_two.neck_or_back_pain2,
       mattress_length: @double_mattress_two.mattress_length,
       mattress_width: @double_mattress_two.mattress_width,
-      category: @double_mattress_two.category,
       comfort: @double_mattress_two.comfort,
       comfort2: @double_mattress_two.comfort2,
       diseases: @double_mattress_two.diseases,
@@ -112,7 +111,7 @@ class DoubleMattressTwosController < ApplicationController
                                                   :sleep_position, :sleep_position2, :body_shape,
                                                   :body_shape2, :warm_sleeping, :warm_sleeping2,
                                                   :neck_or_back_pain, :neck_or_back_pain2, :session_id,
-                                                  :mattress_length, :mattress_width, :category, :comfort,
+                                                  :mattress_length, :mattress_width, :comfort,
                                                   :comfort2, :chassis, :separation, diseases: [], diseases2: [])
     end
 
@@ -120,10 +119,10 @@ class DoubleMattressTwosController < ApplicationController
       chassis = @mattress.chassis
       separation = @mattress.separation
 
-      category = double_mattress_two_diseases_on? ? 'Premium' : @mattress.category
-      category2 = double_mattress_two_diseases2_on? ? 'Premium' : @mattress.category
-      fused_category = category.eql?('Premium') || category2.eql?("Premium") ? "Premium" : category
-      fused_category2 = category.eql?('Premium') || category2.eql?("Premium") ? "Premium" : category2
+      category = double_mattress_two_diseases_on? ? 'Medisch' : ''
+      category2 = double_mattress_two_diseases2_on? ? 'Medisch' : ''
+      fused_category = category.eql?('Medisch') || category2.eql?("Medisch") ? "Medisch" : category
+      fused_category2 = category.eql?('Medisch') || category2.eql?("Medisch") ? "Medisch" : category2
 
       length = @mattress.mattress_length.to_s[0..-3]
       width = @mattress.mattress_width.to_s[0..-3]

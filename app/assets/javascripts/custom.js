@@ -32,13 +32,13 @@ $('.show_diseases').click(function() {
         $(".diseases_options").hide();
     };
     // Hide and disable budget and comfort categories on diseases
-    if( this.checked || $('.show_diseases_2').checked ) {
-      $(".disable_on_diseases").prop("disabled", true);
-      $(".disable_on_diseases").hide();
-    } else {
-      $(".disable_on_diseases").prop("disabled", false);
-      $(".disable_on_diseases").show();
-    }
+    // if( this.checked || $('.show_diseases_2').checked ) {
+    //   $(".disable_on_diseases").prop("disabled", true);
+    //   $(".disable_on_diseases").hide();
+    // } else {
+    //   $(".disable_on_diseases").prop("disabled", false);
+    //   $(".disable_on_diseases").show();
+    // }
 });
 
 // Show diseases2 on fields on click checkbox && show/display category question
@@ -50,13 +50,13 @@ $('.show_diseases_2').click(function() {
         $(".diseases_options_2").hide();
     };
     // Hide and disable budget and comfort categories on diseases
-    if( this.checked || $('.show_diseases').checked ) {
-      $(".disable_on_diseases").prop("disabled", true);
-      $(".disable_on_diseases").hide();
-    } else {
-      $(".disable_on_diseases").prop("disabled", false);
-      $(".disable_on_diseases").show();
-    }
+    // if( this.checked || $('.show_diseases').checked ) {
+    //   $(".disable_on_diseases").prop("disabled", true);
+    //   $(".disable_on_diseases").hide();
+    // } else {
+    //   $(".disable_on_diseases").prop("disabled", false);
+    //   $(".disable_on_diseases").show();
+    // }
 });
 
 /////// CHECKOUT PAGE ////////
@@ -119,7 +119,6 @@ $(".show_chassis_chosen_warning").on('ifChanged', function() {
     $("#chassis_chosen").hide();
   }
 });
-
 
 // INITIALIZE TOOLTIPS
 $(document).ready(function(){

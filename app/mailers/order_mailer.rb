@@ -79,7 +79,6 @@ class OrderMailer < ApplicationMailer
       neck_or_back_pain2: answers[:neck_or_back_pain2],
       mattress_length: answers[:mattress_length],
       mattress_width: answers[:mattress_width],
-      category: answers[:category],
       comfort: answers[:comfort],
       comfort2: answers[:comfort2],
       diseases: answers[:diseases],

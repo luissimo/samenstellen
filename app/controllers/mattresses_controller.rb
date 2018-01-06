@@ -38,7 +38,6 @@ class MattressesController < ApplicationController
       neck_or_back_pain: @mattress.neck_or_back_pain,
       mattress_length: @mattress.mattress_length,
       mattress_width: @mattress.mattress_width,
-      category: @mattress.category,
       comfort: @mattress.comfort,
       diseases: @mattress.diseases
     }
@@ -78,11 +77,11 @@ class MattressesController < ApplicationController
       params.require(:mattress).permit(:id, :session_id, :name, :gender, :age,
                                        :email, :weight, :length, :sleep_position, :body_shape,
                                        :warm_sleeping, :neck_or_back_pain, :mattress_length,
-                                       :mattress_width, :comfort, :category, diseases: [])
+                                       :mattress_width, :comfort, diseases: [])
     end
 
     def set_product_names
-      category = diseases_on? ? 'Premium' : @mattress.category
+      category = diseases_on? ? 'Medisch' : ''
       length = @mattress.mattress_length.to_s[0..-3]
       width = @mattress.mattress_width.to_s[0..-3]
       size = width + 'x' + length

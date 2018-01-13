@@ -6,40 +6,40 @@ module DoubleMattressOnePrices
     @double_mattress_one = DoubleMattressOne.all.where(session_id: session.id).last
 
     # last 2 zeros are eurocents for stripe payments
-    if size_dmo('140cm', '200cm')
-      standard_medical_dmo(79500, 248500)
+    if size_dmo('140cm', '190cm')
+      @price = 62500
+    elsif size_dmo('140cm', '200cm')
+      @price = 64500
     elsif size_dmo('140cm', '210cm')
-      standard_medical_dmo(89500, 298500)
+      @price = 72500
     elsif size_dmo('140cm', '220cm')
-      standard_medical_dmo(99500, 338500)
+      @price = 77500
+    elsif size_dmo('160cm', '190cm')
+      @price = 72500
     elsif size_dmo('160cm', '200cm')
-      standard_medical_dmo(89500, 268500)
+      @price = 74500
     elsif size_dmo('160cm', '210cm')
-      standard_medical_dmo(99500, 308500)
+      @price = 84500
     elsif size_dmo('160cm', '220cm')
-      standard_medical_dmo(109500, 348500)
+      @price = 89500
+    elsif size_dmo('180cm', '190cm')
+      @price = 82500
     elsif size_dmo('180cm', '200cm')
-      standard_medical_dmo(95000, 278500)
+      @price = 84500
     elsif size_dmo('180cm', '210cm')
-      standard_medical_dmo(105000, 318500)
+      @price = 89500
     elsif size_dmo('180cm', '220cm')
-      standard_medical_dmo(115000, 358500)
+      @price = 94500
+    elsif size_dmo('200cm', '190cm')
+      @price = 92500
     elsif size_dmo('200cm', '200cm')
-      standard_medical_dmo(105000, 298500)
+      @price = 94500
     elsif size_dmo('200cm', '210cm')
-      standard_medical_dmo(115000, 338500)
+      @price = 99500
     elsif size_dmo('200cm', '220cm')
-      standard_medical_dmo(125000, 378500)
+      @price = 104500
     else
       @price = 0000
-    end
-  end
-
-  def standard_medical_dmo(standard, medical)
-    if double_mattress_one_diseases_on?
-      @price = medical
-    else
-      @price = standard
     end
   end
 

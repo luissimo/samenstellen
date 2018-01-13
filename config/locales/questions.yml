@@ -41,12 +41,14 @@ nl:
         80cm: 80cm
         90cm: 90cm
         100cm: 100cm
+        120cm: 120cm
         140cm: 140cm
         160cm: 160cm
         180cm: 180cm
         200cm: 200cm
       length:
         title: Lengte
+        190cm: 190cm
         200cm: 200cm
         210cm: 210cm
         220cm: 220cm

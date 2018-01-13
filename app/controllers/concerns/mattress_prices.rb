@@ -6,34 +6,40 @@ module MattressPrices
     @mattress = Mattress.all.where(session_id: session.id).last
 
     # last 2 zeros are eurocents for stripe payments
-    if size('80cm', '200cm')
-      standard_medical(55000, 134500)
+    if size('80cm', '190cm')
+      @price = 37500
+    elsif size('80cm', '200cm')
+      @price = 39500
     elsif size('80cm', '210cm')
-      standard_medical(59500, 154500)
+      @price = 42500
     elsif size('80cm', '220cm')
-      standard_medical(65000, 174500)
+      @price = 44500
+    elsif size('90cm', '190cm')
+      @price = 42500
     elsif size('90cm', '200cm')
-      standard_medical(57500, 139500)
+      @price = 44500
     elsif size('90cm', '210cm')
-      standard_medical(62500, 159500)
+      @price = 49500
     elsif size('90cm', '220cm')
-      standard_medical(67500, 179500)
+      @price = 52500
+    elsif size('100cm', '190cm')
+      @price = 47500
     elsif size('100cm', '200cm')
-      standard_medical(62500, 149500)
+      @price = 49500
     elsif size('100cm', '210cm')
-      standard_medical(67500, 169500)
+      @price = 54500
     elsif size('100cm', '220cm')
-      standard_medical(75000, 189500)
+      @price = 57500
+    elsif size('120cm', '190cm')
+      @price = 52500
+    elsif size('120cm', '200cm')
+      @price = 54500
+    elsif size('120cm', '210cm')
+      @price = 59500
+    elsif size('120cm', '220cm')
+      @price = 64500
     else
       @price = 0000
-    end
-  end
-
-  def standard_medical(standard, medical)
-    if diseases_on?
-      @price = medical
-    else
-      @price = standard
     end
   end
 

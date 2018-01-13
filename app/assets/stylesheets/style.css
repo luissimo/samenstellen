@@ -1,3 +1,13 @@
+.product_image img {
+  width: 100%;
+  height: 100%;
+}
+
+.product_image_duo img {
+  width: 30%;
+  height: 30%;
+}
+
 .submit-questions {
   background-color: #5cb85c;
   border: none;

@@ -63,29 +63,6 @@
         .step.row#step_3
           .col-md-6.col-md-offset-4
             %h3
-              = t("questions.neck_or_back_pain.title")
-              %span.question_label_icon_wrapper
-                = question_icon_md(t("questions.explanations.mattress.neck_or_back_pain"))
-            %ul.data-list-2
-              %li
-                %label
-                  = t("questions.neck_or_back_pain.neck_and_back")
-                  = f.radio_button :neck_or_back_pain, 'Ja, nekklachten en rugklachten', class: 'required check_radio'
-              %li
-                %label
-                  = t("questions.neck_or_back_pain.only_neck")
-                  = f.radio_button :neck_or_back_pain, 'Ja, alleen nekklachten', class: 'required check_radio'
-              %li
-                %label
-                  = t("questions.neck_or_back_pain.only_back")
-                  = f.radio_button :neck_or_back_pain, 'Ja, alleen rugklachten', class: 'required check_radio'
-              %li
-                %label
-                  = t("questions.neck_or_back_pain.no_complaints")
-                  = f.radio_button :neck_or_back_pain, 'Nee, geen klachten', class: 'required check_radio'
-        .step.row#step_4
-          .col-md-6.col-md-offset-4
-            %h3
               = t("questions.body_shape.title")
               %span.question_label_icon_wrapper
                 = question_icon_md(t("questions.explanations.mattress.body_shape"))
@@ -106,7 +83,7 @@
                 %label
                   = t("questions.body_shape.none_of_the_above")
                   = f.radio_button :body_shape, 'Geen van bovenstaande', class: 'required check_radio'
-        .step.row#step_5
+        .step.row#step_4
           .col-md-6.col-md-offset-4
             %h3
               = t("questions.warm_sleeping.title")
@@ -125,104 +102,30 @@
                 %label
                   = t("questions.warm_sleeping.not_warm_not_cold")
                   = f.radio_button :warm_sleeping, 'Niet warm, niet koud', class: 'required check_radio'
-        .step.row#step_6
-          .col-md-8.col-md-offset-3
+        .step.row#step_5
+          .col-md-6.col-md-offset-4
             %h3
-              = t("questions.diseases.title")
+              = t("questions.neck_or_back_pain.title")
               %span.question_label_icon_wrapper
-                = question_icon_md(t("questions.explanations.mattress.diseases"))
-          .col-md-8.col-md-offset-2
-            %ul#terms.data-list
-              %li
-                %label.switch-light.switch-ios
-                  = f.check_box :diseases, { name: "mattress[diseases][]", class: "fix_ie8 show_diseases"}, nil, nil
-                  %span
-                    %span.ie8_hide= t("general.nope")
-                    %span= t("general.yeah")
-                  %a
-            %br/
-            %br/
-
-          .col-md-12.diseases_options
+                = question_icon_md(t("questions.explanations.mattress.neck_or_back_pain"))
             %ul.data-list-2
-              .col-md-4
-                %li
-                  %label
-                    Artrose
-                    = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Artrose", nil
-                %li
-                  %label
-                    Hernia
-                    = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Hernia", nil
-                %li
-                  %label
-                    Decubitis
-                    = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Decubitus", nil
-                %li
-                  %label
-                    Discusbulging
-                    = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Discusbulging", nil
-                %li
-                  %label
-                    Discusdegeneratie
-                    = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Discusdegeneratie", nil
-                %li
-                  %label
-                    Fibromyalgie
-                    = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Fibromyalgie", nil
-
-              .col-md-4
-                %li
-                  %label
-                    Heupdysplasie
-                    = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Heupdysplasie", nil
-                %li
-                  %label
-                    Hypermobiliteit
-                    = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Hypermobiliteit", nil
-                %li
-                  %label
-                    Ischias
-                    = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Ischias", nil
-                %li
-                  %label
-                    Lumbago
-                    = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Lumbago", nil
-                %li
-                  %label
-                    Obesitas
-                    = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Obesitas", nil
-                %li
-                  %label
-                    Osteoporose
-                    = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Osteoporose", nil
-
-              .col-md-4
-                %li
-                  %label
-                    Parkinson
-                    = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Parkinson", nil
-                %li
-                  %label
-                    Reuma
-                    = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Reuma", nil
-                %li
-                  %label
-                    Spondylolyse
-                    = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Spondylolyse", nil
-                %li
-                  %label
-                    Scoliose
-                    = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Scoliose", nil
-                %li
-                  %label
-                    Ziekte van Bechterew
-                    = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Ziekte van Bechterew", nil
-                %li
-                  %label
-                    Een andere medische klacht die hier niet tussen staat
-                    = f.check_box :diseases, { multiple: true, class: 'required check_radio' }, "Een andere medische klacht die hier niet tussen staat", nil
-        .step.row#step_7
+              %li
+                %label
+                  = t("questions.neck_or_back_pain.neck_and_back")
+                  = f.radio_button :neck_or_back_pain, 'Ja, nekklachten en rugklachten', class: 'required check_radio'
+              %li
+                %label
+                  = t("questions.neck_or_back_pain.only_neck")
+                  = f.radio_button :neck_or_back_pain, 'Ja, alleen nekklachten', class: 'required check_radio'
+              %li
+                %label
+                  = t("questions.neck_or_back_pain.only_back")
+                  = f.radio_button :neck_or_back_pain, 'Ja, alleen rugklachten', class: 'required check_radio'
+              %li
+                %label
+                  = t("questions.neck_or_back_pain.no_complaints")
+                  = f.radio_button :neck_or_back_pain, 'Nee, geen klachten', class: 'required check_radio'
+        .step.row#step_6
           .col-md-6.col-md-offset-3
             %h3
               = t("questions.size.title")
@@ -241,10 +144,18 @@
                   %label
                     = t("questions.size.width.100cm")
                     = f.radio_button :mattress_width, '100cm', class: 'required check_radio'
+                %li
+                  %label
+                    = t("questions.size.width.120cm")
+                    = f.radio_button :mattress_width, '120cm', class: 'required check_radio'
 
             .col-md-4.col-md-offset-1
               %ul.data-list-2
                 %h4= t("questions.size.length.title")
+                %li
+                  %label
+                    = t("questions.size.length.190cm")
+                    = f.radio_button :mattress_length, '190cm', class: 'required check_radio'
                 %li
                   %label
                     = t("questions.size.length.200cm")
@@ -257,7 +168,7 @@
                   %label
                     = t("questions.size.length.220cm")
                     = f.radio_button :mattress_length, '220cm', class: 'required check_radio'
-        .step.row#step_8
+        .step.row#step_7
           .col-md-6.col-md-offset-4
             %h3
               = t("questions.comfort.title")

@@ -90,7 +90,6 @@
                     = f.text_field :city_ship, class: 'required form-control last_field_address_information'
 
         #block_other_information
-          %h3.text-center= t("checkout.title_information")
           .col-md-8.col-md-offset-2
             %ul#terms.data-list
               %li
@@ -103,30 +102,6 @@
                     %span= t("general.yeah")
                   %a
             %br/
-            %br/
-            %ul#terms.data-list
-              %li
-                %strong
-                  = t("checkout.living_floor")
-                %label.switch-light.switch-ios
-                  %input.required.fix_ie8#floor_select{ name: "floor_living", type: "checkbox", value: "Ja", checked: "checked"}/
-                  %span
-                    %span.ie8_hide= t("general.nope")
-                    %span= t("general.yeah")
-                  %a
-            %br/
-            %br/
-            #floor_options
-              %ul.data-list
-                %label
-                  = t("checkout.floor")
-                .styled-select
-                  %li= f.select :floor, ['1e verdieping', '2e verdieping', '3e verdieping', '4e verdieping', '5e verdieping', '6e verdieping', '7e verdieping', '8e verdieping', '9e verdieping', '10e verdieping of hoger'], class: 'required form-control'
-                %br/
-                %label
-                  = t("checkout.elevator")
-                .styled-select
-                  %li= f.select :elevator, ['Ja, er is een lift.', 'Nee, er is geen lift.'], class: 'required form-control'
 
         #block_payment_information
           %h3.text-center= t("checkout.title_payment")

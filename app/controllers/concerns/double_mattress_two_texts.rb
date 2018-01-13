@@ -138,7 +138,6 @@ module DoubleMattressTwoTexts
     end
   end
 
-
   # Elasticiteit
   def elasticity_text_2
     set_mattress

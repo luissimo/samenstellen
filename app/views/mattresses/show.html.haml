@@ -14,6 +14,29 @@
                       .icon
                         .summary_box
                           .box-title-small.text-center
+                            = t('results.titles.cart')
+                          %p
+                            = @mattress_product
+                          .price_tag
+                            €
+                            = @price.to_s[0..-3]
+                          .delivery_tag
+                            = t('general.delivery_time')
+                            %br
+                            %span{style: 'font-size: 12px; text-decoration:underline;'}= link_to 'Antwoorden wijzigen', 'javascript:history.go(-1);'
+                      .product_image
+                        - if @mattress.warm_sleeping.include?('Warm')
+                          = image_tag('warm_matras.jpg', alt: 'Jouw Tenzen Matras')
+                        - else
+                          = image_tag('koud_matras.jpg', alt: 'Jouw Tenzen Matras')
+
+                      .checkout_button.title-v4.text-center
+                        %a.btn-primary.btn-success.btn-block{href: afrekenen_path}
+                          = t("general.button.continue")
+                    .box-holder
+                      .icon
+                        .summary_box
+                          .box-title-small.text-center
                             = t('results.titles.graphs')
                             %span.question_label_icon_wrapper
                               = question_icon_md(t("results.explanations.personalisation.solo"))
@@ -61,35 +84,6 @@
                                       %span.question_label_icon_wrapper
                                         = question_icon_md(t("results.explanations.bmi"))
                           %a.read_more{href: '#advies'} bekijk advies
-                    .box-holder
-                      .icon
-                        .summary_box
-                          .box-title-small.text-center
-                            = t('results.titles.cart')
-                          %p
-                            = @mattress_product
-                          %p
-                            = @topper_product
-                          .price_tag
-                            €
-                            = @price.to_s[0..-3]
-                          .delivery_tag
-                            Levertijd: 6 weken
-                            %br
-                            %span{style: 'font-size: 12px; text-decoration:underline;'}= link_to 'Antwoorden wijzigen', 'javascript:history.go(-1);'
-                      %p.align-usps
-                        = image_tag('persoonlijk.png', alt: 'Persoonlijk comfort', class: 'usp-description')
-                        = t('general.usp.title.comfort')
-                        %br
-                        = image_tag('bezorging.png', alt: 'Gratis verzend- en ophaalservice', class: 'usp-description')
-                        = t('general.usp.title.delivery')
-                        %br
-                        = image_tag('garantie.png', alt: 'Niet goed, geld terug', class: 'usp-description')
-                        = t('general.usp.title.money_back')
-
-                  .checkout_button.title-v4.text-center
-                    %a.btn-primary.btn-success.btn-block{href: afrekenen_path}
-                      = t("general.button.continue")
 
 %section#main.container
   #survey_container_result_advice
@@ -100,18 +94,18 @@
             .box-title.title-v4.text-center#advies
               = t('results.titles.header_advice')
             %ul
-              - if diseases_on?
+              - if complaints?
                 %li
                   .head-title-v4
-                    Medische klachten
+                    Drukverlagend matras
                     %span.question_label_icon_wrapper
-                      = question_icon_md(t("results.explanations.diseases"))
+                      = question_icon_md(t("results.explanations.complaints"))
                   .li-holder
                     .li-content
                       .text-content
-                        .title-smaller Medische klachten
+                        .title-smaller Drukverlagend
                         .text-v4
-                          Je hebt aangegeven last te hebben van medische klachten. Extra drukverlaging is van essentieel belang voor jou. Zo hebben je gewrichten en ledematen minimale tegendruk en geniet je van een gezonde bloedcirculatie omdat er geen knellingen plaatsvinden.
+                          = @complaints_text
                       .icon-holder-right
                         .icon
                           = image_tag("medisch-matras.png", class: 'img-responsive')

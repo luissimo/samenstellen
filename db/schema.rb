@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180106162500) do
+ActiveRecord::Schema.define(version: 20180113142023) do
 
   create_table "contact_forms", force: :cascade do |t|
     t.string "name"
@@ -40,8 +40,6 @@ ActiveRecord::Schema.define(version: 20180106162500) do
     t.string "address_addition_ship"
     t.string "zip_code_ship"
     t.string "city_ship"
-    t.string "floor"
-    t.string "elevator"
     t.string "retour_old_mattress"
   end
 
@@ -59,7 +57,6 @@ ActiveRecord::Schema.define(version: 20180106162500) do
     t.string "mattress_length"
     t.string "mattress_width"
     t.string "comfort"
-    t.string "diseases"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "chassis"
@@ -89,8 +86,6 @@ ActiveRecord::Schema.define(version: 20180106162500) do
     t.string "mattress_width"
     t.string "comfort"
     t.string "comfort2"
-    t.string "diseases"
-    t.string "diseases2"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "chassis"
@@ -113,7 +108,6 @@ ActiveRecord::Schema.define(version: 20180106162500) do
     t.string "mattress_length"
     t.string "mattress_width"
     t.string "comfort"
-    t.string "diseases"
   end
 
   create_table "sessions", force: :cascade do |t|

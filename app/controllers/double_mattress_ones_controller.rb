@@ -20,6 +20,7 @@ class DoubleMattressOnesController < ApplicationController
     set_graph_variables(DoubleMattressOne)
     set_product_names
     @bmi = calculate_bmi
+    @complaints_text = complaints_text
     @firmness_text = firmness_text
     @comfort_text = comfort_text
     @elasticity_text = elasticity_text
@@ -39,7 +40,6 @@ class DoubleMattressOnesController < ApplicationController
       mattress_length: @double_mattress_one.mattress_length,
       mattress_width: @double_mattress_one.mattress_width,
       comfort: @double_mattress_one.comfort,
-      diseases: @double_mattress_one.diseases,
       chassis: @double_mattress_one.chassis
     }
   end
@@ -68,28 +68,25 @@ class DoubleMattressOnesController < ApplicationController
 
   private
 
-    def double_mattress_one_diseases_on?
+    def double_mattress_one_complaints?
       mattress = DoubleMattressOne.all.where(session_id: session.id).last
-      mattress.diseases.include?("on") unless mattress.diseases.nil?
+      !mattress.neck_or_back_pain.include?("Nee, geen klachten") && !mattress.neck_or_back_pain.nil?
     end
-    helper_method :double_mattress_one_diseases_on?
+    helper_method :double_mattress_one_complaints?
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def double_mattress_one_params
       params.require(:double_mattress_one).permit(:name, :gender, :age, :email, :weight,
                                                   :length, :sleep_position, :body_shape, :warm_sleeping,
                                                   :neck_or_back_pain, :session_id, :mattress_length,
-                                                  :mattress_width, :comfort, :chassis, diseases: [])
+                                                  :mattress_width, :comfort, :chassis)
     end
 
     def set_product_names
-      category = double_mattress_one_diseases_on? ? 'Medisch' : ''
       length = @mattress.mattress_length.to_s[0..-3]
       width = @mattress.mattress_width.to_s[0..-3]
       size = width + 'x' + length
-      @mattress_product = "1x - " +  category + ' Tenzen Matras '+ size + ' - ' + @mattress.name
-      @topper_product = "1x - " + category + ' Tenzen Topdekmatras ' + size + ' - ' + @mattress.name
+      @mattress_product = "1x - "  + ' Tenzen Matras ' + size + ' - ' + @mattress.name
       session[:mattress] = @mattress_product
-      session[:topper] = @topper_product
     end
 end

@@ -35,3 +35,10 @@ nl:
     heat_regulation_cold: "Je matras zal warm aanvoelen. Het zal warmte-isolerend zijn en toch de juiste ventilatie hebben. Het zal uitermate geschikt zijn voor mensen die het snel te koud hebben in bed."
     heat_regulation_warm: "Je matras zal koud aanvoelen. Het zal zeer goed ademen en vocht kunnen afvoeren. Ventilatie is heel belangrijk voor mensen die het vaak te warm hebben tijdens het slapen."
     heat_regulation_not_warm_not_cold: "Het maakt niet uit van wat voor materiaal jouw matras is gemaakt. Je matras zal optimale ventilatie en ademend vermogen bieden."
+
+    complaints_neck_and_back: "Je hebt aangegeven last te hebben van nek- en rugklachten. Extra drukverlaging is van essentieel belang voor jou. Zo hebben je gewrichten en ledematen minimale tegendruk en geniet je van een gezonde bloedcirculatie omdat er geen knellingen plaatsvinden."
+    complaints_neck: "Je hebt aangegeven last te hebben van nekklachten. Extra drukverlaging is van essentieel belang voor jou. Zo hebben je gewrichten en ledematen minimale tegendruk en geniet je van een gezonde bloedcirculatie omdat er geen knellingen plaatsvinden."
+    complaints_back: "Je hebt aangegeven last te hebben van rugklachten. Extra drukverlaging is van essentieel belang voor jou. Zo hebben je gewrichten en ledematen minimale tegendruk en geniet je van een gezonde bloedcirculatie omdat er geen knellingen plaatsvinden."
+
+    complaints_duo: "Je hebt aangegeven last te hebben van nek- of rugklachten. Extra drukverlaging is van essentieel belang voor jou. Zo hebben je gewrichten en ledematen minimale tegendruk en geniet je van een gezonde bloedcirculatie omdat er geen knellingen plaatsvinden."
+    complaints_duo_both:  "Jullie hebben allebei aangegeven last te hebben van nek- of rugklachten. Extra drukverlaging is van essentieel belang voor jullie. Zo hebben jullie gewrichten en ledematen minimale tegendruk en genieten jullie van een gezonde bloedcirculatie omdat er geen knellingen plaatsvinden."

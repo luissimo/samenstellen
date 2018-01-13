@@ -43,8 +43,6 @@ class CustomersController < ApplicationController
       address_addition_ship: params[:customer][:address_addition_ship],
       zip_code_ship: params[:customer][:zip_code_ship],
       city_ship: params[:customer][:city_ship],
-      floor: params[:customer][:floor],
-      elevator: params[:customer][:elevator],
       comment: params[:customer][:comment],
       payment_method: params[:customer][:payment_method],
       retour_old_mattress: params[:customer][:retour_old_mattress],
@@ -52,9 +50,7 @@ class CustomersController < ApplicationController
       order_number: create_order_number,
       answers: session[:answers],
       mattress: session[:mattress],
-      topper: session[:topper],
       mattress2: session[:mattress2],
-      topper2: session[:topper2]
     }
 
     respond_to do |format|
@@ -122,8 +118,6 @@ class CustomersController < ApplicationController
          address_addition_ship: session[:order][:address_addition_ship],
          zip_code_ship: session[:order][:zip_code_ship],
          city_ship: session[:order][:city_ship],
-         floor: session[:order][:floor],
-         elevator: session[:order][:elevator],
          comment: session[:order][:comment],
          payment_method: session[:order][:payment_method],
          retour_old_mattress: session[:order][:retour_old_mattress],
@@ -157,7 +151,7 @@ class CustomersController < ApplicationController
 
   def customer_params
     params.require(:customer).permit(:id, :session_id, :first_name, :last_name, :address, :address_addition,
-                                     :zip_code, :city, :phone, :email, :floor, :elevator, :address_ship,
+                                     :zip_code, :city, :phone, :email, :address_ship,
                                      :address_addition_ship, :zip_code_ship, :city_ship, :comment, :retour_old_mattress, :payment_method)
   end
 
@@ -173,9 +167,9 @@ class CustomersController < ApplicationController
   end
 
   def create_order_number
-    time = Time.now.strftime("%d%m%Y")
+    date = Time.now.strftime("%d%m%Y")
     random_number = SecureRandom.uuid.last(4).upcase
-    [time, random_number].join("-")
+    [date, random_number].join("-")
   end
 
   def set_stripe_api_key

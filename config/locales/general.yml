@@ -44,6 +44,7 @@ nl:
     progress: Voortgang
     yeah: Ja
     nope: Nee
+    delivery_time: "Levertijd: 2-3 weken"
     category_table:
       header:
         budget: Budget

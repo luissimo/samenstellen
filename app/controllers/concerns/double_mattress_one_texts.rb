@@ -2,6 +2,21 @@ module DoubleMattressOneTexts
   extend ActiveSupport::Concern
   include DoubleMattressOneBmi
 
+  # Complaints
+  def complaints_text
+    mattress = DoubleMattressOne.all.where(session_id: session.id).last
+    complaints = mattress.neck_or_back_pain
+
+    case complaints
+    when 'Ja, nekklachten en rugklachten'
+      t("advice.complaints_neck_and_back")
+    when 'Ja, alleen nekklachten'
+      t("advice.complaints_neck")
+    when 'Ja, alleen rugklachten'
+      t("advice.complaints_back")
+    end
+  end
+
   # Comfort
   def comfort_text
     mattress = DoubleMattressOne.all.where(session_id: session.id).last

@@ -16582,6 +16582,16 @@ style.css:1477
 	min-height: 150px;
 	background: url(AjaxLoader.gif) no-repeat center center
 }
+.product_image img {
+  width: 100%;
+  height: 100%;
+}
+
+.product_image_duo img {
+  width: 30%;
+  height: 30%;
+}
+
 .submit-questions {
   background-color: #5cb85c;
   border: none;
@@ -16663,6 +16673,15 @@ style.css:1477
   text-transform: none !important;
   line-height: normal !important;
   text-decoration: none !important;
+}
+
+.question_label_icon_wrapper_lg {
+  font-size: 20px !important;
+  font-weight: normal !important;
+  text-transform: none !important;
+  line-height: inherit !important;
+  text-decoration: none !important;
+  display: inline-flex !important;
 }
 
 .btn-choose {
@@ -16954,41 +16973,41 @@ style.css:1477
 }
 
 .wrapper-v4 {
-    padding: 0;
-    margin: 0 auto;
-    position: relative;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0 auto;
+  position: relative;
+  box-sizing: border-box;
 }
 
 .v4-bordered {
-    margin-top: 20px;
-    border: #5777ab solid 1px;
-    border-bottom-width: 1px;
+  margin-top: 20px;
+  border: black solid 1px;
+  border-bottom-width: 1px;
 }
 
 .specs-box {
   background: #fff;
-    border-bottom: none;
-    border-color: #5777ab; /* BOXSPRINGSPOT KLEUR */
+  border-bottom: none;
+  border-color: #5777ab; /* BOXSPRINGSPOT KLEUR */
 }
 
 .box-title {
-    border-color:  #5777ab;
-    background: whitesmoke;
-    padding: 20px 10px;
-    line-height: 50px;
-    font-size: 40px;
-    font-weight: 700;
-    letter-spacing: .2px;
+  border-color:  #5777ab;
+  background: whitesmoke;
+  padding: 20px 10px;
+  line-height: 50px;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: .2px;
 }
 
 .box-title-small {
-    border-color:  #5777ab;
-    background: whitesmoke;
-    line-height: 50px;
-    font-size: 20px;
-    font-weight: 700;
-    letter-spacing: .2px;
+  border-color:  #5777ab;
+  background: whitesmoke;
+  line-height: 50px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: .2px;
 }
 
 .text-v4 {
@@ -17013,22 +17032,22 @@ style.css:1477
 }
 
 .head-title-v4 {
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 16px;
-    padding: 20px 30px;
-    line-height: 20px;
-    position: relative;
-    border-bottom: 1px solid  #5777ab;
-    border-top: 1px solid  #5777ab;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 20px 30px;
+  line-height: 20px;
+  position: relative;
+  border-bottom: 1px solid  #5777ab;
+  border-top: 1px solid  #5777ab;
 }
 
 .li-holder {
   padding: 0;
-    margin: 0;
-    border: 0;
-    outline: 0;
-    text-decoration: none;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
 }
 
 .li-content {
@@ -17057,18 +17076,14 @@ style.css:1477
 
 #survey_container_result {
   background-color:#fff;
-   box-shadow: 0 0 5px grey;
-   margin-top:-400px;
-   margin-bottom:60px;
-   z-index:9;
-   position:relative;
+  margin-top:-400px;
+  z-index:9;
+  position:relative;
 }
 
 #survey_container_result_advice {
    background-color:#fff;
-   box-shadow: 0 0 5px grey;
    margin-top:-80px;
-   margin-bottom:60px;
    z-index:9;
    position:relative;
 }

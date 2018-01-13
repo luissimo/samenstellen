@@ -6,7 +6,5 @@ class Customer < ApplicationRecord
   validates :city, presence: true
   validates :phone, presence: true
   validates :email, presence: true
-  validates :floor, presence: true
-  validates :elevator, presence: true
   validates :payment_method, presence: true
 end

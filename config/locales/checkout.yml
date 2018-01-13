@@ -18,10 +18,6 @@ nl:
       zip_code: Postcode
       city: Stad
     title_information: Informatie
-    retour_old_mattress: Wil je dat wij je oude matras(sen) meenemen?
-    living_floor: Woon je op de begane grond?
-    floor: Op welke verdieping woon je?
-    elevator: Is er een lift aanwezig?
     title_payment: Betaalmethode
     ideal: iDeal
     50_ideal_50_pin: 50% met ideal en 50% pinnen aan huis

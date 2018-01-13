@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180113142023) do
+ActiveRecord::Schema.define(version: 20180113151153) do
 
   create_table "contact_forms", force: :cascade do |t|
     t.string "name"
@@ -40,7 +40,6 @@ ActiveRecord::Schema.define(version: 20180113142023) do
     t.string "address_addition_ship"
     t.string "zip_code_ship"
     t.string "city_ship"
-    t.string "retour_old_mattress"
   end
 
   create_table "double_mattress_ones", force: :cascade do |t|

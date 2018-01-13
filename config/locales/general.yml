@@ -9,8 +9,8 @@ nl:
         delivery: Gratis verzend- en ophaalservice
         money_back: Niet goed, geld terug
       explanation:
-        comfort: Elk matras wordt bij ons op basis van persoonlijke voorkeuren geproduceerd. Jij moet je niet aan je matras aanpassen, maar je matras moet zich aan jou aanpassen! Je krijgt gegarandeerd het perfecte matras voor jou. Wij nemen al je zorgen weg en laten je lekker slapen.
-        delivery: Je matras wordt gratis thuisbezorgd, tot in je slaapkamer. Mocht je het matras terug willen sturen, dan komen wij het ook weer gratis bij je ophalen. Geen zorgen dus.
+        comfort: Elk matras wordt bij ons op basis van persoonlijke voorkeuren geproduceerd. Jij moet je niet aan je matras aanpassen, maar je matras moet zich aan jou aanpassen! Je krijgt gegarandeerd het perfecte matras voor jou.
+        delivery: Je matras wordt gratis thuisbezorgd. Mocht je het matras terug willen sturen, dan komen wij het ook weer gratis bij je ophalen. Geen zorgen dus.
         money_back: Je kunt honderd dagen proefslapen op je matras. Mocht het niet zijn wat je had gewenst, dan komen wij het gratis ophalen en krijg je het volledige aankoopbedrag terug. Daar doen we niet moeilijk over.
     button:
       continue: Doorgaan naar afrekenen
@@ -45,30 +45,3 @@ nl:
     yeah: Ja
     nope: Nee
     delivery_time: "Levertijd: 2-3 weken"
-    category_table:
-      header:
-        budget: Budget
-        comfort: Comfort
-        premium: Premium
-      body:
-        budget:
-          one: 2 jaar garantie
-          two: Redelijke kwaliteit materialen (bijv. HR40 schuim)
-          three: Totale hoogte ca. 30cm
-          four: LGA-gecertificeerd (schadestofvrij)
-          five: 4 cm. topdekmatras
-        comfort:
-          one: 5 jaar garantie
-          two: Goede kwaliteit materialen (bijv. HR50 schuim)
-          three: Totale hoogte ca. 36cm
-          four: LGA-gecertificeerd (schadestofvrij)
-          five: 6 cm. topdekmatras
-        premium:
-          one: 10 jaar garantie
-          two: Beste kwaliteit materialen (bijv. HR65 schuim)
-          three: Totale hoogte ca. 41cm
-          four: LGA-gecertificeerd (schadestofvrij)
-          five: 6 cm. topdekmatras
-          six: Medisch gecertificeerd
-          seven: Ventilerende band
-          eight: Emissieneutraal

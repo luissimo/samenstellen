@@ -15,17 +15,12 @@ class OrderMailer < ApplicationMailer
       address_addition_ship: details[:address_addition_ship],
       zip_code_ship: details[:zip_code_ship],
       city_ship: details[:city_ship],
-      floor: details[:floor],
-      elevator: details[:elevator],
       comment: details[:comment],
       payment_method: details[:payment_method],
       order_number: details[:order_number],
-      retour_old_mattress: details[:retour_old_mattress],
       price: details[:price],
       mattress: details[:mattress],
-      topper: details[:topper],
       mattress2: details[:mattress2],
-      topper2: details[:topper2]
     }
     mail(to: @details[:email], from: 'info@tenzen.nl', subject: 'Bedankt voor je bestelling!')
   end
@@ -45,17 +40,12 @@ class OrderMailer < ApplicationMailer
       address_addition_ship: details[:address_addition_ship],
       zip_code_ship: details[:zip_code_ship],
       city_ship: details[:city_ship],
-      floor: details[:floor],
-      elevator: details[:elevator],
       comment: details[:comment],
       payment_method: details[:payment_method],
       order_number: details[:order_number],
-      retour_old_mattress: details[:retour_old_mattress],
       price: details[:price],
       mattress: details[:mattress],
-      topper: details[:topper],
-      mattress2: details[:mattress2],
-      topper2: details[:topper2]
+      mattress2: details[:mattress2]
     }
 
     @answers = {
@@ -81,8 +71,6 @@ class OrderMailer < ApplicationMailer
       mattress_width: answers[:mattress_width],
       comfort: answers[:comfort],
       comfort2: answers[:comfort2],
-      diseases: answers[:diseases],
-      diseases2: answers[:diseases2],
       chassis: answers[:chassis],
       separation: answers[:separation]
     }

@@ -89,20 +89,6 @@
                       = t("checkout.ship.city")
                     = f.text_field :city_ship, class: 'required form-control last_field_address_information'
 
-        #block_other_information
-          .col-md-8.col-md-offset-2
-            %ul#terms.data-list
-              %li
-                %strong
-                  = t("checkout.retour_old_mattress")
-                %label.switch-light.switch-ios
-                  = f.check_box :retour_old_mattress, { name: 'customer[retour_old_mattress]', class: "fix_ie8" }, nil, nil
-                  %span
-                    %span.ie8_hide= t("general.nope")
-                    %span= t("general.yeah")
-                  %a
-            %br/
-
         #block_payment_information
           %h3.text-center= t("checkout.title_payment")
           .col-md-8.col-md-offset-2
@@ -139,12 +125,3 @@
             %br
 
       = f.submit t("general.button.checkout"), class: 'checkout_button btn btn-block btn-info submit', name: 'Volgende', id: 'pay_now_button', disabled: true
-
-:javascript
-  $(document).ready(function() {
-    if ( $("#customer_first_name").val().length > 0 || $("#customer_last_name").val().length > 0 || $("#customer_phone").val().length > 0 || $("#last_field_personal_information").val().length > 0) {
-      $("#block_address_information").show();
-      $("#block_other_information").show();
-      $("#block_payment_information").show();
-    }
-  })

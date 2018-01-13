@@ -45,12 +45,13 @@ class CustomersController < ApplicationController
       city_ship: params[:customer][:city_ship],
       comment: params[:customer][:comment],
       payment_method: params[:customer][:payment_method],
-      retour_old_mattress: params[:customer][:retour_old_mattress],
       price: @price,
       order_number: create_order_number,
       answers: session[:answers],
       mattress: session[:mattress],
       mattress2: session[:mattress2],
+      mattress_width: session[:answers][:mattress_width],
+      mattress_length: session[:answers][:mattress_length]
     }
 
     respond_to do |format|
@@ -120,7 +121,6 @@ class CustomersController < ApplicationController
          city_ship: session[:order][:city_ship],
          comment: session[:order][:comment],
          payment_method: session[:order][:payment_method],
-         retour_old_mattress: session[:order][:retour_old_mattress],
          order_number: session[:order][:order_number]
        }
      })
@@ -152,7 +152,7 @@ class CustomersController < ApplicationController
   def customer_params
     params.require(:customer).permit(:id, :session_id, :first_name, :last_name, :address, :address_addition,
                                      :zip_code, :city, :phone, :email, :address_ship,
-                                     :address_addition_ship, :zip_code_ship, :city_ship, :comment, :retour_old_mattress, :payment_method)
+                                     :address_addition_ship, :zip_code_ship, :city_ship, :comment, :payment_method)
   end
 
   def set_price

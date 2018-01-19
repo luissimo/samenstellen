@@ -84,7 +84,22 @@
                                       %span.question_label_icon_wrapper
                                         = question_icon_md(t("results.explanations.bmi"))
                           %a.read_more{href: '#advies'} bekijk advies
-
+              %li
+                .li-holder
+                  .li-content-no-padding
+                    .col-md-12
+                      .col-md-4
+                        .align-usps
+                          = image_tag 'persoonlijk.png', alt: 'Niet goed geld terug'
+                          PERSOONLIJK COMFORT
+                      .col-md-4
+                        .align-usps
+                          = image_tag 'garantie.png', alt: 'Niet goed geld terug'
+                          NIET GOED, GELD TERUG
+                      .col-md-4
+                        .align-usps
+                          = image_tag 'bezorging.png', alt: 'Niet goed geld terug'
+                          GRATIS VERZEND- EN OPHAALSERVICE
 %section#main.container
   #survey_container_result_advice
     #middle-wizard-result

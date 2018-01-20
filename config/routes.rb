@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   # PAGINA'S
   root 'homes#index'
+  get  'matras'                                 => 'homes#matras'
   get  'over-tenzen'                            => 'pages#over_tenzen'
   get  'privacybeleid'                          => 'pages#privacy_beleid'
   get  'vragen'                                 => 'pages#vragen'

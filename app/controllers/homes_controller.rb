@@ -8,6 +8,10 @@ class HomesController < ApplicationController
     @meta_description = t('home.meta_description')
   end
 
+  def dynamic_landing
+    @keyword = params[:keyword]
+  end
+
   private
 
   def send_mail

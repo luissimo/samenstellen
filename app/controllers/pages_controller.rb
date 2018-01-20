@@ -1,5 +1,11 @@
 class PagesController < ApplicationController
 
+  def actievoorwaarden
+    @page_title = t('actievoorwaarden.title')
+    @meta_title = t('actievoorwaarden.meta_title')
+    @meta_description = t('actievoorwaarden.meta_description')
+  end
+
   def over_tenzen
     @page_title = t('over_tenzen.title')
     @meta_title = t('over_tenzen.meta_title')

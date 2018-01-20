@@ -9,7 +9,7 @@ class HomesController < ApplicationController
   end
 
   def dynamic_landing
-    @keyword = params[:keyword]
+    @keyword = params[:keyword] if params[:keyword]
   end
 
   private

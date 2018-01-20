@@ -1,5 +1,49 @@
-%p
-  test
-  (
-  = @keyword
-  )
+/ Page Holder
+.page-holder
+  %nav.navbar.main-navigation.navbar-fixed-top.has-shadow
+    .container
+      .navbar-header
+        %button.navbar-toggle.collapsed{"data-target" => "#navbar", "data-toggle" => "collapse", :type => "button"}
+          %span.sr-only Navigatie
+          %span.icon-bar
+          %span.icon-bar
+          %span.icon-bar
+        %a.navbar-brand{href: "/"}
+          = image_tag('Tenzen-logo-marineblauw.svg', alt: 'Tenzen', width: '150px', height: '50px')
+      .collapse.navbar-collapse#navbar
+        %ul.nav.navbar-nav.navbar-right
+          %li
+            %a.js-scroll-trigger{href: bestellen_url}
+              = t("general.header.order")
+          %li
+            %a.js-scroll-trigger{href: over_tenzen_url}
+              = t("general.header.about_tenzen")
+          %li
+            %a.js-scroll-trigger{href: vragen_url}
+              = t("general.header.questions")
+
+  #home.header-1.demo-1.has-gradient
+    .moving-bg
+    .container
+      .header-1-content.row
+        .col-md-7.col-sm-12.mt-63
+          %h1
+            test
+            (
+            = @keyword
+            )
+          %br/
+          %p.lead
+            = t("pages.home.block_1.subheader")
+            %hr/
+            %strong
+              = t("pages.home.block_1.text.choose_size_and_start")
+          .download
+            %a.download-btn.text-center{href: bestellen_eenpersoons_url}
+              %span= image_tag("1p_normal.svg", height: 30, width: 30)
+              = t('general.button.one_person')
+            %a.download-btn.text-center{href: bestellen_tweepersoons_url}
+              %span= image_tag("2p_normal.svg", height: 30, width: 30)
+              = t('general.button.two_persons')
+        .col-md-5.hidden-sm.hidden-xs.mt-63
+          .center-block= image_tag("tenzen.png", alt: 'Tenzen Matras Samenstellen')

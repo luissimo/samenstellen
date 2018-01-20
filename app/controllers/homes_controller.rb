@@ -9,7 +9,10 @@ class HomesController < ApplicationController
   end
 
   def dynamic_landing
-    @keyword = params[:keyword] if params[:keyword]
+    @keyword = params[:kw] if params[:kw]
+    @page_title = @keyword
+    @meta_title = @keyword
+    @meta_description = @keyword.to_s + 'bij Tenzen'
   end
 
   private

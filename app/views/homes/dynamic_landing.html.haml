@@ -28,7 +28,7 @@
       .header-1-content.row
         .col-md-7.col-sm-12.mt-63
           %h1
-            %strong= @keyword
+            %strong= @keyword.to_s
           %br/
           %p.lead
             = t("pages.home.block_1.subheader")
@@ -50,8 +50,7 @@
         %h2.has-line-center
           = t("pages.home.block_2.header")
         %p.lead
-          %strong= @keyword
-          ?
+          %strong= @keyword.to_s + "?"
           = t("pages.home.block_2.subheader")
       .how-one-container
         .how-box-one.col-md-4.col-sm-6.col-xs-12
@@ -87,7 +86,7 @@
     .container.text-center
       %header.text-center.mb-70
         %h2.has-line-center
-          = @keyword
+          = @keyword.to_s
         %p.lead
           = t("pages.home.block_3.subheader")
       .outer
@@ -156,8 +155,7 @@
         = t('pages.home.block_4.header')
       %p.lead
         = t('pages.home.block_4.subheader').html_safe
-        %strong= @keyword
-        , zo gefixed!
+        %strong= @keyword.to_s + ", zo gefixt!"
     .container
       .service-one-container
         .service-box-one.col-md-3.col-sm-6.col-xs-12

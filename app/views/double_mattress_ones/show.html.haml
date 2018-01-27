@@ -23,7 +23,7 @@
                           .delivery_tag
                             = t('general.delivery_time')
                             %br
-                            %span{style: 'font-size: 12px; text-decoration:underline;'}= link_to 'Antwoorden wijzigen', 'javascript:history.go(-1);'
+                            -# %span{style: 'font-size: 12px; text-decoration:underline;'}= link_to 'Antwoorden wijzigen', 'javascript:history.go(-1);'
                       .product_image
                         - if @double_mattress_one.warm_sleeping.include?('Warm')
                           = image_tag('warm_matras.jpg', alt: 'Jouw Tenzen Matras')

@@ -21,6 +21,7 @@ class OrderMailer < ApplicationMailer
       price: details[:price],
       mattress: details[:mattress],
       mattress2: details[:mattress2],
+      type: details[:type]
     }
     mail(to: @details[:email], from: 'info@tenzen.nl', subject: 'Bedankt voor je bestelling!')
   end

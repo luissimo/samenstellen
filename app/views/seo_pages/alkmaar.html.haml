@@ -1,0 +1,89 @@
+%section#main.container
+  #survey_container_result
+    #middle-wizard-result
+      .wrapper-v4
+        .v4-bordered
+          .specs-boxs
+            %h1.box-title.text-center
+              Matras Alkmaar
+            %ul
+              %li
+                .li-holder
+                  .li-content
+                    .text-content
+                      .text-v4
+                        .col-md-12
+                          .row{style: 'display: flex; align-items: center;'}
+                            .col-md-8
+                              %p
+                                Wil jij ook de beste
+                                = succeed "?" do
+                                  %strong matras in Alkmaar
+                                = succeed "," do
+                                  %a{:href => "https://www.tenzen.nl/matrass/"} matras
+                                %a{:href => "https://www.tenzen.nl/matrass/matras-matrassen/"} matras-matrassen
+                                en
+                                %a{:href => "https://www.tenzen.nl/matrass/matras-onderstellen/"} matras-onderstellen
+                                heb je alles op één plaats. matrass zijn razend populair in Nederland, en niet voor niets natuurlijk, matrass en bedden verschillen van elkaar. Een matras heeft veel voordelen ten opzichte van bedden en lattenbodems. Een goede nachtrust is belangrijk, wij doen dan ook ons uiterste best om jou hierin te voorzien. Levering en montage zijn uiteraard gratis in de omgeving van
+                                = succeed "." do
+                                  %strong Alkmaar
+                            .col-md-4
+                              = image_tag 'Tenzen-logo-marineblauw.svg', width: '250px', height: '200px', class: 'hide_mobile'
+
+                        .col-md-12
+                          %h2
+                            = t('pages.home.block_4.header')
+                          .col-md-3
+                            .step_number 1
+                            .how_it_works
+                              %h4= t('pages.home.block_4.step_1.title')
+                              %p= t('pages.home.block_4.step_1.explanation')
+                          .col-md-3
+                            .step_number 2
+                            .how_it_works
+                              %h4= t('pages.home.block_4.step_2.title')
+                              %p= t('pages.home.block_4.step_2.explanation')
+                          .col-md-3
+                            .step_number 3
+                            .how_it_works
+                              %h4= t('pages.home.block_4.step_3.title')
+                              %p= t('pages.home.block_4.step_3.explanation')
+                          .col-md-3
+                            .step_number 4
+                            .how_it_works
+                              %h4= t('pages.home.block_4.step_4.title')
+                              %p= t('pages.home.block_4.step_4.explanation')
+
+
+                        .col-md-8.col-md-offset-2{style: 'margin-top: 30px'}
+                          .col-md-12.text-center{style: 'margin-bottom: 10px'}
+                            %h4
+                              %strong
+                                Kies je maatvoering en begin direct met samenstellen in
+                                Alkmaar
+                          .col-md-6{style: 'margin-bottom: 5px' }
+                            .checkout_button.title-v4.text-center
+                              %a.btn-primary.btn-success.btn-block{href: bestellen_eenpersoons_url}
+                                = t('general.button.one_person')
+                          .col-md-6
+                            .checkout_button.title-v4.text-center
+                              %a.btn-primary.btn-success.btn-block{href: bestellen_tweepersoons_url}
+                                = t('general.button.two_persons')
+              %li
+                .col-md-12
+                  %iframe{:allowfullscreen => "allowfullscreen", :frameborder => "0", :height => "250", :src => "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38743.348954016474!2d4.719157752465742!3d52.63361433789329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47cf57b2d7368c5b%3A0x400de5a8d1e7470!2sAlkmaar!5e0!3m2!1snl!2snl!4v1483228250720", :style => "border: 0;", :width => "100%"}
+                .li-holder
+                  .li-content-no-padding
+                    .col-md-12
+                      .col-md-4
+                        .align-usps
+                          = image_tag 'persoonlijk.png', alt: 'Niet goed geld terug'
+                          PERSOONLIJK COMFORT
+                      .col-md-4
+                        .align-usps
+                          = image_tag 'garantie.png', alt: 'Niet goed geld terug'
+                          NIET GOED, GELD TERUG
+                      .col-md-4
+                        .align-usps
+                          = image_tag 'bezorging.png', alt: 'Niet goed geld terug'
+                          GRATIS VERZEND- EN OPHAALSERVICE

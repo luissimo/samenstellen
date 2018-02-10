@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   get  'contact'                                => 'pages#contact'
   post 'contact'                                => 'pages#create_contact'
   get  'sitemap'                                => 'pages#sitemap',  defaults: { format: 'xml' }
+  post 'kortingscode_checken'                   => 'application#kortingscode_checken', as: 'kortingscode_checken'
 
   # BESTELLEN
   scope("bestellen") do

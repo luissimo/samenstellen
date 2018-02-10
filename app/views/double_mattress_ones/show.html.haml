@@ -18,11 +18,25 @@
                           %p
                             = @mattress_product
                           .price_tag
-                            €
-                            = @price.to_s[0..-3]
+                            - if @price == 0000
+                              Gratis
+                            - else
+                              €
+                              = @price.to_s[0..-3]
+                              - if session[:kortingscode]
+                                %span{style: 'color: green; font-size: 17px; color: #5cb85c;'} (-20%)
                           .delivery_tag
                             = t('general.delivery_time')
+                          .delivery_tag
                             %br
+                            = form_tag('/kortingscode_checken', remote: true) do
+                              %ul.list-inline
+                                %li.list-inline-item
+                                  = text_field_tag 'kortingscode', nil, class: 'required form-control', placeholder: 'kortingscode...'
+                                %li.list-inline-item
+                                  = submit_tag 'Gebruiken', class: 'btn btn-primary btn-sm'
+
+                              %p= flash[:notice]
                             -# %span{style: 'font-size: 12px; text-decoration:underline;'}= link_to 'Antwoorden wijzigen', 'javascript:history.go(-1);'
                       .product_image
                         - if @double_mattress_one.warm_sleeping.include?('Warm')

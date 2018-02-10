@@ -41,6 +41,8 @@ module DoubleMattressOnePrices
     else
       @price = 0000
     end
+
+    @price = (@price * 0.8).to_i if session[:kortingscode]
   end
 
   def size_dmo(width, length)

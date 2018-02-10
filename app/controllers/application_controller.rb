@@ -15,7 +15,7 @@ class ApplicationController < ActionController::Base
     end
 
     case params[:kortingscode].downcase
-    when 'tenzen2018'
+    when 'valentijn20'
       session[:kortingscode] = true
       flash[:notice] = "Gefeliciteerd, je korting is doorberekend!"
       respond_to do |format|

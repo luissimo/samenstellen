@@ -56,9 +56,14 @@ class CustomersController < ApplicationController
 
     respond_to do |format|
       if @customer.save
-        create_stripe_source
-        session[:stripe_source_id] = @payment[:id]
-        format.html { redirect_to @payment[:redirect][:url] }
+        if @price == 0
+          session[:status] = 'success'
+          format.html { redirect_to bedankt_url }
+        else
+          create_stripe_source
+          session[:stripe_source_id] = @payment[:id]
+          format.html { redirect_to @payment[:redirect][:url] }
+        end
       else
         format.html { render :new }
         format.json { render json: @mattress.errors, status: :unprocessable_entity }
@@ -67,12 +72,14 @@ class CustomersController < ApplicationController
   end
 
   def success
-    begin
-      process_payment
-    rescue Stripe::InvalidRequestError => e
-      return redirect_to root_url
-    rescue
-      return redirect_to root_url
+    unless session[:order][:price] == 0
+      begin
+        process_payment
+      rescue Stripe::InvalidRequestError => e
+        return redirect_to root_url
+      rescue
+        return redirect_to root_url
+      end
     end
 
     case session[:status]

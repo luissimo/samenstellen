@@ -1,12 +1,14 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception, except: [:kortingscode_checken]
 
+  include MattressPrices
+
   def redirect_to_root_if_object_nil(object)
     redirect_to root_url if object.nil?
   end
 
   def kortingscode_checken
-    if session[:kortingscode] == true
+    if session[:kortingscode] == 'valentijn20' || session[:kortingscode] == 'larissa'
       flash[:notice] = "Je hebt al een lopende korting. Je kunt geen kortingen combineren. De prijs hierboven is de nieuwe prijs inclusief korting."
       respond_to do |format|
         format.js
@@ -16,8 +18,16 @@ class ApplicationController < ActionController::Base
 
     case params[:kortingscode].downcase
     when 'valentijn20'
-      session[:kortingscode] = true
+      session[:kortingscode] = 'valentijn20'
       flash[:notice] = "Gefeliciteerd, je korting is doorberekend!"
+      respond_to do |format|
+        format.js
+        format.html { redirect_to return_discount_url }
+      end
+    when 'larissa'
+      session[:kortingscode] = 'larissa' unless !winning_sizes
+      flash[:notice] = "Gefeliciteerd, je krijgt dit matras geheel gratis!" if winning_sizes
+      flash[:notice] = "Deze maat valt niet onder win-actie, kies een andere maat!" if !winning_sizes
       respond_to do |format|
         format.js
         format.html { redirect_to return_discount_url }

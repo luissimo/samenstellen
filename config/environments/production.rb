@@ -9,10 +9,10 @@ Rails.application.configure do
       port:                 587,
       domain:               'gmail.com',
       authentication:       :plain,
-      enable_starttls_auto: true,
       user_name:            ENV['GMAIL_USERNAME_DEV'],
       password:             ENV['GMAIL_PASSWORD_DEV']
   }
+
   # Code is not reloaded between requests.
   config.cache_classes = true
 

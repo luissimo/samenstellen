@@ -68,25 +68,25 @@ class DoubleMattressOnesController < ApplicationController
 
   private
 
-    def double_mattress_one_complaints?
-      mattress = DoubleMattressOne.all.where(session_id: session.id).last
-      !mattress.neck_or_back_pain.include?("Nee, geen klachten") && !mattress.neck_or_back_pain.nil?
-    end
-    helper_method :double_mattress_one_complaints?
+  def double_mattress_one_complaints?
+    mattress = DoubleMattressOne.all.where(session_id: session.id).last
+    !mattress.neck_or_back_pain.include?("Nee, geen klachten") && !mattress.neck_or_back_pain.nil?
+  end
+  helper_method :double_mattress_one_complaints?
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def double_mattress_one_params
-      params.require(:double_mattress_one).permit(:name, :gender, :age, :email, :weight,
-                                                  :length, :sleep_position, :body_shape, :warm_sleeping,
-                                                  :neck_or_back_pain, :session_id, :mattress_length,
-                                                  :mattress_width, :comfort, :chassis)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def double_mattress_one_params
+    params.require(:double_mattress_one).permit(:name, :gender, :age, :email, :weight,
+                                                :length, :sleep_position, :body_shape, :warm_sleeping,
+                                                :neck_or_back_pain, :session_id, :mattress_length,
+                                                :mattress_width, :comfort, :chassis)
+  end
 
-    def set_product_names
-      length = @mattress.mattress_length.to_s[0..-3]
-      width = @mattress.mattress_width.to_s[0..-3]
-      size = width + 'x' + length
-      @mattress_product = "1x - "  + ' Tenzen Matras ' + size + ' - ' + @mattress.name
-      session[:mattress] = @mattress_product
-    end
+  def set_product_names
+    length = @mattress.mattress_length.to_s[0..-3]
+    width = @mattress.mattress_width.to_s[0..-3]
+    size = width + 'x' + length
+    @mattress_product = "1x - "  + ' Tenzen Matras ' + size + ' - ' + @mattress.name
+    session[:mattress] = @mattress_product
+  end
 end

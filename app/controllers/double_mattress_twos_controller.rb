@@ -90,48 +90,48 @@ class DoubleMattressTwosController < ApplicationController
 
   private
 
-    def double_mattress_two_complaints?
-      mattress = DoubleMattressTwo.all.where(session_id: session.id).last
-      !mattress.neck_or_back_pain.include?("Nee, geen klachten") && !mattress.neck_or_back_pain.nil?
+  def double_mattress_two_complaints?
+    mattress = DoubleMattressTwo.all.where(session_id: session.id).last
+    !mattress.neck_or_back_pain.include?("Nee, geen klachten") && !mattress.neck_or_back_pain.nil?
+  end
+  helper_method :double_mattress_two_complaints?
+
+  def double_mattress_two_complaints2?
+    mattress = DoubleMattressTwo.all.where(session_id: session.id).last
+    !mattress.neck_or_back_pain2.include?("Nee, geen klachten") && !mattress.neck_or_back_pain2.nil?
+  end
+  helper_method :double_mattress_two_complaints2?
+
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def double_mattress_two_params
+    params.require(:double_mattress_two).permit(:name, :name2, :gender, :gender2, :age, :age2,
+                                                :email, :weight, :weight2, :length, :length2,
+                                                :sleep_position, :sleep_position2, :body_shape,
+                                                :body_shape2, :warm_sleeping, :warm_sleeping2,
+                                                :neck_or_back_pain, :neck_or_back_pain2, :session_id,
+                                                :mattress_length, :mattress_width, :comfort,
+                                                :comfort2, :chassis, :separation)
+  end
+
+  def set_product_names
+    chassis = @mattress.chassis
+    separation = @mattress.separation
+
+    length = @mattress.mattress_length.to_s[0..-3]
+    width = @mattress.mattress_width.to_s[0..-3]
+    size = width + 'x' + length
+    half_size = (width.to_i / 2).to_s + 'x' + length
+
+    case separation
+    when 'Een tweepersoonsmatras'
+      @mattress_product = "1x - " + ' Tenzen Matras ' + size + ' - ' + @mattress.name + ' & ' + @mattress.name2
+      session[:mattress] = @mattress_product
+      session[:mattress2] = @mattress_product2
+    when 'Twee eenpersoonsmatrassen'
+      @mattress_product = "1x - " + ' Tenzen Matras ' + half_size + ' - ' + @mattress.name
+      @mattress_product2 = "1x - " + ' Tenzen Matras ' + half_size + ' - ' + @mattress.name2
+      session[:mattress] = @mattress_product
+      session[:mattress2] = @mattress_product2
     end
-    helper_method :double_mattress_two_complaints?
-
-    def double_mattress_two_complaints2?
-      mattress = DoubleMattressTwo.all.where(session_id: session.id).last
-      !mattress.neck_or_back_pain2.include?("Nee, geen klachten") && !mattress.neck_or_back_pain2.nil?
-    end
-    helper_method :double_mattress_two_complaints2?
-
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def double_mattress_two_params
-      params.require(:double_mattress_two).permit(:name, :name2, :gender, :gender2, :age, :age2,
-                                                  :email, :weight, :weight2, :length, :length2,
-                                                  :sleep_position, :sleep_position2, :body_shape,
-                                                  :body_shape2, :warm_sleeping, :warm_sleeping2,
-                                                  :neck_or_back_pain, :neck_or_back_pain2, :session_id,
-                                                  :mattress_length, :mattress_width, :comfort,
-                                                  :comfort2, :chassis, :separation)
-    end
-
-    def set_product_names
-      chassis = @mattress.chassis
-      separation = @mattress.separation
-
-      length = @mattress.mattress_length.to_s[0..-3]
-      width = @mattress.mattress_width.to_s[0..-3]
-      size = width + 'x' + length
-      half_size = (width.to_i / 2).to_s + 'x' + length
-
-      case separation
-      when 'Een tweepersoonsmatras'
-        @mattress_product = "1x - " + ' Tenzen Matras ' + size + ' - ' + @mattress.name + ' & ' + @mattress.name2
-        session[:mattress] = @mattress_product
-        session[:mattress2] = @mattress_product2
-      when 'Twee eenpersoonsmatrassen'
-        @mattress_product = "1x - " + ' Tenzen Matras ' + half_size + ' - ' + @mattress.name
-        @mattress_product2 = "1x - " + ' Tenzen Matras ' + half_size + ' - ' + @mattress.name2
-        session[:mattress] = @mattress_product
-        session[:mattress2] = @mattress_product2
-      end
-    end
+  end
 end

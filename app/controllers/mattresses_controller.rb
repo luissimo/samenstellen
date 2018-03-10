@@ -66,25 +66,25 @@ class MattressesController < ApplicationController
 
   private
 
-    def complaints?
-      mattress = Mattress.all.where(session_id: session.id).last
-      !mattress.neck_or_back_pain.include?("Nee, geen klachten") && !mattress.neck_or_back_pain.nil?
-    end
-    helper_method :complaints?
+  def complaints?
+    mattress = Mattress.all.where(session_id: session.id).last
+    !mattress.neck_or_back_pain.include?("Nee, geen klachten") && !mattress.neck_or_back_pain.nil?
+  end
+  helper_method :complaints?
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def mattress_params
-      params.require(:mattress).permit(:id, :session_id, :name, :gender, :age,
-                                       :email, :weight, :length, :sleep_position, :body_shape,
-                                       :warm_sleeping, :neck_or_back_pain, :mattress_length,
-                                       :mattress_width, :comfort)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def mattress_params
+    params.require(:mattress).permit(:id, :session_id, :name, :gender, :age,
+                                     :email, :weight, :length, :sleep_position, :body_shape,
+                                     :warm_sleeping, :neck_or_back_pain, :mattress_length,
+                                     :mattress_width, :comfort)
+  end
 
-    def set_product_names
-      length = @mattress.mattress_length.to_s[0..-3]
-      width = @mattress.mattress_width.to_s[0..-3]
-      size = width + 'x' + length
-      @mattress_product = "1x - " + ' Tenzen Matras ' + size + ' - ' + @mattress.name
-      session[:mattress] = @mattress_product
-    end
+  def set_product_names
+    length = @mattress.mattress_length.to_s[0..-3]
+    width = @mattress.mattress_width.to_s[0..-3]
+    size = width + 'x' + length
+    @mattress_product = "1x - " + ' Tenzen Matras ' + size + ' - ' + @mattress.name
+    session[:mattress] = @mattress_product
+  end
 end

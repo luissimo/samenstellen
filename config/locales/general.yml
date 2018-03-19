@@ -24,13 +24,13 @@ nl:
       check_result: Resultaat bekijken
 
     header:
-      order: BESTELLEN
+      customize: SAMENSTELLEN
       about_tenzen: OVER TENZEN
       questions: VRAGEN
     footer:
       navigation:
         home: HOME
-        order: BESTELLEN
+        customize: SAMENSTELLEN
         questions: VRAGEN
         about_tenzen: OVER TENZEN
         contact: CONTACT

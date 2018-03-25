@@ -17,9 +17,6 @@
                             = t('results.titles.cart')
                           %p
                             = @mattress_product
-                          - if @mattress_product2
-                            %p
-                              = @mattress_product2
                           .product_image_duo
                             - if @double_mattress_two.warm_sleeping.include?('Warm') || @double_mattress_two.warm_sleeping2.include?('Warm')
                               = image_tag('warm_matras.jpg', alt: 'Jouw Tenzen Matras')

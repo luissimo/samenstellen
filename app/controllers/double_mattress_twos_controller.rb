@@ -61,8 +61,7 @@ class DoubleMattressTwosController < ApplicationController
       mattress_width: @double_mattress_two.mattress_width,
       comfort: @double_mattress_two.comfort,
       comfort2: @double_mattress_two.comfort2,
-      chassis: @double_mattress_two.chassis,
-      separation: @double_mattress_two.separation
+      chassis: @double_mattress_two.chassis
     }
   end
 
@@ -110,28 +109,18 @@ class DoubleMattressTwosController < ApplicationController
                                                 :body_shape2, :warm_sleeping, :warm_sleeping2,
                                                 :neck_or_back_pain, :neck_or_back_pain2, :session_id,
                                                 :mattress_length, :mattress_width, :comfort,
-                                                :comfort2, :chassis, :separation)
+                                                :comfort2, :chassis)
   end
 
   def set_product_names
     chassis = @mattress.chassis
-    separation = @mattress.separation
 
     length = @mattress.mattress_length.to_s[0..-3]
     width = @mattress.mattress_width.to_s[0..-3]
     size = width + 'x' + length
     half_size = (width.to_i / 2).to_s + 'x' + length
 
-    case separation
-    when 'Een tweepersoonsmatras'
-      @mattress_product = "1x - " + ' Tenzen Matras ' + size + ' - ' + @mattress.name + ' & ' + @mattress.name2
-      session[:mattress] = @mattress_product
-      session[:mattress2] = @mattress_product2
-    when 'Twee eenpersoonsmatrassen'
-      @mattress_product = "1x - " + ' Tenzen Matras ' + half_size + ' - ' + @mattress.name
-      @mattress_product2 = "1x - " + ' Tenzen Matras ' + half_size + ' - ' + @mattress.name2
-      session[:mattress] = @mattress_product
-      session[:mattress2] = @mattress_product2
-    end
+    @mattress_product = "1x - " + ' Tenzen Matras ' + size + ' - ' + @mattress.name + ' & ' + @mattress.name2
+    session[:mattress] = @mattress_product
   end
 end

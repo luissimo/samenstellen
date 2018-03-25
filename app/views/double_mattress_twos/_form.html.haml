@@ -305,21 +305,6 @@
                 %label
                   = t("questions.chassis.no_bottom")
                   = f.radio_button :chassis, "Geen bodem", class: 'required check_radio show_chassis_chosen_warning'
-        .step.row#step_9_duo
-          .col-md-4.col-md-offset-4
-            %h3
-              = t("questions.duo.separation.title")
-              = question_icon_md(t("questions.explanations.double_mattress_two.separation"))
-            = alert(t("general.alert.chassis_chosen"), id: "chassis_chosen")
-            %ul.data-list-2
-              %li
-                %label
-                  = t("questions.duo.separation.two_solo")
-                  = f.radio_button :separation, 'Twee eenpersoonsmatrassen', class: 'required check_radio'
-              %li
-                %label
-                  = t("questions.duo.separation.one_duo")
-                  = f.radio_button :separation, 'Een tweepersoonsmatras', class: 'required check_radio'
       #bottom-wizard
         %button.backward{ name: "Vorige", type: "button"}
           = t("general.button.previous")

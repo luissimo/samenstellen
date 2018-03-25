@@ -49,7 +49,6 @@ class CustomersController < ApplicationController
       order_number: create_order_number,
       answers: session[:answers],
       mattress: session[:mattress],
-      mattress2: session[:mattress2],
       mattress_width: session[:answers][:mattress_width],
       mattress_length: session[:answers][:mattress_length]
     }

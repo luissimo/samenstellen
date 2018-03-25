@@ -20,7 +20,6 @@ class OrderMailer < ApplicationMailer
       order_number: details[:order_number],
       price: details[:price],
       mattress: details[:mattress],
-      mattress2: details[:mattress2],
       type: details[:type]
     }
     mail(to: @details[:email], from: 'info@tenzen.nl', subject: 'Bedankt voor je bestelling!')
@@ -45,8 +44,7 @@ class OrderMailer < ApplicationMailer
       payment_method: details[:payment_method],
       order_number: details[:order_number],
       price: details[:price],
-      mattress: details[:mattress],
-      mattress2: details[:mattress2]
+      mattress: details[:mattress]
     }
 
     @answers = {
@@ -72,8 +70,7 @@ class OrderMailer < ApplicationMailer
       mattress_width: answers[:mattress_width],
       comfort: answers[:comfort],
       comfort2: answers[:comfort2],
-      chassis: answers[:chassis],
-      separation: answers[:separation]
+      chassis: answers[:chassis]
     }
     mail(to: 'info@tenzen.nl', from: 'info@tenzen.nl', subject: 'Nieuwe bestelling!')
   end

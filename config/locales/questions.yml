@@ -86,10 +86,6 @@ nl:
       comfort1: "Hoe moet het matras van <span class='show_name_person_1'></span> aanvoelen? *"
       comfort2: "Hoe moet het matras van <span class='show_name_person_2'></span> aanvoelen? *"
       category: Kies een comfortcategorie voor jullie matras(sen) *
-      separation:
-        title: Hoe willen jullie het matras hebben?
-        two_solo: Twee eenpersoonsmatrassen
-        one_duo: Een tweepersoonsmatras
 
     explanations:
       mattress:
@@ -134,4 +130,3 @@ nl:
         comfort: "Heb je een voorkeur voor een matras dat zacht aanvoelt, of een matras dat hard aanvoelt? Let op: deze vraag heeft geen betrekking op de stevigheid van je matras, maar enkel op je voorkeur voor zachtheid."
         chassis: Sommige bedbodems zijn elektrisch verstelbaar. Deze maken gebruik van een motor die het voeteneinde en hoofdeinde kan laten bewegen. Heb jij zo’n elektrisch verstelbare bedbodem?
         neck_or_back_pain: Geef hier aan of je weleens last hebt van nekpijn en/of rugpijn als je wakker wordt.
-        separation: Jullie kunnen het door jullie gekozen formaat op twee manieren bestellen. Jullie kunnen kiezen voor twee éénpersoonsmatrassen, voor het beste persoonlijke comfort of voor één tweepersoonsmatras, voor de optimale mix van jullie persoonlijke matraseigenschappen.

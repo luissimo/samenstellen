@@ -1,5 +1,7 @@
 class PagesController < ApplicationController
 
+  before_action :delete_discount_session, except: [:create_contact, :sitemap]
+
   def actievoorwaarden
     @page_title = t('actievoorwaarden.title')
     @meta_title = t('actievoorwaarden.meta_title')

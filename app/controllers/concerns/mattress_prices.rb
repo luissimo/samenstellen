@@ -42,17 +42,8 @@ module MattressPrices
       @price = 0000
     end
 
-    # @price = (@price * 0.8).to_i if session[:kortingscode] == 'valentijn20'
-
-    # # LARISSA
-    # if winning_sizes && session[:kortingscode] == 'larissa'
-    #   @price = 0000
-    # end
+    @price = (@price * 0.9).to_i if session[:kortingscode] == 'tenzen10'
   end
-
-  # def winning_sizes
-  #   size('80cm', '190cm') || size('90cm', '190cm') || size('100cm', '190cm') || size('80cm', '200cm') || size('90cm', '200cm') || size('100cm', '200cm')
-  # end
 
   def size(width, length)
     @mattress = Mattress.all.where(session_id: session.id).last

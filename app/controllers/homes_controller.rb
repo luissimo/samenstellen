@@ -1,6 +1,7 @@
 class HomesController < ApplicationController
 
   # before_action :send_mail
+  before_action :delete_discount_session, only: [:index]
 
   def index
     @page_title = t('home.title')

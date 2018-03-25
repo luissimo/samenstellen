@@ -23,8 +23,8 @@
                             - else
                               €
                               = @price.to_s[0..-3]
-                              -# - if session[:kortingscode]
-                              -#   %span{style: 'color: green; font-size: 17px; color: #5cb85c;'} (-20%)
+                              - if session[:kortingscode]
+                                %span{style: 'color: green; font-size: 17px; color: #5cb85c;'} (-10%)
                           .delivery_tag
                             = t('general.delivery_time')
                           .delivery_tag

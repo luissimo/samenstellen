@@ -15,8 +15,8 @@ gem 'json'
 gem 'dotenv-rails'
 gem 'mail_form'
 gem 'jbuilder', '~> 2.5'
-# Use Redis adapter to run Action Cable in production
-# gem 'redis', '~> 3.0'
+gem 'sitemap_generator'
+gem 'whenever'
 gem 'activerecord-session_store'
 
 group :development, :test do

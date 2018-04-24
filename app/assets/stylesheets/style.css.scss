@@ -1,20 +1,35 @@
-.how_it_works {
-  position: relative;
+.center_align_desktop {
+  display: flex;
+  align-items: center;
 }
-.step_number {
-  position: relative;
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  color: #fff;
-  border-radius: 50%;
+
+li .other_cities {
+  background: -webkit-linear-gradient(-29deg,#233b88 0,#5777ab 100%);
   text-align: center;
-  background-color: #759bc4;
-  font-size: 25px;
-  font-weight: bolder;
-  top: -10px;
+  margin-bottom: 5px;
+  display: block;
+  cursor: pointer;
+  a {
+    color:white;
+    font-weight: bolder;
+    display: block;
+    width: 100%;
+    height: 100%;
+    &:hover {
+      font-size: 25px;
+    };
+  }
+
 }
+.blue_background_container_li {
+  background: -webkit-linear-gradient(-29deg,#233b88 0,#5777ab 100%);
+  color: white;
+}
+.container_transparent {
+  margin-top:-400px;
+  z-index:9;
+}
+
 .product_image img {
   width: 100%;
   height: 100%;
@@ -175,6 +190,7 @@
 .footer-bs .footer-ns p { font-size:12px; color:rgba(255,255,255,0.70); }
 
 @media (min-width: 768px) {
+
   .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { border-left:solid 1px rgba(255,255,255,0.10); }
 }
 
@@ -1358,10 +1374,6 @@ ul.data-list-2 li label.error {
 
 @media (min-width: 768px) and (max-width: 1200px) {
 
-.hide_mobile {
-  display: none;
-}
-
 .product_image {
     margin: auto;
     width: 50%;
@@ -1484,10 +1496,6 @@ ul.data-list-2 li label.error {
 
 /* From tablet portrait to mobile */
 @media (max-width: 767px) {
-
-.hide_mobile {
-  display: none;
-}
 
 .payment_method_image {
   display: none;
@@ -1746,6 +1754,7 @@ ul#footer-nav li:first-child {margin-right:0;}
 
 /* Only used for aligning usps's in worst case scenario */
 @media only screen and (max-width: 250px) {
+
   .align-usps {
     display: inline-block;
     font-size: 12px;
@@ -1768,4 +1777,10 @@ ul#footer-nav li:first-child {margin-right:0;}
 /* IMAC PRO SCREEN */
 @media (min-width: 2000px) {
   #main { padding-bottom: 400px}
+}
+
+@media (max-width: 767px) {
+  .center_align_desktop {
+    display: block;
+  }
 }

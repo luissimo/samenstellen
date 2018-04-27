@@ -6,12 +6,7 @@ SitemapGenerator::Sitemap.sitemaps_host = "https://s3.#{ENV['AWS_REGION']}.amazo
 SitemapGenerator::Sitemap.sitemaps_path = 'sitemaps/'
 SitemapGenerator::Sitemap.public_path = 'tmp/'
 
-SitemapGenerator::Sitemap.adapter = SitemapGenerator::S3Adapter.new(
-  fogprovider: 'AWS',
-  awsaccesskeyid: ENV['AWS_ACCESS_KEY_ID'],
-  awssecretaccesskey: ENV['AWS_SECRET_ACCESS_KEY'],
-  fogdirectory: ENV['S3_BUCKET'],
-  fogregion: ENV['AWS_REGION'])
+SitemapGenerator::Sitemap.adapter = SitemapGenerator::S3Adapter.new
 
 # # create index for when multiple sitemaps
 # SitemapGenerator::Sitemap.create_index = true

@@ -1,17 +1,17 @@
-require 'fog/aws'
+require 'fog-aws'
 
 # Set the host name for URL creation
 SitemapGenerator::Sitemap.default_host = "https://www.tenzen.nl"
+SitemapGenerator::Sitemap.sitemaps_host = "https://s3.#{ENV['AWS_REGION']}.amazonaws.com/#{ENV['S3_BUCKET']}/"
+SitemapGenerator::Sitemap.sitemaps_path = 'sitemaps/'
+SitemapGenerator::Sitemap.public_path = 'tmp/'
+
 SitemapGenerator::Sitemap.adapter = SitemapGenerator::S3Adapter.new(
   fogprovider: 'AWS',
   awsaccesskeyid: ENV['AWS_ACCESS_KEY_ID'],
   awssecretaccesskey: ENV['AWS_SECRET_ACCESS_KEY'],
   fogdirectory: ENV['S3_BUCKET'],
   fogregion: ENV['AWS_REGION'])
-
-SitemapGenerator::Sitemap.sitemaps_host = "https://s3.#{ENV['AWS_REGION']}.amazonaws.com/#{ENV['S3_BUCKET']}/"
-SitemapGenerator::Sitemap.sitemaps_path = 'sitemaps/'
-SitemapGenerator::Sitemap.public_path = 'public/'
 
 # # create index for when multiple sitemaps
 # SitemapGenerator::Sitemap.create_index = true

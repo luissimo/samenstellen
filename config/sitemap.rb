@@ -2,7 +2,7 @@
 SitemapGenerator::Sitemap.default_host = "https://www.tenzen.nl"
 
 # create index for when multiple sitemaps
-# SitemapGenerator::Sitemap.create_index = true
+SitemapGenerator::Sitemap.create_index = true
 
 SitemapGenerator::Sitemap.create do
   # Usage: add(path, options={})

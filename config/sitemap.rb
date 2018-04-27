@@ -1,9 +1,11 @@
+require 'fog/aws'
+
 # Set the host name for URL creation
 SitemapGenerator::Sitemap.default_host = "https://www.tenzen.nl"
 SitemapGenerator::Sitemap.adapter = SitemapGenerator::S3Adapter.new(
   fogprovider: 'AWS',
-  awsaccesskeyid: ENV['AWSACCESSKEYID'],
-  awssecretaccesskey: ENV['AWSSECRETACCESSKEY'],
+  awsaccesskeyid: ENV['AWS_ACCESS_KEY_ID'],
+  awssecretaccesskey: ENV['AWS_SECRET_ACCESS_KEY'],
   fogdirectory: ENV['S3_BUCKET'],
   fogregion: ENV['AWS_REGION'])
 

@@ -45,3 +45,8 @@ nl:
     yeah: Ja
     nope: Nee
     delivery_time: "Levertijd: 3-4 weken"
+    seo:
+      header_block_1: "Matrassen %{city_name}"
+      header_block_2: "Matras kopen %{city_name}"
+      header_block_3: "Goedkope matrassen %{city_name}"
+      header_block_4: "Je kunt ook een matras samenstellen in:"

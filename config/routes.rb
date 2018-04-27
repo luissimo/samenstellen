@@ -16,7 +16,6 @@ Rails.application.routes.draw do
   get  'algemene-voorwaarden-ingewikkeld'       => 'pages#algemene_voorwaarden_ingewikkeld'
   get  'contact'                                => 'pages#contact'
   post 'contact'                                => 'pages#create_contact'
-  get  'sitemap'                                => 'pages#sitemap',  defaults: { format: 'xml' }
   post 'kortingscode_checken'                   => 'application#kortingscode_checken', as: 'kortingscode_checken'
 
   # BESTELLEN
@@ -40,7 +39,12 @@ Rails.application.routes.draw do
   get  'bedankt'                                => 'customers#success', as: 'bedankt'
 
   # SEO
-  # get 'alkmaar' => 'seo_pages#alkmaar'
+  scope("matrassen", as: 'seo_matrassen') do
+    get 'delft' => 'seo_pages#delft'
+    get 'den_hoorn' => 'seo_pages#den_hoorn'
+    get 'delfgauw' => 'seo_pages#delfgauw'
+    get 'pijnacker' => 'seo_pages#pijnacker'
+  end
 
   # REDIRECT ALL UNKNOWN ROUTES TO ROOT
   get '*path' => redirect('/')

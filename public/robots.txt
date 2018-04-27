@@ -1,10 +1,9 @@
 User-agent: *
-Sitemap: https://www.tenzen.nl/sitemap
+Sitemap: https://s3-eu-central-1.amazonaws.com/tenzen/sitemaps/sitemap.xml.gz
 Disallow: /afrekenen
 Disallow: /bedankt
 Disallow: /bestellen/eenpersoons*
 Disallow: /bestellen/tweepersoons*
-
 
 User-agent: Googlebot-Image (Googlebot)
 Disallow: /matras

@@ -4,32 +4,72 @@ class SeoPagesController < ApplicationController
     @city_name = 'Delft'
     city_group_1(city_name: @city_name)
     @page_title = "Matrassen #{@city_name}"
-    @meta_title = "Tenzen – Persoonlijke Matrassen #{@city_name}"
-    @meta_description = "Elk lichaam is anders, dus waarom zou jouw matras dat niet zijn? Stel binnen twee minuten jouw persoonlijke matras samen in #{@city_name} en geniet van ongekend slaapcomfort!"
+    @meta_title = "Matrassen #{@city_name} | Aanbieding matras | Tenzen"
+    @meta_description = "Matrassen #{@city_name}. Goedkoop een matras kopen in #{@city_name}? Wil jij het beste matras voor de laagste prijs? Wil jij gezonder en beter slapen? Koop dan direct je Tenzen matras. Gratis bezorgd in #{@city_name}. 100
+dagen proefslapen."
   end
 
   def den_hoorn
     @city_name = 'Den Hoorn'
     city_group_1(city_name: @city_name)
     @page_title = "Matrassen #{@city_name}"
-    @meta_title = "Tenzen – Persoonlijke Matrassen #{@city_name}"
-    @meta_description = "Elk lichaam is anders, dus waarom zou jouw matras dat niet zijn? Stel binnen twee minuten jouw persoonlijke matras samen in #{@city_name} en geniet van ongekend slaapcomfort!"
+    @meta_title = "Matrassen #{@city_name} | Aanbieding matras | Tenzen"
+    @meta_description = "Matrassen #{@city_name}. Goedkoop een matras kopen in #{@city_name}? Wil jij het beste matras voor de laagste prijs? Wil jij gezonder en beter slapen? Koop dan direct je Tenzen matras. Gratis bezorgd in #{@city_name}. 100
+dagen proefslapen."
   end
 
   def delfgauw
     @city_name = 'Delfgauw'
     city_group_1(city_name: @city_name)
     @page_title = "Matrassen #{@city_name}"
-    @meta_title = "Tenzen – Persoonlijke Matrassen #{@city_name}"
-    @meta_description = "Elk lichaam is anders, dus waarom zou jouw matras dat niet zijn? Stel binnen twee minuten jouw persoonlijke matras samen in #{@city_name} en geniet van ongekend slaapcomfort!"
+    @meta_title = "Matrassen #{@city_name} | Aanbieding matras | Tenzen"
+    @meta_description = "Matrassen #{@city_name}. Goedkoop een matras kopen in #{@city_name}? Wil jij het beste matras voor de laagste prijs? Wil jij gezonder en beter slapen? Koop dan direct je Tenzen matras. Gratis bezorgd in #{@city_name}. 100
+dagen proefslapen."
   end
 
   def pijnacker
     @city_name = 'Pijnacker'
     city_group_1(city_name: @city_name)
     @page_title = "Matrassen #{@city_name}"
-    @meta_title = "Tenzen – Persoonlijke Matrassen #{@city_name}"
-    @meta_description = "Elk lichaam is anders, dus waarom zou jouw matras dat niet zijn? Stel binnen twee minuten jouw persoonlijke matras samen in #{@city_name} en geniet van ongekend slaapcomfort!"
+    @meta_title = "Matrassen #{@city_name} | Aanbieding matras | Tenzen"
+    @meta_description = "Matrassen #{@city_name}. Goedkoop een matras kopen in #{@city_name}? Wil jij het beste matras voor de laagste prijs? Wil jij gezonder en beter slapen? Koop dan direct je Tenzen matras. Gratis bezorgd in #{@city_name}. 100
+dagen proefslapen."
+  end
+
+  def venlo
+    @city_name = 'Venlo'
+    city_group_2(city_name: @city_name)
+    @page_title = "Matrassen #{@city_name}"
+    @meta_title = "Matrassen #{@city_name} | Aanbieding matras | Tenzen"
+    @meta_description = "Matrassen #{@city_name}. Goedkoop een matras kopen in #{@city_name}? Wil jij het beste matras voor de laagste prijs? Wil jij gezonder en beter slapen? Koop dan direct je Tenzen matras. Gratis bezorgd in #{@city_name}. 100
+dagen proefslapen."
+  end
+
+  def tegelen
+    @city_name = 'Tegelen'
+    city_group_2(city_name: @city_name)
+    @page_title = "Matrassen #{@city_name}"
+    @meta_title = "Matrassen #{@city_name} | Aanbieding matras | Tenzen"
+    @meta_description = "Matrassen #{@city_name}. Goedkoop een matras kopen in #{@city_name}? Wil jij het beste matras voor de laagste prijs? Wil jij gezonder en beter slapen? Koop dan direct je Tenzen matras. Gratis bezorgd in #{@city_name}. 100
+dagen proefslapen."
+  end
+
+  def blerick
+    @city_name = 'Blerick'
+    city_group_2(city_name: @city_name)
+    @page_title = "Matrassen #{@city_name}"
+    @meta_title = "Matrassen #{@city_name} | Aanbieding matras | Tenzen"
+    @meta_description = "Matrassen #{@city_name}. Goedkoop een matras kopen in #{@city_name}? Wil jij het beste matras voor de laagste prijs? Wil jij gezonder en beter slapen? Koop dan direct je Tenzen matras. Gratis bezorgd in #{@city_name}. 100
+dagen proefslapen."
+  end
+
+  def venray
+    @city_name = 'Venray'
+    city_group_2(city_name: @city_name)
+    @page_title = "Matrassen #{@city_name}"
+    @meta_title = "Matrassen #{@city_name} | Aanbieding matras | Tenzen"
+    @meta_description = "Matrassen #{@city_name}. Goedkoop een matras kopen in #{@city_name}? Wil jij het beste matras voor de laagste prijs? Wil jij gezonder en beter slapen? Koop dan direct je Tenzen matras. Gratis bezorgd in #{@city_name}. 100
+dagen proefslapen."
   end
 
   private
@@ -37,5 +77,10 @@ class SeoPagesController < ApplicationController
   def city_group_1(city_name:)
     @city_group_1 = ['Delfgauw', 'Pijnacker', 'Den Hoorn', 'Delft']
     @city_group_1.delete_if { |i| i == city_name}
+  end
+
+  def city_group_2(city_name:)
+    @city_group_2 = ['Venlo', 'Tegelen', 'Blerick', 'Venray']
+    @city_group_2.delete_if { |i| i == city_name}
   end
 end

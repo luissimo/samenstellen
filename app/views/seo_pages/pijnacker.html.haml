@@ -32,7 +32,7 @@
                       .checkout_button.title-v4.text-center
                         = cta_button_block_1
                     .col-md-6
-                      = image_seo_block_1
+                      = video_seo_block_1
 
     %li
       .li-holder
@@ -47,17 +47,25 @@
                     %h2
                       = t('general.seo.header_block_2', city_name: @city_name)
                     %p
-                      Makkelijk een matras kopen in #{@city_name}? Bij Tenzen is dat zo geregeld. Je bent dan geen uren kwijt aan
+                      Makkelijk een
+                      %strong matras kopen in #{@city_name}?
+                      Bij Tenzen is dat zo geregeld. Je bent dan geen uren kwijt aan
                       het zoeken van informatie. Binnen een minuut heb je onze vragenlijst ingevuld en weet je direct wat
                       een perfect matras kost.
                     %p
                       Voor een Tenzen matras worden alleen de beste materialen gebruikt. Zo weet je zeker dat je een
-                      geweldig matras koopt in #{@city_name}. Je matras gaat heel lang mee, waardoor niet snel vervangen hoeft te
+                      geweldig
+                      %strong matras koopt in #{@city_name}.
+                      Je matras gaat heel lang mee, waardoor niet snel vervangen hoeft te
                       worden. Daarom geniet je ook van een lange garantietermijn. Tel uit je winst.
                     %p
-                      Dus wil jij beter slapen en heb jij nog geen matras gekocht in #{@city_name}? Dan is het hoog tijd een stap in
+                      Dus wil jij beter slapen en heb jij nog geen
+                      %strong matras gekocht in #{@city_name}?
+                      Dan is het hoog tijd een stap in
                       de goede richting te zetten. Je kunt met een Tenzen matras gegarandeerd beter slapen. Door de
-                      proefslaapperiode weet je altijd zeker of Tenzen bij je past. Je matras in #{@city_name} koop je direct online.
+                      proefslaapperiode weet je altijd zeker of Tenzen bij je past. Je
+                      %strong matras in #{@city_name}
+                      koop je direct online.
                     .checkout_button.title-v4.text-center
                       = cta_button_block_2
     %li
@@ -73,9 +81,13 @@
                       %p
                         De beste matrassen zijn helemaal niet duur. Vaak betaal je onnodige kosten voor een matras dat
                         helemaal niet bij jouw lichaam past. Tenzen matrassen zijn dan ook een uitzondering. De prijzen zijn
-                        ontzettend laag. Goedkope matrassen in #{@city_name} zijn dus niet ver weg meer.
+                        ontzettend laag.
+                        %strong Goedkope matrassen in #{@city_name}
+                        zijn dus niet ver weg meer.
                       %p
-                        Koop je een van de goedkope matrassen in #{@city_name}? Let dan ook op de garantie. Een lange
+                        Koop je een van de
+                        %strong goedkope matrassen in #{@city_name}?
+                        Let dan ook op de garantie. Een lange
                         garantieperiode betekent vaak dat je matras minder snel kapot gaat. Het hoeft dan niet snel
                         vervangen te worden, waardoor je niet alsnog meer geld kwijt bent. Tenzen biedt je zo een lange
                         garantieperiode. De gebruikte materialen in een Tenzen zijn van hoogwaardige kwaliteit.
@@ -97,6 +109,6 @@
                       %h3= t('general.seo.header_block_4')
                       -@city_group_1.each do |city|
                         %li.other_cities
-                          %a{href: "/matrassen/#{city.downcase.gsub(' ', '_')}", title: "Matras #{city.titleize}"}= city.titleize
+                          %a{href: "/matrassen/#{city.downcase.gsub(' ', '-')}", title: "Matras #{city.titleize}"}= city.titleize
                       .checkout_button.title-v4.text-center
                         = cta_button_block_4

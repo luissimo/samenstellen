@@ -45,7 +45,11 @@ SitemapGenerator::Sitemap.create do
 
   # SEO PAGES
   add '/matrassen/delft', priority: 0.8
-  add '/matrassen/den_hoorn', priority: 0.5
+  add '/matrassen/den-hoorn', priority: 0.5
   add '/matrassen/delfgauw', priority: 0.5
   add '/matrassen/pijnacker', priority: 0.5
+  add '/matrassen/venlo', priority: 0.8
+  add '/matrassen/tegelen', priority: 0.5
+  add '/matrassen/blerick', priority: 0.5
+  add '/matrassen/venray', priority: 0.5
 end

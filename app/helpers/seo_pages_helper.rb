@@ -1,6 +1,6 @@
 module SeoPagesHelper
-  def image_seo_block_1
-    image_tag 'Tenzen-matras-in-doos-Wit.png', alt: "Matrassen #{@city_name}", title: "Matrassen #{@city_name}", width: '100%', height: '100%'
+  def video_seo_block_1
+   %(<iframe title="Tenzen Matras #{@city_name}" allow="autoplay; encrypted-media" allowfullscreen="" frameborder="0" height="315" width="100%" src="https://www.youtube.com/embed/nETjGNV4DgQ?rel=0&controls=0&showinfo=0"></iframe>).html_safe
   end
 
   def image_seo_block_2
@@ -12,7 +12,7 @@ module SeoPagesHelper
   end
 
   def image_seo_block_4
-    image_tag 'koud_matras.jpg', alt: "Tenzen matras bestellen #{@city_name}", title: "Tenzen matras bestellen #{@city_name}", width: '100%', height: '100%'
+    image_tag 'Tenzen-logo-marineblauw.svg', alt: "Tenzen matras bestellen #{@city_name}", title: "Tenzen matras bestellen #{@city_name}", width: '100%', height: '100%'
   end
 
   def cta_button_block_1

@@ -1,0 +1,111 @@
+%section.container_transparent
+  %ul
+    %li
+      .blue_background_container_li
+        .li-holder
+          .li-content
+            .text-content
+              .text-v4
+                .row
+                  .col-md-10.col-md-offset-1.center_align_desktop
+                    .col-md-6
+                      %h1{style: 'line-height: 35px'}
+                        = t('general.seo.header_block_1', city_name: @city_name)
+                      %br
+                      %p
+                        De beste
+                        %strong matrassen in #{@city_name}
+                        vind je natuurlijk bij Tenzen. Het kiezen van een juiste matras hoeft
+                        lang niet meer zo ingewikkeld te zijn als vroeger. In slechts minuten stel je een matras samen dat
+                        perfect bij jouw lichaam past. Je hoeft helemaal niet meer om te kijken naar al die moeilijke termen
+                        waar je toch al niet veel mee hebt.
+                      %p
+                        Een perfect nachtrust is gegarandeerd met de persoonlijke
+                        matrassen van Tenzen. Je bestelt je
+                        %strong matras in #{@city_name}
+                        gewoon online. Je slaapkamer is de
+                        showroom. Je lichaam heeft namelijk altijd een periode nodig om aan een matras te wennen. Je kunt
+                        op je bestelde matrassen bij Tenzen dan ook altijd proefslapen. Zo weet je zeker dat je niet een
+                        miskoop begaat.
+                      %p
+                        Met de droomservice van Tenzen wordt je
+                        %strong matras in #{@city_name}
+                        ook nog eens gratis bezorgd.
+                      .checkout_button.title-v4.text-center
+                        = cta_button_block_1
+                    .col-md-6
+                      = video_seo_block_1
+
+    %li
+      .li-holder
+        .li-content
+          .text-content
+            .text-v4
+              .row
+                .col-md-10.col-md-offset-1.center_align_desktop
+                  .col-md-6
+                    = image_seo_block_2
+                  .col-md-6
+                    %h2
+                      = t('general.seo.header_block_2', city_name: @city_name)
+                    %p
+                      Makkelijk een
+                      %strong matras kopen in #{@city_name}?
+                      Bij Tenzen is dat zo geregeld. Je bent dan geen uren kwijt aan
+                      het zoeken van informatie. Binnen een minuut heb je onze vragenlijst ingevuld en weet je direct wat
+                      een perfect matras kost.
+                    %p
+                      Ontzettend veel termen waar je geen raad mee weet. Moet je nou een koudschuim of traagschuim
+                      matras kopen. Wat is de punt-elasticiteit van je matras. Wat is de stevigheid. Enzovoort. Bij Tenzen
+                      hoef je dit allemaal niet te weten. Onze vragenlijst is zo opgebouwd dat we precies weten welke
+                      matras bij jouw lichaam past. Zo weet je ook zeker dat je niet de verkeerde keuze maakt.
+                    %p
+                      Is Tenzen iets voor jou en heb je nog geen
+                      %strong matras gekocht in #{@city_name}?
+                      Bestel dan direct jouw matras online. Zorg dat jij heel snel beter kunt slapen. Je kunt proefslapen op je Tenzen matras en testen of
+                      het iets voor jou is.
+                    .checkout_button.title-v4.text-center
+                      = cta_button_block_2
+    %li
+      .blue_background_container_li
+        .li-holder
+          .li-content
+            .text-content
+              .text-v4
+                .row
+                  .col-md-10.col-md-offset-1.center_align_desktop
+                    .col-md-6
+                      %h2= t('general.seo.header_block_3', city_name: @city_name)
+                      %p
+                        Te veel betalen voor een matras? Waarom zou je dat doen? Je kunt beter zoeken naar
+                        %strong goedkope matrassen in #{@city_name}.
+                        Vaak doen deze niet veel onder aan de kwaliteit van een duur matras. Als je
+                        helemaal het beste wilt, dan kies je voor een Tenzen matras. Dan weet je zeker dat de je de beste
+                        kwaliteit voor de laagste prijs hebt.
+                      %p
+                        Het fabeltje dat goede matrassen altijd duur zijn en dat
+                        %strong goedkope matrassen in #{@city_name}
+                        altijd van slechte kwaliteit zijn kunnen we dus de wereld uit helpen. Tenzen matrassen zijn namelijk gemaakt
+                        met de beste materialen en zijn ontzettend voordelig. Door de scherpe prijzen zou je zelfs twee of
+                        drie matrassen kunnen halen als je het vergelijkt met die dure matrassen.
+                      .checkout_button.title-v4.text-center
+                        = cta_button_block_3
+                    .col-md-6
+                      = image_seo_block_3
+    %li
+      .li-holder
+        .li-content
+          .text-content
+            .text-v4
+              .row
+                .col-md-10.col-md-offset-1.center_align_desktop
+                  .col-md-6
+                    = image_seo_block_4
+                  .col-md-6
+                    %ul
+                      %h3= t('general.seo.header_block_4')
+                      -@city_group_2.each do |city|
+                        %li.other_cities
+                          %a{href: "/matrassen/#{city.downcase.gsub(' ', '-')}", title: "Matras #{city.titleize}"}= city.titleize
+                      .checkout_button.title-v4.text-center
+                        = cta_button_block_4

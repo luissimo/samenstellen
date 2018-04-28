@@ -6,13 +6,13 @@ Disallow: /bestellen/eenpersoons*
 Disallow: /bestellen/tweepersoons*
 
 User-agent: Googlebot-Image (Googlebot)
-Disallow: /matras
+Disallow: /matras/
 
 User-agent: Googlebot-News (Googlebot)
-Disallow: /matras
+Disallow: /matras/
 
 User-agent: Googlebot-Video (Googlebot)
-Disallow: /matras
+Disallow: /matras/
 
 User-agent: Googlebot
-Disallow: /matras
+Disallow: /matras/

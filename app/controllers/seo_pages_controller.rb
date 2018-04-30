@@ -3,14 +3,17 @@ class SeoPagesController < ApplicationController
   def delft
     @city_name = 'Delft'
     city_group_1(city_name: @city_name)
-
+    @page_title = "Matrassen #{@city_name}"
+    @meta_title = "Matrassen #{@city_name} | Matras kopen #{@city_name} | Tenzen"
+    @meta_description = "Matrassen #{@city_name}. Goedkoop een matras kopen in #{@city_name}? Wil jij het beste matras voor de laagste prijs? Wil jij gezonder en beter slapen? Koop dan direct je Tenzen matras. Gratis bezorgd in #{@city_name}. 100
+dagen proefslapen."
   end
 
   def den_hoorn
     @city_name = 'Den Hoorn'
     city_group_1(city_name: @city_name)
     @page_title = "Matrassen #{@city_name}"
-    @meta_title = "Matrassen #{@city_name} | Aanbieding matras | Tenzen"
+    @meta_title = "Matrassen #{@city_name} | Matras kopen #{@city_name} | Tenzen"
     @meta_description = "Matrassen #{@city_name}. Goedkoop een matras kopen in #{@city_name}? Wil jij het beste matras voor de laagste prijs? Wil jij gezonder en beter slapen? Koop dan direct je Tenzen matras. Gratis bezorgd in #{@city_name}. 100
 dagen proefslapen."
   end
@@ -19,7 +22,7 @@ dagen proefslapen."
     @city_name = 'Delfgauw'
     city_group_1(city_name: @city_name)
     @page_title = "Matrassen #{@city_name}"
-    @meta_title = "Matrassen #{@city_name} | Aanbieding matras | Tenzen"
+    @meta_title = "Matrassen #{@city_name} | Matras kopen #{@city_name} | Tenzen"
     @meta_description = "Matrassen #{@city_name}. Goedkoop een matras kopen in #{@city_name}? Wil jij het beste matras voor de laagste prijs? Wil jij gezonder en beter slapen? Koop dan direct je Tenzen matras. Gratis bezorgd in #{@city_name}. 100
 dagen proefslapen."
   end
@@ -28,7 +31,7 @@ dagen proefslapen."
     @city_name = 'Pijnacker'
     city_group_1(city_name: @city_name)
     @page_title = "Matrassen #{@city_name}"
-    @meta_title = "Matrassen #{@city_name} | Aanbieding matras | Tenzen"
+    @meta_title = "Matrassen #{@city_name} | Matras kopen #{@city_name} | Tenzen"
     @meta_description = "Matrassen #{@city_name}. Goedkoop een matras kopen in #{@city_name}? Wil jij het beste matras voor de laagste prijs? Wil jij gezonder en beter slapen? Koop dan direct je Tenzen matras. Gratis bezorgd in #{@city_name}. 100
 dagen proefslapen."
   end
@@ -37,7 +40,7 @@ dagen proefslapen."
     @city_name = 'Venlo'
     city_group_2(city_name: @city_name)
     @page_title = "Matrassen #{@city_name}"
-    @meta_title = "Matrassen #{@city_name} | Aanbieding matras | Tenzen"
+    @meta_title = "Matrassen #{@city_name} | Matras kopen #{@city_name} | Tenzen"
     @meta_description = "Matrassen #{@city_name}. Goedkoop een matras kopen in #{@city_name}? Wil jij het beste matras voor de laagste prijs? Wil jij gezonder en beter slapen? Koop dan direct je Tenzen matras. Gratis bezorgd in #{@city_name}. 100
 dagen proefslapen."
   end
@@ -46,7 +49,7 @@ dagen proefslapen."
     @city_name = 'Tegelen'
     city_group_2(city_name: @city_name)
     @page_title = "Matrassen #{@city_name}"
-    @meta_title = "Matrassen #{@city_name} | Aanbieding matras | Tenzen"
+    @meta_title = "Matrassen #{@city_name} | Matras kopen #{@city_name} | Tenzen"
     @meta_description = "Matrassen #{@city_name}. Goedkoop een matras kopen in #{@city_name}? Wil jij het beste matras voor de laagste prijs? Wil jij gezonder en beter slapen? Koop dan direct je Tenzen matras. Gratis bezorgd in #{@city_name}. 100
 dagen proefslapen."
   end
@@ -55,7 +58,7 @@ dagen proefslapen."
     @city_name = 'Blerick'
     city_group_2(city_name: @city_name)
     @page_title = "Matrassen #{@city_name}"
-    @meta_title = "Matrassen #{@city_name} | Aanbieding matras | Tenzen"
+    @meta_title = "Matrassen #{@city_name} | Matras kopen #{@city_name} | Tenzen"
     @meta_description = "Matrassen #{@city_name}. Goedkoop een matras kopen in #{@city_name}? Wil jij het beste matras voor de laagste prijs? Wil jij gezonder en beter slapen? Koop dan direct je Tenzen matras. Gratis bezorgd in #{@city_name}. 100
 dagen proefslapen."
   end
@@ -64,7 +67,7 @@ dagen proefslapen."
     @city_name = 'Venray'
     city_group_2(city_name: @city_name)
     @page_title = "Matrassen #{@city_name}"
-    @meta_title = "Matrassen #{@city_name} | Aanbieding matras | Tenzen"
+    @meta_title = "Matrassen #{@city_name} | Matras kopen #{@city_name} | Tenzen"
     @meta_description = "Matrassen #{@city_name}. Goedkoop een matras kopen in #{@city_name}? Wil jij het beste matras voor de laagste prijs? Wil jij gezonder en beter slapen? Koop dan direct je Tenzen matras. Gratis bezorgd in #{@city_name}. 100
 dagen proefslapen."
   end
@@ -73,7 +76,7 @@ dagen proefslapen."
     @city_name = 'Emmen'
     city_group_3(city_name: @city_name)
     @page_title = "Matrassen #{@city_name}"
-    @meta_title = "Matrassen #{@city_name} | Aanbieding matras | Tenzen"
+    @meta_title = "Matrassen #{@city_name} | Matras kopen #{@city_name} | Tenzen"
     @meta_description = "Matrassen #{@city_name}. Goedkoop een matras kopen in #{@city_name}? Wil jij het beste matras voor de laagste prijs? Wil jij gezonder en beter slapen? Koop dan direct je Tenzen matras. Gratis bezorgd in #{@city_name}. 100
 dagen proefslapen."
   end
@@ -82,7 +85,7 @@ dagen proefslapen."
     @city_name = 'Klazienaveen'
     city_group_3(city_name: @city_name)
     @page_title = "Matrassen #{@city_name}"
-    @meta_title = "Matrassen #{@city_name} | Aanbieding matras | Tenzen"
+    @meta_title = "Matrassen #{@city_name} | Matras kopen #{@city_name} | Tenzen"
     @meta_description = "Matrassen #{@city_name}. Goedkoop een matras kopen in #{@city_name}? Wil jij het beste matras voor de laagste prijs? Wil jij gezonder en beter slapen? Koop dan direct je Tenzen matras. Gratis bezorgd in #{@city_name}. 100
 dagen proefslapen."
   end
@@ -91,7 +94,7 @@ dagen proefslapen."
     @city_name = 'Hoogeveen'
     city_group_3(city_name: @city_name)
     @page_title = "Matrassen #{@city_name}"
-    @meta_title = "Matrassen #{@city_name} | Aanbieding matras | Tenzen"
+    @meta_title = "Matrassen #{@city_name} | Matras kopen #{@city_name} | Tenzen"
     @meta_description = "Matrassen #{@city_name}. Goedkoop een matras kopen in #{@city_name}? Wil jij het beste matras voor de laagste prijs? Wil jij gezonder en beter slapen? Koop dan direct je Tenzen matras. Gratis bezorgd in #{@city_name}. 100
 dagen proefslapen."
   end
@@ -100,7 +103,7 @@ dagen proefslapen."
     @city_name = 'Emmer-compascuum'
     city_group_3(city_name: @city_name)
     @page_title = "Matrassen #{@city_name}"
-    @meta_title = "Matrassen #{@city_name} | Aanbieding matras | Tenzen"
+    @meta_title = "Matrassen #{@city_name} | Matras kopen #{@city_name} | Tenzen"
     @meta_description = "Matrassen #{@city_name}. Goedkoop een matras kopen in #{@city_name}? Wil jij het beste matras voor de laagste prijs? Wil jij gezonder en beter slapen? Koop dan direct je Tenzen matras. Gratis bezorgd in #{@city_name}. 100
 dagen proefslapen."
   end

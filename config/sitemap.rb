@@ -47,6 +47,7 @@ SitemapGenerator::Sitemap.create do
   add '/matrassen/delft', priority: 0.8
   add '/matrassen/emmen', priority: 0.8
   add '/matrassen/venlo', priority: 0.8
+  add '/matrassen/ede', priority: 0.8
   add '/matrassen/den-hoorn', priority: 0.5
   add '/matrassen/delfgauw', priority: 0.5
   add '/matrassen/pijnacker', priority: 0.5
@@ -56,4 +57,8 @@ SitemapGenerator::Sitemap.create do
   add '/matrassen/klazienaveen', priority: 0.5
   add '/matrassen/hoogeveen', priority: 0.5
   add '/matrassen/emmer-compascuum', priority: 0.5
+  add '/matrassen/veenendaal', priority: 0.5
+  add '/matrassen/barneveld', priority: 0.5
+  add '/matrassen/wageningen', priority: 0.5
+  add '/matrassen/renkum', priority: 0.5
 end

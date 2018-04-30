@@ -50,6 +50,11 @@ Rails.application.routes.draw do
     get 'klazienaveen'       => 'seo_pages#klazienaveen'
     get 'hoogeveen'          => 'seo_pages#hoogeveen'
     get 'emmer-compascuum'   => 'seo_pages#emmer_compascuum'
+    get 'ede'                => 'seo_pages#ede'
+    get 'veenendaal'         => 'seo_pages#veenendaal'
+    get 'barneveld'          => 'seo_pages#barneveld'
+    get 'wageningen'         => 'seo_pages#wageningen'
+    get 'renkum'             => 'seo_pages#renkum'
   end
   # REDIRECT ALL UNKNOWN ROUTES TO ROOT
   get '*path' => redirect('/')

@@ -38,14 +38,18 @@ Rails.application.routes.draw do
 
   # SEO
   scope("matrassen", as: 'seo_matrassen') do
-    get 'delft'         => 'seo_pages#delft'
-    get 'den-hoorn'     => 'seo_pages#den_hoorn'
-    get 'delfgauw'      => 'seo_pages#delfgauw'
-    get 'pijnacker'     => 'seo_pages#pijnacker'
-    get 'venlo'         => 'seo_pages#venlo'
-    get 'tegelen'       => 'seo_pages#tegelen'
-    get 'blerick'       => 'seo_pages#blerick'
-    get 'venray'        => 'seo_pages#venray'
+    get 'delft'              => 'seo_pages#delft'
+    get 'den-hoorn'          => 'seo_pages#den_hoorn'
+    get 'delfgauw'           => 'seo_pages#delfgauw'
+    get 'pijnacker'          => 'seo_pages#pijnacker'
+    get 'venlo'              => 'seo_pages#venlo'
+    get 'tegelen'            => 'seo_pages#tegelen'
+    get 'blerick'            => 'seo_pages#blerick'
+    get 'venray'             => 'seo_pages#venray'
+    get 'emmen'              => 'seo_pages#emmen'
+    get 'klazienaveen'       => 'seo_pages#klazienaveen'
+    get 'hoogeveen'          => 'seo_pages#hoogeveen'
+    get 'emmer-compascuum'   => 'seo_pages#emmer_compascuum'
   end
   # REDIRECT ALL UNKNOWN ROUTES TO ROOT
   get '*path' => redirect('/')

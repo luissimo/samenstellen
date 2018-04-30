@@ -1,0 +1,112 @@
+%section.container_transparent
+  %ul
+    %li
+      .blue_background_container_li
+        .li-holder
+          .li-content
+            .text-content
+              .text-v4
+                .row
+                  .col-md-10.col-md-offset-1.center_align_desktop
+                    .col-md-6
+                      %h1{style: 'line-height: 35px'}
+                        = t('general.seo.header_block_1', city_name: @city_name)
+                      %br
+                      %p
+                        Een betere nachtrust krijgen is niet altijd eenvoudig. Vaak moet je op veel verschillende aspecten
+                        letten. Zo kan je leefstijl van invloed zijn op je nachtrust. Als er een ding is wat je snel kunt
+                        veranderen voor een betere nachtrust, dan is dat wel je matras.
+                      %p
+                        Het is moeilijk om goede
+                        %strong matrassen in #{@city_name} te vinden.
+                        Terwijl dit wel een ontzettend grote impact kan hebben op hoe je slaapt. Heel veel mensen kunnen niet snel in slaap vallen. Bij mensen duurt het gemiddeld 10-15 minuten voordat ze in slaap vallen. Als het veel langer duurt moet je dringend op zoek naar een oplossing. Want het kan je in een negatieve spiraal brengen waar je zelfs kans hebt om in een depressie te raken.
+                      %p
+                        Het beste
+                        %strong matras in #{@city_name}
+                        kun je eenvoudig samenstellen. Bij Tenzen kun je aan de hand van een vragenlijst
+                        eenvoudig een matras maken dat perfect bij je past. Zorg dat je ook kiest voor een betere nachtrust.
+                        Kies ook voor een Tenzen en verbeter je nachtrust.
+                      .checkout_button.title-v4.text-center
+                        = cta_button_block_1
+                    .col-md-6
+                      = video_seo_block_1
+
+    %li
+      .li-holder
+        .li-content
+          .text-content
+            .text-v4
+              .row
+                .col-md-10.col-md-offset-1.center_align_desktop
+                  .col-md-6
+                    = image_seo_block_2
+                  .col-md-6
+                    %h2
+                      = t('general.seo.header_block_2', city_name: @city_name)
+                    %p
+                      Wij willen natuurlijk dat jij het beste
+                      %strong matras koopt in #{@city_name}.
+                      Wij willen niet dat je uren kwijt bent aan het zoeken naar materialen, termen en vakjargon waar je toch niets aan hebt. Het enige wat jij wilt is goed slapen voor een zo scherp mogelijke prijs. Tenzen biedt precies dat.
+                    %p
+                      In een paar minuten
+                      heb je onze vragenlijst al ingevuld. Je kunt je dan eenvoudig online je
+                      %strong matras kopen in #{@city_name}.
+                      Je bestelling wordt gratis bezorgd. De materialen die gebruikt worden voor je Tenzen matras zijn van de
+                      hoogste kwaliteit. Alle matrassen beschikken over een LGA-certificaat. Dit is een certificaat die de
+                      kwaliteit benadrukt. Zo weet je dat verklaart het certificaat dat het matras veilig is en vrij van
+                      schadelijke stoffen. Dat is heel erg belangrijk voor je gezondheid. Een matras dat vrij is van
+                      schadelijke stoffen stinkt ook niet.
+                    %p
+                      Wil jij ook een veilige matras kopen? Koop dan direct je eigen
+                      Tenzen.
+                    .checkout_button.title-v4.text-center
+                      = cta_button_block_2
+    %li
+      .blue_background_container_li
+        .li-holder
+          .li-content
+            .text-content
+              .text-v4
+                .row
+                  .col-md-10.col-md-offset-1.center_align_desktop
+                    .col-md-6
+                      %h2= t('general.seo.header_block_3', city_name: @city_name)
+                      %p
+                        Het is verleidelijk om te zoeken naar
+                        %strong goedkope matrassen in #{@city_name}.
+                        Maar dan heb je de kans dat je vaak duurder uit bent dan je eigenlijk zou willen. Je moet je niet laten verassen. Zorg daarom dat je altijd de voorwaarden leest voordat je overgaat tot een aankoop.
+                      %p
+                        Een matras moet lang mee gaan,
+                        zodat het minder vaak vervangen hoeft te worden. Dus als je op het punt staat om een
+                        %strong goedkope matras in #{@city_name}
+                        te kopen, zorg dan dat je alles goed leest. Bij Tenzen vinden wij dit belangrijk.
+                        Daarom hebben wij aan al deze dingen gedacht.
+                      %p
+                        Omdat de materialen van een Tenzen matras van de
+                        allerhoogste kwaliteit zijn, geniet je van een lange garantieperiode. Zo weet je zeker dat je matras
+                        niet snel vervangen hoeft te worden. Daarnaast kun je proefslapen op je matras. Je zit nergens aan
+                        vast.
+                      %p
+                        Denk je persoonlijke Tenzen niet bij je past? Dan komen wij je matras gratis ophalen. Je krijgt
+                        dan het volledige aankoopbedrag terug. Daar doen we niet moeilijk over.
+                      .checkout_button.title-v4.text-center
+                        = cta_button_block_3
+                    .col-md-6
+                      = image_seo_block_3
+    %li
+      .li-holder
+        .li-content
+          .text-content
+            .text-v4
+              .row
+                .col-md-10.col-md-offset-1.center_align_desktop
+                  .col-md-6
+                    = image_seo_block_4
+                  .col-md-6
+                    %ul
+                      %h3= t('general.seo.header_block_4')
+                      -@city_group_3.each do |city|
+                        %li.other_cities
+                          %a{href: "/matrassen/#{city.downcase.gsub(' ', '-')}", title: "Matras #{city.titleize}"}= city.titleize
+                      .checkout_button.title-v4.text-center
+                        = cta_button_block_4

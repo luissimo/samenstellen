@@ -1,5 +1,6 @@
 class OrderMailer < ApplicationMailer
   default from: 'info@tenzen.nl'
+  before_action :add_inline_attachments, only: [:order_success]
 
   def order_success(details:)
     @details = {
@@ -74,4 +75,12 @@ class OrderMailer < ApplicationMailer
     }
     mail(to: 'info@tenzen.nl', from: 'info@tenzen.nl', subject: 'Nieuwe bestelling!')
   end
+
+  private
+
+    def add_inline_attachments
+      attachments.inline['tenzen_logo_wit.svg'] = File.read("#{Rails.root}/app/assets/images/Tenzen-logo-wit.svg")
+      attachments.inline['tenzen_logo_blauw.svg'] = File.read("#{Rails.root}/app/assets/images/Tenzen-logo-marineblauw.svg")
+    end
+
 end

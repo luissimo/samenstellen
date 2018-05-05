@@ -1,10 +1,10 @@
 %h1 HOERRRRRA nieuwe bestelling!
 %h2
   Ordernummer:
-  = @details[:order_number]
-%h3= @details[:type]
+  \#{@details[:order_number]}
+%h3
+  = @details[:type]
 %hr/
-
 %h3 Klantgegevens:
 %hr/
 %p
@@ -34,19 +34,20 @@
 %p
   %strong Gebruikte betaalmethode:
   = @details[:payment_method]
-
 %p
   %strong COMMENT/NOTITIE:
   = @details[:comment]
-
 - if @details[:address_ship]
   %br/
   %h4 Andere Verzendadres:
-  %p= @details[:address_ship]
-  %p= @details[:address_addition_ship]
-  %p= @details[:zip_code_ship]
-  %p= @details[:city_ship]
-
+  %p
+    = @details[:address_ship]
+  %p
+    = @details[:address_addition_ship]
+  %p
+    = @details[:zip_code_ship]
+  %p
+    = @details[:city_ship]
 %hr/
 %h4 Persoon 1:
 %p
@@ -88,7 +89,6 @@
 %p
   %strong Verstelbaar onderstel:
   = @answers[:chassis]
-
 %hr/
 - if @answers[:name2]
   %h4 Persoon 2:

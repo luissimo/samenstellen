@@ -149,6 +149,60 @@ class SeoPagesController < ApplicationController
     set_metas
   end
 
+  def leiden
+    @city_name = 'Leiden'
+    city_group_6(city_name: @city_name)
+    set_metas
+  end
+
+  def oegstgeest
+    @city_name = 'Oegstgeest'
+    city_group_6(city_name: @city_name)
+    set_metas
+  end
+
+  def wassenaar
+    @city_name = 'Wassenaar'
+    city_group_6(city_name: @city_name)
+    set_metas
+  end
+
+  def katwijk_aan_zee
+    @city_name = 'Katwijk aan Zee'
+    city_group_6(city_name: @city_name)
+    set_metas
+  end
+
+  def sassenheim
+    @city_name = 'Sassenheim'
+    city_group_6(city_name: @city_name)
+    set_metas
+  end
+
+  def voorhout
+    @city_name = 'Voorhout'
+    city_group_6(city_name: @city_name)
+    set_metas
+  end
+
+  def leiderdorp
+    @city_name = 'Leiderdorp'
+    city_group_6(city_name: @city_name)
+    set_metas
+  end
+
+  def voorschoten
+    @city_name = 'Voorschoten'
+    city_group_6(city_name: @city_name)
+    set_metas
+  end
+
+  def lisse
+    @city_name = 'Lisse'
+    city_group_6(city_name: @city_name)
+    set_metas
+  end
+
   private
 
     def set_metas
@@ -181,5 +235,10 @@ class SeoPagesController < ApplicationController
     def city_group_5(city_name:)
       @city_group_5 = ['Dordrecht', 'Hendrik-ido-ambacht', 'Sliedrecht', 'Zwijndrecht', 'Gorinchem', 'Papendrecht', 'Alblasserdam', 'Giessendam Neder-Hardinxveld']
       @city_group_5.delete_if { |i| i == city_name}
+    end
+
+    def city_group_6(city_name:)
+      @city_group_6 = ['Leiden', 'Oegstgeest', 'Wassenaar', 'Katwijk aan Zee', 'Sassenheim', 'Voorhout', 'Leiderdorp', 'Voorschoten', 'Lisse']
+      @city_group_6.delete_if { |i| i == city_name}
     end
 end

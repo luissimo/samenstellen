@@ -63,6 +63,15 @@ Rails.application.routes.draw do
     get 'papendrecht'                         =>  'seo_pages#papendrecht'
     get 'alblasserdam'                        =>  'seo_pages#alblasserdam'
     get 'giessendam-neder-hardinxveld'        =>  'seo_pages#giessendam_neder_hardinxveld'
+    get 'leiden'                              =>  'seo_pages#leiden'
+    get 'oegstgeest'                          =>  'seo_pages#oegstgeest'
+    get 'wassenaar'                           =>  'seo_pages#wassenaar'
+    get 'katwijk-aan-zee'                     =>  'seo_pages#katwijk_aan_zee'
+    get 'sassenheim'                          =>  'seo_pages#sassenheim'
+    get 'voorhout'                            =>  'seo_pages#voorhout'
+    get 'leiderdorp'                          =>  'seo_pages#leiderdorp'
+    get 'voorschoten'                         =>  'seo_pages#voorschoten'
+    get 'lisse'                               =>  'seo_pages#lisse'
   end
 
   # REDIRECT ALL UNKNOWN ROUTES TO ROOT

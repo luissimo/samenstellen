@@ -49,6 +49,7 @@ SitemapGenerator::Sitemap.create do
   add '/matrassen/venlo', priority: 0.8
   add '/matrassen/ede', priority: 0.8
   add '/matrassen/dordrecht', priority: 0.8
+  add '/matrassen/leiden', priority: 0.8
   add '/matrassen/den-hoorn', priority: 0.5
   add '/matrassen/delfgauw', priority: 0.5
   add '/matrassen/pijnacker', priority: 0.5
@@ -69,5 +70,12 @@ SitemapGenerator::Sitemap.create do
   add '/matrassen/papendrecht', priority: 0.5
   add '/matrassen/alblasserdam', priority: 0.5
   add '/matrassen/giessendam-neder-hardinxveld', priority: 0.5
-
+  add '/matrassen/oegstgeest', priority: 0.5
+  add '/matrassen/wassenaar', priority: 0.5
+  add '/matrassen/katwijk-aan-zee', priority: 0.5
+  add '/matrassen/sassenheim', priority: 0.5
+  add '/matrassen/voorhout', priority: 0.5
+  add '/matrassen/leiderdorp', priority: 0.5
+  add '/matrassen/voorschoten', priority: 0.5
+  add '/matrassen/lisse', priority: 0.5
 end

@@ -1,0 +1,119 @@
+%section.container_transparent
+  %ul
+    %li
+      .blue_background_container_li
+        .li-holder
+          .li-content
+            .text-content
+              .text-v4
+                .row
+                  .col-md-10.col-md-offset-1.center_align_desktop
+                    .col-md-6
+                      %h1{style: 'line-height: 35px'}
+                        = t('general.seo.header_block_1', city_name: @city_name)
+                      %br
+                      %p
+                        Goed slapen is heel erg belangrijk voor je. Daar kun je heel makkelijk iets aan doen. Je matras kies je
+                        vaak door deze te vergelijken op veel aspecten. Maar op het moment dat je je aankoop in huis hebt
+                        is het toch even afwachten of het wel echt bij je past.
+                      %p
+                        Dat vinden wij niet kunnen bij Tenzen. Daarom
+                        kun je eenvoudig en snel een persoonlijke
+                        %strong matras in #{@city_name}
+                        samenstellen. Je vult een aantal
+                        makkelijke vragen waardoor wij weten welke materialen het best bij jouw lichaam passen. Aan de
+                        hand daarvan maken wij het beste matras voor je.
+                      %p
+                        Een matras waar andere
+                        %strong matrassen in #{@city_name}
+                        niet
+                        tegen opgewassen zijn. Ongekend comfort, persoonlijk comfort. Het is echt speciaal voor jou
+                        gemaakt. En dat is niet alles. Je kunt uitgebreid proefslapen op je Tenzen matras. Dan weet je ook
+                        zeker dat dit het juiste matras voor je is.
+                      .checkout_button.title-v4.text-center
+                        = cta_button_block_1
+                    .col-md-6
+                      = video_seo_block_1
+    %li
+      .li-holder
+        .li-content
+          .text-content
+            .text-v4
+              .row
+                .col-md-10.col-md-offset-1.center_align_desktop
+                  .col-md-6
+                    = image_seo_block_2
+                  .col-md-6
+                    %h2
+                      = t('general.seo.header_block_2', city_name: @city_name)
+                    %p
+                      Een
+                      %strong matras kopen in #{@city_name}
+                      was dus nog nooit zo makkelijk. Het invullen van de vragenlijst kost je
+                      slechts twee of drie minuten. Je krijgt dan gratis advies en weet je ook waar je matras rekening mee
+                      zal houden. Als je dan besluit om het matras echt te kopen, dan komen wij het gratis voor je
+                      bezorgen in
+                      %strong #{@city_name}.
+                    %p
+                      Je geniet van een uitgebreide garantie waardoor je zeker weet dat je matras niet
+                      snel aan vervanging toe is. Je kunt je
+                      %strong gekochte matras in #{@city_name}
+                      gewoon uitproberen. Als het nou niet
+                      is wat je er van had verwacht, dan komen wij het gratis bij je ophalen en krijg jij het volledige
+                      aankoopbedrag terug. Zo loop je helemaal geen risico.
+                    %p
+                      Wij vinden namelijk dat je een matras pas
+                      echt kunt testen als je er langdurig op mag slapen. Dus niet even in een showroom liggen op een
+                      matras. Maar echt liggen op je gekochte matras op jouw bedbodem. Want ook dat kan anders
+                      aanvoelen dan in een showroom. Je weet dan zeker dat een Tenzen écht het perfecte matras is.
+                    .checkout_button.title-v4.text-center
+                      = cta_button_block_2
+    %li
+      .blue_background_container_li
+        .li-holder
+          .li-content
+            .text-content
+              .text-v4
+                .row
+                  .col-md-10.col-md-offset-1.center_align_desktop
+                    .col-md-6
+                      %h2= t('general.seo.header_block_3', city_name: @city_name)
+                      %p
+                        Op het moment dat je de vragenlijst hebt ingevuld krijg je een gratis adviesrapport. Je krijgt dan ook
+                        de prijs van jouw Tenzen matras te zien. Je zult versteld staan. Want dit kwalitatief hoogwaardige
+                        matras is qua prijs opgewassen tegen de
+                        %strong goedkoopste matrassen in #{@city_name}.
+                        Een betere matras zul je niet snel vinden.
+                      %p
+                        Tenzen matrassen voldoen aan de strengste kwaliteitsnormen. Onder strenge
+                        toezicht worden ze geproduceerd in Duitsland. De prijs weerhoudt ons er niet van om je een lange
+                        garantieperiode te bieden. Je weet dan zeker dat je matras niet snel vervangen hoeft te worden. Je
+                        Tenzen matras beschikt ook over een LGA-certificaat. Een LGA-certificaat wordt uitgereikt aan
+                        matrassen die voldoen aan strenge kwaliteitseisen. Er zijn bijvoorbeeld geen schadelijke materialen
+                        in gebruikt. Ze zijn dus beter voor je gezondheid.
+                      %p
+                        Wil jij ook een
+                        %strong goedkope matras in #{@city_name}
+                        kopen?
+                        Bestel dan direct via Tenzen.nl door op de knop hieronder te klikken.
+                      .checkout_button.title-v4.text-center
+                        = cta_button_block_3
+                    .col-md-6
+                      = image_seo_block_3
+    %li
+      .li-holder
+        .li-content
+          .text-content
+            .text-v4
+              .row
+                .col-md-10.col-md-offset-1.center_align_desktop
+                  .col-md-6
+                    = image_seo_block_4
+                  .col-md-6
+                    %ul
+                      %h3= t('general.seo.header_block_4')
+                      -@city_group_6.each do |city|
+                        %li.other_cities
+                          %a{href: "/matrassen/#{city.downcase.gsub(' ', '-')}", title: "Matras #{city.titleize}"}= city.titleize
+                      .checkout_button.title-v4.text-center
+                        = cta_button_block_4

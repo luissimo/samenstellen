@@ -76,6 +76,14 @@ Rails.application.routes.draw do
     get 'heerlen'                             =>  'seo_pages#heerlen'
     get 'valkenburg'                          =>  'seo_pages#valkenburg'
     get 'meerssen'                            =>  'seo_pages#meerssen'
+    get 'zwolle'                              =>  'seo_pages#zwolle'
+    get 'kampen'                              =>  'seo_pages#kampen'
+    get 'ommen'                               =>  'seo_pages#ommen'
+    get 'raalte'                              =>  'seo_pages#raalte'
+    get 'meppel'                              =>  'seo_pages#meppel'
+    get 'dalfsen'                             =>  'seo_pages#dalfsen'
+    get 'steenwijk'                           =>  'seo_pages#steenwijk'
+    get 'heerde'                              =>  'seo_pages#heerde'
   end
 
   # REDIRECT ALL UNKNOWN ROUTES TO ROOT

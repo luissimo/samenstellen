@@ -227,6 +227,54 @@ class SeoPagesController < ApplicationController
     set_metas
   end
 
+  def zwolle
+    @city_name = 'Zwolle'
+    city_group_8(city_name: @city_name)
+    set_metas
+  end
+
+  def kampen
+    @city_name = 'Kampen'
+    city_group_8(city_name: @city_name)
+    set_metas
+  end
+
+  def ommen
+    @city_name = 'Ommen'
+    city_group_8(city_name: @city_name)
+    set_metas
+  end
+
+  def raalte
+    @city_name = 'Raalte'
+    city_group_8(city_name: @city_name)
+    set_metas
+  end
+
+  def meppel
+    @city_name = 'Meppel'
+    city_group_8(city_name: @city_name)
+    set_metas
+  end
+
+  def dalfsen
+    @city_name = 'Dalfsen'
+    city_group_8(city_name: @city_name)
+    set_metas
+  end
+
+  def steenwijk
+    @city_name = 'Steenwijk'
+    city_group_8(city_name: @city_name)
+    set_metas
+  end
+
+  def heerde
+    @city_name = 'Heerde'
+    city_group_8(city_name: @city_name)
+    set_metas
+  end
+
   private
 
     def set_metas
@@ -269,5 +317,10 @@ class SeoPagesController < ApplicationController
     def city_group_7(city_name:)
       @city_group_7 = ['Maastricht', 'Heerlen', 'Valkenburg', 'Meerssen']
       @city_group_7.delete_if { |i| i == city_name}
+    end
+
+    def city_group_8(city_name:)
+      @city_group_8 = ['Zwolle', 'Kampen', 'Ommen', 'Raalte', 'Meppel', 'Dalfsen', 'Steenwijk', 'Heerde']
+      @city_group_8.delete_if { |i| i == city_name}
     end
 end

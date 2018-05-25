@@ -52,6 +52,7 @@ SitemapGenerator::Sitemap.create do
   add '/matrassen/leiden', priority: 0.8
   add '/matrassen/maastricht', priority: 0.8
   add '/matrassen/zwolle', priority: 0.8
+  add '/matrassen/zoetermeer', priority: 0.8
   add '/matrassen/den-hoorn', priority: 0.5
   add '/matrassen/delfgauw', priority: 0.5
   add '/matrassen/pijnacker', priority: 0.5
@@ -90,4 +91,7 @@ SitemapGenerator::Sitemap.create do
   add '/matrassen/dalfsen', priority: 0.5
   add '/matrassen/steenwijk', priority: 0.5
   add '/matrassen/heerde', priority: 0.5
+  add '/matrassen/zoeterwoude', priority: 0.5
+  add '/matrassen/alphen-aan-den-rijn', priority: 0.5
+  add '/matrassen/moerkapelle', priority: 0.5
 end

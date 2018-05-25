@@ -1,0 +1,110 @@
+%section.container_transparent
+  %ul
+    %li
+      .blue_background_container_li
+        .li-holder
+          .li-content
+            .text-content
+              .text-v4
+                .row
+                  .col-md-10.col-md-offset-1.center_align_desktop
+                    .col-md-6
+                      %h1{style: 'line-height: 35px'}
+                        = t('general.seo.header_block_1', city_name: @city_name)
+                      %br
+                      %p
+                        Jij wilt natuurlijk goed slapen. Dat begrijpen wij. Daarom kun je nu de beste
+                        %strong matrassen in #{@city_name}
+                        gratis bezorgd krijgen. Tenzen matrassen zijn uniek. Ze worden speciaal voor jouw
+                        lichaam gemaakt. Dat betekent dat alle aspecten die belangrijk zijn voor een goede nachtrust
+                        verwerkt zijn in jouw matras.
+                      %p
+                        Een Tenzen matras beschikt ook nog eens over een LGA-certificaat. Dat
+                        betekent dat er geen schadelijke stoffen zijn gebruikt. Je kunt dus met een gerust hart, veilig slapen
+                        op het matras. Tenzen matrassen zijn in verschillende maten te bestellen. Als je een tweepersoons
+                        matras wilt, dan kun je ook kiezen om de optimale mix voor twee personen te maken. Dan heb je
+                        geen verschil in stevigheid en vervelende gat tussen twee matrassen.
+                      %p
+                        Wil jij direct je
+                        %strong matras in #{@city_name}
+                        bestellen? Dat kan eenvoudig door op onderstaande knop te klikken. Je stelt dan in
+                        een mum van tijd het beste matras voor jouw lichaam samen.
+                      .checkout_button.title-v4.text-center
+                        = cta_button_block_1
+                    .col-md-6
+                      = video_seo_block_1
+    %li
+      .li-holder
+        .li-content
+          .text-content
+            .text-v4
+              .row
+                .col-md-10.col-md-offset-1.center_align_desktop
+                  .col-md-6
+                    = image_seo_block_2
+                  .col-md-6
+                    %h2
+                      = t('general.seo.header_block_2', city_name: @city_name)
+                    %p
+                      Het beste matras kopen is niet altijd eenvoudig. Bij Tenzen kun je een perfect matras samenstellen
+                      voor jouw lichaam. Je kunt onze vragenlijst eenvoudig en snel invullen. Je matras wordt speciaal
+                      gefabriceerd in Duitsland. Een
+                      %strong matras kopen in #{@city_name}
+                      is dus zo geregeld. Gewoon online.
+                    %p
+                      Jij wilt perfect slapen. Dat snappen wij. Daarom willen we dat je nergens naar om hoeft te kijken. Het
+                      enige wat jij hoeft te doen is je matras online te bestellen. Wij zorgen voor de rest. Wij zorgen dat jij
+                      het beste
+                      %strong matras in #{@city_name}
+                      bezorgd krijgt.
+                    %p
+                      Een persoonlijke matras is dus binnen handbereik. Heb jij nog geen
+                      %strong matras gekocht in #{@city_name}?
+                      Dan kun
+                      je dit snel en eenvoudig doen. Beste direct jouw Tenzen matras online. Je kunt dan genieten van een
+                      nachtrust zoals nooit tevoren.
+                    .checkout_button.title-v4.text-center
+                      = cta_button_block_2
+    %li
+      .blue_background_container_li
+        .li-holder
+          .li-content
+            .text-content
+              .text-v4
+                .row
+                  .col-md-10.col-md-offset-1.center_align_desktop
+                    .col-md-6
+                      %h2= t('general.seo.header_block_3', city_name: @city_name)
+                      %p
+                        Jij wilt natuurlijk niet te veel betalen voor je matras. Een goed matras vinden voor een voordelige
+                        prijs is vaak lastig. Ben jij op zoek naar
+                        %strong goedkope matrassen in #{@city_name}?
+                        Dan hoef je niet verder te
+                        zoeken. De matrassen van Tenzen zijn namelijk ontzettend scherp geprijsd.
+                      %p
+                        Met Tenzen weet je zeker dat je het beste matras in huis hebt. Tenzen is niet als andere
+                        %strong goedkope matrassen in #{@city_name}.
+                        Tenzen wordt speciaal voor jouw lichaam gemaakt. Je geniet van een lange
+                        garantieperiode. Bovendien worden alle Tenzen matrassen onder strenge kwaliteitsnormen
+                        gemaakt.
+                      .checkout_button.title-v4.text-center
+                        = cta_button_block_3
+                    .col-md-6
+                      = image_seo_block_3
+    %li
+      .li-holder
+        .li-content
+          .text-content
+            .text-v4
+              .row
+                .col-md-10.col-md-offset-1.center_align_desktop
+                  .col-md-6
+                    = image_seo_block_4
+                  .col-md-6
+                    %ul
+                      %h3= t('general.seo.header_block_4')
+                      -@city_group_9.each do |city|
+                        %li.other_cities
+                          %a{href: "/matrassen/#{city.downcase.gsub(' ', '-')}", title: "Matras #{city.titleize}"}= city.titleize
+                      .checkout_button.title-v4.text-center
+                        = cta_button_block_4

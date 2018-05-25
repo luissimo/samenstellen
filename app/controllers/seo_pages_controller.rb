@@ -275,6 +275,30 @@ class SeoPagesController < ApplicationController
     set_metas
   end
 
+  def zoetermeer
+    @city_name = 'Zoetermeer'
+    city_group_9(city_name: @city_name)
+    set_metas
+  end
+
+  def zoeterwoude
+    @city_name = 'Zoeterwoude'
+    city_group_9(city_name: @city_name)
+    set_metas
+  end
+
+  def alphen_aan_den_rijn
+    @city_name = 'Alphen aan den Rijn'
+    city_group_9(city_name: @city_name)
+    set_metas
+  end
+
+  def moerkapelle
+    @city_name = 'Moerkapelle'
+    city_group_9(city_name: @city_name)
+    set_metas
+  end
+
   private
 
     def set_metas
@@ -322,5 +346,10 @@ class SeoPagesController < ApplicationController
     def city_group_8(city_name:)
       @city_group_8 = ['Zwolle', 'Kampen', 'Ommen', 'Raalte', 'Meppel', 'Dalfsen', 'Steenwijk', 'Heerde']
       @city_group_8.delete_if { |i| i == city_name}
+    end
+
+    def city_group_9(city_name:)
+      @city_group_9 = ['Zoetermeer', 'Zoeterwoude', 'Alphen aan den Rijn', 'Moerkapelle']
+      @city_group_9.delete_if { |i| i == city_name}
     end
 end

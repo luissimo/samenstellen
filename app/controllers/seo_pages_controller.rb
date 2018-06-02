@@ -3,6 +3,7 @@ class SeoPagesController < ApplicationController
   def delft
     @city_name = 'Delft'
     city_group_1(city_name: @city_name)
+    set_metas
   end
 
   def den_hoorn

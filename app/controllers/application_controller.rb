@@ -1,14 +1,17 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception, except: [:kortingscode_checken]
 
-  include MattressPrices
-
   def redirect_to_root_if_object_nil(object)
     redirect_to root_url if object.nil?
   end
 
+  def delete_discount_session
+    session.delete(:kortingscode) if session[:kortingscode]
+  end
+
   def kortingscode_checken
-    if session[:kortingscode] == 'tenzen10'
+    delete_discount_session
+    if %w(tenzen10 speciaalvoormij).include? session[:kortingscode]
       flash[:notice] = "Je hebt al een lopende korting. Je kunt geen kortingen combineren. De prijs hierboven is de nieuwe prijs inclusief korting."
       respond_to do |format|
         format.js
@@ -23,6 +26,13 @@ class ApplicationController < ActionController::Base
     # end
 
     case params[:kortingscode].downcase
+    when 'speciaalvoormij'
+      session[:kortingscode] = 'speciaalvoormij'
+      flash[:notice] = "Gefeliciteerd, hij is nu gratis!"
+      respond_to do |format|
+        format.js
+        format.html { redirect_to return_discount_url }
+      end
     when 'tenzen10'
       session[:kortingscode] = 'tenzen10'
       flash[:notice] = "Gefeliciteerd, je korting is doorberekend!"
@@ -39,8 +49,16 @@ class ApplicationController < ActionController::Base
     end
   end
 
-  def delete_discount_session
-    session.delete(:kortingscode) if session[:kortingscode]
+  def set_kortingscode_price
+    # kortingscode verwerking
+    case session[:kortingscode]
+    when 'tenzen10'
+      @price = (@price * 0.9).to_i
+    when 'speciaalvoormij'
+      @price = 0000
+    else
+      @price = @price
+    end
   end
 
   private
@@ -55,5 +73,4 @@ class ApplicationController < ActionController::Base
       bestellen_tweepersoons_duo_resultaat_url
     end
   end
-
 end

@@ -1,7 +1,7 @@
 class HomesController < ApplicationController
 
   # before_action :send_mail
-  before_action :delete_discount_session, only: [:index]
+  # before_action :delete_discount_session, only: [:index]
 
   def index
     @page_title = t('home.title')
@@ -23,5 +23,4 @@ class HomesController < ApplicationController
     OrderMailer.order_success(details: session[:order]).deliver_now!
     OrderMailer.order_received(details: session[:order], answers: session[:answers]).deliver_now!
   end
-
 end

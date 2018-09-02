@@ -42,12 +42,11 @@ module MattressPrices
       @price = 0000
     end
 
-    @price = (@price * 0.9).to_i if session[:kortingscode] == 'tenzen10'
+    set_kortingscode_price
   end
 
   def size(width, length)
     @mattress = Mattress.all.where(session_id: session.id).last
     @mattress.mattress_width.eql?(width) && @mattress.mattress_length.eql?(length)
   end
-
 end

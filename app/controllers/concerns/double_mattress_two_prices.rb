@@ -42,7 +42,7 @@ module DoubleMattressTwoPrices
       @price = 0000
     end
 
-    @price = (@price * 0.9).to_i if session[:kortingscode] == 'tenzen10'
+    set_kortingscode_price
   end
 
   def size_dmt(width, length)

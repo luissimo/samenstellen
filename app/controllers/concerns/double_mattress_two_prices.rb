@@ -48,5 +48,4 @@ module DoubleMattressTwoPrices
   def size_dmt(width, length)
     @double_mattress_two.mattress_width.eql?(width) && @double_mattress_two.mattress_length.eql?(length)
   end
-
 end

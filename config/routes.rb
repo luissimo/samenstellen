@@ -91,5 +91,5 @@ Rails.application.routes.draw do
   end
 
   # REDIRECT ALL UNKNOWN ROUTES TO ROOT
-  get '*path' => redirect('/')
+  # get '*path' => redirect('/')
 end

@@ -20,5 +20,4 @@ module HelperConcern
     mattress = DoubleMattressTwo.all.where(session_id: session.id).last
     mattress.diseases2.include?("on") unless mattress.diseases2.nil?
   end
-
 end

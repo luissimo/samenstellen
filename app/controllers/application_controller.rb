@@ -61,6 +61,10 @@ class ApplicationController < ActionController::Base
     end
   end
 
+  def asset_not_found
+    head 404
+  end
+
   private
 
   def return_discount_url

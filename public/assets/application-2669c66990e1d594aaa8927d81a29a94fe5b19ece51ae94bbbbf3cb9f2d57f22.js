@@ -15337,41 +15337,41 @@ $('.name_person_2').change(function() {
    $('.show_name_person_2').text( $('.name_person_2').val() );
 });
 
-// Show diseases on fields on click checkbox && show/display category question
-$(".diseases_options").hide();
-$('.show_diseases').click(function() {
-    if( this.checked ) {
-        $(".diseases_options").show();
-    } else {
-        $(".diseases_options").hide();
-    };
-    // Hide and disable budget and comfort categories on diseases
-    // if( this.checked || $('.show_diseases_2').checked ) {
-    //   $(".disable_on_diseases").prop("disabled", true);
-    //   $(".disable_on_diseases").hide();
-    // } else {
-    //   $(".disable_on_diseases").prop("disabled", false);
-    //   $(".disable_on_diseases").show();
-    // }
-});
+// // Show diseases on fields on click checkbox && show/display category question
+// $(".diseases_options").hide();
+// $('.show_diseases').click(function() {
+//     if( this.checked ) {
+//         $(".diseases_options").show();
+//     } else {
+//         $(".diseases_options").hide();
+//     };
+//     // Hide and disable budget and comfort categories on diseases
+//     // if( this.checked || $('.show_diseases_2').checked ) {
+//     //   $(".disable_on_diseases").prop("disabled", true);
+//     //   $(".disable_on_diseases").hide();
+//     // } else {
+//     //   $(".disable_on_diseases").prop("disabled", false);
+//     //   $(".disable_on_diseases").show();
+//     // }
+// });
 
-// Show diseases2 on fields on click checkbox && show/display category question
-$(".diseases_options_2").hide();
-$('.show_diseases_2').click(function() {
-    if( this.checked ) {
-        $(".diseases_options_2").show();
-    } else {
-        $(".diseases_options_2").hide();
-    };
-    // Hide and disable budget and comfort categories on diseases
-    // if( this.checked || $('.show_diseases').checked ) {
-    //   $(".disable_on_diseases").prop("disabled", true);
-    //   $(".disable_on_diseases").hide();
-    // } else {
-    //   $(".disable_on_diseases").prop("disabled", false);
-    //   $(".disable_on_diseases").show();
-    // }
-});
+// // Show diseases2 on fields on click checkbox && show/display category question
+// $(".diseases_options_2").hide();
+// $('.show_diseases_2').click(function() {
+//     if( this.checked ) {
+//         $(".diseases_options_2").show();
+//     } else {
+//         $(".diseases_options_2").hide();
+//     };
+//     // Hide and disable budget and comfort categories on diseases
+//     // if( this.checked || $('.show_diseases').checked ) {
+//     //   $(".disable_on_diseases").prop("disabled", true);
+//     //   $(".disable_on_diseases").hide();
+//     // } else {
+//     //   $(".disable_on_diseases").prop("disabled", false);
+//     //   $(".disable_on_diseases").show();
+//     // }
+// });
 
 /////// CHECKOUT PAGE ////////
 
@@ -15394,36 +15394,6 @@ $('#terms_of_agreement').click(function() {
   }
 });
 
-$("#block_address_information").hide();
-$("#last_field_personal_information").keyup(function() {
-  if( $(this).val().length === 0 ) {
-    $("#block_address_information").hide();
-  }else {
-    $("#block_address_information").show();
-  }
-});
-
-$("#block_other_information").hide();
-$("#block_payment_information").hide();
-$(".last_field_address_information").keyup(function() {
-  if( $(this).val().length === 0 ) {
-    $("#block_other_information").hide();
-    $("#block_payment_information").hide();
-  }else {
-    $("#block_other_information").show();
-    $("#block_payment_information").show();
-  }
-});
-
-$("#floor_options").hide();
-$('#floor_select').click(function() {
-    if( !this.checked ) {
-      $("#floor_options").show();
-    } else {
-      $("#floor_options").hide();
-    }
-});
-
 // show alert text if specific answer is chosen
 $("#chassis_chosen").hide();
 $(".show_chassis_chosen_warning").on('ifChanged', function() {
@@ -15437,6 +15407,42 @@ $(".show_chassis_chosen_warning").on('ifChanged', function() {
 // INITIALIZE TOOLTIPS
 $(document).ready(function(){
   $('[data-toggle="popover"]').popover();
+});
+
+$("#1p_atf").on('click', function() {
+    ga('send', {
+    hitType: 'event',
+    eventCategory: 'Button',
+    eventAction: 'click',
+    eventLabel: '1p homepage ATF'
+  });
+});
+
+$("#2p_atf").on('click', function() {
+    ga('send', {
+    hitType: 'event',
+    eventCategory: 'Button',
+    eventAction: 'click',
+    eventLabel: '2p homepage ATF'
+  });
+});
+
+$("#1p_btf").on('click', function() {
+    ga('send', {
+    hitType: 'event',
+    eventCategory: 'Button',
+    eventAction: 'click',
+    eventLabel: '1p homepage BTF'
+  });
+});
+
+$("#2p_btf").on('click', function() {
+    ga('send', {
+    hitType: 'event',
+    eventCategory: 'Button',
+    eventAction: 'click',
+    eventLabel: '2p homepage BTF'
+  });
 });
 
 			/*

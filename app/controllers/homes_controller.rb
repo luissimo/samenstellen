@@ -17,15 +17,38 @@ class HomesController < ApplicationController
   end
 
   def welke_matras_kopen
-    @page_title = 'Welke matras kopen?'
-    @meta_title = 'Welke matras kopen?'
-    @meta_description = 'Welke matras kopen?'
+    @keyword = 'Welke matras kopen?'
+    @page_title = @keyword
+    @meta_title = @keyword
+    @meta_description = @keyword
   end
 
   def welke_matras_kiezen
-    @page_title = 'Welke matras kiezen?'
-    @meta_title = 'Welke matras kiezen?'
-    @meta_description = 'Welke matras kiezen?'
+    @keyword = 'Welke matras kiezen?'
+    @page_title = @keyword
+    @meta_title = @keyword
+    @meta_description = @keyword
+  end
+
+  def welk_matras_past_bij_mij
+    @keyword = 'Welk matras past bij mij?'
+    @page_title = @keyword
+    @meta_title = @keyword
+    @meta_description = @keyword
+  end
+
+  def matras_online_bestellen
+    @keyword = 'Matras online bestellen?'
+    @page_title = @keyword
+    @meta_title = @keyword
+    @meta_description = @keyword
+  end
+
+  def matras_advies
+    @keyword = 'Matras advies'
+    @page_title = @keyword
+    @meta_title = @keyword
+    @meta_description = @keyword
   end
 
   private

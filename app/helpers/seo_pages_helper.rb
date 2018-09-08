@@ -12,7 +12,7 @@ module SeoPagesHelper
   end
 
   def image_seo_block_4
-    image_tag 'warm_matras.jpg', alt: "Tenzen matras bestellen #{@city_name}", title: "Tenzen matras bestellen #{@city_name}", width: '100%', height: '100%'
+    image_tag 'koud_matras.jpg', alt: "Tenzen matras bestellen #{@city_name}", title: "Tenzen matras bestellen #{@city_name}", width: '100%', height: '100%'
   end
 
   def cta_button_block_1

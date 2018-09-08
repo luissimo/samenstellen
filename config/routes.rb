@@ -38,6 +38,7 @@ Rails.application.routes.draw do
   # SEO
   get 'matras'                                => 'homes#dynamic_landing'
   get 'welke-matras-kopen'                    => 'homes#welke_matras_kopen'
+  get 'welk-matras-kiezen'                    => 'homes#welk-matras-kiezen'
 
   scope("matrassen", as: 'seo_matrassen') do
     get 'delft'                               =>  'seo_pages#delft'

@@ -23,6 +23,7 @@ SitemapGenerator::Sitemap.create do
   # Defaults: :priority => 0.5, :changefreq => 'weekly',
   #           :lastmod => Time.now, :host => default_host
   #
+  add '/', priority: 1
   add '/bestellen'
   add '/actievoorwaarden'
   add '/over-tenzen'
@@ -35,15 +36,11 @@ SitemapGenerator::Sitemap.create do
   add '/algemene-voorwaarden-ingewikkeld'
   add '/contact'
   add '/bestellen/eenpersoons'
-  add '/bestellen/eenpersoons/resultaat'
   add '/bestellen/tweepersoons'
   add '/bestellen/tweepersoons/solo'
-  add '/bestellen/tweepersoons/solo/resultaat'
   add '/bestellen/tweepersoons/duo'
-  add '/bestellen/tweepersoons/duo/resultaat'
-  add '/afrekenen'
 
-  # SEO PAGES
+  # SEO PAGES CITIES
   add '/matrassen/delft', priority: 0.8
   add '/matrassen/emmen', priority: 0.8
   add '/matrassen/venlo', priority: 0.8

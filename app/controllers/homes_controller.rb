@@ -16,6 +16,12 @@ class HomesController < ApplicationController
     @meta_description = @keyword.to_s + 'bij Tenzen'
   end
 
+  def welke_matras_kopen
+    @page_title = 'Welke matras kopen?'
+    @meta_title = 'Welke matras kopen?'
+    @meta_description = 'Welke matras kopen?'
+  end
+
   private
 
   def send_mail

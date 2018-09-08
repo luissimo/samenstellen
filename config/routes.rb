@@ -2,7 +2,6 @@ Rails.application.routes.draw do
 
   # PAGINA'S
   root 'homes#index'
-  get  'matras'                                 => 'homes#dynamic_landing'
   get  'actievoorwaarden'                       => 'pages#actievoorwaarden'
   get  'over-tenzen'                            => 'pages#over_tenzen'
   get  'privacybeleid'                          => 'pages#privacy_beleid'
@@ -37,6 +36,9 @@ Rails.application.routes.draw do
   get  'bedankt'                                => 'customers#success', as: 'bedankt'
 
   # SEO
+  get 'matras'                                => 'homes#dynamic_landing'
+  get 'welke-matras-kopen'                    => 'homes#welke_matras_kopen'
+
   scope("matrassen", as: 'seo_matrassen') do
     get 'delft'                               =>  'seo_pages#delft'
     get 'den-hoorn'                           =>  'seo_pages#den_hoorn'
@@ -90,7 +92,7 @@ Rails.application.routes.draw do
     get 'moerkapelle'                         =>  'seo_pages#moerkapelle'
   end
 
-  # FIXME RETURNS HEAD 404 IF ASSET IS NOT FOUND
+  # FIXME RETURNS HEAD 404 IF ASSET IS NOT FOUND FIX IS: BETTER TO ACTUALLY FIND THE ASSET
   get 'asset-not-found'                   => 'application#asset_not_found'
   scope('assets') do
     get '*path' => redirect('/asset-not-found')

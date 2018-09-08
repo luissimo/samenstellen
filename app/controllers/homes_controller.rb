@@ -22,10 +22,10 @@ class HomesController < ApplicationController
     @meta_description = 'Welke matras kopen?'
   end
 
-  def welk_matras_kiezen
-    @page_title = 'Welk matras kiezen?'
-    @meta_title = 'Welk matras kiezen?'
-    @meta_description = 'Welk matras kiezen?'
+  def welke_matras_kiezen
+    @page_title = 'Welke matras kiezen?'
+    @meta_title = 'Welke matras kiezen?'
+    @meta_description = 'Welke matras kiezen?'
   end
 
   private

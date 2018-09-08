@@ -42,6 +42,7 @@ Rails.application.routes.draw do
   get 'welk-matras-past-bij-mij'              => 'homes#welk_matras_past_bij_mij'
   get 'matras-online-bestellen'               => 'homes#matras_online_bestellen'
   get 'matras-advies'                         => 'homes#matras_advies'
+  get 'matras-bestellen'                      => 'homes#matras_bestellen'
 
   scope("matrassen", as: 'seo_matrassen') do
     get 'delft'                               =>  'seo_pages#delft'

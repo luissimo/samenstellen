@@ -51,6 +51,13 @@ class HomesController < ApplicationController
     @meta_description = @keyword
   end
 
+  def matras_bestellen
+    @keyword = 'Matras bestellen'
+    @page_title = @keyword
+    @meta_title = @keyword
+    @meta_description = @keyword
+  end
+
   private
 
   def send_mail

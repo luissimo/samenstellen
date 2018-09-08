@@ -36,10 +36,10 @@
             %strong
               = t("pages.home.block_1.text.choose_size_and_start")
           .download
-            %a.download-btn.text-center{href: bestellen_eenpersoons_url}
+            %a.download-btn.text-center#1p_atf{href: bestellen_eenpersoons_url}
               %span= image_tag("1p_normal.svg", height: 30, width: 30)
               = t('general.button.one_person')
-            %a.download-btn.text-center{href: bestellen_tweepersoons_url}
+            %a.download-btn.text-center#2p_atf{href: bestellen_tweepersoons_url}
               %span= image_tag("2p_normal.svg", height: 30, width: 30)
               = t('general.button.two_persons')
         .col-md-5.hidden-sm.hidden-xs.mt-63
@@ -191,9 +191,9 @@
         %p.lead
           = t('pages.home.block_5.subheader')
         .header-button
-          %a.download-btn{:href => bestellen_eenpersoons_url}
+          %a.download-btn#1p_btf{:href => bestellen_eenpersoons_url}
             %span= image_tag("1p_normal.svg", height: 30, width: 30)
             = t('general.button.one_person')
-          %a.download-btn{:href => bestellen_tweepersoons_url}
+          %a.download-btn#2p_btf{:href => bestellen_tweepersoons_url}
             %span= image_tag("2p_normal.svg", height: 30, width: 30)
             = t('general.button.two_persons')

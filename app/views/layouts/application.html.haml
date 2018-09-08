@@ -68,8 +68,6 @@
     = yield
     = render 'partials/footer'
 
-    / CUSTOM JS
-    = javascript_include_tag 'custom.js'
     / OTHER JS
     = javascript_include_tag 'jquery.validate.js'
     = javascript_include_tag 'jquery.placeholder.js'
@@ -80,12 +78,14 @@
     = javascript_include_tag 'retina.js'
     = javascript_include_tag 'owl.carousel.min.js'
     = javascript_include_tag 'functions.js'
-    = javascript_include_tag 'jquery.validate.js'
 
     / Fancybox
     = javascript_include_tag 'fancybox/source/jquery.fancybox.pack.js'
     = javascript_include_tag 'fancybox/source/helpers/jquery.fancybox-media.js'
     = javascript_include_tag 'fancy_func.js'
+
+    / CUSTOM JS
+    = javascript_include_tag 'custom.js'
 
     :javascript
       var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();

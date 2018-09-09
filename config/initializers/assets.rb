@@ -13,7 +13,7 @@ Rails.application.config.assets.version = '1.0'
 ## JAVASCRIPTS && STYLESHEETS
 Rails.application.config.assets.precompile += %w( custom.js jquery.validate.js jquery.placeholder.js
 																									jquery.tweet.min.js jquery.bxslider.min.js quantity-bt.js
-																									bootstrap.js retina.js owl.carousel.min.js functions.js fancy_func.js
+																									bootstrap.js owl.carousel.min.js functions.js fancy_func.js
 																									check_radio/jquery.icheck.js modernizr.custom.17475.js respond.min.js
 																									jquery.wizard.js jquery-ui-1.8.22.min.js jquery-1.10.2.min.js
 																									fancybox/source/jquery.fancybox.pack.js fancybox/source/helpers/jquery.fancybox-media.js

@@ -97,12 +97,6 @@ Rails.application.routes.draw do
     get 'moerkapelle'                         =>  'seo_pages#moerkapelle'
   end
 
-  # FIXME RETURNS HEAD 404 IF ASSET IS NOT FOUND FIX IS: BETTER TO ACTUALLY FIND THE ASSET
-  get 'asset-not-found'                   => 'application#asset_not_found'
-  scope('assets') do
-    get '*path' => redirect('/asset-not-found')
-  end
-
   # REDIRECT ALL UNKNOWN ROUTES TO ROOT
   get '*path' => redirect('/')
 end

@@ -58,6 +58,20 @@ class HomesController < ApplicationController
     @meta_description = @keyword
   end
 
+  def matras_80x200
+    @keyword = 'Matras 80x200'
+    @page_title = @keyword
+    @meta_title = @keyword
+    @meta_description = @keyword
+  end
+
+  def matras_90x200
+    @keyword = 'Matras 90x200'
+    @page_title = @keyword
+    @meta_title = @keyword
+    @meta_description = @keyword
+  end
+
   private
 
   def send_mail

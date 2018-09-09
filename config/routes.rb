@@ -43,6 +43,8 @@ Rails.application.routes.draw do
   get 'matras-online-bestellen'               => 'homes#matras_online_bestellen'
   get 'matras-advies'                         => 'homes#matras_advies'
   get 'matras-bestellen'                      => 'homes#matras_bestellen'
+  get 'matras-80x200'                         => 'homes#matras_80x200'
+  get 'matras-90x200'                         => 'homes#matras_90x200'
 
   scope("matrassen", as: 'seo_matrassen') do
     get 'delft'                               =>  'seo_pages#delft'

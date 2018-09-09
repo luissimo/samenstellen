@@ -1,0 +1,197 @@
+/ Page Holder
+.page-holder
+  %nav.navbar.main-navigation.navbar-fixed-top.has-shadow
+    .container
+      .navbar-header
+        %button.navbar-toggle.collapsed{"data-target" => "#navbar", "data-toggle" => "collapse", :type => "button"}
+          %span.sr-only Navigatie
+          %span.icon-bar
+          %span.icon-bar
+          %span.icon-bar
+        %a.navbar-brand{href: "/"}
+          = image_tag('Tenzen-logo-marineblauw.svg', alt: 'Tenzen', width: '150px', height: '50px')
+      .collapse.navbar-collapse#navbar
+        %ul.nav.navbar-nav.navbar-right
+          %li
+            %a.js-scroll-trigger{href: bestellen_url}
+              = t("general.header.customize")
+          %li
+            %a.js-scroll-trigger{href: over_tenzen_url}
+              = t("general.header.about_tenzen")
+          %li
+            %a.js-scroll-trigger{href: vragen_url}
+              = t("general.header.questions")
+
+  #home.header-1.demo-1.has-gradient
+    .moving-bg
+    .container
+      .header-1-content.row
+        .col-md-7.col-sm-12.mt-63
+          %h1
+            %strong Matras 90x200
+          %br/
+          %p.lead
+            = t("pages.home.block_1.subheader")
+            %hr/
+            %strong Kies hieronder voor "Eenpersoons" om een matras in de maat 90x200 te bestellen!
+          .download
+            %a.download-btn.text-center{href: bestellen_eenpersoons_url}
+              %span= image_tag("1p_normal.svg", height: 30, width: 30)
+              = t('general.button.one_person')
+            %a.download-btn.text-center{href: bestellen_tweepersoons_url}
+              %span= image_tag("2p_normal.svg", height: 30, width: 30)
+              = t('general.button.two_persons')
+        .col-md-5.hidden-sm.hidden-xs.mt-63
+          .center-block= image_tag("tenzen.png", alt: 'Tenzen Matras Samenstellen')
+  %section#how-it-work.how-it-work
+    .container.text-center
+      %header.text-center
+        %h2.has-line-center
+          = t("pages.home.block_2.header")
+        %p.lead
+          %strong Altijd al gewild om een goedkope matras in de maat 90x200 te krijgen die speciaal voor jouw lichaam is ontwikkeld?
+          = t("pages.home.block_2.subheader")
+      .how-one-container
+        .how-box-one.col-md-4.col-sm-6.col-xs-12
+          .inner-box
+            .icon-box
+              %i
+                = image_tag("persoonlijk.png", alt: 'Persoonlijk comfort', style: "height: 50px; width:50px")
+            %h3
+              = t('general.usp.title.comfort')
+            .text
+              = t("general.usp.explanation.comfort")
+        .how-box-one.col-md-4.col-sm-6.col-xs-12
+          .inner-box
+            .icon-box
+              %i
+                = image_tag("bezorging.png", alt: 'Gratis bezorging', style: "height: 50px; width:50px")
+            %h3
+              = t('general.usp.title.delivery')
+            .text
+              = t("general.usp.explanation.delivery")
+        .how-box-one.col-md-4.col-sm-6.col-xs-12
+          .inner-box
+            .icon-box
+              %i
+                = image_tag("garantie.png", alt: 'Niet Tevreden = Geld Terug', style: "height: 50px; width:50px")
+            %h3
+              = t('general.usp.title.money_back')
+            .text
+              = t("general.usp.explanation.money_back")
+
+  %section#services.what-we-do.has-gradient
+    %span.img-bg
+    .container.text-center
+      %header.text-center.mb-70
+        %h2.has-line-center Matras 90x200
+        %p.lead
+          = t("pages.home.block_3.subheader")
+      .outer
+        / Logo
+        .inner-circle
+          =image_tag("tenzen-matrassen.png", alt: "Tenzen Matrassen", class: "mattress")
+        .row.clearfix
+          / Left Column
+          .left-column.col-lg-4.col-md-6.col-sm-6.col-xs-12
+
+            .service-box-three
+              .inner-box
+                .icon-box
+                  %span= image_tag("icon-aanpassend-vermogen.png", alt: "Aanpassende vermogen matrassen")
+                %h3{style: "color: white"}
+                  = t("pages.home.block_3.descriptions.correcting.title")
+                .text
+                  = t("pages.home.block_3.descriptions.correcting.explanation")
+            .service-box-three
+              .inner-box
+                .icon-box
+                  %span= image_tag("icon-ademend.png", alt: "Ademende matrassen")
+                %h3{style: "color: white"}
+                  = t("pages.home.block_3.descriptions.breathable.title")
+                .text
+                  = t("pages.home.block_3.descriptions.breathable.explanation")
+            .service-box-three
+              .inner-box
+                .icon-box
+                  %span= image_tag("icon-gevoel.png", alt: "Comfortabele matrassen")
+                %h3{style: "color: white"}
+                  = t("pages.home.block_3.descriptions.comfortable.title")
+                .text
+                  = t("pages.home.block_3.descriptions.comfortable.explanation")
+          / Right Column
+          .right-column.col-lg-4.col-md-6.col-sm-6.col-xs-12
+
+            .service-box-four
+              .inner-box
+                .icon-box
+                  %span= image_tag("icon-veilig.png", alt: "Vertrouwde en veilige matrassen")
+                %h3{style: "color: white"}
+                  = t("pages.home.block_3.descriptions.safe_and_trustworthy.title")
+                .text
+                  = t("pages.home.block_3.descriptions.safe_and_trustworthy.explanation")
+            .service-box-four
+              .inner-box
+                .icon-box
+                  %span= image_tag("icon-kwaliteit.png", alt: "kwaliteit matrassen")
+                %h3{style: "color: white"}
+                  = t("pages.home.block_3.descriptions.quality.title")
+                .text
+                  = t("pages.home.block_3.descriptions.quality.explanation")
+
+            .service-box-four
+              .inner-box
+                .icon-box
+                  %span= image_tag("icon-stevig.png", alt: "Duurzame matrassen")
+                %h3{style: "color: white"}
+                  = t("pages.home.block_3.descriptions.sustainable.title")
+                .text
+                  = t("pages.home.block_3.descriptions.sustainable.explanation")
+  %section.features
+    %header.text-center
+      %h2.has-line-center
+        = t('pages.home.block_4.header')
+      %p.lead
+        = t('pages.home.block_4.subheader').html_safe
+        %strong Het beste matras(90x200) bestellen is zo gefikst!
+    .container
+      .service-one-container
+        .service-box-one.col-md-3.col-sm-6.col-xs-12
+          .inner-box
+            %strong= t('pages.home.block_4.step_1.number')
+            %h3
+              %a= t('pages.home.block_4.step_1.title')
+            .text= t('pages.home.block_4.step_1.explanation')
+        .service-box-one.col-md-3.col-sm-6.col-xs-12
+          .inner-box
+            %strong= t('pages.home.block_4.step_2.number')
+            %h3
+              %a= t('pages.home.block_4.step_2.title')
+            .text= t('pages.home.block_4.step_2.explanation')
+        .service-box-one.col-md-3.col-sm-6.col-xs-12
+          .inner-box
+            %strong= t('pages.home.block_4.step_3.number')
+            %h3
+              %a= t('pages.home.block_4.step_3.title')
+            .text= t('pages.home.block_4.step_3.explanation')
+        .service-box-one.col-md-3.col-sm-6.col-xs-12
+          .inner-box
+            %strong= t('pages.home.block_4.step_4.number')
+            %h3
+              %a= t('pages.home.block_4.step_4.title')
+            .text= t('pages.home.block_4.step_4.explanation')
+
+  %section.download.padding-top-small.padding-bottom-small.has-gradient.text-center
+    %span.img-bg
+    .container
+      %header.text-center
+        %h2.has-line-center= t('pages.home.block_5.header')
+      .col-md-offset-3.col-md-6.col-xs-12
+        %p.lead Ben je enthousiast geworden? Kies hieronder voor "Eenpersoons" om een matras 90x200 te kopen!
+        .header-button
+          %a.download-btn{:href => bestellen_eenpersoons_url}
+            %span= image_tag("1p_normal.svg", height: 30, width: 30)
+            = t('general.button.one_person')
+          %a.download-btn{:href => bestellen_tweepersoons_url}
+            %span= image_tag("2p_normal.svg", height: 30, width: 30)
+            = t('general.button.two_persons')

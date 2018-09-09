@@ -59,7 +59,8 @@
 
 /* FOOTER */
 .footer-bs {
-    background-color: #3c3d41;
+  border-top: 1px solid #354F91;
+  background-image: -webkit-linear-gradient(-29deg,#233b88 0,#5777ab 100%);
   padding: 60px 40px;
   color: rgba(255,255,255,1.00);
 }

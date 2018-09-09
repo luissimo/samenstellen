@@ -14165,7 +14165,6 @@ nav.main-navigation .navbar-nav .btn:hover {
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
 @font-face{font-family:'FontAwesome';src:url('../fonts/fontawesome-webfont.eot?v=4.6.3');src:url('../fonts/fontawesome-webfont.eot?#iefix&v=4.6.3') format('embedded-opentype'),url('../fonts/fontawesome-webfont.woff2?v=4.6.3') format('woff2'),url('../fonts/fontawesome-webfont.woff?v=4.6.3') format('woff'),url('../fonts/fontawesome-webfont.ttf?v=4.6.3') format('truetype'),url('../fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular') format('svg');font-weight:normal;font-style:normal}.fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.fa-lg{font-size:1.33333333em;line-height:.75em;vertical-align:-15%}.fa-2x{font-size:2em}.fa-3x{font-size:3em}.fa-4x{font-size:4em}.fa-5x{font-size:5em}.fa-fw{width:1.28571429em;text-align:center}.fa-ul{padding-left:0;margin-left:2.14285714em;list-style-type:none}.fa-ul>li{position:relative}.fa-li{position:absolute;left:-2.14285714em;width:2.14285714em;top:.14285714em;text-align:center}.fa-li.fa-lg{left:-1.85714286em}.fa-border{padding:.2em .25em .15em;border:solid .08em #eee;border-radius:.1em}.fa-pull-left{float:left}.fa-pull-right{float:right}.fa.fa-pull-left{margin-right:.3em}.fa.fa-pull-right{margin-left:.3em}.pull-right{float:right}.pull-left{float:left}.fa.pull-left{margin-right:.3em}.fa.pull-right{margin-left:.3em}.fa-spin{-webkit-animation:fa-spin 2s infinite linear;animation:fa-spin 2s infinite linear}.fa-pulse{-webkit-animation:fa-spin 1s infinite steps(8);animation:fa-spin 1s infinite steps(8)}@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}@keyframes fa-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}.fa-rotate-90{-ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";-webkit-transform:rotate(90deg);-ms-transform:rotate(90deg);transform:rotate(90deg)}.fa-rotate-180{-ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg)}.fa-rotate-270{-ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";-webkit-transform:rotate(270deg);-ms-transform:rotate(270deg);transform:rotate(270deg)}.fa-flip-horizontal{-ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";-webkit-transform:scale(-1, 1);-ms-transform:scale(-1, 1);transform:scale(-1, 1)}.fa-flip-vertical{-ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";-webkit-transform:scale(1, -1);-ms-transform:scale(1, -1);transform:scale(1, -1)}:root .fa-rotate-90,:root .fa-rotate-180,:root .fa-rotate-270,:root .fa-flip-horizontal,:root .fa-flip-vertical{filter:none}.fa-stack{position:relative;display:inline-block;width:2em;height:2em;line-height:2em;vertical-align:middle}.fa-stack-1x,.fa-stack-2x{position:absolute;left:0;width:100%;text-align:center}.fa-stack-1x{line-height:inherit}.fa-stack-2x{font-size:2em}.fa-inverse{color:#fff}.fa-glass:before{content:"\f000"}.fa-music:before{content:"\f001"}.fa-search:before{content:"\f002"}.fa-envelope-o:before{content:"\f003"}.fa-heart:before{content:"\f004"}.fa-star:before{content:"\f005"}.fa-star-o:before{content:"\f006"}.fa-user:before{content:"\f007"}.fa-film:before{content:"\f008"}.fa-th-large:before{content:"\f009"}.fa-th:before{content:"\f00a"}.fa-th-list:before{content:"\f00b"}.fa-check:before{content:"\f00c"}.fa-remove:before,.fa-close:before,.fa-times:before{content:"\f00d"}.fa-search-plus:before{content:"\f00e"}.fa-search-minus:before{content:"\f010"}.fa-power-off:before{content:"\f011"}.fa-signal:before{content:"\f012"}.fa-gear:before,.fa-cog:before{content:"\f013"}.fa-trash-o:before{content:"\f014"}.fa-home:before{content:"\f015"}.fa-file-o:before{content:"\f016"}.fa-clock-o:before{content:"\f017"}.fa-road:before{content:"\f018"}.fa-download:before{content:"\f019"}.fa-arrow-circle-o-down:before{content:"\f01a"}.fa-arrow-circle-o-up:before{content:"\f01b"}.fa-inbox:before{content:"\f01c"}.fa-play-circle-o:before{content:"\f01d"}.fa-rotate-right:before,.fa-repeat:before{content:"\f01e"}.fa-refresh:before{content:"\f021"}.fa-list-alt:before{content:"\f022"}.fa-lock:before{content:"\f023"}.fa-flag:before{content:"\f024"}.fa-headphones:before{content:"\f025"}.fa-volume-off:before{content:"\f026"}.fa-volume-down:before{content:"\f027"}.fa-volume-up:before{content:"\f028"}.fa-qrcode:before{content:"\f029"}.fa-barcode:before{content:"\f02a"}.fa-tag:before{content:"\f02b"}.fa-tags:before{content:"\f02c"}.fa-book:before{content:"\f02d"}.fa-bookmark:before{content:"\f02e"}.fa-print:before{content:"\f02f"}.fa-camera:before{content:"\f030"}.fa-font:before{content:"\f031"}.fa-bold:before{content:"\f032"}.fa-italic:before{content:"\f033"}.fa-text-height:before{content:"\f034"}.fa-text-width:before{content:"\f035"}.fa-align-left:before{content:"\f036"}.fa-align-center:before{content:"\f037"}.fa-align-right:before{content:"\f038"}.fa-align-justify:before{content:"\f039"}.fa-list:before{content:"\f03a"}.fa-dedent:before,.fa-outdent:before{content:"\f03b"}.fa-indent:before{content:"\f03c"}.fa-video-camera:before{content:"\f03d"}.fa-photo:before,.fa-image:before,.fa-picture-o:before{content:"\f03e"}.fa-pencil:before{content:"\f040"}.fa-map-marker:before{content:"\f041"}.fa-adjust:before{content:"\f042"}.fa-tint:before{content:"\f043"}.fa-edit:before,.fa-pencil-square-o:before{content:"\f044"}.fa-share-square-o:before{content:"\f045"}.fa-check-square-o:before{content:"\f046"}.fa-arrows:before{content:"\f047"}.fa-step-backward:before{content:"\f048"}.fa-fast-backward:before{content:"\f049"}.fa-backward:before{content:"\f04a"}.fa-play:before{content:"\f04b"}.fa-pause:before{content:"\f04c"}.fa-stop:before{content:"\f04d"}.fa-forward:before{content:"\f04e"}.fa-fast-forward:before{content:"\f050"}.fa-step-forward:before{content:"\f051"}.fa-eject:before{content:"\f052"}.fa-chevron-left:before{content:"\f053"}.fa-chevron-right:before{content:"\f054"}.fa-plus-circle:before{content:"\f055"}.fa-minus-circle:before{content:"\f056"}.fa-times-circle:before{content:"\f057"}.fa-check-circle:before{content:"\f058"}.fa-question-circle:before{content:"\f059"}.fa-info-circle:before{content:"\f05a"}.fa-crosshairs:before{content:"\f05b"}.fa-times-circle-o:before{content:"\f05c"}.fa-check-circle-o:before{content:"\f05d"}.fa-ban:before{content:"\f05e"}.fa-arrow-left:before{content:"\f060"}.fa-arrow-right:before{content:"\f061"}.fa-arrow-up:before{content:"\f062"}.fa-arrow-down:before{content:"\f063"}.fa-mail-forward:before,.fa-share:before{content:"\f064"}.fa-expand:before{content:"\f065"}.fa-compress:before{content:"\f066"}.fa-plus:before{content:"\f067"}.fa-minus:before{content:"\f068"}.fa-asterisk:before{content:"\f069"}.fa-exclamation-circle:before{content:"\f06a"}.fa-gift:before{content:"\f06b"}.fa-leaf:before{content:"\f06c"}.fa-fire:before{content:"\f06d"}.fa-eye:before{content:"\f06e"}.fa-eye-slash:before{content:"\f070"}.fa-warning:before,.fa-exclamation-triangle:before{content:"\f071"}.fa-plane:before{content:"\f072"}.fa-calendar:before{content:"\f073"}.fa-random:before{content:"\f074"}.fa-comment:before{content:"\f075"}.fa-magnet:before{content:"\f076"}.fa-chevron-up:before{content:"\f077"}.fa-chevron-down:before{content:"\f078"}.fa-retweet:before{content:"\f079"}.fa-shopping-cart:before{content:"\f07a"}.fa-folder:before{content:"\f07b"}.fa-folder-open:before{content:"\f07c"}.fa-arrows-v:before{content:"\f07d"}.fa-arrows-h:before{content:"\f07e"}.fa-bar-chart-o:before,.fa-bar-chart:before{content:"\f080"}.fa-twitter-square:before{content:"\f081"}.fa-facebook-square:before{content:"\f082"}.fa-camera-retro:before{content:"\f083"}.fa-key:before{content:"\f084"}.fa-gears:before,.fa-cogs:before{content:"\f085"}.fa-comments:before{content:"\f086"}.fa-thumbs-o-up:before{content:"\f087"}.fa-thumbs-o-down:before{content:"\f088"}.fa-star-half:before{content:"\f089"}.fa-heart-o:before{content:"\f08a"}.fa-sign-out:before{content:"\f08b"}.fa-linkedin-square:before{content:"\f08c"}.fa-thumb-tack:before{content:"\f08d"}.fa-external-link:before{content:"\f08e"}.fa-sign-in:before{content:"\f090"}.fa-trophy:before{content:"\f091"}.fa-github-square:before{content:"\f092"}.fa-upload:before{content:"\f093"}.fa-lemon-o:before{content:"\f094"}.fa-phone:before{content:"\f095"}.fa-square-o:before{content:"\f096"}.fa-bookmark-o:before{content:"\f097"}.fa-phone-square:before{content:"\f098"}.fa-twitter:before{content:"\f099"}.fa-facebook-f:before,.fa-facebook:before{content:"\f09a"}.fa-github:before{content:"\f09b"}.fa-unlock:before{content:"\f09c"}.fa-credit-card:before{content:"\f09d"}.fa-feed:before,.fa-rss:before{content:"\f09e"}.fa-hdd-o:before{content:"\f0a0"}.fa-bullhorn:before{content:"\f0a1"}.fa-bell:before{content:"\f0f3"}.fa-certificate:before{content:"\f0a3"}.fa-hand-o-right:before{content:"\f0a4"}.fa-hand-o-left:before{content:"\f0a5"}.fa-hand-o-up:before{content:"\f0a6"}.fa-hand-o-down:before{content:"\f0a7"}.fa-arrow-circle-left:before{content:"\f0a8"}.fa-arrow-circle-right:before{content:"\f0a9"}.fa-arrow-circle-up:before{content:"\f0aa"}.fa-arrow-circle-down:before{content:"\f0ab"}.fa-globe:before{content:"\f0ac"}.fa-wrench:before{content:"\f0ad"}.fa-tasks:before{content:"\f0ae"}.fa-filter:before{content:"\f0b0"}.fa-briefcase:before{content:"\f0b1"}.fa-arrows-alt:before{content:"\f0b2"}.fa-group:before,.fa-users:before{content:"\f0c0"}.fa-chain:before,.fa-link:before{content:"\f0c1"}.fa-cloud:before{content:"\f0c2"}.fa-flask:before{content:"\f0c3"}.fa-cut:before,.fa-scissors:before{content:"\f0c4"}.fa-copy:before,.fa-files-o:before{content:"\f0c5"}.fa-paperclip:before{content:"\f0c6"}.fa-save:before,.fa-floppy-o:before{content:"\f0c7"}.fa-square:before{content:"\f0c8"}.fa-navicon:before,.fa-reorder:before,.fa-bars:before{content:"\f0c9"}.fa-list-ul:before{content:"\f0ca"}.fa-list-ol:before{content:"\f0cb"}.fa-strikethrough:before{content:"\f0cc"}.fa-underline:before{content:"\f0cd"}.fa-table:before{content:"\f0ce"}.fa-magic:before{content:"\f0d0"}.fa-truck:before{content:"\f0d1"}.fa-pinterest:before{content:"\f0d2"}.fa-pinterest-square:before{content:"\f0d3"}.fa-google-plus-square:before{content:"\f0d4"}.fa-google-plus:before{content:"\f0d5"}.fa-money:before{content:"\f0d6"}.fa-caret-down:before{content:"\f0d7"}.fa-caret-up:before{content:"\f0d8"}.fa-caret-left:before{content:"\f0d9"}.fa-caret-right:before{content:"\f0da"}.fa-columns:before{content:"\f0db"}.fa-unsorted:before,.fa-sort:before{content:"\f0dc"}.fa-sort-down:before,.fa-sort-desc:before{content:"\f0dd"}.fa-sort-up:before,.fa-sort-asc:before{content:"\f0de"}.fa-envelope:before{content:"\f0e0"}.fa-linkedin:before{content:"\f0e1"}.fa-rotate-left:before,.fa-undo:before{content:"\f0e2"}.fa-legal:before,.fa-gavel:before{content:"\f0e3"}.fa-dashboard:before,.fa-tachometer:before{content:"\f0e4"}.fa-comment-o:before{content:"\f0e5"}.fa-comments-o:before{content:"\f0e6"}.fa-flash:before,.fa-bolt:before{content:"\f0e7"}.fa-sitemap:before{content:"\f0e8"}.fa-umbrella:before{content:"\f0e9"}.fa-paste:before,.fa-clipboard:before{content:"\f0ea"}.fa-lightbulb-o:before{content:"\f0eb"}.fa-exchange:before{content:"\f0ec"}.fa-cloud-download:before{content:"\f0ed"}.fa-cloud-upload:before{content:"\f0ee"}.fa-user-md:before{content:"\f0f0"}.fa-stethoscope:before{content:"\f0f1"}.fa-suitcase:before{content:"\f0f2"}.fa-bell-o:before{content:"\f0a2"}.fa-coffee:before{content:"\f0f4"}.fa-cutlery:before{content:"\f0f5"}.fa-file-text-o:before{content:"\f0f6"}.fa-building-o:before{content:"\f0f7"}.fa-hospital-o:before{content:"\f0f8"}.fa-ambulance:before{content:"\f0f9"}.fa-medkit:before{content:"\f0fa"}.fa-fighter-jet:before{content:"\f0fb"}.fa-beer:before{content:"\f0fc"}.fa-h-square:before{content:"\f0fd"}.fa-plus-square:before{content:"\f0fe"}.fa-angle-double-left:before{content:"\f100"}.fa-angle-double-right:before{content:"\f101"}.fa-angle-double-up:before{content:"\f102"}.fa-angle-double-down:before{content:"\f103"}.fa-angle-left:before{content:"\f104"}.fa-angle-right:before{content:"\f105"}.fa-angle-up:before{content:"\f106"}.fa-angle-down:before{content:"\f107"}.fa-desktop:before{content:"\f108"}.fa-laptop:before{content:"\f109"}.fa-tablet:before{content:"\f10a"}.fa-mobile-phone:before,.fa-mobile:before{content:"\f10b"}.fa-circle-o:before{content:"\f10c"}.fa-quote-left:before{content:"\f10d"}.fa-quote-right:before{content:"\f10e"}.fa-spinner:before{content:"\f110"}.fa-circle:before{content:"\f111"}.fa-mail-reply:before,.fa-reply:before{content:"\f112"}.fa-github-alt:before{content:"\f113"}.fa-folder-o:before{content:"\f114"}.fa-folder-open-o:before{content:"\f115"}.fa-smile-o:before{content:"\f118"}.fa-frown-o:before{content:"\f119"}.fa-meh-o:before{content:"\f11a"}.fa-gamepad:before{content:"\f11b"}.fa-keyboard-o:before{content:"\f11c"}.fa-flag-o:before{content:"\f11d"}.fa-flag-checkered:before{content:"\f11e"}.fa-terminal:before{content:"\f120"}.fa-code:before{content:"\f121"}.fa-mail-reply-all:before,.fa-reply-all:before{content:"\f122"}.fa-star-half-empty:before,.fa-star-half-full:before,.fa-star-half-o:before{content:"\f123"}.fa-location-arrow:before{content:"\f124"}.fa-crop:before{content:"\f125"}.fa-code-fork:before{content:"\f126"}.fa-unlink:before,.fa-chain-broken:before{content:"\f127"}.fa-question:before{content:"\f128"}.fa-info:before{content:"\f129"}.fa-exclamation:before{content:"\f12a"}.fa-superscript:before{content:"\f12b"}.fa-subscript:before{content:"\f12c"}.fa-eraser:before{content:"\f12d"}.fa-puzzle-piece:before{content:"\f12e"}.fa-microphone:before{content:"\f130"}.fa-microphone-slash:before{content:"\f131"}.fa-shield:before{content:"\f132"}.fa-calendar-o:before{content:"\f133"}.fa-fire-extinguisher:before{content:"\f134"}.fa-rocket:before{content:"\f135"}.fa-maxcdn:before{content:"\f136"}.fa-chevron-circle-left:before{content:"\f137"}.fa-chevron-circle-right:before{content:"\f138"}.fa-chevron-circle-up:before{content:"\f139"}.fa-chevron-circle-down:before{content:"\f13a"}.fa-html5:before{content:"\f13b"}.fa-css3:before{content:"\f13c"}.fa-anchor:before{content:"\f13d"}.fa-unlock-alt:before{content:"\f13e"}.fa-bullseye:before{content:"\f140"}.fa-ellipsis-h:before{content:"\f141"}.fa-ellipsis-v:before{content:"\f142"}.fa-rss-square:before{content:"\f143"}.fa-play-circle:before{content:"\f144"}.fa-ticket:before{content:"\f145"}.fa-minus-square:before{content:"\f146"}.fa-minus-square-o:before{content:"\f147"}.fa-level-up:before{content:"\f148"}.fa-level-down:before{content:"\f149"}.fa-check-square:before{content:"\f14a"}.fa-pencil-square:before{content:"\f14b"}.fa-external-link-square:before{content:"\f14c"}.fa-share-square:before{content:"\f14d"}.fa-compass:before{content:"\f14e"}.fa-toggle-down:before,.fa-caret-square-o-down:before{content:"\f150"}.fa-toggle-up:before,.fa-caret-square-o-up:before{content:"\f151"}.fa-toggle-right:before,.fa-caret-square-o-right:before{content:"\f152"}.fa-euro:before,.fa-eur:before{content:"\f153"}.fa-gbp:before{content:"\f154"}.fa-dollar:before,.fa-usd:before{content:"\f155"}.fa-rupee:before,.fa-inr:before{content:"\f156"}.fa-cny:before,.fa-rmb:before,.fa-yen:before,.fa-jpy:before{content:"\f157"}.fa-ruble:before,.fa-rouble:before,.fa-rub:before{content:"\f158"}.fa-won:before,.fa-krw:before{content:"\f159"}.fa-bitcoin:before,.fa-btc:before{content:"\f15a"}.fa-file:before{content:"\f15b"}.fa-file-text:before{content:"\f15c"}.fa-sort-alpha-asc:before{content:"\f15d"}.fa-sort-alpha-desc:before{content:"\f15e"}.fa-sort-amount-asc:before{content:"\f160"}.fa-sort-amount-desc:before{content:"\f161"}.fa-sort-numeric-asc:before{content:"\f162"}.fa-sort-numeric-desc:before{content:"\f163"}.fa-thumbs-up:before{content:"\f164"}.fa-thumbs-down:before{content:"\f165"}.fa-youtube-square:before{content:"\f166"}.fa-youtube:before{content:"\f167"}.fa-xing:before{content:"\f168"}.fa-xing-square:before{content:"\f169"}.fa-youtube-play:before{content:"\f16a"}.fa-dropbox:before{content:"\f16b"}.fa-stack-overflow:before{content:"\f16c"}.fa-instagram:before{content:"\f16d"}.fa-flickr:before{content:"\f16e"}.fa-adn:before{content:"\f170"}.fa-bitbucket:before{content:"\f171"}.fa-bitbucket-square:before{content:"\f172"}.fa-tumblr:before{content:"\f173"}.fa-tumblr-square:before{content:"\f174"}.fa-long-arrow-down:before{content:"\f175"}.fa-long-arrow-up:before{content:"\f176"}.fa-long-arrow-left:before{content:"\f177"}.fa-long-arrow-right:before{content:"\f178"}.fa-apple:before{content:"\f179"}.fa-windows:before{content:"\f17a"}.fa-android:before{content:"\f17b"}.fa-linux:before{content:"\f17c"}.fa-dribbble:before{content:"\f17d"}.fa-skype:before{content:"\f17e"}.fa-foursquare:before{content:"\f180"}.fa-trello:before{content:"\f181"}.fa-female:before{content:"\f182"}.fa-male:before{content:"\f183"}.fa-gittip:before,.fa-gratipay:before{content:"\f184"}.fa-sun-o:before{content:"\f185"}.fa-moon-o:before{content:"\f186"}.fa-archive:before{content:"\f187"}.fa-bug:before{content:"\f188"}.fa-vk:before{content:"\f189"}.fa-weibo:before{content:"\f18a"}.fa-renren:before{content:"\f18b"}.fa-pagelines:before{content:"\f18c"}.fa-stack-exchange:before{content:"\f18d"}.fa-arrow-circle-o-right:before{content:"\f18e"}.fa-arrow-circle-o-left:before{content:"\f190"}.fa-toggle-left:before,.fa-caret-square-o-left:before{content:"\f191"}.fa-dot-circle-o:before{content:"\f192"}.fa-wheelchair:before{content:"\f193"}.fa-vimeo-square:before{content:"\f194"}.fa-turkish-lira:before,.fa-try:before{content:"\f195"}.fa-plus-square-o:before{content:"\f196"}.fa-space-shuttle:before{content:"\f197"}.fa-slack:before{content:"\f198"}.fa-envelope-square:before{content:"\f199"}.fa-wordpress:before{content:"\f19a"}.fa-openid:before{content:"\f19b"}.fa-institution:before,.fa-bank:before,.fa-university:before{content:"\f19c"}.fa-mortar-board:before,.fa-graduation-cap:before{content:"\f19d"}.fa-yahoo:before{content:"\f19e"}.fa-google:before{content:"\f1a0"}.fa-reddit:before{content:"\f1a1"}.fa-reddit-square:before{content:"\f1a2"}.fa-stumbleupon-circle:before{content:"\f1a3"}.fa-stumbleupon:before{content:"\f1a4"}.fa-delicious:before{content:"\f1a5"}.fa-digg:before{content:"\f1a6"}.fa-pied-piper-pp:before{content:"\f1a7"}.fa-pied-piper-alt:before{content:"\f1a8"}.fa-drupal:before{content:"\f1a9"}.fa-joomla:before{content:"\f1aa"}.fa-language:before{content:"\f1ab"}.fa-fax:before{content:"\f1ac"}.fa-building:before{content:"\f1ad"}.fa-child:before{content:"\f1ae"}.fa-paw:before{content:"\f1b0"}.fa-spoon:before{content:"\f1b1"}.fa-cube:before{content:"\f1b2"}.fa-cubes:before{content:"\f1b3"}.fa-behance:before{content:"\f1b4"}.fa-behance-square:before{content:"\f1b5"}.fa-steam:before{content:"\f1b6"}.fa-steam-square:before{content:"\f1b7"}.fa-recycle:before{content:"\f1b8"}.fa-automobile:before,.fa-car:before{content:"\f1b9"}.fa-cab:before,.fa-taxi:before{content:"\f1ba"}.fa-tree:before{content:"\f1bb"}.fa-spotify:before{content:"\f1bc"}.fa-deviantart:before{content:"\f1bd"}.fa-soundcloud:before{content:"\f1be"}.fa-database:before{content:"\f1c0"}.fa-file-pdf-o:before{content:"\f1c1"}.fa-file-word-o:before{content:"\f1c2"}.fa-file-excel-o:before{content:"\f1c3"}.fa-file-powerpoint-o:before{content:"\f1c4"}.fa-file-photo-o:before,.fa-file-picture-o:before,.fa-file-image-o:before{content:"\f1c5"}.fa-file-zip-o:before,.fa-file-archive-o:before{content:"\f1c6"}.fa-file-sound-o:before,.fa-file-audio-o:before{content:"\f1c7"}.fa-file-movie-o:before,.fa-file-video-o:before{content:"\f1c8"}.fa-file-code-o:before{content:"\f1c9"}.fa-vine:before{content:"\f1ca"}.fa-codepen:before{content:"\f1cb"}.fa-jsfiddle:before{content:"\f1cc"}.fa-life-bouy:before,.fa-life-buoy:before,.fa-life-saver:before,.fa-support:before,.fa-life-ring:before{content:"\f1cd"}.fa-circle-o-notch:before{content:"\f1ce"}.fa-ra:before,.fa-resistance:before,.fa-rebel:before{content:"\f1d0"}.fa-ge:before,.fa-empire:before{content:"\f1d1"}.fa-git-square:before{content:"\f1d2"}.fa-git:before{content:"\f1d3"}.fa-y-combinator-square:before,.fa-yc-square:before,.fa-hacker-news:before{content:"\f1d4"}.fa-tencent-weibo:before{content:"\f1d5"}.fa-qq:before{content:"\f1d6"}.fa-wechat:before,.fa-weixin:before{content:"\f1d7"}.fa-send:before,.fa-paper-plane:before{content:"\f1d8"}.fa-send-o:before,.fa-paper-plane-o:before{content:"\f1d9"}.fa-history:before{content:"\f1da"}.fa-circle-thin:before{content:"\f1db"}.fa-header:before{content:"\f1dc"}.fa-paragraph:before{content:"\f1dd"}.fa-sliders:before{content:"\f1de"}.fa-share-alt:before{content:"\f1e0"}.fa-share-alt-square:before{content:"\f1e1"}.fa-bomb:before{content:"\f1e2"}.fa-soccer-ball-o:before,.fa-futbol-o:before{content:"\f1e3"}.fa-tty:before{content:"\f1e4"}.fa-binoculars:before{content:"\f1e5"}.fa-plug:before{content:"\f1e6"}.fa-slideshare:before{content:"\f1e7"}.fa-twitch:before{content:"\f1e8"}.fa-yelp:before{content:"\f1e9"}.fa-newspaper-o:before{content:"\f1ea"}.fa-wifi:before{content:"\f1eb"}.fa-calculator:before{content:"\f1ec"}.fa-paypal:before{content:"\f1ed"}.fa-google-wallet:before{content:"\f1ee"}.fa-cc-visa:before{content:"\f1f0"}.fa-cc-mastercard:before{content:"\f1f1"}.fa-cc-discover:before{content:"\f1f2"}.fa-cc-amex:before{content:"\f1f3"}.fa-cc-paypal:before{content:"\f1f4"}.fa-cc-stripe:before{content:"\f1f5"}.fa-bell-slash:before{content:"\f1f6"}.fa-bell-slash-o:before{content:"\f1f7"}.fa-trash:before{content:"\f1f8"}.fa-copyright:before{content:"\f1f9"}.fa-at:before{content:"\f1fa"}.fa-eyedropper:before{content:"\f1fb"}.fa-paint-brush:before{content:"\f1fc"}.fa-birthday-cake:before{content:"\f1fd"}.fa-area-chart:before{content:"\f1fe"}.fa-pie-chart:before{content:"\f200"}.fa-line-chart:before{content:"\f201"}.fa-lastfm:before{content:"\f202"}.fa-lastfm-square:before{content:"\f203"}.fa-toggle-off:before{content:"\f204"}.fa-toggle-on:before{content:"\f205"}.fa-bicycle:before{content:"\f206"}.fa-bus:before{content:"\f207"}.fa-ioxhost:before{content:"\f208"}.fa-angellist:before{content:"\f209"}.fa-cc:before{content:"\f20a"}.fa-shekel:before,.fa-sheqel:before,.fa-ils:before{content:"\f20b"}.fa-meanpath:before{content:"\f20c"}.fa-buysellads:before{content:"\f20d"}.fa-connectdevelop:before{content:"\f20e"}.fa-dashcube:before{content:"\f210"}.fa-forumbee:before{content:"\f211"}.fa-leanpub:before{content:"\f212"}.fa-sellsy:before{content:"\f213"}.fa-shirtsinbulk:before{content:"\f214"}.fa-simplybuilt:before{content:"\f215"}.fa-skyatlas:before{content:"\f216"}.fa-cart-plus:before{content:"\f217"}.fa-cart-arrow-down:before{content:"\f218"}.fa-diamond:before{content:"\f219"}.fa-ship:before{content:"\f21a"}.fa-user-secret:before{content:"\f21b"}.fa-motorcycle:before{content:"\f21c"}.fa-street-view:before{content:"\f21d"}.fa-heartbeat:before{content:"\f21e"}.fa-venus:before{content:"\f221"}.fa-mars:before{content:"\f222"}.fa-mercury:before{content:"\f223"}.fa-intersex:before,.fa-transgender:before{content:"\f224"}.fa-transgender-alt:before{content:"\f225"}.fa-venus-double:before{content:"\f226"}.fa-mars-double:before{content:"\f227"}.fa-venus-mars:before{content:"\f228"}.fa-mars-stroke:before{content:"\f229"}.fa-mars-stroke-v:before{content:"\f22a"}.fa-mars-stroke-h:before{content:"\f22b"}.fa-neuter:before{content:"\f22c"}.fa-genderless:before{content:"\f22d"}.fa-facebook-official:before{content:"\f230"}.fa-pinterest-p:before{content:"\f231"}.fa-whatsapp:before{content:"\f232"}.fa-server:before{content:"\f233"}.fa-user-plus:before{content:"\f234"}.fa-user-times:before{content:"\f235"}.fa-hotel:before,.fa-bed:before{content:"\f236"}.fa-viacoin:before{content:"\f237"}.fa-train:before{content:"\f238"}.fa-subway:before{content:"\f239"}.fa-medium:before{content:"\f23a"}.fa-yc:before,.fa-y-combinator:before{content:"\f23b"}.fa-optin-monster:before{content:"\f23c"}.fa-opencart:before{content:"\f23d"}.fa-expeditedssl:before{content:"\f23e"}.fa-battery-4:before,.fa-battery-full:before{content:"\f240"}.fa-battery-3:before,.fa-battery-three-quarters:before{content:"\f241"}.fa-battery-2:before,.fa-battery-half:before{content:"\f242"}.fa-battery-1:before,.fa-battery-quarter:before{content:"\f243"}.fa-battery-0:before,.fa-battery-empty:before{content:"\f244"}.fa-mouse-pointer:before{content:"\f245"}.fa-i-cursor:before{content:"\f246"}.fa-object-group:before{content:"\f247"}.fa-object-ungroup:before{content:"\f248"}.fa-sticky-note:before{content:"\f249"}.fa-sticky-note-o:before{content:"\f24a"}.fa-cc-jcb:before{content:"\f24b"}.fa-cc-diners-club:before{content:"\f24c"}.fa-clone:before{content:"\f24d"}.fa-balance-scale:before{content:"\f24e"}.fa-hourglass-o:before{content:"\f250"}.fa-hourglass-1:before,.fa-hourglass-start:before{content:"\f251"}.fa-hourglass-2:before,.fa-hourglass-half:before{content:"\f252"}.fa-hourglass-3:before,.fa-hourglass-end:before{content:"\f253"}.fa-hourglass:before{content:"\f254"}.fa-hand-grab-o:before,.fa-hand-rock-o:before{content:"\f255"}.fa-hand-stop-o:before,.fa-hand-paper-o:before{content:"\f256"}.fa-hand-scissors-o:before{content:"\f257"}.fa-hand-lizard-o:before{content:"\f258"}.fa-hand-spock-o:before{content:"\f259"}.fa-hand-pointer-o:before{content:"\f25a"}.fa-hand-peace-o:before{content:"\f25b"}.fa-trademark:before{content:"\f25c"}.fa-registered:before{content:"\f25d"}.fa-creative-commons:before{content:"\f25e"}.fa-gg:before{content:"\f260"}.fa-gg-circle:before{content:"\f261"}.fa-tripadvisor:before{content:"\f262"}.fa-odnoklassniki:before{content:"\f263"}.fa-odnoklassniki-square:before{content:"\f264"}.fa-get-pocket:before{content:"\f265"}.fa-wikipedia-w:before{content:"\f266"}.fa-safari:before{content:"\f267"}.fa-chrome:before{content:"\f268"}.fa-firefox:before{content:"\f269"}.fa-opera:before{content:"\f26a"}.fa-internet-explorer:before{content:"\f26b"}.fa-tv:before,.fa-television:before{content:"\f26c"}.fa-contao:before{content:"\f26d"}.fa-500px:before{content:"\f26e"}.fa-amazon:before{content:"\f270"}.fa-calendar-plus-o:before{content:"\f271"}.fa-calendar-minus-o:before{content:"\f272"}.fa-calendar-times-o:before{content:"\f273"}.fa-calendar-check-o:before{content:"\f274"}.fa-industry:before{content:"\f275"}.fa-map-pin:before{content:"\f276"}.fa-map-signs:before{content:"\f277"}.fa-map-o:before{content:"\f278"}.fa-map:before{content:"\f279"}.fa-commenting:before{content:"\f27a"}.fa-commenting-o:before{content:"\f27b"}.fa-houzz:before{content:"\f27c"}.fa-vimeo:before{content:"\f27d"}.fa-black-tie:before{content:"\f27e"}.fa-fonticons:before{content:"\f280"}.fa-reddit-alien:before{content:"\f281"}.fa-edge:before{content:"\f282"}.fa-credit-card-alt:before{content:"\f283"}.fa-codiepie:before{content:"\f284"}.fa-modx:before{content:"\f285"}.fa-fort-awesome:before{content:"\f286"}.fa-usb:before{content:"\f287"}.fa-product-hunt:before{content:"\f288"}.fa-mixcloud:before{content:"\f289"}.fa-scribd:before{content:"\f28a"}.fa-pause-circle:before{content:"\f28b"}.fa-pause-circle-o:before{content:"\f28c"}.fa-stop-circle:before{content:"\f28d"}.fa-stop-circle-o:before{content:"\f28e"}.fa-shopping-bag:before{content:"\f290"}.fa-shopping-basket:before{content:"\f291"}.fa-hashtag:before{content:"\f292"}.fa-bluetooth:before{content:"\f293"}.fa-bluetooth-b:before{content:"\f294"}.fa-percent:before{content:"\f295"}.fa-gitlab:before{content:"\f296"}.fa-wpbeginner:before{content:"\f297"}.fa-wpforms:before{content:"\f298"}.fa-envira:before{content:"\f299"}.fa-universal-access:before{content:"\f29a"}.fa-wheelchair-alt:before{content:"\f29b"}.fa-question-circle-o:before{content:"\f29c"}.fa-blind:before{content:"\f29d"}.fa-audio-description:before{content:"\f29e"}.fa-volume-control-phone:before{content:"\f2a0"}.fa-braille:before{content:"\f2a1"}.fa-assistive-listening-systems:before{content:"\f2a2"}.fa-asl-interpreting:before,.fa-american-sign-language-interpreting:before{content:"\f2a3"}.fa-deafness:before,.fa-hard-of-hearing:before,.fa-deaf:before{content:"\f2a4"}.fa-glide:before{content:"\f2a5"}.fa-glide-g:before{content:"\f2a6"}.fa-signing:before,.fa-sign-language:before{content:"\f2a7"}.fa-low-vision:before{content:"\f2a8"}.fa-viadeo:before{content:"\f2a9"}.fa-viadeo-square:before{content:"\f2aa"}.fa-snapchat:before{content:"\f2ab"}.fa-snapchat-ghost:before{content:"\f2ac"}.fa-snapchat-square:before{content:"\f2ad"}.fa-pied-piper:before{content:"\f2ae"}.fa-first-order:before{content:"\f2b0"}.fa-yoast:before{content:"\f2b1"}.fa-themeisle:before{content:"\f2b2"}.fa-google-plus-circle:before,.fa-google-plus-official:before{content:"\f2b3"}.fa-fa:before,.fa-font-awesome:before{content:"\f2b4"}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0, 0, 0, 0);border:0}.sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto}
-.owl-carousel{display:none;width:100%;-webkit-tap-highlight-color:transparent;position:relative;z-index:1}.owl-carousel .owl-stage{position:relative;-ms-touch-action:pan-Y}.owl-carousel .owl-stage:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}.owl-carousel .owl-stage-outer{position:relative;overflow:hidden;-webkit-transform:translate3d(0,0,0)}.owl-carousel .owl-item{position:relative;min-height:1px;float:left;-webkit-backface-visibility:hidden;-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none}.owl-carousel .owl-item img{display:block;width:100%;-webkit-transform-style:preserve-3d}.owl-carousel .owl-dots.disabled,.owl-carousel .owl-nav.disabled{display:none}.owl-carousel .owl-dot,.owl-carousel .owl-nav .owl-next,.owl-carousel .owl-nav .owl-prev{cursor:pointer;cursor:hand;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.owl-carousel.owl-loaded{display:block}.owl-carousel.owl-loading{opacity:0;display:block}.owl-carousel.owl-hidden{opacity:0}.owl-carousel.owl-refresh .owl-item{visibility:hidden}.owl-carousel.owl-drag .owl-item{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.owl-carousel.owl-grab{cursor:move;cursor:-webkit-grab;cursor:grab}.owl-carousel.owl-rtl{direction:rtl}.owl-carousel.owl-rtl .owl-item{float:right}.no-js .owl-carousel{display:block}.owl-carousel .animated{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both}.owl-carousel .owl-animated-in{z-index:0}.owl-carousel .owl-animated-out{z-index:1}.owl-carousel .fadeOut{-webkit-animation-name:fadeOut;animation-name:fadeOut}@-webkit-keyframes fadeOut{0%{opacity:1}100%{opacity:0}}@keyframes fadeOut{0%{opacity:1}100%{opacity:0}}.owl-height{-webkit-transition:height .5s ease-in-out;transition:height .5s ease-in-out}.owl-carousel .owl-item .owl-lazy{opacity:0;-webkit-transition:opacity .4s ease;transition:opacity .4s ease}.owl-carousel .owl-item img.owl-lazy{-webkit-transform-style:preserve-3d;transform-style:preserve-3d}.owl-carousel .owl-video-wrapper{position:relative;height:100%;background:#000}.owl-carousel .owl-video-play-icon{position:absolute;height:80px;width:80px;left:50%;top:50%;margin-left:-40px;margin-top:-40px;background:url(owl.video.play.html) no-repeat;cursor:pointer;z-index:1;-webkit-backface-visibility:hidden;-webkit-transition:-webkit-transform .1s ease;transition:-webkit-transform .1s ease;transition:transform .1s ease}.owl-carousel .owl-video-play-icon:hover{-webkit-transform:scale(1.3,1.3);-ms-transform:scale(1.3,1.3);transform:scale(1.3,1.3)}.owl-carousel .owl-video-playing .owl-video-play-icon,.owl-carousel .owl-video-playing .owl-video-tn{display:none}.owl-carousel .owl-video-tn{opacity:0;height:100%;background-position:center center;background-repeat:no-repeat;background-size:contain;-webkit-transition:opacity .4s ease;transition:opacity .4s ease}.owl-carousel .owl-video-frame{position:relative;z-index:1;height:100%;width:100%}.owl-theme .owl-nav{margin-top:0;text-align:center;-webkit-tap-highlight-color:transparent}.owl-theme .owl-nav [class*=owl-]{color:#FFF;font-size:20px;margin:0;padding:0 7px;background:0 0;display:inline-block;cursor:pointer;border-radius:3px}.owl-theme .owl-nav [class*=owl-]:hover{text-decoration:none}.owl-theme .owl-nav .disabled{opacity:1;cursor:default}.owl-theme .owl-nav.disabled+.owl-dots{margin-top:10px}.owl-theme .owl-dots{text-align:center;-webkit-tap-highlight-color:transparent}.owl-theme .owl-dots .owl-dot{display:inline-block;zoom:1}.owl-theme .owl-dots .owl-dot span{width:10px;height:10px;margin:5px 7px;background:#D6D6D6;display:block;-webkit-backface-visibility:visible;-webkit-transition:opacity .2s ease;transition:opacity .2s ease;border-radius:30px}.owl-theme .owl-dots .owl-dot.active span,.owl-theme .owl-dots .owl-dot:hover span{background:#869791}
 
 /************ TABLE OF CONTENTS ***************
 1. Fonts
@@ -14228,7 +14227,8 @@ nav.main-navigation .navbar-nav .btn:hover {
 
 /* FOOTER */
 .footer-bs {
-    background-color: #3c3d41;
+  border-top: 1px solid #354F91;
+  background-image: -webkit-linear-gradient(-29deg,#233b88 0,#5777ab 100%);
   padding: 60px 40px;
   color: rgba(255,255,255,1.00);
 }
@@ -16270,318 +16270,6 @@ style.css:1477
 
   to {
     -webkit-transform: translate3d(0, 0, 0); } }
-/* 
- * 	Core Owl Carousel CSS File
- *	v1.24
- */
-
-/* clearfix */
-
-.owl-carousel .owl-wrapper:after {
-	content: ".";
-	display: block;
-	clear: both;
-	visibility: hidden;
-	line-height: 0;
-	height: 0;
-}
-/* display none until init */
-.owl-carousel{
-	display: none;
-	position: relative;
-	width: 100%;
-	-ms-touch-action: pan-y;
-}
-.owl-carousel .owl-wrapper{
-	display: none;
-	position: relative;
-	-webkit-transform: translate3d(0px, 0px, 0px);
-}
-.owl-carousel .owl-wrapper-outer{
-	overflow: hidden;
-	position: relative;
-	width: 100%;
-}
-.owl-carousel .owl-wrapper-outer.autoHeight{
-	-webkit-transition: height 500ms ease-in-out;
-	-moz-transition: height 500ms ease-in-out;
-	-ms-transition: height 500ms ease-in-out;
-	-o-transition: height 500ms ease-in-out;
-	transition: height 500ms ease-in-out;
-}
-	
-.owl-carousel .owl-item{
-	float: left;
-}
-.owl-controls .owl-page,
-.owl-controls .owl-buttons div{
-	cursor: pointer;
-}
-.owl-controls {
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-/* mouse grab icon */
-.grabbing { 
-    cursor:url(grabbing.png) 8 8, move;
-}
-
-/* fix */
-.owl-carousel  .owl-wrapper,
-.owl-carousel  .owl-item{
-	-webkit-backface-visibility: hidden;
-	-moz-backface-visibility:    hidden;
-	-ms-backface-visibility:     hidden;
-  -webkit-transform: translate3d(0,0,0);
-  -moz-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-}
-
-/* CSS3 Transitions */
-
-.owl-origin {
-	-webkit-perspective: 1200px;
-	-webkit-perspective-origin-x : 50%;
-	-webkit-perspective-origin-y : 50%;
-	-moz-perspective : 1200px;
-	-moz-perspective-origin-x : 50%;
-	-moz-perspective-origin-y : 50%;
-	perspective : 1200px;
-}
-/* fade */
-.owl-fade-out {
-  z-index: 10;
-  -webkit-animation: fadeOut .7s both ease;
-  -moz-animation: fadeOut .7s both ease;
-  animation: fadeOut .7s both ease;
-}
-.owl-fade-in {
-  -webkit-animation: fadeIn .7s both ease;
-  -moz-animation: fadeIn .7s both ease;
-  animation: fadeIn .7s both ease;
-}
-/* backSlide */
-.owl-backSlide-out {
-  -webkit-animation: backSlideOut 1s both ease;
-  -moz-animation: backSlideOut 1s both ease;
-  animation: backSlideOut 1s both ease;
-}
-.owl-backSlide-in {
-  -webkit-animation: backSlideIn 1s both ease;
-  -moz-animation: backSlideIn 1s both ease;
-  animation: backSlideIn 1s both ease;
-}
-/* goDown */
-.owl-goDown-out {
-  -webkit-animation: scaleToFade .7s ease both;
-  -moz-animation: scaleToFade .7s ease both;
-  animation: scaleToFade .7s ease both;
-}
-.owl-goDown-in {
-  -webkit-animation: goDown .6s ease both;
-  -moz-animation: goDown .6s ease both;
-  animation: goDown .6s ease both;
-}
-/* scaleUp */
-.owl-fadeUp-in {
-  -webkit-animation: scaleUpFrom .5s ease both;
-  -moz-animation: scaleUpFrom .5s ease both;
-  animation: scaleUpFrom .5s ease both;
-}
-
-.owl-fadeUp-out {
-  -webkit-animation: scaleUpTo .5s ease both;
-  -moz-animation: scaleUpTo .5s ease both;
-  animation: scaleUpTo .5s ease both;
-}
-/* Keyframes */
-/*empty*/
-@-webkit-keyframes empty {
-  0% {opacity: 1}
-}
-@-moz-keyframes empty {
-  0% {opacity: 1}
-}
-@keyframes empty {
-  0% {opacity: 1}
-}
-@-webkit-keyframes fadeIn {
-  0% { opacity:0; }
-  100% { opacity:1; }
-}
-@-moz-keyframes fadeIn {
-  0% { opacity:0; }
-  100% { opacity:1; }
-}
-@keyframes fadeIn {
-  0% { opacity:0; }
-  100% { opacity:1; }
-}
-@-webkit-keyframes fadeOut {
-  0% { opacity:1; }
-  100% { opacity:0; }
-}
-@-moz-keyframes fadeOut {
-  0% { opacity:1; }
-  100% { opacity:0; }
-}
-@keyframes fadeOut {
-  0% { opacity:1; }
-  100% { opacity:0; }
-}
-@-webkit-keyframes backSlideOut {
-  25% { opacity: .5; -webkit-transform: translateZ(-500px); }
-  75% { opacity: .5; -webkit-transform: translateZ(-500px) translateX(-200%); }
-  100% { opacity: .5; -webkit-transform: translateZ(-500px) translateX(-200%); }
-}
-@-moz-keyframes backSlideOut {
-  25% { opacity: .5; -moz-transform: translateZ(-500px); }
-  75% { opacity: .5; -moz-transform: translateZ(-500px) translateX(-200%); }
-  100% { opacity: .5; -moz-transform: translateZ(-500px) translateX(-200%); }
-}
-@keyframes backSlideOut {
-  25% { opacity: .5; transform: translateZ(-500px); }
-  75% { opacity: .5; transform: translateZ(-500px) translateX(-200%); }
-  100% { opacity: .5; transform: translateZ(-500px) translateX(-200%); }
-}
-@-webkit-keyframes backSlideIn {
-  0%, 25% { opacity: .5; -webkit-transform: translateZ(-500px) translateX(200%); }
-  75% { opacity: .5; -webkit-transform: translateZ(-500px); }
-  100% { opacity: 1; -webkit-transform: translateZ(0) translateX(0); }
-}
-@-moz-keyframes backSlideIn {
-  0%, 25% { opacity: .5; -moz-transform: translateZ(-500px) translateX(200%); }
-  75% { opacity: .5; -moz-transform: translateZ(-500px); }
-  100% { opacity: 1; -moz-transform: translateZ(0) translateX(0); }
-}
-@keyframes backSlideIn {
-  0%, 25% { opacity: .5; transform: translateZ(-500px) translateX(200%); }
-  75% { opacity: .5; transform: translateZ(-500px); }
-  100% { opacity: 1; transform: translateZ(0) translateX(0); }
-}
-@-webkit-keyframes scaleToFade {
-  to { opacity: 0; -webkit-transform: scale(.8); }
-}
-@-moz-keyframes scaleToFade {
-  to { opacity: 0; -moz-transform: scale(.8); }
-}
-@keyframes scaleToFade {
-  to { opacity: 0; transform: scale(.8); }
-}
-@-webkit-keyframes goDown {
-  from { -webkit-transform: translateY(-100%); }
-}
-@-moz-keyframes goDown {
-  from { -moz-transform: translateY(-100%); }
-}
-@keyframes goDown {
-  from { transform: translateY(-100%); }
-}
-
-@-webkit-keyframes scaleUpFrom {
-  from { opacity: 0; -webkit-transform: scale(1.5); }
-}
-@-moz-keyframes scaleUpFrom {
-  from { opacity: 0; -moz-transform: scale(1.5); }
-}
-@keyframes scaleUpFrom {
-  from { opacity: 0; transform: scale(1.5); }
-}
-
-@-webkit-keyframes scaleUpTo {
-  to { opacity: 0; -webkit-transform: scale(1.5); }
-}
-@-moz-keyframes scaleUpTo {
-  to { opacity: 0; -moz-transform: scale(1.5); }
-}
-@keyframes scaleUpTo {
-  to { opacity: 0; transform: scale(1.5); }
-}
-/*
-* 	Owl Carousel Owl Demo Theme 
-*	v1.24
-*/
-
-
-.owl-theme .owl-controls{
-	margin-top: 10px;
-	text-align: center;
-}
-
-/* Styling Next and Prev buttons */
-
-.owl-theme .owl-controls .owl-buttons div{
-	color: #FFF;
-	display: inline-block;
-	zoom: 1;
-	*display: inline;/*IE7 life-saver */
-	margin: 5px;
-	padding: 3px 10px;
-	font-size: 12px;
-	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
-	border-radius: 30px;
-	background: #869791;
-	filter: Alpha(Opacity=50);/*IE7 fix*/
-	opacity: 0.5;
-}
-/* Clickable class fix problem with hover on touch devices */
-/* Use it for non-touch hover action */
-.owl-theme .owl-controls.clickable .owl-buttons div:hover{
-	filter: Alpha(Opacity=100);/*IE7 fix*/
-	opacity: 1;
-	text-decoration: none;
-}
-
-/* Styling Pagination*/
-
-.owl-theme .owl-controls .owl-page{
-	display: inline-block;
-	zoom: 1;
-	*display: inline;/*IE7 life-saver */
-}
-.owl-theme .owl-controls .owl-page span{
-	display: block;
-	width: 12px;
-	height: 12px;
-	margin: 5px 7px;
-	filter: Alpha(Opacity=50);/*IE7 fix*/
-	opacity: 0.5;
-	-webkit-border-radius: 20px;
-	-moz-border-radius: 20px;
-	border-radius: 20px;
-	background: #869791;
-}
-
-.owl-theme .owl-controls .owl-page.active span,
-.owl-theme .owl-controls.clickable .owl-page:hover span{
-	filter: Alpha(Opacity=100);/*IE7 fix*/
-	opacity: 1;
-}
-
-/* If PaginationNumbers is true */
-
-.owl-theme .owl-controls .owl-page span.owl-numbers{
-	height: auto;
-	width: auto;
-	color: #FFF;
-	padding: 2px 10px;
-	font-size: 12px;
-	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
-	border-radius: 30px;
-}
-
-/* preloading images */
-.owl-item.loading{
-	min-height: 150px;
-	background: url(AjaxLoader.gif) no-repeat center center
-}
 /* line 1, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .center_align_desktop {
   display: flex;
@@ -16753,57 +16441,58 @@ li .other_cities a:hover {
 /* FOOTER */
 /* line 148, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .footer-bs {
-  background-color: #3c3d41;
+  border-top: 1px solid #354F91;
+  background-image: -webkit-linear-gradient(-29deg, #233b88 0, #5777ab 100%);
   padding: 60px 40px;
   color: white;
 }
 
-/* line 153, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 154, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .footer-bs .footer-brand, .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns {
   padding: 10px 25px;
 }
 
-/* line 154, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 155, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns {
   border-color: transparent;
 }
 
-/* line 155, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 156, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .footer-bs .footer-brand h2 {
   margin: 0px 0px 10px;
 }
 
-/* line 156, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 157, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .footer-bs .footer-brand p {
   font-size: 12px;
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* line 158, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 159, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .footer-bs .footer-nav ul.pages {
   list-style: none;
   padding: 0px;
 }
 
-/* line 159, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 160, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .footer-bs .footer-nav ul.pages li {
   padding: 5px 0px;
 }
 
-/* line 160, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 161, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .footer-bs .footer-nav ul.pages a {
   color: white;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-/* line 161, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 162, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .footer-bs .footer-nav ul.pages a:hover {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
 }
 
-/* line 162, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 163, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .footer-bs .footer-nav h4 {
   font-size: 11px;
   text-transform: uppercase;
@@ -16811,58 +16500,58 @@ li .other_cities a:hover {
   margin-bottom: 10px;
 }
 
-/* line 169, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 170, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .footer-bs .footer-nav ul.list {
   list-style: none;
   padding: 0px;
 }
 
-/* line 170, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 171, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .footer-bs .footer-nav ul.list li {
   padding: 5px 0px;
 }
 
-/* line 171, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 172, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .footer-bs .footer-nav ul.list a {
   color: rgba(255, 255, 255, 0.8);
 }
 
-/* line 172, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 173, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .footer-bs .footer-nav ul.list a:hover {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
 
-/* line 174, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 175, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .footer-bs .footer-social ul {
   list-style: none;
   padding: 0px;
 }
 
-/* line 175, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 176, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .footer-bs .footer-social h4 {
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 3px;
 }
 
-/* line 180, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 181, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .footer-bs .footer-social li {
   padding: 5px 4px;
 }
 
-/* line 181, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 182, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .footer-bs .footer-social a {
   color: white;
 }
 
-/* line 182, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 183, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .footer-bs .footer-social a:hover {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
 }
 
-/* line 184, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 185, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .footer-bs .footer-ns h4 {
   font-size: 11px;
   text-transform: uppercase;
@@ -16870,19 +16559,19 @@ li .other_cities a:hover {
   margin-bottom: 10px;
 }
 
-/* line 190, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 191, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .footer-bs .footer-ns p {
   font-size: 12px;
   color: rgba(255, 255, 255, 0.7);
 }
 
 @media (min-width: 768px) {
-  /* line 194, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 195, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns {
     border-left: solid 1px rgba(255, 255, 255, 0.1);
   }
 }
-/* line 197, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 198, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .align-usps {
   display: inline-block;
   font-size: 12px;
@@ -16890,14 +16579,14 @@ li .other_cities a:hover {
   font-weight: bolder;
 }
 
-/* line 204, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 205, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .align-usps img {
   margin-right: 10px;
   width: 30px;
   height: 30px;
 }
 
-/* line 210, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 211, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .align-usps-2p {
   display: inline;
   font-size: 16px;
@@ -16906,14 +16595,14 @@ li .other_cities a:hover {
   font-weight: bolder;
 }
 
-/* line 218, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 219, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .align-usps-2p img {
   margin: 10px 10px 0 10px;
   width: 50px;
   height: 50px;
 }
 
-/* line 224, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 225, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .price_tag {
   text-align: center;
   color: teal;
@@ -16923,7 +16612,7 @@ li .other_cities a:hover {
   border-top: 2px dashed #5777ab;
 }
 
-/* line 233, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 234, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .delivery_tag {
   text-align: center;
   color: teal;
@@ -16933,7 +16622,7 @@ li .other_cities a:hover {
   border-top: 2px dashed #5777ab;
 }
 
-/* line 242, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 243, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .progress-bar {
   float: left;
   width: 0;
@@ -16949,13 +16638,13 @@ li .other_cities a:hover {
   transition: width 0.6s ease;
 }
 
-/* line 257, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 258, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .progress-bar-success {
   background-color: transparent;
   border: 2px solid lightgrey;
 }
 
-/* line 262, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 263, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .comfort_dot_0 {
   position: inherit;
   height: 20px;
@@ -16965,7 +16654,7 @@ li .other_cities a:hover {
   z-index: 2;
 }
 
-/* line 271, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 272, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .comfort_dot_1 {
   position: inherit;
   height: 20px;
@@ -16975,7 +16664,7 @@ li .other_cities a:hover {
   z-index: 2;
 }
 
-/* line 280, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 281, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .comfort_dot_2 {
   position: inherit;
   height: 20px;
@@ -16985,7 +16674,7 @@ li .other_cities a:hover {
   z-index: 2;
 }
 
-/* line 289, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 290, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .firmness_dot_0 {
   position: inherit;
   height: 20px;
@@ -16995,7 +16684,7 @@ li .other_cities a:hover {
   z-index: 2;
 }
 
-/* line 298, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 299, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .firmness_dot_1 {
   position: inherit;
   height: 20px;
@@ -17005,7 +16694,7 @@ li .other_cities a:hover {
   z-index: 2;
 }
 
-/* line 307, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 308, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .firmness_dot_2 {
   position: inherit;
   height: 20px;
@@ -17015,7 +16704,7 @@ li .other_cities a:hover {
   z-index: 2;
 }
 
-/* line 316, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 317, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .firmness_dot_3 {
   position: inherit;
   height: 20px;
@@ -17025,7 +16714,7 @@ li .other_cities a:hover {
   z-index: 2;
 }
 
-/* line 325, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 326, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .firmness_dot_4 {
   position: inherit;
   height: 20px;
@@ -17035,7 +16724,7 @@ li .other_cities a:hover {
   z-index: 2;
 }
 
-/* line 334, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 335, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .elasticity_dot_0 {
   position: inherit;
   height: 20px;
@@ -17045,7 +16734,7 @@ li .other_cities a:hover {
   z-index: 2;
 }
 
-/* line 343, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 344, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .elasticity_dot_1 {
   position: inherit;
   height: 20px;
@@ -17055,7 +16744,7 @@ li .other_cities a:hover {
   z-index: 2;
 }
 
-/* line 352, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 353, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .elasticity_dot_2 {
   position: inherit;
   height: 20px;
@@ -17065,7 +16754,7 @@ li .other_cities a:hover {
   z-index: 2;
 }
 
-/* line 362, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 363, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .heat_regulation_dot_0 {
   position: inherit;
   height: 20px;
@@ -17075,7 +16764,7 @@ li .other_cities a:hover {
   z-index: 2;
 }
 
-/* line 371, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 372, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .heat_regulation_dot_1 {
   position: inherit;
   height: 20px;
@@ -17085,7 +16774,7 @@ li .other_cities a:hover {
   z-index: 2;
 }
 
-/* line 380, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 381, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .heat_regulation_dot_2 {
   position: inherit;
   height: 20px;
@@ -17095,7 +16784,7 @@ li .other_cities a:hover {
   z-index: 2;
 }
 
-/* line 389, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 390, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .graph_explanation_text {
   display: inline;
 }
@@ -17113,7 +16802,7 @@ li .other_cities a:hover {
 /*============================================================================================*/
 /*============================================================================================*/
 /*============================================================================================*/
-/* line 407, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 408, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .summary_box {
   display: block;
   height: auto;
@@ -17123,14 +16812,14 @@ li .other_cities a:hover {
   border-bottom-width: 1px;
 }
 
-/* line 416, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 417, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .summary_box p {
   color: black;
   margin: 10px 10px 10px 10px;
   font-size: 18px;
 }
 
-/* line 422, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 423, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .wrapper-v4 {
   padding: 0;
   margin: 0 auto;
@@ -17138,14 +16827,14 @@ li .other_cities a:hover {
   box-sizing: border-box;
 }
 
-/* line 429, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 430, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .v4-bordered {
   margin-top: 20px;
   border: black solid 1px;
   border-bottom-width: 1px;
 }
 
-/* line 435, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 436, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .specs-box {
   background: #fff;
   border-bottom: none;
@@ -17153,7 +16842,7 @@ li .other_cities a:hover {
   /* BOXSPRINGSPOT KLEUR */
 }
 
-/* line 441, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 442, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .box-title {
   border-color: #5777ab;
   background: whitesmoke;
@@ -17164,7 +16853,7 @@ li .other_cities a:hover {
   letter-spacing: .2px;
 }
 
-/* line 451, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 452, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .box-title-small {
   border-color: #5777ab;
   background: whitesmoke;
@@ -17174,14 +16863,14 @@ li .other_cities a:hover {
   letter-spacing: .2px;
 }
 
-/* line 460, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 461, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .text-v4 {
   font-size: 20px;
   line-height: 30px;
   font-weight: 400;
 }
 
-/* line 466, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 467, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .title-smaller {
   font-size: 30px;
   margin-bottom: 20px;
@@ -17189,7 +16878,7 @@ li .other_cities a:hover {
   font-weight: 700;
 }
 
-/* line 473, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 474, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .title-extra-smaller {
   font-size: 22px;
   margin-top: 10px;
@@ -17198,7 +16887,7 @@ li .other_cities a:hover {
   font-weight: 700;
 }
 
-/* line 481, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 482, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .head-title-v4 {
   font-weight: 700;
   text-transform: uppercase;
@@ -17210,7 +16899,7 @@ li .other_cities a:hover {
   border-top: 1px solid  #5777ab;
 }
 
-/* line 492, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 493, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .li-holder {
   padding: 0;
   margin: 0;
@@ -17219,42 +16908,42 @@ li .other_cities a:hover {
   text-decoration: none;
 }
 
-/* line 500, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 501, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .li-content {
   display: flex;
   padding: 30px;
 }
 
-/* line 505, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 506, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .li-content-no-padding {
   display: flex;
   margin-left: 20px;
 }
 
-/* line 510, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 511, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .text-content {
   flex: calc(100% - 380px);
 }
 
-/* line 514, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 515, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .icon-holder-left {
   margin-left: 25px;
   flex: 355px;
 }
 
-/* line 519, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 520, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .icon-holder-right {
   margin-left: 25px;
   flex: 355px;
 }
 
-/* line 524, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 525, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .box-holder {
   margin: 30px;
   flex: 355px;
 }
 
-/* line 529, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 530, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 #survey_container_result {
   background-color: #fff;
   margin-top: -400px;
@@ -17262,7 +16951,7 @@ li .other_cities a:hover {
   position: relative;
 }
 
-/* line 536, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 537, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 #survey_container_result_advice {
   background-color: #fff;
   margin-top: -80px;
@@ -17270,7 +16959,7 @@ li .other_cities a:hover {
   position: relative;
 }
 
-/* line 543, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 544, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .checkout_button {
   border-color: #759bc4;
   background-color: #759bc4;
@@ -17280,7 +16969,7 @@ li .other_cities a:hover {
   letter-spacing: .2px;
 }
 
-/* line 552, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 553, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .checkout_button:hover {
   border-color: #5777ab;
   background-color: #5777ab;
@@ -17290,7 +16979,7 @@ li .other_cities a:hover {
   letter-spacing: .2px;
 }
 
-/* line 561, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 562, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .checkout_button[disabled] {
   border-color: #5777ab;
   background-color: #5777ab;
@@ -17300,14 +16989,14 @@ li .other_cities a:hover {
   letter-spacing: .2px;
 }
 
-/* line 570, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 571, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .img-responsive {
   display: block;
   height: auto;
   max-width: 60%;
 }
 
-/* line 576, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 577, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .read_more {
   font-size: 22px;
   font-weight: bolder;
@@ -17318,7 +17007,7 @@ li .other_cities a:hover {
 /*============================================================================================*/
 /* CUSTOM. BUTTONS */
 /*============================================================================================*/
-/* line 587, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 588, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .modal-buy {
   width: 400px;
   z-index: 100;
@@ -17328,7 +17017,7 @@ li .other_cities a:hover {
   bottom: 1%;
 }
 
-/* line 596, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 597, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .modal-body a {
   margin-left: 30px;
 }
@@ -17345,7 +17034,7 @@ li .other_cities a:hover {
 /*============================================================================================*/
 /*============================================================================================*/
 /*============================================================================================*/
-/* line 613, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 614, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 body {
   background: #fff;
   font-family: 'Avenir',Arial;
@@ -17354,7 +17043,7 @@ body {
 }
 
 /** Typography **/
-/* line 620, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 621, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 h1,
 h2,
 h3,
@@ -17371,27 +17060,27 @@ h6 {
   font-family: 'Open Sans', Arial, sans-serif;
 }
 
-/* line 635, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 636, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 h1, h2 {
   text-transform: uppercase;
   font-weight: 800;
   text-align: center;
 }
 
-/* line 640, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 641, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .main-title {
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
   color: #fff;
 }
 
-/* line 644, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 645, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .main-title h1 {
   font-size: 44px;
   line-height: 40px;
   margin-top: 60px;
 }
 
-/* line 649, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 650, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .main-title p {
   font-size: 26px;
   font-weight: 300;
@@ -17399,14 +17088,14 @@ h1, h2 {
   text-align: center;
 }
 
-/* line 655, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 656, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 h2 {
   font-size: 32px;
   line-height: 30px;
   margin-bottom: 45px;
 }
 
-/* line 660, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 661, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 h2 span {
   font-size: 24px;
   font-weight: 300;
@@ -17414,7 +17103,7 @@ h2 span {
   display: block;
 }
 
-/* line 666, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 667, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 h3 {
   font-size: 32px;
   font-weight: 600;
@@ -17423,14 +17112,14 @@ h3 {
   margin-bottom: 45px;
 }
 
-/* line 673, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 674, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 h3 span {
   font-size: 22px;
   font-weight: 600;
   display: inline;
 }
 
-/* line 678, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 679, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .step h3 {
   text-transform: none;
   font-size: 22px;
@@ -17440,14 +17129,14 @@ h3 span {
   text-align: left;
 }
 
-/* line 686, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 687, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .box h3 {
   font-size: 18px;
   text-transform: uppercase;
   margin-bottom: 5px;
 }
 
-/* line 691, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 692, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 footer h3 {
   text-transform: none;
   font-weight: 400;
@@ -17456,7 +17145,7 @@ footer h3 {
   margin-bottom: 10px;
 }
 
-/* line 698, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 699, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .question_box h3 {
   font-size: 18px;
   text-align: left;
@@ -17464,35 +17153,35 @@ footer h3 {
   margin-bottom: 10px;
 }
 
-/* line 705, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 706, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 h4 {
   font-size: 18px;
   ine-height: 22px;
 }
 
-/* line 710, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 711, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 h5 {
   font-size: 14px;
   line-height: 14px;
 }
 
-/* line 714, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 715, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 footer h5 {
   color: #555;
 }
 
-/* line 717, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 718, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 h6 {
   font-size: 12px;
 }
 
-/* line 720, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 721, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 p {
   margin: 0 0 20px 0;
 }
 
 /** Lists **/
-/* line 724, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 725, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 ul,
 ol {
   padding: 0;
@@ -17500,7 +17189,7 @@ ol {
   list-style: none;
 }
 
-/* line 730, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 731, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 ul ul,
 ul ol,
 ol ol,
@@ -17508,12 +17197,12 @@ ol ul {
   margin-bottom: 0;
 }
 
-/* line 736, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 737, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 li {
   line-height: 30px;
 }
 
-/* line 739, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 740, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 hr {
   margin: 30px 0;
   border: 0;
@@ -17521,7 +17210,7 @@ hr {
 }
 
 /** Links color **/
-/* line 746, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 747, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 a {
   color: #5777ab;
   text-decoration: none;
@@ -17529,7 +17218,7 @@ a {
   transition: all 0.2s ease;
 }
 
-/* line 752, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 753, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 a:hover,
 a:focus {
   color: #444;
@@ -17537,7 +17226,7 @@ a:focus {
 }
 
 /** Buttons **/
-/* line 759, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 760, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .button_medium {
   border: none;
   background: #282828;
@@ -17555,13 +17244,13 @@ a:focus {
   outline: none;
 }
 
-/* line 776, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 777, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 a.button_medium:hover, .button_medium:hover {
   background: #00aeef;
   color: #fff;
 }
 
-/* line 778, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 779, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .button_medium_2 {
   border: none;
   -webkit-border-radius: 3px;
@@ -17583,7 +17272,7 @@ a.button_medium:hover, .button_medium:hover {
   background: #fff;
 }
 
-/* line 798, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 799, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 a.button_medium_2:hover {
   background: #00aeef;
   color: #fff;
@@ -17591,7 +17280,7 @@ a.button_medium_2:hover {
 }
 
 /** Wizard Buttons **/
-/* line 802, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 803, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .backward, .forward {
   border: none;
   color: #fff;
@@ -17611,19 +17300,19 @@ a.button_medium_2:hover {
   border-radius: 0 !important;
 }
 
-/* line 821, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 822, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .backward {
   padding: 7px 20px 7px 30px;
 }
 
-/* line 823, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 824, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 button[disabled].backward, button[disabled].forward {
   border: none;
   background: #ccc;
   outline: none;
 }
 
-/* line 829, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 830, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .backward:before {
   content: "\<";
   font-family: FontAwesome;
@@ -17636,12 +17325,12 @@ button[disabled].backward, button[disabled].forward {
   font-size: 15px;
 }
 
-/* line 841, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 842, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .forward {
   padding: 7px 30px 7px 30px;
 }
 
-/* line 842, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 843, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .forward:before {
   content: "\>";
   font-family: FontAwesome;
@@ -17654,27 +17343,27 @@ button[disabled].backward, button[disabled].forward {
   font-size: 15px;
 }
 
-/* line 854, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 855, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .backward:hover, .forward:hover {
   background: #5777ab;
   color: #fff;
 }
 
 /** Header ==================== **/
-/* line 857, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 858, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 #top-area {
   background-image: -webkit-linear-gradient(-29deg, #233b88 0, #5777ab 100%);
   height: 500px;
 }
 
-/* line 861, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 862, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 header {
   padding: 10px 0;
   width: 100%;
   background: url(line_header.png) repeat-x left bottom;
 }
 
-/* line 867, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 868, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 #top-nav ul {
   float: right;
   margin: 0;
@@ -17685,41 +17374,41 @@ header {
   text-transform: uppercase;
 }
 
-/* line 868, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 869, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 #top-nav ul a {
   color: #fff;
   text-decoration: none;
 }
 
-/* line 869, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 870, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 #top-nav ul a:hover, #top-nav ul a#active {
   color: #323232;
 }
 
-/* line 870, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 871, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 #top-nav ul li {
   float: left;
   padding-left: 10px;
   margin-right: 10px;
 }
 
-/* line 871, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 872, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 #top-nav ul li:first-child {
   background: none;
 }
 
-/* line 872, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 873, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 #top-nav ul li a#purchase {
   color: #ff7d38;
 }
 
-/* line 873, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 874, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 #top-nav ul li a#purchase:hover {
   color: #323232;
 }
 
 /* Button Responsive Menu*/
-/* line 876, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 877, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .btn-responsive-menu {
   display: none;
   float: right;
@@ -17734,7 +17423,7 @@ header {
   border-radius: 4px;
 }
 
-/* line 877, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 878, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .bar {
   display: block;
   width: 18px;
@@ -17746,18 +17435,18 @@ header {
   border-radius: 1px;
 }
 
-/* line 878, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 879, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .show {
   display: block !important;
 }
 
-/* line 880, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 881, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 #main {
   padding-bottom: 150px;
 }
 
 /** Footer ==================== **/
-/* line 884, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 885, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 footer {
   width: 100%;
   background: #5777ab;
@@ -17766,46 +17455,46 @@ footer {
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
 }
 
-/* line 891, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 892, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 footer a {
   color: #FF9;
 }
 
-/* line 894, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 895, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 #footer_2 {
   width: 100%;
   background: #252525;
 }
 
-/* line 898, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 899, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 #footer_2 a {
   color: #888;
 }
 
-/* line 901, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 902, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 #footer_2 a:hover {
   color: #fff;
 }
 
-/* line 904, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 905, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 ul#footer-nav {
   color: #fff;
   margin: 25px 0 10px 0;
 }
 
-/* line 908, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 909, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 ul#footer-nav li:first-child {
   margin-right: 30px;
 }
 
-/* line 911, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 912, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 ul#footer-nav li {
   display: inline-block;
   zoom: 1;
   margin-right: 10px;
 }
 
-/* line 916, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 917, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 #copy {
   padding: 15px 0;
   background-color: #f8f8f8;
@@ -17813,7 +17502,7 @@ ul#footer-nav li {
   text-align: center;
 }
 
-/* line 922, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 923, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 #contact {
   background: url(contact_map.png) no-repeat 90% 90px;
 }
@@ -17822,7 +17511,7 @@ ul#footer-nav li {
 /* 2.  CONTENT */
 /*============================================================================================*/
 /** Form area ============================= **/
-/* line 931, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 932, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 #top-wizard {
   text-align: center;
   padding: 15px 120px;
@@ -17833,7 +17522,7 @@ ul#footer-nav li {
   font-size: 11px;
 }
 
-/* line 941, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 942, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .shadow {
   width: 100%;
   height: 6px;
@@ -17843,40 +17532,40 @@ ul#footer-nav li {
   background: url(shadow_top_form.png) no-repeat center top;
 }
 
-/* line 952, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 953, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .ui-widget-content {
   background: #fff;
   color: #222222;
 }
 
-/* line 953, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 954, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .ui-widget-content a {
   color: #222222;
 }
 
-/* line 954, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 955, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .ui-widget-header {
   background: #f68e56;
 }
 
-/* line 955, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 956, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .ui-widget-header a {
   color: #222222;
 }
 
-/* line 956, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 957, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .ui-progressbar {
   height: 2em;
   text-align: left;
 }
 
-/* line 957, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 958, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .ui-progressbar .ui-progressbar-value {
   margin: -1px;
   height: 100%;
 }
 
-/* line 959, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 960, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 #survey_container {
   background-color: #fff;
   box-shadow: 0 0 5px grey;
@@ -17886,7 +17575,7 @@ ul#footer-nav li {
   position: relative;
 }
 
-/* line 967, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 968, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .ie8 #survey_container {
   background-color: #fff;
   border: 1px solid #ddd;
@@ -17896,17 +17585,17 @@ ul#footer-nav li {
   position: relative;
 }
 
-/* line 976, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 977, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 #middle-wizard {
   padding: 50px 120px 50px 120px;
 }
 
-/* line 980, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 981, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 #middle-wizard-result {
   padding: 0;
 }
 
-/* line 984, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 985, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 #bottom-wizard {
   text-align: center;
   padding: 15px 120px;
@@ -17914,19 +17603,19 @@ ul#footer-nav li {
   background-color: #f3f3f3;
 }
 
-/* line 990, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 991, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 #complete {
   text-align: center;
   padding: 0 45px 35px 45px;
 }
 
-/* line 994, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 995, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 #complete h3 {
   text-align: center;
   margin-bottom: 40px;
 }
 
-/* line 998, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 999, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 #complete i {
   color: #cacaca;
   margin: 0 0 10px 0;
@@ -17934,7 +17623,7 @@ ul#footer-nav li {
   padding: 0;
 }
 
-/* line 1004, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1005, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 #complete button {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -17956,7 +17645,7 @@ ul#footer-nav li {
   background: #fff;
 }
 
-/* line 1024, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1025, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 #complete button:hover {
   background: #00aeef;
   color: #fff;
@@ -17964,12 +17653,12 @@ ul#footer-nav li {
 }
 
 /** Featuers and Question boxes ============================= **/
-/* line 1029, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1030, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .box {
   text-align: center;
 }
 
-/* line 1031, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1032, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .box span {
   font-size: 100px;
   color: #1ab9a7;
@@ -17978,14 +17667,14 @@ ul#footer-nav li {
   margin: 40px 0 43px 0;
 }
 
-/* line 1038, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1039, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .question_box {
   padding-left: 40px;
   position: relative;
   margin-bottom: 30px;
 }
 
-/* line 1043, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1044, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .question_box:before {
   content: "\f059";
   font-family: FontAwesome;
@@ -18000,7 +17689,7 @@ ul#footer-nav li {
 }
 
 /* Team */
-/* line 1056, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1057, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .thumbnail {
   border: none;
   border-radius: 0px;
@@ -18018,12 +17707,12 @@ ul#footer-nav li {
   -webkit-transition: all 0.2s ease-in-out;
 }
 
-/* line 1072, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1073, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .caption {
   background: #f2f2f2;
 }
 
-/* line 1073, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1074, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .transit-to-top {
   height: 60px;
   overflow: hidden;
@@ -18031,7 +17720,7 @@ ul#footer-nav li {
   cursor: pointer;
 }
 
-/* line 1079, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1080, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .transit-to-top h4 {
   text-align: center;
   moz-transition: all 0s ease-in-out;
@@ -18042,25 +17731,25 @@ ul#footer-nav li {
   padding: 0;
 }
 
-/* line 1088, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1089, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .thumbnail:hover h4 {
   margin-top: -40px;
 }
 
-/* line 1089, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1090, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .p-title {
   display: block;
   height: 40px;
 }
 
-/* line 1093, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1094, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .widget_nav_menu {
   min-height: 100%;
   height: 100%;
   text-align: center;
 }
 
-/* line 1098, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1099, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .project-item-image-container {
   border: none;
   cursor: pointer;
@@ -18069,7 +17758,7 @@ ul#footer-nav li {
   width: 100%;
 }
 
-/* line 1105, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1106, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .project-item-image-container:hover, .project-item :hover .project-item-image-container {
   filter: alpha(opacity=100);
   -moz-transition: background-color 0.2s ease-out, color 0.1s ease-out;
@@ -18080,12 +17769,12 @@ ul#footer-nav li {
   -webkit-transition: background-color 0.2s ease-out, color 0.1s ease-out;
 }
 
-/* line 1114, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1115, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .project-item-image-container > img {
   width: 100% !important;
 }
 
-/* line 1115, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1116, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .phone-info {
   display: inline-block;
   margin: 5px 0px 0 0;
@@ -18093,7 +17782,7 @@ ul#footer-nav li {
   text-align: center;
 }
 
-/* line 1121, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1122, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 ul.social-bookmarks.team {
   float: none;
   margin: 0;
@@ -18103,12 +17792,12 @@ ul.social-bookmarks.team {
 }
 
 /* Carousel */
-/* line 1124, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1125, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 #owl-demo .item {
   margin: 3px;
 }
 
-/* line 1127, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1128, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 #owl-demo .item img {
   display: block;
   width: 100%;
@@ -18118,18 +17807,18 @@ ul.social-bookmarks.team {
 /*============================================================================================*/
 /* 3.  FORMS */
 /*============================================================================================*/
-/* line 1136, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1137, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .form-control::-moz-placeholder {
   color: #999;
   opacity: 1;
 }
 
-/* line 1137, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1138, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .form-control::-webkit-input-placeholder {
   color: #999;
 }
 
-/* line 1139, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1140, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 input.form-control, select.form-control, textarea.form-control {
   background: none;
   background-color: #fbfbfb;
@@ -18151,7 +17840,7 @@ input.form-control, select.form-control, textarea.form-control {
   padding: 6px 12px;
 }
 
-/* line 1159, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1160, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 input.form-control:focus, select.form-control:focus, textarea.form-control:focus {
   border-color: none;
   outline: 0;
@@ -18161,7 +17850,7 @@ input.form-control:focus, select.form-control:focus, textarea.form-control:focus
 }
 
 /** Drop down select: ex Country select ==================== **/
-/* line 1168, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1169, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .styled-select select {
   background: transparent;
   width: 107%;
@@ -18177,7 +17866,7 @@ input.form-control:focus, select.form-control:focus, textarea.form-control:focus
   cursor: pointer;
 }
 
-/* line 1182, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1183, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .styled-select {
   width: 100%;
   overflow: hidden;
@@ -18187,19 +17876,19 @@ input.form-control:focus, select.form-control:focus, textarea.form-control:focus
   margin-bottom: -5px;
 }
 
-/* line 1191, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1192, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .styled-select select::-ms-expand, .styled-select-2 select::-ms-expand {
   display: none;
 }
 
 /** Floated inputs: ex the gender radio ==================== **/
-/* line 1196, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1197, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 ul.floated {
   padding: 0;
   margin: 0 0 0 0;
 }
 
-/* line 1200, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1201, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 ul.floated li {
   float: left;
   margin: 0;
@@ -18207,24 +17896,24 @@ ul.floated li {
   width: 30%;
 }
 
-/* line 1205, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1206, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 label.label_gender {
   padding-left: 50px;
   line-height: 42px;
 }
 
-/* line 1207, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1208, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 ul.floated li#age {
   width: 100px;
   margin-right: 55px;
 }
 
-/* line 1212, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1213, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 ul.data-list li {
   position: relative;
 }
 
-/* line 1214, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1215, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 ul.data-list-2 li {
   position: relative;
   height: 42px;
@@ -18233,7 +17922,7 @@ ul.data-list-2 li {
   display: block;
 }
 
-/* line 1222, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1223, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 ul.data-list-2 li label {
   float: left;
   margin-left: 60px;
@@ -18243,7 +17932,7 @@ ul.data-list-2 li label {
   line-height: 22px;
 }
 
-/* line 1231, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1232, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 ul.data-list#terms {
   font-weight: 400;
   line-height: 22px;
@@ -18252,65 +17941,9 @@ ul.data-list#terms {
   text-align: center;
 }
 
-/** Quantity incrementer input==================== **/
-/* line 1240, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
-.qty-buttons {
-  position: relative;
-  width: 100px;
-  height: 40px;
-}
-
-/* line 1241, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
-input.qty {
-  width: 70px;
-}
-
-/* line 1242, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
-input.qtyminus, input.qtyplus, input.qtyplus:focus {
-  position: absolute;
-  width: 35px;
-  height: 23px;
-  border: 2px solid #d5d5d5;
-  outline: none;
-  cursor: pointer;
-  border-radius: 0;
-  -webkit-appearance: none;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  -webkit-transition: none;
-}
-
-/* line 1243, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
-input.qtyplus {
-  background: #fff url(plus.png) no-repeat center center;
-  right: 0;
-  top: 0;
-  text-indent: -9999px;
-}
-
-/* line 1244, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
-input.qtyminus {
-  background: #fff url(minus.png) no-repeat center center;
-  right: 0;
-  top: 21px;
-  text-indent: -9999px;
-}
-
-/* line 1245, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
-.qty-buttons span {
-  position: absolute;
-  top: 10px;
-  display: block;
-  width: 220px;
-  left: 120px;
-  font-weight: bold;
-}
-
 /** Errors validation styles and position ==================== **/
 /** Common style**/
-/* line 1250, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1243, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 label.error {
   font-size: 11px;
   position: absolute;
@@ -18325,7 +17958,7 @@ label.error {
   padding: 0 6px;
 }
 
-/* line 1263, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1256, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 label.error:after {
   content: '';
   position: absolute;
@@ -18339,22 +17972,22 @@ label.error:after {
   left: 20%;
 }
 
-/* line 1276, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1269, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .styled-select label.error {
   overflow: visible;
 }
 
-/* line 1278, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1271, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 ul.floated li#age label.error {
   right: -15px;
 }
 
-/* line 1280, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1273, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 ul.floated li label.error {
   right: -50px;
 }
 
-/* line 1282, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1275, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 ul.data-list#terms li label.error {
   left: 45%;
   display: inline-block;
@@ -18362,7 +17995,7 @@ ul.data-list#terms li label.error {
 }
 
 /** Error styles for survey questions**/
-/* line 1289, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1282, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 ul.data-list-2 li label.error {
   font-size: 11px;
   position: absolute;
@@ -18382,7 +18015,7 @@ ul.data-list-2 li label.error {
 /* 4.  COMMON */
 /*============================================================================================*/
 /* twitter feed*/
-/* line 1308, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1301, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .tweets-next, .tweets-prev {
   display: inline-block;
   font-size: 28px;
@@ -18390,29 +18023,29 @@ ul.data-list-2 li label.error {
   margin-top: 10px;
 }
 
-/* line 1314, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1307, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .tweets-prev {
   margin-right: 10px;
 }
 
-/* line 1315, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1308, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .tweet_avatar {
   float: left;
 }
 
-/* line 1316, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1309, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .tweet_time {
   display: block;
   margin-bottom: 5px;
 }
 
-/* line 1317, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1310, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .tweet-control {
   margin-bottom: 30px;
 }
 
 /* scroll to top */
-/* line 1320, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1313, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 #toTop {
   width: 100px;
   background: #111;
@@ -18429,27 +18062,27 @@ ul.data-list-2 li label.error {
 }
 
 /* spacing */
-/* line 1323, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1316, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .add_top_30 {
   margin-top: 30px;
 }
 
-/* line 1324, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1317, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .add_top_15 {
   margin-top: 15px;
 }
 
-/* line 1325, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1318, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .add_bottom_30 {
   margin-bottom: 30px;
 }
 
-/* line 1326, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1319, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .add_bottom_15 {
   margin-bottom: 15px;
 }
 
-/* line 1327, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1320, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .divider {
   width: 100%;
   background: url(divider.png) no-repeat center top;
@@ -18458,7 +18091,7 @@ ul.data-list-2 li label.error {
 }
 
 /* modal */
-/* line 1330, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1323, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .modal-content {
   position: relative;
   background-color: #fff;
@@ -18470,14 +18103,14 @@ ul.data-list-2 li label.error {
   background-clip: padding-box;
 }
 
-/* line 1340, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1333, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .modal-header {
   min-height: 16.428571429px;
   padding: 15px;
   border-bottom: 1px solid #ddd;
 }
 
-/* line 1345, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1338, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .modal-footer {
   padding: 19px 20px 20px;
   margin-top: 15px;
@@ -18485,7 +18118,7 @@ ul.data-list-2 li label.error {
   border-top: 1px solid #ddd;
 }
 
-/* line 1351, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1344, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .close {
   float: right;
   font-size: 21px;
@@ -18497,7 +18130,7 @@ ul.data-list-2 li label.error {
   filter: alpha(opacity=20);
 }
 
-/* line 1361, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+/* line 1354, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
 .close:hover,
 .close:focus {
   color: #333;
@@ -18511,18 +18144,18 @@ ul.data-list-2 li label.error {
 /* 5.  MEDIA QUERIES */
 /*============================================================================================*/
 @media (min-width: 768px) and (max-width: 1200px) {
-  /* line 1377, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1370, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .product_image {
     margin: auto;
     width: 50%;
   }
 
-  /* line 1382, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1375, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   #googleMap {
     display: none;
   }
 
-  /* line 1386, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1379, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .align-usps {
     display: inline-block;
     font-size: 12px;
@@ -18530,64 +18163,64 @@ ul.data-list-2 li label.error {
     font-weight: bolder;
   }
 
-  /* line 1393, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1386, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .align-usps img {
     margin-right: 10px;
     width: 30px;
     height: 30px;
   }
 
-  /* line 1399, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1392, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .li-content {
     display: block;
     padding: 10px 5px 10px 5px;
   }
 
-  /* line 1404, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1397, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .li-content-no-padding {
     display: flex;
     margin-left: 20px;
   }
 
-  /* line 1409, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1402, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .icon-holder-left {
     display: none;
   }
 
-  /* line 1413, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1406, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .icon-holder-right {
     display: none;
   }
 
-  /* line 1417, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1410, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .box-holder {
     flex: 355px;
     margin: 10px 0 0 0;
   }
 
-  /* line 1421, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1414, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   #middle-wizard {
     padding: 40px 10px 40px 10px;
   }
 
-  /* line 1422, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1415, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .read_more {
     margin-left: 15%;
     display: block;
   }
 
-  /* line 1427, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1420, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .align-usps-2p {
     display: none;
   }
 }
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 1434, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1427, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   #googleMap {
     display: none;
   }
 
-  /* line 1438, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1431, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .align-usps {
     display: inline-block;
     font-size: 12px;
@@ -18595,68 +18228,68 @@ ul.data-list-2 li label.error {
     font-weight: bolder;
   }
 
-  /* line 1445, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1438, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .align-usps img {
     margin-right: 10px;
     width: 30px;
     height: 30px;
   }
 
-  /* line 1451, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1444, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .li-content {
     display: block;
     padding: 10px 5px 10px 5px;
   }
 
-  /* line 1456, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1449, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .li-content-no-padding {
     display: inline-block;
     margin-left: 20px;
   }
 
-  /* line 1461, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1454, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .icon-holder-left {
     display: none;
   }
 
-  /* line 1465, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1458, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .icon-holder-right {
     display: none;
   }
 
-  /* line 1469, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1462, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .box-holder {
     flex: 355px;
     margin: 10px 0 0 0;
   }
 
-  /* line 1474, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1467, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   #middle-wizard {
     padding: 40px 10px 35px 10px;
   }
 
-  /* line 1475, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1468, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .read_more {
     margin-left: 10%;
     display: block;
   }
 
-  /* line 1479, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1472, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   #contact {
     background: none;
   }
 
-  /* line 1481, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1474, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   #footer_2 {
     text-align: center;
   }
 
-  /* line 1482, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1475, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   #contact {
     background: none;
   }
 
-  /* line 1484, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1477, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   ul.social-bookmarks {
     padding: 0;
     list-style-type: none;
@@ -18664,24 +18297,24 @@ ul.data-list-2 li label.error {
     display: inline-block;
   }
 
-  /* line 1491, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1484, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .align-usps-2p {
     display: none;
   }
 }
 /* From tablet portrait to mobile */
 @media (max-width: 767px) {
-  /* line 1500, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1493, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .payment_method_image {
     display: none;
   }
 
-  /* line 1504, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1497, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   #googleMap {
     display: none;
   }
 
-  /* line 1508, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1501, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .align-usps {
     display: grid;
     font-size: 12px;
@@ -18689,57 +18322,57 @@ ul.data-list-2 li label.error {
     font-weight: bolder;
   }
 
-  /* line 1515, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1508, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .align-usps img {
     margin-right: 10px;
     width: 30px;
     height: 30px;
   }
 
-  /* line 1521, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1514, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .li-content {
     display: block;
     padding: 10px 5px 10px 5px;
   }
 
-  /* line 1526, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1519, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .li-content-no-padding {
     display: flex;
     margin-left: 20px;
   }
 
-  /* line 1531, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1524, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .box-holder {
     flex: 355px;
     margin: 10px 0 0 0;
   }
 
-  /* line 1536, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1529, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .read_more {
     display: none;
   }
 
-  /* line 1540, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1533, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   #top-nav {
     width: 100%;
     float: left;
   }
 
-  /* line 1541, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1534, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   #top-nav {
     display: none;
     background-image: -webkit-linear-gradient(-29deg, #5777ab 0, #233b88 100%);
     z-index: 200;
   }
 
-  /* line 1546, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1539, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   #top-nav ul {
     float: none;
     padding: 20px 0 20px 0;
     margin: 0;
   }
 
-  /* line 1547, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1540, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   #top-nav ul li {
     float: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
@@ -18748,69 +18381,69 @@ ul.data-list-2 li label.error {
     margin: 0;
   }
 
-  /* line 1548, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1541, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   #top-nav ul li:last-child {
     border-bottom: none;
   }
 
-  /* line 1549, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1542, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   #top-nav ul li a {
     display: block;
     padding: 5px;
   }
 
-  /* line 1550, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1543, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   #top-nav ul a#active {
     color: #323232;
     background-color: #ddd;
   }
 
-  /* line 1551, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1544, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .btn-responsive-menu {
     display: block;
   }
 
-  /* line 1553, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1546, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .main-title h1 {
     font-size: 32px;
     line-height: 30px;
   }
 
-  /* line 1554, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1547, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .main-title p {
     font-size: 16px;
   }
 
-  /* line 1556, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1549, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   h2, h3 {
     font-size: 26px;
     line-height: 26px;
     margin-bottom: 30px;
   }
 
-  /* line 1557, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1550, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   h2 span, h3 span {
     font-size: 22px;
     font-weight: 600;
     display: inline;
   }
 
-  /* line 1563, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1556, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   #top-wizard {
     padding: 15px 6s0px;
   }
 
-  /* line 1564, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1557, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   #middle-wizard {
     padding: 20px 10px 20px 10px;
   }
 
-  /* line 1566, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1559, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   ul.floated li#age {
     margin-bottom: -10px;
   }
 
-  /* line 1568, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1561, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   ul.floated li {
     float: none;
     margin: 0;
@@ -18819,17 +18452,17 @@ ul.data-list-2 li label.error {
     padding-bottom: 10px;
   }
 
-  /* line 1575, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1568, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   #footer_2 {
     text-align: center;
   }
 
-  /* line 1576, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1569, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   #contact {
     background: none;
   }
 
-  /* line 1578, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1571, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   ul.social-bookmarks {
     padding: 0;
     list-style-type: none;
@@ -18837,34 +18470,34 @@ ul.data-list-2 li label.error {
     display: inline-block;
   }
 
-  /* line 1585, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1578, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .icon-holder-left {
     display: none;
   }
 
-  /* line 1589, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1582, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .icon-holder-right {
     display: none;
   }
 
-  /* line 1593, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1586, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .align-usps-2p {
     display: none;
   }
 }
 /* Mobile Landscape */
 @media (max-width: 480px) {
-  /* line 1602, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1595, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .payment_method_image {
     display: none;
   }
 
-  /* line 1606, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1599, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   #googleMap {
     display: none;
   }
 
-  /* line 1610, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1603, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .align-usps {
     display: inline-block;
     font-size: 12px;
@@ -18873,67 +18506,67 @@ ul.data-list-2 li label.error {
     font-weight: bolder;
   }
 
-  /* line 1618, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1611, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .align-usps img {
     margin-right: 10px;
     width: 30px;
     height: 30px;
   }
 
-  /* line 1624, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1617, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .li-content {
     display: block;
     padding: 10px 5px 10px 5px;
   }
 
-  /* line 1629, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1622, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .li-content-no-padding {
     display: flex;
     margin-left: 20px;
   }
 
-  /* line 1634, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1627, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .box-holder {
     flex: 355px;
     margin: 10px 0 0 0;
   }
 
-  /* line 1639, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1632, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .read_more {
     display: none;
   }
 
-  /* line 1643, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1636, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .main-title h1 {
     font-size: 24px;
     line-height: 26px;
     margin-top: 30px;
   }
 
-  /* line 1644, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1637, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .main-title p {
     font-size: 14px;
     line-height: 16px;
   }
 
-  /* line 1646, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1639, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   #top-nav ul {
     float: none;
     padding: 20px 0 40px 0;
     margin: 0;
   }
 
-  /* line 1647, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1640, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   #top-wizard {
     padding: 15px 30px;
   }
 
-  /* line 1648, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1641, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   #bottom-wizard {
     padding: 15px 30px;
   }
 
-  /* line 1649, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1642, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .backward, .forward, button[disabled].backward, button[disabled].forward {
     text-indent: -9999px;
     width: 100px;
@@ -18941,14 +18574,14 @@ ul.data-list-2 li label.error {
     height: 40px;
   }
 
-  /* line 1655, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1648, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .backward:before, .forward:before, button[disabled].backward:before, button[disabled].forward:before {
     text-indent: 0;
     top: 20%;
     font-size: 15px;
   }
 
-  /* line 1661, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1654, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .backward:before {
     content: "\<";
     font-family: FontAwesome;
@@ -18961,12 +18594,12 @@ ul.data-list-2 li label.error {
     font-size: 15px;
   }
 
-  /* line 1673, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1666, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .forward {
     padding: 7px 30px 7px 30px;
   }
 
-  /* line 1674, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1667, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .forward:before {
     content: "\>";
     font-family: FontAwesome;
@@ -18979,33 +18612,23 @@ ul.data-list-2 li label.error {
     font-size: 15px;
   }
 
-  /* line 1686, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1679, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .align-usps-2p {
     display: none;
   }
 
-  /* line 1690, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
-  .qty-buttons span {
-    top: 10px;
-    display: block;
-    width: 100px;
-    left: 120px;
-    font-weight: bold;
-    line-height: 12px;
-  }
-
-  /* line 1692, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1683, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   #complete {
     padding: 0 25px 15px 25px;
   }
 
-  /* line 1693, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1684, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   #complete h3 {
     font-size: 18px;
     margin-bottom: 20px;
   }
 
-  /* line 1694, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1685, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   #complete i {
     font-size: 80px;
     padding: 0;
@@ -19013,17 +18636,17 @@ ul.data-list-2 li label.error {
 }
 /* Mobile Portrait */
 @media only screen and (max-width: 320px) {
-  /* line 1700, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1691, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .payment_method_image {
     display: none;
   }
 
-  /* line 1704, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1695, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   #googleMap {
     display: none;
   }
 
-  /* line 1708, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1699, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .align-usps {
     display: inline-block;
     font-size: 12px;
@@ -19032,93 +18655,93 @@ ul.data-list-2 li label.error {
     font-weight: bolder;
   }
 
-  /* line 1716, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1707, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .align-usps img {
     margin-right: 10px;
     width: 30px;
     height: 30px;
   }
 
-  /* line 1722, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1713, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .li-content {
     display: block;
     padding: 10px 5px 10px 5px;
   }
 
-  /* line 1727, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1718, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .li-content-no-padding {
     display: flex;
     margin-left: 20px;
   }
 
-  /* line 1732, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1723, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .box-holder {
     flex: 355px;
     margin: 10px 0 0 0;
   }
 
-  /* line 1736, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1727, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .read_more {
     display: none;
   }
 
-  /* line 1740, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1731, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .align-usps-2p {
     display: none;
   }
 
-  /* line 1744, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1735, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .main-title h1 {
     font-size: 24px;
     line-height: 26px;
     margin-top: 25px;
   }
 
-  /* line 1745, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1736, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   #survey_container {
     margin-top: -400px;
     margin-bottom: 30px;
   }
 
-  /* line 1746, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1737, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   #top-nav ul {
     float: none;
     padding: 20px 0 10px 0;
     margin: 0;
   }
 
-  /* line 1747, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1738, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   ul#footer-nav li {
     display: block;
     margin-right: 0;
   }
 
-  /* line 1748, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1739, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   ul#footer-nav li:first-child {
     margin-right: 0;
   }
 
-  /* line 1749, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1740, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .step h3 {
     font-size: 18px;
     line-height: 22px;
     margin-bottom: 20px;
   }
 
-  /* line 1750, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1741, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   #complete h3 {
     font-size: 18px;
     margin-bottom: 20px;
   }
 
-  /* line 1751, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1742, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   #complete {
     padding: 0 15px 15px 15px;
   }
 }
 /* Only used for aligning usps's in worst case scenario */
 @media only screen and (max-width: 250px) {
-  /* line 1758, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1749, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .align-usps {
     display: inline-block;
     font-size: 12px;
@@ -19127,27 +18750,27 @@ ul.data-list-2 li label.error {
     font-weight: bolder;
   }
 
-  /* line 1766, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1757, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .align-usps img {
     margin-right: 10px;
     width: 30px;
     height: 30px;
   }
 
-  /* line 1772, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1763, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .align-usps-2p {
     display: none;
   }
 }
 /* IMAC PRO SCREEN */
 @media (min-width: 2000px) {
-  /* line 1779, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1770, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   #main {
     padding-bottom: 400px;
   }
 }
 @media (max-width: 767px) {
-  /* line 1783, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
+  /* line 1774, /Users/luissimo/Desktop/samenstellen/app/assets/stylesheets/style.css.scss */
   .center_align_desktop {
     display: block;
   }

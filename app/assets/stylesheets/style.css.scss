@@ -1237,14 +1237,6 @@ ul.data-list#terms  {
   text-align:center;
    }
 
-/** Quantity incrementer input==================== **/
-.qty-buttons{ position:relative; width:100px; height:40px;  }
-input.qty { width:70px; }
-input.qtyminus, input.qtyplus, input.qtyplus:focus  { position:absolute; width:35px; height:23px; border: 2px solid #d5d5d5; outline:none; cursor:pointer;border-radius: 0;-webkit-appearance: none;-webkit-border-radius: 0;-moz-border-radius: 0;-webkit-box-shadow: none;box-shadow: none;-webkit-transition: none; }
-input.qtyplus { background:#fff url(plus.png) no-repeat center center; right:0; top:0; text-indent:-9999px;  }
-input.qtyminus { background:#fff url(minus.png) no-repeat center center; right:0; top:21px;  text-indent:-9999px; }
-.qty-buttons span { position:absolute; top:10px; display:block; width:220px; left:120px; font-weight:bold;}
-
 /** Errors validation styles and position ==================== **/
 
 /** Common style**/
@@ -1687,8 +1679,6 @@ ul.floated li {
 .align-usps-2p {
   display: none;
 }
-
-.qty-buttons span { top:10px; display:block; width:100px; left:120px; font-weight:bold; line-height:12px;}
 
 #complete{padding: 0 25px 15px 25px;}
 #complete h3{ font-size:18px; margin-bottom:20px}

@@ -35,13 +35,9 @@
     / CSS
     = stylesheet_link_tag    'bootstrap.css', media: 'all'
     = stylesheet_link_tag    'style.css', media: 'all'
-    = stylesheet_link_tag    'fancybox/source/jquery.fancybox.css', media: 'all'
     = stylesheet_link_tag    'check_radio/skins/square/aero.css', media: 'all'
     / Toggle Switch
     = stylesheet_link_tag    'jquery.switch.css', media: 'all'
-    / Owl Carousel Assets
-    = stylesheet_link_tag    'owl.carousel.css', media: 'all'
-    = stylesheet_link_tag    'owl.theme.css', media: 'all'
     / Google web font
     %link{:href => "https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300", :rel => "stylesheet", :type => "text/css"}/
     /[if lt IE 9]
@@ -71,16 +67,8 @@
     / OTHER JS
     = javascript_include_tag 'jquery.validate.js'
     = javascript_include_tag 'jquery.placeholder.js'
-    = javascript_include_tag 'jquery.bxslider.min.js'
-    = javascript_include_tag 'quantity-bt.js'
     = javascript_include_tag 'bootstrap.js'
-    = javascript_include_tag 'owl.carousel.min.js'
     = javascript_include_tag 'functions.js'
-
-    / Fancybox
-    = javascript_include_tag 'fancybox/source/jquery.fancybox.pack.js'
-    = javascript_include_tag 'fancybox/source/helpers/jquery.fancybox-media.js'
-    = javascript_include_tag 'fancy_func.js'
 
     / CUSTOM JS
     = javascript_include_tag 'custom.js'

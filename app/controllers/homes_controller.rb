@@ -72,6 +72,34 @@ class HomesController < ApplicationController
     @meta_description = @keyword
   end
 
+  def beste_matras
+    @keyword = 'Beste matras'
+    @page_title = @keyword
+    @meta_title = @keyword
+    @meta_description = @keyword
+  end
+
+  def matras_op_maat
+    @keyword = 'Matras op maat'
+    @page_title = @keyword
+    @meta_title = @keyword
+    @meta_description = @keyword
+  end
+
+  def goedkoop_matras
+    @keyword = 'Goedkoop matras'
+    @page_title = @keyword
+    @meta_title = @keyword
+    @meta_description = @keyword
+  end
+
+  def goedkope_matras
+    @keyword = 'Goedkope matras'
+    @page_title = @keyword
+    @meta_title = @keyword
+    @meta_description = @keyword
+  end
+
   def matras_80x200
     @keyword = 'Matras 80x200'
     @page_title = @keyword

@@ -50,3 +50,6 @@ nl:
       header_block_2: "Matras kopen %{city_name}"
       header_block_3: "Goedkope matrassen %{city_name}"
       header_block_4: "Je kunt ook een matras samenstellen in:"
+    discount_top_text: "Vandaag 10% korting gebruik de kortingscode:"
+    discount_top_code: "TENZEN10"
+    discount_code_explanation: 'Je kunt deze kortingscode invoeren op de resultatenpagina nadat je de vragen hebt ingevuld. Vul deze code in op het veld "kortingscode" en klik op "gebruiken".'

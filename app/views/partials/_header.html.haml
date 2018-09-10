@@ -22,3 +22,9 @@
             %li
               %a{href: vragen_url}
                 = t("general.header.questions")
+  - if discount_days?
+    #top-discount-area
+      #discount-top-text= t('general.discount_top_text')
+      #discount-top-code= t('general.discount_top_code')
+      %span.question_label_icon_wrapper
+        = question_icon_md(t("general.discount_code_explanation"), data_placement: 'bottom', klass: "question_label_icon_sm")

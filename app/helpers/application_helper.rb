@@ -24,7 +24,7 @@ module ApplicationHelper
   end
 
   def discount_days?
-    Time.now.monday? || Time.now.wednesday? || Time.now.friday? || Time.now.sunday?
+    Time.now.monday? || Time.now.tuesday? || Time.now.thursday? || Time.now.friday? || Time.now.sunday?
   end
 
 end

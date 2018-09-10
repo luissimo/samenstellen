@@ -43,6 +43,8 @@ Rails.application.routes.draw do
   get 'matras-online-bestellen'               => 'homes#matras_online_bestellen'
   get 'matras-advies'                         => 'homes#matras_advies'
   get 'matras-bestellen'                      => 'homes#matras_bestellen'
+  get 'matras-kopen'                          => 'homes#matras_kopen'
+  get 'beste-matras-kopen'                    => 'homes#beste_matras_kopen'
   get 'matras-80x200'                         => 'homes#matras_80x200'
   get 'matras-90x200'                         => 'homes#matras_90x200'
   get 'matras-120x200'                        => 'homes#matras_120x200'

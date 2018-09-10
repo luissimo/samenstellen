@@ -58,6 +58,20 @@ class HomesController < ApplicationController
     @meta_description = @keyword
   end
 
+  def matras_kopen
+    @keyword = 'Matras kopen'
+    @page_title = @keyword
+    @meta_title = @keyword
+    @meta_description = @keyword
+  end
+
+  def beste_matras_kopen
+    @keyword = 'Beste matras kopen'
+    @page_title = @keyword
+    @meta_title = @keyword
+    @meta_description = @keyword
+  end
+
   def matras_80x200
     @keyword = 'Matras 80x200'
     @page_title = @keyword

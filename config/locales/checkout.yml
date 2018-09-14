@@ -1,6 +1,6 @@
 nl:
   checkout:
-    title_personal: Persoonlijke gegevens
+    title_contact: Contactgegevens
     first_name: Voornaam*
     last_name: Achternaam*
     phone_number: Telefoonnummer*
@@ -9,14 +9,14 @@ nl:
     street_and_house_number: Straatnaam + Huisnummer*
     house_number_addition: Huisnummer toevoeging
     zip_code: Postcode*
-    city: Stad*
+    city: Plaats*
     ship:
       ship_to_different_address: Verzenden naar een ander adres?
       title_address: Verzendadres
       street_and_house_number: Straatnaam + Huisnummer
       house_number_addition: Huisnummer toevoeging
       zip_code: Postcode
-      city: Stad
+      city: Plaats
     title_information: Informatie
     title_payment: Betaalmethode
     ideal: iDeal
